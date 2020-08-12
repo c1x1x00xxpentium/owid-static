@@ -18946,7 +18946,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-wind</loc>
-        <lastmod>2020-07-31</lastmod>
+        <lastmod>2020-08-12</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-solar</loc>
@@ -19166,6 +19166,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/primary-energy-consumption-from-solar</loc>
+        <lastmod>2020-08-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/primary-energy-wind</loc>
         <lastmod>2020-08-12</lastmod>
     </url>
 </urlset>
