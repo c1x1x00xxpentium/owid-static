@@ -19172,4 +19172,8 @@
         <loc>https://ourworldindata.org/grapher/primary-energy-wind</loc>
         <lastmod>2020-08-12</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/percentage-change-energy-by-source</loc>
+        <lastmod>2020-08-12</lastmod>
+    </url>
 </urlset>
