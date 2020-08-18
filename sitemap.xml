@@ -19240,4 +19240,12 @@
         <loc>https://ourworldindata.org/grapher/coal-prod-per-capita</loc>
         <lastmod>2020-08-18</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/oil-prod-per-capita</loc>
+        <lastmod>2020-08-18</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/gas-prod-per-capita</loc>
+        <lastmod>2020-08-18</lastmod>
+    </url>
 </urlset>
