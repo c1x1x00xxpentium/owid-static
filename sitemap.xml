@@ -18274,7 +18274,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/changes-visitors-covid</loc>
-        <lastmod>2020-06-09</lastmod>
+        <lastmod>2020-08-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/week-by-week-change-of-covid-deaths-vs-gdp-per-capita</loc>
@@ -18286,11 +18286,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/change-visitors-retail-recreation</loc>
-        <lastmod>2020-06-09</lastmod>
+        <lastmod>2020-08-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/change-visitors-grocery-stores</loc>
-        <lastmod>2020-06-09</lastmod>
+        <lastmod>2020-08-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biweekly-confirmed-covid-19-cases</loc>
@@ -18318,11 +18318,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/change-visitors-parks-covid</loc>
-        <lastmod>2020-06-09</lastmod>
+        <lastmod>2020-08-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/changes-residential-duration-covid</loc>
-        <lastmod>2020-06-09</lastmod>
+        <lastmod>2020-08-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/workplace-visitors-covid</loc>
@@ -19258,6 +19258,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-population-living-with-less-than-1000-int-per-day</loc>
+        <lastmod>2020-08-18</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-of-people-living-above-and-below-1000-int-per-day</loc>
         <lastmod>2020-08-18</lastmod>
     </url>
 </urlset>
