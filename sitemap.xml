@@ -18661,6 +18661,10 @@
         <lastmod>2020-08-02</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/daily-new-estimated-covid-19-infections-ihme-model</loc>
+        <lastmod>2020-08-20</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/daily-tests-map-colors-for-explorer</loc>
         <lastmod>2020-07-31</lastmod>
     </url>
@@ -18739,6 +18743,10 @@
     <url>
         <loc>https://ourworldindata.org/grapher/total-gdp-vs-gdp-per-capita-maddison</loc>
         <lastmod>2020-07-19</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/daily-new-estimated-covid-19-infections-yyg-model</loc>
+        <lastmod>2020-08-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-estimated-covid-19-infections-icl-model</loc>
@@ -18827,6 +18835,10 @@
     <url>
         <loc>https://ourworldindata.org/grapher/uk-unemployment-rate-19712017</loc>
         <lastmod>2020-07-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/daily-new-estimated-covid-19-infections-lshtm-model</loc>
+        <lastmod>2020-08-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cereal-yield-vs-extreme-poverty</loc>
