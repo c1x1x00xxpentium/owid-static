@@ -4,6 +4,5 @@
   "admin.css": "css/admin.css",
   "admin.js": "js/admin.js",
   "owid.css": "css/owid.css",
-  "owid.js": "js/owid.js",
-  "owid.scss": "29c08ea7d10038206f32241cfc578603.png"
+  "owid.js": "js/owid.js"
 }
