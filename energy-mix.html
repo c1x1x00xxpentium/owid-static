@@ -1,0 +1,1175 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Energy mix - Our World in Data</title><meta name="description" content="Energy production – mainly the burning of fossil fuels – accounts for around three-quarters of global greenhouse gas emissions. Not only is energy production the largest driver of climate change, the burning of fossil fuels and biomass also comes at a large cost to human health: at least five million deaths are attributed to air pollution each year."/><link rel="canonical" href="https://ourworldindata.org/energy-mix"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/energy-mix"/><meta property="og:title" content="Energy mix"/><meta property="og:description" content="Energy production – mainly the burning of fossil fuels – accounts for around three-quarters of global greenhouse gas emissions. Not only is energy production the largest driver of climate change, the burning of fossil fuels and biomass also comes at a large cost to human health: at least five million deaths are attributed to air pollution each year."/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Energy mix"/><meta name="twitter:description" content="Energy production – mainly the burning of fossil fuels – accounts for around three-quarters of global greenhouse gas emissions. Not only is energy production the largest driver of climate change, the burning of fossil fuels and biomass also comes at a large cost to human health: at least five million deaths are attributed to air pollution each year."/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page with-sidebar large-banner"><div class="offset-header"><header class="article-header"><h1 class="entry-title"><span>Energy mix</span></h1><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div></header></div><div class="offset-subnavigation"><div class="site-subnavigation"><div class="site-subnavigation-scroll"><ul class="site-subnavigation-links"><li class=""><a href="/energy" data-track-note="energy-subnav-energy">Energy<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></a></li><li class="highlight"><a href="/energy#energy-country-profiles" data-track-note="energy-subnav-by-country">By country</a></li><li class=""><a href="/explorers/energy" data-track-note="energy-subnav-energy-data-explorer">Data explorer</a></li><li class=""><a href="/energy-access" data-track-note="energy-subnav-energy-access">Energy access</a></li><li class=""><a href="/energy-production-consumption" data-track-note="energy-subnav-production-consumption">Production &amp; Consumption</a></li><li class="current"><a href="/energy-mix" data-track-note="energy-subnav-energy-mix">Energy mix</a></li><li class=""><a href="/electricity-mix" data-track-note="energy-subnav-electricity-mix">Electricity mix</a></li><li class=""><a href="/fossil-fuels" data-track-note="energy-subnav-fossil-fuels">Fossil fuels</a></li><li class=""><a href="/renewable-energy" data-track-note="energy-subnav-renewable-energy">Renewables</a></li><li class=""><a href="/nuclear-energy" data-track-note="energy-subnav-nuclear-energy">Nuclear</a></li></ul></div></div></div><div class="content-wrapper"><div><aside class="entry-sidebar"><div class="sticky-sentinel"></div><nav class="entry-toc"><ul><li><a href="#">Energy mix</a></li><li class="section"><a href="#global-primary-energy-how-has-the-mix-changed-over-centuries">Global primary energy: how has the mix changed over centuries?</a></li><li class="section"><a href="#energy-mix-what-sources-do-we-get-our-energy-from">Energy mix: what sources do we get our energy from?</a></li><li class="section"><a href="#how-much-of-global-energy-comes-from-low-carbon-sources">How much of global energy comes from low-carbon sources?</a></li><li class="section"><a href="#which-countries-get-the-most-energy-from-low-carbon-sources">Which countries get the most energy from low-carbon sources?</a></li><li class="section"><a href="#is-the-world-making-progress-in-decarbonizing-energy">Is the world making progress in decarbonizing energy?</a></li><li class="section"><a href="#energy-consumption-by-source">Energy consumption by source</a></li><li class="subsection"><a href="#fossil-fuels-what-share-of-energy-comes-from-fossil-fuels">Fossil fuels: what share of energy comes from fossil fuels?</a></li><li class="subsection"><a href="#coal-what-share-of-energy-comes-from-coal">Coal: what share of energy comes from coal?</a></li><li class="subsection"><a href="#oil-what-share-of-energy-comes-from-oil">Oil: what share of energy comes from oil?</a></li><li class="subsection"><a href="#gas-what-share-of-energy-comes-from-gas">Gas: what share of energy comes from gas?</a></li><li class="subsection"><a href="#nuclear-what-share-of-energy-comes-from-nuclear">Nuclear: what share of energy comes from nuclear?</a></li><li class="subsection"><a href="#renewables-how-much-of-our-energy-comes-from-renewables">Renewables: how much of our energy comes from renewables?</a></li><li class="subsection"><a href="#hydropower-what-share-of-energy-comes-from-hydropower">Hydropower: what share of energy comes from hydropower?</a></li><li class="subsection"><a href="#solar-what-share-of-energy-comes-from-solar">Solar: what share of energy comes from solar?</a></li><li class="subsection"><a href="#wind-what-share-of-energy-comes-from-wind">Wind: what share of energy comes from wind?</a></li><li class="section"><a href="#year-to-year-change-how-is-energy-consumption-by-source-changing">Year-to-year change: how is energy consumption by source changing?</a></li><li class="section"><a href="#direct-vs-substituted-primary-energy-what-are-the-multiple-ways-of-energy-accounting">Direct vs. substituted primary energy: what are the multiple ways of energy accounting?</a></li><li class="section"><a href="#endnotes">Endnotes</a></li></ul></nav><div class="toggle-toc"><button data-track-note="page-toggle-toc" aria-label="Open table of contents"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-alt" class="svg-inline--fa fa-list-alt fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z"></path></svg></button></div></aside></div><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Energy production &#x2013; mainly the burning of fossil fuels &#x2013; accounts for around three-quarters of global <a href="https://ourworldindata.org/greenhouse-gas-emissions">greenhouse gas emissions</a>. Not only is energy production the largest driver of climate change, the burning of fossil fuels and biomass also comes at a large cost to human health: at least five million deaths are <a href="https://ourworldindata.org/air-pollution">attributed to air pollution</a> each year.</p><p>The world therefore needs to shift away from fossil fuels to an energy mix dominated by low-carbon sources of energy &#x2013; renewable technologies and nuclear power.</p><p>What does our energy mix look like today? What countries have the &#x2018;cleanest&#x2019; energy mix? And are we making progress in shifting towards a low-carbon energy system?</p><p>This article focuses on the breakdown of energy sources: how they vary across the world and how this is changing over time.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="global-primary-energy-how-has-the-mix-changed-over-centuries"><a class="deep-link" href="#global-primary-energy-how-has-the-mix-changed-over-centuries"></a>Global primary energy: how has the mix changed over centuries?</h2></div></div></div><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/global-primary-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/global-primary-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/global-primary-energy_v13_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Global primary energy v13 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image">
+        <a href="https://ourworldindata.org/grapher/long-term-energy-transitions" target="_blank">
+          <figure><img src="/grapher/exports/long-term-energy-transitions.svg" alt="Long term energy transitions" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>How do our long-term energy transitions look when we consider two additional elements: the work of humans and animals?</p>
+
+
+            </div>
+            <div class="title">Long-term energy transitions<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Today when we think about energy mixes we think about a diverse range of sources &#x2013; coal, oil, gas, nuclear, hydropower, solar, wind, biofuels.  But If we look back a couple of centuries ago, our energy mixes where relatively homogeneous. And the transition from one source to another was incredibly slow.</p>
+
+
+
+<p>In the chart shown we see global primary energy consumption dating back to the year 1800. This earlier data is sourced from Vaclav Smil&#x2019;s work <em>Energy Transitions: Global and National Perspectives</em>.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> Data from 1965 onwards comes from the latest release of BP&#x2019;s<em> <a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html">Statistical Review of World Energy</a></em>. </p>
+
+
+
+<p>We see that until the mid-19th century, traditional biomass &#x2013; the burning of solid fuels such as wood, crop waste, or charcoal &#x2013; was the dominant source of energy used across the world. But with the Industrial Revolution came the rise of coal; followed by oil, gas; and by the turn of the 20th century, hydropower.</p>
+
+
+
+<p>It wasn&#x2019;t until the 1960s that nuclear energy was added to the mix. What are often referred to as &#x2018;modern renewables&#x2019; &#x2013; solar and wind &#x2013; were only added much later, in the 1980s.</p>
+
+
+
+<p>What <em>Vaclav</em> <em>Smil</em> &#x2013;  and other researchers studying these long-term energy transitions across countries &#x2013; highlights in his work is the slow rate at which energy transitions have occurred in the past. The speed and scale of the energy transition we need today in switching from fossil fuels to low-carbon energy is therefore a new challenge, very different from the past.</p>
+</div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="energy-mix-what-sources-do-we-get-our-energy-from"><a class="deep-link" href="#energy-mix-what-sources-do-we-get-our-energy-from"></a><strong>Energy mix:</strong> what sources do we get our energy from?</h2></div></div></div><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/energy-consumption-by-source-and-region?stackMode=absolute" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/energy-consumption-by-source-and-region?stackMode=absolute" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/energy-consumption-by-source-and-region-a8129e7d300f7950097bd62e4ec0e6bd_v21_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Energy consumption by source and region a8129e7d300f7950097bd62e4ec0e6bd v21 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image">
+        <a href="https://ourworldindata.org/grapher/primary-energy-cons-substitution" target="_blank">
+          <figure><img src="/grapher/exports/primary-energy-cons-substitution.svg" alt="Primary energy cons substitution" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>Explore the changes in primary energy source by source as a line chart <em>[as opposed to a stacked area]</em>.</p>
+
+
+            </div>
+            <div class="title">Primary energy consumption by source<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Let&#x2019;s look at our energy mix today, and explore what sources we draw upon. </p>
+
+
+
+<p>In the interactive chart shown we see the primary energy mix broken down by fuel or generation source. </p>
+
+
+
+<p>Globally we get the largest amount of our energy from oil, followed by coal, gas, then hydroelectric power. As we look at in more detail below &#x2013; &#x201C;How much of global energy comes from low-carbon sources?&#x201D; &#x2013; the global energy mix is still dominated by fossil fuels. They account for more than 80% of energy consumption.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="how-you-can-interact-with-this-chart">How you can interact with this chart</h4><div class="content">
+
+
+
+
+
+<ul><li>On these charts you see the button <strong>Change Country </strong>in the bottom left corner &#x2013; with this option you can switch the chart to any other country in the world.</li><li>By ticking the &#x2018;Relative&#x2019; box in the bottom left corner you can switch to see each source&#x2019;s share of the total.</li></ul>
+
+
+
+
+
+</div></div></div></div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="how-much-of-global-energy-comes-from-low-carbon-sources"><a class="deep-link" href="#how-much-of-global-energy-comes-from-low-carbon-sources"></a>How much of global energy comes from low-carbon sources?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Around three-quarters of global greenhouse gas emissions come from the burning of fossil fuels for energy.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a> To reduce global emissions we need to shift our energy systems away from fossil fuels to low-carbon sources of energy. We need to &#x2018;decarbonize&#x2019;.</p><p>How big is this challenge? How much of our energy currently comes from low-carbon sources?</p><p>In the chart here we see the breakdown of global primary energy consumption for 2019.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a>&#xA0;</p><p>Before we look at the numbers, there are two points to note:</p><ul><li>Here we take primary energy based on the <em>&#x2018;substitution method&#x2019;</em> for energy accounting. For those interested in energy accounting methods, at the end of this post we look at comparisons of direct versus substitution methods. The quick summary of it is that this accounting method tries to account for the energy lost from the inefficiencies in fossil fuel production and aims to provide the appropriate comparison of how much more low-carbon energy we would need to replace fossil fuels in the energy mix. It&#x2019;s one of the preferred accounting method used by the Intergovernmental Panel on Climate Change (IPCC).<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a></li><li>These figures don&#x2019;t include energy produced from traditional biomass. This is because most international energy agencies &#x2013; such as BP, IEA or EIA &#x2013; only track data on commercially-traded fuels. Traditional biomass &#x2013; which are <a href="https://ourworldindata.org/indoor-air-pollution#indoor-air-pollution-results-from-poor-access-to-clean-cooking-fuels">solid fuels</a> such as wood, crop residues and charcoal &#x2013; can be a key source of energy for people living at lower incomes, but it is challenging to quantify and timely data is not available. Based on <a href="https://ourworldindata.org/grapher/global-energy-substitution">crude estimates from earlier data</a> I would expect it to currently account for an additional 6% of global energy.</li></ul></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="16-of-global-primary-energy-came-from-low-carbon-sources-in-2019"><a class="deep-link" href="#16-of-global-primary-energy-came-from-low-carbon-sources-in-2019"></a>16% of global primary energy came from low-carbon sources in 2019</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>We see that in 2019, almost 16% (15.7% to be precise) of global primary energy came from low-carbon sources. Low-carbon sources are the sum of nuclear energy and renewables &#x2013; which includes hydropower, wind, solar, bioenergy, geothermal and wave and tidal.<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a></p><p>11.4% came from renewables; and 4.3% came from nuclear.</p><p>Hydropower and nuclear account for most of our low-carbon energy: combined they account for 10.7%. Wind produces just 2.2%, and solar 1.1% &#x2013; but both sources are&#xA0; <a href="https://ourworldindata.org/grapher/percentage-change-energy-by-source">growing quickly</a>.</p><p>Despite producing more and more energy from renewables each year, the global energy mix is still dominated by coal, oil, and gas. Not only does most of our energy &#x2013; 84% of it &#x2013; come from fossil fuels, we continue to burn more each year: total <a href="https://ourworldindata.org/grapher/global-fossil-fuel-consumption">production has increased</a> from 116,214 to 136,761 TWh in the last 10 years.&#xA0;<br>We&#x2019;ve seen the breakdown of the energy mix today. But this does tell us about how it&#x2019;s changing over time. Are we making progress in decarbonization over time? We look at this question in a related post <strong>here</strong>.</p></div><div class="wp-block-column"><figure class="wp-block-image size-large"><img src="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source-800x372.png" alt="Global primary energy by source" class="wp-image-35642" srcset="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source-800x372.png 800w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source-400x186.png 400w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source-150x70.png 150w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source-768x357.png 768w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source-1536x714.png 1536w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source.png 1817w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-by-source.png" loading="lazy"></figure></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="which-countries-get-the-most-energy-from-low-carbon-sources"><a class="deep-link" href="#which-countries-get-the-most-energy-from-low-carbon-sources"></a>Which countries get the most energy from low-carbon sources?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Globally, just <a href="https://docs.google.com/document/d/1t2COQwSVDWUke7LvowS-LbKXMpdONaVBODA7J06_tCc/edit?pli=1#heading=h.9xiuxmabyswp">16% of primary energy</a> (15.7% to be precise) came from low-carbon sources &#x2013; nuclear and renewables &#x2013; in 2019. We are a long way away from the goal to shift towards a low-carbon energy system.</p><p>But do some countries do much better than this? Do we have examples of countries who are already paving the way towards a fossil-free energy mix?</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="which-countries-are-doing-better-in-low-carbon-energy-production-than-the-global-average"><a class="deep-link" href="#which-countries-are-doing-better-in-low-carbon-energy-production-than-the-global-average"></a>Which countries are doing better in low-carbon energy production than the global average?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>In the interactive map here we see the world split into two categories: countries which get <em>more</em> of their energy from low-carbon sources than the global average of 15.7%; and those that get <em>less</em>.<a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a>&#xA0;</p><p>What immediately stands out is that there is a reasonably strong East-West divide: most Western economies get a larger share of energy from low-carbon sources, and those in East get less. Of course this boundary is not absolute: the Netherlands and Ireland, for example, are below the global average.</p><p>This divide may be in part, due to differences in income: many richer countries with a long history of fossil fuel-rich energy systems have already shifted away from them.<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a>&#xA0;</p><p>For many poorer countries in our map, no data is shown. This is because the BP Statistical Review of World Energy does not cover all countries in the world &#x2013; it relies on energy statistics from commercially-traded fuels. This means traditional biomass burning &#x2013; a dominant source of energy at lower incomes are not included. Typically <a href="https://ourworldindata.org/co2-emissions">energy-related emissions</a> from low income countries are small because <a href="https://ourworldindata.org/energy-access">access to energy</a> &#x2013; both electricity and modern cooking fuels &#x2013; is low.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/low-carbon-energy-vs-global" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/low-carbon-energy-vs-global" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/low-carbon-energy-vs-global_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Low carbon energy vs global v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="which-countries-get-the-highest-share-of-energy-from-low-carbon-sources"><a class="deep-link" href="#which-countries-get-the-highest-share-of-energy-from-low-carbon-sources"></a>Which countries get the highest share of energy from low-carbon sources?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>We have a rough categorization of countries that are above and below the global average. But let&#x2019;s take a closer look at the numbers.</p><p>In the interactive map here we see the share of primary energy that comes from low-carbon sources across countries.<a id="ref-8" class="ref" href="#note-8"><sup>8</sup></a></p><p>In 2019, Iceland got 79% of its energy from low-carbon sources. This was the highest in the world. Most of this came from hydropower (55%) but also other renewables &#x2013; mainly geothermal energy (24%). You see this breakdown in the interactive chart below. Using the &#x201C;change country&#x201D; toggle you can switch to see the breakdown for other countries.</p><p>But Iceland wasn&#x2019;t the only country to get most of its energy from low-carbon sources: Sweden (69%); Norway (66%) France (49%) and Switzerland (49%) all got a large amount from nuclear or renewables.</p><p>Finland, and Brazil also had a high share &#x2013; more than 40%.&#xA0;</p><p>At the other end of the scale, some countries rely almost entirely on fossil fuels. Many of the world&#x2019;s oil-producing countries &#x2013; Saudi Arabia, Oman, and Kuwait &#x2013; got less than 1% from low-carbon sources.&#xA0;</p><p>Amongst the largest emerging economies, South Africa produced only 5% from low-carbon sources; India got 9%; and China, 15%. Brazil, as we mentioned earlier, achieves a much higher share &#x2013; 46% in 2019.</p><p>Globally, our progress in shifting towards a low-carbon economy has been slow. That may leave us pessimistic about a path forward. But some countries &#x2013; often some of the world&#x2019;s richest countries who have high <a href="https://ourworldindata.org/co2-emissions">carbon footprints</a> &#x2013; show us that significant progress on decarbonizing our energy systems is possible. They still have a long way to go but are moving in the right direction.<br>Poorer countries face a bigger challenge: they must grow their economies, giving their populations <a href="https://ourworldindata.org/energy-access">access to energy</a>, healthcare and <a href="https://ourworldindata.org/extreme-poverty">alleviating poverty</a> whilst avoiding the carbon-intensive pathways today&#x2019;s rich countries have taken. To do this, they need clean energy to be cheap, undercutting fossil fuel alternatives. In this regard, the world&#x2019;s richest countries also have a role to play: the scale-up of low-carbon energy should help to drive down costs. We have already seen this effect with the rapid <a href="https://ourworldindata.org/grapher/solar-pv-prices-vs-cumulative-capacityhttps://ourworldindata.org/grapher/solar-pv-prices-vs-cumulative-capacity">decline in solar prices</a> in recent years.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/low-carbon-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/low-carbon-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/low-carbon-share-energy_v10_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Low carbon share energy v10 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure><figure data-grapher-src="https://ourworldindata.org/grapher/energy-consumption-by-source-and-region?country=~ISL" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/energy-consumption-by-source-and-region?country=~ISL" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/energy-consumption-by-source-and-region-92d95835c919b06d5f1997cd89b35254_v21_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Energy consumption by source and region 92d95835c919b06d5f1997cd89b35254 v21 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="is-the-world-making-progress-in-decarbonizing-energy"><a class="deep-link" href="#is-the-world-making-progress-in-decarbonizing-energy"></a>Is the world making progress in decarbonizing energy?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Three-quarters of global greenhouse gas emissions come from the burning of fossil fuels for energy.<a id="ref-9" class="ref" href="#note-9"><sup>9</sup></a> To tackle climate change, we need to transition away from fossil fuels and decarbonize our energy systems.</p><p>The world got <a href="https://docs.google.com/document/d/1t2COQwSVDWUke7LvowS-LbKXMpdONaVBODA7J06_tCc/edit?pli=1#heading=h.9xiuxmabyswp">15.7% of its energy</a> from low-carbon sources &#x2013; either nuclear or renewables &#x2013; in 2019.&#xA0; How has this changed over time?</p><p>Does our track record give us reason to be optimistic that we can quickly decarbonize?</p><p>In the chart we see the share of global energy that comes from low-carbon sources. We&#x2019;ve certainly made progress since half a century ago: while the global consumption of energy <a href="https://ourworldindata.org/grapher/primary-energy-cons?tab=chart&amp;country=~OWID_WRL">increased 3.8-fold</a>, the share of low carbon sources has more than doubled. In the 1960s only 6% of our energy came from renewables or nuclear<em> [at this point in time it was mainly the former, as we&#x2019;ll see later]</em>.</p><p>But our rate of progress since the 1990s has been less impressive. By 1994 we were already getting 13.5% from low-carbon sources. Today &#x2013; 25 years later &#x2013; we&#x2019;ve only increased this by two percentage points. It&#x2019;s moving in the right direction, but far too slowly &#x2013; probably much more slowly than many expect.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/low-carbon-share-energy?tab=chart&amp;country=~OWID_WRL" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/low-carbon-share-energy?tab=chart&amp;country=~OWID_WRL" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/low-carbon-share-energy-da8ccccaf5fc9d6bab92c3527f0cc596_v10_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Low carbon share energy da8ccccaf5fc9d6bab92c3527f0cc596 v10 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="fossil-fuels-nuclear-and-renewables-how-is-the-global-energy-mix-changing"><a class="deep-link" href="#fossil-fuels-nuclear-and-renewables-how-is-the-global-energy-mix-changing"></a>Fossil fuels, nuclear, and renewables: how is the global energy mix&#xA0; changing?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>In the chart we see the share of global energy that comes from fossil fuels, renewables and nuclear. The sum of the top two is what we want to increase. I&#x2019;ve also summarised this breakdown in the table &#x2013; noting each source&#x2019;s&#x2019; share at various points in time since the 1970s.</p><p>Part of this slow progress is due to the fact that much of the gains made in renewables has been offset by a decline in nuclear energy. Renewables have been growing while nuclear has been rolled back.<a id="ref-10" class="ref" href="#note-10"><sup>10</sup></a></p><p>Overall, this means that the combined share from low-carbon sources has increased by less than we might have expected. Having both renewables and nuclear pulling in the same direction would certainly have helped. But it wouldn&#x2019;t be enough: the rate of progress would still have been slow.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/sub-energy-fossil-renewables-nuclear" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/sub-energy-fossil-renewables-nuclear" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/sub-energy-fossil-renewables-nuclear_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Sub energy fossil renewables nuclear v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure><figure class="wp-block-table"><div class="tableContainer"><table><thead><tr><th class="has-text-align-center" data-align="center">Year</th><th class="has-text-align-center" data-align="center">Fossil Fuels</th><th class="has-text-align-center" data-align="center">Low-carbon energy<br><em>(Renewables + Nuclear)</em></th><th class="has-text-align-center" data-align="center"><em>Renewables</em></th><th class="has-text-align-center" data-align="center"><em>Nuclear</em></th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center">1970</td><td class="has-text-align-center" data-align="center">94%</td><td class="has-text-align-center" data-align="center">6%</td><td class="has-text-align-center" data-align="center"><em>5.6%</em></td><td class="has-text-align-center" data-align="center"><em>0.4%</em></td></tr><tr><td class="has-text-align-center" data-align="center">1980</td><td class="has-text-align-center" data-align="center">91.6%</td><td class="has-text-align-center" data-align="center">8.4%</td><td class="has-text-align-center" data-align="center"><em>6%</em></td><td class="has-text-align-center" data-align="center"><em>2.4%</em></td></tr><tr><td class="has-text-align-center" data-align="center">1990</td><td class="has-text-align-center" data-align="center">88%</td><td class="has-text-align-center" data-align="center">12%</td><td class="has-text-align-center" data-align="center"><em>6.4%</em></td><td class="has-text-align-center" data-align="center"><em>5.6%</em></td></tr><tr><td class="has-text-align-center" data-align="center">2000</td><td class="has-text-align-center" data-align="center">87%</td><td class="has-text-align-center" data-align="center">13%</td><td class="has-text-align-center" data-align="center"><em>7%</em></td><td class="has-text-align-center" data-align="center"><em>6%</em></td></tr><tr><td class="has-text-align-center" data-align="center">2010</td><td class="has-text-align-center" data-align="center">87%</td><td class="has-text-align-center" data-align="center">13%</td><td class="has-text-align-center" data-align="center"><em>7.8%</em></td><td class="has-text-align-center" data-align="center"><em>5.2%</em></td></tr><tr><td class="has-text-align-center" data-align="center">2019</td><td class="has-text-align-center" data-align="center">84.3%</td><td class="has-text-align-center" data-align="center">15.7%</td><td class="has-text-align-center" data-align="center"><em>11.4%</em></td><td class="has-text-align-center" data-align="center"><em>4.3%</em></td></tr></tbody></table></div></figure></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="it-s-the-total-amount-of-fossil-fuels-we-burn-that-matters-and-we-continue-to-burn-more-each-year"><a class="deep-link" href="#it-s-the-total-amount-of-fossil-fuels-we-burn-that-matters-and-we-continue-to-burn-more-each-year"></a>It&#x2019;s the total amount of fossil fuels we burn that matters &#x2013; and we continue to burn more each year</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>But, actually, we&#x2019;re still fooling ourselves a bit in looking at this progress through the lens of what <em>share</em> of our energy is low-carbon.</p><p>When it comes to greenhouse gas emissions, the atmosphere does not care about shares, only absolutes. That is what ultimately determines the amount of CO<sub>2</sub> we emit, and the rate at which it accumulates in the atmosphere.</p><p>Global energy consumption is not stagnant, but growing. And in the past years it has been growing too quickly for renewables and nuclear to keep up.</p><p>In the chart here we see primary energy consumption in absolute terms for each source. We continue to produce more energy from fossil fuels &#x2013; particularly oil and gas &#x2013; each year.<a id="ref-11" class="ref" href="#note-11"><sup>11</sup></a></p><p>Low-carbon energy is certainly growing across the world &#x2013; undoubtedly a sign of progress.</p><p>Decarbonization is happening. But not nearly fast enough.To achieve the necessary progress that matters for the climate we need to see its growth not only meet our new energy demands each year, but start displacing existing fossil fuels in the energy mix at a much faster rate.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/primary-sub-energy-source" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/primary-sub-energy-source" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/primary-sub-energy-source_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Primary sub energy source v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="energy-consumption-by-source"><a class="deep-link" href="#energy-consumption-by-source"></a>Energy consumption by source</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#fossil-fuels-what-share-of-energy-comes-from-fossil-fuels"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Fossil fuels:</strong> what share of energy comes from fossil fuels?</span></a></li><li><a href="#coal-what-share-of-energy-comes-from-coal"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Coal:</strong> what share of energy comes from coal?</span></a></li><li><a href="#oil-what-share-of-energy-comes-from-oil"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Oil:</strong> what share of energy comes from oil?</span></a></li><li><a href="#gas-what-share-of-energy-comes-from-gas"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Gas:</strong> what share of energy comes from gas?</span></a></li><li><a href="#nuclear-what-share-of-energy-comes-from-nuclear"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Nuclear:</strong> what share of energy comes from nuclear?</span></a></li><li><a href="#renewables-how-much-of-our-energy-comes-from-renewables"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Renewables:</strong> how much of our energy comes from renewables?</span></a></li><li><a href="#hydropower-what-share-of-energy-comes-from-hydropower"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Hydropower:</strong> what share of energy comes from hydropower?</span></a></li><li><a href="#solar-what-share-of-energy-comes-from-solar"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Solar:</strong> what share of energy comes from solar?</span></a></li><li><a href="#wind-what-share-of-energy-comes-from-wind"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Wind:</strong> what share of energy comes from wind?</span></a></li></ul></div></div><h3 id="fossil-fuels-what-share-of-energy-comes-from-fossil-fuels"><a class="deep-link" href="#fossil-fuels-what-share-of-energy-comes-from-fossil-fuels"></a><strong>Fossil fuels:</strong> what share of energy comes from fossil fuels?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/fossil-fuels-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/fossil-fuels-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/fossil-fuels-share-energy_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Fossil fuels share energy v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related content:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/fossil-fuels">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>Explore our work on Fossil Fuels.</p>
+
+
+            </div>
+            <div class="title">Fossil fuels<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Fossil fuels are the sum of coal, oil and gas. Combined, they are the largest source of global emissions of carbon dioxide (CO<sub>2</sub>). We therefore want to shift our energy systems away from fossil fuels towards low-carbon sources of energy.</p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from fossil fuels (coal, oil and gas summed together) across the world.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="three-tips-on-how-to-interact-with-this-map">Three tips on how to interact with this map</h4><div class="content">
+
+
+
+
+
+<ul><li>By clicking on any country on the map you see the change over time in this country.</li><li>By moving the time slider (below the map) you can see how the global situation has changed over time.</li><li>You can focus on a particular world region using the dropdown menu to the top-right of the map.</li></ul>
+
+</div></div></div></div>
+</div><h3 id="coal-what-share-of-energy-comes-from-coal"><a class="deep-link" href="#coal-what-share-of-energy-comes-from-coal"></a><strong>Coal:</strong> what share of energy comes from coal?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/coal-energy-share" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/coal-energy-share" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/coal-energy-share_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Coal energy share v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p>Coal has been a critical energy sources, and mainstay in global energy production for centuries.</p>
+
+
+
+<p>But it&#x2019;s also the most <a href="https://ourworldindata.org/safest-sources-of-energy">polluting energy source</a>: both in terms of the amount of CO<sub>2</sub> it produces per unit of energy, but also the amount of local air pollution it creates. Moving away from coal energy is important for climate change as well as human health.</p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from coal across the world.</p>
+</div>
+</div><h3 id="oil-what-share-of-energy-comes-from-oil"><a class="deep-link" href="#oil-what-share-of-energy-comes-from-oil"></a><strong>Oil:</strong> what share of energy comes from oil?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/oil-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/oil-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/oil-share-energy_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Oil share energy v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p>Oil is the world&#x2019;s largest energy source today. It is the dominant source of energy for the transport sector in particular.</p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from oil across the world.</p>
+</div>
+</div><h3 id="gas-what-share-of-energy-comes-from-gas"><a class="deep-link" href="#gas-what-share-of-energy-comes-from-gas"></a><strong>Gas:</strong> what share of energy comes from gas?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/gas-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/gas-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/gas-share-energy_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Gas share energy v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p>Natural gas has, for decades, lagged behind coal and oil as an energy source. But today its consumption is growing rapidly &#x2013; often as a replacement for coal in the energy mix. Gas is a major provider of <a href="https://ourworldindata.org/electricity-mix">electricity production</a>, and a key source of heat.</p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from gas across the world.</p>
+</div>
+</div><h3 id="nuclear-what-share-of-energy-comes-from-nuclear"><a class="deep-link" href="#nuclear-what-share-of-energy-comes-from-nuclear"></a><strong>Nuclear:</strong> what share of energy comes from nuclear?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/nuclear-primary-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/nuclear-primary-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/nuclear-primary-energy_v9_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Nuclear primary energy v9 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/nuclear-energy">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>Explore our work on Nuclear Energy.</p>
+
+
+            </div>
+            <div class="title">Nuclear energy<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Nuclear energy &#x2013; alongside hydropower &#x2013; has been a key source of low-carbon energy for many countries across the world in recent decades. But there are large differences in the role of nuclear &#x2013; some countries rely heavily on it for energy production; others produce no energy at all from it.</p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from nuclear across the world.</p>
+</div>
+</div><h3 id="renewables-how-much-of-our-energy-comes-from-renewables"><a class="deep-link" href="#renewables-how-much-of-our-energy-comes-from-renewables"></a><strong>Renewables:</strong> how much of our energy comes from renewables?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/renewable-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/renewable-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/renewable-share-energy_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Renewable share energy v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/renewable-energy">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>Explore our work on Renewable Energy.</p>
+
+
+            </div>
+            <div class="title">Renewable energy<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Renewable energy is a collective term used to capture a number of different energy sources. &#x2018;Renewables&#x2019; typically includes hydropower, solar, wind, geothermal, biomass and wave and tidal energy.</p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from renewables (the sum of all renewable energy technologies) across the world.</p>
+
+
+
+<p>The share of energy we get from individual renewable technologies &#x2013; solar, or wind, for example &#x2013; are given in the sections below.</p>
+</div>
+</div><h3 id="hydropower-what-share-of-energy-comes-from-hydropower"><a class="deep-link" href="#hydropower-what-share-of-energy-comes-from-hydropower"></a><strong>Hydropower:</strong> what share of energy comes from hydropower?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/hydro-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/hydro-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/hydro-share-energy_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Hydro share energy v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related content</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/renewable-energy">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>How is hydropower generation changing in absolute terms? Explore in more detail in our work on Renewable Energy.</p>
+
+
+            </div>
+            <div class="title">Hydropower generation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Hydroelectric power has been an influential low-carbon energy technology for many countries for more than half a century. Globally, it is still the largest source of renewable energy.</p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from hydropower across the world.</p>
+</div>
+</div><h3 id="solar-what-share-of-energy-comes-from-solar"><a class="deep-link" href="#solar-what-share-of-energy-comes-from-solar"></a><strong>Solar:</strong> what share of energy comes from solar?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/solar-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/solar-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/solar-share-energy_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Solar share energy v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related content</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/renewable-energy">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>How quickly is solar production changing? Explore in more detail in our work on Renewable Energy.</p>
+
+
+            </div>
+            <div class="title">Solar power generation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Solar energy is often referred to as a &#x2018;modern renewable&#x2019; &#x2013; a couple of decades ago it made only a tiny contribution to global energy supply. But in recent years it has </p>
+
+
+
+<p>This interactive map shows the share of primary energy that comes from solar technologies across the world.</p>
+</div>
+</div><h3 id="wind-what-share-of-energy-comes-from-wind"><a class="deep-link" href="#wind-what-share-of-energy-comes-from-wind"></a><strong>Wind:</strong> what share of energy comes from wind?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/wind-share-energy" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/wind-share-energy" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/wind-share-energy_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Wind share energy v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related content</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/renewable-energy">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>How quickly is wind production changing? Explore in more detail in our work on Renewable Energy.</p>
+
+
+            </div>
+            <div class="title">Wind power generation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div>
+
+
+
+</div>
+
+
+
+<div class="wp-block-column">
+<p>This interactive map shows the share of primary energy that comes from wind (both onshore and offshore) across the world.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="energy-consumption-by-source-three-tips-on-how-to-interact-with-this-map">Three tips on how to interact with this map</h4><div class="content">
+
+
+
+
+
+<ul><li>By clicking on any country on the map you see the change over time in this country.</li><li>By moving the time slider (below the map) you can see how the global situation has changed over time.</li><li>You can focus on a particular world region using the dropdown menu to the top-right of the map.</li></ul>
+
+</div></div></div></div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="year-to-year-change-how-is-energy-consumption-by-source-changing"><a class="deep-link" href="#year-to-year-change-how-is-energy-consumption-by-source-changing"></a><strong>Year-to-year change:</strong> how is energy consumption by source changing?</h2></div></div></div><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/annual-change-primary-energy-source" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/annual-change-primary-energy-source" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/annual-change-primary-energy-source_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Annual change primary energy source v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/annual-primary-energy-fossil-vs-low-carbon" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/annual-primary-energy-fossil-vs-low-carbon" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/annual-primary-energy-fossil-vs-low-carbon_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Annual primary energy fossil vs low carbon v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="direct-vs-substituted-primary-energy-what-are-the-multiple-ways-of-energy-accounting"><a class="deep-link" href="#direct-vs-substituted-primary-energy-what-are-the-multiple-ways-of-energy-accounting"></a>Direct vs. substituted primary energy: what are the multiple ways of energy accounting?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Understanding the breakdown of our energy systems &#x2013; how much energy we get from coal, oil or gas, how much from nuclear, solar or wind &#x2013; is crucial. It allows us to compare energy mixes across the world; track whether we are making progress on decarbonizing our energy systems; and plan and manage demands for natural resources.&#xA0;</p><p>But what seems like a simple exercise &#x2013; adding up the produced energy from all the different sources &#x2013; is in fact not straightforward at all. These difficulties result in different approaches for &#x2018;energy accounting&#x2019; and present a different picture of the energy mix.</p><p>Below, we take a look at the two key methodologies applied to primary energy accounting: &#x2018;direct&#x2019; primary energy and primary energy via the &#x2018;substitution method&#x2019;. These methods are discussed (or debated) often, but I couldn&#x2019;t find particularly clear or simple explanations of how they differ and what this means for understanding our energy mix. The aim here is to fill that gap.</p><p>What&#x2019;s important is to understand why there are two different methods and how they affect our perspective on the energy mix.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="direct-vs-substituted-primary-energy-what-s-the-difference"><a class="deep-link" href="#direct-vs-substituted-primary-energy-what-s-the-difference"></a>Direct vs. substituted primary energy: what&#x2019;s the difference?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>&#x2018;Primary energy&#x2019;&#xA0; refers to energy in its raw form, before it has been converted by humans into other forms of energy like electricity, heat or transport fuels. Think of this as inputs into an energy system: coal, oil or gas before we burn them; or solar or wind energy before we convert them to electricity.</p><p>When we are asking how much energy is consumed or what the breakdown of the sources of energy is we are asking about primary energy.</p><p>Here we look at two ways in which &#x2018;primary energy&#x2019; is calculated: the &#x2018;direct&#x2019; and the &#x2018;substituted&#x2019; method. The simplest way to think of the difference between these methods is that &#x2018;direct&#x2019; primary energy <em>does not</em> take account of the energy lost in the conversion of fossil fuels to usable energy. The substitution method <em>does</em> attempt to correct for this loss.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="an-example-of-the-difference-between-direct-and-substituted-energy"><a class="deep-link" href="#an-example-of-the-difference-between-direct-and-substituted-energy"></a>An example of the difference between &#x2018;direct&#x2019; and &#x2018;substituted&#x2019; energy</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>To understand why this distinction is important we need to first consider the process of energy production.</p>
+
+
+
+<p>When we burn fuel in a thermal power plant most of the energy we put into the process is lost &#x2013; primarily in the form of heat. Most fossil fuel plants run with an efficiency of around 33% to 40%.<a id="ref-12" class="ref" href="#note-12"><sup>12</sup></a> The remaining 60% to 67% of energy is wasted as heat. This means for every unit of energy that we can use, another two are wasted.</p>
+
+
+
+<p>When we measure electricity&#xA0; generation from renewables or nuclear power, we&#x2019;re measuring the direct&#xA0; <em>output</em>, with no losses or waste to consider.</p>
+
+
+
+<p>Let&#x2019;s take an example &#x2013; shown in the graphic here. Imagine we have a country that needs 100 terawatt-hours (TWh) of energy. We have three different energy mixes: only fossil fuels; only renewable or nuclear energy; and a mix of both.&#xA0;</p>
+
+
+
+<ol><li>If we only rely on <strong>fossil fuels</strong> we need 263 TWh of energy input. This is because only around 38% of these inputs are converted into &#x2018;useful&#x2019; energy.<a id="ref-13" class="ref" href="#note-13"><sup>13</sup></a> 163 TWh is energy lost as heat.</li><li><strong>If we only rely on either renewable or nuclear energy</strong> these losses do not occur &#x2013; the quantity of electricity generated is the same quantity we can use. So we only need 100 TWh.</li><li><strong><strong>If we rely on renewables/nuclear and fossil fuels</strong> it depends on the mix: </strong>let&#x2019;s say we produce 50 TWh from renewables or nuclear sources. We need another 50 TWh from fossil fuels. But to produce the additional 50 TWh from fossil fuels, we actually need 132 TWh, because we lose 82 TWh as heat <em>[50 TWh / 0.38 = 132 TWh]</em>. Combined, we need 182 TWh of energy input <em>[50 TWh from renewables/nuclear + 50 TWh &#x2018;useful&#x2019; fossil fuel energy + 82 TWh wasted]</em>.</li></ol>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-800x500.png" alt="Three scenarios to supply 100twh of energy" class="wp-image-36081" srcset="https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-800x500.png 800w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-400x250.png 400w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-150x94.png 150w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-768x480.png 768w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-1536x961.png 1536w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy.png 1765w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy.png" loading="lazy"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Based on this example we can understand the difference between direct primary energy and the substitution method.&#xA0;</p>
+
+
+
+<p>Let&#x2019;s take the third scenario &#x2013; a mixture of fossil fuels and low-carbon energy &#x2013; and see how the low-carbon share differs between the two methods. This is shown in the figure.</p>
+
+
+
+<p>From the direct method we get 50 TWh / 182 TWh = 27%. From the substitution&#xA0; method we get 50 TWh / 100 TWh = 50%.</p>
+
+
+
+<p>I find it helpful to think of the distinction as:</p>
+
+
+
+<ul><li>Low-carbon&#x2019;s share in <strong>direct primary energy</strong> = % of <strong>total primary energy</strong> consumption (including all of the inefficiencies of fossil fuel production)</li></ul>
+
+
+
+<ul><li>Low carbon&#x2019;s share in <strong>substituted primary energy = </strong>% of <strong>useful energy </strong>(once we subtract all of the wasted energy in the burning of fossil fuels)</li></ul>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-800x490.png" alt="How are energy mixes calculated" class="wp-image-36082" srcset="https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-800x490.png 800w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-400x245.png 400w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-150x92.png 150w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-768x470.png 768w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-1536x941.png 1536w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated.png 1763w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated.png" loading="lazy"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-effect-does-our-choice-of-accounting-method-have-on-the-breakdown-of-the-global-energy-mix"><a class="deep-link" href="#what-effect-does-our-choice-of-accounting-method-have-on-the-breakdown-of-the-global-energy-mix"></a>What effect does our choice of accounting method have on the breakdown of the global energy mix?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>A question many want the answer to is, how much of our energy comes from low-carbon sources? How close are we to getting rid of fossil fuels?</p>
+
+
+
+<p>As we now know, it depends on whether we&#x2019;re using the direct or substitution method. In the chart here we show the breakdown of the global primary energy mix in 2019 to compare the two methods.<a id="ref-14" class="ref" href="#note-14"><sup>14</sup></a></p>
+
+
+
+<p>As we should expect from the example we worked through, when we calculate the share of energy from low-carbon sources via the substitution method we get a higher figure: 16% vs. only 7% from the direct method. When we strip away the differences in efficiencies between the sources, both renewables and nuclear make a larger contribution.&#xA0;</p>
+
+
+
+<p>In the interactive charts you can also compare each source&#x2019;s share of energy based on the two methods. Using the &#x201C;change country&#x201D; button in the bottom-left of each chart, you can also see this for different countries.</p>
+
+
+
+<p>Most sources tend to prefer and report on the substitution method (or a similar approach &#x2013; the &#x2018;physical content&#x2019; method &#x2013; which we don&#x2019;t discuss here but which gives similar results) rather than the direct method. The substitution method is also the preferred approach of the <em>Intergovernmental Panel on Climate Change (IPCC)</em>, for example.<a id="ref-15" class="ref" href="#note-15"><sup>15</sup></a></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-800x426.png" alt="Global primary energy breakdown &#x2013; sub vs. direct" class="wp-image-35641" srcset="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-800x426.png 800w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-400x213.png 400w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-150x80.png 150w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-768x409.png 768w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-1536x817.png 1536w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-2048x1090.png 2048w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct.png" loading="lazy"></figure>
+</div>
+</div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-of-primary-energy-consumption-by-source" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-of-primary-energy-consumption-by-source" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-of-primary-energy-consumption-by-source_v10_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share of primary energy consumption by source v10 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-energy-source-sub" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-energy-source-sub" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-energy-source-sub_v10_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share energy source sub v10 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-we-convert-from-direct-to-substituted-primary-energy"><a class="deep-link" href="#how-do-we-convert-from-direct-to-substituted-primary-energy"></a>How do we convert from direct to substituted primary energy?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>At Our World in Data we get most of our energy data from BP; each year it publishes its <em>Statistical Review of World Energy </em>report. It applies the substitution method to its primary energy data <em>[you can read its methodology </em><a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/using-the-review/methodology.html#accordion_primary-energy-methodology"><strong><em>here</em></strong></a><em>]</em>.</p>
+
+
+
+<p>How does it convert from direct primary energy &#x2013; that we can measure &#x2013; into the substitution breakdown?&#xA0;</p>
+
+
+
+<p>In the schematic explanation above, we looked at calculating the share of energy from low-carbon energy sources by comparing it with the amount of useful energy (subtracting the wasted energy) from fossil fuels.</p>
+
+
+
+<p>But we can also do the opposite of this to get the same result. In fact, this inverse approach is what is most commonly applied by BP and others who use the &#x2018;substitution method&#x2019;. So, instead of assuming fossil fuels have the same efficiency as renewables/nuclear, we do the opposite: we assume renewables/nuclear are as inefficient as fossil fuels. We calculate the equivalent amount of fossil fuels that would be required to produce the amount of electricity we get from non-fossil based sources.</p>
+
+
+
+<p>So, let&#x2019;s say we produce 100 TWh of electricity from wind. And we assume the efficiency of a fossil fuel plant is 38%. We would convert this wind electricity into &#x2018;input-equivalent&#x2019; primary energy by dividing by this efficiency <em>[100 / 0.38 = 263 TWh]</em>. This would be the amount of primary energy that would be required from fossil fuels to produce the same amount of electricity as wind.</p>
+
+
+
+<p>We should note that this conversion is used as an approximation &#x2013; a standard &#x2018;efficiency&#x2019; factor is applied across-the-board. But we know that some power plants have a slightly lower or higher efficiency and it can change over time. In fact, BP changed its methodology in its 2020 assessment to reflect this change over time. Previously it assumed a 38% efficiency factor consistently. But it now applies a &#x2018;time-dependent&#x2019; model to build in improvements over time. Changes in this conversion factor are summarised in the table below.<br>The substitution method gives us a more accurate understanding of how low-carbon energy is competing with fossil fuels. For this reason: when we look at the breakdowns of energy mix on <em>Our World in Data</em> we have tried wherever possible to use primary energy measured by the substitution method.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<h6>Conversion factors applied in converting renewable and nuclear electricity outputs to primary energy<a id="ref-16" class="ref" href="#note-16"><sup>16</sup></a></h6>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-551x550.png" alt="Bp primary energy conversion factors" class="wp-image-36086" srcset="https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-551x550.png 551w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-400x400.png 400w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-150x150.png 150w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-768x766.png 768w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors.png 770w" sizes="(max-width: 551px) 100vw, 551px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors.png" loading="lazy"></figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Vaclav Smil (2017). <a href="http://vaclavsmil.com/2016/12/14/energy-transitions-global-and-national-perspectives-second-expanded-and-updated-edition/">Energy Transitions: Global and National Perspectives</a>.</p></li><li id="note-2"><p>The remaining quarter comes from industrial processes (such as cement production), agriculture, land use change and waste.</p></li><li id="note-3"><p> This is based on primary energy data published annually in BP’s <a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html">Statistical Review of World Energy</a>.</p></li><li id="note-4"><p>Krey V., O. Masera, G. Blanford, T. Bruckner, R. Cooke, K. Fisher-Vanden, H. Haberl, E. Hertwich, E. Kriegler, D. Mueller, S. Paltsev, L. Price, S. Schlömer, D. Ürge-Vorsatz, D. van Vuuren, and T. Zwickel, 2014: <a href="https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-ii.pdf">Annex II: Metrics &amp; Methodology</a>. In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.</p></li><li id="note-5"><p>The emissions from these sources are not necessarily zero – the mining of materials, production, maintenance and decommissioning of these technologies may produce some carbon, but per unit of&nbsp; energy this is&nbsp; very small relative to fossil fuels.<br><br>Schlömer S., T. Bruckner, L. Fulton, E. Hertwich, A. McKinnon, D. Perczyk, J. Roy, R. Schaeffer, R. Sims, P. Smith, and R. Wiser, 2014: <a href="https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf">Annex III: Technology-specific cost and performance parameters. In: Climate Change 2014: Mitigation of Climate Change</a>. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.</p></li><li id="note-6"><p>This breakdown of primary energy is based on the ‘substitution method’ which corrects for the inefficiencies in energy production from fossil fuels, and is a better representation of low-carbon energy’s share of ‘useful energy’. For an in-depth discussion and comparison of different ways of accounting for energy production, see <a href="https://docs.google.com/document/d/1t2COQwSVDWUke7LvowS-LbKXMpdONaVBODA7J06_tCc/edit?pli=1#heading=h.idazbut3mtx6"><strong>our explainer</strong></a>.</p></li><li id="note-7"><p>In <a href="https://ourworldindata.org/grapher/share-of-low-carbon-energy-vs-gdp">this related chart</a> you can see how the share of primary energy from low-carbon sources relates to average income – GDP per capita. This relationship is by no means clear-cut: many rich countries get very little energy from low-carbon sources; and poorer countries get a high share. But overall we see that more rich countries tend to lie above the dotted global average line than countries at lower incomes.</p></li><li id="note-8"><p>This breakdown of primary energy is based on the ‘substitution method’ which corrects for the inefficiencies in energy production from fossil fuels, and is a better representation of low-carbon energy’s share of ‘useful energy’. For an in-depth discussion and comparison of different ways of accounting for energy production, see <a href="https://docs.google.com/document/d/1t2COQwSVDWUke7LvowS-LbKXMpdONaVBODA7J06_tCc/edit?pli=1#heading=h.idazbut3mtx6"><strong>our explainer</strong></a>.</p></li><li id="note-9"><p>The remaining quarter comes from industrial processes (mainly cement production), agriculture, land use change and waste.</p></li><li id="note-10"><p>This is even clearer when we <a href="https://ourworldindata.org/grapher/nuclear-renewables-electricity">focus in on</a> global <em>electricity</em> production: nuclear declined by almost as much as renewables gained.</p></li><li id="note-11"><p>This is also very clear when we look at the <a href="https://ourworldindata.org/grapher/annual-primary-energy-fossil-vs-low-carbon">year-on-year <em>change</em></a> in energy consumption by source; this is calculated as the amount of energy produced this year relative to the last, so a positive number means that source is growing; a negative means it decreased. <em>[If you click&nbsp; the ‘play’ button on the bottom timeline of the </em><a href="https://ourworldindata.org/grapher/annual-primary-energy-fossil-vs-low-carbon"><em>year-on-year change</em></a><em> chart you can see how fossil fuel consumption continues to grow each year].</em></p></li><li id="note-12"><p>This can vary from plant-to-plant, and by fuel type. We look in more detail at the assumed efficiencies of power plants later.</p></li><li id="note-13"><p>We can calculate this by dividing our 100 TWh demand by 0.38.</p></li><li id="note-14"><p>This is based on data from the <em>BP Statistical Review of World Energy</em>; it considers only commercially-traded fuels, so traditional biomass is not included.</p></li><li id="note-15"><p>Krey V., O. Masera, G. Blanford, T. Bruckner, R. Cooke, K. Fisher-Vanden, H. Haberl, E. Hertwich, E. Kriegler, D. Mueller, S. Paltsev, L. Price, S. Schlömer, D. Ürge-Vorsatz, D. van Vuuren, and T. Zwickel, 2014: <a href="https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-ii.pdf">Annex II: Metrics &amp; Methodology</a>. In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.</p></li><li id="note-16"><p>BP Statistical Review of World Energy, <em><a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/using-the-review/definitions-and-explanatory-notes.html">Definitions and Exploratory Notes</a></em> (2020)</p></li></ol></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=34888&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/supporters" data-track-note="footer-navigation">Supporters</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All of Our World in Data is completely open access and all work is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce in any medium, provided the source and authors are credited.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookieNotice();
+                runCovid();
+                runFootnotes();
+                if (!document.querySelector(".ChartPage")) {
+                    Grapher.embedAll();
+                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[{"text":"Global primary energy: how has the mix changed over centuries?","slug":"global-primary-energy-how-has-the-mix-changed-over-centuries","isSubheading":false},{"text":"Energy mix: what sources do we get our energy from?","slug":"energy-mix-what-sources-do-we-get-our-energy-from","isSubheading":false},{"text":"How much of global energy comes from low-carbon sources?","slug":"how-much-of-global-energy-comes-from-low-carbon-sources","isSubheading":false},{"text":"Which countries get the most energy from low-carbon sources?","slug":"which-countries-get-the-most-energy-from-low-carbon-sources","isSubheading":false},{"text":"Is the world making progress in decarbonizing energy?","slug":"is-the-world-making-progress-in-decarbonizing-energy","isSubheading":false},{"text":"Energy consumption by source","slug":"energy-consumption-by-source","isSubheading":false},{"text":"Fossil fuels: what share of energy comes from fossil fuels?","html":"<strong>Fossil fuels:</strong> what share of energy comes from fossil fuels?","slug":"fossil-fuels-what-share-of-energy-comes-from-fossil-fuels","isSubheading":true},{"text":"Coal: what share of energy comes from coal?","html":"<strong>Coal:</strong> what share of energy comes from coal?","slug":"coal-what-share-of-energy-comes-from-coal","isSubheading":true},{"text":"Oil: what share of energy comes from oil?","html":"<strong>Oil:</strong> what share of energy comes from oil?","slug":"oil-what-share-of-energy-comes-from-oil","isSubheading":true},{"text":"Gas: what share of energy comes from gas?","html":"<strong>Gas:</strong> what share of energy comes from gas?","slug":"gas-what-share-of-energy-comes-from-gas","isSubheading":true},{"text":"Nuclear: what share of energy comes from nuclear?","html":"<strong>Nuclear:</strong> what share of energy comes from nuclear?","slug":"nuclear-what-share-of-energy-comes-from-nuclear","isSubheading":true},{"text":"Renewables: how much of our energy comes from renewables?","html":"<strong>Renewables:</strong> how much of our energy comes from renewables?","slug":"renewables-how-much-of-our-energy-comes-from-renewables","isSubheading":true},{"text":"Hydropower: what share of energy comes from hydropower?","html":"<strong>Hydropower:</strong> what share of energy comes from hydropower?","slug":"hydropower-what-share-of-energy-comes-from-hydropower","isSubheading":true},{"text":"Solar: what share of energy comes from solar?","html":"<strong>Solar:</strong> what share of energy comes from solar?","slug":"solar-what-share-of-energy-comes-from-solar","isSubheading":true},{"text":"Wind: what share of energy comes from wind?","html":"<strong>Wind:</strong> what share of energy comes from wind?","slug":"wind-what-share-of-energy-comes-from-wind","isSubheading":true},{"text":"Year-to-year change: how is energy consumption by source changing?","slug":"year-to-year-change-how-is-energy-consumption-by-source-changing","isSubheading":false},{"text":"Direct vs. substituted primary energy: what are the multiple ways of energy accounting?","slug":"direct-vs-substituted-primary-energy-what-are-the-multiple-ways-of-energy-accounting","isSubheading":false},{"text":"Endnotes","slug":"endnotes","isSubheading":false}],"pageTitle":"Energy mix"})
+                        runRelatedCharts([])
+                        </script></body></html>

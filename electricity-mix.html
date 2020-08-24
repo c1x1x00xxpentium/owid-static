@@ -1,0 +1,715 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Electricity Mix - Our World in Data</title><meta name="description" content="Electricity is one of three components that make up total energy production. The other two are transport and heating."/><link rel="canonical" href="https://ourworldindata.org/electricity-mix"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/electricity-mix"/><meta property="og:title" content="Electricity Mix"/><meta property="og:description" content="Electricity is one of three components that make up total energy production. The other two are transport and heating."/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Electricity Mix"/><meta name="twitter:description" content="Electricity is one of three components that make up total energy production. The other two are transport and heating."/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page with-sidebar large-banner"><div class="offset-header"><header class="article-header"><h1 class="entry-title"><span>Electricity Mix</span></h1><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div></header></div><div class="offset-subnavigation"><div class="site-subnavigation"><div class="site-subnavigation-scroll"><ul class="site-subnavigation-links"><li class=""><a href="/energy" data-track-note="energy-subnav-energy">Energy<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></a></li><li class="highlight"><a href="/energy#energy-country-profiles" data-track-note="energy-subnav-by-country">By country</a></li><li class=""><a href="/explorers/energy" data-track-note="energy-subnav-energy-data-explorer">Data explorer</a></li><li class=""><a href="/energy-access" data-track-note="energy-subnav-energy-access">Energy access</a></li><li class=""><a href="/energy-production-consumption" data-track-note="energy-subnav-production-consumption">Production &amp; Consumption</a></li><li class=""><a href="/energy-mix" data-track-note="energy-subnav-energy-mix">Energy mix</a></li><li class="current"><a href="/electricity-mix" data-track-note="energy-subnav-electricity-mix">Electricity mix</a></li><li class=""><a href="/fossil-fuels" data-track-note="energy-subnav-fossil-fuels">Fossil fuels</a></li><li class=""><a href="/renewable-energy" data-track-note="energy-subnav-renewable-energy">Renewables</a></li><li class=""><a href="/nuclear-energy" data-track-note="energy-subnav-nuclear-energy">Nuclear</a></li></ul></div></div></div><div class="content-wrapper"><div><aside class="entry-sidebar"><div class="sticky-sentinel"></div><nav class="entry-toc"><ul><li><a href="#">Electricity Mix</a></li><li class="section"><a href="#electricity-is-only-one-part-of-total-energy-decarbonizing-electricity-is-only-one-step-towards-a-low-carbon-energy-system">Electricity is only one part of total energy – decarbonizing electricity is only one step towards a low-carbon energy system</a></li><li class="section"><a href="#where-does-our-electricity-come-from">Where does our electricity come from?</a></li><li class="section"><a href="#how-much-of-our-electricity-comes-from-low-carbon-sources">How much of our electricity comes from low-carbon sources?</a></li><li class="section"><a href="#electricity-production-by-source">Electricity production by source</a></li><li class="subsection"><a href="#fossil-fuels-what-share-of-electricity-comes-from-fossil-fuels">Fossil fuels: what share of electricity comes from fossil fuels?</a></li><li class="subsection"><a href="#coal-what-share-of-electricity-comes-from-coal">Coal: what share of electricity comes from coal?</a></li><li class="subsection"><a href="#gas-what-share-of-electricity-comes-from-gas">Gas: what share of electricity comes from gas?</a></li><li class="subsection"><a href="#nuclear-what-share-of-electricity-comes-from-nuclear">Nuclear: what share of electricity comes from nuclear?</a></li><li class="subsection"><a href="#renewables-what-share-of-electricity-comes-from-renewables">Renewables: what share of electricity comes from renewables?</a></li><li class="subsection"><a href="#hydropower-what-share-of-electricity-comes-from-hydropower">Hydropower: what share of electricity comes from hydropower?</a></li><li class="subsection"><a href="#solar-what-share-of-electricity-comes-from-solar">Solar: what share of electricity comes from solar?</a></li><li class="subsection"><a href="#wind-what-share-of-electricity-comes-from-wind">Wind: what share of electricity comes from wind?</a></li><li class="section"><a href="#endnotes">Endnotes</a></li></ul></nav><div class="toggle-toc"><button data-track-note="page-toggle-toc" aria-label="Open table of contents"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-alt" class="svg-inline--fa fa-list-alt fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z"></path></svg></button></div></aside></div><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Electricity is one of three components that make up total energy production. The other two are transport and heating.</p><p>As we look at in more detail in this article, the breakdown of sources &#x2013; coal, oil, gas, nuclear and renewables &#x2013; is therefore different in the electricity versus the energy mix. Generally, low-carbon sources (nuclear and renewables) account for a larger share in our electricity mix than our total energy mix.</p><p>This means it&#x2019;s important to distinguish between the two. In another page we provide the full breakdown of the <em><a href="https://ourworldindata.org/energy-mix">Energy Mix</a></em>. But in this article we focus on the <em>Electricity Mix</em>.</p><p>Where do we get our electricity from? Which countries have the cleanest electricity grids? In this article we look at the breakdown across the world.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="electricity-is-only-one-part-of-total-energy-decarbonizing-electricity-is-only-one-step-towards-a-low-carbon-energy-system"><a class="deep-link" href="#electricity-is-only-one-part-of-total-energy-decarbonizing-electricity-is-only-one-step-towards-a-low-carbon-energy-system"></a>Electricity is only one part of total energy &#x2013; decarbonizing electricity is only one step towards a low-carbon energy system</h2></div></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Solar and wind generation are growing quickly across the world. This is, of course, good news as we try to shift our energy systems away from fossil fuels.</p>
+
+
+
+<p>Such progress often makes the headlines. Here is one example from this year:</p>
+
+
+
+<p>&#x2192; <a href="https://www.independent.co.uk/environment/clean-energy-fossil-fuels-national-grid-2019-statistics-latest-a9266116.htmlhttps://www.independent.co.uk/environment/clean-energy-fossil-fuels-national-grid-2019-statistics-latest-a9266116.html">More UK energy is coming from clean sources than fossil fuels for the first time ever, National Grid announces</a> <em>(Independent, 2020)</em></p>
+
+
+
+<p>At first glance, we might think that we are edging close to a fossil-free energy system.&#xA0;</p>
+
+
+
+<p>Unfortunately, many of&#xA0; these headlines are misleading.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> &#xA0;The Independent made the mistake of using the terms <em>electricity</em> and <em>energy</em> interchangeably, when they are actually not the same thing.&#xA0;</p>
+
+
+
+<p>Electricity (or &#x2018;power&#x2019;) is just one component of total energy consumption. The other two components being transport and heating.</p>
+
+
+
+<p>When we see headlines about our progress on decarbonization, the quoted figures often refer to electricity. Many countries are making progress on clean electricity, but progress on energy as a whole is much slower.</p>
+
+
+
+<p>Let&#x2019;s compare the breakdown of the global energy and electricity mix &#x2013; these are shown in the chart.&#xA0;</p>
+
+
+
+<p>We see a large difference between the share that comes from low-carbon sources. Nuclear and renewables account for more than one-third (36.7%) of global <em>electricity</em>. But they account for less than half that figure (15.7%) of the global <em>energy</em> mix. This is because the other elements of the energy demand &#x2013; transport and heating &#x2013; rely much more heavily on fossil fuels.</p>
+
+
+
+<p>But there is another aspect to consider. The fact that transport and heating are harder to decarbonize, clean electricity will become ever-more important. Many solutions rely on us electrifying other parts of the energy system &#x2013; such as shifting to electric vehicles. The <em>International Energy Agency</em>, for example, <a href="https://www.iea.org/reports/global-ev-outlook-2020">projects that by 2030</a>, global electricity demand for electric vehicles will increase five- to eleven-fold from levels in 2019. If we are to reap the climate benefits of electric vehicles, this electricity needs to be as low-carbon as possible.</p>
+
+
+
+<p>But when we see headlines on progress in decarbonizing the electricity sector we need to remember that it is just one part of the energy story. If we don&#x2019;t, we risk falling into a false sense of progress and let leaders, governments and companies boast targets that are not nearly ambitious enough.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown-800x423.png" alt="Global energy vs. electricity breakdown" class="wp-image-35659" srcset="https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown-800x423.png 800w, https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown-400x211.png 400w, https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown-150x79.png 150w, https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown-768x406.png 768w, https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown-1536x812.png 1536w, https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown-2048x1082.png 2048w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/Global-energy-vs.-electricity-breakdown.png" loading="lazy"></figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="where-does-our-electricity-come-from"><a class="deep-link" href="#where-does-our-electricity-come-from"></a>Where does our electricity come from?</h2></div></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>What sources make up our electricity mix? How much comes from coal, oil, gas, and how much from nuclear, hydropower, solar or wind?</p>
+
+
+
+<p>In the interactive charts shown here we see the breakdown of the electricity mix by source. </p>
+
+
+
+<p>The stacked area chart shows electricity production in absolute terms. It allows you see how these sources sum up. The line chart shows each source&#x2019;s <em>share</em> of the total, and gives a better perspective on how each is changing over time. </p>
+
+
+
+<p>Globally we see that coal, followed by gas, is the largest source of electricity production. Of the low-carbon sources, hydropower and nuclear make the largest contribution; although wind and solar are growing quickly. </p>
+
+
+
+<p>If we look at the electricity mix of particular countries <em>[you can do this using the &#x201C;Change country&#x201D; button on the bottom-left of the chart]</em> we can see dramatic changes in over time. Take the UK as an example: there <a href="https://ourworldindata.org/grapher/electricity-production-by-source?country=~GBR">we see a dramatic decline</a> in the role of coal in its electricity mix. In the late 1980s, coal account for more than 60% of electricity production. By 2019 this had fallen to 2%.</p>
+</div>
+
+
+
+<div class="wp-block-column">	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="how-you-can-interact-with-these-charts">How you can interact with these charts</h4><div class="content">
+
+
+
+
+
+<ul><li>On these charts you see the button <strong>Change Country </strong>in the bottom left corner &#x2013; with this option you can switch the chart to any other country in the world.</li><li>By ticking the &#x2018;Relative&#x2019; box in the bottom left corner of the stacked area chart you can switch to see each source&#x2019;s share of the total.</li></ul>
+
+
+
+
+
+</div></div></div></div>
+</div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/electricity-prod-source-stacked" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/electricity-prod-source-stacked" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/electricity-prod-source-stacked_v7_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Electricity prod source stacked v7 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image">
+        <a href="https://ourworldindata.org/grapher/electricity-production-by-source" target="_blank">
+          <figure><img src="/grapher/exports/electricity-production-by-source.svg" alt="Electricity production by source" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>See the breakdown of electricity production by source, shown as a line chart.</p>
+
+
+            </div>
+            <div class="title">Electricity production by source [as a line chart]<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-elec-by-source" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-elec-by-source" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-elec-by-source_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share elec by source v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="how-much-of-our-electricity-comes-from-low-carbon-sources"><a class="deep-link" href="#how-much-of-our-electricity-comes-from-low-carbon-sources"></a>How much of our electricity comes from low-carbon sources?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Around 16% of global <em>energy</em> (15.7% to be precise) comes from low-carbon sources &#x2013; that is, the sum of nuclear energy and renewables.</p><p>But energy and electricity are not the same &#x2013; despite the fact that many people use these terms interchangeably. Electricity (sometimes referred to as &#x2018;power&#x2019;) is only a subset of total energy production, which also includes heating and transport.</p><p>How much of our electricity comes from low-carbon sources?</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="37-of-global-electricity-production-comes-from-low-carbon-sources"><a class="deep-link" href="#37-of-global-electricity-production-comes-from-low-carbon-sources"></a>37% of global electricity production comes from low-carbon sources</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>In the chart we see the percentage of global electricity production that comes from nuclear or renewable energy, such as solar, wind,&#xA0; hydropower, wind and tidal and some biomass.&#xA0;</p><p>Globally, 36.7% of our electricity was low-carbon in 2019. More than one-third. The remaining two-thirds come from fossil fuels &#x2013; mostly coal and gas.</p><p>This is more than double the share in the total energy mix, where nuclear and&#xA0; renewables only account for 15.7%. We looked at the comparison of the global <em>energy</em> and <em>electricity</em> mix <strong>here</strong>. When people quote a high number for the share of low-carbon energy in the electricity mix we need to be aware of the fact that electricity is only part of the energy equation. The share in the total energy mix is much smaller.</p><p>Disappointingly, the percentage of electricity that comes from low-carbon sources today is almost unchanged from the mid-1980s. In fact, throughout the early-2000s this share actually regressed. In the following section we will see that progress was slow because nuclear output declined at a time when renewables have been growing.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-low-carbon?tab=chart&amp;country=~OWID_WRL" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-low-carbon?tab=chart&amp;country=~OWID_WRL" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-low-carbon-da8ccccaf5fc9d6bab92c3527f0cc596_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity low carbon da8ccccaf5fc9d6bab92c3527f0cc596 v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="low-carbon-electricity-around-26-of-global-electricity-comes-from-renewables-and-10-from-nuclear"><a class="deep-link" href="#low-carbon-electricity-around-26-of-global-electricity-comes-from-renewables-and-10-from-nuclear"></a>Low-carbon electricity: around 26% of global electricity comes from renewables, and 10% from nuclear</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>What is the breakdown of our electricity supply in terms of fossil fuels, renewable energy and nuclear power?</p>
+
+
+
+<p>In 2019, almost two-thirds (63.3%) of global electricity came from fossil fuels. Of the 36.7% from low-carbon sources, renewables accounted for 26.3% and nuclear energy for 10.4%.</p>
+
+
+
+<p>As we noted earlier, the relative contribution of fossil fuels and low-carbon electricity has been pretty stagnant for decades. In fact, in the early 2000s, fossil fuels even gained ground. Over this period, nuclear&#x2019;s share declined whilst renewables grew. We see this in the chart. The progress made in renewables has been offset by a decline in nuclear energy; nuclear declined by almost as much as renewables gained.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/nuclear-renewables-electricity" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/nuclear-renewables-electricity" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/nuclear-renewables-electricity_v10_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Nuclear renewables electricity v10 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image">
+        <a href="https://ourworldindata.org/grapher/elec-fossil-nuclear-renewables" target="_blank">
+          <figure><img src="/grapher/exports/elec-fossil-nuclear-renewables.svg" alt="Elec fossil nuclear renewables" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>What share of primary energy comes from fossil fuels, nuclear and renewables? See the breakdown.</p>
+
+
+            </div>
+            <div class="title">Energy breakdown from fossil fuels, nuclear and renewables<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="some-countries-get-most-of-their-electricity-from-low-carbon-sources"><a class="deep-link" href="#some-countries-get-most-of-their-electricity-from-low-carbon-sources"></a>Some countries get most of their electricity from low-carbon sources</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Globally we get just over one-third of our electricity from low-carbon sources. But some countries get much more &#x2013; some nearly all of it &#x2013; from fossil-free sources.</p><p>In the interactive map shown we see this share across the world. Some countries get over 90% of their electricity from nuclear or renewables &#x2013; Sweden, Norway, France, Paraguay, Iceland, and Nepal, among others.&#xA0;</p><p>You can explore the electricity mix &#x2013; broken down by individual source &#x2013; for countries in our work here. Nearly all of these countries have one thing in common: they get a lot of electricity from hydropower and/or nuclear energy. Solar, wind and other renewable technologies are growing quickly and will hopefully account for a large share of electricity production in the future &#x2013; but the countries who have a low-carbon electricity mix today have relied heavily on hydroelectric and nuclear power in recent years.</p><p>We must take these country-level examples and learn from them. In the years to come, accelerating the transition to clean electricity will become ever-more important as we electrify other parts of the energy system too (shifting to electric vehicles, for example). We will need to rely on low-carbon electricity, and lots of it.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-low-carbon" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-low-carbon" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-low-carbon_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity low carbon v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="electricity-production-by-source"><a class="deep-link" href="#electricity-production-by-source"></a>Electricity production by source</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#fossil-fuels-what-share-of-electricity-comes-from-fossil-fuels"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Fossil fuels:</strong> what share of electricity comes from fossil fuels?</span></a></li><li><a href="#coal-what-share-of-electricity-comes-from-coal"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Coal:</strong> what share of electricity comes from coal?</span></a></li><li><a href="#gas-what-share-of-electricity-comes-from-gas"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Gas:</strong> what share of electricity comes from gas?</span></a></li><li><a href="#nuclear-what-share-of-electricity-comes-from-nuclear"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Nuclear:</strong> what share of electricity comes from nuclear?</span></a></li><li><a href="#renewables-what-share-of-electricity-comes-from-renewables"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Renewables:</strong> what share of electricity comes from renewables?</span></a></li><li><a href="#hydropower-what-share-of-electricity-comes-from-hydropower"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Hydropower:</strong> what share of electricity comes from hydropower?</span></a></li><li><a href="#solar-what-share-of-electricity-comes-from-solar"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Solar:</strong> what share of electricity comes from solar?</span></a></li><li><a href="#wind-what-share-of-electricity-comes-from-wind"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span><strong>Wind:</strong> what share of electricity comes from wind?</span></a></li></ul></div></div><h3 id="fossil-fuels-what-share-of-electricity-comes-from-fossil-fuels"><a class="deep-link" href="#fossil-fuels-what-share-of-electricity-comes-from-fossil-fuels"></a><strong>Fossil fuels:</strong> what share of electricity comes from fossil fuels?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-fossil-fuels" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-fossil-fuels" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-fossil-fuels_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity fossil fuels v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related content:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/fossil-fuels">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>Explore our work on Fossil Fuels.</p>
+
+
+            </div>
+            <div class="title">Fossil fuels<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Fossil fuels are the sum of coal, oil and gas. Combined, they are the largest source of global emissions of carbon dioxide (CO<sub>2</sub>). We therefore need to transition away from them.</p>
+
+
+
+<p>This interactive map shows the share of electricity that comes from fossil fuels (coal, oil and gas summed together) across the world. Oil accounts for only a small share of electricity production  &#x2013; most come from coal and gas. The share from coal and gas individually can be found in the sections below.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="three-tips-on-how-to-interact-with-this-map">Three tips on how to interact with this map</h4><div class="content">
+
+
+
+
+
+<ul><li>By clicking on any country on the map you see the change over time in this country.</li><li>By moving the time slider (below the map) you can see how the global situation has changed over time.</li><li>You can focus on a particular world region using the dropdown menu to the top-right of the map.</li></ul>
+
+</div></div></div>
+
+
+
+</div>
+</div><h3 id="coal-what-share-of-electricity-comes-from-coal"><a class="deep-link" href="#coal-what-share-of-electricity-comes-from-coal"></a><strong>Coal:</strong> what share of electricity comes from coal?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-coal" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-coal" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-coal_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity coal v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p>Coal is currently the largest source of electricity globally. For many countries remains the dominant source. But, we also see that others have seen a massive shift away from coal in recent years &#x2013; the UK is <a href="https://ourworldindata.org/death-uk-coal">one such example</a>.</p>
+
+
+
+<p>This interactive map shows the share of electricity that comes from coal across the world.</p>
+</div>
+</div><h3 id="gas-what-share-of-electricity-comes-from-gas"><a class="deep-link" href="#gas-what-share-of-electricity-comes-from-gas"></a><strong>Gas:</strong> what share of electricity comes from gas?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-gas" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-gas" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-gas_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity gas v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+
+</div>
+
+
+
+<div class="wp-block-column">
+<p>Gas is now the second largest source of electricity production globally. </p>
+
+
+
+<p>Its contribution is growing quickly in many countries as they substitute it for coal in the electricity mix. From a climate perspective, this transition is positive since gas typically <a href="https://ourworldindata.org/grapher/carbon-dioxide-emissions-factor">emits less CO<sub>2</sub></a> per unit of energy. But, we still ultimately want to shift away from gas towards low-carbon sources such as renewables and nuclear.</p>
+
+
+
+<p>This interactive map shows the share of electricity that comes from gas across the world.</p>
+</div>
+</div><h3 id="nuclear-what-share-of-electricity-comes-from-nuclear"><a class="deep-link" href="#nuclear-what-share-of-electricity-comes-from-nuclear"></a><strong>Nuclear:</strong> what share of electricity comes from nuclear?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-nuclear" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-nuclear" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-nuclear_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity nuclear v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related content:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/nuclear-energy">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>Explore our work on Nuclear Energy.</p>
+
+
+            </div>
+            <div class="title">Nuclear energy<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>Nuclear has played a key role in low-carbon electricity production for decades. In some countries it is one of &#x2013; if not, the single &#x2013; largest source of electricity. </p>
+
+
+
+<p>For example, France gets more than 70% of its electricity from nuclear power. </p>
+
+
+
+<p>This interactive map shows the share of electricity that comes from gas across the world.</p>
+
+
+
+<p>By clicking on a given country you can see how this share has changed over time. In some countries we see a dramatic decline in nuclear&#x2019;s role as plants have been taken offline. Japan is an <a href="https://ourworldindata.org/grapher/share-electricity-nuclear?tab=chart&amp;country=~JPN">obvious example</a> of this.</p>
+</div>
+</div><h3 id="renewables-what-share-of-electricity-comes-from-renewables"><a class="deep-link" href="#renewables-what-share-of-electricity-comes-from-renewables"></a><strong>Renewables:</strong> what share of electricity comes from renewables?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-renewables" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-renewables" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-renewables_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity renewables v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related content:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin">
+        <a href="https://ourworldindata.org/renewable-energy">
+          
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+<p>Explore our work on Renewable Energy.</p>
+
+
+            </div>
+            <div class="title">Renewable energy<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+
+
+
+<div class="wp-block-column">
+<p>&#x2018;Renewables&#x2019; combines multiple electricity sources, including hydropower, solar, wind, geothermal, biomass and wave and tidal.</p>
+
+
+
+<p>This interactive map shows the share of electricity that comes from renewables (the sum of all renewable energy technologies) across the world.</p>
+
+
+
+<p>The share of electricity we get from individual renewable technologies &#x2013; solar, or wind, for example &#x2013; are given in the sections below.</p>
+</div>
+</div><h3 id="hydropower-what-share-of-electricity-comes-from-hydropower"><a class="deep-link" href="#hydropower-what-share-of-electricity-comes-from-hydropower"></a><strong>Hydropower:</strong> what share of electricity comes from hydropower?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-hydro" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-hydro" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-hydro_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity hydro v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p>Hydropower makes a large contribution to low-carbon electricity across the world. Globally it accounts for around 17% of production.</p>
+
+
+
+<p>This interactive map shows the share of electricity that comes from hydropower across the world.</p>
+</div>
+</div><h3 id="solar-what-share-of-electricity-comes-from-solar"><a class="deep-link" href="#solar-what-share-of-electricity-comes-from-solar"></a><strong>Solar:</strong> what share of electricity comes from solar?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-solar" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-solar" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-solar_v6_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity solar v6 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p>This interactive map shows the share of electricity that comes from solar power across the world.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="electricity-production-by-source-three-tips-on-how-to-interact-with-this-map">Three tips on how to interact with this map</h4><div class="content">
+
+
+
+
+
+<ul><li>By clicking on any country on the map you see the change over time in this country.</li><li>By moving the time slider (below the map) you can see how the global situation has changed over time.</li><li>You can focus on a particular world region using the dropdown menu to the top-right of the map.</li></ul>
+
+
+
+
+
+</div></div></div></div>
+</div><h3 id="wind-what-share-of-electricity-comes-from-wind"><a class="deep-link" href="#wind-what-share-of-electricity-comes-from-wind"></a><strong>Wind:</strong> what share of electricity comes from wind?</h3><div class="wp-block-columns is-style-sticky-left">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-electricity-wind" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-electricity-wind" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-electricity-wind_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share electricity wind v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p>Wind accounts for just 5% to 6% of global electricity production. But wind generation has been growing rapidly in many countries across the world in recent years.</p>
+
+
+
+<p>This interactive map shows the share of electricity that comes from wind across the world.</p>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>The headline in <em>The Independent</em> newspaper claims that in the UK more energy came from low-carbon sources than fossil fuels in 2019. As we see from <a href="https://ourworldindata.org/grapher/sub-energy-fossil-renewables-nuclear?country=~GBR">this chart</a> – which looks at the breakdown of the UK energy mix – almost 80% of the UK’s energy came from fossil fuels, and only 20% from ‘clean sources’. The author probably meant to speak only of ‘UK electricity’, which as my post here illustrates, is not the same thing.</p></li></ol></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=34902&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/supporters" data-track-note="footer-navigation">Supporters</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All of Our World in Data is completely open access and all work is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce in any medium, provided the source and authors are credited.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookieNotice();
+                runCovid();
+                runFootnotes();
+                if (!document.querySelector(".ChartPage")) {
+                    Grapher.embedAll();
+                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[{"text":"Electricity is only one part of total energy – decarbonizing electricity is only one step towards a low-carbon energy system","slug":"electricity-is-only-one-part-of-total-energy-decarbonizing-electricity-is-only-one-step-towards-a-low-carbon-energy-system","isSubheading":false},{"text":"Where does our electricity come from?","slug":"where-does-our-electricity-come-from","isSubheading":false},{"text":"How much of our electricity comes from low-carbon sources?","slug":"how-much-of-our-electricity-comes-from-low-carbon-sources","isSubheading":false},{"text":"Electricity production by source","slug":"electricity-production-by-source","isSubheading":false},{"text":"Fossil fuels: what share of electricity comes from fossil fuels?","html":"<strong>Fossil fuels:</strong> what share of electricity comes from fossil fuels?","slug":"fossil-fuels-what-share-of-electricity-comes-from-fossil-fuels","isSubheading":true},{"text":"Coal: what share of electricity comes from coal?","html":"<strong>Coal:</strong> what share of electricity comes from coal?","slug":"coal-what-share-of-electricity-comes-from-coal","isSubheading":true},{"text":"Gas: what share of electricity comes from gas?","html":"<strong>Gas:</strong> what share of electricity comes from gas?","slug":"gas-what-share-of-electricity-comes-from-gas","isSubheading":true},{"text":"Nuclear: what share of electricity comes from nuclear?","html":"<strong>Nuclear:</strong> what share of electricity comes from nuclear?","slug":"nuclear-what-share-of-electricity-comes-from-nuclear","isSubheading":true},{"text":"Renewables: what share of electricity comes from renewables?","html":"<strong>Renewables:</strong> what share of electricity comes from renewables?","slug":"renewables-what-share-of-electricity-comes-from-renewables","isSubheading":true},{"text":"Hydropower: what share of electricity comes from hydropower?","html":"<strong>Hydropower:</strong> what share of electricity comes from hydropower?","slug":"hydropower-what-share-of-electricity-comes-from-hydropower","isSubheading":true},{"text":"Solar: what share of electricity comes from solar?","html":"<strong>Solar:</strong> what share of electricity comes from solar?","slug":"solar-what-share-of-electricity-comes-from-solar","isSubheading":true},{"text":"Wind: what share of electricity comes from wind?","html":"<strong>Wind:</strong> what share of electricity comes from wind?","slug":"wind-what-share-of-electricity-comes-from-wind","isSubheading":true},{"text":"Endnotes","slug":"endnotes","isSubheading":false}],"pageTitle":"Electricity Mix"})
+                        runRelatedCharts([])
+                        </script></body></html>
