@@ -2698,7 +2698,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/renewable-energy</loc>
-        <lastmod>2020-03-23</lastmod>
+        <lastmod>2020-08-25</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/measurement-matters-the-decline-of-maternal-mortality</loc>
@@ -4638,6 +4638,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/energy-production-consumption</loc>
+        <lastmod>2020-08-25</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/energy-country-profile</loc>
         <lastmod>2020-08-25</lastmod>
     </url>
     <url>
