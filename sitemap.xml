@@ -18573,10 +18573,6 @@
         <lastmod>2020-06-16</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/daily-covid-cases-3-day-average</loc>
-        <lastmod>2020-04-28</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/confirmed-covid-19-deaths-total-vs-daily</loc>
         <lastmod>2020-06-20</lastmod>
     </url>
@@ -20077,7 +20073,7 @@
         <lastmod>2020-08-28</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/daily-covid-cases-7-day-average</loc>
-        <lastmod>2020-08-28</lastmod>
+        <loc>https://ourworldindata.org/grapher/daily-covid-cases-7-day</loc>
+        <lastmod>2020-08-30</lastmod>
     </url>
 </urlset>
