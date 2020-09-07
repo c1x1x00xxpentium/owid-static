@@ -20112,4 +20112,12 @@
         <loc>https://ourworldindata.org/grapher/number-airline-passengers</loc>
         <lastmod>2020-09-07</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/airline-passenger-load-factor</loc>
+        <lastmod>2020-09-07</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/airline-capacity-and-traffic</loc>
+        <lastmod>2020-09-07</lastmod>
+    </url>
 </urlset>
