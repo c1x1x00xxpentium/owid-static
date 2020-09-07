@@ -595,8 +595,8 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
                         runTableOfContents({"headings":[],"pageTitle":"How epidemiological models of COVID-19 help us estimate the true number of infections"})

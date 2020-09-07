@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4340,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["United States"]},"logo":"core+owid","slug":"debt-as-a-percentage-of-gdp-in-the-us","type":"StackedArea","title":"Debt as a percentage of GDP in the US (1945-2019)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"earliest","version":3,"subtitle":"Unit 17 'The Great Depression, golden age, and global financial crisis’ Section 17.1 'Three economic epocs' in The CORE Team, The Economy. Available at https://tinyco.re/2448179 [Figure 17.4]","hasMapTab":false,"originUrl":"https://tinyco.re/2448179","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143140},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143138},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143139},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143141}],"sourceDesc":"US Federal Reserve, US Bureau of Economic Analysis (2020)","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#209e16","index":0,"entityId":13},{"color":"#024fcc","index":1,"entityId":13},{"color":"#f60404","index":2,"entityId":13},{"color":"#a3319b","index":3,"entityId":13}],"internalNotes":"core-econ.org","addCountryMode":"change-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

@@ -294,8 +294,8 @@ In this post, we compare the approach to testing taken over the outbreak in Sout
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
                         runTableOfContents({"headings":[],"pageTitle":"Testing early, testing late: four countries’ approaches to COVID-19 testing compared"})

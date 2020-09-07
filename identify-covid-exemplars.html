@@ -534,8 +534,8 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
                         runTableOfContents({"headings":[],"pageTitle":"How experts use data to identify emerging COVID-19 success stories"})

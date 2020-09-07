@@ -56,8 +56,8 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
                         runTableOfContents({"headings":[],"pageTitle":"Food waste is responsible for 6% of global greenhouse gas emissions"})

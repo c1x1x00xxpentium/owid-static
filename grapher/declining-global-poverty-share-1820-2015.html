@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":253,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","targetYear":1980,"variableId":350,"timeTolerance":1,"defaultProjection":"World"},"tab":"chart","data":{"availableEntities":[]},"slug":"declining-global-poverty-share-1820-2015","type":"LineChart","title":"Declining global poverty: share of people living in extreme poverty, 1820-2015","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","labelDistance":-10},"version":2,"hasMapTab":false,"originUrl":"https://ourworldindata.org/extreme-poverty/","stackMode":"absolute","dimensions":[{"display":{"unit":"% of world population","tolerance":5,"isProjection":false},"property":"y","targetYear":2000,"variableId":352},{"display":{"unit":"% of world population","tolerance":5,"isProjection":false},"property":"y","targetYear":2000,"variableId":351},{"display":{"unit":"% of world population","tolerance":5,"isProjection":false},"property":"y","targetYear":2000,"variableId":350}],"hideLegend":false,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355},{"index":1,"entityId":355},{"index":2,"entityId":355}],"internalNotes":"","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

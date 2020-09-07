@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4409,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["US"]},"logo":"core+owid","note":"‘Production workers’ exclude supervisory employees such as foremen and managers.","slug":"real-wages-and-output-per-production-worker-in-manufacturing-in-the-us","type":"LineChart","title":"Real wages and output per production worker in manufacturing in the US (1949–2019)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":3,"subtitle":"Unit 17 'The Great Depression, golden age, and global financial crisis’ Section 17.7 'After stagflation: The fruits of a new policy regime' in The CORE Team, The Economy. Available at https://tinyco.re/17071788 [Figure 17.17]","hasMapTab":false,"originUrl":"https://tinyco.re/17071788","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143231},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143232}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#366388","index":0,"entityId":51500},{"color":"#d73c50","index":1,"entityId":51500}],"internalNotes":"core-econ.org","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

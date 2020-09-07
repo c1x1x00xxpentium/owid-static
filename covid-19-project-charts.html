@@ -288,8 +288,8 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
                         runTableOfContents({"headings":[{"text":"Epidemic Curves","slug":"epidemic-curves","isSubheading":false},{"text":"Country Selection Indicators","slug":"country-selection-indicators","isSubheading":false},{"text":"Detect Indicators","slug":"detect-indicators","isSubheading":false},{"text":"Contain Indicators","slug":"contain-indicators","isSubheading":false},{"text":"Treat Indicators","slug":"treat-indicators","isSubheading":false}],"pageTitle":"COVID-19 Project Charts"})

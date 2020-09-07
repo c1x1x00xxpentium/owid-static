@@ -12,15 +12,14 @@ https://tinyco.re/8839220 [Figure 15.6]"/><meta name="twitter:image" content="ht
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["United States"]},"logo":"core+owid","slug":"phillips-curves-in-the-us","type":"ScatterPlot","title":"Phillips curves in the US (1960–2014)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"max":14,"min":-2,"scaleType":"linear"},"maxTime":2019,"minTime":1960,"version":2,"subtitle":"Unit 15 'Inflation, unemployment, and monetary policy’ Section 15.5 'What happened to the Phillips curve?' in The CORE Team, The Economy. Available at:\nhttps://tinyco.re/8839220 [Figure 15.6]","hasMapTab":false,"originUrl":"https://tinyco.re/8839220","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143137},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"x","variableId":143136}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":13}],"internalNotes":"core-econ.org","comparisonLines":[{"label":"Early 70s _ _ _ _ _ _ __","yEquals":"-12.52*ln(x)+25.875"},{"label":"Late 1990s/2000s and Early 2010s","yEquals":"-1.731*ln(x)+5.3716"},{"label":"1960s","yEquals":"-5.722*ln(x)+11.151"},{"label":"Late 70s","yEquals":"-7.791*ln(x)+23.39"}],"zoomToSelection":true,"hideRelativeToggle":true,"hideTitleAnnotation":true,"hideConnectedScatterLines":true,"id":4339};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

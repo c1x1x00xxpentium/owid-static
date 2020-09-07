@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":3306,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":1200,"customHiddenCategories":{}},"projection":"World","variableId":99537},"tab":"chart","data":{"availableEntities":["Australia","Austria","Belgium","Canada","Denmark","Finland","France","Germany","Italy","Japan","Mexico","Netherlands","Norway","Poland","South Korea","Sweden","Switzerland","United Kingdom","United States"]},"logo":"core+owid","note":"Average annual hours actually worked per worker in 2017 are displayed on the 'MAP' tab.","slug":"the-duration-of-democracy-and-working-hours-2017","type":"ScatterPlot","title":"The duration of democracy and working hours (2017)","xAxis":{"min":0,"scaleType":"linear"},"yAxis":{"min":1200,"scaleType":"linear"},"maxTime":"latest","minTime":"latest","version":12,"hideLogo":false,"subtitle":"Unit 22 'Capstone: Economics, Politics and Public Policy' Section 22.10 'Democracy makes a difference' in The CORE Team, The Economy. Available at https://tinyco.re/22101660 [Figure 22.16]","hasMapTab":true,"originUrl":"https://tinyco.re/22101660","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":99537},{"display":{},"property":"x","variableId":99536}],"hasChartTab":true,"isPublished":true,"selectedData":[],"internalNotes":"core-econ.org","hideRelativeToggle":false,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4360,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest","variableId":143161},"tab":"chart","data":{"availableEntities":["Australia","Austria","Belgium","Canada","Denmark","Finland","France","Germany","Ireland","Italy","Japan","Netherlands","New Zealand","Norway","Portugal","Spain","Sweden","United Kingdom","United States"]},"logo":"core+owid","slug":"unemployment-rates-of-two-high-and-two-low-labour-market-performers","type":"LineChart","title":"Unemployment rates of two high and two low labour market performers (1955–2019)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"max":30,"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":3,"subtitle":"Unit 16 'Technological progress, employment, and living standards in the long run’ Section 16.8 'Institutions and policies: Why do some countries do better than others?' in The CORE Team, The Economy. Available at: https://tinyco.re/16081322 [Figure 16.13]","hasMapTab":true,"originUrl":"https://tinyco.re/16081322","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143161}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#a2559c","index":0,"entityId":9},{"color":"#d73c50","index":0,"entityId":8},{"color":"#21cf0f","index":0,"entityId":14},{"color":"#0aa0db","index":0,"entityId":102}],"internalNotes":"core-econ.org","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

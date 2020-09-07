@@ -12,15 +12,14 @@ The Economy. Available at: Insert_link [Figure 14.15]"/><meta name="twitter:imag
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4285,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["India"]},"logo":"core+owid","slug":"india-government-debt-as-a-percentage-of-gdp-19802019","type":"LineChart","title":"India government debt as a percentage of GDP (1980–2019)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"max":100,"min":40,"scaleType":"linear"},"maxTime":"latest","minTime":"earliest","version":5,"subtitle":"Unit 14 'Unemployment and fiscal policy’ Section 14.8 'The government's finances' in The CORE Team,\nThe Economy. Available at: Insert_link [Figure 14.15]","hasMapTab":false,"originUrl":"Insert_link","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":143001}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":137}],"internalNotes":"core-econ.org","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

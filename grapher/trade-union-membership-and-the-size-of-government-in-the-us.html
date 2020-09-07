@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4365,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["United States"]},"logo":"core+owid","slug":"trade-union-membership-and-the-size-of-government-in-the-us","type":"LineChart","title":"Trade union membership and the size of government in the US (1913–2019)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"max":40,"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":4,"subtitle":"Unit 17 'The Great Depression, golden age, and global financial crisis’ Section 17.5 'Workers and employers in the golden age' in The CORE Team, The Economy. Available at https://tinyco.re/17051341 [Figure 17.13]","hasMapTab":false,"originUrl":"https://tinyco.re/17051341","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143187},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143184}],"sourceDesc":"BLS(2020), Mayer(2004), Wallis(2000), BEA(2020), FRED(2020)","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":13},{"index":1,"entityId":13}],"internalNotes":"core-econ.org","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

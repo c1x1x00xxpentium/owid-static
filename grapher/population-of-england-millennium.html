@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4090,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":2016,"variableId":110009},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"note":"Data prior to 1700 refers to England; data thereafter refers to the UK","slug":"population-of-england-millennium","type":"StackedArea","title":"The population of England","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2016,"minTime":1086,"version":11,"hasMapTab":true,"originUrl":"https://ourworldindata.org/world-population-growth","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":110009}],"hideLegend":true,"sourceDesc":"Broadberry, Campbell, Klein, Overton and van Leeuwen (2015) via Bank of England","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#4c6a9c","index":0,"entityId":1}],"addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

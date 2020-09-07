@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"logo":"core+owid","slug":"uk-log-of-real-gdp-per-capita-in-2011-us","type":"LineChart","title":"UK log of real GDP per capita in 2011 US $ (1875–2019)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":8,"scaleType":"linear"},"maxTime":"latest","minTime":1875,"version":2,"subtitle":"Unit 13 'Economic fluctuations and unemployment’ Section 13.1 'Growth and fluctuations' in The CORE Team, The Economy. Available at: https://tinyco.re/32324911 [Figure 13.2]","hasMapTab":false,"originUrl":"https://tinyco.re/32324911","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143076}],"hasChartTab":true,"isPublished":true,"hideTimeline":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":1}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true,"id":4344};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

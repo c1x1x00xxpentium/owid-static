@@ -1,6 +1,4 @@
 
-        window.App = {};
-
         var link = document.createElement('link');
         link.type = 'text/css';
         link.rel = 'stylesheet';
@@ -14,7 +12,7 @@
         function checkReady() {
             loadedScripts += 1;
             if (loadedScripts == 3) {
-                window.Grapher.embedAll();
+                window.GrapherPageUtils.embedAll();
             }
         }
 

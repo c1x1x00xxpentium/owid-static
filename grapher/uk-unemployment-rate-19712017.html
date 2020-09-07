@@ -12,15 +12,14 @@ https://tinyco.re/26264810 [Figure 13.20b]"/><meta name="twitter:image" content=
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4351,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"logo":"core+owid","slug":"uk-unemployment-rate-19712017","type":"LineChart","title":"UK unemployment rate (1971–2017)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"earliest","version":3,"subtitle":"Unit 13 'Economic fluctuations and unemployment’ Section 13.8 'Measuring the economy: Inflation' in The CORE Team, The Economy. Available at:\nhttps://tinyco.re/26264810 [Figure 13.20b]","hasMapTab":false,"originUrl":"https://tinyco.re/26264810","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143155}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#f19a04","index":0,"entityId":1}],"internalNotes":"core-econ.org","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

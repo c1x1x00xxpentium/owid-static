@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4358,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["United States"]},"logo":"core+owid","slug":"fluctuations-in-output-and-the-size-of-government-in-the-us","type":"LineChart","title":"Fluctuations in output and the size of government in the US (1870–2019)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":7,"subtitle":"Unit 14 'Unemployment and fiscal policy’ in The CORE Team, The Economy. Available at: https://tinyco.re/34772811 [Figure 14.1]","hasMapTab":false,"originUrl":"https://tinyco.re/34772811","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143159},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143158}],"sourceDesc":"Wallis(2000), BEA(2020), FRED(2020), Maddison Project(2018)","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#f19a04","index":0,"entityId":13},{"color":"#000000","index":1,"entityId":13}],"internalNotes":"core-econ.org","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

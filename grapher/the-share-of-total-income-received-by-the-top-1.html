@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4415,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest","variableId":143234},"tab":"chart","data":{"availableEntities":["Argentina","Australia","Canada","China","India","South Africa","United Kingdom","United States"]},"logo":"core+owid","slug":"the-share-of-total-income-received-by-the-top-1","type":"LineChart","title":"The share of total income received by the top 1% (1913–2017)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":3,"subtitle":"Unit 19 'Economic inequality’ Section 19.1 'Inequality across the world and over time' in The CORE Team, The Economy. Available at https://tinyco.re/19010364 [Figure 19.3]","hasMapTab":true,"originUrl":"https://tinyco.re/19010364","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143234}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#06992e","index":0,"entityId":21},{"color":"#a2559c","index":0,"entityId":171},{"color":"#585c64","index":0,"entityId":137},{"color":"#fdc803","index":0,"entityId":81},{"color":"#366388","index":0,"entityId":1},{"color":"#d73c50","index":0,"entityId":13}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

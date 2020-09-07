@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4463,"map":{"colorScale":{"baseColorScheme":"RdYlBu","binningStrategy":"manual","colorSchemeInvert":true,"customNumericColors":[null,null,null,null,"#ffffde",null,null,null],"customNumericLabels":[],"customNumericValues":[-50,-30,-10,0,10,30,50,70],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":-50,"customHiddenCategories":{},"customNumericColorsActive":true},"projection":"World","targetYear":"latest","variableId":143387,"timeTolerance":10},"tab":"chart","data":{"availableEntities":["Austria","Belgium","Bulgaria","Czech Republic","Denmark","England & Wales","Estonia","Finland","France","Germany","Hungary","Iceland","Israel","Italy","Latvia","Lithuania","Luxembourg","Netherlands","Norway","Poland","Portugal","Scotland","Slovakia","Slovenia","Spain","Sweden","Switzerland","United States"]},"note":"Dates refer to the last day in each week for most but not all countries. Deaths in recent weeks might be undercounted due to reporting lags. More details can be found in the Sources tab.","slug":"excess-mortality-p-scores-by-age","type":"LineChart","title":"Excess mortality during COVID-19: The number of deaths from all causes compared to previous years, by age","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"scaleType":"linear"},"maxTime":"latest","minTime":-16,"version":84,"subtitle":"Shown is how the number of weekly deaths in 2020 – broken down by broad age groups – differs (as a percentage) from the average number of deaths in the same week over the previous five years (2015–2019). This metric is called the P-score.","hasMapTab":false,"originUrl":"ourworldindata.org/coronavirus","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Ages 15–64","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143387},{"display":{"name":"Ages 65–74","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143388},{"display":{"name":"Ages 75–84","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143389},{"display":{"name":"Ages 85+","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143390}],"sourceDesc":"HMD (2020)","hasChartTab":true,"isPublished":true,"variantName":"P-scores","isExplorable":false,"selectedData":[{"index":0,"entityId":9},{"index":1,"entityId":9},{"index":2,"entityId":9},{"index":3,"entityId":9}],"addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

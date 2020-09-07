@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"map":{"colorScale":{"baseColorScheme":"PuRd","binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{},"binningStrategyBinCount":10},"projection":"World","targetYear":"latest","variableId":143500,"timeTolerance":20},"tab":"map","data":{"availableEntities":["Armenia","Australia","Austria","Belarus","Belgium","Belize","Bolivia","Brazil","Bulgaria","Canada","Chile","China","Colombia","Costa Rica","Croatia","Cyprus","Czech Republic","Denmark","Dominican Republic","Ecuador","El Salvador","Estonia","Finland","France","Germany","Greece","Guatemala","Guyana","Haiti","Honduras","Hungary","Iceland","Ireland","Israel","Italy","Japan","Kazakhstan","Latvia","Lithuania","Luxembourg","Macedonia","Malaysia","Malta","Mexico","Montenegro","Namibia","Nepal","Netherlands","Nicaragua","Norway","Panama","Paraguay","Peru","Philippines","Poland","Portugal","Romania","Saint Lucia","Serbia","Seychelles","Slovakia","Slovenia","South Korea","Spain","Suriname","Sweden","Switzerland","Taiwan","Trinidad and Tobago","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Venezuela"]},"slug":"share-living-on-less-than-2000-per-day","type":"LineChart","title":"Share living on less than $20.00 per day","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"earliest","version":2,"hasMapTab":true,"stackMode":"absolute","colorScale":{"binningStrategy":"ckmeans","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"unit":"%","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false},"includeInTable":true,"conversionFactor":100},"property":"y","variableId":143500}],"isAutoSlug":true,"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":1},{"index":0,"entityId":6},{"index":0,"entityId":13},{"index":0,"entityId":9},{"index":0,"entityId":10},{"index":0,"entityId":3}],"hideRelativeToggle":true,"id":4474};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

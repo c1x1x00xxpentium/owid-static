@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":2086,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"fish-stocks-within-sustainable-levels","type":"StackedArea","title":"Share of global fish stocks that are not overexploited","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"earliest","version":11,"subtitle":"Fish stock are subpopulations of a particular species of fish which have common parameters such as location, growth and mortality which define their population dynamics. A fish stock with abundance equal to or above the maximum sustainable yield (MSY) is classified as biologically sustainable, and not overexploited.","hasMapTab":false,"originUrl":"ourworldindata.org/seafood-production","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"unit":"%"},"property":"y","variableId":108302}],"sourceDesc":"UN FAO Fisheries and Aquaculture (FAOfish)","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#3360a9","index":0,"entityId":355}],"addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

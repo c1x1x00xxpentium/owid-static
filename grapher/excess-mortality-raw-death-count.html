@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4482,"map":{"colorScale":{"binningStrategy":"ckmeans","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest","variableId":143514},"tab":"chart","data":{"availableEntities":["Austria","Belgium","Bulgaria","Czech Republic","Denmark","England & Wales","Estonia","Finland","France","Germany","Hungary","Iceland","Israel","Italy","Latvia","Lithuania","Luxembourg","Netherlands","Norway","Poland","Portugal","Scotland","Slovakia","Slovenia","Spain","Sweden","Switzerland","United States"]},"note":"Dates refer to the last day in each week for most but not all countries. Deaths in recent weeks might be undercounted due to reporting lags. More details can be found in the Sources tab.","slug":"excess-mortality-raw-death-count","type":"LineChart","title":"Excess mortality during COVID-19: The raw number of deaths from all causes compared to previous years","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"earliest","version":16,"subtitle":"Shown is how the raw number of weekly deaths in 2020 differs from the average number of deaths in the same week over the previous five years (2015–2019).","hasMapTab":false,"stackMode":"absolute","colorScale":{"binningStrategy":"ckmeans","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Average deaths, 2015–2019","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false},"includeInTable":true,"numDecimalPlaces":0},"property":"y","variableId":143514},{"display":{"name":"Deaths, 2020","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143513}],"hasChartTab":true,"isPublished":true,"variantName":"Raw death counts","isExplorable":false,"selectedData":[{"color":"#585c64","index":0,"entityId":34788},{"color":"#b13507","index":1,"entityId":34788}],"addCountryMode":"change-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,

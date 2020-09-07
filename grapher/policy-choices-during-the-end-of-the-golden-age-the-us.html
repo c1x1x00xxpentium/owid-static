@@ -9,15 +9,14 @@
                 runCovid();
                 runFootnotes();
                 if (!document.querySelector(".ChartPage")) {
-                    Grapher.embedAll();
-                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
             </script></footer><script>
         var jsonConfig = {"id":4368,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["United States"]},"logo":"core+owid","slug":"policy-choices-during-the-end-of-the-golden-age-the-us","type":"LineChart","title":"Policy choices during the end of the golden age: The US (1960–79)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"max":20,"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":6,"subtitle":"Unit 17 'The Great Depression, golden age, and global financial crisis’ Section 17.12 'The economy as teacher' in The CORE Team, The Economy. Available at https://tinyco.re/17122899 [Figure 17.28]","hasMapTab":false,"originUrl":"https://tinyco.re/17122899","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143207},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143203},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143193},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143196},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143192},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143194}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#11be07","index":0,"entityId":13},{"color":"#000000","index":1,"entityId":13},{"color":"#da9908","index":2,"entityId":13},{"color":"#366388","index":3,"entityId":13},{"color":"#08d0d8","index":4,"entityId":13},{"color":"#a2559c","index":5,"entityId":13}],"internalNotes":"core-econ.org","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
         var figure = document.getElementsByTagName("figure")[0];
 
         try {
-            window.App = {};
             var view = window.ChartView.bootstrap({
                 jsonConfig: jsonConfig,
                 containerNode: figure,
