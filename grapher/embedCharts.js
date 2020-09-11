@@ -1,36 +1,25 @@
+const embedSnippet = () => {
+    const link = document.createElement('link')
+    link.type = 'text/css'
+    link.rel = 'stylesheet'
+    link.href = 'https://ourworldindata.org/assets/css/commons.css'
+    document.head.appendChild(link)
 
-        var link = document.createElement('link');
-        link.type = 'text/css';
-        link.rel = 'stylesheet';
-        link.href = 'https://ourworldindata.org/assets/css/commons.css';
-        document.head.appendChild(link);
+    let loadedScripts = 0;
+    const checkReady = () => {
+        loadedScripts++
+        if (loadedScripts === 3)
+            window.GrapherPageUtils.embedAll()
+    }
 
-        var hasPolyfill = false;
-        var hasGrapher = false;
+    const coreScripts = ['https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch', 'https://ourworldindata.org/assets/js/commons.js', 'https://ourworldindata.org/assets/js/owid.js']
 
-        var loadedScripts = 0;
-        function checkReady() {
-            loadedScripts += 1;
-            if (loadedScripts == 3) {
-                window.GrapherPageUtils.embedAll();
-            }
-        }
-
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.onload = checkReady;
-        script.src = "https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"
-        document.head.appendChild(script);
-
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.onload = checkReady;
-        script.src = 'https://ourworldindata.org/assets/js/commons.js';
-        document.head.appendChild(script);
-
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.onload = checkReady;
-        script.src = 'https://ourworldindata.org/assets/js/owid.js';
-        document.head.appendChild(script);
-    
+    coreScripts.forEach(url => {
+        const script = document.createElement('script')
+        script.type = 'text/javascript'
+        script.onload = checkReady
+        script.src = url
+        document.head.appendChild(script)
+    })
+}
+embedSnippet()
