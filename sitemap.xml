@@ -20224,4 +20224,16 @@
         <loc>https://ourworldindata.org/grapher/strongly-disagree-vaccines-effective</loc>
         <lastmod>2020-09-14</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/strongly-agree-vaccines-effective</loc>
+        <lastmod>2020-09-14</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/strongly-disagree-vaccines-important</loc>
+        <lastmod>2020-09-14</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/strongly-agree-vaccines-important</loc>
+        <lastmod>2020-09-14</lastmod>
+    </url>
 </urlset>
