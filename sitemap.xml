@@ -20216,4 +20216,12 @@
         <loc>https://ourworldindata.org/grapher/strongly-disagree-vaccines-safe</loc>
         <lastmod>2020-09-14</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/strongly-agree-vaccines-safe</loc>
+        <lastmod>2020-09-14</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/strongly-disagree-vaccines-effective</loc>
+        <lastmod>2020-09-14</lastmod>
+    </url>
 </urlset>
