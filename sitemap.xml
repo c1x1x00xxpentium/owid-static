@@ -20244,4 +20244,8 @@
         <loc>https://ourworldindata.org/grapher/carbon-footprint-travel-mode</loc>
         <lastmod>2020-09-15</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/co2-transport-mode</loc>
+        <lastmod>2020-09-15</lastmod>
+    </url>
 </urlset>
