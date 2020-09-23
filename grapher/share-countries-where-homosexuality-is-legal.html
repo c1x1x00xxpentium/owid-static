@@ -12,20 +12,112 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3955,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"share-countries-where-homosexuality-is-legal","type":"StackedArea","title":"Share of countries where homosexuality is legal","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":1960,"version":12,"subtitle":"Countries where same-sex sexual acts are not considered a criminal offence. Some countries never contained a criminalising provision in the Penal Codes, while other consciously removed the criminalising provisions.","hasMapTab":false,"originUrl":"ourworldindata.org/marriages-and-divorces","stackMode":"relative","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Countries where homosexuality is legal","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":110129},{"display":{"name":"Countries where homosexuality is illlegal","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":110130}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#883039","index":1,"entityId":355},{"color":"#15a6a0","index":0,"entityId":355}],"addCountryMode":"change-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/share-countries-where-homosexuality-is-legal.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3955,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "share-countries-where-homosexuality-is-legal",
+  "type": "StackedArea",
+  "title": "Share of countries where homosexuality is legal",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": "latest",
+  "minTime": 1960,
+  "version": 12,
+  "subtitle": "Countries where same-sex sexual acts are not considered a criminal offence. Some countries never contained a criminalising provision in the Penal Codes, while other consciously removed the criminalising provisions.",
+  "hasMapTab": false,
+  "originUrl": "ourworldindata.org/marriages-and-divorces",
+  "stackMode": "relative",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Countries where homosexuality is legal",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 110129
+    },
+    {
+      "display": {
+        "name": "Countries where homosexuality is illlegal",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "y",
+      "variableId": 110130
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "color": "#883039",
+      "index": 1,
+      "entityId": 355
+    },
+    {
+      "color": "#15a6a0",
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/share-countries-where-homosexuality-is-legal.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

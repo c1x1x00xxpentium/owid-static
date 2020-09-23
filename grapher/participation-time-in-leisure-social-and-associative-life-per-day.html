@@ -12,20 +12,107 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["Austria","Belgium","Bulgaria","Estonia","Finland","France","Germany","Greece","Hungary","Italy","Latvia","Lithuania","Luxembourg","Netherlands","Norway","Poland","Romania","Serbia","Slovenia","Spain","Turkey","United Kingdom"]},"slug":"participation-time-in-leisure-social-and-associative-life-per-day","type":"SlopeChart","title":"Participation time in leisure, social, and associative life per day","xAxis":{"scaleType":"linear"},"yAxis":{"min":180,"scaleType":"linear"},"version":1,"subtitle":"Average minutes spent on leisure, social, and associative life, per day, by individuals engaging in leisure activities. Estimates come from time use surveys and include both weekdays and weekends. ","hasMapTab":false,"stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":97634},{"display":{},"property":"size","variableId":72},{"display":{},"property":"color","variableId":123}],"isAutoSlug":true,"hasChartTab":true,"isPublished":true,"selectedData":[],"id":2977};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Austria",
+      "Belgium",
+      "Bulgaria",
+      "Estonia",
+      "Finland",
+      "France",
+      "Germany",
+      "Greece",
+      "Hungary",
+      "Italy",
+      "Latvia",
+      "Lithuania",
+      "Luxembourg",
+      "Netherlands",
+      "Norway",
+      "Poland",
+      "Romania",
+      "Serbia",
+      "Slovenia",
+      "Spain",
+      "Turkey",
+      "United Kingdom"
+    ]
+  },
+  "slug": "participation-time-in-leisure-social-and-associative-life-per-day",
+  "type": "SlopeChart",
+  "title": "Participation time in leisure, social, and associative life per day",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 180,
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "subtitle": "Average minutes spent on leisure, social, and associative life, per day, by individuals engaging in leisure activities. Estimates come from time use surveys and include both weekdays and weekends. ",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 97634
+    },
+    {
+      "display": {},
+      "property": "size",
+      "variableId": 72
+    },
+    {
+      "display": {},
+      "property": "color",
+      "variableId": 123
+    }
+  ],
+  "isAutoSlug": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [],
+  "id": 2977
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/participation-time-in-leisure-social-and-associative-life-per-day.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/participation-time-in-leisure-social-and-associative-life-per-day.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

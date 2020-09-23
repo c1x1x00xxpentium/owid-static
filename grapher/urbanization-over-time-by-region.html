@@ -12,20 +12,92 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["Africa","Asia (market economies)","Developed countries","Latin America","Third World (market economies)"]},"slug":"urbanization-over-time-by-region","type":"StackedArea","title":"Urbanization over time by region","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":1,"subtitle":"The rural and urban population shares, by region, over time. For more information see the sources tab.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Rural"},"property":"y","variableId":97832},{"display":{"name":"Urban"},"property":"y","variableId":97691}],"entityType":"region","isAutoSlug":true,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":5403},{"index":1,"entityId":5403}],"addCountryMode":"change-country","hideRelativeToggle":true,"id":2966};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Africa",
+      "Asia (market economies)",
+      "Developed countries",
+      "Latin America",
+      "Third World (market economies)"
+    ]
+  },
+  "slug": "urbanization-over-time-by-region",
+  "type": "StackedArea",
+  "title": "Urbanization over time by region",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "subtitle": "The rural and urban population shares, by region, over time. For more information see the sources tab.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Rural"
+      },
+      "property": "y",
+      "variableId": 97832
+    },
+    {
+      "display": {
+        "name": "Urban"
+      },
+      "property": "y",
+      "variableId": 97691
+    }
+  ],
+  "entityType": "region",
+  "isAutoSlug": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 5403
+    },
+    {
+      "index": 1,
+      "entityId": 5403
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": true,
+  "id": 2966
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/urbanization-over-time-by-region.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/urbanization-over-time-by-region.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

@@ -12,20 +12,91 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["WTO Developed Member States","WTO Developing Member States","World Trade Organization (WTO) Member States"]},"slug":"agricultural-export-subsidies","type":"LineChart","title":"Agricultural export subsidies","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2016,"minTime":1995,"version":1,"subtitle":"Agricultural export subsidies are measured in current US dollars.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"unit":"$","conversionFactor":1000000},"property":"y","variableId":108569}],"entityType":"group","isAutoSlug":true,"sourceDesc":"UN Statistics Division (2019)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":93550},{"index":0,"entityId":93549},{"index":0,"entityId":93548}],"addCountryMode":"add-country","hideRelativeToggle":true,"id":3833};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "WTO Developed Member States",
+      "WTO Developing Member States",
+      "World Trade Organization (WTO) Member States"
+    ]
+  },
+  "slug": "agricultural-export-subsidies",
+  "type": "LineChart",
+  "title": "Agricultural export subsidies",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2016,
+  "minTime": 1995,
+  "version": 1,
+  "subtitle": "Agricultural export subsidies are measured in current US dollars.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "unit": "$",
+        "conversionFactor": 1000000
+      },
+      "property": "y",
+      "variableId": 108569
+    }
+  ],
+  "entityType": "group",
+  "isAutoSlug": true,
+  "sourceDesc": "UN Statistics Division (2019)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 93550
+    },
+    {
+      "index": 0,
+      "entityId": 93549
+    },
+    {
+      "index": 0,
+      "entityId": 93548
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "id": 3833
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/agricultural-export-subsidies.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/agricultural-export-subsidies.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

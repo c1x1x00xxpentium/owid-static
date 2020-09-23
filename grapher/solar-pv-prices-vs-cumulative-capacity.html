@@ -12,20 +12,120 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":625,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":[],"customCategoryLabels":[],"customHiddenCategories":[],"customNumericColorsActive":false},"projection":"World","targetYear":1980,"variableId":1693,"timeTolerance":1},"tab":"chart","data":{"availableEntities":["World"]},"note":"","slug":"solar-pv-prices-vs-cumulative-capacity","type":"ScatterPlot","title":"Solar PV module prices vs. cumulative capacity","xAxis":{"scaleType":"log","canChangeScaleType":true},"yAxis":{"min":0,"prefix":"$","scaleType":"log","labelDistance":-10,"canChangeScaleType":true},"maxTime":2016,"minTime":1976,"version":6,"subtitle":"Solar photovoltaic (PV) module prices (measured in 2016 US$ per watt-peak) versus cumulative installed capacity (measured in megawatts-peak, MWp). This represents the 'learning curve' for solar PV.","hasMapTab":false,"originUrl":"https://ourworldindata.org/renewables","stackMode":null,"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Solar PV Module Cost","shortUnit":"$/W"},"property":"y","variableId":65423},{"display":{"name":"Cumulative Installed Capacity","shortUnit":"MW"},"property":"x","variableId":65422},{"display":{},"property":"size","variableId":72}],"entityType":"country","hideLegend":true,"sourceDesc":"Lafond et al. (2017); IRENA; SolarServer","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#3360a9","index":0,"entityId":355}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":false,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 625,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": [],
+      "customCategoryLabels": [],
+      "customHiddenCategories": [],
+      "customNumericColorsActive": false
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 1693,
+    "timeTolerance": 1
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "note": "",
+  "slug": "solar-pv-prices-vs-cumulative-capacity",
+  "type": "ScatterPlot",
+  "title": "Solar PV module prices vs. cumulative capacity",
+  "xAxis": {
+    "scaleType": "log",
+    "canChangeScaleType": true
+  },
+  "yAxis": {
+    "min": 0,
+    "prefix": "$",
+    "scaleType": "log",
+    "labelDistance": -10,
+    "canChangeScaleType": true
+  },
+  "maxTime": 2016,
+  "minTime": 1976,
+  "version": 6,
+  "subtitle": "Solar photovoltaic (PV) module prices (measured in 2016 US$ per watt-peak) versus cumulative installed capacity (measured in megawatts-peak, MWp). This represents the 'learning curve' for solar PV.",
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/renewables",
+  "stackMode": null,
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Solar PV Module Cost",
+        "shortUnit": "$/W"
+      },
+      "property": "y",
+      "variableId": 65423
+    },
+    {
+      "display": {
+        "name": "Cumulative Installed Capacity",
+        "shortUnit": "MW"
+      },
+      "property": "x",
+      "variableId": 65422
+    },
+    {
+      "display": {},
+      "property": "size",
+      "variableId": 72
+    }
+  ],
+  "entityType": "country",
+  "hideLegend": true,
+  "sourceDesc": "Lafond et al. (2017); IRENA; SolarServer",
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "color": "#3360a9",
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": false,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/solar-pv-prices-vs-cumulative-capacity.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/solar-pv-prices-vs-cumulative-capacity.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

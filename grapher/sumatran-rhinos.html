@@ -12,20 +12,104 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3563,"map":{"colorScale":{"equalSizeBins":true,"baseColorScheme":"PuBu","binningStrategy":"manual","customNumericColors":["#ca2628",null,null,null,null,null],"customNumericLabels":["Extinct",null,null,null,null,null],"customNumericValues":[0.1,10,25,50,100,200],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{},"customNumericColorsActive":true},"projection":"Asia","targetYear":2018,"variableId":104617},"tab":"chart","data":{"availableEntities":["Indonesia","Malaysia","World"]},"slug":"sumatran-rhinos","type":"LineChart","title":"Sumatran rhino population","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2018,"minTime":1985,"version":2,"subtitle":"Number of Sumatran rhinos (officially named 'Dicerorhinus sumatrensis'). Estimates of wild mammal populations are reported with uncertainty. Data is correct in overall population trends, however specific annual figures should be treated as the best estimate of a given range.","hasMapTab":true,"stackMode":"absolute","dimensions":[{"display":{},"property":"y","variableId":104617}],"sourceDesc":"African and Asian Rhino Specialist Groups (AfRSG)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3563,
+  "map": {
+    "colorScale": {
+      "equalSizeBins": true,
+      "baseColorScheme": "PuBu",
+      "binningStrategy": "manual",
+      "customNumericColors": [
+        "#ca2628",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "customNumericLabels": [
+        "Extinct",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "customNumericValues": [
+        0.1,
+        10,
+        25,
+        50,
+        100,
+        200
+      ],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {},
+      "customNumericColorsActive": true
+    },
+    "projection": "Asia",
+    "targetYear": 2018,
+    "variableId": 104617
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Indonesia",
+      "Malaysia",
+      "World"
+    ]
+  },
+  "slug": "sumatran-rhinos",
+  "type": "LineChart",
+  "title": "Sumatran rhino population",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2018,
+  "minTime": 1985,
+  "version": 2,
+  "subtitle": "Number of Sumatran rhinos (officially named 'Dicerorhinus sumatrensis'). Estimates of wild mammal populations are reported with uncertainty. Data is correct in overall population trends, however specific annual figures should be treated as the best estimate of a given range.",
+  "hasMapTab": true,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 104617
+    }
+  ],
+  "sourceDesc": "African and Asian Rhino Specialist Groups (AfRSG)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/sumatran-rhinos.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/sumatran-rhinos.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

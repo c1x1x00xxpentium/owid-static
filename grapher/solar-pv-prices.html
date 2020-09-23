@@ -12,20 +12,93 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":551,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":[],"customCategoryLabels":[],"customHiddenCategories":[],"customNumericColorsActive":false},"projection":"World","targetYear":1980,"variableId":1693,"timeTolerance":1},"tab":"chart","data":{"availableEntities":["World"]},"note":"","slug":"solar-pv-prices","type":"LineChart","title":"Solar PV module prices","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"prefix":"$","scaleType":"linear","labelDistance":-10,"canChangeScaleType":true},"maxTime":2016,"minTime":1976,"version":2,"subtitle":"Global average price of solar photovoltaic (PV) modules, measured as the cost per unit of energy output.","hasMapTab":false,"originUrl":"","stackMode":null,"dimensions":[{"display":{"shortUnit":"$/Wp"},"property":"y","variableId":65423}],"entityType":"global","hideLegend":true,"sourceDesc":"Lafond et al. (2017); SolarServer","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 551,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": [],
+      "customCategoryLabels": [],
+      "customHiddenCategories": [],
+      "customNumericColorsActive": false
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 1693,
+    "timeTolerance": 1
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "note": "",
+  "slug": "solar-pv-prices",
+  "type": "LineChart",
+  "title": "Solar PV module prices",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "prefix": "$",
+    "scaleType": "linear",
+    "labelDistance": -10,
+    "canChangeScaleType": true
+  },
+  "maxTime": 2016,
+  "minTime": 1976,
+  "version": 2,
+  "subtitle": "Global average price of solar photovoltaic (PV) modules, measured as the cost per unit of energy output.",
+  "hasMapTab": false,
+  "originUrl": "",
+  "stackMode": null,
+  "dimensions": [
+    {
+      "display": {
+        "shortUnit": "$/Wp"
+      },
+      "property": "y",
+      "variableId": 65423
+    }
+  ],
+  "entityType": "global",
+  "hideLegend": true,
+  "sourceDesc": "Lafond et al. (2017); SolarServer",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/solar-pv-prices.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/solar-pv-prices.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

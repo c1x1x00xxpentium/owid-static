@@ -12,20 +12,84 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":100,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","defaultProjection":"World"},"tab":"chart","data":{"availableEntities":[]},"slug":"uk-defence-spending-as-a-percentage-of-gdp-1692-2014","type":"LineChart","title":"UK defence spending as a percentage of GDP, 1692-2014","xAxis":{"scaleType":"linear"},"yAxis":{"max":60,"min":0,"suffix":"%","scaleType":"linear"},"version":4,"hasMapTab":false,"originUrl":"","stackMode":"absolute","dimensions":[{"display":{"name":"","unit":"%","tolerance":5,"isProjection":false},"property":"y","targetYear":2000,"variableId":145}],"hideLegend":true,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":1}],"internalNotes":"","addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 100,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": []
+  },
+  "slug": "uk-defence-spending-as-a-percentage-of-gdp-1692-2014",
+  "type": "LineChart",
+  "title": "UK defence spending as a percentage of GDP, 1692-2014",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "max": 60,
+    "min": 0,
+    "suffix": "%",
+    "scaleType": "linear"
+  },
+  "version": 4,
+  "hasMapTab": false,
+  "originUrl": "",
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "",
+        "unit": "%",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "targetYear": 2000,
+      "variableId": 145
+    }
+  ],
+  "hideLegend": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 1
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "disabled",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/uk-defence-spending-as-a-percentage-of-gdp-1692-2014.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/uk-defence-spending-as-a-percentage-of-gdp-1692-2014.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

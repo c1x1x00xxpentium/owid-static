@@ -12,20 +12,80 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":1847,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"air-passengers-per-fatality","type":"LineChart","title":"Air passengers per fatality","xAxis":{"scaleType":"linear"},"yAxis":{"scaleType":"linear","canChangeScaleType":true},"version":1,"subtitle":"Global ratio of commercial air passengers per fatality from an aviation accident. Data is based on accidents in commercial airliners (of capacity for 14+ passengers) and does not include corporate jet and military transport incidents. Fatalities from hijacking incidents are also included in total figures.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Passengers per fatality (ASN)","unit":"passengers per fatality","conversionFactor":1000000},"property":"y","variableId":66283}],"sourceDesc":"Aviation Safety Network (ASN)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 1847,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "air-passengers-per-fatality",
+  "type": "LineChart",
+  "title": "Air passengers per fatality",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "version": 1,
+  "subtitle": "Global ratio of commercial air passengers per fatality from an aviation accident. Data is based on accidents in commercial airliners (of capacity for 14+ passengers) and does not include corporate jet and military transport incidents. Fatalities from hijacking incidents are also included in total figures.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Passengers per fatality (ASN)",
+        "unit": "passengers per fatality",
+        "conversionFactor": 1000000
+      },
+      "property": "y",
+      "variableId": 66283
+    }
+  ],
+  "sourceDesc": "Aviation Safety Network (ASN)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/air-passengers-per-fatality.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/air-passengers-per-fatality.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

@@ -12,20 +12,107 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":329,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":1980,"variableId":1382,"timeTolerance":1},"tab":"chart","data":{"availableEntities":["France","Sweden","United Kingdom","United States"]},"slug":"tax-revenue-national-income-longrun","type":"LineChart","title":"Tax revenue","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"suffix":"%","scaleType":"linear","labelDistance":-10},"maxTime":2008,"minTime":1868,"version":2,"subtitle":"Taxes (including social contributions) as a share of national income.","hasMapTab":false,"originUrl":"https://ourworldindata.org/taxation/","stackMode":null,"dimensions":[{"display":{"name":"Tax Revenue","unit":"% national income","tolerance":5,"isProjection":false},"property":"y","variableId":1382}],"entityType":"country","hideLegend":false,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":13},{"index":0,"entityId":10},{"index":0,"entityId":3},{"index":0,"entityId":1}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 329,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 1382,
+    "timeTolerance": 1
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "France",
+      "Sweden",
+      "United Kingdom",
+      "United States"
+    ]
+  },
+  "slug": "tax-revenue-national-income-longrun",
+  "type": "LineChart",
+  "title": "Tax revenue",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "suffix": "%",
+    "scaleType": "linear",
+    "labelDistance": -10
+  },
+  "maxTime": 2008,
+  "minTime": 1868,
+  "version": 2,
+  "subtitle": "Taxes (including social contributions) as a share of national income.",
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/taxation/",
+  "stackMode": null,
+  "dimensions": [
+    {
+      "display": {
+        "name": "Tax Revenue",
+        "unit": "% national income",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "variableId": 1382
+    }
+  ],
+  "entityType": "country",
+  "hideLegend": false,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 0,
+      "entityId": 10
+    },
+    {
+      "index": 0,
+      "entityId": 3
+    },
+    {
+      "index": 0,
+      "entityId": 1
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/tax-revenue-national-income-longrun.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/tax-revenue-national-income-longrun.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

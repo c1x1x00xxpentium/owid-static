@@ -12,20 +12,88 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2223,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"slug":"cotton-spinning-and-weaving-output","type":"LineChart","title":"Cotton spinning and weaving output","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":3,"subtitle":"Pounds (lbs) of total cotton output spun and woven in the United Kingdom. ","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Yarn spun","shortUnit":"lbs"},"property":"y","variableId":85380},{"display":{"name":"Cloth woven"},"property":"y","variableId":85383}],"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":1},{"index":1,"entityId":1}],"addCountryMode":"change-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2223,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United Kingdom"
+    ]
+  },
+  "slug": "cotton-spinning-and-weaving-output",
+  "type": "LineChart",
+  "title": "Cotton spinning and weaving output",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 3,
+  "subtitle": "Pounds (lbs) of total cotton output spun and woven in the United Kingdom. ",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Yarn spun",
+        "shortUnit": "lbs"
+      },
+      "property": "y",
+      "variableId": 85380
+    },
+    {
+      "display": {
+        "name": "Cloth woven"
+      },
+      "property": "y",
+      "variableId": 85383
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "index": 1,
+      "entityId": 1
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/cotton-spinning-and-weaving-output.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/cotton-spinning-and-weaving-output.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

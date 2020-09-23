@@ -12,20 +12,77 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":1846,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"fatal-accidents-per-million-flights","type":"LineChart","title":"Fatal aviation accidents per million commercial flights","xAxis":{"scaleType":"linear"},"yAxis":{"scaleType":"linear"},"version":1,"subtitle":"Global number of fatal aviation accidents per million commercial flights (including passenger-only and cargo).Figures are based on the number of commercial flights (with capacity for 14+ passengers) and do not include corporate jet or military transport incidents.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"shortUnit":"per million flights"},"property":"y","variableId":66279}],"sourceDesc":"Aviation Safety Network (ASN)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 1846,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "fatal-accidents-per-million-flights",
+  "type": "LineChart",
+  "title": "Fatal aviation accidents per million commercial flights",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "subtitle": "Global number of fatal aviation accidents per million commercial flights (including passenger-only and cargo).Figures are based on the number of commercial flights (with capacity for 14+ passengers) and do not include corporate jet or military transport incidents.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "shortUnit": "per million flights"
+      },
+      "property": "y",
+      "variableId": 66279
+    }
+  ],
+  "sourceDesc": "Aviation Safety Network (ASN)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/fatal-accidents-per-million-flights.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/fatal-accidents-per-million-flights.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

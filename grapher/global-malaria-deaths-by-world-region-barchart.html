@@ -12,20 +12,119 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2925,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":1980,"variableId":291,"timeTolerance":1},"tab":"chart","data":{"availableEntities":[]},"slug":"global-malaria-deaths-by-world-region-barchart","type":"StackedBar","title":"Global malaria deaths by world region","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","labelDistance":-10},"version":2,"hasMapTab":false,"originUrl":"https://ourworldindata.org/health-meta/","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"","unit":"","tolerance":5,"isProjection":false},"property":"y","targetYear":2000,"variableId":291}],"hideLegend":false,"hasChartTab":true,"isPublished":true,"selectedData":[{"color":"#FF4500","index":0,"entityId":489},{"color":"#8E8E8E","index":0,"entityId":488},{"color":"#66CDAA","index":0,"entityId":487},{"index":0,"entityId":290},{"index":0,"entityId":276},{"color":"#4F94CD","index":0,"entityId":273}],"internalNotes":"","addCountryMode":"disabled","hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2925,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 291,
+    "timeTolerance": 1
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": []
+  },
+  "slug": "global-malaria-deaths-by-world-region-barchart",
+  "type": "StackedBar",
+  "title": "Global malaria deaths by world region",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "labelDistance": -10
+  },
+  "version": 2,
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/health-meta/",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "",
+        "unit": "",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "targetYear": 2000,
+      "variableId": 291
+    }
+  ],
+  "hideLegend": false,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "color": "#FF4500",
+      "index": 0,
+      "entityId": 489
+    },
+    {
+      "color": "#8E8E8E",
+      "index": 0,
+      "entityId": 488
+    },
+    {
+      "color": "#66CDAA",
+      "index": 0,
+      "entityId": 487
+    },
+    {
+      "index": 0,
+      "entityId": 290
+    },
+    {
+      "index": 0,
+      "entityId": 276
+    },
+    {
+      "color": "#4F94CD",
+      "index": 0,
+      "entityId": 273
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "disabled",
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/global-malaria-deaths-by-world-region-barchart.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/global-malaria-deaths-by-world-region-barchart.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

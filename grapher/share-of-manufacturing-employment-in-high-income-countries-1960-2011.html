@@ -12,20 +12,150 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":1762,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","legendStepSize":20,"defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["Argentina","Belgium","Bolivia","Botswana","Brazil","Chile","China","Colombia","Costa Rica","Denmark","Egypt","Ethiopia","Finland","France","Germany","Ghana","Hong Kong","India","Indonesia","Italy","Japan","Kenya","Malawi","Malaysia","Mauritius","Mexico","Morocco","Netherlands","Nigeria","Peru","Philippines","Senegal","Singapore","South Africa","South Korea","Spain","Sweden","Taiwan","Tanzania","Thailand","United Kingdom","United States","Venezuela","Zambia"]},"slug":"share-of-manufacturing-employment-in-high-income-countries-1960-2011","type":"LineChart","title":"Share of manufacturing employment in high income countries 1960-2011","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2011,"minTime":1960,"version":2,"hasMapTab":false,"originUrl":"","stackMode":"absolute","dimensions":[{"id":12624,"order":0,"chartId":1762,"display":{},"property":"y","variableId":8675}],"isAutoSlug":true,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":13},{"index":0,"entityId":1},{"index":0,"entityId":6},{"index":0,"entityId":3},{"index":0,"entityId":9},{"index":0,"entityId":10},{"index":0,"entityId":8}],"internalNotes":"Just for Sophie's work for the Commission","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 1762,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "legendStepSize": 20,
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Argentina",
+      "Belgium",
+      "Bolivia",
+      "Botswana",
+      "Brazil",
+      "Chile",
+      "China",
+      "Colombia",
+      "Costa Rica",
+      "Denmark",
+      "Egypt",
+      "Ethiopia",
+      "Finland",
+      "France",
+      "Germany",
+      "Ghana",
+      "Hong Kong",
+      "India",
+      "Indonesia",
+      "Italy",
+      "Japan",
+      "Kenya",
+      "Malawi",
+      "Malaysia",
+      "Mauritius",
+      "Mexico",
+      "Morocco",
+      "Netherlands",
+      "Nigeria",
+      "Peru",
+      "Philippines",
+      "Senegal",
+      "Singapore",
+      "South Africa",
+      "South Korea",
+      "Spain",
+      "Sweden",
+      "Taiwan",
+      "Tanzania",
+      "Thailand",
+      "United Kingdom",
+      "United States",
+      "Venezuela",
+      "Zambia"
+    ]
+  },
+  "slug": "share-of-manufacturing-employment-in-high-income-countries-1960-2011",
+  "type": "LineChart",
+  "title": "Share of manufacturing employment in high income countries 1960-2011",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2011,
+  "minTime": 1960,
+  "version": 2,
+  "hasMapTab": false,
+  "originUrl": "",
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "id": 12624,
+      "order": 0,
+      "chartId": 1762,
+      "display": {},
+      "property": "y",
+      "variableId": 8675
+    }
+  ],
+  "isAutoSlug": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "index": 0,
+      "entityId": 6
+    },
+    {
+      "index": 0,
+      "entityId": 3
+    },
+    {
+      "index": 0,
+      "entityId": 9
+    },
+    {
+      "index": 0,
+      "entityId": 10
+    },
+    {
+      "index": 0,
+      "entityId": 8
+    }
+  ],
+  "internalNotes": "Just for Sophie's work for the Commission",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/share-of-manufacturing-employment-in-high-income-countries-1960-2011.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/share-of-manufacturing-employment-in-high-income-countries-1960-2011.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

@@ -12,20 +12,121 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3261,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"aviation-fatalities-by-flight-phase","type":"StackedArea","title":"Global aviation fatalities by flight phase","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":2,"subtitle":"Global number of aviation fatalities, differentiated by the common flight phase in which the accident occurred. Figures include corporate jet and military transport accidents.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Approach"},"property":"y","variableId":99375},{"display":{"name":"Landing"},"property":"y","variableId":99377},{"display":{"name":"Initial climb"},"property":"y","variableId":99373},{"display":{"name":"Take off"},"property":"y","variableId":99371},{"display":{"name":"En route"},"property":"y","variableId":99369}],"sourceDesc":"Aviation Safety Network (ASN)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":1,"entityId":355},{"index":0,"entityId":355},{"index":4,"entityId":355},{"index":2,"entityId":355},{"index":3,"entityId":355}],"addCountryMode":"change-country","hideRelativeToggle":false,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3261,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "aviation-fatalities-by-flight-phase",
+  "type": "StackedArea",
+  "title": "Global aviation fatalities by flight phase",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 2,
+  "subtitle": "Global number of aviation fatalities, differentiated by the common flight phase in which the accident occurred. Figures include corporate jet and military transport accidents.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Approach"
+      },
+      "property": "y",
+      "variableId": 99375
+    },
+    {
+      "display": {
+        "name": "Landing"
+      },
+      "property": "y",
+      "variableId": 99377
+    },
+    {
+      "display": {
+        "name": "Initial climb"
+      },
+      "property": "y",
+      "variableId": 99373
+    },
+    {
+      "display": {
+        "name": "Take off"
+      },
+      "property": "y",
+      "variableId": 99371
+    },
+    {
+      "display": {
+        "name": "En route"
+      },
+      "property": "y",
+      "variableId": 99369
+    }
+  ],
+  "sourceDesc": "Aviation Safety Network (ASN)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 1,
+      "entityId": 355
+    },
+    {
+      "index": 0,
+      "entityId": 355
+    },
+    {
+      "index": 4,
+      "entityId": 355
+    },
+    {
+      "index": 2,
+      "entityId": 355
+    },
+    {
+      "index": 3,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": false,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/aviation-fatalities-by-flight-phase.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/aviation-fatalities-by-flight-phase.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

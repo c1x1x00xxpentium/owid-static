@@ -12,20 +12,97 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2696,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["England","Germany and Switzerland","Italy","Netherlands and Belgium","Scandinavia"]},"slug":"homicide-rates-across-western-europe","type":"LineChart","title":"Long-term homicide rates across Western Europe","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":4,"subtitle":"Long-term homicide rates across a select number of countries or regional groups in Western Europe. This is measured as the number of homicides per 100,000 individuals in a given population.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"numDecimalPlaces":1},"property":"y","variableId":97487}],"sourceDesc":"Eisner (2003) & IHME","hasChartTab":true,"isPublished":true,"variantName":"Eisner & IHME (1300 to 2016)","selectedData":[{"index":0,"entityId":16818},{"index":0,"entityId":37543},{"index":0,"entityId":8},{"index":0,"entityId":37541},{"index":0,"entityId":37542}],"addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2696,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "England",
+      "Germany and Switzerland",
+      "Italy",
+      "Netherlands and Belgium",
+      "Scandinavia"
+    ]
+  },
+  "slug": "homicide-rates-across-western-europe",
+  "type": "LineChart",
+  "title": "Long-term homicide rates across Western Europe",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 4,
+  "subtitle": "Long-term homicide rates across a select number of countries or regional groups in Western Europe. This is measured as the number of homicides per 100,000 individuals in a given population.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "numDecimalPlaces": 1
+      },
+      "property": "y",
+      "variableId": 97487
+    }
+  ],
+  "sourceDesc": "Eisner (2003) & IHME",
+  "hasChartTab": true,
+  "isPublished": true,
+  "variantName": "Eisner & IHME (1300 to 2016)",
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 16818
+    },
+    {
+      "index": 0,
+      "entityId": 37543
+    },
+    {
+      "index": 0,
+      "entityId": 8
+    },
+    {
+      "index": 0,
+      "entityId": 37541
+    },
+    {
+      "index": 0,
+      "entityId": 37542
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/homicide-rates-across-western-europe.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/homicide-rates-across-western-europe.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

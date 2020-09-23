@@ -12,20 +12,75 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{},"tab":"chart","data":{"availableEntities":["World"]},"slug":"airline-passenger-load-factor","type":"LineChart","title":"Global airline passenger load factor","useV2":false,"xAxis":{"label":""},"yAxis":{"min":0,"label":""},"maxTime":2018,"minTime":1950,"version":2,"subtitle":"Passenger load factor measures the ratio of actual passengers to the available seats i.e. the percentage of available seats that are filled by passengers.","hasMapTab":false,"originUrl":"ourworldindata.org/transport","stackMode":"absolute","colorScale":{},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143547}],"hasChartTab":true,"isAutoTitle":true,"isPublished":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":355}],"addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true,"id":4498};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/airline-passenger-load-factor.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {},
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "airline-passenger-load-factor",
+  "type": "LineChart",
+  "title": "Global airline passenger load factor",
+  "useV2": false,
+  "xAxis": {
+    "label": ""
+  },
+  "yAxis": {
+    "min": 0,
+    "label": ""
+  },
+  "maxTime": 2018,
+  "minTime": 1950,
+  "version": 2,
+  "subtitle": "Passenger load factor measures the ratio of actual passengers to the available seats i.e. the percentage of available seats that are filled by passengers.",
+  "hasMapTab": false,
+  "originUrl": "ourworldindata.org/transport",
+  "stackMode": "absolute",
+  "colorScale": {},
+  "dimensions": [
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 143547
+    }
+  ],
+  "hasChartTab": true,
+  "isAutoTitle": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true,
+  "id": 4498
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/airline-passenger-load-factor.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

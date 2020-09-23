@@ -12,20 +12,89 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3361,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["China","India","Rest of World","World"]},"slug":"global-number-of-missing-women","type":"StackedArea","title":"Number of 'Missing Women' in the world","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2015,"version":6,"subtitle":"'Missing Women' refers to the number who would be alive in the absence of sex discrimination. Missing women are the sum of women missing at birth (as a result of sex-selective abortion) and excess female mortality through infanticide, neglect or poor treatment.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{},"property":"y","variableId":99628}],"sourceDesc":"Bongaarts & Guilmoto (2015)","hasChartTab":true,"isPublished":true,"selectedData":[{"color":"#3360a9","index":0,"entityId":35441},{"color":"#ed6c2d","index":0,"entityId":137},{"color":"#ca2628","index":0,"entityId":171}],"addCountryMode":"disabled","hideRelativeToggle":false};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3361,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "China",
+      "India",
+      "Rest of World",
+      "World"
+    ]
+  },
+  "slug": "global-number-of-missing-women",
+  "type": "StackedArea",
+  "title": "Number of 'Missing Women' in the world",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2015,
+  "version": 6,
+  "subtitle": "'Missing Women' refers to the number who would be alive in the absence of sex discrimination. Missing women are the sum of women missing at birth (as a result of sex-selective abortion) and excess female mortality through infanticide, neglect or poor treatment.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99628
+    }
+  ],
+  "sourceDesc": "Bongaarts & Guilmoto (2015)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "color": "#3360a9",
+      "index": 0,
+      "entityId": 35441
+    },
+    {
+      "color": "#ed6c2d",
+      "index": 0,
+      "entityId": 137
+    },
+    {
+      "color": "#ca2628",
+      "index": 0,
+      "entityId": 171
+    }
+  ],
+  "addCountryMode": "disabled",
+  "hideRelativeToggle": false
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/global-number-of-missing-women.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/global-number-of-missing-women.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

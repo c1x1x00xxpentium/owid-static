@@ -12,20 +12,130 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2532,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":[]},"slug":"number-of-delivery-points-for-the-united-states-postal-service","type":"LineChart","title":"Number of delivery points for the United States Postal Service","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":2,"subtitle":"Figure illustrates the number of delivery points for different types of addresses over time.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"PO box addresses","unit":"million","shortUnit":"million"},"property":"y","variableId":96602},{"display":{"name":"City addresses","unit":"million","shortUnit":"million"},"property":"y","variableId":96600},{"display":{"name":"Highway contract route addresses","unit":"million","shortUnit":"million"},"property":"y","variableId":96603},{"display":{"name":"Rural addresses","unit":"million","shortUnit":"million"},"property":"y","variableId":96601},{"display":{"name":"Total delivery points","unit":"million","shortUnit":"million"},"property":"y","variableId":96604}],"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":13},{"index":1,"entityId":13},{"index":2,"entityId":13},{"index":3,"entityId":13},{"index":4,"entityId":13}],"addCountryMode":"disabled","baseColorScheme":"stackedAreaDefault","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2532,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": []
+  },
+  "slug": "number-of-delivery-points-for-the-united-states-postal-service",
+  "type": "LineChart",
+  "title": "Number of delivery points for the United States Postal Service",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 2,
+  "subtitle": "Figure illustrates the number of delivery points for different types of addresses over time.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "PO box addresses",
+        "unit": "million",
+        "shortUnit": "million"
+      },
+      "property": "y",
+      "variableId": 96602
+    },
+    {
+      "display": {
+        "name": "City addresses",
+        "unit": "million",
+        "shortUnit": "million"
+      },
+      "property": "y",
+      "variableId": 96600
+    },
+    {
+      "display": {
+        "name": "Highway contract route addresses",
+        "unit": "million",
+        "shortUnit": "million"
+      },
+      "property": "y",
+      "variableId": 96603
+    },
+    {
+      "display": {
+        "name": "Rural addresses",
+        "unit": "million",
+        "shortUnit": "million"
+      },
+      "property": "y",
+      "variableId": 96601
+    },
+    {
+      "display": {
+        "name": "Total delivery points",
+        "unit": "million",
+        "shortUnit": "million"
+      },
+      "property": "y",
+      "variableId": 96604
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 1,
+      "entityId": 13
+    },
+    {
+      "index": 2,
+      "entityId": 13
+    },
+    {
+      "index": 3,
+      "entityId": 13
+    },
+    {
+      "index": 4,
+      "entityId": 13
+    }
+  ],
+  "addCountryMode": "disabled",
+  "baseColorScheme": "stackedAreaDefault",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/number-of-delivery-points-for-the-united-states-postal-service.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/number-of-delivery-points-for-the-united-states-postal-service.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

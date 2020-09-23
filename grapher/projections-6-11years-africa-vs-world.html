@@ -12,20 +12,78 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":[]},"slug":"projections-6-11years-africa-vs-world","type":"StackedArea","title":"Projections of 6-11 years population, Africa vs. Rest of the World","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":1,"subtitle":"Projections of the total number of children under five years old based on the UN's median fertility scenario. This is shown as the sum of Africa, and the rest of the world (excluding Africa).","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{},"property":"y","variableId":97475}],"sourceDesc":"UN Population Division (2017 Revision)","hasChartTab":true,"isPublished":true,"selectedData":[{"color":"#ca2628","index":0,"entityId":37539},{"color":"#3360a9","index":0,"entityId":273}],"addCountryMode":"disabled","hideRelativeToggle":false,"id":2937};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": []
+  },
+  "slug": "projections-6-11years-africa-vs-world",
+  "type": "StackedArea",
+  "title": "Projections of 6-11 years population, Africa vs. Rest of the World",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "subtitle": "Projections of the total number of children under five years old based on the UN's median fertility scenario. This is shown as the sum of Africa, and the rest of the world (excluding Africa).",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 97475
+    }
+  ],
+  "sourceDesc": "UN Population Division (2017 Revision)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "color": "#ca2628",
+      "index": 0,
+      "entityId": 37539
+    },
+    {
+      "color": "#3360a9",
+      "index": 0,
+      "entityId": 273
+    }
+  ],
+  "addCountryMode": "disabled",
+  "hideRelativeToggle": false,
+  "id": 2937
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/projections-6-11years-africa-vs-world.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/projections-6-11years-africa-vs-world.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

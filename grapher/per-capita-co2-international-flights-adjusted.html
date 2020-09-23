@@ -12,20 +12,180 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4505,"map":{"colorScale":{"equalSizeBins":true,"baseColorScheme":"YlGnBu","binningStrategy":"manual","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[50,100,250,500,750,1000],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"targetYear":"latest"},"tab":"map","data":{"availableEntities":["Algeria","Argentina","Australia","Austria","Azerbaijan","Bahrain","Belarus","Belgium","Bolivia","Brazil","Bulgaria","Cambodia","Canada","Chile","China","Colombia","Costa Rica","Croatia","Czech Republic","Denmark","Ecuador","El Salvador","Fiji","Finland","France","Georgia","Germany","Greece","Hungary","Iceland","India","Indonesia","Iran","Ireland","Israel","Italy","Japan","Jordan","Kyrgyzstan","Latvia","Luxembourg","Malta","Mauritius","Mexico","Moldova","Morocco","Netherlands","New Zealand","Norway","Oman","Panama","Peru","Poland","Portugal","Romania","Russia","Saudi Arabia","Singapore","South Korea","Spain","Sri Lanka","Switzerland","Tajikistan","Thailand","Tunisia","Turkey","Ukraine","United Arab Emirates","United Kingdom","United States","World"]},"slug":"per-capita-co2-international-flights-adjusted","title":"Per capita CO₂ emissions from international flights, tourism-adjusted","yAxis":{"min":0},"maxTime":"latest","minTime":2018,"version":7,"subtitle":"International aviation emissions are here allocated to the country of departure, then adjusted for tourism by multiplying this figure by the ratio of inbound-to-outbound travellers. This attempts to distinguish between locals traveling abroad and foreign visitors traveling to that country on the same flight.","hasMapTab":true,"originUrl":"ourworldindata.org/transport","dimensions":[{"display":{"unit":"kilograms ","shortUnit":"kg","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false},"conversionFactor":1000,"numDecimalPlaces":0},"property":"y","variableId":143536}],"sourceDesc":"Calculated by Our World in Data based on Graver et al. (2019) and World Bank","isPublished":true,"selectedData":[{"index":0,"entityId":9},{"index":0,"entityId":13},{"index":0,"entityId":1},{"index":0,"entityId":72},{"index":0,"entityId":44},{"index":0,"entityId":23},{"index":0,"entityId":102}]};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4505,
+  "map": {
+    "colorScale": {
+      "equalSizeBins": true,
+      "baseColorScheme": "YlGnBu",
+      "binningStrategy": "manual",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [
+        50,
+        100,
+        250,
+        500,
+        750,
+        1000
+      ],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "targetYear": "latest"
+  },
+  "tab": "map",
+  "data": {
+    "availableEntities": [
+      "Algeria",
+      "Argentina",
+      "Australia",
+      "Austria",
+      "Azerbaijan",
+      "Bahrain",
+      "Belarus",
+      "Belgium",
+      "Bolivia",
+      "Brazil",
+      "Bulgaria",
+      "Cambodia",
+      "Canada",
+      "Chile",
+      "China",
+      "Colombia",
+      "Costa Rica",
+      "Croatia",
+      "Czech Republic",
+      "Denmark",
+      "Ecuador",
+      "El Salvador",
+      "Fiji",
+      "Finland",
+      "France",
+      "Georgia",
+      "Germany",
+      "Greece",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Ireland",
+      "Israel",
+      "Italy",
+      "Japan",
+      "Jordan",
+      "Kyrgyzstan",
+      "Latvia",
+      "Luxembourg",
+      "Malta",
+      "Mauritius",
+      "Mexico",
+      "Moldova",
+      "Morocco",
+      "Netherlands",
+      "New Zealand",
+      "Norway",
+      "Oman",
+      "Panama",
+      "Peru",
+      "Poland",
+      "Portugal",
+      "Romania",
+      "Russia",
+      "Saudi Arabia",
+      "Singapore",
+      "South Korea",
+      "Spain",
+      "Sri Lanka",
+      "Switzerland",
+      "Tajikistan",
+      "Thailand",
+      "Tunisia",
+      "Turkey",
+      "Ukraine",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States",
+      "World"
+    ]
+  },
+  "slug": "per-capita-co2-international-flights-adjusted",
+  "title": "Per capita CO₂ emissions from international flights, tourism-adjusted",
+  "yAxis": {
+    "min": 0
+  },
+  "maxTime": "latest",
+  "minTime": 2018,
+  "version": 7,
+  "subtitle": "International aviation emissions are here allocated to the country of departure, then adjusted for tourism by multiplying this figure by the ratio of inbound-to-outbound travellers. This attempts to distinguish between locals traveling abroad and foreign visitors traveling to that country on the same flight.",
+  "hasMapTab": true,
+  "originUrl": "ourworldindata.org/transport",
+  "dimensions": [
+    {
+      "display": {
+        "unit": "kilograms ",
+        "shortUnit": "kg",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        },
+        "conversionFactor": 1000,
+        "numDecimalPlaces": 0
+      },
+      "property": "y",
+      "variableId": 143536
+    }
+  ],
+  "sourceDesc": "Calculated by Our World in Data based on Graver et al. (2019) and World Bank",
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 9
+    },
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "index": 0,
+      "entityId": 72
+    },
+    {
+      "index": 0,
+      "entityId": 44
+    },
+    {
+      "index": 0,
+      "entityId": 23
+    },
+    {
+      "index": 0,
+      "entityId": 102
+    }
+  ]
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/per-capita-co2-international-flights-adjusted.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/per-capita-co2-international-flights-adjusted.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

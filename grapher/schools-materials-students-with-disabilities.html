@@ -12,20 +12,150 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["Albania","Andorra","Bahrain","Bangladesh","Bermuda","British Virgin Islands","Burkina Faso","Cayman Islands","Cook Islands","Costa Rica","Democratic Republic of Congo","Dominica","El Salvador","Finland","Gibraltar","Hong Kong","India","Jamaica","Kazakhstan","Latvia","Liberia","Macao","Malaysia","Maldives","Mauritius","Moldova","Monaco","Morocco","Nauru","Niger","Niue","Palestine","Peru","Qatar","Saint Lucia","Saint Vincent and the Grenadines","Samoa","Saudi Arabia","Seychelles","Sierra Leone","Slovakia","Swaziland","Ukraine","Uruguay","Uzbekistan","Zambia","Honduras","Marshall Islands","Rwanda"]},"slug":"schools-materials-students-with-disabilities","type":"LineChart","title":"Share of schools with access to adapted infrastructure and materials for students with disabilities","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2017,"minTime":2016,"version":1,"hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Upper secondary","unit":"%"},"property":"y","variableId":108820},{"display":{"name":"Primary school","unit":"%"},"property":"y","variableId":108822},{"display":{"name":"Lower secondary","unit":"%"},"property":"y","variableId":108821}],"sourceDesc":"UN Statistics Division (2019)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":137},{"index":1,"entityId":137},{"index":2,"entityId":137}],"addCountryMode":"change-country","hideRelativeToggle":true,"id":3841};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Albania",
+      "Andorra",
+      "Bahrain",
+      "Bangladesh",
+      "Bermuda",
+      "British Virgin Islands",
+      "Burkina Faso",
+      "Cayman Islands",
+      "Cook Islands",
+      "Costa Rica",
+      "Democratic Republic of Congo",
+      "Dominica",
+      "El Salvador",
+      "Finland",
+      "Gibraltar",
+      "Hong Kong",
+      "India",
+      "Jamaica",
+      "Kazakhstan",
+      "Latvia",
+      "Liberia",
+      "Macao",
+      "Malaysia",
+      "Maldives",
+      "Mauritius",
+      "Moldova",
+      "Monaco",
+      "Morocco",
+      "Nauru",
+      "Niger",
+      "Niue",
+      "Palestine",
+      "Peru",
+      "Qatar",
+      "Saint Lucia",
+      "Saint Vincent and the Grenadines",
+      "Samoa",
+      "Saudi Arabia",
+      "Seychelles",
+      "Sierra Leone",
+      "Slovakia",
+      "Swaziland",
+      "Ukraine",
+      "Uruguay",
+      "Uzbekistan",
+      "Zambia",
+      "Honduras",
+      "Marshall Islands",
+      "Rwanda"
+    ]
+  },
+  "slug": "schools-materials-students-with-disabilities",
+  "type": "LineChart",
+  "title": "Share of schools with access to adapted infrastructure and materials for students with disabilities",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2017,
+  "minTime": 2016,
+  "version": 1,
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Upper secondary",
+        "unit": "%"
+      },
+      "property": "y",
+      "variableId": 108820
+    },
+    {
+      "display": {
+        "name": "Primary school",
+        "unit": "%"
+      },
+      "property": "y",
+      "variableId": 108822
+    },
+    {
+      "display": {
+        "name": "Lower secondary",
+        "unit": "%"
+      },
+      "property": "y",
+      "variableId": 108821
+    }
+  ],
+  "sourceDesc": "UN Statistics Division (2019)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 137
+    },
+    {
+      "index": 1,
+      "entityId": 137
+    },
+    {
+      "index": 2,
+      "entityId": 137
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": true,
+  "id": 3841
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/schools-materials-students-with-disabilities.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/schools-materials-students-with-disabilities.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

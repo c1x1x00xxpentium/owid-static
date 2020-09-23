@@ -12,20 +12,271 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["Africa","Albania","Algeria","Angola","Argentina","Armenia","Asia (excl. China & India)","Asia","Australia","Austria","Azerbaijan","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Benin","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Bulgaria","Cambodia","Cameroon","Canada","Cape Verde","Chile","China","Colombia","Comoros","Congo","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Democratic Republic of Congo","Denmark","Djibouti","Dominica","Dominican Republic","EU-27","EU-28","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Europe (excl. EU-27)","Europe (excl. EU-28)","Europe","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Guatemala","Guinea-Bissau","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyzstan","Latvia","Lebanon","Lesotho","Libya","Lithuania","Luxembourg","Macedonia","Malaysia","Malta","Mauritius","Mexico","Moldova","Mongolia","Montenegro","Morocco","Mozambique","Namibia","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North America (excl. USA)","North America","North Korea","Norway","Oceania","Oman","Pakistan","Panama","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Saint Lucia","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Singapore","Slovakia","Slovenia","South Africa","South America","South Korea","Spain","Sri Lanka","Sudan","Swaziland","Sweden","Switzerland","Taiwan","Tajikistan","Tanzania","Thailand","Togo","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Venezuela","Vietnam","World","Yemen","Zambia","Zimbabwe"]},"note":"GDP per capita is measured in constant 2011 international-$ which corrects for inflation and cross-country price differences.","slug":"carbon-intensity-vs-gdp","type":"ScatterPlot","title":"Carbon intensity vs. GDP per capita","useV2":false,"xAxis":{"scaleType":"log","canChangeScaleType":true},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"latest","version":2,"subtitle":"Carbon intensity represents the quantity of CO₂ emitted per unit of energy consumption – it's measured in kilograms of CO₂ emitted per kilowatt-hour of energy.","hasMapTab":false,"originUrl":"ourworldindata.org/co2-and-other-greenhouse-gas-emissions","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Carbon intensity (kgCO₂ per kWh)","unit":"kilograms CO₂ per kilowatt-hour","shortUnit":"","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":142968},{"display":{"name":"GDP per capita","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"x","variableId":2209},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"color","variableId":123}],"sourceDesc":"Our World in Data based on Global Carbon Project; BP; and World Bank","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[],"hideRelativeToggle":true,"id":4374};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/carbon-intensity-vs-gdp.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Africa",
+      "Albania",
+      "Algeria",
+      "Angola",
+      "Argentina",
+      "Armenia",
+      "Asia (excl. China & India)",
+      "Asia",
+      "Australia",
+      "Austria",
+      "Azerbaijan",
+      "Bahrain",
+      "Bangladesh",
+      "Barbados",
+      "Belarus",
+      "Belgium",
+      "Benin",
+      "Bolivia",
+      "Bosnia and Herzegovina",
+      "Botswana",
+      "Brazil",
+      "Bulgaria",
+      "Cambodia",
+      "Cameroon",
+      "Canada",
+      "Cape Verde",
+      "Chile",
+      "China",
+      "Colombia",
+      "Comoros",
+      "Congo",
+      "Costa Rica",
+      "Croatia",
+      "Cuba",
+      "Cyprus",
+      "Czech Republic",
+      "Democratic Republic of Congo",
+      "Denmark",
+      "Djibouti",
+      "Dominica",
+      "Dominican Republic",
+      "EU-27",
+      "EU-28",
+      "Ecuador",
+      "Egypt",
+      "El Salvador",
+      "Equatorial Guinea",
+      "Estonia",
+      "Ethiopia",
+      "Europe (excl. EU-27)",
+      "Europe (excl. EU-28)",
+      "Europe",
+      "Finland",
+      "France",
+      "Gabon",
+      "Gambia",
+      "Georgia",
+      "Germany",
+      "Ghana",
+      "Greece",
+      "Guatemala",
+      "Guinea-Bissau",
+      "Haiti",
+      "Honduras",
+      "Hong Kong",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Iraq",
+      "Ireland",
+      "Israel",
+      "Italy",
+      "Jamaica",
+      "Japan",
+      "Jordan",
+      "Kazakhstan",
+      "Kenya",
+      "Kuwait",
+      "Kyrgyzstan",
+      "Latvia",
+      "Lebanon",
+      "Lesotho",
+      "Libya",
+      "Lithuania",
+      "Luxembourg",
+      "Macedonia",
+      "Malaysia",
+      "Malta",
+      "Mauritius",
+      "Mexico",
+      "Moldova",
+      "Mongolia",
+      "Montenegro",
+      "Morocco",
+      "Mozambique",
+      "Namibia",
+      "Nepal",
+      "Netherlands",
+      "New Zealand",
+      "Nicaragua",
+      "Niger",
+      "Nigeria",
+      "North America (excl. USA)",
+      "North America",
+      "North Korea",
+      "Norway",
+      "Oceania",
+      "Oman",
+      "Pakistan",
+      "Panama",
+      "Paraguay",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Qatar",
+      "Romania",
+      "Russia",
+      "Saint Lucia",
+      "Sao Tome and Principe",
+      "Saudi Arabia",
+      "Senegal",
+      "Serbia",
+      "Seychelles",
+      "Singapore",
+      "Slovakia",
+      "Slovenia",
+      "South Africa",
+      "South America",
+      "South Korea",
+      "Spain",
+      "Sri Lanka",
+      "Sudan",
+      "Swaziland",
+      "Sweden",
+      "Switzerland",
+      "Taiwan",
+      "Tajikistan",
+      "Tanzania",
+      "Thailand",
+      "Togo",
+      "Trinidad and Tobago",
+      "Tunisia",
+      "Turkey",
+      "Turkmenistan",
+      "Ukraine",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States",
+      "Uruguay",
+      "Uzbekistan",
+      "Venezuela",
+      "Vietnam",
+      "World",
+      "Yemen",
+      "Zambia",
+      "Zimbabwe"
+    ]
+  },
+  "note": "GDP per capita is measured in constant 2011 international-$ which corrects for inflation and cross-country price differences.",
+  "slug": "carbon-intensity-vs-gdp",
+  "type": "ScatterPlot",
+  "title": "Carbon intensity vs. GDP per capita",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "log",
+    "canChangeScaleType": true
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": "latest",
+  "minTime": "latest",
+  "version": 2,
+  "subtitle": "Carbon intensity represents the quantity of CO₂ emitted per unit of energy consumption – it's measured in kilograms of CO₂ emitted per kilowatt-hour of energy.",
+  "hasMapTab": false,
+  "originUrl": "ourworldindata.org/co2-and-other-greenhouse-gas-emissions",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Carbon intensity (kgCO₂ per kWh)",
+        "unit": "kilograms CO₂ per kilowatt-hour",
+        "shortUnit": "",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 142968
+    },
+    {
+      "display": {
+        "name": "GDP per capita",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "x",
+      "variableId": 2209
+    },
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "color",
+      "variableId": 123
+    }
+  ],
+  "sourceDesc": "Our World in Data based on Global Carbon Project; BP; and World Bank",
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [],
+  "hideRelativeToggle": true,
+  "id": 4374
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/carbon-intensity-vs-gdp.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

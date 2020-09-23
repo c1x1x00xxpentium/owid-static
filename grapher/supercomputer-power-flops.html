@@ -12,20 +12,84 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":1689,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","legendStepSize":20,"defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"supercomputer-power-flops","type":"LineChart","title":"Supercomputer Power (FLOPS)","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"log","canChangeScaleType":true},"version":2,"subtitle":"The growth of supercomputer power, measured as the number of floating-point operations carried out per second (FLOPS) by the largest supercomputer in any given year. (FLOPS) is a measure of calculations per second for floating-point operations. Floating-point operations are needed for very large or very small real numbers, or computations that require a large dynamic range. It is therefore a more accurate measured than simply instructions per second.","hasMapTab":false,"originUrl":"","stackMode":"absolute","dimensions":[{"id":11463,"order":0,"chartId":1689,"display":{},"property":"y","variableId":65437}],"isAutoSlug":true,"sourceDesc":"TOP500 Supercomputer Database","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 1689,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "legendStepSize": 20,
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "supercomputer-power-flops",
+  "type": "LineChart",
+  "title": "Supercomputer Power (FLOPS)",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "log",
+    "canChangeScaleType": true
+  },
+  "version": 2,
+  "subtitle": "The growth of supercomputer power, measured as the number of floating-point operations carried out per second (FLOPS) by the largest supercomputer in any given year. (FLOPS) is a measure of calculations per second for floating-point operations. Floating-point operations are needed for very large or very small real numbers, or computations that require a large dynamic range. It is therefore a more accurate measured than simply instructions per second.",
+  "hasMapTab": false,
+  "originUrl": "",
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "id": 11463,
+      "order": 0,
+      "chartId": 1689,
+      "display": {},
+      "property": "y",
+      "variableId": 65437
+    }
+  ],
+  "isAutoSlug": true,
+  "sourceDesc": "TOP500 Supercomputer Database",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/supercomputer-power-flops.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/supercomputer-power-flops.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

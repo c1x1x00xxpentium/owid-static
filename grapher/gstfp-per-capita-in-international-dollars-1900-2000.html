@@ -12,20 +12,109 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":1552,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","legendStepSize":20,"defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["Argentina","Australia","Brazil","Chile","Colombia","France","Germany","Mexico","Switzerland","United Kingdom","United States","World"]},"slug":"gstfp-per-capita-in-international-dollars-1900-2000","type":"LineChart","title":"GSTFP per capita (in international dollars), 1900-2000","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":2,"subtitle":"GSFTP is a measure of genuine saving that also accounts for the net present value of total factor productivity, or in other words: technological change. (Genuine saving = net fixed produced capital formation and overseas investment + change in natural capital + educational expenditure)","hasMapTab":false,"originUrl":"","stackMode":"absolute","dimensions":[{"id":10568,"order":0,"chartId":1552,"display":{},"property":"y","variableId":43148}],"isAutoSlug":true,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":6},{"index":0,"entityId":170},{"index":0,"entityId":172},{"index":0,"entityId":1},{"index":0,"entityId":37}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 1552,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "legendStepSize": 20,
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Argentina",
+      "Australia",
+      "Brazil",
+      "Chile",
+      "Colombia",
+      "France",
+      "Germany",
+      "Mexico",
+      "Switzerland",
+      "United Kingdom",
+      "United States",
+      "World"
+    ]
+  },
+  "slug": "gstfp-per-capita-in-international-dollars-1900-2000",
+  "type": "LineChart",
+  "title": "GSTFP per capita (in international dollars), 1900-2000",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 2,
+  "subtitle": "GSFTP is a measure of genuine saving that also accounts for the net present value of total factor productivity, or in other words: technological change. (Genuine saving = net fixed produced capital formation and overseas investment + change in natural capital + educational expenditure)",
+  "hasMapTab": false,
+  "originUrl": "",
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "id": 10568,
+      "order": 0,
+      "chartId": 1552,
+      "display": {},
+      "property": "y",
+      "variableId": 43148
+    }
+  ],
+  "isAutoSlug": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 6
+    },
+    {
+      "index": 0,
+      "entityId": 170
+    },
+    {
+      "index": 0,
+      "entityId": 172
+    },
+    {
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "index": 0,
+      "entityId": 37
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/gstfp-per-capita-in-international-dollars-1900-2000.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/gstfp-per-capita-in-international-dollars-1900-2000.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

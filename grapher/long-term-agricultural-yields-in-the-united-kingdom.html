@@ -12,20 +12,114 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":956,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{},"customNumericColorsActive":false},"projection":"World","targetYear":1980,"variableId":8708,"timeTolerance":1,"legendStepSize":20,"defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"note":"","slug":"long-term-agricultural-yields-in-the-united-kingdom","type":"LineChart","title":"Long-term agricultural yields in the United Kingdom","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"suffix":" tonnes/ha","scaleType":"linear","labelDistance":-1},"version":3,"subtitle":"Average crop yields in the United Kingdom, measured in tonnes per hectare.","hasMapTab":false,"originUrl":"https://ourworldindata.org/yields-and-land-use-in-agriculture/","stackMode":null,"dimensions":[{"id":9647,"order":0,"chartId":956,"display":{"name":"Potatoes","unit":"tonnes per hectare","tolerance":5,"isProjection":false},"property":"y","variableId":8708},{"id":9648,"order":1,"chartId":956,"display":{"name":"Sugar beet","unit":"tonnes per hectare","tolerance":5,"isProjection":false},"property":"y","variableId":8709}],"entityType":"country","hideLegend":false,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":1},{"index":1,"entityId":1}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 956,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {},
+      "customNumericColorsActive": false
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 8708,
+    "timeTolerance": 1,
+    "legendStepSize": 20,
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United Kingdom"
+    ]
+  },
+  "note": "",
+  "slug": "long-term-agricultural-yields-in-the-united-kingdom",
+  "type": "LineChart",
+  "title": "Long-term agricultural yields in the United Kingdom",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "suffix": " tonnes/ha",
+    "scaleType": "linear",
+    "labelDistance": -1
+  },
+  "version": 3,
+  "subtitle": "Average crop yields in the United Kingdom, measured in tonnes per hectare.",
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/yields-and-land-use-in-agriculture/",
+  "stackMode": null,
+  "dimensions": [
+    {
+      "id": 9647,
+      "order": 0,
+      "chartId": 956,
+      "display": {
+        "name": "Potatoes",
+        "unit": "tonnes per hectare",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "variableId": 8708
+    },
+    {
+      "id": 9648,
+      "order": 1,
+      "chartId": 956,
+      "display": {
+        "name": "Sugar beet",
+        "unit": "tonnes per hectare",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "variableId": 8709
+    }
+  ],
+  "entityType": "country",
+  "hideLegend": false,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "index": 1,
+      "entityId": 1
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/long-term-agricultural-yields-in-the-united-kingdom.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/long-term-agricultural-yields-in-the-united-kingdom.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

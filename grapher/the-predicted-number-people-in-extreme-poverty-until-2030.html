@@ -12,20 +12,104 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":1867,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["Africa","Asia","Australia","Europe","North America","South America"]},"slug":"the-predicted-number-people-in-extreme-poverty-until-2030","type":"LineChart","title":"The predicted number of people in extreme poverty until 2030","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"version":1,"hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{},"property":"y","variableId":66298}],"hasChartTab":true,"isPublished":true,"lastEditedAt":"2018-01-07T11:50:23.013507+00:00","selectedData":[{"index":0,"entityId":273},{"index":0,"entityId":275},{"index":0,"entityId":23},{"index":0,"entityId":276},{"index":0,"entityId":294},{"index":0,"entityId":295}],"internalNotes":"Just Sophie's Commission work","addCountryMode":"add-country","baseColorScheme":"RdYlGn","invertColorScheme":true,"hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 1867,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Africa",
+      "Asia",
+      "Australia",
+      "Europe",
+      "North America",
+      "South America"
+    ]
+  },
+  "slug": "the-predicted-number-people-in-extreme-poverty-until-2030",
+  "type": "LineChart",
+  "title": "The predicted number of people in extreme poverty until 2030",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "version": 1,
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 66298
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "lastEditedAt": "2018-01-07T11:50:23.013507+00:00",
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 273
+    },
+    {
+      "index": 0,
+      "entityId": 275
+    },
+    {
+      "index": 0,
+      "entityId": 23
+    },
+    {
+      "index": 0,
+      "entityId": 276
+    },
+    {
+      "index": 0,
+      "entityId": 294
+    },
+    {
+      "index": 0,
+      "entityId": 295
+    }
+  ],
+  "internalNotes": "Just Sophie's Commission work",
+  "addCountryMode": "add-country",
+  "baseColorScheme": "RdYlGn",
+  "invertColorScheme": true,
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/the-predicted-number-people-in-extreme-poverty-until-2030.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/the-predicted-number-people-in-extreme-poverty-until-2030.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

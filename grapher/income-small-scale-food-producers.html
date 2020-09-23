@@ -12,20 +12,128 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"baseColorScheme":"PuBuGn","binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":2016,"variableId":108561,"timeTolerance":3},"tab":"map","data":{"availableEntities":["Albania","Armenia","Bangladesh","Bolivia","Bulgaria","Burkina Faso","Cambodia","Cameroon","Canada","Ecuador","Ethiopia","Georgia","Ghana","Guatemala","India","Iraq","Kenya","Kyrgyzstan","Malawi","Mali","Mexico","Mongolia","Mozambique","Nepal","Nicaragua","Niger","Nigeria","Pakistan","Panama","Peru","Rwanda","Senegal","Serbia","Sierra Leone","Tanzania","Timor","Uganda","Vietnam"]},"slug":"income-small-scale-food-producers","type":"LineChart","title":"Average income of small-scale food producers","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2014,"minTime":2005,"version":1,"subtitle":"The average income of small-scale food producers is measured in 2011 international-$. This adjusts for inflation and cross-country price differences.","hasMapTab":true,"stackMode":"absolute","dimensions":[{"display":{"unit":"$","shortUnit":"$"},"property":"y","variableId":108561}],"sourceDesc":"UN Statistics Division (2019)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":104},{"index":0,"entityId":129},{"index":0,"entityId":148}],"addCountryMode":"add-country","hideRelativeToggle":true,"id":3832};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "PuBuGn",
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": 2016,
+    "variableId": 108561,
+    "timeTolerance": 3
+  },
+  "tab": "map",
+  "data": {
+    "availableEntities": [
+      "Albania",
+      "Armenia",
+      "Bangladesh",
+      "Bolivia",
+      "Bulgaria",
+      "Burkina Faso",
+      "Cambodia",
+      "Cameroon",
+      "Canada",
+      "Ecuador",
+      "Ethiopia",
+      "Georgia",
+      "Ghana",
+      "Guatemala",
+      "India",
+      "Iraq",
+      "Kenya",
+      "Kyrgyzstan",
+      "Malawi",
+      "Mali",
+      "Mexico",
+      "Mongolia",
+      "Mozambique",
+      "Nepal",
+      "Nicaragua",
+      "Niger",
+      "Nigeria",
+      "Pakistan",
+      "Panama",
+      "Peru",
+      "Rwanda",
+      "Senegal",
+      "Serbia",
+      "Sierra Leone",
+      "Tanzania",
+      "Timor",
+      "Uganda",
+      "Vietnam"
+    ]
+  },
+  "slug": "income-small-scale-food-producers",
+  "type": "LineChart",
+  "title": "Average income of small-scale food producers",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2014,
+  "minTime": 2005,
+  "version": 1,
+  "subtitle": "The average income of small-scale food producers is measured in 2011 international-$. This adjusts for inflation and cross-country price differences.",
+  "hasMapTab": true,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "unit": "$",
+        "shortUnit": "$"
+      },
+      "property": "y",
+      "variableId": 108561
+    }
+  ],
+  "sourceDesc": "UN Statistics Division (2019)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 104
+    },
+    {
+      "index": 0,
+      "entityId": 129
+    },
+    {
+      "index": 0,
+      "entityId": 148
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "id": 3832
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/income-small-scale-food-producers.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/income-small-scale-food-producers.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

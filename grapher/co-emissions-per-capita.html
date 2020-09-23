@@ -12,20 +12,399 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":486,"map":{"colorScale":{"equalSizeBins":true,"baseColorScheme":"OrRd","binningStrategy":"manual","colorSchemeInvert":false,"legendDescription":"CO₂ emissions per capita","customNumericColors":[null],"customNumericLabels":["","","","","","","","","","","",""],"customNumericValues":[1,2.5,5,7.5,10,15,20,50],"customCategoryColors":[],"customCategoryLabels":[],"customNumericMinValue":0,"customHiddenCategories":[]},"projection":"World","targetYear":"latest","variableId":142960,"timeTolerance":1},"tab":"map","data":{"availableEntities":["Afghanistan","Africa","Albania","Algeria","Andorra","Angola","Anguilla","Antigua and Barbuda","Argentina","Armenia","Aruba","Asia (excl. China & India)","Asia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bonaire Sint Eustatius and Saba","Bosnia and Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Cook Islands","Costa Rica","Cote d'Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Democratic Republic of Congo","Denmark","Djibouti","Dominica","Dominican Republic","EU-27","EU-28","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Europe (excl. EU-27)","Europe (excl. EU-28)","Europe","Faeroe Islands","Falkland Islands","Fiji","Finland","France","French Guiana","French Polynesia","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guadeloupe","Guatemala","Guinea-Bissau","Guinea","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macao","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Martinique","Mauritania","Mauritius","Mexico","Moldova","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Niue","North America (excl. USA)","North America","North Korea","Norway","Oceania","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Reunion","Romania","Russia","Rwanda","Saint Helena","Saint Kitts and Nevis","Saint Lucia","Saint Pierre and Miquelon","Saint Vincent and the Grenadines","Samoa","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Sint Maarten (Dutch part)","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South America","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Turks and Caicos Islands","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Venezuela","Vietnam","World","Yemen","Zambia","Zimbabwe"]},"note":"","slug":"co-emissions-per-capita","type":"LineChart","title":"Per capita CO₂ emissions","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","labelDistance":-10},"maxTime":2017,"minTime":1946,"version":21,"subtitle":"Average carbon dioxide (CO₂) emissions per capita measured in tonnes per year. This measures CO₂ emissions from fossil fuels and cement production only – land use change is not included.","hasMapTab":true,"originUrl":"https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":142960}],"entityType":"country","hideLegend":false,"sourceDesc":"OWID based on CDIAC; Global Carbon Project; Gapminder & UN","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":104},{"index":0,"entityId":13},{"index":0,"entityId":1},{"index":0,"entityId":137},{"index":0,"entityId":171},{"index":0,"entityId":37},{"index":0,"entityId":355},{"index":0,"entityId":3},{"index":0,"entityId":172}],"internalNotes":"","addCountryMode":"add-country","relatedQuestions":[{"url":"https://ourworldindata.org/per-capita-co2","text":"Where in the world do people emit the most CO₂?"}],"hideRelativeToggle":false,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/co-emissions-per-capita.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 486,
+  "map": {
+    "colorScale": {
+      "equalSizeBins": true,
+      "baseColorScheme": "OrRd",
+      "binningStrategy": "manual",
+      "colorSchemeInvert": false,
+      "legendDescription": "CO₂ emissions per capita",
+      "customNumericColors": [
+        null
+      ],
+      "customNumericLabels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "customNumericValues": [
+        1,
+        2.5,
+        5,
+        7.5,
+        10,
+        15,
+        20,
+        50
+      ],
+      "customCategoryColors": [],
+      "customCategoryLabels": [],
+      "customNumericMinValue": 0,
+      "customHiddenCategories": []
+    },
+    "projection": "World",
+    "targetYear": "latest",
+    "variableId": 142960,
+    "timeTolerance": 1
+  },
+  "tab": "map",
+  "data": {
+    "availableEntities": [
+      "Afghanistan",
+      "Africa",
+      "Albania",
+      "Algeria",
+      "Andorra",
+      "Angola",
+      "Anguilla",
+      "Antigua and Barbuda",
+      "Argentina",
+      "Armenia",
+      "Aruba",
+      "Asia (excl. China & India)",
+      "Asia",
+      "Australia",
+      "Austria",
+      "Azerbaijan",
+      "Bahamas",
+      "Bahrain",
+      "Bangladesh",
+      "Barbados",
+      "Belarus",
+      "Belgium",
+      "Belize",
+      "Benin",
+      "Bermuda",
+      "Bhutan",
+      "Bolivia",
+      "Bonaire Sint Eustatius and Saba",
+      "Bosnia and Herzegovina",
+      "Botswana",
+      "Brazil",
+      "British Virgin Islands",
+      "Brunei",
+      "Bulgaria",
+      "Burkina Faso",
+      "Burundi",
+      "Cambodia",
+      "Cameroon",
+      "Canada",
+      "Cape Verde",
+      "Cayman Islands",
+      "Central African Republic",
+      "Chad",
+      "Chile",
+      "China",
+      "Colombia",
+      "Comoros",
+      "Congo",
+      "Cook Islands",
+      "Costa Rica",
+      "Cote d'Ivoire",
+      "Croatia",
+      "Cuba",
+      "Curacao",
+      "Cyprus",
+      "Czech Republic",
+      "Democratic Republic of Congo",
+      "Denmark",
+      "Djibouti",
+      "Dominica",
+      "Dominican Republic",
+      "EU-27",
+      "EU-28",
+      "Ecuador",
+      "Egypt",
+      "El Salvador",
+      "Equatorial Guinea",
+      "Eritrea",
+      "Estonia",
+      "Ethiopia",
+      "Europe (excl. EU-27)",
+      "Europe (excl. EU-28)",
+      "Europe",
+      "Faeroe Islands",
+      "Falkland Islands",
+      "Fiji",
+      "Finland",
+      "France",
+      "French Guiana",
+      "French Polynesia",
+      "Gabon",
+      "Gambia",
+      "Georgia",
+      "Germany",
+      "Ghana",
+      "Gibraltar",
+      "Greece",
+      "Greenland",
+      "Grenada",
+      "Guadeloupe",
+      "Guatemala",
+      "Guinea-Bissau",
+      "Guinea",
+      "Guyana",
+      "Haiti",
+      "Honduras",
+      "Hong Kong",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Iraq",
+      "Ireland",
+      "Israel",
+      "Italy",
+      "Jamaica",
+      "Japan",
+      "Jordan",
+      "Kazakhstan",
+      "Kenya",
+      "Kiribati",
+      "Kuwait",
+      "Kyrgyzstan",
+      "Laos",
+      "Latvia",
+      "Lebanon",
+      "Lesotho",
+      "Liberia",
+      "Libya",
+      "Liechtenstein",
+      "Lithuania",
+      "Luxembourg",
+      "Macao",
+      "Macedonia",
+      "Madagascar",
+      "Malawi",
+      "Malaysia",
+      "Maldives",
+      "Mali",
+      "Malta",
+      "Marshall Islands",
+      "Martinique",
+      "Mauritania",
+      "Mauritius",
+      "Mexico",
+      "Moldova",
+      "Mongolia",
+      "Montenegro",
+      "Montserrat",
+      "Morocco",
+      "Mozambique",
+      "Myanmar",
+      "Namibia",
+      "Nauru",
+      "Nepal",
+      "Netherlands",
+      "New Caledonia",
+      "New Zealand",
+      "Nicaragua",
+      "Niger",
+      "Nigeria",
+      "Niue",
+      "North America (excl. USA)",
+      "North America",
+      "North Korea",
+      "Norway",
+      "Oceania",
+      "Oman",
+      "Pakistan",
+      "Palau",
+      "Palestine",
+      "Panama",
+      "Papua New Guinea",
+      "Paraguay",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Qatar",
+      "Reunion",
+      "Romania",
+      "Russia",
+      "Rwanda",
+      "Saint Helena",
+      "Saint Kitts and Nevis",
+      "Saint Lucia",
+      "Saint Pierre and Miquelon",
+      "Saint Vincent and the Grenadines",
+      "Samoa",
+      "Sao Tome and Principe",
+      "Saudi Arabia",
+      "Senegal",
+      "Serbia",
+      "Seychelles",
+      "Sierra Leone",
+      "Singapore",
+      "Sint Maarten (Dutch part)",
+      "Slovakia",
+      "Slovenia",
+      "Solomon Islands",
+      "Somalia",
+      "South Africa",
+      "South America",
+      "South Korea",
+      "South Sudan",
+      "Spain",
+      "Sri Lanka",
+      "Sudan",
+      "Suriname",
+      "Swaziland",
+      "Sweden",
+      "Switzerland",
+      "Syria",
+      "Taiwan",
+      "Tajikistan",
+      "Tanzania",
+      "Thailand",
+      "Timor",
+      "Togo",
+      "Tonga",
+      "Trinidad and Tobago",
+      "Tunisia",
+      "Turkey",
+      "Turkmenistan",
+      "Turks and Caicos Islands",
+      "Tuvalu",
+      "Uganda",
+      "Ukraine",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States",
+      "Uruguay",
+      "Uzbekistan",
+      "Vanuatu",
+      "Venezuela",
+      "Vietnam",
+      "World",
+      "Yemen",
+      "Zambia",
+      "Zimbabwe"
+    ]
+  },
+  "note": "",
+  "slug": "co-emissions-per-capita",
+  "type": "LineChart",
+  "title": "Per capita CO₂ emissions",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "labelDistance": -10
+  },
+  "maxTime": 2017,
+  "minTime": 1946,
+  "version": 21,
+  "subtitle": "Average carbon dioxide (CO₂) emissions per capita measured in tonnes per year. This measures CO₂ emissions from fossil fuels and cement production only – land use change is not included.",
+  "hasMapTab": true,
+  "originUrl": "https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 142960
+    }
+  ],
+  "entityType": "country",
+  "hideLegend": false,
+  "sourceDesc": "OWID based on CDIAC; Global Carbon Project; Gapminder & UN",
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 104
+    },
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "index": 0,
+      "entityId": 137
+    },
+    {
+      "index": 0,
+      "entityId": 171
+    },
+    {
+      "index": 0,
+      "entityId": 37
+    },
+    {
+      "index": 0,
+      "entityId": 355
+    },
+    {
+      "index": 0,
+      "entityId": 3
+    },
+    {
+      "index": 0,
+      "entityId": 172
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "relatedQuestions": [
+    {
+      "url": "https://ourworldindata.org/per-capita-co2",
+      "text": "Where in the world do people emit the most CO₂?"
+    }
+  ],
+  "hideRelativeToggle": false,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/co-emissions-per-capita.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

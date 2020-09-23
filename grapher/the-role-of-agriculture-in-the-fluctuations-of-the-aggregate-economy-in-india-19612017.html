@@ -12,20 +12,92 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3276,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["India"]},"logo":"core+owid","slug":"the-role-of-agriculture-in-the-fluctuations-of-the-aggregate-economy-in-india-19612017","type":"LineChart","title":"The role of agriculture in the fluctuations of the aggregate economy in India (1961–2017)","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":2017,"minTime":1961,"version":19,"hideLogo":false,"subtitle":"Unit 13 'Economic fluctuations and unemployment’ Section 13.5 'How households cope with fluctuations' in The CORE Team, The Economy. Available at: https://tinyco.re/13050991 [Figure 13.9b]","hasMapTab":false,"originUrl":"https://tinyco.re/13050991","stackMode":"absolute","dimensions":[{"display":{},"property":"y","variableId":99418},{"display":{},"property":"y","variableId":99419}],"hasChartTab":true,"isPublished":true,"selectedData":[{"color":"#ed6c2d","index":0,"entityId":137},{"color":"#000","index":1,"entityId":137}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3276,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "India"
+    ]
+  },
+  "logo": "core+owid",
+  "slug": "the-role-of-agriculture-in-the-fluctuations-of-the-aggregate-economy-in-india-19612017",
+  "type": "LineChart",
+  "title": "The role of agriculture in the fluctuations of the aggregate economy in India (1961–2017)",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "maxTime": 2017,
+  "minTime": 1961,
+  "version": 19,
+  "hideLogo": false,
+  "subtitle": "Unit 13 'Economic fluctuations and unemployment’ Section 13.5 'How households cope with fluctuations' in The CORE Team, The Economy. Available at: https://tinyco.re/13050991 [Figure 13.9b]",
+  "hasMapTab": false,
+  "originUrl": "https://tinyco.re/13050991",
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99418
+    },
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99419
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "color": "#ed6c2d",
+      "index": 0,
+      "entityId": 137
+    },
+    {
+      "color": "#000",
+      "index": 1,
+      "entityId": 137
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/the-role-of-agriculture-in-the-fluctuations-of-the-aggregate-economy-in-india-19612017.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/the-role-of-agriculture-in-the-fluctuations-of-the-aggregate-economy-in-india-19612017.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

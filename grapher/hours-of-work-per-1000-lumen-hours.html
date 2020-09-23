@@ -12,20 +12,79 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3388,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"logo":"core+owid","slug":"hours-of-work-per-1000-lumen-hours","type":"LineChart","title":"Hours of work required to produce 1,000 lumen-hours","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"log","canChangeScaleType":true},"maxTime":1992,"minTime":1800,"version":3,"hideLogo":false,"subtitle":"(Roughly equal to the hourly light output of an 18-watt low-energy bulb)","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{},"property":"y","variableId":104234}],"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3388,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "logo": "core+owid",
+  "slug": "hours-of-work-per-1000-lumen-hours",
+  "type": "LineChart",
+  "title": "Hours of work required to produce 1,000 lumen-hours",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "log",
+    "canChangeScaleType": true
+  },
+  "maxTime": 1992,
+  "minTime": 1800,
+  "version": 3,
+  "hideLogo": false,
+  "subtitle": "(Roughly equal to the hourly light output of an 18-watt low-energy bulb)",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 104234
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/hours-of-work-per-1000-lumen-hours.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/hours-of-work-per-1000-lumen-hours.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

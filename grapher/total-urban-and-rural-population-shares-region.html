@@ -12,20 +12,101 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2965,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["British Isles","Central region","Eastern region","Low Countries","Mediterranean region","North and west region","Rest of northern Europe"]},"slug":"total-urban-and-rural-population-shares-region","type":"StackedBar","title":"Total urban and rural population shares","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":3,"subtitle":"The total urban and rural population as a share of Europe's total population, by region. See the source tab for countries included in the regional definitions. ","hasMapTab":false,"stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Rural"},"property":"y","variableId":97825},{"display":{"name":"Urban"},"property":"y","variableId":97815}],"entityType":"region","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":37839},{"index":1,"entityId":37839}],"addCountryMode":"change-country"};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2965,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "British Isles",
+      "Central region",
+      "Eastern region",
+      "Low Countries",
+      "Mediterranean region",
+      "North and west region",
+      "Rest of northern Europe"
+    ]
+  },
+  "slug": "total-urban-and-rural-population-shares-region",
+  "type": "StackedBar",
+  "title": "Total urban and rural population shares",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 3,
+  "subtitle": "The total urban and rural population as a share of Europe's total population, by region. See the source tab for countries included in the regional definitions. ",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Rural"
+      },
+      "property": "y",
+      "variableId": 97825
+    },
+    {
+      "display": {
+        "name": "Urban"
+      },
+      "property": "y",
+      "variableId": 97815
+    }
+  ],
+  "entityType": "region",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 37839
+    },
+    {
+      "index": 1,
+      "entityId": 37839
+    }
+  ],
+  "addCountryMode": "change-country"
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/total-urban-and-rural-population-shares-region.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/total-urban-and-rural-population-shares-region.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

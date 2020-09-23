@@ -12,20 +12,91 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2418,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["United States"]},"slug":"share-of-people-who-prefer-a-male-vs-a-female-boss","type":"LineChart","title":"Share of people who prefer a male vs a female boss","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":2,"subtitle":"Figure illustrates the share of national adults, aged 18+, responding to the question 'If you were taking a new job and had your choice of a boss would you prefer to work for a man or a woman?'","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Prefer female boss","unit":"%","shortUnit":"%"},"property":"y","variableId":93866},{"display":{"name":"Prefer male boss","unit":"%"},"property":"y","variableId":93865}],"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":13},{"index":1,"entityId":13}],"addCountryMode":"change-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2418,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United States"
+    ]
+  },
+  "slug": "share-of-people-who-prefer-a-male-vs-a-female-boss",
+  "type": "LineChart",
+  "title": "Share of people who prefer a male vs a female boss",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 2,
+  "subtitle": "Figure illustrates the share of national adults, aged 18+, responding to the question 'If you were taking a new job and had your choice of a boss would you prefer to work for a man or a woman?'",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Prefer female boss",
+        "unit": "%",
+        "shortUnit": "%"
+      },
+      "property": "y",
+      "variableId": 93866
+    },
+    {
+      "display": {
+        "name": "Prefer male boss",
+        "unit": "%"
+      },
+      "property": "y",
+      "variableId": 93865
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 1,
+      "entityId": 13
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/share-of-people-who-prefer-a-male-vs-a-female-boss.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/share-of-people-who-prefer-a-male-vs-a-female-boss.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

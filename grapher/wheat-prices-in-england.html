@@ -12,20 +12,82 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","variableId":99500},"tab":"chart","data":{"availableEntities":["England"]},"slug":"wheat-prices-in-england","type":"LineChart","title":"Wheat prices in England","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":1996,"minTime":1264,"version":1,"subtitle":"Wheat prices in England, measured in constant 1996 pounds per tonne.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Wheat prices","unit":"1996 pounds per tonne","shortUnit":"£","numDecimalPlaces":2},"property":"y","variableId":99500}],"sourceDesc":"Makridakis, Wheelwright, and Hyndman (1997) - Forecasting: Methods and Applications. Wiley.","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":16818}],"addCountryMode":"add-country","hideRelativeToggle":true,"id":3319};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "variableId": 99500
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "England"
+    ]
+  },
+  "slug": "wheat-prices-in-england",
+  "type": "LineChart",
+  "title": "Wheat prices in England",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 1996,
+  "minTime": 1264,
+  "version": 1,
+  "subtitle": "Wheat prices in England, measured in constant 1996 pounds per tonne.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Wheat prices",
+        "unit": "1996 pounds per tonne",
+        "shortUnit": "£",
+        "numDecimalPlaces": 2
+      },
+      "property": "y",
+      "variableId": 99500
+    }
+  ],
+  "sourceDesc": "Makridakis, Wheelwright, and Hyndman (1997) - Forecasting: Methods and Applications. Wiley.",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 16818
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "id": 3319
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/wheat-prices-in-england.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/wheat-prices-in-england.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

@@ -12,20 +12,107 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3941,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{},"customNumericColorsActive":false},"projection":"World","targetYear":1980,"variableId":72,"timeTolerance":1},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"note":"","slug":"englands-economy-over-the-long-run-gdp-vs-population","type":"ScatterPlot","title":"England's economy over the long run: GDP vs population","xAxis":{"scaleType":"linear","canChangeScaleType":true},"yAxis":{"min":0,"scaleType":"linear","labelDistance":-10,"canChangeScaleType":true},"maxTime":1801,"minTime":1270,"version":5,"hasMapTab":false,"originUrl":"","stackMode":null,"colorScale":{"binningStrategy":"manual","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{"Europe":"#932834"},"customCategoryLabels":{},"customHiddenCategories":{},"customNumericColorsActive":true},"dimensions":[{"display":{},"property":"y","variableId":109991},{"display":{},"property":"x","variableId":110009},{"display":{},"property":"color","variableId":123}],"entityType":"country","hideLegend":true,"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":false};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3941,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {},
+      "customNumericColorsActive": false
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 72,
+    "timeTolerance": 1
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United Kingdom"
+    ]
+  },
+  "note": "",
+  "slug": "englands-economy-over-the-long-run-gdp-vs-population",
+  "type": "ScatterPlot",
+  "title": "England's economy over the long run: GDP vs population",
+  "xAxis": {
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "labelDistance": -10,
+    "canChangeScaleType": true
+  },
+  "maxTime": 1801,
+  "minTime": 1270,
+  "version": 5,
+  "hasMapTab": false,
+  "originUrl": "",
+  "stackMode": null,
+  "colorScale": {
+    "binningStrategy": "manual",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {
+      "Europe": "#932834"
+    },
+    "customCategoryLabels": {},
+    "customHiddenCategories": {},
+    "customNumericColorsActive": true
+  },
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 109991
+    },
+    {
+      "display": {},
+      "property": "x",
+      "variableId": 110009
+    },
+    {
+      "display": {},
+      "property": "color",
+      "variableId": 123
+    }
+  ],
+  "entityType": "country",
+  "hideLegend": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": false
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/englands-economy-over-the-long-run-gdp-vs-population.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/englands-economy-over-the-long-run-gdp-vs-population.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

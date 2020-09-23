@@ -12,20 +12,113 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3307,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0.2,"customHiddenCategories":{}},"projection":"World","variableId":99487},"tab":"chart","data":{"availableEntities":["Australia","Austria","Belgium","Brazil","Canada","Denmark","Finland","France","Germany","India","Italy","Japan","Mexico","Netherlands","Norway","Poland","South Africa","South Korea","Sweden","Switzerland","United Kingdom","United States"]},"logo":"core+owid","note":"Disposable income Ginis are displayed on the 'MAP' tab.","slug":"the-duration-of-democracy-and-inequality-in-disposable-income-2015","type":"ScatterPlot","title":"The duration of democracy and inequality in disposable income (2015)","xAxis":{"min":0,"scaleType":"linear"},"yAxis":{"min":0.2,"scaleType":"linear"},"maxTime":"latest","minTime":"latest","version":7,"hideLogo":false,"subtitle":"Unit 22 'Capstone: Economics, Politics and Public Policy' Section 22.10 'Democracy makes a difference' in The CORE Team, The Economy. Available at https://tinyco.re/22101661 [Figure 22.17]","hasMapTab":true,"originUrl":"https://tinyco.re/22101661","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":99539},{"display":{},"property":"x","variableId":99538}],"hasChartTab":true,"isPublished":true,"selectedData":[],"internalNotes":"core-econ.org","hideRelativeToggle":false,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3307,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0.2,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "variableId": 99487
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Australia",
+      "Austria",
+      "Belgium",
+      "Brazil",
+      "Canada",
+      "Denmark",
+      "Finland",
+      "France",
+      "Germany",
+      "India",
+      "Italy",
+      "Japan",
+      "Mexico",
+      "Netherlands",
+      "Norway",
+      "Poland",
+      "South Africa",
+      "South Korea",
+      "Sweden",
+      "Switzerland",
+      "United Kingdom",
+      "United States"
+    ]
+  },
+  "logo": "core+owid",
+  "note": "Disposable income Ginis are displayed on the 'MAP' tab.",
+  "slug": "the-duration-of-democracy-and-inequality-in-disposable-income-2015",
+  "type": "ScatterPlot",
+  "title": "The duration of democracy and inequality in disposable income (2015)",
+  "xAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0.2,
+    "scaleType": "linear"
+  },
+  "maxTime": "latest",
+  "minTime": "latest",
+  "version": 7,
+  "hideLogo": false,
+  "subtitle": "Unit 22 'Capstone: Economics, Politics and Public Policy' Section 22.10 'Democracy makes a difference' in The CORE Team, The Economy. Available at https://tinyco.re/22101661 [Figure 22.17]",
+  "hasMapTab": true,
+  "originUrl": "https://tinyco.re/22101661",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99539
+    },
+    {
+      "display": {},
+      "property": "x",
+      "variableId": 99538
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [],
+  "internalNotes": "core-econ.org",
+  "hideRelativeToggle": false,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/the-duration-of-democracy-and-inequality-in-disposable-income-2015.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/the-duration-of-democracy-and-inequality-in-disposable-income-2015.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

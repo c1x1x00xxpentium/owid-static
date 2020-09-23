@@ -12,20 +12,79 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"cumulative-global-plastics","type":"StackedArea","title":"Cumulative global plastics production","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":1,"subtitle":"Cumulative global production of plastics, measured in tonnes.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"unit":"tonnes","shortUnit":"tonnes","conversionFactor":1000000},"property":"y","variableId":97690}],"hideLegend":true,"sourceDesc":"Geyer et al. (2017)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"addCountryMode":"add-country","hideRelativeToggle":true,"id":2887};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "cumulative-global-plastics",
+  "type": "StackedArea",
+  "title": "Cumulative global plastics production",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "subtitle": "Cumulative global production of plastics, measured in tonnes.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "unit": "tonnes",
+        "shortUnit": "tonnes",
+        "conversionFactor": 1000000
+      },
+      "property": "y",
+      "variableId": 97690
+    }
+  ],
+  "hideLegend": true,
+  "sourceDesc": "Geyer et al. (2017)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "id": 2887
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/cumulative-global-plastics.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/cumulative-global-plastics.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

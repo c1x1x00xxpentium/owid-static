@@ -12,20 +12,124 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2426,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}}},"data":{"availableEntities":["Agriculture, Forestry & Fishing","Air Transport","Basic & Fabricated Metals","Chemicals & Products","Coke, Refined Petroleum & Nuclear Fuel","Construction","Education","Electrical & Optical Equipment","Electricity, Gas & Water","Financial Intermediation","Food, Beverages & Tobacco","Health & Social Work","Hotels & Restaurants","IT, Research & Development","Leather & Footwear","Machinery","Manufacturing, Nec, Recycling","Mining & Quarrying","Motor vehicles (manufacturing, repair & fuel)","Other Community, Social & Personal Services","Other Non-Metallic Mineral","Post & Telecommunications","Private Households","Public Admin & Defence","Pulp, Paper, & Printing","Rail and freight transport","Real Estate Activities","Retail Trade","Rubber & Plastics","Supporting & Auxiliary Transport","Textiles & Products","Transport Equipment","Water Transport","Wholesale & Commission Trade","Wood & Products"]},"slug":"value-added-vs-share-of-emissions-germany","type":"ScatterPlot","title":"Contribution to value added vs. Share of CO₂ emissions in Germany","xAxis":{"max":55,"scaleType":"linear"},"yAxis":{"max":20,"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"latest","version":9,"subtitle":"Contribution of individual sectors to net economic output versus its share of total national carbon dioxide (CO₂) emissions in 2009. Sectors which lie above the line contribute more to the value added than the emissions in Germany. Direct emissions of households are not included.","colorScale":{"binningStrategy":"equalInterval","colorSchemeInvert":true,"customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Contribution to value added"},"property":"y","variableId":93882},{"display":{"name":"Share of CO₂ emissions"},"property":"x","variableId":93881}],"sourceDesc":"(WIOD) World Input-Output Dataset","isPublished":true,"addCountryMode":"change-country","comparisonLines":[{}],"hideRelativeToggle":false};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2426,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    }
+  },
+  "data": {
+    "availableEntities": [
+      "Agriculture, Forestry & Fishing",
+      "Air Transport",
+      "Basic & Fabricated Metals",
+      "Chemicals & Products",
+      "Coke, Refined Petroleum & Nuclear Fuel",
+      "Construction",
+      "Education",
+      "Electrical & Optical Equipment",
+      "Electricity, Gas & Water",
+      "Financial Intermediation",
+      "Food, Beverages & Tobacco",
+      "Health & Social Work",
+      "Hotels & Restaurants",
+      "IT, Research & Development",
+      "Leather & Footwear",
+      "Machinery",
+      "Manufacturing, Nec, Recycling",
+      "Mining & Quarrying",
+      "Motor vehicles (manufacturing, repair & fuel)",
+      "Other Community, Social & Personal Services",
+      "Other Non-Metallic Mineral",
+      "Post & Telecommunications",
+      "Private Households",
+      "Public Admin & Defence",
+      "Pulp, Paper, & Printing",
+      "Rail and freight transport",
+      "Real Estate Activities",
+      "Retail Trade",
+      "Rubber & Plastics",
+      "Supporting & Auxiliary Transport",
+      "Textiles & Products",
+      "Transport Equipment",
+      "Water Transport",
+      "Wholesale & Commission Trade",
+      "Wood & Products"
+    ]
+  },
+  "slug": "value-added-vs-share-of-emissions-germany",
+  "type": "ScatterPlot",
+  "title": "Contribution to value added vs. Share of CO₂ emissions in Germany",
+  "xAxis": {
+    "max": 55,
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "max": 20,
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": "latest",
+  "minTime": "latest",
+  "version": 9,
+  "subtitle": "Contribution of individual sectors to net economic output versus its share of total national carbon dioxide (CO₂) emissions in 2009. Sectors which lie above the line contribute more to the value added than the emissions in Germany. Direct emissions of households are not included.",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "colorSchemeInvert": true,
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Contribution to value added"
+      },
+      "property": "y",
+      "variableId": 93882
+    },
+    {
+      "display": {
+        "name": "Share of CO₂ emissions"
+      },
+      "property": "x",
+      "variableId": 93881
+    }
+  ],
+  "sourceDesc": "(WIOD) World Input-Output Dataset",
+  "isPublished": true,
+  "addCountryMode": "change-country",
+  "comparisonLines": [
+    {}
+  ],
+  "hideRelativeToggle": false
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/value-added-vs-share-of-emissions-germany.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/value-added-vs-share-of-emissions-germany.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

@@ -12,20 +12,78 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4523,"data":{"availableEntities":["Australia","Austria","Belgium","Canada","Costa Rica","Croatia","Czech Republic","Denmark","Estonia","European Union (28 countries)","Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Israel","Italy","Latvia","Lithuania","Luxembourg","Mexico","Netherlands","Norway","Poland","Portugal","Slovakia","Slovenia","Spain","Sweden","United Kingdom","United States"]},"slug":"actual-and-imputed-housing-rents-as-share-of-gdp","type":"SlopeChart","title":"Actual and imputed housing rents as share of GDP","maxTime":1995,"minTime":1975,"version":2,"dimensions":[{"property":"y","variableId":143552},{"property":"color","variableId":123}],"isPublished":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4523,
+  "data": {
+    "availableEntities": [
+      "Australia",
+      "Austria",
+      "Belgium",
+      "Canada",
+      "Costa Rica",
+      "Croatia",
+      "Czech Republic",
+      "Denmark",
+      "Estonia",
+      "European Union (28 countries)",
+      "Finland",
+      "France",
+      "Germany",
+      "Greece",
+      "Hungary",
+      "Iceland",
+      "Ireland",
+      "Israel",
+      "Italy",
+      "Latvia",
+      "Lithuania",
+      "Luxembourg",
+      "Mexico",
+      "Netherlands",
+      "Norway",
+      "Poland",
+      "Portugal",
+      "Slovakia",
+      "Slovenia",
+      "Spain",
+      "Sweden",
+      "United Kingdom",
+      "United States"
+    ]
+  },
+  "slug": "actual-and-imputed-housing-rents-as-share-of-gdp",
+  "type": "SlopeChart",
+  "title": "Actual and imputed housing rents as share of GDP",
+  "maxTime": 1995,
+  "minTime": 1975,
+  "version": 2,
+  "dimensions": [
+    {
+      "property": "y",
+      "variableId": 143552
+    },
+    {
+      "property": "color",
+      "variableId": 123
+    }
+  ],
+  "isPublished": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/actual-and-imputed-housing-rents-as-share-of-gdp.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/actual-and-imputed-housing-rents-as-share-of-gdp.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

@@ -12,20 +12,176 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"baseColorScheme":"YlGnBu","binningStrategy":"manual","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[1,2,3,4,5,6,7],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","targetYear":2014,"variableId":95145,"timeTolerance":5,"defaultProjection":"World"},"tab":"map","data":{"availableEntities":["Albania","Armenia","Australia","Austria","Azerbaijan","Belarus","Bhutan","Canada","Cook Islands","Croatia","Cyprus","Czech Republic","Denmark","Estonia","Ethiopia","Finland","France","Georgia","Greece","Hungary","Iceland","Ireland","Italy","Japan","Kazakhstan","Kyrgyzstan","Latvia","Lebanon","Lithuania","Macedonia","Mexico","Moldova","Netherlands","New Zealand","Norway","Palau","Philippines","Poland","Romania","Russia","Samoa","Seychelles","Singapore","Slovenia","South Africa","Spain","Sweden","Tajikistan","Thailand","Turkmenistan","Ukraine","United Kingdom","United States","Uzbekistan","Zimbabwe"]},"slug":"alcohol-expenditure-as-share-of-total","type":"LineChart","title":"Alcohol expenditure as a share of total household expenditure","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":1,"subtitle":"Spending on alcohol measured as a share of total household expenditure.","hasMapTab":true,"stackMode":"absolute","dimensions":[{"display":{"unit":"%"},"property":"y","variableId":95145}],"sourceDesc":"WHO, Global Health Observatory (GHO)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":161},{"index":0,"entityId":1},{"index":0,"entityId":25},{"index":0,"entityId":44},{"index":0,"entityId":13},{"index":0,"entityId":14},{"index":0,"entityId":12},{"index":0,"entityId":81},{"index":0,"entityId":80}],"addCountryMode":"add-country","hideRelativeToggle":true,"id":2482};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "YlGnBu",
+      "binningStrategy": "manual",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": 2014,
+    "variableId": 95145,
+    "timeTolerance": 5,
+    "defaultProjection": "World"
+  },
+  "tab": "map",
+  "data": {
+    "availableEntities": [
+      "Albania",
+      "Armenia",
+      "Australia",
+      "Austria",
+      "Azerbaijan",
+      "Belarus",
+      "Bhutan",
+      "Canada",
+      "Cook Islands",
+      "Croatia",
+      "Cyprus",
+      "Czech Republic",
+      "Denmark",
+      "Estonia",
+      "Ethiopia",
+      "Finland",
+      "France",
+      "Georgia",
+      "Greece",
+      "Hungary",
+      "Iceland",
+      "Ireland",
+      "Italy",
+      "Japan",
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Latvia",
+      "Lebanon",
+      "Lithuania",
+      "Macedonia",
+      "Mexico",
+      "Moldova",
+      "Netherlands",
+      "New Zealand",
+      "Norway",
+      "Palau",
+      "Philippines",
+      "Poland",
+      "Romania",
+      "Russia",
+      "Samoa",
+      "Seychelles",
+      "Singapore",
+      "Slovenia",
+      "South Africa",
+      "Spain",
+      "Sweden",
+      "Tajikistan",
+      "Thailand",
+      "Turkmenistan",
+      "Ukraine",
+      "United Kingdom",
+      "United States",
+      "Uzbekistan",
+      "Zimbabwe"
+    ]
+  },
+  "slug": "alcohol-expenditure-as-share-of-total",
+  "type": "LineChart",
+  "title": "Alcohol expenditure as a share of total household expenditure",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "subtitle": "Spending on alcohol measured as a share of total household expenditure.",
+  "hasMapTab": true,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "unit": "%"
+      },
+      "property": "y",
+      "variableId": 95145
+    }
+  ],
+  "sourceDesc": "WHO, Global Health Observatory (GHO)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 161
+    },
+    {
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "index": 0,
+      "entityId": 25
+    },
+    {
+      "index": 0,
+      "entityId": 44
+    },
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 0,
+      "entityId": 14
+    },
+    {
+      "index": 0,
+      "entityId": 12
+    },
+    {
+      "index": 0,
+      "entityId": 81
+    },
+    {
+      "index": 0,
+      "entityId": 80
+    }
+  ],
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "id": 2482
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/alcohol-expenditure-as-share-of-total.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/alcohol-expenditure-as-share-of-total.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

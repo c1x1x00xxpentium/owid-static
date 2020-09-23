@@ -12,20 +12,91 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2889,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":[]},"slug":"level-of-urbanization","type":"LineChart","title":"Level of urbanization","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":3,"subtitle":"The percent of urban population (criterion of 5000 inhabitants) in relation to the total population.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"unit":"%","shortUnit":"%"},"property":"y","variableId":97691}],"entityType":"region","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":273},{"index":0,"entityId":37781},{"index":0,"entityId":5407},{"index":0,"entityId":5403},{"index":0,"entityId":37780}],"addCountryMode":"disabled","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2889,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": []
+  },
+  "slug": "level-of-urbanization",
+  "type": "LineChart",
+  "title": "Level of urbanization",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 3,
+  "subtitle": "The percent of urban population (criterion of 5000 inhabitants) in relation to the total population.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "unit": "%",
+        "shortUnit": "%"
+      },
+      "property": "y",
+      "variableId": 97691
+    }
+  ],
+  "entityType": "region",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 273
+    },
+    {
+      "index": 0,
+      "entityId": 37781
+    },
+    {
+      "index": 0,
+      "entityId": 5407
+    },
+    {
+      "index": 0,
+      "entityId": 5403
+    },
+    {
+      "index": 0,
+      "entityId": 37780
+    }
+  ],
+  "addCountryMode": "disabled",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/level-of-urbanization.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/level-of-urbanization.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

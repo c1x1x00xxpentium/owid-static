@@ -12,20 +12,363 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4328,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"variableId":142948},"data":{"availableEntities":["Algeria","Argentina","Australia","Austria","Bangladesh","Belarus","Belgium","Bolivia","Brazil","Bulgaria","Canada","Chile","China","Colombia","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Dominican Republic","Ecuador","Egypt","Estonia","Finland","France","Germany","Greece","Honduras","Hungary","Iceland","India","Indonesia","Iran","Ireland","Israel","Italy","Japan","Kuwait","Latvia","Lithuania","Luxembourg","Malaysia","Malta","Mexico","Moldova","Morocco","Netherlands","Nigeria","Norway","Pakistan","Panama","Peru","Philippines","Poland","Portugal","Romania","Russia","Saudi Arabia","Serbia","Slovakia","Slovenia","South Africa","South Korea","Spain","Sweden","Switzerland","Turkey","Ukraine","United Arab Emirates","United Kingdom","United States","Afghanistan","Africa","Albania","Andorra","Angola","Anguilla","Antigua and Barbuda","Armenia","Aruba","Asia excl. China","Asia","Azerbaijan","Bahamas","Bahrain","Barbados","Belize","Benin","Bermuda","Bhutan","Bonaire Sint Eustatius and Saba","Bosnia and Herzegovina","Botswana","British Virgin Islands","Brunei","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Central African Republic","Chad","Comoros","Congo","Costa Rica","Cote d'Ivoire","Curacao","Democratic Republic of Congo","Djibouti","Dominica","El Salvador","Equatorial Guinea","Eritrea","Ethiopia","Europe","European Union","Faeroe Islands","Falkland Islands","Fiji","French Polynesia","Gabon","Gambia","Georgia","Ghana","Gibraltar","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea-Bissau","Guinea","Guyana","Haiti","High income","International","Iraq","Isle of Man","Jamaica","Jersey","Jordan","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Low income","Lower middle income","Macedonia","Madagascar","Malawi","Maldives","Mali","Mauritania","Mauritius","Monaco","Mongolia","Montenegro","Montserrat","Mozambique","Myanmar","Namibia","Nepal","New Caledonia","New Zealand","Nicaragua","Niger","North America","Northern Mariana Islands","Oceania","Oman","Palestine","Papua New Guinea","Paraguay","Puerto Rico","Qatar","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","San Marino","Sao Tome and Principe","Senegal","Seychelles","Sierra Leone","Singapore","Sint Maarten (Dutch part)","Somalia","South America","South Sudan","Sri Lanka","Sudan","Suriname","Swaziland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor","Togo","Trinidad and Tobago","Tunisia","Turks and Caicos Islands","Uganda","United States Virgin Islands","Upper middle income","Uruguay","Uzbekistan","Vatican","Venezuela","Vietnam","Western Sahara","World excl. China and South Korea","World excl. China, South Korea, Japan and Singapore","World excl. China","World","Yemen","Zambia","Zimbabwe"]},"note":"This chart shows the model estimates as of 19 September 2020.","slug":"daily-new-estimated-covid-19-infections-yyg-model","title":"Daily new estimated COVID-19 infections from the YYG model","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"version":110,"subtitle":"Estimates of the true number of infections. The \"upper\" and \"lower\" lines show the bounds of a 95% uncertainty interval. For comparison, confirmed cases are infections that have been confirmed with a test.","originUrl":"https://ourworldindata.org/covid-models","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Mean estimate","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":142948},{"display":{"name":"Lower","isProjection":false,"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143055},{"display":{"name":"Upper","isProjection":false,"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143056},{"display":{"name":"Confirmed cases","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":142700}],"sourceDesc":"YYG (2020), ECDC (2020)","isPublished":true,"selectedData":[{"color":"#cf0a66","index":0,"entityId":13},{"color":"#b4b4b4","index":1,"entityId":13},{"color":"#b4b4b4","index":2,"entityId":13},{"color":"#050505","index":3,"entityId":13}],"addCountryMode":"change-country","hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/daily-new-estimated-covid-19-infections-yyg-model.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4328,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "variableId": 142948
+  },
+  "data": {
+    "availableEntities": [
+      "Algeria",
+      "Argentina",
+      "Australia",
+      "Austria",
+      "Bangladesh",
+      "Belarus",
+      "Belgium",
+      "Bolivia",
+      "Brazil",
+      "Bulgaria",
+      "Canada",
+      "Chile",
+      "China",
+      "Colombia",
+      "Croatia",
+      "Cuba",
+      "Cyprus",
+      "Czech Republic",
+      "Denmark",
+      "Dominican Republic",
+      "Ecuador",
+      "Egypt",
+      "Estonia",
+      "Finland",
+      "France",
+      "Germany",
+      "Greece",
+      "Honduras",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Ireland",
+      "Israel",
+      "Italy",
+      "Japan",
+      "Kuwait",
+      "Latvia",
+      "Lithuania",
+      "Luxembourg",
+      "Malaysia",
+      "Malta",
+      "Mexico",
+      "Moldova",
+      "Morocco",
+      "Netherlands",
+      "Nigeria",
+      "Norway",
+      "Pakistan",
+      "Panama",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Romania",
+      "Russia",
+      "Saudi Arabia",
+      "Serbia",
+      "Slovakia",
+      "Slovenia",
+      "South Africa",
+      "South Korea",
+      "Spain",
+      "Sweden",
+      "Switzerland",
+      "Turkey",
+      "Ukraine",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States",
+      "Afghanistan",
+      "Africa",
+      "Albania",
+      "Andorra",
+      "Angola",
+      "Anguilla",
+      "Antigua and Barbuda",
+      "Armenia",
+      "Aruba",
+      "Asia excl. China",
+      "Asia",
+      "Azerbaijan",
+      "Bahamas",
+      "Bahrain",
+      "Barbados",
+      "Belize",
+      "Benin",
+      "Bermuda",
+      "Bhutan",
+      "Bonaire Sint Eustatius and Saba",
+      "Bosnia and Herzegovina",
+      "Botswana",
+      "British Virgin Islands",
+      "Brunei",
+      "Burkina Faso",
+      "Burundi",
+      "Cambodia",
+      "Cameroon",
+      "Cape Verde",
+      "Cayman Islands",
+      "Central African Republic",
+      "Chad",
+      "Comoros",
+      "Congo",
+      "Costa Rica",
+      "Cote d'Ivoire",
+      "Curacao",
+      "Democratic Republic of Congo",
+      "Djibouti",
+      "Dominica",
+      "El Salvador",
+      "Equatorial Guinea",
+      "Eritrea",
+      "Ethiopia",
+      "Europe",
+      "European Union",
+      "Faeroe Islands",
+      "Falkland Islands",
+      "Fiji",
+      "French Polynesia",
+      "Gabon",
+      "Gambia",
+      "Georgia",
+      "Ghana",
+      "Gibraltar",
+      "Greenland",
+      "Grenada",
+      "Guam",
+      "Guatemala",
+      "Guernsey",
+      "Guinea-Bissau",
+      "Guinea",
+      "Guyana",
+      "Haiti",
+      "High income",
+      "International",
+      "Iraq",
+      "Isle of Man",
+      "Jamaica",
+      "Jersey",
+      "Jordan",
+      "Kazakhstan",
+      "Kenya",
+      "Kosovo",
+      "Kyrgyzstan",
+      "Laos",
+      "Lebanon",
+      "Lesotho",
+      "Liberia",
+      "Libya",
+      "Liechtenstein",
+      "Low income",
+      "Lower middle income",
+      "Macedonia",
+      "Madagascar",
+      "Malawi",
+      "Maldives",
+      "Mali",
+      "Mauritania",
+      "Mauritius",
+      "Monaco",
+      "Mongolia",
+      "Montenegro",
+      "Montserrat",
+      "Mozambique",
+      "Myanmar",
+      "Namibia",
+      "Nepal",
+      "New Caledonia",
+      "New Zealand",
+      "Nicaragua",
+      "Niger",
+      "North America",
+      "Northern Mariana Islands",
+      "Oceania",
+      "Oman",
+      "Palestine",
+      "Papua New Guinea",
+      "Paraguay",
+      "Puerto Rico",
+      "Qatar",
+      "Rwanda",
+      "Saint Kitts and Nevis",
+      "Saint Lucia",
+      "Saint Vincent and the Grenadines",
+      "San Marino",
+      "Sao Tome and Principe",
+      "Senegal",
+      "Seychelles",
+      "Sierra Leone",
+      "Singapore",
+      "Sint Maarten (Dutch part)",
+      "Somalia",
+      "South America",
+      "South Sudan",
+      "Sri Lanka",
+      "Sudan",
+      "Suriname",
+      "Swaziland",
+      "Syria",
+      "Taiwan",
+      "Tajikistan",
+      "Tanzania",
+      "Thailand",
+      "Timor",
+      "Togo",
+      "Trinidad and Tobago",
+      "Tunisia",
+      "Turks and Caicos Islands",
+      "Uganda",
+      "United States Virgin Islands",
+      "Upper middle income",
+      "Uruguay",
+      "Uzbekistan",
+      "Vatican",
+      "Venezuela",
+      "Vietnam",
+      "Western Sahara",
+      "World excl. China and South Korea",
+      "World excl. China, South Korea, Japan and Singapore",
+      "World excl. China",
+      "World",
+      "Yemen",
+      "Zambia",
+      "Zimbabwe"
+    ]
+  },
+  "note": "This chart shows the model estimates as of 19 September 2020.",
+  "slug": "daily-new-estimated-covid-19-infections-yyg-model",
+  "title": "Daily new estimated COVID-19 infections from the YYG model",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "version": 110,
+  "subtitle": "Estimates of the true number of infections. The \"upper\" and \"lower\" lines show the bounds of a 95% uncertainty interval. For comparison, confirmed cases are infections that have been confirmed with a test.",
+  "originUrl": "https://ourworldindata.org/covid-models",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Mean estimate",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 142948
+    },
+    {
+      "display": {
+        "name": "Lower",
+        "isProjection": false,
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "y",
+      "variableId": 143055
+    },
+    {
+      "display": {
+        "name": "Upper",
+        "isProjection": false,
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "y",
+      "variableId": 143056
+    },
+    {
+      "display": {
+        "name": "Confirmed cases",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "y",
+      "variableId": 142700
+    }
+  ],
+  "sourceDesc": "YYG (2020), ECDC (2020)",
+  "isPublished": true,
+  "selectedData": [
+    {
+      "color": "#cf0a66",
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "color": "#b4b4b4",
+      "index": 1,
+      "entityId": 13
+    },
+    {
+      "color": "#b4b4b4",
+      "index": 2,
+      "entityId": 13
+    },
+    {
+      "color": "#050505",
+      "index": 3,
+      "entityId": 13
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/daily-new-estimated-covid-19-infections-yyg-model.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

@@ -15,20 +15,120 @@ The Economy. Available at: Insert_link [Figure 1.4]"/><meta name="twitter:image"
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4282,"map":{"colorScale":{"baseColorScheme":"Blues","binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest","variableId":142994},"tab":"chart","data":{"availableEntities":["France","India","Italy","Netherlands","United Kingdom"]},"logo":"core+owid","slug":"non-agricultural-share-of-labour-force","type":"LineChart","title":"Non-agricultural share of labour force (%)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"max":100,"min":0,"scaleType":"linear"},"maxTime":"latest","minTime":"earliest","version":8,"subtitle":"Unit 1 'The capitalist revolution’ Section 1.4 'The permanent technological revolution' in The CORE Team,\nThe Economy. Available at: Insert_link [Figure 1.4]","hasMapTab":true,"originUrl":"Insert_link","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":142994}],"sourceDesc":"Roy, Tirthankar (2005); Lains et al. (2009); World Bank","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#6d3e91","index":0,"entityId":3},{"color":"#a2559c","index":0,"entityId":137},{"color":"#b13507","index":0,"entityId":8},{"color":"#d7da0c","index":0,"entityId":5},{"color":"#00823f","index":0,"entityId":1}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4282,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "Blues",
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest",
+    "variableId": 142994
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "France",
+      "India",
+      "Italy",
+      "Netherlands",
+      "United Kingdom"
+    ]
+  },
+  "logo": "core+owid",
+  "slug": "non-agricultural-share-of-labour-force",
+  "type": "LineChart",
+  "title": "Non-agricultural share of labour force (%)",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "max": 100,
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": "latest",
+  "minTime": "earliest",
+  "version": 8,
+  "subtitle": "Unit 1 'The capitalist revolution’ Section 1.4 'The permanent technological revolution' in The CORE Team,\nThe Economy. Available at: Insert_link [Figure 1.4]",
+  "hasMapTab": true,
+  "originUrl": "Insert_link",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 142994
+    }
+  ],
+  "sourceDesc": "Roy, Tirthankar (2005); Lains et al. (2009); World Bank",
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "color": "#6d3e91",
+      "index": 0,
+      "entityId": 3
+    },
+    {
+      "color": "#a2559c",
+      "index": 0,
+      "entityId": 137
+    },
+    {
+      "color": "#b13507",
+      "index": 0,
+      "entityId": 8
+    },
+    {
+      "color": "#d7da0c",
+      "index": 0,
+      "entityId": 5
+    },
+    {
+      "color": "#00823f",
+      "index": 0,
+      "entityId": 1
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/non-agricultural-share-of-labour-force.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/non-agricultural-share-of-labour-force.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

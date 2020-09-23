@@ -12,20 +12,136 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4362,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest","variableId":143163},"tab":"chart","data":{"availableEntities":["India","Japan","Taiwan","United Kingdom","United States"]},"logo":"core+owid","slug":"long-run-growth-trajectories-of-selected-economies","type":"ScatterPlot","title":"Long-run growth trajectories of selected economies","useV2":false,"xAxis":{"max":50000,"scaleType":"linear"},"yAxis":{"max":40000,"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":3,"subtitle":"Unit 16 'Technological progress, employment, and living standards in the long run’ Section 16.1 'Technological progress and living standards' in The CORE Team, The Economy. Available at: https://tinyco.re/16010338 [Figure 16.3]","hasMapTab":true,"originUrl":"https://tinyco.re/16010338","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143163},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"x","variableId":143162}],"isAutoSlug":true,"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#fab705","index":0,"entityId":137},{"color":"#287669","index":0,"entityId":14},{"color":"#a2559c","index":0,"entityId":198},{"color":"#062496","index":0,"entityId":1},{"color":"#d73c50","index":0,"entityId":13}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/long-run-growth-trajectories-of-selected-economies.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4362,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest",
+    "variableId": 143163
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "India",
+      "Japan",
+      "Taiwan",
+      "United Kingdom",
+      "United States"
+    ]
+  },
+  "logo": "core+owid",
+  "slug": "long-run-growth-trajectories-of-selected-economies",
+  "type": "ScatterPlot",
+  "title": "Long-run growth trajectories of selected economies",
+  "useV2": false,
+  "xAxis": {
+    "max": 50000,
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "max": 40000,
+    "min": 0,
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "maxTime": "latest",
+  "minTime": "earliest",
+  "version": 3,
+  "subtitle": "Unit 16 'Technological progress, employment, and living standards in the long run’ Section 16.1 'Technological progress and living standards' in The CORE Team, The Economy. Available at: https://tinyco.re/16010338 [Figure 16.3]",
+  "hasMapTab": true,
+  "originUrl": "https://tinyco.re/16010338",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 143163
+    },
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "x",
+      "variableId": 143162
+    }
+  ],
+  "isAutoSlug": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "color": "#fab705",
+      "index": 0,
+      "entityId": 137
+    },
+    {
+      "color": "#287669",
+      "index": 0,
+      "entityId": 14
+    },
+    {
+      "color": "#a2559c",
+      "index": 0,
+      "entityId": 198
+    },
+    {
+      "color": "#062496",
+      "index": 0,
+      "entityId": 1
+    },
+    {
+      "color": "#d73c50",
+      "index": 0,
+      "entityId": 13
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/long-run-growth-trajectories-of-selected-economies.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

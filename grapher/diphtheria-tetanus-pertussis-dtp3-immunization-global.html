@@ -12,20 +12,104 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":402,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":[],"customCategoryLabels":[],"customHiddenCategories":[],"customNumericColorsActive":false},"projection":"World","targetYear":1980,"variableId":1470,"timeTolerance":1},"tab":"chart","data":{"availableEntities":["World"]},"slug":"diphtheria-tetanus-pertussis-dtp3-immunization-global","type":"StackedArea","title":"Global vaccination coverage: Diphtheria-tetanus-pertussis (DTP3) immunization","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","labelDistance":-10},"version":3,"hasMapTab":false,"originUrl":"https://ourworldindata.org/vaccination/","stackMode":"absolute","dimensions":[{"display":{"name":"Not vaccinated","unit":"people","tolerance":5,"isProjection":false},"property":"y","variableId":1470},{"display":{"name":"Vaccinated","unit":"people","tolerance":5,"isProjection":false},"property":"y","variableId":1471}],"entityType":"country","hideLegend":false,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355},{"index":1,"entityId":355}],"internalNotes":"","addCountryMode":"change-country","hideRelativeToggle":false,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 402,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": [],
+      "customCategoryLabels": [],
+      "customHiddenCategories": [],
+      "customNumericColorsActive": false
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 1470,
+    "timeTolerance": 1
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "diphtheria-tetanus-pertussis-dtp3-immunization-global",
+  "type": "StackedArea",
+  "title": "Global vaccination coverage: Diphtheria-tetanus-pertussis (DTP3) immunization",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "labelDistance": -10
+  },
+  "version": 3,
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/vaccination/",
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Not vaccinated",
+        "unit": "people",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "variableId": 1470
+    },
+    {
+      "display": {
+        "name": "Vaccinated",
+        "unit": "people",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "variableId": 1471
+    }
+  ],
+  "entityType": "country",
+  "hideLegend": false,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    },
+    {
+      "index": 1,
+      "entityId": 355
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": false,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/diphtheria-tetanus-pertussis-dtp3-immunization-global.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/diphtheria-tetanus-pertussis-dtp3-immunization-global.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

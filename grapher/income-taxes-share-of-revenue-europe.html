@@ -12,20 +12,116 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":331,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":1980,"variableId":1388,"timeTolerance":1},"tab":"chart","data":{"availableEntities":["Austria","Belgium","Denmark","Finland","France","Germany","Ireland","Italy","Netherlands","Norway","Sweden","Switzerland","United Kingdom"]},"slug":"income-taxes-share-of-revenue-europe","type":"LineChart","title":"Revenue from income taxes in Europe","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"suffix":"%","scaleType":"linear","labelDistance":-10},"maxTime":2013,"minTime":1871,"version":3,"subtitle":"Income taxes, given as share of total government revenue.","hasMapTab":false,"originUrl":"https://ourworldindata.org/taxation/","stackMode":null,"dimensions":[{"display":{"name":"Share of Revenue from Income tax","unit":"% of total revenue","tolerance":5,"isProjection":false},"property":"y","variableId":1388}],"entityType":"country","hideLegend":false,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":161},{"index":0,"entityId":8},{"index":0,"entityId":6},{"index":0,"entityId":3}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 331,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 1388,
+    "timeTolerance": 1
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Austria",
+      "Belgium",
+      "Denmark",
+      "Finland",
+      "France",
+      "Germany",
+      "Ireland",
+      "Italy",
+      "Netherlands",
+      "Norway",
+      "Sweden",
+      "Switzerland",
+      "United Kingdom"
+    ]
+  },
+  "slug": "income-taxes-share-of-revenue-europe",
+  "type": "LineChart",
+  "title": "Revenue from income taxes in Europe",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "suffix": "%",
+    "scaleType": "linear",
+    "labelDistance": -10
+  },
+  "maxTime": 2013,
+  "minTime": 1871,
+  "version": 3,
+  "subtitle": "Income taxes, given as share of total government revenue.",
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/taxation/",
+  "stackMode": null,
+  "dimensions": [
+    {
+      "display": {
+        "name": "Share of Revenue from Income tax",
+        "unit": "% of total revenue",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "variableId": 1388
+    }
+  ],
+  "entityType": "country",
+  "hideLegend": false,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 161
+    },
+    {
+      "index": 0,
+      "entityId": 8
+    },
+    {
+      "index": 0,
+      "entityId": 6
+    },
+    {
+      "index": 0,
+      "entityId": 3
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/income-taxes-share-of-revenue-europe.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/income-taxes-share-of-revenue-europe.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

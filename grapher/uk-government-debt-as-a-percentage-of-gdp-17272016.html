@@ -12,20 +12,94 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3285,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"logo":"core+owid","slug":"uk-government-debt-as-a-percentage-of-gdp-17272016","type":"LineChart","title":"UK government debt as a percentage of GDP (1727–2016)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"max":120,"min":0,"scaleType":"linear"},"maxTime":2016,"minTime":1727,"version":8,"hideLogo":false,"subtitle":"Unit 14 'Unemployment and fiscal policy’ Section 14.8 'The government's finances' in The CORE Team, The Economy. Available at: https://tinyco.re/14081550 [Figure 14.15]","hasMapTab":false,"originUrl":"https://tinyco.re/14081550","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":99544}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#3360a9","index":0,"entityId":1}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3285,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United Kingdom"
+    ]
+  },
+  "logo": "core+owid",
+  "slug": "uk-government-debt-as-a-percentage-of-gdp-17272016",
+  "type": "LineChart",
+  "title": "UK government debt as a percentage of GDP (1727–2016)",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "max": 120,
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2016,
+  "minTime": 1727,
+  "version": 8,
+  "hideLogo": false,
+  "subtitle": "Unit 14 'Unemployment and fiscal policy’ Section 14.8 'The government's finances' in The CORE Team, The Economy. Available at: https://tinyco.re/14081550 [Figure 14.15]",
+  "hasMapTab": false,
+  "originUrl": "https://tinyco.re/14081550",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99544
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "color": "#3360a9",
+      "index": 0,
+      "entityId": 1
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/uk-government-debt-as-a-percentage-of-gdp-17272016.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/uk-government-debt-as-a-percentage-of-gdp-17272016.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

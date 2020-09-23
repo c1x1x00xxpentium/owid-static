@@ -12,20 +12,90 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":[]},"slug":"stratospheric-ozone-concentration","type":"LineChart","title":"Stratospheric ozone concentration","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":1,"subtitle":"Stratospheric ozone concentration in the Southern Hemisphere, measured in Dobson Units (DU). One Dobson Unit is the number of molecules of ozone that would be required to create a layer of pure ozone 0.01 millimeters thick at a temperature of 0 degrees Celsius and a pressure of 1 atmosphere.","hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"name":"Minimum daily concentration","shortUnit":"DU"},"property":"y","variableId":96650},{"display":{"name":"Mean daily concentration","shortUnit":"DU"},"property":"y","variableId":96651}],"isAutoSlug":true,"sourceDesc":"NASA Ozone Watch","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355},{"index":1,"entityId":355}],"addCountryMode":"disabled","hideRelativeToggle":true,"hideTitleAnnotation":true,"id":2547};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": []
+  },
+  "slug": "stratospheric-ozone-concentration",
+  "type": "LineChart",
+  "title": "Stratospheric ozone concentration",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "subtitle": "Stratospheric ozone concentration in the Southern Hemisphere, measured in Dobson Units (DU). One Dobson Unit is the number of molecules of ozone that would be required to create a layer of pure ozone 0.01 millimeters thick at a temperature of 0 degrees Celsius and a pressure of 1 atmosphere.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Minimum daily concentration",
+        "shortUnit": "DU"
+      },
+      "property": "y",
+      "variableId": 96650
+    },
+    {
+      "display": {
+        "name": "Mean daily concentration",
+        "shortUnit": "DU"
+      },
+      "property": "y",
+      "variableId": 96651
+    }
+  ],
+  "isAutoSlug": true,
+  "sourceDesc": "NASA Ozone Watch",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    },
+    {
+      "index": 1,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "disabled",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true,
+  "id": 2547
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/stratospheric-ozone-concentration.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/stratospheric-ozone-concentration.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

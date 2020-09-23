@@ -12,20 +12,118 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4482,"map":{"variableId":143514},"data":{"availableEntities":["Austria","Belgium","Bulgaria","Croatia","Czech Republic","Denmark","England & Wales","Estonia","Finland","France","Germany","Greece","Hungary","Iceland","Israel","Italy","Latvia","Lithuania","Luxembourg","Netherlands","Northern Ireland","Norway","Poland","Portugal","Scotland","Slovakia","Slovenia","Spain","Sweden","Switzerland","United States"]},"note":"Dates refer to the last day in each week for most but not all countries. More details can be found in the Sources tab.","slug":"excess-mortality-raw-death-count","title":"Excess mortality during COVID-19: The raw number of deaths from all causes compared to previous years","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":215,"minTime":-16,"version":21,"subtitle":"Shown is how the raw number of weekly deaths in 2020 differs from the average number of deaths in the same week over the previous five years (2015–2019). Note that deaths in recent weeks might be undercounted due to reporting lags.","dimensions":[{"display":{"name":"Average deaths, 2015–2019","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false},"numDecimalPlaces":0},"property":"y","variableId":143514},{"display":{"name":"Deaths, 2020","tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143513}],"sourceDesc":"Human Mortality Database (2020)","isPublished":true,"variantName":"Raw death counts","selectedData":[{"color":"#585c64","index":0,"entityId":13},{"color":"#b13507","index":1,"entityId":13}],"addCountryMode":"change-country","hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/excess-mortality-raw-death-count.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4482,
+  "map": {
+    "variableId": 143514
+  },
+  "data": {
+    "availableEntities": [
+      "Austria",
+      "Belgium",
+      "Bulgaria",
+      "Croatia",
+      "Czech Republic",
+      "Denmark",
+      "England & Wales",
+      "Estonia",
+      "Finland",
+      "France",
+      "Germany",
+      "Greece",
+      "Hungary",
+      "Iceland",
+      "Israel",
+      "Italy",
+      "Latvia",
+      "Lithuania",
+      "Luxembourg",
+      "Netherlands",
+      "Northern Ireland",
+      "Norway",
+      "Poland",
+      "Portugal",
+      "Scotland",
+      "Slovakia",
+      "Slovenia",
+      "Spain",
+      "Sweden",
+      "Switzerland",
+      "United States"
+    ]
+  },
+  "note": "Dates refer to the last day in each week for most but not all countries. More details can be found in the Sources tab.",
+  "slug": "excess-mortality-raw-death-count",
+  "title": "Excess mortality during COVID-19: The raw number of deaths from all causes compared to previous years",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 215,
+  "minTime": -16,
+  "version": 21,
+  "subtitle": "Shown is how the raw number of weekly deaths in 2020 differs from the average number of deaths in the same week over the previous five years (2015–2019). Note that deaths in recent weeks might be undercounted due to reporting lags.",
+  "dimensions": [
+    {
+      "display": {
+        "name": "Average deaths, 2015–2019",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        },
+        "numDecimalPlaces": 0
+      },
+      "property": "y",
+      "variableId": 143514
+    },
+    {
+      "display": {
+        "name": "Deaths, 2020",
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 143513
+    }
+  ],
+  "sourceDesc": "Human Mortality Database (2020)",
+  "isPublished": true,
+  "variantName": "Raw death counts",
+  "selectedData": [
+    {
+      "color": "#585c64",
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "color": "#b13507",
+      "index": 1,
+      "entityId": 13
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/excess-mortality-raw-death-count.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

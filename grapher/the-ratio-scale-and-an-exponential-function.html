@@ -15,20 +15,100 @@ in The CORE Team, The Economy. Available at: https://tinyco.re/3666382 [Figure 1
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4313,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["United Kingdom"]},"logo":"core+owid","note":"The chart illustrates real GDP per capita in 2011 US$.","slug":"the-ratio-scale-and-an-exponential-function","type":"LineChart","title":"The ratio scale and an exponential function (1950 – 2016)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"log","canChangeScaleType":true},"maxTime":"latest","minTime":1950,"version":7,"subtitle":"Unit 13 'Economic fluctuations and unemployment’ Section 13.1 'Growth and fluctuations'\nin The CORE Team, The Economy. Available at: https://tinyco.re/3666382 [Figure 13.4a]","hasMapTab":false,"originUrl":"https://tinyco.re/3666382","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{},"property":"y","variableId":143075}],"hasChartTab":true,"isPublished":true,"hideTimeline":true,"isExplorable":false,"selectedData":[{"index":0,"entityId":1}],"internalNotes":"core-econ.org","addCountryMode":"disabled","comparisonLines":[{"label":"y = 9407.2*e^(0.023*x); R² = 0.9844","yEquals":"9407.2*e^(0.023*(x-1950))"}],"hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4313,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United Kingdom"
+    ]
+  },
+  "logo": "core+owid",
+  "note": "The chart illustrates real GDP per capita in 2011 US$.",
+  "slug": "the-ratio-scale-and-an-exponential-function",
+  "type": "LineChart",
+  "title": "The ratio scale and an exponential function (1950 – 2016)",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "log",
+    "canChangeScaleType": true
+  },
+  "maxTime": "latest",
+  "minTime": 1950,
+  "version": 7,
+  "subtitle": "Unit 13 'Economic fluctuations and unemployment’ Section 13.1 'Growth and fluctuations'\nin The CORE Team, The Economy. Available at: https://tinyco.re/3666382 [Figure 13.4a]",
+  "hasMapTab": false,
+  "originUrl": "https://tinyco.re/3666382",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 143075
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "hideTimeline": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 1
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "disabled",
+  "comparisonLines": [
+    {
+      "label": "y = 9407.2*e^(0.023*x); R² = 0.9844",
+      "yEquals": "9407.2*e^(0.023*(x-1950))"
+    }
+  ],
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/the-ratio-scale-and-an-exponential-function.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/the-ratio-scale-and-an-exponential-function.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

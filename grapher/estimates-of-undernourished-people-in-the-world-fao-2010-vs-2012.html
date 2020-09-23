@@ -12,20 +12,90 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":1848,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}},"projection":"World","defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"estimates-of-undernourished-people-in-the-world-fao-2010-vs-2012","type":"LineChart","title":"Estimates of undernourished people in the world, FAO 2010 vs. 2012","xAxis":{"scaleType":"linear"},"yAxis":{"scaleType":"linear"},"version":1,"hasMapTab":false,"stackMode":"absolute","dimensions":[{"display":{"conversionFactor":1000000000},"property":"y","variableId":66286},{"display":{"conversionFactor":1000000000},"property":"y","variableId":66285}],"isAutoSlug":true,"hasChartTab":true,"isPublished":true,"selectedData":[{"color":"#3360a9","index":0,"entityId":355},{"color":"#e6332e","index":1,"entityId":355}],"addCountryMode":"change-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 1848,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "estimates-of-undernourished-people-in-the-world-fao-2010-vs-2012",
+  "type": "LineChart",
+  "title": "Estimates of undernourished people in the world, FAO 2010 vs. 2012",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "scaleType": "linear"
+  },
+  "version": 1,
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {
+        "conversionFactor": 1000000000
+      },
+      "property": "y",
+      "variableId": 66286
+    },
+    {
+      "display": {
+        "conversionFactor": 1000000000
+      },
+      "property": "y",
+      "variableId": 66285
+    }
+  ],
+  "isAutoSlug": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "color": "#3360a9",
+      "index": 0,
+      "entityId": 355
+    },
+    {
+      "color": "#e6332e",
+      "index": 1,
+      "entityId": 355
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/estimates-of-undernourished-people-in-the-world-fao-2010-vs-2012.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/estimates-of-undernourished-people-in-the-world-fao-2010-vs-2012.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

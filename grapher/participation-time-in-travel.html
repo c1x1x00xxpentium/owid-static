@@ -12,20 +12,109 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2835,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["Austria","Belgium","Bulgaria","Estonia","Finland","France","Germany","Greece","Hungary","Italy","Latvia","Lithuania","Luxembourg","Netherlands","Norway","Poland","Romania","Serbia","Slovenia","Spain","Turkey","United Kingdom"]},"slug":"participation-time-in-travel","type":"SlopeChart","title":"Participation time in travel per day","xAxis":{"scaleType":"linear"},"yAxis":{"min":50,"scaleType":"linear"},"version":6,"subtitle":"Average minutes spent on travel, per day, by individuals who took part in travel activities.  Estimates come from time use surveys and include both weekdays and weekends.","hasMapTab":false,"stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"numDecimalPlaces":0},"property":"y","variableId":97635},{"display":{},"property":"color","variableId":123},{"display":{},"property":"size","variableId":72}],"hasChartTab":true,"isPublished":true,"selectedData":[],"addCountryMode":"add-country"};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2835,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Austria",
+      "Belgium",
+      "Bulgaria",
+      "Estonia",
+      "Finland",
+      "France",
+      "Germany",
+      "Greece",
+      "Hungary",
+      "Italy",
+      "Latvia",
+      "Lithuania",
+      "Luxembourg",
+      "Netherlands",
+      "Norway",
+      "Poland",
+      "Romania",
+      "Serbia",
+      "Slovenia",
+      "Spain",
+      "Turkey",
+      "United Kingdom"
+    ]
+  },
+  "slug": "participation-time-in-travel",
+  "type": "SlopeChart",
+  "title": "Participation time in travel per day",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 50,
+    "scaleType": "linear"
+  },
+  "version": 6,
+  "subtitle": "Average minutes spent on travel, per day, by individuals who took part in travel activities.  Estimates come from time use surveys and include both weekdays and weekends.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "numDecimalPlaces": 0
+      },
+      "property": "y",
+      "variableId": 97635
+    },
+    {
+      "display": {},
+      "property": "color",
+      "variableId": 123
+    },
+    {
+      "display": {},
+      "property": "size",
+      "variableId": 72
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [],
+  "addCountryMode": "add-country"
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/participation-time-in-travel.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/participation-time-in-travel.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

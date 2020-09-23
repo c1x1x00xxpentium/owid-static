@@ -12,20 +12,94 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":327,"map":{"colorScale":{"baseColorScheme":"BuGn","binningStrategy":"equalInterval","colorSchemeInvert":false,"legendDescription":"","customNumericColors":[],"customNumericLabels":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":1980,"variableId":1367,"timeTolerance":1,"legendStepSize":20,"defaultProjection":"World"},"tab":"chart","data":{"availableEntities":["World"]},"slug":"world-trade-exports-constant-prices","type":"LineChart","title":"The value of global exports ","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","labelDistance":10,"canChangeScaleType":true},"version":2,"subtitle":"Time series of value of world exports at constant prices, relative to 1913 (i.e. values correspond to world export volumes indexed at 1913=100) ","hasMapTab":false,"originUrl":"https://ourworldindata.org/international-trade","stackMode":null,"dimensions":[{"id":7317,"order":0,"chartId":327,"display":{"name":"World Trade (relative to 1913)","unit":" ","tolerance":5,"isProjection":false},"property":"y","variableId":1367}],"hideLegend":true,"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":355}],"internalNotes":"","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 327,
+  "map": {
+    "colorScale": {
+      "baseColorScheme": "BuGn",
+      "binningStrategy": "equalInterval",
+      "colorSchemeInvert": false,
+      "legendDescription": "",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": 1980,
+    "variableId": 1367,
+    "timeTolerance": 1,
+    "legendStepSize": 20,
+    "defaultProjection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "World"
+    ]
+  },
+  "slug": "world-trade-exports-constant-prices",
+  "type": "LineChart",
+  "title": "The value of global exports ",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "labelDistance": 10,
+    "canChangeScaleType": true
+  },
+  "version": 2,
+  "subtitle": "Time series of value of world exports at constant prices, relative to 1913 (i.e. values correspond to world export volumes indexed at 1913=100) ",
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/international-trade",
+  "stackMode": null,
+  "dimensions": [
+    {
+      "id": 7317,
+      "order": 0,
+      "chartId": 327,
+      "display": {
+        "name": "World Trade (relative to 1913)",
+        "unit": " ",
+        "tolerance": 5,
+        "isProjection": false
+      },
+      "property": "y",
+      "variableId": 1367
+    }
+  ],
+  "hideLegend": true,
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 355
+    }
+  ],
+  "internalNotes": "",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/world-trade-exports-constant-prices.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/world-trade-exports-constant-prices.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

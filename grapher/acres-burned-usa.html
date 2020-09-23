@@ -12,20 +12,84 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3063,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["United States"]},"slug":"acres-burned-usa","type":"StackedBar","title":"Wildfire acres burned in the United States","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":3,"subtitle":"Number of acres of wildfire burned in a given year in the United States. This is shown from 1983 onwards, when consistent reporting began. Data prior to 1983 is reported by the NIFC to not be comparable to that thereafter.","hasMapTab":false,"stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"shortUnit":"acres"},"property":"y","variableId":98075}],"sourceDesc":"National Interagency Fire Center (NIFC)","hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":13}],"addCountryMode":"add-country"};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3063,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United States"
+    ]
+  },
+  "slug": "acres-burned-usa",
+  "type": "StackedBar",
+  "title": "Wildfire acres burned in the United States",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 3,
+  "subtitle": "Number of acres of wildfire burned in a given year in the United States. This is shown from 1983 onwards, when consistent reporting began. Data prior to 1983 is reported by the NIFC to not be comparable to that thereafter.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "shortUnit": "acres"
+      },
+      "property": "y",
+      "variableId": 98075
+    }
+  ],
+  "sourceDesc": "National Interagency Fire Center (NIFC)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 13
+    }
+  ],
+  "addCountryMode": "add-country"
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/acres-burned-usa.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/acres-burned-usa.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

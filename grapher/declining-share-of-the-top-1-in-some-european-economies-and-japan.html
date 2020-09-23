@@ -12,20 +12,134 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4416,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["Denmark","France","Germany","Italy","Japan","Netherlands","Sweden"]},"logo":"core+owid","slug":"declining-share-of-the-top-1-in-some-european-economies-and-japan","type":"LineChart","title":"Declining share of the top 1% in some European economies and Japan (1900–2013)","useV2":false,"xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"earliest","version":4,"subtitle":"Unit 19 'Economic inequality’ Section 19.1 'Inequality across the world and over time' in The CORE Team, The Economy. Available at https://tinyco.re/19010453 [Figure 19.4]","hasMapTab":true,"originUrl":"https://tinyco.re/19010453","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":143235}],"hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[{"color":"#04cfc8","index":0,"entityId":161},{"color":"#000000","index":0,"entityId":3},{"color":"#f1ab0c","index":0,"entityId":6},{"color":"#d73c50","index":0,"entityId":8},{"color":"#366388","index":0,"entityId":14},{"color":"#a2559c","index":0,"entityId":5},{"color":"#18470f","index":0,"entityId":10}],"internalNotes":"core-econ.org","addCountryMode":"add-country","hideRelativeToggle":true,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/declining-share-of-the-top-1-in-some-european-economies-and-japan.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4416,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Denmark",
+      "France",
+      "Germany",
+      "Italy",
+      "Japan",
+      "Netherlands",
+      "Sweden"
+    ]
+  },
+  "logo": "core+owid",
+  "slug": "declining-share-of-the-top-1-in-some-european-economies-and-japan",
+  "type": "LineChart",
+  "title": "Declining share of the top 1% in some European economies and Japan (1900–2013)",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "maxTime": "latest",
+  "minTime": "earliest",
+  "version": 4,
+  "subtitle": "Unit 19 'Economic inequality’ Section 19.1 'Inequality across the world and over time' in The CORE Team, The Economy. Available at https://tinyco.re/19010453 [Figure 19.4]",
+  "hasMapTab": true,
+  "originUrl": "https://tinyco.re/19010453",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 143235
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [
+    {
+      "color": "#04cfc8",
+      "index": 0,
+      "entityId": 161
+    },
+    {
+      "color": "#000000",
+      "index": 0,
+      "entityId": 3
+    },
+    {
+      "color": "#f1ab0c",
+      "index": 0,
+      "entityId": 6
+    },
+    {
+      "color": "#d73c50",
+      "index": 0,
+      "entityId": 8
+    },
+    {
+      "color": "#366388",
+      "index": 0,
+      "entityId": 14
+    },
+    {
+      "color": "#a2559c",
+      "index": 0,
+      "entityId": 5
+    },
+    {
+      "color": "#18470f",
+      "index": 0,
+      "entityId": 10
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "add-country",
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/declining-share-of-the-top-1-in-some-european-economies-and-japan.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

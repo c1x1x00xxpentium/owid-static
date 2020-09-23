@@ -12,20 +12,107 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3177,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["Annelids","Archaea","Arthropods (marine)","Arthropods (terrestrial)","Bacteria","Cnidarians","Fish","Fungi","Humans","Livestock","Molluscs","Nematodes","Plants","Protists","Viruses","Wild birds","Wild mammals"]},"slug":"biomass-vs-abundance-taxa","type":"ScatterPlot","title":"Global biomass vs. abundance of taxa","xAxis":{"scaleType":"log","canChangeScaleType":true},"yAxis":{"min":0,"scaleType":"log","canChangeScaleType":true},"maxTime":"latest","minTime":"latest","version":4,"subtitle":"Global biomass (measured in tonnes of carbon) versus the abundance (number of individuals) of different taxonomic groups. These are given as order-of-magnitude estimates.","hasMapTab":false,"stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"shortUnit":"t C"},"property":"y","variableId":98780},{"display":{},"property":"x","variableId":98781}],"sourceDesc":"Bar-On et al. (2018)","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[],"hideRelativeToggle":false,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3177,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Annelids",
+      "Archaea",
+      "Arthropods (marine)",
+      "Arthropods (terrestrial)",
+      "Bacteria",
+      "Cnidarians",
+      "Fish",
+      "Fungi",
+      "Humans",
+      "Livestock",
+      "Molluscs",
+      "Nematodes",
+      "Plants",
+      "Protists",
+      "Viruses",
+      "Wild birds",
+      "Wild mammals"
+    ]
+  },
+  "slug": "biomass-vs-abundance-taxa",
+  "type": "ScatterPlot",
+  "title": "Global biomass vs. abundance of taxa",
+  "xAxis": {
+    "scaleType": "log",
+    "canChangeScaleType": true
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "log",
+    "canChangeScaleType": true
+  },
+  "maxTime": "latest",
+  "minTime": "latest",
+  "version": 4,
+  "subtitle": "Global biomass (measured in tonnes of carbon) versus the abundance (number of individuals) of different taxonomic groups. These are given as order-of-magnitude estimates.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "shortUnit": "t C"
+      },
+      "property": "y",
+      "variableId": 98780
+    },
+    {
+      "display": {},
+      "property": "x",
+      "variableId": 98781
+    }
+  ],
+  "sourceDesc": "Bar-On et al. (2018)",
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [],
+  "hideRelativeToggle": false,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/biomass-vs-abundance-taxa.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/biomass-vs-abundance-taxa.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

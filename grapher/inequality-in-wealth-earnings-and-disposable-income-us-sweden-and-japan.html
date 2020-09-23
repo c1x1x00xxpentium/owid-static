@@ -12,20 +12,101 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3251,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","variableId":99528},"tab":"chart","data":{"availableEntities":["Japan","Sweden","United States"]},"logo":"core+owid","note":"Gini coefficients are taken from various years of the 2000s. For more details, see the 'SOURCES' tab.","slug":"inequality-in-wealth-earnings-and-disposable-income-us-sweden-and-japan","type":"DiscreteBar","title":"Inequality in wealth, earnings, and disposable income","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"version":11,"hideLogo":false,"subtitle":"Unit 19 'Economic inequality’ Section 19.1 'Inequality across the world and over time' in The CORE Team, The Economy. Available at https://tinyco.re/19010110 [Figure 19.1]","hasMapTab":true,"originUrl":"https://tinyco.re/19010110","stackMode":"absolute","dimensions":[{"display":{},"property":"y","variableId":99528},{"display":{},"property":"y","variableId":99527},{"display":{},"property":"y","variableId":99526}],"hasChartTab":true,"isPublished":true,"selectedData":[{"color":"#e6332e","index":0,"entityId":13},{"color":"#34983f","index":1,"entityId":13},{"color":"#3360a9","index":2,"entityId":13}],"internalNotes":"core-econ.org","addCountryMode":"change-country"};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3251,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "variableId": 99528
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Japan",
+      "Sweden",
+      "United States"
+    ]
+  },
+  "logo": "core+owid",
+  "note": "Gini coefficients are taken from various years of the 2000s. For more details, see the 'SOURCES' tab.",
+  "slug": "inequality-in-wealth-earnings-and-disposable-income-us-sweden-and-japan",
+  "type": "DiscreteBar",
+  "title": "Inequality in wealth, earnings, and disposable income",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "version": 11,
+  "hideLogo": false,
+  "subtitle": "Unit 19 'Economic inequality’ Section 19.1 'Inequality across the world and over time' in The CORE Team, The Economy. Available at https://tinyco.re/19010110 [Figure 19.1]",
+  "hasMapTab": true,
+  "originUrl": "https://tinyco.re/19010110",
+  "stackMode": "absolute",
+  "dimensions": [
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99528
+    },
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99527
+    },
+    {
+      "display": {},
+      "property": "y",
+      "variableId": 99526
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "color": "#e6332e",
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "color": "#34983f",
+      "index": 1,
+      "entityId": 13
+    },
+    {
+      "color": "#3360a9",
+      "index": 2,
+      "entityId": 13
+    }
+  ],
+  "internalNotes": "core-econ.org",
+  "addCountryMode": "change-country"
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/inequality-in-wealth-earnings-and-disposable-income-us-sweden-and-japan.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/inequality-in-wealth-earnings-and-disposable-income-us-sweden-and-japan.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

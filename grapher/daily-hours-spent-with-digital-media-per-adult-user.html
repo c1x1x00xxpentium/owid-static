@@ -12,20 +12,114 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":3542,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World"},"tab":"chart","data":{"availableEntities":["United States"]},"slug":"daily-hours-spent-with-digital-media-per-adult-user","type":"StackedBar","title":"Daily hours spent with digital media","xAxis":{"scaleType":"linear"},"yAxis":{"min":0,"scaleType":"linear"},"maxTime":2018,"minTime":2008,"version":14,"subtitle":"Average hours per day spent engaging with digital media (e.g. digital images and videos, web pages, social media apps, etc.) The data for 'other connected devices' includes game consoles. Mobile includes smartphones & tablets. All data includes both home & work usage for people 18+.","hasMapTab":false,"stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Mobile","unit":"hours per adult user","shortUnit":"hours"},"property":"y","variableId":104538},{"display":{"name":"Desktop/Laptop","unit":"hours per adult user","shortUnit":"hours"},"property":"y","variableId":104539},{"display":{"name":"Other Connected Devices","unit":"hours per adult user","shortUnit":"hours"},"property":"y","variableId":104540}],"hasChartTab":true,"isPublished":true,"selectedData":[{"index":0,"entityId":13},{"index":1,"entityId":13},{"index":2,"entityId":13}],"addCountryMode":"change-country","hideRelativeToggle":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 3542,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "United States"
+    ]
+  },
+  "slug": "daily-hours-spent-with-digital-media-per-adult-user",
+  "type": "StackedBar",
+  "title": "Daily hours spent with digital media",
+  "xAxis": {
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear"
+  },
+  "maxTime": 2018,
+  "minTime": 2008,
+  "version": 14,
+  "subtitle": "Average hours per day spent engaging with digital media (e.g. digital images and videos, web pages, social media apps, etc.) The data for 'other connected devices' includes game consoles. Mobile includes smartphones & tablets. All data includes both home & work usage for people 18+.",
+  "hasMapTab": false,
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Mobile",
+        "unit": "hours per adult user",
+        "shortUnit": "hours"
+      },
+      "property": "y",
+      "variableId": 104538
+    },
+    {
+      "display": {
+        "name": "Desktop/Laptop",
+        "unit": "hours per adult user",
+        "shortUnit": "hours"
+      },
+      "property": "y",
+      "variableId": 104539
+    },
+    {
+      "display": {
+        "name": "Other Connected Devices",
+        "unit": "hours per adult user",
+        "shortUnit": "hours"
+      },
+      "property": "y",
+      "variableId": 104540
+    }
+  ],
+  "hasChartTab": true,
+  "isPublished": true,
+  "selectedData": [
+    {
+      "index": 0,
+      "entityId": 13
+    },
+    {
+      "index": 1,
+      "entityId": 13
+    },
+    {
+      "index": 2,
+      "entityId": 13
+    }
+  ],
+  "addCountryMode": "change-country",
+  "hideRelativeToggle": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/daily-hours-spent-with-digital-media-per-adult-user.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/daily-hours-spent-with-digital-media-per-adult-user.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

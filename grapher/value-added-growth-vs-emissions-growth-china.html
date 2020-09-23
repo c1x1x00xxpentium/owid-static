@@ -12,20 +12,125 @@
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":2427,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customNumericMinValue":0,"customHiddenCategories":{}}},"data":{"availableEntities":["Agriculture, Forestry & Fishing","Air Transport","Basic & Fabricated Metals","Chemicals & Products","Coke, Refined Petroleum & Nuclear Fuel","Construction","Education","Electrical & Optical Equipment","Electricity, Gas & Water","Financial Intermediation","Food, Beverages & Tobacco","Health & Social Work","Hotels & Restaurants","IT, Research & Development","Leather & Footwear","Machinery","Manufacturing, Nec, Recycling","Mining & Quarrying","Motor vehicles (manufacturing, repair & fuel)","Other Community, Social & Personal Services","Other Non-Metallic Mineral","Post & Telecommunications","Private Households","Public Admin & Defence","Pulp, Paper, & Printing","Rail and freight transport","Real Estate Activities","Retail Trade","Rubber & Plastics","Supporting & Auxiliary Transport","Textiles & Products","Transport Equipment","Water Transport","Wholesale & Commission Trade","Wood & Products"]},"slug":"value-added-growth-vs-emissions-growth-china","type":"ScatterPlot","title":"Value added growth vs. CO₂ emissions growth in China, 1995-2009","xAxis":{"max":1000,"min":-100,"scaleType":"linear"},"yAxis":{"max":1800,"scaleType":"linear"},"maxTime":"latest","minTime":"latest","version":6,"subtitle":"Gross domestic product (GDP) growth of individual sectors (adjusted for inflation) versus growth in carbon dioxide (CO₂) emissions over the period 1995-2009. Sectors in the top left quadrant have decoupled their emissions from economic growth - whilst their emissions fell, their economic value grew. Direct emissions of households are not included.","colorScale":{"baseColorScheme":"Viridis","binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Value added growth (1995-2009)"},"property":"y","variableId":93876},{"display":{"name":"CO₂ emissions growth (1995-2009)"},"property":"x","variableId":93875}],"sourceDesc":"(WIOD) World Input-Output Dataset","isPublished":true,"addCountryMode":"change-country","comparisonLines":[{}],"hideRelativeToggle":false,"hideTitleAnnotation":true};
-        var figure = document.getElementsByTagName("figure")[0];
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 2427,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customNumericMinValue": 0,
+      "customHiddenCategories": {}
+    }
+  },
+  "data": {
+    "availableEntities": [
+      "Agriculture, Forestry & Fishing",
+      "Air Transport",
+      "Basic & Fabricated Metals",
+      "Chemicals & Products",
+      "Coke, Refined Petroleum & Nuclear Fuel",
+      "Construction",
+      "Education",
+      "Electrical & Optical Equipment",
+      "Electricity, Gas & Water",
+      "Financial Intermediation",
+      "Food, Beverages & Tobacco",
+      "Health & Social Work",
+      "Hotels & Restaurants",
+      "IT, Research & Development",
+      "Leather & Footwear",
+      "Machinery",
+      "Manufacturing, Nec, Recycling",
+      "Mining & Quarrying",
+      "Motor vehicles (manufacturing, repair & fuel)",
+      "Other Community, Social & Personal Services",
+      "Other Non-Metallic Mineral",
+      "Post & Telecommunications",
+      "Private Households",
+      "Public Admin & Defence",
+      "Pulp, Paper, & Printing",
+      "Rail and freight transport",
+      "Real Estate Activities",
+      "Retail Trade",
+      "Rubber & Plastics",
+      "Supporting & Auxiliary Transport",
+      "Textiles & Products",
+      "Transport Equipment",
+      "Water Transport",
+      "Wholesale & Commission Trade",
+      "Wood & Products"
+    ]
+  },
+  "slug": "value-added-growth-vs-emissions-growth-china",
+  "type": "ScatterPlot",
+  "title": "Value added growth vs. CO₂ emissions growth in China, 1995-2009",
+  "xAxis": {
+    "max": 1000,
+    "min": -100,
+    "scaleType": "linear"
+  },
+  "yAxis": {
+    "max": 1800,
+    "scaleType": "linear"
+  },
+  "maxTime": "latest",
+  "minTime": "latest",
+  "version": 6,
+  "subtitle": "Gross domestic product (GDP) growth of individual sectors (adjusted for inflation) versus growth in carbon dioxide (CO₂) emissions over the period 1995-2009. Sectors in the top left quadrant have decoupled their emissions from economic growth - whilst their emissions fell, their economic value grew. Direct emissions of households are not included.",
+  "colorScale": {
+    "baseColorScheme": "Viridis",
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Value added growth (1995-2009)"
+      },
+      "property": "y",
+      "variableId": 93876
+    },
+    {
+      "display": {
+        "name": "CO₂ emissions growth (1995-2009)"
+      },
+      "property": "x",
+      "variableId": 93875
+    }
+  ],
+  "sourceDesc": "(WIOD) World Input-Output Dataset",
+  "isPublished": true,
+  "addCountryMode": "change-country",
+  "comparisonLines": [
+    {}
+  ],
+  "hideRelativeToggle": false,
+  "hideTitleAnnotation": true
+}
+//EMBEDDED_JSON
 
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/value-added-growth-vs-emissions-growth-china.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
-        }
-    </script></body></html>
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/value-added-growth-vs-emissions-growth-china.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>

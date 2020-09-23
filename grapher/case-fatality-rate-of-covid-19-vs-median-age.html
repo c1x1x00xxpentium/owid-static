@@ -18,20 +18,335 @@ During an outbreak of a pandemic the CFR is a poor measure of the mortality risk
                     GrapherPageUtils.embedAll();
                     runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
                 }
-            </script></footer><script>
-        var jsonConfig = {"id":4058,"map":{"colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"projection":"World","targetYear":"latest"},"tab":"chart","data":{"availableEntities":["Afghanistan","Africa","Albania","Algeria","Andorra","Angola","Argentina","Armenia","Aruba","Asia excl. China","Asia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Benin","Bermuda","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Cote d'Ivoire","Croatia","Cuba","Cyprus","Czech Republic","Democratic Republic of Congo","Denmark","Djibouti","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Europe","European Union","Faeroe Islands","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Guam","Guatemala","Guernsey","Guinea-Bissau","Guinea","Guyana","Haiti","High income","Honduras","Hungary","Iceland","India","Indonesia","International","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kosovo","Kuwait","Kyrgyzstan","Latvia","Lebanon","Lesotho","Liberia","Libya","Lithuania","Low income","Lower middle income","Luxembourg","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North America","Norway","Oceania","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Romania","Russia","Rwanda","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Sint Maarten (Dutch part)","Slovakia","Slovenia","Somalia","South Africa","South America","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Togo","Trinidad and Tobago","Tunisia","Turkey","Turks and Caicos Islands","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States Virgin Islands","United States","Upper middle income","Uruguay","Uzbekistan","Venezuela","Vietnam","Western Sahara","World excl. China and South Korea","World excl. China, South Korea, Japan and Singapore","World excl. China","World","Yemen","Zambia","Zimbabwe"]},"note":"The size of the bubble corresponds to the total confirmed deaths up to that date.","slug":"case-fatality-rate-of-covid-19-vs-median-age","type":"ScatterPlot","title":"Case fatality rate of COVID-19 vs. Median age of the population","useV2":false,"xAxis":{"scaleType":"linear","canChangeScaleType":true},"yAxis":{"min":0,"scaleType":"linear","canChangeScaleType":true},"maxTime":"latest","minTime":"latest","version":283,"subtitle":"The Case Fatality Rate (CFR) is the ratio between confirmed deaths and confirmed cases.\nDuring an outbreak of a pandemic the CFR is a poor measure of the mortality risk of the disease. We explain this in detail at OurWorldInData.org/coronavirus\n","hasMapTab":false,"originUrl":"https://ourworldindata.org/coronavirus","stackMode":"absolute","colorScale":{"binningStrategy":"equalInterval","customNumericColors":[],"customNumericLabels":[],"customNumericValues":[],"customCategoryColors":{},"customCategoryLabels":{},"customHiddenCategories":{}},"dimensions":[{"display":{"name":"Case fatality rate of COVID-19","tolerance":2,"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"y","variableId":142600},{"display":{"name":"Median Age","tolerance":4,"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"x","targetYear":2017,"variableId":97587},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"size","variableId":142583},{"display":{"tableDisplay":{"hideAbsoluteChange":false,"hideRelativeChange":false}},"property":"color","variableId":123}],"sourceDesc":"European CDC – Situation Update Worldwide – Last updated 8th April, 11:30 (London time); UN Population Division","hasChartTab":true,"isPublished":true,"isExplorable":false,"selectedData":[],"excludedEntities":[355],"hideRelativeToggle":true,"hideTitleAnnotation":true,"matchingEntitiesOnly":true,"hideConnectedScatterLines":false};
-        var figure = document.getElementsByTagName("figure")[0];
-
-        try {
-            var view = window.GrapherView.bootstrap({
-                jsonConfig: jsonConfig,
-                containerNode: figure,
-                queryStr: window.location.search
-            });
-            view.bindToWindow();
-        } catch (err) {
-            figure.innerHTML = "<img src=\"/grapher/exports/case-fatality-rate-of-covid-19-vs-median-age.svg\"/><p>Unable to load interactive visualization</p>";
-            figure.setAttribute("id", "fallback");
-            throw err;
+            </script></footer><script>const jsonConfig = 
+//EMBEDDED_JSON
+{
+  "id": 4058,
+  "map": {
+    "colorScale": {
+      "binningStrategy": "equalInterval",
+      "customNumericColors": [],
+      "customNumericLabels": [],
+      "customNumericValues": [],
+      "customCategoryColors": {},
+      "customCategoryLabels": {},
+      "customHiddenCategories": {}
+    },
+    "projection": "World",
+    "targetYear": "latest"
+  },
+  "tab": "chart",
+  "data": {
+    "availableEntities": [
+      "Afghanistan",
+      "Africa",
+      "Albania",
+      "Algeria",
+      "Andorra",
+      "Angola",
+      "Argentina",
+      "Armenia",
+      "Aruba",
+      "Asia excl. China",
+      "Asia",
+      "Australia",
+      "Austria",
+      "Azerbaijan",
+      "Bahamas",
+      "Bahrain",
+      "Bangladesh",
+      "Barbados",
+      "Belarus",
+      "Belgium",
+      "Benin",
+      "Bermuda",
+      "Bhutan",
+      "Bolivia",
+      "Bosnia and Herzegovina",
+      "Botswana",
+      "Brazil",
+      "Brunei",
+      "Bulgaria",
+      "Burkina Faso",
+      "Burundi",
+      "Cambodia",
+      "Cameroon",
+      "Canada",
+      "Cape Verde",
+      "Cayman Islands",
+      "Central African Republic",
+      "Chad",
+      "Chile",
+      "China",
+      "Colombia",
+      "Comoros",
+      "Congo",
+      "Costa Rica",
+      "Cote d'Ivoire",
+      "Croatia",
+      "Cuba",
+      "Cyprus",
+      "Czech Republic",
+      "Democratic Republic of Congo",
+      "Denmark",
+      "Djibouti",
+      "Dominican Republic",
+      "Ecuador",
+      "Egypt",
+      "El Salvador",
+      "Equatorial Guinea",
+      "Eritrea",
+      "Estonia",
+      "Ethiopia",
+      "Europe",
+      "European Union",
+      "Faeroe Islands",
+      "Finland",
+      "France",
+      "Gabon",
+      "Gambia",
+      "Georgia",
+      "Germany",
+      "Ghana",
+      "Gibraltar",
+      "Greece",
+      "Guam",
+      "Guatemala",
+      "Guernsey",
+      "Guinea-Bissau",
+      "Guinea",
+      "Guyana",
+      "Haiti",
+      "High income",
+      "Honduras",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "International",
+      "Iran",
+      "Iraq",
+      "Ireland",
+      "Isle of Man",
+      "Israel",
+      "Italy",
+      "Jamaica",
+      "Japan",
+      "Jersey",
+      "Jordan",
+      "Kazakhstan",
+      "Kenya",
+      "Kosovo",
+      "Kuwait",
+      "Kyrgyzstan",
+      "Latvia",
+      "Lebanon",
+      "Lesotho",
+      "Liberia",
+      "Libya",
+      "Lithuania",
+      "Low income",
+      "Lower middle income",
+      "Luxembourg",
+      "Macedonia",
+      "Madagascar",
+      "Malawi",
+      "Malaysia",
+      "Maldives",
+      "Mali",
+      "Malta",
+      "Mauritania",
+      "Mauritius",
+      "Mexico",
+      "Moldova",
+      "Monaco",
+      "Mongolia",
+      "Montenegro",
+      "Morocco",
+      "Mozambique",
+      "Myanmar",
+      "Namibia",
+      "Nepal",
+      "Netherlands",
+      "New Zealand",
+      "Nicaragua",
+      "Niger",
+      "Nigeria",
+      "North America",
+      "Norway",
+      "Oceania",
+      "Oman",
+      "Pakistan",
+      "Palestine",
+      "Panama",
+      "Papua New Guinea",
+      "Paraguay",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Puerto Rico",
+      "Qatar",
+      "Romania",
+      "Russia",
+      "Rwanda",
+      "San Marino",
+      "Sao Tome and Principe",
+      "Saudi Arabia",
+      "Senegal",
+      "Serbia",
+      "Seychelles",
+      "Sierra Leone",
+      "Singapore",
+      "Sint Maarten (Dutch part)",
+      "Slovakia",
+      "Slovenia",
+      "Somalia",
+      "South Africa",
+      "South America",
+      "South Korea",
+      "South Sudan",
+      "Spain",
+      "Sri Lanka",
+      "Sudan",
+      "Suriname",
+      "Swaziland",
+      "Sweden",
+      "Switzerland",
+      "Syria",
+      "Taiwan",
+      "Tajikistan",
+      "Tanzania",
+      "Thailand",
+      "Togo",
+      "Trinidad and Tobago",
+      "Tunisia",
+      "Turkey",
+      "Turks and Caicos Islands",
+      "Uganda",
+      "Ukraine",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States Virgin Islands",
+      "United States",
+      "Upper middle income",
+      "Uruguay",
+      "Uzbekistan",
+      "Venezuela",
+      "Vietnam",
+      "Western Sahara",
+      "World excl. China and South Korea",
+      "World excl. China, South Korea, Japan and Singapore",
+      "World excl. China",
+      "World",
+      "Yemen",
+      "Zambia",
+      "Zimbabwe"
+    ]
+  },
+  "note": "The size of the bubble corresponds to the total confirmed deaths up to that date.",
+  "slug": "case-fatality-rate-of-covid-19-vs-median-age",
+  "type": "ScatterPlot",
+  "title": "Case fatality rate of COVID-19 vs. Median age of the population",
+  "useV2": false,
+  "xAxis": {
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "yAxis": {
+    "min": 0,
+    "scaleType": "linear",
+    "canChangeScaleType": true
+  },
+  "maxTime": "latest",
+  "minTime": "latest",
+  "version": 283,
+  "subtitle": "The Case Fatality Rate (CFR) is the ratio between confirmed deaths and confirmed cases.\nDuring an outbreak of a pandemic the CFR is a poor measure of the mortality risk of the disease. We explain this in detail at OurWorldInData.org/coronavirus\n",
+  "hasMapTab": false,
+  "originUrl": "https://ourworldindata.org/coronavirus",
+  "stackMode": "absolute",
+  "colorScale": {
+    "binningStrategy": "equalInterval",
+    "customNumericColors": [],
+    "customNumericLabels": [],
+    "customNumericValues": [],
+    "customCategoryColors": {},
+    "customCategoryLabels": {},
+    "customHiddenCategories": {}
+  },
+  "dimensions": [
+    {
+      "display": {
+        "name": "Case fatality rate of COVID-19",
+        "tolerance": 2,
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
         }
-    </script></body></html>
+      },
+      "property": "y",
+      "variableId": 142600
+    },
+    {
+      "display": {
+        "name": "Median Age",
+        "tolerance": 4,
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "x",
+      "targetYear": 2017,
+      "variableId": 97587
+    },
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "size",
+      "variableId": 142583
+    },
+    {
+      "display": {
+        "tableDisplay": {
+          "hideAbsoluteChange": false,
+          "hideRelativeChange": false
+        }
+      },
+      "property": "color",
+      "variableId": 123
+    }
+  ],
+  "sourceDesc": "European CDC – Situation Update Worldwide – Last updated 8th April, 11:30 (London time); UN Population Division",
+  "hasChartTab": true,
+  "isPublished": true,
+  "isExplorable": false,
+  "selectedData": [],
+  "excludedEntities": [
+    355
+  ],
+  "hideRelativeToggle": true,
+  "hideTitleAnnotation": true,
+  "matchingEntitiesOnly": true,
+  "hideConnectedScatterLines": false
+}
+//EMBEDDED_JSON
+
+const figure = document.getElementsByTagName("figure")[0];
+try {
+    const view = window.GrapherView.bootstrap({
+        jsonConfig: jsonConfig,
+        containerNode: figure,
+        queryStr: window.location.search
+    });
+    view.bindToWindow();
+} catch (err) {
+    figure.innerHTML = "<img src=\"/grapher/exports/case-fatality-rate-of-covid-19-vs-median-age.svg\"/><p>Unable to load interactive visualization</p>";
+    figure.setAttribute("id", "fallback");
+    throw err;
+}
+</script></body></html>
