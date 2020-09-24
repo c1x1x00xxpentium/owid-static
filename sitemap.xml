@@ -20292,4 +20292,16 @@
         <loc>https://ourworldindata.org/grapher/population-unwpp</loc>
         <lastmod>2020-09-24</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/gini-index-wb</loc>
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/adult-female-literacy-rate</loc>
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/net-oda-per-capita</loc>
+        <lastmod>2020-09-24</lastmod>
+    </url>
 </urlset>
