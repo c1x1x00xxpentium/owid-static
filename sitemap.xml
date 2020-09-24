@@ -5126,7 +5126,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-207</loc>
-        <lastmod>2020-09-23</lastmod>
+        <lastmod>2020-09-24</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-19-project-charts</loc>
@@ -20274,6 +20274,14 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/postnatal-care</loc>
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/healthcare-access-quality-ihme</loc>
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/healthcare-access-quality-un</loc>
         <lastmod>2020-09-24</lastmod>
     </url>
 </urlset>
