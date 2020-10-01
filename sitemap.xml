@@ -13533,10 +13533,6 @@
         <lastmod>2018-04-09</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/is-your-country-more-blue-or-less-green-densely-populated-than-earths-average-population-density</loc>
-        <lastmod>2018-04-10</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/battle-related-deaths-in-state-based-conflicts-since-1946</loc>
         <lastmod>2018-04-11</lastmod>
     </url>
@@ -18394,7 +18390,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-the-population-that-is-70-years-and-over-vs-gdp-per-capita</loc>
-        <lastmod>2020-04-17</lastmod>
+        <lastmod>2020-10-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/apple-production</loc>
@@ -18498,7 +18494,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-the-population-that-is-70-years-and-older</loc>
-        <lastmod>2020-03-22</lastmod>
+        <lastmod>2020-10-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/tests-of-covid-19-per-thousand-people-vs-gdp-per-capita</loc>
@@ -20274,7 +20270,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/population-unwpp</loc>
-        <lastmod>2020-09-24</lastmod>
+        <lastmod>2020-10-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gini-index-wb</loc>
@@ -20323,5 +20319,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/levelized-cost-of-energy</loc>
         <lastmod>2020-09-30</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/child-mortality-2010-vs-2017-scatter</loc>
+        <lastmod>2020-10-01</lastmod>
     </url>
 </urlset>
