@@ -20368,4 +20368,12 @@
         <loc>https://ourworldindata.org/grapher/rotavirus-number-unvaccinated</loc>
         <lastmod>2020-10-02</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/pcv3-number-unvaccinated</loc>
+        <lastmod>2020-10-02</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/rubella-vaccination-coverage</loc>
+        <lastmod>2020-10-02</lastmod>
+    </url>
 </urlset>
