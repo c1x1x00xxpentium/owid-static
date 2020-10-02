@@ -20340,4 +20340,16 @@
         <loc>https://ourworldindata.org/grapher/bcg-number-unvaccinated</loc>
         <lastmod>2020-10-02</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/hepb3-number-unvaccinated</loc>
+        <lastmod>2020-10-02</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/hib3-number-unvaccinated</loc>
+        <lastmod>2020-10-02</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/ipv1-number-unvaccinated</loc>
+        <lastmod>2020-10-02</lastmod>
+    </url>
 </urlset>
