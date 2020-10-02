@@ -10105,10 +10105,6 @@
         <lastmod>2020-07-16</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/malaria-incidence-per-1000-population</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/mortality-from-ncds-sdgs</loc>
         <lastmod>2018-12-22</lastmod>
     </url>
@@ -10841,10 +10837,6 @@
         <lastmod>2019-11-22</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/death-rates-malaria</loc>
-        <lastmod>2019-04-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/malaria-death-rates-by-age</loc>
         <lastmod>2019-11-22</lastmod>
     </url>
@@ -10878,7 +10870,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/incidence-of-malaria</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2020-10-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/malaria-death-rates</loc>
@@ -14806,7 +14798,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-incidence-of-malaria-per-1000-population</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2020-10-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mispy-overlap-test</loc>
@@ -20386,6 +20378,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-from-aids-un</loc>
+        <lastmod>2020-10-02</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/malaria-deaths-ihme</loc>
         <lastmod>2020-10-02</lastmod>
     </url>
 </urlset>
