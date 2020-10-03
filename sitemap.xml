@@ -17110,11 +17110,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-without-access-to-improved-sanitation</loc>
-        <lastmod>2019-09-25</lastmod>
+        <lastmod>2020-10-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-without-improved-water</loc>
-        <lastmod>2019-09-26</lastmod>
+        <lastmod>2020-10-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/age-standardized-deaths-from-all-causes</loc>
@@ -20401,7 +20401,11 @@
         <lastmod>2020-10-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/number-without-improved-sanitation</loc>
+        <loc>https://ourworldindata.org/grapher/rural-without-improved-sanitation</loc>
+        <lastmod>2020-10-03</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/rural-without-improved-water</loc>
         <lastmod>2020-10-03</lastmod>
     </url>
 </urlset>
