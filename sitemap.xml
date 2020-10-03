@@ -20408,4 +20408,12 @@
         <loc>https://ourworldindata.org/grapher/rural-without-improved-water</loc>
         <lastmod>2020-10-03</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-without-basic-handwashing</loc>
+        <lastmod>2020-10-03</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/rural-without-basic-handwashing</loc>
+        <lastmod>2020-10-03</lastmod>
+    </url>
 </urlset>
