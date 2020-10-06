@@ -6542,7 +6542,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/perception-of-the-safety-of-vaccines-vs-vaccine-coverage</loc>
-        <lastmod>2019-11-20</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-disagrees-vaccines-are-important-for-children-to-have</loc>
@@ -7737,10 +7737,6 @@
         <lastmod>2020-02-14</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/polio-vaccine-coverage-vs-polio-cases</loc>
-        <lastmod>2020-07-20</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/rapeseed-yields</loc>
         <lastmod>2020-02-14</lastmod>
     </url>
@@ -7806,7 +7802,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/measles-vaccine-coverage-worldwide-vs-measles-cases-worldwide</loc>
-        <lastmod>2019-06-19</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/long-term-energy-transitions</loc>
@@ -9901,10 +9897,6 @@
         <lastmod>2020-10-02</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/death-rate-due-to-tuberculosis</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/various-measures-of-national-savinginvestment-compared-to-gdp-per-capita-in-international-dollars</loc>
         <lastmod>2018-03-15</lastmod>
     </url>
@@ -10143,10 +10135,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/gdp-per-capita-growth</loc>
         <lastmod>2018-07-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/immunization-dpt-children</loc>
-        <lastmod>2018-12-22</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/renewables-share-final-energy</loc>
@@ -11422,7 +11410,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-children-vaccinated-against-measles-vs-share-vaccinated-against-dpt3</loc>
-        <lastmod>2018-12-24</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/annual-deaths-by-age-england-and-wales</loc>
@@ -12077,10 +12065,6 @@
         <lastmod>2019-04-24</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/who-surveillance-vs-gbd-incidence-of-tetanus</loc>
-        <lastmod>2019-04-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/labour-productivity-in-cotton-spinning-and-weaving</loc>
         <lastmod>2018-04-16</lastmod>
     </url>
@@ -12415,10 +12399,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/the-worlds-number-of-vaccinated-one-year-olds</loc>
         <lastmod>2019-12-13</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-vaccinated-one-year-olds-globally</loc>
-        <lastmod>2019-11-25</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/various-sources-of-the-total-value-of-exports-as-a-share-of-gdp</loc>
@@ -14007,10 +13987,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/tuberculosis-and-hivaids-prevalence</loc>
         <lastmod>2019-04-24</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/who-data-on-tuberculosis-deaths-per-100000-hiv-negative-population</loc>
-        <lastmod>2018-05-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/life-expectancy-vs-gdp-per-capita</loc>
@@ -15671,10 +15647,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/natural-disasters-by-type</loc>
         <lastmod>2020-02-28</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/number-of-confirmed-tetanus-cases-who-2017</loc>
-        <lastmod>2018-11-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/child-mortality-2010-vs-2017-slope</loc>
