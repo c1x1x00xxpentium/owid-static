@@ -6389,10 +6389,6 @@
         <lastmod>2019-09-17</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/diphtheria-tetanus-pertussis-dtp3-immunization-global</loc>
-        <lastmod>2018-09-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/number-of-countries-having-implemented-a-vat</loc>
         <lastmod>2018-03-15</lastmod>
     </url>
@@ -7353,12 +7349,8 @@
         <lastmod>2018-10-01</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/vaccination-coverage-DPT-by-level-of-prosperity</loc>
-        <lastmod>2019-07-06</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/vaccination-coverage-DPT-by-extreme-poverty</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-maternal-deaths</loc>
@@ -10298,7 +10290,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/polio-rate-of-cases-vs-vaccination-coverage</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-with-without-access-sanitation</loc>
@@ -15414,7 +15406,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/tetanus-cases-vs-tetanus-vaccination-coverage</loc>
-        <lastmod>2018-09-28</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/growth-of-income-and-trade-alt</loc>
@@ -17870,7 +17862,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/global-vaccination-coverage</loc>
-        <lastmod>2019-11-29</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/primary-energy-cons</loc>
