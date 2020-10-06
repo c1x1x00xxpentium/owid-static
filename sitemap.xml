@@ -7098,7 +7098,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-typhoid</loc>
-        <lastmod>2019-06-03</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mockupbyHRkfjgkajirejgdfvndflkna</loc>
@@ -7733,22 +7733,6 @@
         <lastmod>2020-02-14</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/tetanus-vaccination-coverage-vs-tetanus-cases</loc>
-        <lastmod>2020-07-20</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/by-world-region-tetanus-vaccination-coverage-vs-tetanus-cases-per-million-population</loc>
-        <lastmod>2020-07-20</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/diphtheria-vaccine-coverage-vs-diphtheria-cases</loc>
-        <lastmod>2020-07-20</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/pertussis-vaccine-coverage-vs-pertussis-cases</loc>
-        <lastmod>2020-07-20</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/sugar-cane-yields</loc>
         <lastmod>2020-02-14</lastmod>
     </url>
@@ -7767,10 +7751,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/cocoa-bean-yields</loc>
         <lastmod>2020-02-14</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/tuberculosis-vaccine-coverage-vs-tuberculosis-deaths</loc>
-        <lastmod>2020-07-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/tomato-yields</loc>
@@ -7959,10 +7939,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/global-land-spared-as-a-result-of-cereal-yield-improvements</loc>
         <lastmod>2019-05-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/measles-vaccine-coverage-in-1990-vs-measles-cases-in-2015</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/global-agricultural-land-use-by-major-crop-type</loc>
@@ -17082,7 +17058,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/diphtheria-tetanus-pertussis-vaccine-vs-pneumococcal-vaccine-coverage</loc>
-        <lastmod>2019-09-18</lastmod>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-income-or-consumption-in-lowest-quintile-vs-gdp-per-capita</loc>
@@ -17965,8 +17941,8 @@
         <lastmod>2019-12-02</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/yellow-fever-vaccine-coverage</loc>
-        <lastmod>2019-12-03</lastmod>
+        <loc>https://ourworldindata.org/grapher/yfv-coverage</loc>
+        <lastmod>2020-10-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/co2-emissions-and-gdp</loc>

@@ -606,7 +606,6 @@
 /grapher/incidence-of-hiv-among-uninfected-population-ages-15-49 /grapher/incidence-of-hiv-the-share-of-new-infections-among-the-previously-uninfected-population-ages-15-49 302!
 /grapher/global-hunger-index-vs /grapher/global-hunger-index-vs-extreme-poverty 302!
 /grapher/continents-according-to-our-worldin-data /grapher/continents-according-to-our-world-in-data 302!
-/grapher/tetanus-vaccination-coverage-vs-tetanus-cases-per-million-population /grapher/tetanus-vaccination-coverage-vs-tetanus-cases 302!
 /grapher/top-1-income-share /grapher/share-of-income-received-by-the-richest-1-of-the-population 302!
 /grapher/number-of-malaria-cases-per-100000-population /grapher/number-of-malaria-cases-per-100000-individuals 302!
 /grapher/global-share-of-men-defined-as-underweight-healthy-overweight-and-obese /grapher/men-weight-categories 302!
@@ -1171,3 +1170,4 @@
 /grapher/daily-covid-cases-7-day-average /grapher/daily-covid-cases-7-day 302!
 /grapher/daily-covid-deaths-7-day-average /grapher/daily-covid-deaths-7-day 302!
 /grapher/global-living-planet-index-1970-2012 /grapher/global-living-planet-index 302!
+/grapher/yellow-fever-vaccine-coverage /grapher/yfv-coverage 302!
