@@ -20424,4 +20424,8 @@
         <loc>https://ourworldindata.org/grapher/annual-afforestation</loc>
         <lastmod>2020-10-20</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/annual-change-forest-area</loc>
+        <lastmod>2020-10-20</lastmod>
+    </url>
 </urlset>
