@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2020-10-13T11:00:00.000Z</updated>
+<updated>2020-10-22T11:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Climate change and flying: what share of global CO2 emissions come from aviation?]]></title>
+            <id>https://ourworldindata.org/co2-emissions-from-aviation</id>
+            <link rel="alternate" href="https://ourworldindata.org/co2-emissions-from-aviation"/>
+            <published>2020-10-22T11:00:00.000Z</published>
+            <updated>2020-10-22T11:39:26.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Flying is a highly controversial topic in climate debates. It accounts for around 2.5% of global CO2 emissions, but 3.5% when we take non-CO2 impacts on climate into account.<br><br><a href="https://ourworldindata.org/co2-emissions-from-aviation" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/Global-CO2-emissions-from-aviation-768x610.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Which form of transport has the smallest carbon footprint?]]></title>
             <id>https://ourworldindata.org/travel-carbon-footprint</id>
@@ -86,14 +95,5 @@
             <updated>2020-09-01T13:45:29.000Z</updated>
             <author><name>Joe Hasell</name></author>
             <summary><![CDATA[<br><br><a href="https://ourworldindata.org/covid-health-economy" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/08/Screen-Shot-2020-08-28-at-09.57.06-768x422.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Exemplars in Global Health: Which countries are most successful in preventing maternal deaths?]]></title>
-            <id>https://ourworldindata.org/exemplars-maternal-mortality</id>
-            <link rel="alternate" href="https://ourworldindata.org/exemplars-maternal-mortality"/>
-            <published>2020-08-31T11:00:00.000Z</published>
-            <updated>2020-08-31T11:36:04.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[830 women die from pregnancy-related causes on any given day. Most of these deaths are preventable. How can we use the Exemplar framework to identify which countries have been most successful in doing so?<br><br><a href="https://ourworldindata.org/exemplars-maternal-mortality" target="_blank"><img src="https://ourworldindata.org/app/uploads/2019/12/maternal-mortality-ratio-vs-gdp-per-capita-3-768x542.png"/></a>]]></summary>
             </entry>
 </feed>
