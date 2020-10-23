@@ -280,7 +280,7 @@ Countries which lie above the grey line are net importers of cereals; those belo
 
 const figure = document.getElementsByTagName("figure")[0];
 try {
-    const view = window.Grapher.bootstrap({
+    const view = window.GrapherView.bootstrap({
         jsonConfig: jsonConfig,
         containerNode: figure,
         queryStr: window.location.search

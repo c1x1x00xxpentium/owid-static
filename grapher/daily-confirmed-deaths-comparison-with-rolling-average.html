@@ -315,7 +315,7 @@ The original data of daily deaths and the 7-day rolling average of this data.
 
 const figure = document.getElementsByTagName("figure")[0];
 try {
-    const view = window.Grapher.bootstrap({
+    const view = window.GrapherView.bootstrap({
         jsonConfig: jsonConfig,
         containerNode: figure,
         queryStr: window.location.search

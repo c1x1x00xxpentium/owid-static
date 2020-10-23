@@ -192,7 +192,7 @@ All trajectories are lined up to the day at which the death rate reached 0.1 per
 
 const figure = document.getElementsByTagName("figure")[0];
 try {
-    const view = window.Grapher.bootstrap({
+    const view = window.GrapherView.bootstrap({
         jsonConfig: jsonConfig,
         containerNode: figure,
         queryStr: window.location.search
