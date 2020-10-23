@@ -190,7 +190,7 @@ The figures are shown over time according to the number of days since the 5th co
 
 const figure = document.getElementsByTagName("figure")[0];
 try {
-    const view = window.GrapherView.bootstrap({
+    const view = window.Grapher.bootstrap({
         jsonConfig: jsonConfig,
         containerNode: figure,
         queryStr: window.location.search
