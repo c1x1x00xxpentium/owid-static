@@ -554,7 +554,6 @@
 /grapher/happiness-vs-child-mortality /grapher/life-satisfaction-vs-child-mortality 302!
 /grapher/co2-emissions-per-capita-vs-the-share-of-people-living-in-extreme-poverty /grapher/co-emissions-per-capita-vs-the-share-of-people-living-in-extreme-poverty 302!
 /grapher/global-co2-emissions-if-everyone-lived-like-the-average-citizen-in /grapher/global-co-emissions-if-everyone-lived-like-the-average-citizen-in 302!
-/grapher/health-effects-of-energy-production-per-twh /grapher/health-effects-of-energy-production 302!
 /grapher/fish-and-seafood-consumption-vs-gdp-per-capita-ppp-int- /grapher/fish-consumption-vs-gdp-per-capita 302!
 /grapher/co-emissions-per-capita-vs-gdp-per-capita-ppp-international- /grapher/co2-emissions-vs-gdp 302!
 /grapher/comparison-between-original-series-and-owid-new-series /grapher/various-measures-of-health-expenditure-as-share-of-gdp 302!
@@ -1172,3 +1171,4 @@
 /grapher/yellow-fever-vaccine-coverage /grapher/yfv-coverage 302!
 /grapher/death-energy-all-sources /grapher/death-rates-from-energy-production-per-twh 302!
 /grapher/deaths-low-carbon-energy /grapher/death-rates-from-energy-production-per-twh 302!
+/grapher/health-effects-of-energy-production /grapher/death-rates-from-energy-production-per-twh 302!
