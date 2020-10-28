@@ -20480,4 +20480,8 @@
         <loc>https://ourworldindata.org/grapher/current-covid-hospitalizations-per-million</loc>
         <lastmod>2020-10-28</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/daily-hospital-admissions-covid-per-million</loc>
+        <lastmod>2020-10-28</lastmod>
+    </url>
 </urlset>
