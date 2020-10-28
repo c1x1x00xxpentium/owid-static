@@ -20496,4 +20496,8 @@
         <loc>https://ourworldindata.org/grapher/current-covid-patients-icu</loc>
         <lastmod>2020-10-28</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/covid-icu-patients-per-million</loc>
+        <lastmod>2020-10-28</lastmod>
+    </url>
 </urlset>
