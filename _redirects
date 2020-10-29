@@ -1173,3 +1173,6 @@
 /grapher/deaths-low-carbon-energy /grapher/death-rates-from-energy-production-per-twh 302!
 /grapher/health-effects-of-energy-production /grapher/death-rates-from-energy-production-per-twh 302!
 /grapher/daily-hospital-admissions-covid /grapher/weekly-hospital-admissions-covid 302!
+/grapher/daily-icu-admissions-covid /grapher/weekly-icu-admissions-covid 302!
+/grapher/daily-icu-admissions-covid-per-million /grapher/weekly-icu-admissions-covid-per-million 302!
+/grapher/daily-hospital-admissions-covid-per-million /grapher/weekly-hospital-admissions-covid-per-million 302!
