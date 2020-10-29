@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2020-10-23T11:30:00.000Z</updated>
+<updated>2020-10-29T17:28:32.000Z</updated>
+<entry>
+            <title><![CDATA[Why is life expectancy in the US lower than in other rich countries?]]></title>
+            <id>https://ourworldindata.org/us-life-expectancy-low</id>
+            <link rel="alternate" href="https://ourworldindata.org/us-life-expectancy-low"/>
+            <published>2020-10-29T17:28:32.000Z</published>
+            <updated>2020-10-29T19:05:47.000Z</updated>
+            <author><name>Max Roser</name></author>
+            <summary><![CDATA[<br><br><a href="https://ourworldindata.org/us-life-expectancy-low" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/LE-vs-Health-Exp-2020-version-768x837.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Short-haul vs. long-haul; rich vs. poor countries: where do global CO2 emissions from aviation come from?]]></title>
             <id>https://ourworldindata.org/breakdown-co2-aviation</id>
@@ -86,14 +95,5 @@
             <updated>2020-09-21T17:55:12.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Globally, we emit around 50 billion tonnes of greenhouse gases each year. Where do these emissions come from? We take a look, sector-by-sector.<br><br><a href="https://ourworldindata.org/ghg-emissions-by-sector" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/09/Emissions-by-sector-–-pie-charts-768x727.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Help us improve Our World in Data]]></title>
-            <id>https://ourworldindata.org/help-us-improve-our-world-in-data</id>
-            <link rel="alternate" href="https://ourworldindata.org/help-us-improve-our-world-in-data"/>
-            <published>2020-09-05T02:08:00.000Z</published>
-            <updated>2020-09-08T21:42:20.000Z</updated>
-            <author><name>Ernst van Woerden</name></author>
-            <summary><![CDATA[<br><br><a href="https://ourworldindata.org/help-us-improve-our-world-in-data" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/09/Audience-survey-768x402.png"/></a>]]></summary>
             </entry>
 </feed>

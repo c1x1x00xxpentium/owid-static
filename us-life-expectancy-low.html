@@ -1,0 +1,391 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Why is life expectancy in the US lower than in other rich countries? - Our World in Data</title><meta name="description" content="Why do Americans have a lower life expectancy than people in other rich countries, despite paying so much more for health care? "/><link rel="canonical" href="https://ourworldindata.org/us-life-expectancy-low"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/us-life-expectancy-low"/><meta property="og:title" content="Why is life expectancy in the US lower than in other rich countries?"/><meta property="og:description" content="Why do Americans have a lower life expectancy than people in other rich countries, despite paying so much more for health care? "/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2020/10/LE-vs-Health-Exp-2020-version-768x837.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Why is life expectancy in the US lower than in other rich countries?"/><meta name="twitter:description" content="Why do Americans have a lower life expectancy than people in other rich countries, despite paying so much more for health care? "/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2020/10/LE-vs-Health-Exp-2020-version-768x837.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><h1 class="entry-title"><span>Why is life expectancy in the US lower than in other rich countries?</span></h1><div class="authors-byline"><a href="/team">by Max Roser</a></div><time>October 29, 2020</time><div class="blog-info">
+<p>Our World in Data presents the data and research to make progress against the world&#x2019;s largest problems.<br>This post draws on data and research discussed in our entries on <strong><a href="https://ourworldindata.org/life-expectancy" target="_blank" rel="noopener noreferrer">Life Expectancy</a></strong> and <strong><a href="https://ourworldindata.org/financing-healthcare" target="_blank" rel="noopener noreferrer">Financing Healthcare</a></strong>.</p>
+</div><div class="tools"><a href="#licence"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="creative-commons" class="svg-inline--fa fa-creative-commons fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M245.83 214.87l-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93-22.13 0-33.22 14.61-33.22 43.84 0 23.57 9.21 43.84 33.22 43.84 14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98-22.6 0-73.96-10.32-73.96-77.05 0-58.69 43-77.06 72.63-77.06 30.72-.01 52.7 11.95 65.99 35.86zm143.05 0l-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93-22.14 0-33.22 14.61-33.22 43.84 0 23.55 9.23 43.84 33.22 43.84 14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98-22.69 0-73.96-9.87-73.96-77.05 0-58.67 42.97-77.06 72.63-77.06 30.71-.01 52.58 11.95 65.56 35.86zM247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248 129.93 0 248.44-100.87 248.44-248 0-137.87-106.62-248-248.44-248zm.87 450.81c-112.54 0-203.7-93.04-203.7-202.81 0-105.42 85.43-203.27 203.72-203.27 112.53 0 202.82 89.46 202.82 203.26-.01 121.69-99.68 202.82-202.84 202.82z"></path></svg>Reuse our work <strong>freely</strong></a></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content">
+
+
+
+<section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Why do Americans have a lower life expectancy than people in other rich countries, despite paying so much more for health care?&#xA0;</p><p>The short summary of what I will discuss below is that Americans suffer higher death rates from smoking, obesity, homicides, opioid overdoses, suicides, road accidents, and infant deaths. In addition to this, deeper poverty and less access to healthcare means Americans at lower incomes die at a younger age than poor people in other rich countries.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="life-expectancy-and-health-expenditure-over-time"><a class="deep-link" href="#life-expectancy-and-health-expenditure-over-time"></a>Life expectancy and health expenditure over time</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>The US clearly stands out as the chart shows: Americans spend far more on health than any other country in the world, yet the life expectancy of the American population is shorter<em> </em>than in other rich countries that spend far less.</p><p>The chart here doesn&#x2019;t just show the latest data points, but how life expectancy and health spending have changed during the last five decades. The arrows start in 1970 and connect the annual data points for both metrics, showing the change over time.&#xA0;</p><p>In the 1970s the US didn&#x2019;t stand out at all, it does so now because life expectancy increased <a href="https://ourworldindata.org/grapher/life-expectancy-at-birth-oecd?country=AUS~AUT~BEL~CAN~DNK~FIN~FRA~DEU~GRC~ISL~IRL~ISR~ITA~JPN~LUX~NLD~NZL~NOR~PRT~KOR~ESP~SWE~CHE~GBR~USA">much more slowly</a> than in other countries. At the same time health spending in the U.S. increased much more rapidly, particularly since the mid-1980s. The consequence of these two exceptional developments is that the US followed the much flatter trajectory that the chart shows.</p><p>The unequal development over recent decades led to an inequality between the US and other rich countries. In the US health spending per capita is up to four times higher, yet life expectancy is lower than in all of these countries.</p><p>The US has achieved very substantial progress in health outcomes over the last 140 years: in 1880 the life expectancy of Americans <a href="https://ourworldindata.org/grapher/life-expectancy?tab=chart&amp;country=~USA&amp;region=World">was 39 years</a>, since then it has doubled. But this extremely positive trend has come to an end. While life expectancy for people around the world <a href="https://ourworldindata.org/grapher/life-expectancy?tab=table&amp;time=2000..latest&amp;country=RWA~MWI~ZMB~BWA~Africa~Europe&amp;region=World">continued to increase</a>, life expectancy of Americans has declined since 2014. With the pandemic of 2020 &#x2013; which already caused <a href="https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=~USA&amp;region=World&amp;deathsMetric=true&amp;interval=total&amp;smoothing=0&amp;pickerMetric=total_cases&amp;pickerSort=desc">more than 225,000 deaths</a> due to COVID-19 and <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6942e2.htm?s_cid=mm6942e2_w">300,000 excess deaths</a> &#x2013; it is unfortunately already certain that the decline of life expectancy in the US will continue this year.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a></p></div><div class="wp-block-column"><figure class="wp-block-image size-full"><img loading="lazy" width="1874" height="2042" src="https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version.png" alt="Le vs health exp 2020 version" class="wp-image-37226" srcset="https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version.png 1874w, https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version-367x400.png 367w, https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version-505x550.png 505w, https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version-138x150.png 138w, https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version-768x837.png 768w, https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version-1410x1536.png 1410w" sizes="(max-width: 1874px) 100vw, 1874px" data-high-res-src="https://ourworldindata.org/uploads/2020/10/LE-vs-Health-Exp-2020-version.png"></figure></div></div><h3 id="why-is-life-expectancy-shorter-in-the-us"><a class="deep-link" href="#why-is-life-expectancy-shorter-in-the-us"></a>Why is life expectancy shorter in the US?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>One could write an entire book on what this chart shows us. Here I want to look at one key question: why is life expectancy in the US shorter? Which causes of death are more common in the US than in other rich countries?</p><p>I won&#x2019;t lay out what is behind the shown long-term improvements in life expectancy (on this you might find <a href="https://ourworldindata.org/life-expectancy">our entry on life expectancy</a> helpful) or why we see such large differences in health spending (on this see Lorenzoni, Belloni, &amp; Sassi (2014) and <a href="https://ourworldindata.org/financing-healthcare">our entry on financing healthcare</a>).<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a></p><p>To understand some of the key reasons that explain the comparatively low life expectancy of Americans, I will look at mortality rates cause-by-cause. Causes of deaths that kill younger people are particularly important &#x2013; life expectancy captures the <em>average</em> age of death and the average declines strongly when people die at a young age.</p></div><div class="wp-block-column"></div></div><h3 id="smoking"><a class="deep-link" href="#smoking"></a>Smoking&#xA0;</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Tobacco smoking is one of the world&#x2019;s largest health problems today. <a href="https://ourworldindata.org/smoking">8.1 million people die prematurely</a> from smoking every year. Half of them are people younger than 70.</p><p>Smoking was extremely common in today&#x2019;s rich countries between 1950 and 2000 as the chart shows. Smoking was more widespread in the US than in Europe or Japan. As a consequence <a href="https://ourworldindata.org/grapher/death-rate-smoking?country=AUS~AUT~CAN~FRA~DEU~ITA~JPN~PRT~ESP~SWE~GBR~USA~Western%20Europe">Americans died at higher rates</a> from the consequences of smoking, particularly lung cancers.</p><p>As the chart here shows, smoking peaked earlier in the US. Since there is a lag of two to three decades between the peak of <em>smoking</em> and the peak of <em>smoking mortality</em>, this should be positive news for the US going forward. The country is over this mortality peak and we should expect the <a href="https://ourworldindata.org/grapher/lung-cancer-deaths-per-100000-by-sex-1950-2002?country=USA-0~USA-1">decline in lung cancer death rates</a> in the US to continue in the coming years.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/sales-of-cigarettes-per-adult-per-day" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/sales-of-cigarettes-per-adult-per-day" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/sales-of-cigarettes-per-adult-per-day_v32_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Sales of cigarettes per adult per day v32 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="obesity"><a class="deep-link" href="#obesity"></a>Obesity&#xA0;</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>More than two-thirds of Americans (<a href="https://ourworldindata.org/obesity#what-share-of-adults-are-overweight">70%</a>) are overweight and more than one-third (<a href="https://ourworldindata.org/obesity#13-of-adults-in-the-world-are-obese">36%</a>) is obese.&#xA0;</p><p>Obesity is a key risk factor for many of the <a href="https://ourworldindata.org/grapher/annual-number-of-deaths-by-cause?country=~USA">leading causes of death</a> in rich countries, including heart disease, diabetes, some cancers, and stroke.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a> Estimates of the death rate from obesity-related factors in the US are higher than for other countries as the chart shows. To improve population health it will be key for all countries to make progress against obesity, for the US it is especially important.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/death-rate-from-obesity?tab=chart&amp;country=AUS~CAN~FRA~DEU~ITA~JPN~GBR~USA" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/death-rate-from-obesity?tab=chart&amp;country=AUS~CAN~FRA~DEU~ITA~JPN~GBR~USA" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/death-rate-from-obesity-8b45a008297f549d9b48e991b6839e50_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Death rate from obesity 8b45a008297f549d9b48e991b6839e50 v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="homicides"><a class="deep-link" href="#homicides"></a>Homicides&#xA0;</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>This chart compares homicide rates in the US with a number of other rich countries. No matter which other rich country you add to the chart, you won&#x2019;t find one with a higher homicide rate. The homicide rate in the US is much <a href="https://ourworldindata.org/grapher/homicide-rate-vs-gdp-pc">higher than in other rich countries</a>.&#xA0;</p><p>As most <a href="https://ourworldindata.org/homicides#homicide-deaths-by-age">homicide victims are young</a>, this contributes to the lower <em>level</em> of life expectancy in the US in comparison with other rich countries.&#xA0;</p><p>This is of course important but it cannot explain the growing inequality in life expectancy between the US and other countries <em>over time</em>. Over the last few decades homicide rates have declined more in the US than in other rich countries. In relative terms the faster decline of homicide rates in the US has reduced the relative difference in life expectancy between countries.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/homicide-rate?tab=chart&amp;country=CAN~FRA~DEU~ITA~JPN~ESP~SWE~GBR~USA" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/homicide-rate?tab=chart&amp;country=CAN~FRA~DEU~ITA~JPN~ESP~SWE~GBR~USA" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/homicide-rate-c4ca609d6274a778da27f8f37a95babe_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Homicide rate c4ca609d6274a778da27f8f37a95babe v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="opioid-overdoses"><a class="deep-link" href="#opioid-overdoses"></a>Opioid overdoses&#xA0;</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>This chart shows the death rate from opioid overdoses. This is a cause of death where the US very clearly stands out.&#xA0;</p><p>In the US the death rate has increased more than 10-fold since 1990, while opioid overdoses have remained an extremely rare cause of death in other countries. No other country in the world has seen a surge in opioid overdose deaths as large as the US. Today the US has <a href="https://ourworldindata.org/grapher/death-rate-from-opioid-use?stackMode=absolute&amp;country=BRA~CAN~CHL~FRA~DEU~ITA~JPN~PRT~ESP~GBR~USA&amp;region=World">by far the highest</a> opioid overdose death rate.</p><p>Opioid overdoses are still thankfully a relatively rare cause of death overall (it is the cause of death of <a href="https://ourworldindata.org/grapher/share-of-deaths-from-opioid-overdoses?stackMode=absolute&amp;region=World">1.7%</a> of Americans), but these deaths affect life expectancy because many victims are relatively young.&#xA0;</p><p>Ruhm (2017) carefully studied opioid mortality in the US on a local level and found that the availability and the prescription of opioid-based painkillers is the main driver of the opioid mortality surge in the US.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a> This contributes to an explanation of both aspects that the first chart above highlights: lower life expectancy and higher healthcare costs.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/death-rate-from-opioid-use?tab=chart&amp;country=BRA~CAN~CHL~FRA~DEU~ITA~JPN~PRT~ESP~GBR~USA" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/death-rate-from-opioid-use?tab=chart&amp;country=BRA~CAN~CHL~FRA~DEU~ITA~JPN~PRT~ESP~GBR~USA" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/death-rate-from-opioid-use-cc9a417173583a91f411c6f6152e8e4e_v7_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Death rate from opioid use cc9a417173583a91f411c6f6152e8e4e v7 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="suicides"><a class="deep-link" href="#suicides"></a>Suicides</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Suicides have increased slightly over the past generation in the US, as the chart here shows.&#xA0;</p><p>This is not the case in <a href="https://ourworldindata.org/grapher/suicide-rates-by-age-detailed?time=1990..2017&amp;country=~DNK">many</a> <a href="https://ourworldindata.org/grapher/suicide-rates-by-age-detailed?time=1990..2017&amp;country=~CHE">other</a> <a href="https://ourworldindata.org/grapher/suicide-rates-by-age-detailed?time=1990..2017&amp;country=~FRA">rich</a> <a href="https://ourworldindata.org/grapher/suicide-rates-by-age-detailed?time=1990..2017&amp;country=~AUT">countries</a> &#x2013; you can switch to any other country in the world in the chart. Also globally suicide rates have <a href="https://ourworldindata.org/grapher/suicide-rates-by-age-detailed?time=1990..2017">fallen substantially</a> over recent years.</p><p>The US stands out in particular in <a href="https://ourworldindata.org/suicide#60-of-firearm-deaths-in-the-us-are-from-suicides">suicides from firearms</a>, which are much rarer in countries around the world.</p><p>Suicides are also among the few causes of death that are a high risk for younger people. The age distribution of suicides and the fact that suicides are rising in the US and falling in many other rich countries explains why this is another cause of death that contributes to the divergence in life expectancy that we are trying to explain.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/suicide-rates-by-age-detailed?time=1990..2017&amp;country=~USA" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/suicide-rates-by-age-detailed?time=1990..2017&amp;country=~USA" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/suicide-rates-by-age-detailed-2f878dc07be64f130cb626fae428764b_v5_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Suicide rates by age detailed 2f878dc07be64f130cb626fae428764b v5 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="road-accidents"><a class="deep-link" href="#road-accidents"></a>Road accidents</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Deaths in road accidents are also much more common in the US than in most other rich countries.&#xA0;</p><p>The chart shows that in many countries road deaths are at least 50% less common.</p><p>Most Americans who die in road accidents <a href="https://ourworldindata.org/grapher/road-incident-deaths-by-age?stackMode=relative&amp;country=~USA">are young</a>, which is why this cause of death contributes significantly to the gap in life expectancy between the US and other countries.</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/death-rates-road-incidents?tab=chart&amp;time=earliest..latest&amp;country=USA~AUS~AUT~CAN~SWE~DEU~FRA~GBR~JPN~CHE" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/death-rates-road-incidents?tab=chart&amp;time=earliest..latest&amp;country=USA~AUS~AUT~CAN~SWE~DEU~FRA~GBR~JPN~CHE" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/death-rates-road-incidents-88873139c8f494974d20471e5ef567b9_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Death rates road incidents 88873139c8f494974d20471e5ef567b9 v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="poverty-and-economic-inequality"><a class="deep-link" href="#poverty-and-economic-inequality"></a>Poverty and economic inequality</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>So far we&#x2019;ve only covered causes of deaths where the US stands out as having a higher death rate. But the US also stands out in having higher economic inequality and poverty than other rich countries,<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a> and this matters for the health outcomes as well.</p><p>While Americans have a <a href="https://ourworldindata.org/grapher/gdp-per-capita-worldbank">higher average income</a> than people in most other rich countries, the incomes of the poorest Americans <a href="https://income-inequality.info/">are lower</a> than the incomes of the poorest people in other rich countries.</p><p>Infant mortality &#x2013; the share of infants that don&#x2019;t survive the first year of their life &#x2013; is higher in the US than in just about every other rich country. You can again add countries to the chart here. A high infant mortality matters very much for life expectancy as the very short life span pulls down the average strongly.</p><p>The research by Alice Chen, Emily Oster, and Heidi Williams (2016) shows that while the mortality rates for babies of well-off people in the US and European countries are similar, there are larger differences between the mortality rates of the infants born to poorer people.<a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a> As the authors put it: &#x201C;the observed higher US postneonatal mortality relative to Europe is due entirely, or almost entirely, to higher mortality among disadvantaged groups.&#x201D;</p><p>Not just the mortality of infants is higher in the US, maternal mortality is also much higher. And while maternal mortality is falling in almost all countries in the world the death of mothers is <a href="https://ourworldindata.org/grapher/maternal-mortality-slope-chart?time=earliest..2015&amp;country=CAN~DNK~FIN~FRA~DEU~JPN~ESP~USA~POL~CZE~EST~KAZ">becoming more common in the US</a>.</p><p>Poorer Americans are already substantially worse off within the first year of life. Over the life course the disadvantages accumulate. The inequality of life expectancy is large in the US, the difference between the poorest 1% and the richest 1% in the US is 14.6 years.<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a> And this income gradient in life expectancy has widened recently.</p><p>The low life expectancy of poorer Americans is a big part of why the average life expectancy in the US is lower than in other rich countries. Kinge et al (2019) study the difference between the US and Norway.<a id="ref-8" class="ref" href="#note-8"><sup>8</sup></a> Like the US, Norway is exceptionally rich, but it is much less unequal. As a consequence Norwegians in the lower half of the income distribution <a href="https://income-inequality.info/">are richer</a> than Americans in the lower half of the income distribution. The lower level of income inequality in Norway is mirrored by a lower inequality in life expectancy. The life expectancy of Norwegians in the lower-middle income segment is about 3 to 4 years higher than the life expectancy of Americans in that same income segment.</p><p>The world as a whole has achieved very rapid progress; global life expectancy has <a href="https://ourworldindata.org/life-expectancy-globally">increased to over 70 years</a>. The US isn&#x2019;t keeping up with this progress &#x2013; because of the high inequality and slow development of the US there are now 19 US counties where people have a lower life expectancy than the global average.<a id="ref-9" class="ref" href="#note-9"><sup>9</sup></a></p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/infant-mortality?tab=chart&amp;time=2017..latest&amp;country=USA~European%20Union~DEU~ITA~POL~FRA~PRT~SWE~ISL~FIN~AUT~JPN~AUS~CAN~EST~LTU~ISR~NLD~GRC~ESP~SVN&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/infant-mortality?tab=chart&amp;time=2017..latest&amp;country=USA~European%20Union~DEU~ITA~POL~FRA~PRT~SWE~ISL~FIN~AUT~JPN~AUS~CAN~EST~LTU~ISR~NLD~GRC~ESP~SVN&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/infant-mortality-1fd51c5d5039b7a0c18eba5a7b767cdb_v13_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Infant mortality 1fd51c5d5039b7a0c18eba5a7b767cdb v13 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="access-to-healthcare"><a class="deep-link" href="#access-to-healthcare"></a>Access to healthcare</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Among rich countries the US stands out as a country where the population does not have universal access to health insurance.&#xA0;</p><p>The chart here shows the situation in 2011, unfortunately the latest global data that I am aware of. In most rich countries it is the case that everyone is covered by health insurance, but not in the US. The US has expanded healthcare coverage in recent years, but a significant share of its population is still uninsured.<a id="ref-10" class="ref" href="#note-10"><sup>10</sup></a></p><p>This explains part of the difference in life expectancy according to the extensive study of the US National Research Council<a id="ref-11" class="ref" href="#note-11"><sup>11</sup></a> The authors note that for older Americans this is a small factor, due to the availability of Medicare, but overall conclude: &#x201C;Certainly, the lack of universal access to health care in the United States has increased mortality and reduced life expectancy.&#x201D;</p></div><div class="wp-block-column"><figure data-grapher-src="https://ourworldindata.org/grapher/health-coverage-vs-gdp-per-capita-simple?tab=chart&amp;time=latest&amp;country=&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/health-coverage-vs-gdp-per-capita-simple?tab=chart&amp;time=latest&amp;country=&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/health-coverage-vs-gdp-per-capita-simple-4a45647b0333ddec30d4958d5d8029f4_v7_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Health coverage vs gdp per capita simple 4a45647b0333ddec30d4958d5d8029f4 v7 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure></div></div><h3 id="conclusion"><a class="deep-link" href="#conclusion"></a>Conclusion</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>In addition to my overview I recommend two research publications that study in detail why in terms of life expectancy the US is falling behind other rich countries.<a id="ref-12" class="ref" href="#note-12"><sup>12</sup></a> And you can also use our extensive <a href="https://ourworldindata.org/causes-of-death">data presentation on causes of deaths</a> to explore this yourself.</p><p>Every country should and can do better in this respect, but a particular weakness of the US is a lack of success in preventing poor health. Many of the important factors &#x2013; smoking, obesity, violence, poverty &#x2013; are not about providing better healthcare for those that need it, but about preventing poor health outcomes in the first place.</p><p>The failure to prevent poor health is a factor that is contributing to both developments shown in the first chart. They worsen the health of the American population and they are expensive for the healthcare system.</p><p>Now, in the middle of a global pandemic there is little reason to hope that the US can reverse the recent trend of declining life expectancy. For the years ahead a focus on the high death rates of causes of deaths that kill younger people can be the starting point to get the US population back on track towards a longer and healthier life.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Guillaume Marois, Raya Muttarak, Sergei Scherbov (2020) – Assessing the potential impact of COVID-19 on life expectancy. In Plos One.&nbsp; <a href="https://doi.org/10.1371/journal.pone.0238678">https://doi.org/10.1371/journal.pone.0238678</a></p></li><li id="note-2"><p>Lorenzoni, L., Belloni, A., &amp; Sassi, F. (2014) – Health-care expenditure and health policy in the USA versus other high-spending OECD countries. <em>The Lancet</em>, <em>384</em>(9937), 83–92.<a href="https://doi.org/10.1016/S0140-6736(14)60571-7"> https://doi.org/10.1016/S0140-6736(14)60571-7</a></p></li><li id="note-3"><p>Ford, E. S., Williamson, D. F., &amp; Liu, S. (1997). Weight change and diabetes incidence: findings from a national cohort of US adults. American journal of epidemiology, 146(3), 214-222.</p>
+
+
+
+<p>Resnick, H. E., Valsania, P., Halter, J. B., &amp; Lin, X. (2000). Relation of weight gain and weight loss on subsequent diabetes risk in overweight adults. Journal of Epidemiology &amp; Community Health, 54(8), 596-602.</p>
+
+
+
+<p>Eckel, R. H., &amp; Krauss, R. M. (1998). American Heart Association call to action: obesity as a major risk factor for coronary heart disease. Circulation, 97(21), 2099-2100.</p>
+
+
+
+<p>Bianchini, F., Kaaks, R., &amp; Vainio, H. (2002). Overweight, obesity, and cancer risk. The lancet oncology, 3(9), 565-574.</p></li><li id="note-4"><p>Christopher J. Ruhm (2017) – <a href="https://www.nber.org/system/files/working_papers/w24188/w24188.pdf">Deaths of Despair or Drug Problems?</a></p></li><li id="note-5"><p>See Povcal and Brady, D., &amp; Parolin, Z. (2020). The Levels and Trends in Deep and Extreme Poverty in the United States, 1993–2016. <em>Demography</em>.<a href="https://doi.org/10.1007/s13524-020-00924-1"> https://doi.org/10.1007/s13524-020-00924-1</a></p></li><li id="note-6"><p>Alice Chen, Emily Oster, and Heidi Williams (2016) – <a href="https://www.aeaweb.org/articles?id=10.1257/pol.20140224">Why Is Infant Mortality Higher in the United States Than in Europe?</a> –&nbsp;Am Econ J Econ Policy. 2016 May; 8(2): 89–124. doi: 10.1257/pol.20140224.</p></li><li id="note-7"><p>Raj Chetty, Michael Stepner, Sarah Abraham (2016) – <a href="https://jamanetwork.com/journals/jama/fullarticle/2513561">The Association Between Income and Life Expectancy in the United States, 2001-2014</a>. In JAMA. 2016;315(16):1750-1766. doi:10.1001/jama.2016.4226</p></li><li id="note-8"><p>Kinge JM, Modalsli JH, Øverland S,&nbsp; et al. (2019) – <a href="https://jamanetwork.com/journals/jama/fullarticle/2733322">Association of household income with life expectancy and cause-specific mortality in Norway, 2005-2015</a>. JAMA. 2019;321(19):1916-1925. doi:10.1001/jama.2019.4329</p></li><li id="note-9"><p>The latest county-by-county data on life expectancy <a href="http://ihmeuw.org/5a74">published here by the IHME</a> refers to 2014. Global life expectancy in 2014 was <a href="https://ourworldindata.org/grapher/life-expectancy?tab=chart&amp;country=~OWID_WRL&amp;region=World">71.4 years</a> according to the UN.<br>These counties have a lower life expectancy than that 1. Oglala Lakota County (Shannon County), South Dakota; 2. Union County, Florida; 3. Todd County, South Dakota; 4. Sioux County, North Dakota; 5. Buffalo County, South Dakota; 6. Owsley County, Kentucky; 7. Breathitt County, Kentucky; 8. McDowell County, West Virginia; 9. Perry County, Kentucky; 16. Kusilvak Census Area, Alaska; 10. Tunica County, Mississippi; 11. Holmes County, Mississippi; 12. Dewey County, South Dakota; 13. Coahoma County, Mississippi; 17. Wolfe County, Kentucky; 14. Leslie County, Kentucky; 15. Roosevelt County, Montana; 18. Phillips County, Arkansas; 19. Mingo County, West Virginia.</p></li><li id="note-10"><p>Barack Obama (2016) – <a href="https://jamanetwork.com/journals/jama/fullarticle/2533698">United States Health Care Reform: Progress to Date and Next Steps</a>. In JAMA. 2016;316(5):525-532. doi:10.1001/jama.2016.9797</p></li><li id="note-11"><p>National Research Council (2011) – <a href="https://ncbi.nlm.nih.gov/books/NBK62369/pdf/Bookshelf_NBK62369.pdf">Explaining Divergent Levels of Longevity in High-Income Countries</a>. E.M. Crimmins, S.H. Preston, and B. Cohen, Eds. Panel on Understanding Divergent Trends in Longevity in High-Income Countries. Committee on Population, Division of Behavioral and Social Sciences and Education. Washington, DC: The National Academies Press.</p></li><li id="note-12"><p>The first one is this excellent report by the <em>National Research Council</em> that examines the evidence on competing explanations for the divergent trends with a focus on finding the opportunities on health-related interventions for the US to narrow this gap.&nbsp;</p>
+
+
+
+<p>National Research Council (2011) – <a href="https://ncbi.nlm.nih.gov/books/NBK62369/pdf/Bookshelf_NBK62369.pdf">Explaining Divergent Levels of Longevity in High-Income Countries</a>. E.M. Crimmins, S.H. Preston, and B. Cohen, Eds. Panel on Understanding Divergent Trends in Longevity in High-Income Countries. Committee on Population, Division of Behavioral and Social Sciences and Education. Washington, DC: The National Academies Press.</p>
+
+
+
+<p>The second one is this more recent publication in JAMA:<br>Steven H. Woolf and Heidi Schoomaker (2019) – Life Expectancy and Mortality Rates in the United States, 1959-2017. In JAMA. 2019;322(20):1996-2016. doi:10.1001/jama.2019.16932</p></li></ol><h3 id="licence">Reuse our work freely</h3><p>You can use all of what you find here for your own research or writing. We <a href="/how-to-use-our-world-in-data#how-is-our-work-copyrighted">license all charts under <em>Creative Commons BY</em>.</a></p><p>All of <a href="/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=37223&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/supporters" data-track-note="footer-navigation">Supporters</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All of Our World in Data is completely open access and all work is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce in any medium, provided the source and authors are credited.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookiePreferencesManager();
+                runCovid();
+                runFootnotes();
+                if (!document.querySelector(".ChartPage")) {
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[],"pageTitle":"Why is life expectancy in the US lower than in other rich countries?"})
+                        runRelatedCharts(undefined)
+                        </script></body></html>
