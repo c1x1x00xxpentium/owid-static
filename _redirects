@@ -470,6 +470,7 @@
 /grapher/daily-covid-deaths-per-million-3-day-avg /coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&country=MEX~IND~USA~ITA~BRA~GBR~FRA~ESP&deathsMetric=true&interval=smoothed&perCapita=true&smoothing=7&pickerMetric=total_deaths&pickerSort=desc 301!
 /grapher/daily-covid-cases-per-million-three-day-avg /coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&country=MEX~IND~USA~ITA~BRA~GBR~FRA~ESP&casesMetric=true&interval=smoothed&perCapita=true&smoothing=7&pickerMetric=total_deaths&pickerSort=desc 301!
 /we-teamed-up-with-kurzgesagt-to-make-a-video-about-climate-change-is-it-too-late-to-stop-climate-change-well-its-complicated /kurzgesagt-climate-video 301!
+/why-is-life-expectancy-in-the-us-lower-than-in-other-rich-countries /us-life-expectancy-low 301!
 /grapher/latest /grapher/share-of-children-vaccinated-against-measles 302
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/the-share-of-the-population-suffering-from-depression-around-the-world-221 /grapher/share-of-the-population-suffering-from-depression 302!
