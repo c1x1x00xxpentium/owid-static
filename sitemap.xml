@@ -20508,4 +20508,8 @@
         <loc>https://ourworldindata.org/grapher/covid-icu-patients-per-million</loc>
         <lastmod>2020-10-29</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/daily-covid-deaths-region-smoothed</loc>
+        <lastmod>2020-10-30</lastmod>
+    </url>
 </urlset>
