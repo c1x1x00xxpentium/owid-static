@@ -20544,4 +20544,8 @@
         <loc>https://ourworldindata.org/grapher/deforestation-by-commodity</loc>
         <lastmod>2020-11-10</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-deforestation-agricultural-products</loc>
+        <lastmod>2020-11-10</lastmod>
+    </url>
 </urlset>
