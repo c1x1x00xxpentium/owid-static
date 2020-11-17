@@ -20596,4 +20596,16 @@
         <loc>https://ourworldindata.org/grapher/daily-covid-deaths-jhu-vs-ecdc</loc>
         <lastmod>2020-11-17</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/daily-covid-deaths-per-million-jhu-vs-ecdc</loc>
+        <lastmod>2020-11-17</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/daily-covid-cases-per-million-jhu-vs-ecdc</loc>
+        <lastmod>2020-11-17</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/daily-covid-cases-jhu-ecdc</loc>
+        <lastmod>2020-11-17</lastmod>
+    </url>
 </urlset>
