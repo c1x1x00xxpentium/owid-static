@@ -29,7 +29,7 @@
             <id>https://ourworldindata.org/covid-sweden-death-reporting</id>
             <link rel="alternate" href="https://ourworldindata.org/covid-sweden-death-reporting"/>
             <published>2020-11-13T09:49:01.000Z</published>
-            <updated>2020-11-13T10:47:33.000Z</updated>
+            <updated>2020-11-30T11:20:31.000Z</updated>
             <author><name>Edouard Mathieu</name></author>
             <summary><![CDATA[There are two ways that COVID-19 deaths can be presented over time: by the date of death, or the date on which the death is reported. The data for Sweden is shown by date of death – this means the most recent points should be treated as incomplete.<br><br><a href="https://ourworldindata.org/covid-sweden-death-reporting" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/11/daily-new-confirmed-covid-19-deaths-in-sweden-oct-2020-1-768x542.png"/></a>]]></summary>
             </entry>
