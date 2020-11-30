@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2020-11-26T11:45:00.000Z</updated>
+<updated>2020-11-30T09:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Our World in Data will switch to Johns Hopkins University as our main data source for COVID-19 cases and deaths]]></title>
+            <id>https://ourworldindata.org/covid-data-switch-jhu</id>
+            <link rel="alternate" href="https://ourworldindata.org/covid-data-switch-jhu"/>
+            <published>2020-11-30T09:00:00.000Z</published>
+            <updated>2020-11-30T10:26:25.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[To continue providing daily updates on the Coronavirus Pandemic, Our World in Data has switched from ECDC to Johns Hopkins University as our data source for confirmed cases and deaths.<br><br><a href="https://ourworldindata.org/covid-data-switch-jhu" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/05/Coronavirus-entry-banner-on-OWID-background-2-768x402.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Breaking out of the Malthusian trap: How pandemics allow us to understand why our ancestors were stuck in poverty]]></title>
             <id>https://ourworldindata.org/breaking-the-malthusian-trap</id>
@@ -86,14 +95,5 @@
             <updated>2020-10-12T17:21:50.000Z</updated>
             <author><name>Joe Hasell</name></author>
             <summary><![CDATA[<br><br><a href="https://ourworldindata.org/our-world-in-data-covid-19-testing-dataset-published-by-nature" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/Screenshot-2020-10-09-at-18.26.00-768x481.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Cars, planes, trains: where do CO2 emissions from transport come from?]]></title>
-            <id>https://ourworldindata.org/co2-emissions-from-transport</id>
-            <link rel="alternate" href="https://ourworldindata.org/co2-emissions-from-transport"/>
-            <published>2020-10-06T11:00:00.000Z</published>
-            <updated>2020-10-07T10:56:54.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Transport accounts for around one-fifth of global CO2 emissions. But where do these emissions come from, and how might they change in the coming decades?<br><br><a href="https://ourworldindata.org/co2-emissions-from-transport" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/Transport-CO2-emissions-by-mode-bar-chart-768x303.png"/></a>]]></summary>
             </entry>
 </feed>
