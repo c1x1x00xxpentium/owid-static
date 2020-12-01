@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2020-11-30T09:00:00.000Z</updated>
+<updated>2020-12-01T11:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Why did renewables become so cheap so fast? And what can we do to use this global opportunity for green growth?]]></title>
+            <id>https://ourworldindata.org/cheap-renewables-growth</id>
+            <link rel="alternate" href="https://ourworldindata.org/cheap-renewables-growth"/>
+            <published>2020-12-01T11:00:00.000Z</published>
+            <updated>2020-12-01T11:54:39.000Z</updated>
+            <author><name>Max Roser</name></author>
+            <summary><![CDATA[Fossil fuels dominate the global power supply because until very recently electricity from fossil fuels was far cheaper than electricity from renewables. This has dramatically changed within the last decade. In most places in the world power from new renewables is now cheaper than power from new fossil fuels.<br><br><a href="https://ourworldindata.org/cheap-renewables-growth" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/11/Screen-Shot-2020-11-28-at-13.00.19-768x443.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Our World in Data switches to Johns Hopkins University as our main data source for COVID-19 cases and deaths]]></title>
             <id>https://ourworldindata.org/covid-data-switch-jhu</id>
@@ -86,14 +95,5 @@
             <updated>2020-10-14T13:20:44.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Transport accounts for almost one-quarter of global CO2 emissions. For individuals, it can be the largest part of their carbon footprint. But if you need to travel, what is the lowest-carbon way to do so? We take a look at the data.<br><br><a href="https://ourworldindata.org/travel-carbon-footprint" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/carbon-footprint-travel-mode-3-768x542.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[The Our World in Data COVID-19 Testing dataset has been published in the academic journal, Nature]]></title>
-            <id>https://ourworldindata.org/our-world-in-data-covid-19-testing-dataset-published-by-nature</id>
-            <link rel="alternate" href="https://ourworldindata.org/our-world-in-data-covid-19-testing-dataset-published-by-nature"/>
-            <published>2020-10-09T17:14:17.000Z</published>
-            <updated>2020-10-12T17:21:50.000Z</updated>
-            <author><name>Joe Hasell</name></author>
-            <summary><![CDATA[<br><br><a href="https://ourworldindata.org/our-world-in-data-covid-19-testing-dataset-published-by-nature" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/Screenshot-2020-10-09-at-18.26.00-768x481.png"/></a>]]></summary>
             </entry>
 </feed>
