@@ -465,8 +465,6 @@
 /grapher/total-and-daily-cases-covid-19 /grapher/covid-daily-vs-total-cases 301!
 /grapher/total-daily-covid-cases-per-million /grapher/covid-daily-vs-total-cases-per-million 301!
 /exemplars-in-global-health-learning-from-the-most-successful-countries-in-the-world /exemplars-in-global-health 301!
-/grapher/daily-covid-cases-3-day-average /grapher/daily-covid-cases-7-day 301!
-/grapher/daily-covid-deaths-3-day-average /grapher/daily-covid-deaths-7-day 301!
 /grapher/daily-covid-deaths-per-million-3-day-avg /coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&country=MEX~IND~USA~ITA~BRA~GBR~FRA~ESP&deathsMetric=true&interval=smoothed&perCapita=true&smoothing=7&pickerMetric=total_deaths&pickerSort=desc 301!
 /grapher/daily-covid-cases-per-million-three-day-avg /coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&country=MEX~IND~USA~ITA~BRA~GBR~FRA~ESP&casesMetric=true&interval=smoothed&perCapita=true&smoothing=7&pickerMetric=total_deaths&pickerSort=desc 301!
 /we-teamed-up-with-kurzgesagt-to-make-a-video-about-climate-change-is-it-too-late-to-stop-climate-change-well-its-complicated /kurzgesagt-climate-video 301!
@@ -1182,3 +1180,6 @@
 /grapher/daily-hospital-admissions-covid-per-million /grapher/weekly-hospital-admissions-covid-per-million 302!
 /grapher/global-carbon-dioxide-emissions-by-sector /grapher/co-emissions-by-sector 302!
 /grapher/annual-working-hours-vs-gdp-per-capita /grapher/annual-working-hours-vs-gdp-per-capita-pwt 302!
+/grapher/daily-covid-cases-3-day-average /grapher/daily-covid-cases-7-day 302!
+/grapher/daily-covid-deaths-3-day-average /grapher/daily-covid-deaths-7-day 302!
+/grapher/child-mortality-rate-per-1000-live-births /grapher/child-mortality-around-the-world 302!
