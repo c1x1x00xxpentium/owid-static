@@ -408,7 +408,6 @@
 /land-cover /land-use 301!
 /colonialism /democracy 301!
 /data/war-peace/war-and-peace-before-1945/ /war-and-peace 301!
-/grapher/child-mortality-rate-per-1000-live-births /grapher/child-mortality-around-the-world 301!
 /grapher/154 /grapher/political-regime 301!
 /uploads/2017/12/Deaths-by-catastrophe-type.png /uploads/2019/11/Annual-deaths-by-natural-disaster.png 301!
 /hdi /human-development-index 301!
@@ -453,17 +452,10 @@
 /coronavirus-sweden /coronavirus/country/sweden 301!
 /coronavirus-mexico /coronavirus/country/mexico 301!
 /coronavirus-country-by-country /coronavirus#coronavirus-country-profiles 301!
-/grapher/methane-emissions-by-sector-gg-coe /grapher/methane-emissions-by-sector 301!
 /is-the-world-making-progress-against-the-pandemic-we-built-the-chart-to-answer-this-question /epi-curve-covid-19 301!
-/grapher/covid-daily-tests-cases-deaths-rolling-average /grapher/covid-tests-cases-deaths 301!
 /coronavirus-max-version /coronavirus 301!
 /coronavirus-country-comparisons /coronavirus#coronavirus-country-profiles 301!
 /coronavirus/country-by-country /coronavirus#coronavirus-country-profiles 301!
-/grapher/carbon-emission-intensity /grapher/co2-intensity 301!
-/grapher/total-daily-covid-deaths /grapher/confirmed-covid-19-deaths-total-vs-daily 301!
-/grapher/total-daily-covid-deaths-per-million /grapher/covid-deaths-daily-vs-total-per-million 301!
-/grapher/total-and-daily-cases-covid-19 /grapher/covid-daily-vs-total-cases 301!
-/grapher/total-daily-covid-cases-per-million /grapher/covid-daily-vs-total-cases-per-million 301!
 /exemplars-in-global-health-learning-from-the-most-successful-countries-in-the-world /exemplars-in-global-health 301!
 /grapher/daily-covid-deaths-per-million-3-day-avg /coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&country=MEX~IND~USA~ITA~BRA~GBR~FRA~ESP&deathsMetric=true&interval=smoothed&perCapita=true&smoothing=7&pickerMetric=total_deaths&pickerSort=desc 301!
 /grapher/daily-covid-cases-per-million-three-day-avg /coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&country=MEX~IND~USA~ITA~BRA~GBR~FRA~ESP&casesMetric=true&interval=smoothed&perCapita=true&smoothing=7&pickerMetric=total_deaths&pickerSort=desc 301!
@@ -1183,3 +1175,10 @@
 /grapher/daily-covid-cases-3-day-average /grapher/daily-covid-cases-7-day 302!
 /grapher/daily-covid-deaths-3-day-average /grapher/daily-covid-deaths-7-day 302!
 /grapher/child-mortality-rate-per-1000-live-births /grapher/child-mortality-around-the-world 302!
+/grapher/total-daily-covid-cases-per-million /grapher/covid-daily-vs-total-cases-per-million 302!
+/grapher/total-and-daily-cases-covid-19 /grapher/covid-daily-vs-total-cases 302!
+/grapher/total-daily-covid-deaths-per-million /grapher/covid-deaths-daily-vs-total-per-million 302!
+/grapher/total-daily-covid-deaths /grapher/confirmed-covid-19-deaths-total-vs-daily 302!
+/grapher/carbon-emission-intensity /grapher/co2-intensity 302!
+/grapher/covid-daily-tests-cases-deaths-rolling-average /grapher/covid-tests-cases-deaths 302!
+/grapher/methane-emissions-by-sector-gg-coe /grapher/methane-emissions-by-sector 302!
