@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2020-12-10T11:00:00.000Z</updated>
+<updated>2020-12-11T11:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Who do we spend time with across our lifetime?]]></title>
+            <id>https://ourworldindata.org/time-with-others-lifetime</id>
+            <link rel="alternate" href="https://ourworldindata.org/time-with-others-lifetime"/>
+            <published>2020-12-11T11:00:00.000Z</published>
+            <updated>2020-12-11T11:38:44.000Z</updated>
+            <author><name>Esteban Ortiz-Ospina</name></author>
+            <summary><![CDATA[Who we spend time with evolves across our lifetimes. In adolescence we spend the most time with our parents, siblings, and friends; as we enter adulthood we spend more time with our co-workers, partners, and children; and in our later years we spend an increasing amount of time alone. But this doesn’t necessarily mean we are lonely; rather, it helps reveal the complex nature of social connections and their impact on our well-being.<br><br><a href="https://ourworldindata.org/time-with-others-lifetime" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/12/time-spent-with-relationships-by-age-us-768x403.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[The world’s energy problem: Without cheap, safe, low-carbon energy sources at scale we are stuck between the alternatives of high greenhouse gas emissions and energy poverty]]></title>
             <id>https://ourworldindata.org/worlds-energy-problem</id>
@@ -86,14 +95,5 @@
             <updated>2020-10-30T15:12:51.000Z</updated>
             <author><name>Max Roser</name></author>
             <summary><![CDATA[<br><br><a href="https://ourworldindata.org/us-life-expectancy-low" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/LE-vs-Health-Exp-2020-version-768x837.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Short-haul vs. long-haul; rich vs. poor countries: where do global CO2 emissions from aviation come from?]]></title>
-            <id>https://ourworldindata.org/breakdown-co2-aviation</id>
-            <link rel="alternate" href="https://ourworldindata.org/breakdown-co2-aviation"/>
-            <published>2020-10-23T11:30:00.000Z</published>
-            <updated>2020-10-23T21:56:42.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Aviation accounts for 2.5% of global CO2 emissions. How much from short vs. long-haul flights? How much from rich vs. poor countries?<br><br><a href="https://ourworldindata.org/breakdown-co2-aviation" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/Global-breakdown-of-aviation-emissions-768x486.png"/></a>]]></summary>
             </entry>
 </feed>
