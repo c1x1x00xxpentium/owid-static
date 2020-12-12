@@ -20754,7 +20754,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccination-policy</loc>
-        <lastmod>2020-12-10</lastmod>
+        <lastmod>2020-12-12</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/extent-of-intensive-agriculture</loc>
@@ -20767,5 +20767,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/onset-year-intensive-agriculture</loc>
         <lastmod>2020-12-11</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-of-household-consumption-in-gdp-vs-gdp-per-capita</loc>
+        <lastmod>2020-12-12</lastmod>
     </url>
 </urlset>
