@@ -20793,7 +20793,11 @@
         <lastmod>2020-12-14</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/share-of-population-living-on-less-than-5-per-day</loc>
+        <loc>https://ourworldindata.org/grapher/historical-share-of-population-living-on-less-than-5-per-day</loc>
+        <lastmod>2020-12-14</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/historical-share-of-population-living-on-less-than-per-day2</loc>
         <lastmod>2020-12-14</lastmod>
     </url>
 </urlset>
