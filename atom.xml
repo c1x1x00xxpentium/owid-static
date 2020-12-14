@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2020-12-11T11:00:00.000Z</updated>
+<updated>2020-12-14T10:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Are parents spending less time with their kids?]]></title>
+            <id>https://ourworldindata.org/parents-time-with-kids</id>
+            <link rel="alternate" href="https://ourworldindata.org/parents-time-with-kids"/>
+            <published>2020-12-14T10:00:00.000Z</published>
+            <updated>2020-12-14T11:20:50.000Z</updated>
+            <author><name>Esteban Ortiz-Ospina</name></author>
+            <summary><![CDATA[In many countries the amount of time parents spend with their kids has been increasing over the last 50 years.<br><br><a href="https://ourworldindata.org/parents-time-with-kids" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/12/thumbnail-Parent-time-spent-with-children-2-768x402.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Who do we spend time with across our lifetime?]]></title>
             <id>https://ourworldindata.org/time-with-others-lifetime</id>
@@ -86,14 +95,5 @@
             <updated>2020-11-02T13:34:25.000Z</updated>
             <author><name>Bobbie Macdonald</name></author>
             <summary><![CDATA[40% of eligible voters in the US did not vote in the 2016 election. Young Americans in particular often do not exercise their right to vote – less than half of eligible under-30s voted in the last election.<br><br><a href="https://ourworldindata.org/usa-electoral-turnout" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/11/voter-turnout-rate-by-age-1-768x542.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Why is life expectancy in the US lower than in other rich countries?]]></title>
-            <id>https://ourworldindata.org/us-life-expectancy-low</id>
-            <link rel="alternate" href="https://ourworldindata.org/us-life-expectancy-low"/>
-            <published>2020-10-29T17:28:32.000Z</published>
-            <updated>2020-10-30T15:12:51.000Z</updated>
-            <author><name>Max Roser</name></author>
-            <summary><![CDATA[<br><br><a href="https://ourworldindata.org/us-life-expectancy-low" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/10/LE-vs-Health-Exp-2020-version-768x837.png"/></a>]]></summary>
             </entry>
 </feed>
