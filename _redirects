@@ -1007,7 +1007,6 @@
 /grapher/coal-output-per-worker-in-the-united-kingdom-1873-2016 /grapher/coal-output-per-worker-in-the-united-kingdom 302!
 /grapher/coal-production-in-the-united-kingdom-1700-2016 /grapher/coal-production-in-the-united-kingdom 302!
 /grapher/employment-in-the-coal-industry-in-the-united-kingdom-1873-2016 /grapher/employment-in-the-coal-industry-in-the-united-kingdom 302!
-/grapher/carbon-dioxide-co-emissions-by-sector-or-source /grapher/carbon-dioxide-co2-emissions-by-sector-or-source 302!
 /grapher/the-maternal-mortality-ratio-in-1990-and-2015 /grapher/the-maternal-mortality-ratio-in-1990-and-2016 302!
 /grapher/number-of-new-neonatal-tetanus-cases-who-2017-per-1000000-people /grapher/new-neonatal-tetanus-cases-per-million 302!
 /grapher/nitrous-oxide-emissions-by-sector-gg-coe /grapher/nitrous-oxide-emissions-by-sector 302!
@@ -1190,3 +1189,5 @@
 /grapher/electricity-per-capita /grapher/per-capita-electricity-consumption 302!
 /grapher/co-emissions-per-capita-vs-share-of-electricity-from-renewbles /grapher/co2-per-capita-vs-renewable-electricity 302!
 /grapher/renewables-share-electricity-production /grapher/modern-renewable-energy-consumption 302!
+/grapher/carbon-dioxide-co2-emissions-by-sector-or-source /grapher/co-emissions-by-sector 302!
+/grapher/annual-ghg-emissions /grapher/total-ghg-emissions 302!
