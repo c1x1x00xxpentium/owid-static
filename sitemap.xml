@@ -7037,24 +7037,12 @@
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/nuclear-energy-electricity-production</loc>
-        <lastmod>2020-06-05</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/nuclear-renewables-electricity</loc>
         <lastmod>2020-07-21</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/global-electricity-production-by-source</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/energy-imports-energy-use</loc>
         <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/world-electricity-by-source</loc>
-        <lastmod>2020-10-05</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/prevalence-of-undernourishment-in-developing-countries-since-1970</loc>
@@ -9195,10 +9183,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/global-land-use-by-total-surface-area</loc>
         <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-electricity-production-from-fossil-fuels</loc>
-        <lastmod>2018-12-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/inequality-of-incomes-before-and-after-taxes-and-transfers-scatter</loc>
@@ -15803,10 +15787,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/animals-slaughtered-for-meat</loc>
         <lastmod>2020-02-14</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/electricity-per-capita</loc>
-        <lastmod>2019-09-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-number-of-deaths-from-tetanus-by-world-region</loc>

@@ -1183,3 +1183,7 @@
 /grapher/annual-working-hours-per-persons-engaged /grapher/annual-working-hours-per-worker 302!
 /grapher/numbers-of-days-off-over-the-twentieth-century /grapher/days-of-vacation-and-holidays 302!
 /grapher/share-of-population-living-on-less-than-5-per-day /grapher/historical-share-of-population-living-on-less-than-5-per-day 302!
+/grapher/world-electricity-by-source /grapher/electricity-prod-source-stacked 302!
+/grapher/global-electricity-production-by-source /grapher/elec-fossil-nuclear-renewables 302!
+/grapher/nuclear-energy-electricity-production /grapher/share-electricity-nuclear 302!
+/grapher/share-of-electricity-production-from-fossil-fuels /grapher/share-electricity-fossil-fuels 302!
