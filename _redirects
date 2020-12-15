@@ -1187,3 +1187,6 @@
 /grapher/global-electricity-production-by-source /grapher/elec-fossil-nuclear-renewables 302!
 /grapher/nuclear-energy-electricity-production /grapher/share-electricity-nuclear 302!
 /grapher/share-of-electricity-production-from-fossil-fuels /grapher/share-electricity-fossil-fuels 302!
+/grapher/electricity-per-capita /grapher/per-capita-electricity-consumption 302!
+/grapher/co-emissions-per-capita-vs-share-of-electricity-from-renewbles /grapher/co2-per-capita-vs-renewable-electricity 302!
+/grapher/renewables-share-electricity-production /grapher/modern-renewable-energy-consumption 302!
