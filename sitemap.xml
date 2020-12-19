@@ -20510,7 +20510,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/current-covid-patients-hospital</loc>
-        <lastmod>2020-11-26</lastmod>
+        <lastmod>2020-12-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-hospital-admissions-covid</loc>
@@ -20526,7 +20526,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/current-covid-hospitalizations-per-million</loc>
-        <lastmod>2020-11-26</lastmod>
+        <lastmod>2020-12-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-hospital-admissions-covid-per-million</loc>
@@ -20542,11 +20542,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/current-covid-patients-icu</loc>
-        <lastmod>2020-11-26</lastmod>
+        <lastmod>2020-12-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-icu-patients-per-million</loc>
-        <lastmod>2020-11-26</lastmod>
+        <lastmod>2020-12-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-covid-deaths-region-smoothed</loc>
