@@ -20820,4 +20820,8 @@
         <loc>https://ourworldindata.org/grapher/uk-covid-positivity</loc>
         <lastmod>2020-12-23</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/uk-covid-hospital-patients</loc>
+        <lastmod>2020-12-23</lastmod>
+    </url>
 </urlset>
