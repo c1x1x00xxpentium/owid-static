@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-01-06T10:10:00.000Z</updated>
+<updated>2021-01-07T19:31:32.000Z</updated>
+<entry>
+            <title><![CDATA[Local data on the COVID pandemic in the UK]]></title>
+            <id>https://ourworldindata.org/local-covid-uk</id>
+            <link rel="alternate" href="https://ourworldindata.org/local-covid-uk"/>
+            <published>2021-01-07T19:31:32.000Z</published>
+            <updated>2021-01-07T19:31:59.000Z</updated>
+            <author><name>Hannah Ritchie</name></author><author><name>Edouard Mathieu</name></author><author><name>Max Roser</name></author>
+            <summary><![CDATA[<br><br><a href="https://ourworldindata.org/local-covid-uk" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/01/Screen-Shot-2021-01-07-at-19.29.32-768x405.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[How are working hours measured and what can we learn from the data?]]></title>
             <id>https://ourworldindata.org/measure-working-hours</id>
@@ -86,14 +95,5 @@
             <updated>2020-12-01T16:05:08.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[To continue providing daily updates on the Coronavirus Pandemic, Our World in Data has switched from ECDC to Johns Hopkins University as our data source for confirmed cases and deaths.<br><br><a href="https://ourworldindata.org/covid-data-switch-jhu" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/05/Coronavirus-entry-banner-on-OWID-background-2-768x402.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Breaking out of the Malthusian trap: How pandemics allow us to understand why our ancestors were stuck in poverty]]></title>
-            <id>https://ourworldindata.org/breaking-the-malthusian-trap</id>
-            <link rel="alternate" href="https://ourworldindata.org/breaking-the-malthusian-trap"/>
-            <published>2020-11-26T11:45:00.000Z</published>
-            <updated>2020-12-15T12:45:01.000Z</updated>
-            <author><name>Max Roser</name></author>
-            <summary><![CDATA[For much of human history, our ancestors were trapped in an economy in which incomes were determined by the size of the population. The Industrial Revolution ended this Malthusian economy and made it possible for a country to leave abject poverty behind.<br><br><a href="https://ourworldindata.org/breaking-the-malthusian-trap" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/11/Screen-Shot-2020-11-25-at-12.46.32-768x503.png"/></a>]]></summary>
             </entry>
 </feed>
