@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-01-07T19:31:32.000Z</updated>
+<updated>2021-01-08T11:30:24.000Z</updated>
+<entry>
+            <title><![CDATA[Our World in Data is now tracking Coronavirus (COVID-19) Vaccinations across the world]]></title>
+            <id>https://ourworldindata.org/covid-vaccination-dataset</id>
+            <link rel="alternate" href="https://ourworldindata.org/covid-vaccination-dataset"/>
+            <published>2021-01-08T11:30:24.000Z</published>
+            <updated>2021-01-08T13:59:20.000Z</updated>
+            <author><name>Edouard Mathieu</name></author><author><name>Hannah Ritchie</name></author><author><name>Max Roser</name></author>
+            <summary><![CDATA[We are building a global dataset on COVID-19 Vaccinations. Explore the latest data for all countries.<br><br><a href="https://ourworldindata.org/covid-vaccination-dataset" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/01/covid-vaccinations-768x402.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Local data on the COVID pandemic in the UK]]></title>
             <id>https://ourworldindata.org/local-covid-uk</id>
@@ -86,14 +95,5 @@
             <updated>2020-12-15T12:42:32.000Z</updated>
             <author><name>Max Roser</name></author>
             <summary><![CDATA[Fossil fuels dominate the global power supply because until very recently electricity from fossil fuels was the cheapest. This has changed dramatically. In most places power from new renewables is now cheaper than new fossil fuels.<br><br><a href="https://ourworldindata.org/cheap-renewables-growth" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/11/Screen-Shot-2020-11-28-at-13.00.19-768x443.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Our World in Data switches to Johns Hopkins University as our main data source for COVID-19 cases and deaths]]></title>
-            <id>https://ourworldindata.org/covid-data-switch-jhu</id>
-            <link rel="alternate" href="https://ourworldindata.org/covid-data-switch-jhu"/>
-            <published>2020-11-30T09:00:00.000Z</published>
-            <updated>2020-12-01T16:05:08.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[To continue providing daily updates on the Coronavirus Pandemic, Our World in Data has switched from ECDC to Johns Hopkins University as our data source for confirmed cases and deaths.<br><br><a href="https://ourworldindata.org/covid-data-switch-jhu" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/05/Coronavirus-entry-banner-on-OWID-background-2-768x402.png"/></a>]]></summary>
             </entry>
 </feed>
