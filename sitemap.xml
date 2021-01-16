@@ -20888,4 +20888,16 @@
         <loc>https://ourworldindata.org/grapher/us-total-covid-19-vaccine-doses-administered</loc>
         <lastmod>2021-01-16</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/us-state-covid-vaccines-per-100</loc>
+        <lastmod>2021-01-16</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/us-covid-19-total-people-vaccinated</loc>
+        <lastmod>2021-01-16</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/us-covid-19-share-people-vaccinated</loc>
+        <lastmod>2021-01-16</lastmod>
+    </url>
 </urlset>
