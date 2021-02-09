@@ -1,0 +1,445 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Afforestation - Our World in Data</title><meta name="description" content="See which countries are gaining forest though natural forest expansion and afforestation."/><link rel="canonical" href="https://ourworldindata.org/afforestation"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/afforestation"/><meta property="og:title" content="Afforestation"/><meta property="og:description" content="See which countries are gaining forest though natural forest expansion and afforestation."/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2021/02/Afforestation-768x404.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Afforestation"/><meta name="twitter:description" content="See which countries are gaining forest though natural forest expansion and afforestation."/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2021/02/Afforestation-768x404.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page with-sidebar large-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Afforestation</h1></div><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div></header></div><div class="offset-subnavigation"><div class="site-subnavigation"><div class="site-subnavigation-scroll"><ul class="site-subnavigation-links"><li class=""><a href="/forests" data-track-note="forests-subnav-forests">Forests<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></a></li><li class=""><a href="/forest-area" data-track-note="forests-subnav-forest-area">Forest area</a></li><li class=""><a href="/deforestation" data-track-note="forests-subnav-deforestation">Deforestation</a></li><li class="current"><a href="/afforestation" data-track-note="forests-subnav-afforestation">Afforestation</a></li><li class=""><a href="/drivers-of-deforestation" data-track-note="forests-subnav-drivers-of-deforestation">Drivers of Deforestation</a></li><li class=""><a href="/palm-oil" data-track-note="forests-subnav-palm-oil">Palm oil</a></li><li class=""><a href="/soy" data-track-note="forests-subnav-soy">Soy</a></li></ul></div></div></div><div class="content-wrapper"><div><aside class="entry-sidebar"><div class="sticky-sentinel"></div><nav class="entry-toc"><ul><li><a href="#">Afforestation</a></li><li class="section"><a href="#which-countries-are-gaining-and-which-are-losing-forest">Which countries are gaining, and which are losing forest?</a></li><li class="section"><a href="#forest-expansion-and-afforestation">Forest expansion and afforestation</a></li><li class="subsection"><a href="#forest-expansion">Forest expansion</a></li><li class="subsection"><a href="#afforestation">Afforestation</a></li><li class="section"><a href="#do-rich-countries-export-deforestation-to-other-countries">Do rich countries export deforestation to other countries?</a></li><li class="section"><a href="#explore-more-of-our-work-on-forests-and-deforestation">Explore more of our work on Forests and Deforestation</a></li><li class="section"><a href="#endnotes">Endnotes</a></li></ul></nav><div class="toggle-toc"><button data-track-note="page-toggle-toc" aria-label="Open table of contents"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-alt" class="svg-inline--fa fa-list-alt fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z"></path></svg></button></div></aside></div><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="section-heading"><div class="wrapper"><div><h2 id="which-countries-are-gaining-and-which-are-losing-forest"><a class="deep-link" href="#which-countries-are-gaining-and-which-are-losing-forest"></a>Which countries are gaining, and which are losing forest?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Before we look at trends in afforestation across the world specifically, it&#x2019;s useful to understand the <em>net</em> change in forest cover. The net change in forest cover measures any gains in forest cover &#x2013; either through natural forest expansion or afforestation through tree-planting &#x2013; minus deforestation.</p>
+
+
+
+<p>This map shows the net change in forest cover across the world. Countries with a positive change (shown in green) are regrowing forest faster than they&#x2019;re losing it. Countries with a negative change (shown in red) are losing more than they&#x2019;re able to restore.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="a-note-on-un-fao-forestry-data">A note on UN FAO forestry data</h4><div class="content">
+
+
+
+
+
+<p>Data on net forest change, afforestation and deforestation is sourced from the UN Food and Agriculture Organization&#x2019;s <a href="https://fra-data.fao.org/WO/assessment/fra2020">Forest Resources Assessment</a>. Since year-to-year changes in forest cover can be volatile, the UN FAO provide this annual data averaged over five-year periods.</p>
+
+</div></div></div></div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/annual-change-forest-area?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/annual-change-forest-area?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/annual-change-forest-area-7a4f71bf69be1d8579832bd759b18cd0_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Annual change forest area 7a4f71bf69be1d8579832bd759b18cd0 v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/change-forest-area-share-total" target="_blank">
+          <figure><img src="/grapher/exports/change-forest-area-share-total.svg" alt="Change forest area share total" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+
+
+
+            </div>
+            <div class="title">Annual change in forest area as a <em>share</em> of forest area<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="forest-expansion-and-afforestation"><a class="deep-link" href="#forest-expansion-and-afforestation"></a>Forest expansion and afforestation</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#forest-expansion"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Forest expansion</span></a></li><li><a href="#afforestation"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Afforestation</span></a></li></ul></div></div><h3 id="forest-expansion"><a class="deep-link" href="#forest-expansion"></a>Forest expansion</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>This interactive map shows rates of forest expansion across the world.</p>
+
+
+
+<p>Forest expansion is the sum of natural forest expansion &#x2013; trees that regrows on formerly forested land &#x2013; and afforestation, which is deliberate seeding or tree-planting. Data on afforestation specifically is shown in the next section.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="forest-expansion-and-afforestation-a-note-on-un-fao-forestry-data">A note on UN FAO forestry data</h4><div class="content">
+
+
+
+
+
+<p>Data on net forest change, afforestation and deforestation is sourced from the UN Food and Agriculture Organization&#x2019;s <a href="https://fra-data.fao.org/WO/assessment/fra2020">Forest Resources Assessment</a>. Since year-to-year changes in forest cover can be volatile, the UN FAO provide this annual data averaged over five-year periods.</p>
+
+</div></div></div></div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/annual-forest-expansion?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/annual-forest-expansion?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/annual-forest-expansion-7a4f71bf69be1d8579832bd759b18cd0_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Annual forest expansion 7a4f71bf69be1d8579832bd759b18cd0 v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/share-global-forest-expansion?stackMode=absolute&amp;region=Worldhttps://ourworldindata.org/grapher/share-global-forest-expansion" target="_blank">
+          <figure><img src="/grapher/exports/share-global-forest-expansion.svg" alt="Share global forest expansion" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+
+
+
+            </div>
+            <div class="title">Share of global forest expansion<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div><h3 id="afforestation"><a class="deep-link" href="#afforestation"></a>Afforestation</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>One way that forest cover can increase is through natural forest expansion &#x2013; when trees return to land that was previously forested but had been converted to an alternative land use. The other is through <em>afforestation</em> &#x2013; deliberate restoration through seeding and tree-planting.</p>
+
+
+
+<p>This interactive map shows the rates of afforestation across the world.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="forest-expansion-and-afforestation-a-note-on-un-fao-forestry-data">A note on UN FAO forestry data</h4><div class="content">
+
+
+
+
+
+<p>Data on net forest change, afforestation and deforestation is sourced from the UN Food and Agriculture Organization&#x2019;s <a href="https://fra-data.fao.org/WO/assessment/fra2020">Forest Resources Assessment</a>. Since year-to-year changes in forest cover can be volatile, the UN FAO provide this annual data averaged over five-year periods.</p>
+
+</div></div></div></div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/annual-afforestation?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/annual-afforestation?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/annual-afforestation-7a4f71bf69be1d8579832bd759b18cd0_v6_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Annual afforestation 7a4f71bf69be1d8579832bd759b18cd0 v6 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="do-rich-countries-export-deforestation-to-other-countries"><a class="deep-link" href="#do-rich-countries-export-deforestation-to-other-countries"></a>Do rich countries export deforestation to other countries?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>There is a marked divide in the state of the world&#x2019;s forests. Most rich countries, across Europe, North America and East Asia are <a href="https://ourworldindata.org/grapher/change-forest-vs-gdp?tab=chart&amp;stackMode=absolute&amp;country=&amp;region=World">regrowing their forests</a>, whilst many low-to-middle income countries are losing them.&#xA0;</p><p>This is not particularly surprising: most countries move through the &#x2018;forest transition model&#x2019; where they cut down forests for cropland and fuel, until they reach a transition point where they begin to restore them. Today&#x2019;s rich countries have all been through this journey in the past. We look at why countries follow this path and specific country examples in a <strong>related article</strong>.</p><p>95% of global deforestation now takes place in the tropics. Rich countries might argue that it&#x2019;s not their responsibility: they are &#x2018;doing their bit&#x2019; by regrowing forests at home. But this argument doesn&#x2019;t account for the impact countries might have abroad, through the products that they import. After we account for international trade, does it still hold true?<br>This discussion is similar to the debate about &#x2018;offshoring CO<sub>2</sub> emissions&#x2019;: many people argue that rich countries have only been able to reduce their domestic emissions because they&#x2019;ve &#x2018;offshored&#x2019; the production of goods elsewhere. This is rarely the case &#x2013; as we discuss <a href="https://ourworldindata.org/co2-emissions#consumption-based-trade-adjusted-emissions">here</a>, it&#x2019;s true that most rich countries have higher emissions when we account for the goods they import and export (<a href="https://ourworldindata.org/explorers/co2?tab=map&amp;xScale=linear&amp;yScale=linear&amp;stackMode=absolute&amp;endpointsOnly=0&amp;time=latest&amp;country=China~United%20States~India~United%20Kingdom~World&amp;region=World&amp;Gas%20=CO%E2%82%82&amp;Accounting%20=Consumption-based&amp;Fuel%20=Total&amp;Count%20=Per%20country&amp;Relative%20to%20world%20total%20=">consumption-based CO<sub>2</sub> emissions</a>) but they&#x2019;ve still fallen regardless of what metric we use.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="which-countries-are-net-importers-or-exporters-of-deforestation"><a class="deep-link" href="#which-countries-are-net-importers-or-exporters-of-deforestation"></a>Which countries are net importers or exporters of deforestation?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Does this apply to forests? Are countries &#x2018;offshoring&#x2019; deforestation elsewhere? To investigate this question, researchers Florence Pendrill et al. (2019) quantified the deforestation embedded in traded goods between countries.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> They did this by calculating the amount of deforestation associated with specific food and forestry products, and combining it with a trade model to trace where these products move through international supply chains to the final consumer.</p>
+
+
+
+<p>In the map we see the <em>net</em> deforestation embedded in trade for each country. This is calculated by taking each country&#x2019;s <a href="https://ourworldindata.org/grapher/imported-deforestation">imported deforestation</a> and subtracting its <a href="https://ourworldindata.org/grapher/exported-deforestation">exported deforestation</a>. This means that countries with a negative value (in brown) are <em>net exporters</em>, and countries with positive values (in green) are <em>net importers</em>. For example, after we adjust for all the goods that Brazil imports and exports, it experienced more deforestation at home than it created elsewhere. The UK, in contrast, created more deforestation in other countries than it did domestically.</p>
+
+
+
+<p>Although there is some year-to-year variability [you can explore the data use the timeline on the bottom of the chart from 2005 to 2013] we see a reasonably consistent divide: most countries across Europe and North America are net importers of deforestation [i.e. they&#x2019;re driving deforestation elsewhere] whilst it&#x2019;s many subtropical countries that are cutting down trees to meet this demand.</p>
+
+
+
+<p>It is therefore true that many rich countries are &#x2018;offshoring&#x2019; deforestation to poorer ones.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/net-deforestation-in-trade?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/net-deforestation-in-trade?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/net-deforestation-in-trade-7a4f71bf69be1d8579832bd759b18cd0_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Net deforestation in trade 7a4f71bf69be1d8579832bd759b18cd0 v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related charts:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/imported-deforestation" target="_blank">
+          <figure><img src="/grapher/exports/imported-deforestation.svg" alt="Imported deforestation" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Imported deforestation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/exported-deforestation" target="_blank">
+          <figure><img src="/grapher/exports/exported-deforestation.svg" alt="Exported deforestation" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Exported deforestation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="are-countries-importing-more-deforestation-than-they-re-regrowing-domestically"><a class="deep-link" href="#are-countries-importing-more-deforestation-than-they-re-regrowing-domestically"></a>Are countries importing more deforestation than they&#x2019;re regrowing domestically?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Many rich countries are driving deforestation in other parts of the world. But are they creating more deforestation elsewhere than they are regenerating in forests at home? This would give us some sense of whether they&#x2019;re still having a net positive impact on global forests.</p>
+
+
+
+<p>If, for example, Country A was responsible for the deforestation of 25,000 hectares in other countries but was restoring its own forests at a rate of 50,000 hectares per year, it might argue that it was still having a positive impact on global forests. There are some issues with such an argument, such as the fact that tropical forests are often more productive (they store more carbon) and are richer sites of biodiversity, hence we shouldn&#x2019;t treat one hectare of tropical and temperate forest equally. But, for now, we&#x2019;re going to simplify and treat any hectare of forest equally.</p>
+
+
+
+<p>In the chart we see the comparison between the change in domestic forest area, and deforestation driven by imported goods.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a> On the y-axis we have the domestic change in forest area: this is shown only for countries which have a positive change i.e. their forest area is increasing. Since there is often year-to-year variability in deforestation or reforestation rates, this is shown as the five-year average. On the x-axis we have imported deforestation. The grey line marks where domestic regrowth of forests is exactly equal to imported deforestation. Countries that lie along this line would have a net-neutral impact on global forests: they could argue that deforestation they&#x2019;re creating through imported products is offset by the regrowth of forests at home.</p>
+
+
+
+<p>Countries which lie <em>above</em> the grey line &#x2013; such as the United States, Finland, China &#x2013; restore more forest each year domestically than they import from elsewhere. For example, the US &#x2018;imported&#x2019; 64,000 hectares of deforested land, but increased its domestic forest area by 275,000 hectares. More than four times as much. On balance, they add to the global forest stock. Countries below the line &#x2013; such as the UK, Germany and Norway &#x2013; are not growing forests fast enough to offset the deforestation they&#x2019;re creating elsewhere. The UK &#x2018;imported&#x2019; 34,000 hectares of deforestation but increased its domestic forests by only 19,000 hectares. These countries might boast record levels of afforestation at home, but they&#x2019;re still having a net negative impact on the world&#x2019;s forests. There is a strong argument there that they <em>are</em> offshoring deforestation.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/domestic-forest-change-vs-imported-deforestation?tab=chart&amp;stackMode=absolute&amp;country=&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/domestic-forest-change-vs-imported-deforestation?tab=chart&amp;stackMode=absolute&amp;country=&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/domestic-forest-change-vs-imported-deforestation-cdcad393dd315f436a8ff2e1fb2cb677_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Domestic forest change vs imported deforestation cdcad393dd315f436a8ff2e1fb2cb677 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="imported-deforestation-provides-an-important-caveat-to-the-forest-transition-model"><a class="deep-link" href="#imported-deforestation-provides-an-important-caveat-to-the-forest-transition-model"></a>Imported deforestation provides an important caveat to the forest transition model</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>The &#x2018;Forest Transition Model&#x2019; says that countries tend to follow a U-shaped curve of forest change as they develop: first they lose forests, then eventually regain them. Long-term forestry data from a range of countries supports this.</p><p>But, this model of change only considers changes in <em>domestic</em> forests. And as we&#x2019;ve seen above, this is only part of the story. The fact that some countries are creating more deforestation elsewhere at a faster rate than they&#x2019;re regrowing their own forests provides an important caveat to this Forest Transition Model.</p><p>In fact, Pendrill et al. (2019) found that 79% of exported deforestation ended up in &#x2018;post-transition&#x2019; countries: those that had stopped losing domestic forests. In other words, poor countries export deforestation and rich countries import most of it. As we saw earlier, not all rich countries import more deforestation than they regrow. But, some do and at the very least, some of this reforestation is offset. In total, for all post-transition countries, one-third of the net reforestation gains were offset by imports of embodied deforestation. This does not completely undermine the Forest Transition Model, but does suggest that at least part of it has been enabled by international trade and offshoring of deforestation.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a></p><p>The solution to this is not a simple one. Many might suggest that rich countries should stop importing foods from countries at-risk of deforestation. But there are other aspects to consider: international trade is important for socioeconomic development. Many farmers rely on international buyers to earn a living and improve their livelihoods. The solution to this problem is therefore not as simple as cutting out trade. It&#x2019;s about adopting stricter guidelines on what suppliers to source from, and implementing zero-deforestation policies that stop the trade of goods that have been produced on deforested land.</p><p>There are multiple ways in which countries can help end deforestation &#x2013; both at home and elsewhere in the world. This is something we explore in much more detail in a <strong>follow-up article</strong>. Until rich countries take them seriously we should keep their domestic reforestation targets in perspective with their net impact on global forests. Sometimes these restoration programmes pale in comparison to the deforestation they&#x2019;re driving elsewhere.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="explore-more-of-our-work-on-forests-and-deforestation"><a class="deep-link" href="#explore-more-of-our-work-on-forests-and-deforestation"></a>Explore more of our work on Forests and Deforestation</h2></div></div></div><div class="wp-block-owid-grid">
+		
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/forest-area">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Forest-area-768x404.png" class="attachment-medium_large size-medium_large" alt="Forest area" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Forest-area-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Forest-area-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Forest-area-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Forest-area-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Forest-area.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Forest-area.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See the distribution of global forests and which countries have the most forest cover.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/deforestationExplore%20long-term%20changes%20in%20deforestation,%20and%20deforestation%20rates%20across%20the%20world%20today.">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Deforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Deforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Deforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Deforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Deforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Deforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Deforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Deforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore long-term changes in deforestation, and deforestation rates across the world today.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/afforestation">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Afforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Afforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Afforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Afforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Afforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Afforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Afforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Afforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See which countries are gaining forest though natural forest expansion and afforestation.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/drivers-of-deforestation">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Drivers of deforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>The world loses 5 million hectares of forest to deforestation each year. What activities are driving this?</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/palm-oil">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Palm-Oil-768x404.png" class="attachment-medium_large size-medium_large" alt="Palm oil" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Palm-Oil-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Palm-Oil.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Palm-Oil.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore palm oil production across the world, and its impacts on the environment.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/soy">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Soy-768x404.png" class="attachment-medium_large size-medium_large" alt="Soy" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Soy-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Soy-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Soy-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Soy-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Soy.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Soy.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore global data on soy production, how it&#x2019;s used, and how much deforestation is caused by its expansion.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+	</div></section>
+
+
+	</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Pendrill, F., Persson, U. M., Godar, J., &amp; Kastner, T. (2019). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/ab0d41">Deforestation displaced: trade in forest-risk commodities and the prospects for a global forest transition</a>. <em>Environmental Research Letters</em>, <em>14</em>(5), 055003.</p></li><li id="note-2"><p>Data on the annual change in domestic forests is sourced from the UN FAO’s <a href="https://fra-data.fao.org/WO/assessment/fra2020">Forest Resources Assessment</a>.</p></li><li id="note-3"><p>Kuschnig, N., Crespo Cuaresma, J., &amp; Krisztin, T. (2019). <a href="https://ideas.repec.org/p/wiw/wus045/7335.html">Unveiling Drivers of Deforestation: Evidence from the Brazilian Amazon</a>.</p></li></ol></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=39925&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookiePreferencesManager();
+                runCovid();
+                runFootnotes();
+                if (!document.querySelector(".ChartPage")) {
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[{"text":"Which countries are gaining, and which are losing forest?","slug":"which-countries-are-gaining-and-which-are-losing-forest","isSubheading":false},{"text":"Forest expansion and afforestation","slug":"forest-expansion-and-afforestation","isSubheading":false},{"text":"Forest expansion","html":"Forest expansion","slug":"forest-expansion","isSubheading":true},{"text":"Afforestation","html":"Afforestation","slug":"afforestation","isSubheading":true},{"text":"Do rich countries export deforestation to other countries?","slug":"do-rich-countries-export-deforestation-to-other-countries","isSubheading":false},{"text":"Explore more of our work on Forests and Deforestation","slug":"explore-more-of-our-work-on-forests-and-deforestation","isSubheading":false},{"text":"Endnotes","slug":"endnotes","isSubheading":false}],"pageTitle":"Afforestation"})
+                        runRelatedCharts([])
+                        </script></body></html>

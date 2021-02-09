@@ -1,0 +1,961 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Deforestation and Forest Loss - Our World in Data</title><meta name="description" content="Explore long-term changes in deforestation, and deforestation rates across the world today."/><link rel="canonical" href="https://ourworldindata.org/deforestation"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/deforestation"/><meta property="og:title" content="Deforestation and Forest Loss"/><meta property="og:description" content="Explore long-term changes in deforestation, and deforestation rates across the world today."/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2021/02/Deforestation-768x404.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Deforestation and Forest Loss"/><meta name="twitter:description" content="Explore long-term changes in deforestation, and deforestation rates across the world today."/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2021/02/Deforestation-768x404.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page with-sidebar large-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Deforestation and Forest Loss</h1></div><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div></header></div><div class="offset-subnavigation"><div class="site-subnavigation"><div class="site-subnavigation-scroll"><ul class="site-subnavigation-links"><li class=""><a href="/forests" data-track-note="forests-subnav-forests">Forests<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></a></li><li class=""><a href="/forest-area" data-track-note="forests-subnav-forest-area">Forest area</a></li><li class="current"><a href="/deforestation" data-track-note="forests-subnav-deforestation">Deforestation</a></li><li class=""><a href="/afforestation" data-track-note="forests-subnav-afforestation">Afforestation</a></li><li class=""><a href="/drivers-of-deforestation" data-track-note="forests-subnav-drivers-of-deforestation">Drivers of Deforestation</a></li><li class=""><a href="/palm-oil" data-track-note="forests-subnav-palm-oil">Palm oil</a></li><li class=""><a href="/soy" data-track-note="forests-subnav-soy">Soy</a></li></ul></div></div></div><div class="content-wrapper"><div><aside class="entry-sidebar"><div class="sticky-sentinel"></div><nav class="entry-toc"><ul><li><a href="#">Deforestation and Forest Loss</a></li><li class="section"><a href="#which-countries-are-gaining-and-which-are-losing-forest">Which countries are gaining, and which are losing forest?</a></li><li class="section"><a href="#how-much-deforestation-occurs-each-year">How much deforestation occurs each year?</a></li><li class="section"><a href="#the-world-has-lost-one-third-of-its-forests-but-an-end-of-deforestation-is-possible">The world has lost one-third of its forests, but an end of deforestation is possible</a></li><li class="section"><a href="#global-deforestation-peaked-in-the-1980s-can-we-bring-it-to-an-end">Global deforestation peaked in the 1980s. Can we bring it to an end?</a></li><li class="section"><a href="#forest-transitions-why-do-we-lose-then-regain-forests">Forest Transitions: why do we lose then regain forests?</a></li><li class="section"><a href="#not-all-forest-loss-is-equal-what-is-the-difference-between-deforestation-and-forest-degradation">Not all forest loss is equal: what is the difference between deforestation and forest degradation?</a></li><li class="section"><a href="#do-rich-countries-export-deforestation-to-other-countries">Do rich countries export deforestation to other countries?</a></li><li class="section"><a href="#carbon-emissions-from-deforestation-are-they-driven-by-domestic-demand-or-international-trade">Carbon emissions from deforestation: are they driven by domestic demand or international trade?</a></li><li class="section"><a href="#explore-more-of-our-work-on-forests-and-deforestation">Explore more of our work on Forests and Deforestation</a></li><li class="section"><a href="#endnotes">Endnotes</a></li></ul></nav><div class="toggle-toc"><button data-track-note="page-toggle-toc" aria-label="Open table of contents"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-alt" class="svg-inline--fa fa-list-alt fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z"></path></svg></button></div></aside></div><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="section-heading"><div class="wrapper"><div><h2 id="which-countries-are-gaining-and-which-are-losing-forest"><a class="deep-link" href="#which-countries-are-gaining-and-which-are-losing-forest"></a>Which countries are gaining, and which are losing forest?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Before we look at trends in deforestation across the world specifically, it&#x2019;s useful to understand the <em>net</em> change in forest cover. The net change in forest cover measures any gains in forest cover &#x2013; either through natural forest expansion or afforestation through tree-planting &#x2013; minus deforestation.</p>
+
+
+
+<p>This map shows the net change in forest cover across the world. Countries with a positive change (shown in green) are regrowing forest faster than they&#x2019;re losing it. Countries with a negative change (shown in red) are losing more than they&#x2019;re able to restore.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="a-note-on-un-fao-forestry-data">A note on UN FAO forestry data</h4><div class="content">
+
+
+
+
+
+<p>Data on net forest change, afforestation and deforestation is sourced from the UN Food and Agriculture Organization&#x2019;s <a href="https://fra-data.fao.org/WO/assessment/fra2020">Forest Resources Assessment</a>. Since year-to-year changes in forest cover can be volatile, the UN FAO provide this annual data averaged over five-year periods.</p>
+
+</div></div></div></div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/annual-change-forest-area?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/annual-change-forest-area?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/annual-change-forest-area-7a4f71bf69be1d8579832bd759b18cd0_v8_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Annual change forest area 7a4f71bf69be1d8579832bd759b18cd0 v8 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/change-forest-area-share-total" target="_blank">
+          <figure><img src="/grapher/exports/change-forest-area-share-total.svg" alt="Change forest area share total" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+
+
+
+
+            </div>
+            <div class="title">Annual change in forest area as a <em>share</em> of forest area<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="how-much-deforestation-occurs-each-year"><a class="deep-link" href="#how-much-deforestation-occurs-each-year"></a>How much deforestation occurs each year?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Net forest loss is not the same as deforestation &#x2013; it measures deforestation plus any gains in forest over a given period.</p>
+
+
+
+<p>Over the decade since 2010, the net loss in forests globally was 4.7 million hectares per year.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> However, deforestation rates were much significantly higher.</p>
+
+
+
+<p>The UN FAO estimate that 10 million hectares of forest were cut down each year. </p>
+
+
+
+<p>This interactive map shows deforestation rates across the world.</p>
+
+
+	<div class="wp-block-help"><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg></div><div><h4 id="how-much-deforestation-occurs-each-year-a-note-on-un-fao-forestry-data">A note on UN FAO forestry data</h4><div class="content">
+
+
+
+
+
+<p>Data on net forest change, afforestation and deforestation is sourced from the UN Food and Agriculture Organization&#x2019;s <a href="https://fra-data.fao.org/WO/assessment/fra2020">Forest Resources Assessment</a>. Since year-to-year changes in forest cover can be volatile, the UN FAO provide this annual data averaged over five-year periods.</p>
+
+</div></div></div></div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/annual-deforestation?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/annual-deforestation?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/annual-deforestation-7a4f71bf69be1d8579832bd759b18cd0_v6_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Annual deforestation 7a4f71bf69be1d8579832bd759b18cd0 v6 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related charts:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/share-global-deforestation" target="_blank">
+          <figure><img src="/grapher/exports/share-global-deforestation.svg" alt="Share global deforestation" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Share of global deforestation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="the-world-has-lost-one-third-of-its-forests-but-an-end-of-deforestation-is-possible"><a class="deep-link" href="#the-world-has-lost-one-third-of-its-forests-but-an-end-of-deforestation-is-possible"></a>The world has lost one-third of its forests, but an end of deforestation is possible</h2></div></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Many people think of environmental concerns as a modern issue: humanity&#x2019;s destruction of nature and ecosystems as a result of very recent <a href="https://ourworldindata.org/world-population-growth">population growth</a> and <a href="https://ourworldindata.org/economic-growth">increasing consumption</a>. This is true for some problems, such as climate change. But it&#x2019;s not the case for deforestation. Humans have been cutting down trees for millennia.</p>
+
+
+
+<p>How much forest has the world lost? When in history did we lose it?</p>
+
+
+
+<p>In the chart we see how the cover of the earth&#x2019;s surface has changed over the past 10,000 years. This is shortly after the end of the last great ice age, through to the present day.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a><sup>,</sup><a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a><sup>,</sup><a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a><sup>,</sup><a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a>&#xA0;</p>
+
+
+
+<p>Let&#x2019;s start at the top. You see that of the 14.9 billion hectares of land on the planet, only 71% of it is habitable &#x2013; the other 29% is either covered by ice and glaciers, or is barren land such as deserts, salt flats, or dunes. I have therefore excluded these categories so we can focus on how habitable land is used.</p>
+
+
+
+<p>The bar chart just below shows the earth&#x2019;s surface cover just after the end of the last ice age.<a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a> 10,000 years ago 57% of the world&#x2019;s habitable land was covered by forest. That&#x2019;s <a href="https://www.un.org/development/desa/en/news/forest/international-day-forests-2018.html">6 billion hectares</a>.&#xA0; Today, only 4 billion hectares are left. The world has lost one-third of its forest &#x2013; an area twice the size of the United States.</p>
+
+
+
+<p>Only 10% of this was lost in the first half of this period, until 5,000 years ago. The global population at this time was small and growing very slowly &#x2013; there were <a href="https://ourworldindata.org/grapher/world-population-1750-2015-and-un-projection-until-2100">fewer than 50 million people</a> in the world. The amount of <a href="https://ourworldindata.org/grapher/total-agricultural-land-use-per-person?time=earliest..2016">land per person</a> that was needed to produce enough food was not small &#x2013; in fact, it was much larger than today. But a small global population overall meant there was little pressure on forests to make space for land to grow food, and as wood for energy.</p>
+
+
+
+<p>If we fast-forward to 1700 when the global population <a href="https://ourworldindata.org/grapher/world-population-1750-2015-and-un-projection-until-2100">had increased</a> more than ten-fold, to 603 million. The amount of land used for agriculture &#x2013; land to grow crops as well as grazing land for livestock &#x2013; was expanding. You will notice in the chart that this was not only expanding into previously forested land, but also other land uses such as wild grasslands and shrubbery. Still, more than half of the world&#x2019;s habitable land was forested.</p>
+
+
+
+<p>The turn of the 20th century is when global forest loss reached the halfway point: half of total forest loss occurred from 8,000BC to 1900; the other half occurred in the last century alone. This emphasises two important points.</p>
+
+
+
+<p>First, it reiterates that deforestation is not a new problem: relatively small populations of the past were capable of driving a large amount of forest loss. By 1900, there were 1.65 billion people in the world (five times fewer than we have today) but for most of the previous period, humans were deforesting the world with only tens or hundreds of millions. Even with the most basic of lifestyles compared to today&#x2019;s standards, the per capita footprint of our ancestors would have been large. Low agricultural productivity and a reliance on wood for fuel meant that large amounts of land had to be cleared for basic provisions.</p>
+
+
+
+<p>Second, it makes clear how much deforestation accelerated over the last century. In just over 100 years the world lost as much forest as it had in the previous 9,000 years. An area the size of the United States. From the chart we see that this was driven by the continued expansion of land for agriculture. By 1950, there was almost as much agricultural land as forest &#x2013; 43% of habitable land. By 2018, this had increased to 46% while forests shrank to 38%. When we think of the growing pressures on land from modern populations we often picture sprawling megacities. But urban land accounts for just 1% of global habitable land. Humanity&#x2019;s biggest footprint is due to what we eat, not where we live.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="3214" height="2840" src="https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use.png" alt="Long term change in land use" class="wp-image-40014" srcset="https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use.png 3214w, https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use-400x353.png 400w, https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use-622x550.png 622w, https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use-150x133.png 150w, https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use-768x679.png 768w, https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use-1536x1357.png 1536w, https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use-2048x1810.png 2048w" sizes="(max-width: 3214px) 100vw, 3214px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Long-term-change-in-land-use.png"></figure>
+
+
+
+
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-can-we-put-an-end-to-our-long-history-of-deforestation"><a class="deep-link" href="#how-can-we-put-an-end-to-our-long-history-of-deforestation"></a>How can we put an end to our long history of deforestation?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>This might paint a bleak picture for the future of the world&#x2019;s forests: the United Nations projects that the <a href="https://ourworldindata.org/world-population-growth#two-centuries-of-rapid-global-population-growth-will-come-to-an-end">global population will continue to grow</a>, reaching 10.8 billion by 2100. But there are real reasons to believe that this century doesn&#x2019;t have to replicate the destruction of the last one.&#xA0;</p>
+
+
+
+<p>The world passed &#x2018;peaked deforestation&#x2019; in the 1980s and it has been on the decline since then &#x2013; we take a look at rates of forest loss since 1700 in our follow-up post. Improvements in <a href="https://ourworldindata.org/crop-yields">crop yields</a> mean the per capita demand for agricultural land continues to fall. We see this in the chart. Since 1961, the amount of land we use for agriculture <a href="https://ourworldindata.org/grapher/agricultural-land?tab=chart&amp;stackMode=relative&amp;region=World">increased by only 7%</a>. Meanwhile, the global <a href="https://ourworldindata.org/grapher/population?time=1961..2018&amp;country=~OWID_WRL">population increased</a> by 147% &#x2013; from 3.1 to 7.6 billion.<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a> This means that agricultural land <em>per person</em> more than halved, from 1.45 to 0.63 hectares.&#xA0;</p>
+
+
+
+<p>In fact, the world <a href="https://ourworldindata.org/grapher/agricultural-land?tab=chart&amp;stackMode=absolute&amp;region=World">may have already passed</a> &#x2018;peak agricultural land&#x2019; <em>[we will look at this in more detail in an upcoming post]</em>. And with the growth of technological innovations such as lab-grown meat and substitute products, there is the real possibility that we can continue to enjoy meat or meat-like foods while freeing up the massive amounts of land we use to raise livestock.&#xA0;</p>
+
+
+
+<p>If we can take advantage of these innovations, we can bring deforestation to an end. A future with more people <em>and</em> more forest is possible.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/agricultural-area-per-capita?tab=chart&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/agricultural-area-per-capita?tab=chart&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/agricultural-area-per-capita-953eb1c89de3338eb21adbc01c754db7_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Agricultural area per capita 953eb1c89de3338eb21adbc01c754db7 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="global-deforestation-peaked-in-the-1980s-can-we-bring-it-to-an-end"><a class="deep-link" href="#global-deforestation-peaked-in-the-1980s-can-we-bring-it-to-an-end"></a>Global deforestation peaked in the 1980s. Can we bring it to an end?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Since the end of the last great ice age &#x2013; 10,000 years ago &#x2013; the world has lost one-third of its forests..<a id="ref-8" class="ref" href="#note-8"><sup>8</sup></a> Two billion hectares of forest &#x2013; an area twice the size of the United States &#x2013; has been cleared to grow crops, raise livestock, and use for fuelwood.</p>
+
+
+
+<p>In a <strong>previous post</strong> we looked at this change in global forests over the long-run. What this showed was that although humans have been deforesting the planet for millennia, the rate of forest loss accelerated rapidly in the last few centuries. Half of global forest loss occurred between 8,000BC and 1900; the other half was lost in the last century alone.</p>
+
+
+
+<p>To understand this more recent loss of forest, let&#x2019;s zoom in on the last 300 years. The world lost 1.5 billion hectares of forest over that period. That&#x2019;s an area 1.5-times the size of the United States.&#xA0;</p>
+
+
+
+<p>In the chart we see the decadal losses and gains in global forest cover. On the horizontal axis we have time, spanning from 1700 to 2020; on the vertical axis we have the <em>decadal</em> change in forest cover. The taller the bar, the larger the change in forest area. This is measured in hectares, which is equivalent to 10,000 m&#xB2;.&#xA0;</p>
+
+
+
+<p>Forest loss measures the net change in forest cover: the loss in forests due to deforestation plus any expansion of forest through afforestation.<a id="ref-9" class="ref" href="#note-9"><sup>9</sup></a></p>
+
+
+
+<p>To reconstruct this change I have brought together the data from a number of different sources.<a id="ref-10" class="ref" href="#note-10"><sup>10</sup></a> We&#x2019;ve also differentiated between temperate forests (the sum of &#x2018;boreal&#x2019; and &#x2018;temperate&#x2019; areas), shown in green, and tropical forests (the sum of &#x2018;tropical&#x2019; and &#x2018;subtropical&#x2019; areas), shown in brown. It&#x2019;s useful to make this distinction because &#x2013; as we will see &#x2013; where the world has lost forests has shifted.</p>
+
+
+
+<p>The rate of forest loss changed a lot. From 1700 to 1850, 19 million hectares were being cleared every decade. That&#x2019;s around half the size of Germany. From 1850 to 1920, losses were around 50% higher at 30 million hectares per decade &#x2013;that&#x2019;s like losing a forested area the size of Italy every 10 years. It was predominantly temperate forests that were being lost at this time. Population growth meant that today&#x2019;s rich countries across Europe and North America needed more and more resources such as land for agriculture, wood for energy, and for construction.<a id="ref-11" class="ref" href="#note-11"><sup>11</sup></a></p>
+
+
+
+<p>Moving into the 20th century there was a stepwise change in demand for agricultural land and energy from wood. Deforestation rates accelerated. From the 1920s through to the 1980s, decadal losses quadrupled to almost 120 million hectares. That&#x2019;s equivalent to the area of South Africa. This increase was mostly driven by tropical deforestation as countries across Asia and Latin America followed the path of Europe and North America.</p>
+
+
+
+<p>Global deforestation reached its peak in the 1980s. We lost 150 million hectares &#x2013; an area half the size of India &#x2013; during that decade. Clearing of the Brazilian Amazon for pasture and croplands was a major driver of this loss.&#xA0;</p>
+
+
+
+<p>Since then, deforestation rates have steadily declined, to 78 million hectares in the 1990s; 52 million in the early 2000s; and 47 million in the last decade.&#xA0;</p>
+
+
+
+<p>As we explore in more detail in our <strong>related article</strong>, countries tend to follow a predictable development in forest cover, a U-shaped curve.<a id="ref-12" class="ref" href="#note-12"><sup>12</sup></a> They lose forests as populations grow and demand for agricultural land and fuel increases, but eventually they reach the so-called &#x2018;forest transition point&#x2019; where they begin to regrow more forests than they lose.</p>
+
+
+
+<p>Within this global aggregated trend there are many forest transitions at local, national or regional levels occurring. We see one such transition in the chart: the forest loss in the temperate regions &#x2013;&#xA0;shown as the green part of the bars &#x2013; peaked much earlier than the global forest loss. In the first half of the 20th century, temperate forests reached their peak loss at 34 million hectares per decade, and by 1990 they had passed the &#x2018;forest transition point&#x2019;. For the past 30 years, temperate regions have seen a continued increase in forest cover through afforestation: you see this as the bars are now &#x2018;positive&#x2019; (pointing upwards). Across temperate forests the world gained 8 million hectares in the last decade.</p>
+
+
+
+<p>Tropical forests, on aggregate, have also passed peak deforestation in the 1980s &#x2013; the longest of all bars &#x2013; but have not passed the transition to reforestation. Some countries within this group are still far behind peak deforestation: without concerted effort to protect these forests it could be many decades before forests in those countries approach the transition point as I will show in an <strong>upcoming post</strong>.<a id="ref-13" class="ref" href="#note-13"><sup>13</sup></a></p>
+
+
+
+<p>The history of deforestation is a tragic one, in which we not only lost these wild and beautiful landscapes but also the wildlife within them. But, the fact that forest transitions are possible should give us confidence that a positive future is possible. Many countries have not only ended deforestation, but actually achieved substantial reforestation. It will be possible for our generation to achieve the same on the global scale and bring the 10,000 year history of forest loss to an end.</p>
+
+
+
+<p>If we want to end deforestation we need to understand where and why it&#x2019;s happening; where countries are within their transition; and what can be done to accelerate their progress through it. We need to pass the transition point as soon as possible, while minimising the amount of forest we lose along the way.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1893" height="1222" src="https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko.png" alt="Long term forest loss &#x2013; marimekko" class="wp-image-40024" srcset="https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko.png 1893w, https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko-400x258.png 400w, https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko-800x516.png 800w, https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko-150x97.png 150w, https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko-768x496.png 768w, https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko-1536x992.png 1536w" sizes="(max-width: 1893px) 100vw, 1893px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Long-term-forest-loss-&#x2013;-Marimekko.png"></figure>
+
+
+
+
+</div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="forest-transitions-why-do-we-lose-then-regain-forests"><a class="deep-link" href="#forest-transitions-why-do-we-lose-then-regain-forests"></a>Forest Transitions: why do we lose then regain forests?</h2></div></div></div></section>
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="not-all-forest-loss-is-equal-what-is-the-difference-between-deforestation-and-forest-degradation"><a class="deep-link" href="#not-all-forest-loss-is-equal-what-is-the-difference-between-deforestation-and-forest-degradation"></a>Not all forest loss is equal: what is the difference between deforestation and forest degradation?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>15 billion trees are cut down every year.<a id="ref-14" class="ref" href="#note-14"><sup>14</sup></a> The <a href="https://www.globalforestwatch.org/dashboards/global/">Global Forest Watch</a> project &#x2013; using satellite imagery &#x2013; estimates that global tree loss in 2019 was 24 million hectares. That&#x2019;s an area the size of the United Kingdom.</p><p>These are big numbers, and important ones to track: forest loss creates a number of negative impacts, ranging from carbon emissions to species extinctions and biodiversity loss. But distilling changes to this single metric &#x2013; tree or forest loss &#x2013; comes with its own issues.</p><p>The problem is that it treats all forest loss as equal. It assumes the impact of clearing primary rainforest in the Amazon to produce soybeans is the same as logging planted forests in the UK. The latter will experience short-term environmental impacts, but will ultimately regrow. When we cut down primary rainforest we are transforming this ecosystem forever.</p><p>When we treat these impacts equally we make it difficult to prioritize our efforts in the fight against deforestation. Decisionmakers could give as much of our attention to European logging as to destruction of the Amazon. As we will see later, this would be a distraction from our primary concern: ending tropical deforestation. The other issue that arises is that &#x2018;tree loss&#x2019; or &#x2018;forest loss&#x2019; data collected by satellite imagery often doesn&#x2019;t match the official statistics reported by governments in their land use inventories. This is because the latter only captures <em>deforestation</em> &#x2013; the replacement of forest with another land use (such as cropland). It doesn&#x2019;t capture trees that are cut down in planted forests; the land is still forested, it&#x2019;s now just regrowing forest.</p><p>In the article we will look at the reasons we lose forest; how these can be differentiated in a useful way; and what this means for understanding our priorities in tackling forest loss.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="understanding-and-seeing-the-drivers-of-forest-loss"><a class="deep-link" href="#understanding-and-seeing-the-drivers-of-forest-loss"></a>Understanding and seeing the drivers of forest loss</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>&#x2018;Forest loss&#x2019; or &#x2018;tree loss&#x2019; captures two fundamental impacts on forest cover: <em>deforestation</em> and <em>forest degradation</em>.</p>
+
+
+
+<p><strong><em>Deforestation</em></strong> is the complete removal of trees for the conversion of forest to another land use such as agriculture, mining, or towns and cities. It results in a permanent conversion of forest into an alternative land use. The trees are <em>not expected to regrow</em>. <strong><em>Forest degradation</em></strong> measures a thinning of the canopy &#x2013; a reduction in the density of trees in the area &#x2013; but without a change in land use. The changes to the forest are often temporary and it&#x2019;s expected that they will regrow.</p>
+
+
+
+<p>From this understanding we can define five reasons why we lose forests:</p>
+
+
+
+<ul><li><strong>Commodity-driven deforestation</strong> is the long-term, permanent conversion of forests to other land uses such as agriculture (including oil palm and cattle ranching), mining, or energy infrastructure.</li></ul>
+
+
+
+<ul><li><strong>Urbanization</strong> is the long-term, permanent conversion of forests to towns, cities and urban infrastructure such as roads.</li></ul>
+
+
+
+<ul><li><strong>Shifting agriculture</strong> is the small to medium-scale conversion of forest for farming, that is later abandoned so that forests regrow. This is common of local, subsistence farming systems where populations will clear forest, use it to grow crops, then move on to another plot of land.</li></ul>
+
+
+
+<ul><li><strong>Forestry production</strong> is the logging of managed, planted forests for products such as timber, paper and pulp. These forests are logged periodically and allowed to regrow.</li></ul>
+
+
+
+<ul><li><strong>Wildfires</strong> destroy forests temporarily. When the land is not converted to a new use afterwards forests can regrow in the following years.</li></ul>
+
+
+
+<p>Thanks to satellite imagery, we can get a birds-eye view of what these drivers look like from above. In the figure we see visual examples from the study of forest loss classification by Philip Curtis et al. (2018), published in <em>Science</em>.<a id="ref-15" class="ref" href="#note-15"><sup>15</sup></a>&#xA0;</p>
+
+
+
+<p>Commodity-driven deforestation and urbanization are <em>deforestation</em>: the forested land is completely cleared and converted into another land use &#x2013; a farm, mining site, or city. The change is permanent. There is little forest left. Forestry production and wildfires usually result in <em>forest degradation</em> &#x2013; the forest experiences short-term disturbance but if left alone is likely to regrow. The change is temporary. This is nearly always true of planted forests in temperate regions &#x2013; there, planted forests are long-established and do not replace primary existing forests. In the tropics, some forestry production can be classified as deforestation when primary rainforests are cut down to make room for managed tree plantations.<a id="ref-16" class="ref" href="#note-16"><sup>16</sup></a></p>
+
+
+
+<p>&#x2018;Shifting agriculture&#x2019; is usually classified as degradation because the land is often abandoned and the forests regrow naturally. But it can bridge between deforestation and degradation depending on the timeframe and permanence of these agricultural practices.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1579" height="1749" src="https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss.png" alt="Identifying drivers of forest loss" class="wp-image-40047" srcset="https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss.png 1579w, https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss-361x400.png 361w, https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss-497x550.png 497w, https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss-135x150.png 135w, https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss-768x851.png 768w, https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss-1387x1536.png 1387w" sizes="(max-width: 1579px) 100vw, 1579px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Identifying-drivers-of-forest-loss.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="one-quarter-of-forest-loss-comes-from-tropical-deforestation"><a class="deep-link" href="#one-quarter-of-forest-loss-comes-from-tropical-deforestation"></a>One-quarter of forest loss comes from tropical deforestation</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>We&#x2019;ve seen the five key drivers of forest loss. Let&#x2019;s put some numbers to them.</p>
+
+
+
+<p>In their analysis of global forest loss, Philip Curtis and colleagues used satellite images to assess where and why the world lost forests between 2001 and 2015. The breakdown of forest loss globally, and by region, is shown in the chart.<a id="ref-17" class="ref" href="#note-17"><sup>17</sup></a>&#xA0;</p>
+
+
+
+<p>Just over one-quarter of global forest loss is driven by deforestation. The remaining 73% came from the three drivers of forest degradation: logging of forestry products from plantations (26%); shifting, local agriculture (24%); and wildfires (23%).</p>
+
+
+
+<p>We see massive differences in how important each driver is across the world. 95% of the world&#x2019;s deforestation occurs in the tropics [we look at this breakdown again later]. In Latin America and Southeast Asia in particular, commodity-driven deforestation &#x2013; mainly the clearance of forests to grow crops such as palm oil and soy, and pasture for beef production &#x2013; accounts for almost two-thirds of forest loss.</p>
+
+
+
+<p>In contrast, most forest degradation &#x2013; two-thirds of it &#x2013; occurs in temperate countries. Centuries ago it was mainly temperate regions that were driving global deforestation <em>[we take a look at this longer history of deforestation in a </em><strong><em>related article]</em></strong>. They cut down their forests and replaced it with agricultural land long ago. But this is no longer the case: forest loss across North America and Europe is now the result of harvesting forestry products from tree plantations, or tree loss in wildfires.&#xA0;</p>
+
+
+
+<p>Africa is also different here. Forests are mainly cut and burned to make space for local, subsistence agriculture or for fuelwood for energy. This &#x2018;shifting agriculture&#x2019; category can be difficult to allocate between deforestation and degradation: it often requires close monitoring over time to understand how permanent these agricultural practices are.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1729" height="1411" src="https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region.png" alt="Forest loss by driver and region" class="wp-image-40049" srcset="https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region.png 1729w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region-400x326.png 400w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region-674x550.png 674w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region-150x122.png 150w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region-768x627.png 768w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region-1536x1253.png 1536w" sizes="(max-width: 1729px) 100vw, 1729px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-and-region.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Africa is also an outlier as a result of how many people still rely on wood as their primary energy source. Noriko Hosonuma et al. (2010) looked at the primary drivers of deforestation and degradation across tropical and subtropical countries specifically.<a id="ref-18" class="ref" href="#note-18"><sup>18</sup></a> &#xA0;The breakdown of forest degradation drivers is shown in the following chart. Note that in this study, the category of subsistence agriculture was classified as a <em>deforestation</em> driver, and so is not included. In Latin America and Asia the dominant driver of <em>degradation</em> was logging for products such as timber, paper and pulp &#x2013; this accounted for more than 70%. Across Africa, fuelwood and charcoal played a much larger role &#x2013; it accounted for more than half (52%).</p>
+
+
+
+<p>This highlights an important point: <a href="https://ourworldindata.org/grapher/access-to-clean-fuels-and-technologies-for-cooking?tab=chart&amp;time=earliest..latest&amp;country=~Sub-Saharan%20Africa">less than 20%</a> of people in Sub-Saharan Africa have access to clean fuels for cooking, meaning they still rely on wood and charcoal. With increasing development, urbanization and access to other energy resources, Africa will shift from local, subsistence activities into commercial commodity production &#x2013; both in agricultural products and timber extraction. This follows the classic &#x2018;forest transition&#x2019; model with development, which we look at in more detail in a <strong>related article</strong>.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1352" height="1114" src="https://ourworldindata.org/uploads/2021/02/Drivers-of-forest-degradation.png" alt="Drivers of forest degradation" class="wp-image-40050" srcset="https://ourworldindata.org/uploads/2021/02/Drivers-of-forest-degradation.png 1352w, https://ourworldindata.org/uploads/2021/02/Drivers-of-forest-degradation-400x330.png 400w, https://ourworldindata.org/uploads/2021/02/Drivers-of-forest-degradation-668x550.png 668w, https://ourworldindata.org/uploads/2021/02/Drivers-of-forest-degradation-150x124.png 150w, https://ourworldindata.org/uploads/2021/02/Drivers-of-forest-degradation-768x633.png 768w" sizes="(max-width: 1352px) 100vw, 1352px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Drivers-of-forest-degradation.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="tropical-deforestation-should-be-our-primary-concern"><a class="deep-link" href="#tropical-deforestation-should-be-our-primary-concern"></a>Tropical deforestation should be our primary concern</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>The world loses almost six million hectares of forest each year to deforestation. That&#x2019;s like losing an area the size of Portugal every two years. 95% of this occurs in the tropics. The breakdown of deforestation by region is shown in the chart. 59% occurs in Latin America, with a further 28% from Southeast Asia. In a <strong>related article</strong> we look in much more detail at what agricultural products, and which countries are driving this.</p>
+
+
+
+<p>As we saw previously, this deforestation accounts for around one-quarter of global forest loss. 27% of forest loss results from &#x2018;commodity-driven deforestation&#x2019; &#x2013; cutting down forests to grow crops such as soy, palm oil, cocoa, to raise livestock on pasture, and mining operations. Urbanization, the other driver of deforestation accounts for just 0.6%. It&#x2019;s the foods and products we buy, not where we live, that has the biggest impact on global land use.&#xA0;</p>
+
+
+
+<p>It might seem odd to argue that we should focus our efforts on tackling this quarter of forest loss (rather than the other 73%). But there is good reason to make this our primary concern.</p>
+
+
+
+<p>Philipp Curtis and colleagues make this point clear. At their <a href="https://www.globalforestwatch.org/">Global Forest Watch </a>platform they were already presenting maps of forest loss across the world. But they wanted to contribute to a more informed discussion about where to focus forest conservation efforts by understanding <em>why</em> forests were being lost. To quote them, they wanted to prevent &#x201C;a common misperception that any tree cover loss shown on the map represents deforestation&#x201D;. And to &#x201C;identify where deforestation is occurring; perhaps as important, show where forest loss is not deforestation&#x201D;.&#xA0;</p>
+
+
+
+<p>Why should we care most about tropical deforestation? There is a geographical argument (why the tropics?) and an argument for why deforestation is worse than degradation.</p>
+
+
+
+<p>Tropical forests are home to some of the richest and most diverse ecosystems on the planet. Over half of the world&#x2019;s species reside in tropical forests.<a id="ref-19" class="ref" href="#note-19"><sup>19</sup></a> Endemic species are those which only naturally occur in a single country. Whether we look at the distribution of endemic <a href="https://ourworldindata.org/grapher/endemic-mammal-species-by-country">mammal species</a>, <a href="https://ourworldindata.org/grapher/endemic-bird-species-by-country">bird species</a>, or <a href="https://ourworldindata.org/grapher/endemic-amphibian-species-by-country">amphibian species</a>, the map is the same: subtropical countries are packed with unique wildlife. Habitat loss is the leading driver of global biodiversity loss.<a id="ref-20" class="ref" href="#note-20"><sup>20</sup></a> When we cut down rainforests we are destroying the habitats of many unique species, and reshaping these ecosystems permanently. Tropical forests are also large carbon sinks, and can store a lot of carbon per unit area.<a id="ref-21" class="ref" href="#note-21"><sup>21</sup></a></p>
+
+
+
+<p>Deforestation also results in larger losses of biodiversity and carbon relative to degradation. Degradation drivers, including logging and especially wildfires can definitely have major impacts on forest health: animal populations decline, trees can die, and CO<sub>2</sub> is emitted. But the magnitude of these impacts are often less than the complete conversion of forest. They are smaller, and more temporary. When deforestation happens, almost all of the carbon stored in the trees and vegetation &#x2013; called the &#x2018;aboveground carbon loss&#x2019; &#x2013;&#xA0; is lost. Estimates vary, but on average only 10-20% of carbon is lost during logging, and 10-30% from fires.<a id="ref-22" class="ref" href="#note-22"><sup>22</sup></a> In a study of logging practices in the Amazon and Congo, forests retained 76% of their carbon stocks shortly after logging.<a id="ref-23" class="ref" href="#note-23"><sup>23</sup></a> Logged forests recover their carbon over time, as long as the land is not converted to other uses (which is what happens in the case of deforestation).</p>
+
+
+
+<p>Deforestation tends to occur on forests that have been around for centuries, if not millennia. Cutting them down disrupts or destroys established, species-rich ecosystems. The biodiversity of managed tree plantations which are periodically cut, regrown, cut again, then regrown is not the same.</p>
+
+
+
+<p>That is why we should be focusing on tropical deforestation. Since agriculture is responsible for 60 to 80% of it, what we eat, where it&#x2019;s sourced from, and how it is produced is our strongest lever to bring deforestation to an end.&#xA0;</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="2030" height="1485" src="https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver.png" alt="Forest loss by driver" class="wp-image-40048" srcset="https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver.png 2030w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-400x293.png 400w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-752x550.png 752w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-150x110.png 150w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-768x562.png 768w, https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver-1536x1124.png 1536w" sizes="(max-width: 2030px) 100vw, 2030px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Forest-loss-by-driver.png"></figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="do-rich-countries-export-deforestation-to-other-countries"><a class="deep-link" href="#do-rich-countries-export-deforestation-to-other-countries"></a>Do rich countries export deforestation to other countries?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>There is a marked divide in the state of the world&#x2019;s forests. Most rich countries, across Europe, North America and East Asia are <a href="https://ourworldindata.org/grapher/change-forest-vs-gdp?tab=chart&amp;stackMode=absolute&amp;country=&amp;region=World">regrowing their forests</a>, whilst many low-to-middle income countries are losing them.&#xA0;</p><p>This is not particularly surprising: most countries move through the &#x2018;forest transition model&#x2019; where they cut down forests for cropland and fuel, until they reach a transition point where they begin to restore them. Today&#x2019;s rich countries have all been through this journey in the past. We look at why countries follow this path and specific country examples in a <strong>related article</strong>.</p><p>95% of global deforestation now takes place in the tropics. Rich countries might argue that it&#x2019;s not their responsibility: they are &#x2018;doing their bit&#x2019; by regrowing forests at home. But this argument doesn&#x2019;t account for the impact countries might have abroad, through the products that they import. After we account for international trade, does it still hold true?<br>This discussion is similar to the debate about &#x2018;offshoring CO<sub>2</sub> emissions&#x2019;: many people argue that rich countries have only been able to reduce their domestic emissions because they&#x2019;ve &#x2018;offshored&#x2019; the production of goods elsewhere. This is rarely the case &#x2013; as we discuss <a href="https://ourworldindata.org/co2-emissions#consumption-based-trade-adjusted-emissions">here</a>, it&#x2019;s true that most rich countries have higher emissions when we account for the goods they import and export (<a href="https://ourworldindata.org/explorers/co2?tab=map&amp;xScale=linear&amp;yScale=linear&amp;stackMode=absolute&amp;endpointsOnly=0&amp;time=latest&amp;country=China~United%20States~India~United%20Kingdom~World&amp;region=World&amp;Gas%20=CO%E2%82%82&amp;Accounting%20=Consumption-based&amp;Fuel%20=Total&amp;Count%20=Per%20country&amp;Relative%20to%20world%20total%20=">consumption-based CO<sub>2</sub> emissions</a>) but they&#x2019;ve still fallen regardless of what metric we use.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="which-countries-are-net-importers-or-exporters-of-deforestation"><a class="deep-link" href="#which-countries-are-net-importers-or-exporters-of-deforestation"></a>Which countries are net importers or exporters of deforestation?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Does this apply to forests? Are countries &#x2018;offshoring&#x2019; deforestation elsewhere? To investigate this question, researchers Florence Pendrill et al. (2019) quantified the deforestation embedded in traded goods between countries.<a id="ref-24" class="ref" href="#note-24"><sup>24</sup></a> They did this by calculating the amount of deforestation associated with specific food and forestry products, and combining it with a trade model to trace where these products move through international supply chains to the final consumer.</p>
+
+
+
+<p>In the map we see the <em>net</em> deforestation embedded in trade for each country. This is calculated by taking each country&#x2019;s <a href="https://ourworldindata.org/grapher/imported-deforestation">imported deforestation</a> and subtracting its <a href="https://ourworldindata.org/grapher/exported-deforestation">exported deforestation</a>. This means that countries with a negative value (in brown) are <em>net exporters</em>, and countries with positive values (in green) are <em>net importers</em>. For example, after we adjust for all the goods that Brazil imports and exports, it experienced more deforestation at home than it created elsewhere. The UK, in contrast, created more deforestation in other countries than it did domestically.</p>
+
+
+
+<p>Although there is some year-to-year variability [you can explore the data use the timeline on the bottom of the chart from 2005 to 2013] we see a reasonably consistent divide: most countries across Europe and North America are net importers of deforestation [i.e. they&#x2019;re driving deforestation elsewhere] whilst it&#x2019;s many subtropical countries that are cutting down trees to meet this demand.</p>
+
+
+
+<p>It is therefore true that many rich countries are &#x2018;offshoring&#x2019; deforestation to poorer ones.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/net-deforestation-in-trade?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/net-deforestation-in-trade?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/net-deforestation-in-trade-7a4f71bf69be1d8579832bd759b18cd0_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Net deforestation in trade 7a4f71bf69be1d8579832bd759b18cd0 v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related charts:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/imported-deforestation" target="_blank">
+          <figure><img src="/grapher/exports/imported-deforestation.svg" alt="Imported deforestation" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Imported deforestation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/exported-deforestation" target="_blank">
+          <figure><img src="/grapher/exports/exported-deforestation.svg" alt="Exported deforestation" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Exported deforestation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="are-countries-importing-more-deforestation-than-they-re-regrowing-domestically"><a class="deep-link" href="#are-countries-importing-more-deforestation-than-they-re-regrowing-domestically"></a>Are countries importing more deforestation than they&#x2019;re regrowing domestically?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Many rich countries are driving deforestation in other parts of the world. But are they creating more deforestation elsewhere than they are regenerating in forests at home? This would give us some sense of whether they&#x2019;re still having a net positive impact on global forests.</p>
+
+
+
+<p>If, for example, Country A was responsible for the deforestation of 25,000 hectares in other countries but was restoring its own forests at a rate of 50,000 hectares per year, it might argue that it was still having a positive impact on global forests. There are some issues with such an argument, such as the fact that tropical forests are often more productive (they store more carbon) and are richer sites of biodiversity, hence we shouldn&#x2019;t treat one hectare of tropical and temperate forest equally. But, for now, we&#x2019;re going to simplify and treat any hectare of forest equally.</p>
+
+
+
+<p>In the chart we see the comparison between the change in domestic forest area, and deforestation driven by imported goods.<a id="ref-25" class="ref" href="#note-25"><sup>25</sup></a> On the y-axis we have the domestic change in forest area: this is shown only for countries which have a positive change i.e. their forest area is increasing. Since there is often year-to-year variability in deforestation or reforestation rates, this is shown as the five-year average. On the x-axis we have imported deforestation. The grey line marks where domestic regrowth of forests is exactly equal to imported deforestation. Countries that lie along this line would have a net-neutral impact on global forests: they could argue that deforestation they&#x2019;re creating through imported products is offset by the regrowth of forests at home.</p>
+
+
+
+<p>Countries which lie <em>above</em> the grey line &#x2013; such as the United States, Finland, China &#x2013; restore more forest each year domestically than they import from elsewhere. For example, the US &#x2018;imported&#x2019; 64,000 hectares of deforested land, but increased its domestic forest area by 275,000 hectares. More than four times as much. On balance, they add to the global forest stock. Countries below the line &#x2013; such as the UK, Germany and Norway &#x2013; are not growing forests fast enough to offset the deforestation they&#x2019;re creating elsewhere. The UK &#x2018;imported&#x2019; 34,000 hectares of deforestation but increased its domestic forests by only 19,000 hectares. These countries might boast record levels of afforestation at home, but they&#x2019;re still having a net negative impact on the world&#x2019;s forests. There is a strong argument there that they <em>are</em> offshoring deforestation.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/domestic-forest-change-vs-imported-deforestation?tab=chart&amp;stackMode=absolute&amp;country=&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/domestic-forest-change-vs-imported-deforestation?tab=chart&amp;stackMode=absolute&amp;country=&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/domestic-forest-change-vs-imported-deforestation-cdcad393dd315f436a8ff2e1fb2cb677_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Domestic forest change vs imported deforestation cdcad393dd315f436a8ff2e1fb2cb677 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="imported-deforestation-provides-an-important-caveat-to-the-forest-transition-model"><a class="deep-link" href="#imported-deforestation-provides-an-important-caveat-to-the-forest-transition-model"></a>Imported deforestation provides an important caveat to the forest transition model</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>The &#x2018;Forest Transition Model&#x2019; says that countries tend to follow a U-shaped curve of forest change as they develop: first they lose forests, then eventually regain them. Long-term forestry data from a range of countries supports this.</p><p>But, this model of change only considers changes in <em>domestic</em> forests. And as we&#x2019;ve seen above, this is only part of the story. The fact that some countries are creating more deforestation elsewhere at a faster rate than they&#x2019;re regrowing their own forests provides an important caveat to this Forest Transition Model.</p><p>In fact, Pendrill et al. (2019) found that 79% of exported deforestation ended up in &#x2018;post-transition&#x2019; countries: those that had stopped losing domestic forests. In other words, poor countries export deforestation and rich countries import most of it. As we saw earlier, not all rich countries import more deforestation than they regrow. But, some do and at the very least, some of this reforestation is offset. In total, for all post-transition countries, one-third of the net reforestation gains were offset by imports of embodied deforestation. This does not completely undermine the Forest Transition Model, but does suggest that at least part of it has been enabled by international trade and offshoring of deforestation.<a id="ref-26" class="ref" href="#note-26"><sup>26</sup></a></p><p>The solution to this is not a simple one. Many might suggest that rich countries should stop importing foods from countries at-risk of deforestation. But there are other aspects to consider: international trade is important for socioeconomic development. Many farmers rely on international buyers to earn a living and improve their livelihoods. The solution to this problem is therefore not as simple as cutting out trade. It&#x2019;s about adopting stricter guidelines on what suppliers to source from, and implementing zero-deforestation policies that stop the trade of goods that have been produced on deforested land.</p><p>There are multiple ways in which countries can help end deforestation &#x2013; both at home and elsewhere in the world. This is something we explore in much more detail in a <strong>follow-up article</strong>. Until rich countries take them seriously we should keep their domestic reforestation targets in perspective with their net impact on global forests. Sometimes these restoration programmes pale in comparison to the deforestation they&#x2019;re driving elsewhere.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="carbon-emissions-from-deforestation-are-they-driven-by-domestic-demand-or-international-trade"><a class="deep-link" href="#carbon-emissions-from-deforestation-are-they-driven-by-domestic-demand-or-international-trade"></a>Carbon emissions from deforestation: are they driven by domestic demand or international trade?</h2></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>95% of global deforestation occurs in the tropics. Brazil and Indonesia alone account for almost half. After long periods of forest clearance in the past, most of today&#x2019;s richest countries are increasing tree cover through afforestation.</p><p>This might put the responsibility for ending deforestation solely on tropical countries. But, supply chains are international. What if this deforestation is being driven by consumers elsewhere?</p><p>Many consumers are concerned that their food choices are linked to deforestation in some of these hotspots. Since three-quarters of tropical deforestation is driven by agriculture, that&#x2019;s a valid concern. It feeds into the popular idea that &#x2018;eating local&#x2019; is one of the best ways to reduce your carbon footprint. In a <a href="https://ourworldindata.org/food-choice-vs-eating-local"><strong>previous article</strong></a> I showed that the types of food you eat matter <em>much</em> more for your carbon footprint than where it comes from &#x2013; this is because transport usually makes up a small percentage of your food&#x2019;s emissions, even if it comes from the other side of the world. If you want to reduce your carbon footprint, reducing meat and dairy intake &#x2013; particularly beef and lamb &#x2013; has the largest impact.</p><p>But, understanding the role of deforestation in the products we buy is important. If we can identify the producer countries, importing countries, and specific products responsible, we can direct our efforts towards interventions that will really make a difference.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="one-third-of-co2-emissions-from-deforestation-are-embedded-in-international-trade"><a class="deep-link" href="#one-third-of-co2-emissions-from-deforestation-are-embedded-in-international-trade"></a>One-third of CO<sub>2</sub> emissions from deforestation are embedded in international trade</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>In a study published in <em>Global Environmental Change</em>, Florence Pendrill and colleagues investigated where tropical deforestation was occurring; what products were driving this; and, using global trade models, they traced where these products were going in international supply chains.<a id="ref-27" class="ref" href="#note-27"><sup>27</sup></a></p>
+
+
+
+<p>They found that tropical deforestation &#x2013; given as the annual average between 2010 and 2014 &#x2013; was responsible for 2.6 billion tonnes of CO<sub>2</sub> per year. That was 6.5% of global CO<sub>2 </sub>emissions.<a id="ref-28" class="ref" href="#note-28"><sup>28</sup></a>&#xA0;</p>
+
+
+
+<p>International trade was responsible for around one-third (29%) of these emissions. This is probably less than many people would expect. Most emissions &#x2013; 71% &#x2013; came from foods consumed in the country that they were produced. It&#x2019;s domestic demand, not international trade, that is the main driver of deforestation.</p>
+
+
+
+<p>In the chart we see how emissions from tropical deforestation are distributed through international supply chains. On the left-hand side we have the countries (grouped by region) where deforestation occurs, and on the right we have the countries and regions where these products are consumed. The paths between these end boxes indicate where emissions are being traded &#x2013; the wider the bar, the more emissions are embedded in these products.&#xA0;</p>
+
+
+
+<p>Latin America exports around 23% of its emissions; that means more than three-quarters are generated for products that are consumed within domestic markets. The Asia-Pacific region &#x2013; predominantly Indonesia and Malaysia &#x2013; export a higher share: 44%. As we will see later, this is dominated by palm oil exports to Europe, China, India, North America and the Middle East. Deforestation in Africa is mainly driven by local populations and markets; only 9% of its emissions are exported.</p>
+
+
+
+<p>Since international demand is driving one-third of deforestation emissions, we have some opportunity to reduce emissions through global consumers and supply chains. But most emissions are driven by domestic markets &#x2013; this means policies in the major producer countries will be key to tackling this problem.&#xA0;</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1493" height="1714" src="https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01.png" alt="Deforestation emissions in trade &#x2013; sankey 01" class="wp-image-40071" srcset="https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01.png 1493w, https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01-348x400.png 348w, https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01-479x550.png 479w, https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01-131x150.png 131w, https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01-768x882.png 768w, https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01-1338x1536.png 1338w" sizes="(max-width: 1493px) 100vw, 1493px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Deforestation-emissions-in-trade-&#x2013;-Sankey-01.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-much-deforestation-emissions-is-each-country-responsible-for"><a class="deep-link" href="#how-much-deforestation-emissions-is-each-country-responsible-for"></a>How much deforestation emissions is each country responsible for?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Let&#x2019;s now focus on the consumers of products driving deforestation. After we adjust for imports and exports, how much CO<sub>2 </sub>from deforestation is each country responsible for?</p>
+
+
+
+<p>Rather than looking at total figures by country [if you&#x2019;re interested, we have mapped them <a href="https://ourworldindata.org/grapher/co2-deforestation-for-food?stackMode=absolute&amp;region=World"><strong>here</strong></a>] we have calculated the per capita footprint. This gives us an indication of the impact of the average person&#x2019;s diet. Note that this only measures the emissions from tropical deforestation &#x2013; it doesn&#x2019;t include any other emissions from agricultural production, such as methane from livestock, or rice, or the use of fertilizers.</p>
+
+
+
+<p>In the chart we see deforestation emissions per person, measured in tonnes of CO<sub>2</sub> per year. For example, the average German generated half a tonne (510 kilograms) of CO<sub>2</sub> per person from domestic and imported foods.</p>
+
+
+
+<p>At the top of the list we see some of the major <em>producer</em> countries &#x2013; Brazil and Indonesia. The fact that the per capita emissions <em>after</em> trade are very high means that a lot of their food products are consumed by people in Brazil and Indonesia. The diet of the average Brazilian creates 2.7 tonnes of CO<sub>2</sub> from deforestation alone. That&#x2019;s more than the country&#x2019;s CO<sub>2</sub> <a href="https://ourworldindata.org/explorers/co2?tab=chart&amp;xScale=linear&amp;yScale=linear&amp;stackMode=absolute&amp;endpointsOnly=0&amp;time=earliest..latest&amp;country=China~United%20States~India~United%20Kingdom~World&amp;region=World&amp;Gas%20=CO%E2%82%82&amp;Accounting%20=Production-based&amp;Fuel%20=Total&amp;Count%20=Per%20capita&amp;Relative%20to%20world%20total%20=">emissions from fossil fuels</a>, which are around 2.2 tonnes per person.</p>
+
+
+
+<p>But we also see that some countries which import a lot of food have high emissions. Luxembourg has the largest footprint at nearly three tonnes per person. Imported emissions are also high for Taiwan, Belgium and the Netherlands at around one tonne.</p>
+
+
+
+<p>The average across the EU was 0.3 tonnes CO<sub>2</sub> per person. To put this in perspective, that would be around one-sixth of the total carbon footprint of the average EU diet.<a id="ref-29" class="ref" href="#note-29"><sup>29</sup></a></p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/per-capita-co2-food-deforestation?tab=chart&amp;stackMode=absolute&amp;time=earliest..latest&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/per-capita-co2-food-deforestation?tab=chart&amp;stackMode=absolute&amp;time=earliest..latest&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/per-capita-co2-food-deforestation-5d8edcdd2a639fc52dcb35ab218cc9e7_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Per capita co2 food deforestation 5d8edcdd2a639fc52dcb35ab218cc9e7 v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/co2-deforestation-for-food?stackMode=absolute&amp;region=World" target="_blank">
+          <figure><img src="/grapher/exports/co2-deforestation-for-food.svg" alt="Co2 deforestation for food" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Annual CO&#x2082; emissions from deforestation for food production, trade-adjusted<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="beef-soybeans-and-palm-oil-are-the-key-drivers-of-deforestation"><a class="deep-link" href="#beef-soybeans-and-palm-oil-are-the-key-drivers-of-deforestation"></a>Beef, soybeans and palm oil are the key drivers of deforestation</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>We know where deforestation emissions are occurring, and where this demand is coming from. But we also need to know what products are driving this. This helps consumers understand what products they should be concerned about, but also allows us to target specific supply chains.</p>
+
+
+
+<p>As we covered in a <strong>previous article</strong>, 60% of tropical deforestation is driven by beef, soybean and palm oil production. We should not only look at where these foods are produced, but also where the consumer demand is coming from.</p>
+
+
+
+<p>In the chart here we see the breakdown of deforestation emissions by product for each consumer country. The default is shown for Brazil, but you can explore the data for a range of countries using the &#x201C;Change country&#x201D; button.</p>
+
+
+
+<p>We see very clearly that the large Brazilian footprint is driven by its domestic demand for beef. In China, the biggest driver is demand for &#x2018;oilseeds&#x2019; &#x2013; which is the combination of soy imported from Latin America and palm oil, imported from Indonesia and Malaysia.&#xA0;</p>
+
+
+
+<p>Across the US and Europe the breakdown of products is more varied. But, overall, oilseeds and beef tend to top the list for most countries.</p>
+
+
+
+<p>Bringing all of these elements together, we can focus on a few points that should help us prioritise our efforts to end deforestation. Firstly, international trade does play a role in deforestation &#x2013; it&#x2019;s responsible for almost one-third of emissions. By combining our earlier Sankey diagram, and breakdown of emissions by product, we can see that we can tackle a large share of these emissions through only a few key trade flows. Most traded emissions are embedded in soy and palm oil exports to China and India; and beef, soy and palm oil exports to Europe. The story of both soy and palm oil are complex &#x2013; and it&#x2019;s not obvious that eliminating these products will fix the problem. We therefore look at them both individually in more detail, to better understand what we can do about it.</p>
+
+
+
+<p>But international markets alone cannot fix this problem. Most tropical deforestation is driven by demand for products in domestic markets. Brazil&#x2019;s emissions are high because Brazilians eat a lot of beef. Africa&#x2019;s emissions are high because people are clearing forests to produce more food. This means interventions at the national-level will be key: this can include a range of solutions including policies such as Brazil&#x2019;s soy moratorium, the REDD+ programme to compensate for the opportunity costs of preserving these forests, and improvements in agricultural productivity so countries can continue to produce more food on less land.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/deforestation-co2-trade-by-product?tab=chart&amp;stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/deforestation-co2-trade-by-product?tab=chart&amp;stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/deforestation-co2-trade-by-product-f374e2ae454b64c766cac9c04d16d3db_v1_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Deforestation co2 trade by product f374e2ae454b64c766cac9c04d16d3db v1 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="explore-more-of-our-work-on-forests-and-deforestation"><a class="deep-link" href="#explore-more-of-our-work-on-forests-and-deforestation"></a>Explore more of our work on Forests and Deforestation</h2></div></div></div><div class="wp-block-owid-grid">
+		
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/forest-area">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Forest-area-768x404.png" class="attachment-medium_large size-medium_large" alt="Forest area" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Forest-area-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Forest-area-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Forest-area-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Forest-area-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Forest-area.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Forest-area.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See the distribution of global forests and which countries have the most forest cover.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/deforestationExplore%20long-term%20changes%20in%20deforestation,%20and%20deforestation%20rates%20across%20the%20world%20today.">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Deforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Deforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Deforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Deforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Deforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Deforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Deforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Deforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore long-term changes in deforestation, and deforestation rates across the world today.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/afforestation">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Afforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Afforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Afforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Afforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Afforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Afforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Afforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Afforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See which countries are gaining forest though natural forest expansion and afforestation.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/drivers-of-deforestation">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Drivers of deforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>The world loses 5 million hectares of forest to deforestation each year. What activities are driving this?</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/palm-oil">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Palm-Oil-768x404.png" class="attachment-medium_large size-medium_large" alt="Palm oil" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Palm-Oil-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Palm-Oil.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Palm-Oil.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore palm oil production across the world, and its impacts on the environment.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/soy">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Soy-768x404.png" class="attachment-medium_large size-medium_large" alt="Soy" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Soy-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Soy-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Soy-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Soy-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Soy.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Soy.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore global data on soy production, how it&#x2019;s used, and how much deforestation is caused by its expansion.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+	</div></section>
+
+
+	</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>FAO. 2020. Global Forest Resources Assessment 2020 – Key findings. Rome. <a href="https://doi.org/10.4060/ca8753en">https://doi.org/10.4060/ca8753en</a></p></li><li id="note-2"><p>The data used in this chart comes from several sources.&nbsp;</p>
+
+
+
+<p><strong>Forests:</strong> this data is primarily sourced from the UN Food and Agriculture Organization (FAO). It provides <a href="https://www.un.org/development/desa/en/news/forest/international-day-forests-2018.html">long-term estimates</a> on forest cover in 10,000 and 5,000 years BP. Its State of the World’s Forests report provides estimates of global forest cover today, and rates of change over previous decades. In a <strong>related post</strong> we have combined this FAO data with global deforestation rates from Williams (2003) to document forest change over the last 300 years – this gives us data on forest change from 1700 onwards.</p>
+
+
+
+<p><strong>Agricultural and urban land: </strong>The UN <a href="http://www.fao.org/faostat/en/">FAO Statistical database</a> provides data on global agricultural and urban land from 1961 onwards. Pre-1961 land use is sourced from the work of Ellis et al. (2020) and the History Database of the Global Environment (HYDE).</p></li><li id="note-3"><p>FAO and UNEP. 2020. <em>The State of the World’s Forests 2020. Forests, biodiversity and people</em>. Rome.</p></li><li id="note-4"><p>Williams, M. (2003). Deforesting the earth: from prehistory to global crisis. University of Chicago Press.</p></li><li id="note-5"><p>Ellis, E. C., Beusen, A. H., &amp; Goldewijk, K. K. (2020). <a href="https://www.mdpi.com/2073-445X/9/5/129">Anthropogenic Biomes: 10,000 BCE to 2015 CE</a>. <em>Land</em>, 9(5), 129.</p></li><li id="note-6"><p>Estimates vary, but most date the end of the last great ice age to around 11,700 years ago.<br><br>Kump, L. R., Kasting, J. F., &amp; Crane, R. G. (2004). <a href="https://www.sciencedirect.com/science/article/pii/B9780127329512500077"><em>The Earth System</em> (Vol. 432)</a>. Upper Saddle River, NJ: Pearson Prentice Hall.</p></li><li id="note-7"><p>We can calculate this increase as [(7.63 billion &#8211; 3.09 billion) / 3.09 billion * 100 = 147%].</p></li><li id="note-8"><p>Estimates vary, but most date the end of the last great ice age to around 11,700 years ago.<br><br>Kump, L. R., Kasting, J. F., &amp; Crane, R. G. (2004). <a href="https://www.sciencedirect.com/science/article/pii/B9780127329512500077"><em>The Earth System</em> (Vol. 432)</a>. Upper Saddle River, NJ: Pearson Prentice Hall.</p></li><li id="note-9"><p>Year-to-year data on forest change comes with several issues: either data at this resolution is not available, or year-to-year changes can be highly variable. For this reason, data sources – including the UN Food and Agriculture Organization – tend to aggregate annual losses as the average over five-year or decadal periods.</p></li><li id="note-10"><p>Historical data pre-1990 is sourced from Michael Williams’ book, ‘Deforesting the Earth: from prehistory to global crisis’. Data from 1990 onwards is sourced from the UN’s 2020 Global Forest Resources Assessment 2020.<br><br><strong>References:</strong><br>Williams, M. (2003). <em>Deforesting the earth: from prehistory to global crisis</em>. University of Chicago Press.<br>FAO (2020). Global Forest Resources Assessment 2020: <em>Main report</em>. Rome. <a href="https://doi.org/10.4060/ca9825en">https://doi.org/10.4060/ca9825en</a>.</p></li><li id="note-11"><p>Mather, A. S., Fairbairn, J., &amp; Needle, C. L. (1999). <a href="https://www.sciencedirect.com/science/article/pii/S0743016798000230">The course and drivers of the forest transition: the case of France</a>. <em>Journal of Rural Studies</em>, <em>15</em>(1), 65-90.<br><br>Mather, A. S., &amp; Needle, C. L. (2000). <a href="https://rgs-ibg.onlinelibrary.wiley.com/doi/epdf/10.1111/j.1475-4959.2000.tb00002.x">The relationships of population and forest trends</a>. <em>Geographical Journal</em>, <em>166</em>(1), 2-13.</p></li><li id="note-12"><p>Hosonuma, N., Herold, M., De Sy, V., De Fries, R. S., Brockhaus, M., Verchot, L., &#8230; &amp; Romijn, E. (2012). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/7/4/044009">An assessment of deforestation and forest degradation drivers in developing countries</a>. <em>Environmental Research Letters</em>, <em>7</em>(4), 044009.</p></li><li id="note-13"><p>Lewis, S. L., Edwards, D. P., &amp; Galbraith, D. (2015). <a href="https://science.sciencemag.org/content/349/6250/827">Increasing human dominance of tropical forests</a>. <em>Science</em>, <em>349</em>(6250), 827-832.<br><br>Williams, D. R., Clark, M., Buchanan, G. M., Ficetola, G. F., Rondinini, C., &amp; Tilman, D. (2020). <a href="https://www.nature.com/articles/s41893-020-00656-5">Proactive conservation to prevent habitat losses to agricultural expansion</a>. <em>Nature Sustainability</em>, 1-9.</p></li><li id="note-14"><p>Crowther, T. W., Glick, H. B., Covey, K. R., Bettigole, C., Maynard, D. S., Thomas, S. M., &#8230; &amp; Tuanmu, M. N. (2015). <a href="https://www.nature.com/articles/nature14967">Mapping tree density at a global scale</a>. <em>Nature</em>, <em>525</em>(7568), 201-205.</p></li><li id="note-15"><p>Curtis, P. G., Slay, C. M., Harris, N. L., Tyukavina, A., &amp; Hansen, M. C. (2018). <a href="https://science.sciencemag.org/content/361/6407/1108">Classifying drivers of global forest loss</a>. <em>Science</em>, <em>361</em>(6407), 1108-1111.</p></li><li id="note-16"><p>Pendrill, F., Persson, U. M., Godar, J., &amp; Kastner, T. (2019). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/ab0d41">Deforestation displaced: trade in forest-risk commodities and the prospects for a global forest transition</a>. <em>Environmental Research Letters</em>, <em>14</em>(5), 055003.</p></li><li id="note-17"><p>Curtis, P. G., Slay, C. M., Harris, N. L., Tyukavina, A., &amp; Hansen, M. C. (2018). <a href="https://science.sciencemag.org/content/361/6407/1108">Classifying drivers of global forest loss</a>. <em>Science</em>, <em>361</em>(6407), 1108-1111.</p></li><li id="note-18"><p>Hosonuma, N., Herold, M., De Sy, V., De Fries, R. S., Brockhaus, M., Verchot, L., &#8230; &amp; Romijn, E. (2012). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/7/4/044009">An assessment of deforestation and forest degradation drivers in developing countries</a>. <em>Environmental Research Letters</em>, 7(4), 044009.</p>
+
+
+
+<p>Hosonuma et al. (2012) gathered this data from a range of sources including country submissions as part of their REDD+ readiness activities, Center for International Forestry Research (CIFOR) country profiles, UNFCCC national communications and scientific studies.</p></li><li id="note-19"><p>Scheffers, B. R., Joppa, L. N., Pimm, S. L., &amp; Laurance, W. F. (2012). <a href="https://www.sciencedirect.com/science/article/pii/S0169534712001231">What we know and don’t know about Earth&#8217;s missing biodiversity</a>. <em>Trends in Ecology &amp; Evolution</em>, 27(9), 501-510.</p></li><li id="note-20"><p>Maxwell, S. L., Fuller, R. A., Brooks, T. M., &amp; Watson, J. E. (2016). <a href="https://www.nature.com/news/biodiversity-the-ravages-of-guns-nets-and-bulldozers-1.20381">Biodiversity: The ravages of guns, nets and bulldozers</a>. Nature, 536(7615), 143.</p></li><li id="note-21"><p>Lewis, S. L. (2006).<a href="https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2005.1711?casa_token=eEBuakjTygkAAAAA:vs3Rul_BqNvO3zDY3Xzv27phr6euMZyyqYMf68ltqi-__ji4Cn6MMVbiYt0MVabcdOsteEdrcbdFkT2u"> Tropical forests and the changing earth system</a>. <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em>, 361(1465), 195-210.</p></li><li id="note-22"><p>Tyukavina, A., Hansen, M. C., Potapov, P. V., Stehman, S. V., Smith-Rodriguez, K., Okpa, C., &amp; Aguilar, R. (2017). <a href="https://advances.sciencemag.org/content/3/4/e1601047">Types and rates of forest disturbance in Brazilian Legal Amazon, 2000–2013</a>. <em>Science Advances</em>, <em>3</em>(4), e1601047.</p></li><li id="note-23"><p>Lewis, S. L., Edwards, D. P., &amp; Galbraith, D. (2015). <a href="https://science.sciencemag.org/content/349/6250/827">Increasing human dominance of tropical forests</a>. <em>Science</em>, <em>349</em>(6250), 827-832.</p></li><li id="note-24"><p>Pendrill, F., Persson, U. M., Godar, J., &amp; Kastner, T. (2019). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/ab0d41">Deforestation displaced: trade in forest-risk commodities and the prospects for a global forest transition</a>. <em>Environmental Research Letters</em>, <em>14</em>(5), 055003.</p></li><li id="note-25"><p>Data on the annual change in domestic forests is sourced from the UN FAO’s <a href="https://fra-data.fao.org/WO/assessment/fra2020">Forest Resources Assessment</a>.</p></li><li id="note-26"><p>Kuschnig, N., Crespo Cuaresma, J., &amp; Krisztin, T. (2019). <a href="https://ideas.repec.org/p/wiw/wus045/7335.html">Unveiling Drivers of Deforestation: Evidence from the Brazilian Amazon</a>.</p></li><li id="note-27"><p>To do this, they quantified where deforestation was occurring due to the expansion of croplands, pasture and tree plantations (for logging), and what commodities were produced on this converted land. Then, using a physical trade model across 191 countries and around 400 food and forestry products, they could trace them through to where they are physically consumed, either as food or in industrial processes.<br><br>Pendrill, F., Persson, U. M., Godar, J., Kastner, T., Moran, D., Schmidt, S., &amp; Wood, R. (2019). <a href="https://www.sciencedirect.com/science/article/pii/S0959378018314365">Agricultural and forestry trade drives large share of tropical deforestation emissions</a>. <em>Global Environmental Change</em>, <em>56</em>, 1-10.</p></li><li id="note-28"><p>In 2012 – the mid-year of this period – global <a href="https://ourworldindata.org/grapher/global-co2-emissions-fossil-land">emissions from</a> fossil fuels, industry and land use change was 40.2 billion tonnes. Deforestation was therefore responsible for [2.6 / 40.2 * 100 = 6.5%].</p></li><li id="note-29"><p>The carbon footprint of diets across the EU vary from country-to-country, and estimates vary depending on how much land use change is factored into these figures. Notarnicola et al. (2017) estimate that the average EU diet, excluding deforestation, is responsible for 0.5 tonnes CO<sub>2</sub> per person. If we add 0.3 tonnes to this figure, deforestation would account for around one-sixth [0.3 / (1.5+0.3) * 100 = 17%].<br><br>Notarnicola, B., Tassielli, G., Renzulli, P. A., Castellani, V., &amp; Sala, S. (2017). <a href="https://www.sciencedirect.com/science/article/pii/S0959652616307570">Environmental impacts of food consumption in Europe</a>. <em>Journal of Cleaner Production</em>, <em>140</em>, 753-765.</p></li></ol></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=39941&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookiePreferencesManager();
+                runCovid();
+                runFootnotes();
+                if (!document.querySelector(".ChartPage")) {
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[{"text":"Which countries are gaining, and which are losing forest?","slug":"which-countries-are-gaining-and-which-are-losing-forest","isSubheading":false},{"text":"How much deforestation occurs each year?","slug":"how-much-deforestation-occurs-each-year","isSubheading":false},{"text":"The world has lost one-third of its forests, but an end of deforestation is possible","slug":"the-world-has-lost-one-third-of-its-forests-but-an-end-of-deforestation-is-possible","isSubheading":false},{"text":"Global deforestation peaked in the 1980s. Can we bring it to an end?","slug":"global-deforestation-peaked-in-the-1980s-can-we-bring-it-to-an-end","isSubheading":false},{"text":"Forest Transitions: why do we lose then regain forests?","slug":"forest-transitions-why-do-we-lose-then-regain-forests","isSubheading":false},{"text":"Not all forest loss is equal: what is the difference between deforestation and forest degradation?","slug":"not-all-forest-loss-is-equal-what-is-the-difference-between-deforestation-and-forest-degradation","isSubheading":false},{"text":"Do rich countries export deforestation to other countries?","slug":"do-rich-countries-export-deforestation-to-other-countries","isSubheading":false},{"text":"Carbon emissions from deforestation: are they driven by domestic demand or international trade?","slug":"carbon-emissions-from-deforestation-are-they-driven-by-domestic-demand-or-international-trade","isSubheading":false},{"text":"Explore more of our work on Forests and Deforestation","slug":"explore-more-of-our-work-on-forests-and-deforestation","isSubheading":false},{"text":"Endnotes","slug":"endnotes","isSubheading":false}],"pageTitle":"Deforestation and Forest Loss"})
+                        runRelatedCharts([])
+                        </script></body></html>

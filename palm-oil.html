@@ -1,0 +1,571 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Palm Oil - Our World in Data</title><meta name="description" content="Explore palm oil production across the world, and its impacts on the environment."/><link rel="canonical" href="https://ourworldindata.org/palm-oil"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/palm-oil"/><meta property="og:title" content="Palm Oil"/><meta property="og:description" content="Explore palm oil production across the world, and its impacts on the environment."/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2021/02/Palm-Oil-768x404.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Palm Oil"/><meta name="twitter:description" content="Explore palm oil production across the world, and its impacts on the environment."/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2021/02/Palm-Oil-768x404.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page with-sidebar large-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Palm Oil</h1></div><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div></header></div><div class="offset-subnavigation"><div class="site-subnavigation"><div class="site-subnavigation-scroll"><ul class="site-subnavigation-links"><li class=""><a href="/forests" data-track-note="forests-subnav-forests">Forests<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></a></li><li class=""><a href="/forest-area" data-track-note="forests-subnav-forest-area">Forest area</a></li><li class=""><a href="/deforestation" data-track-note="forests-subnav-deforestation">Deforestation</a></li><li class=""><a href="/afforestation" data-track-note="forests-subnav-afforestation">Afforestation</a></li><li class=""><a href="/drivers-of-deforestation" data-track-note="forests-subnav-drivers-of-deforestation">Drivers of Deforestation</a></li><li class="current"><a href="/palm-oil" data-track-note="forests-subnav-palm-oil">Palm oil</a></li><li class=""><a href="/soy" data-track-note="forests-subnav-soy">Soy</a></li></ul></div></div></div><div class="content-wrapper"><div><aside class="entry-sidebar"><div class="sticky-sentinel"></div><nav class="entry-toc"><ul><li><a href="#">Palm Oil</a></li><li class="subsection"><a href="#palm-oil-production-has-grown-to-meet-rising-demands-for-vegetable-oils">Palm oil production has grown to meet rising demands for vegetable oils</a></li><li class="subsection"><a href="#who-uses-palm-oil-and-what-is-it-used-for">Who uses palm oil and what is it used for?</a></li><li class="subsection"><a href="#where-is-palm-oil-grown">Where is palm oil grown?</a></li><li class="subsection"><a href="#how-has-land-use-for-palm-oil-changed-over-time">How has land use for palm oil changed over time?</a></li><li class="subsection"><a href="#is-palm-oil-responsible-for-deforestation">Is palm oil responsible for deforestation?</a></li><li class="subsection"><a href="#palm-oil-versus-the-alternatives">Palm oil versus the alternatives</a></li><li class="subsection"><a href="#what-would-be-the-impact-of-substituting-palm-oil">What would be the impact of substituting palm oil?</a></li><li class="subsection"><a href="#how-can-we-use-palm-oil-without-destroying-tropical-forests">How can we use palm oil without destroying tropical forests?</a></li><li class="section"><a href="#explore-more-of-our-work-on-forests-and-deforestation">Explore more of our work on Forests and Deforestation</a></li><li class="section"><a href="#endnotes">Endnotes</a></li></ul></nav><div class="toggle-toc"><button data-track-note="page-toggle-toc" aria-label="Open table of contents"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-alt" class="svg-inline--fa fa-list-alt fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z"></path></svg></button></div></aside></div><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>In a large-scale consumer survey across the UK population on perceptions of vegetable oils, palm oil was deemed to be the least environmentally-friendly.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> It wasn&#x2019;t even close. 41% of people thought palm oil was &#x2018;environmentally unfriendly&#x2019;, compared to 15% for soybean oil; 9% for rapeseed; 5% for sunflower; and 2% for olive oil. 43% also answered &#x2018;Don&#x2019;t know&#x2019;, meaning that almost no one thought it was good.</p><p>Retailers know that this is becoming an important driver of consumer choices. From shampoos, to detergents, from chocolate to cookies, companies are trying to eliminate palm oil from their products. There are now <a href="https://www.ethicalconsumer.org/palm-oil/palm-oil-free-list">long lists</a> of companies that have done so <em>[Google &#x2018;palm-oil free&#x2019; and you will find an endless supply]</em>. Many online grocery stores now offer the option to apply a &#x2018;palm-oil free&#x2019; filter when browsing their products.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a></p><p>Why are consumers turning their back on palm oil? And is this reputation justified?</p><p>In this article I address some key questions about palm oil production: how has it changed; where is it grown; and how this has affected deforestation and biodiversity. The story of palm oil is not as simple as it is often portrayed. Global demand for vegetable oils has increased rapidly over the last 50 years. Being the most productive oilcrop, palm has taken up a lot of this production. This has had a negative impact on the environment, particularly in Indonesia and Malaysia. But it&#x2019;s not clear that the alternatives would have fared any better. In fact, because we can produce up to 20 times as much oil per hectare from palm versus the alternatives, it has probably spared a lot of environmental impacts from elsewhere.</p></div><div class="wp-block-column"></div></div><h3 id="palm-oil-production-has-grown-to-meet-rising-demands-for-vegetable-oils"><a class="deep-link" href="#palm-oil-production-has-grown-to-meet-rising-demands-for-vegetable-oils"></a>Palm oil production has grown to meet rising demands for vegetable oils</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Palm oil production has increased rapidly over the past 50 years. In 1970, the world was producing only 2 million tonnes. This is now 35 times higher: in 2018 the world produced 71 million tonnes. The change in global production is shown in the chart.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a></p><p>The rise of palm oil follows the rapid increase in demand for vegetable oils more broadly. The breakdown of global vegetable oil production by crop is shown in the stacked area chart. Global production increased ten-fold since the 1960s &#x2013; from 17 to 170 million tonnes in 2014. As we will see later in this article, more recent data for 2017 comes to 210 million tonnes.&#xA0;</p><p>The story of palm oil is less about it as an isolated commodity, but more about the story of the rising demand for vegetable oils. Palm oil is a very productive crop; as we will see later, it produces 36% of the world&#x2019;s oil, but uses just 6% of croplands devoted to oil production. It has therefore been a natural choice to meet this demand.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/palm-oil-production?tab=chart&amp;stackMode=absolute&amp;time=earliest..2018&amp;country=~OWID_WRL&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/palm-oil-production?tab=chart&amp;stackMode=absolute&amp;time=earliest..2018&amp;country=~OWID_WRL&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/palm-oil-production-299e127c58cf49ac79b43c43336bc870_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Palm oil production 299e127c58cf49ac79b43c43336bc870 v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/vegetable-oil-production?tab=chart&amp;stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/vegetable-oil-production?tab=chart&amp;stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/vegetable-oil-production-f374e2ae454b64c766cac9c04d16d3db_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Vegetable oil production f374e2ae454b64c766cac9c04d16d3db v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="who-uses-palm-oil-and-what-is-it-used-for"><a class="deep-link" href="#who-uses-palm-oil-and-what-is-it-used-for"></a>Who uses palm oil and what is it used for?</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Why has the market for palm oil &#x2013; and vegetable oils more broadly &#x2013; increased so rapidly? What is it used for?</p>
+
+
+
+<p>Palm oil is a versatile product which is used in a <a href="https://www.wwf.de/fileadmin/user_upload/WWF_Report_Palm_Oil_-_Searching_for_Alternatives.pdf">range of products</a> across the world:</p>
+
+
+
+<ul><li><strong>Foods</strong>: over two-thirds (68%) is used in foods ranging from margarine to chocolate, pizzas, breads and cooking oils;&#xA0;</li><li><strong>Industrial applications</strong>: 27% is used in industrial applications and consumer products such as soaps, detergents, cosmetics and cleaning agents;</li><li><strong>Bioenergy</strong>: 5% is used as biofuels for transport, electricity or heat.</li></ul>
+
+
+
+<p>While food products dominate globally, this breakdown varies from country-to-country. Some countries use much more palm oil for biofuels than others. In Germany, for example, bioenergy is <a href="https://www.wwf.de/fileadmin/user_upload/WWF_Report_Palm_Oil_-_Searching_for_Alternatives.pdf">the largest use</a>, accounting for 41% (more than food at 40%). A push towards increased biofuel consumption in the transport sector has been driving this, despite it being worse for the environment than normal diesel (more on this later).</p>
+
+
+
+<p>In the next section we will look at what countries <em>produce</em> palm oil, but here we see a map of palm oil imports. Although production is focused in only a few countries across the tropical belt, we see that palm oil is an important product across the world.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/palm-oil-imports?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/palm-oil-imports?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/palm-oil-imports-7a4f71bf69be1d8579832bd759b18cd0_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Palm oil imports 7a4f71bf69be1d8579832bd759b18cd0 v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="where-is-palm-oil-grown"><a class="deep-link" href="#where-is-palm-oil-grown"></a>Where is palm oil grown?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Oil palm is a tropical plant species. It thrives on high rainfall, adequate sunlight and humid conditions &#x2013; this means the best growing areas are along a narrow band around the equator.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a> Palm oil is therefore grown in many countries across Africa, South America, and Southeast Asia. In the map we see the distribution of production across the world.</p><p>Small amounts of palm oil are grown in many countries, but the global market is dominated by only two: Indonesia and Malaysia. In 2018, the world produced 72 million tonnes of oil palm. Indonesia accounted for 57% of this (41 million tonnes), and Malaysia produced 27% (20 million tonnes).<br><br>84% of global palm oil production comes from Indonesia and Malaysia.</p><p>In the chart we see the production of the palm oil plant across a number of countries. Other producers include Thailand, Colombia, Nigeria, Guatemala, and Ecuador. As we&#x2019;d expect, all of these countries lie along the zone of &#x2018;optimal conditions&#x2019; around the equator.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/palm-oil-production?stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/palm-oil-production?stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/palm-oil-production-7a4f71bf69be1d8579832bd759b18cd0_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Palm oil production 7a4f71bf69be1d8579832bd759b18cd0 v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/palm-oil-production?tab=chart&amp;stackMode=absolute&amp;time=2018&amp;country=COL~ECU~GTM~IDN~MYS~NGA~PNG~THA~OWID_WRL&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/palm-oil-production?tab=chart&amp;stackMode=absolute&amp;time=2018&amp;country=COL~ECU~GTM~IDN~MYS~NGA~PNG~THA~OWID_WRL&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/palm-oil-production-8df925cd71b4f1d35056bddf3452fdbb_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Palm oil production 8df925cd71b4f1d35056bddf3452fdbb v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="how-has-land-use-for-palm-oil-changed-over-time"><a class="deep-link" href="#how-has-land-use-for-palm-oil-changed-over-time"></a>How has land use for palm oil changed over time?</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>How has the world achieved such a rapid expansion of palm oil production? There are only two ways in which we can produce more of a given crop: increase yields (growing more on a given amount of land) or expand the amount of land we use to grow it.&#xA0;</p>
+
+
+
+<p>Global palm yields have increased over time, but far short of the increase in demand. This means that over the last 50 years the amount of land devoted to growing palm oil has increased a lot. In the chart here we see the change in land use. Since 1980 the amount of land the world uses to grow palm has more than quadrupled, from 4 million to 19 million hectares in 2018. Indonesia and Malaysia account for 63% of global land use for palm. This is low when we consider that it accounts for 84% of <em>production</em>. This is because both countries <a href="https://ourworldindata.org/grapher/palm-oil-yields">achieve high yields</a>.</p>
+
+
+
+<p>19 million hectares might sound like a lot of land. But we should consider this in the context of all land used to grow oilcrops. The world devotes more than 300 million hectares for oilcrop production. Palm oil accounts for 6% of this land use, which is small when we consider that it produces 36% of the oil.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/land-use-palm-oil?tab=chart&amp;stackMode=absolute&amp;time=earliest..2018&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/land-use-palm-oil?tab=chart&amp;stackMode=absolute&amp;time=earliest..2018&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/land-use-palm-oil-bcd76bb1e9316e72744c7bc0d431bfa7_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Land use palm oil bcd76bb1e9316e72744c7bc0d431bfa7 v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/land-use-for-vegetable-oil-crops?tab=chart&amp;stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/land-use-for-vegetable-oil-crops?tab=chart&amp;stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/land-use-for-vegetable-oil-crops-f374e2ae454b64c766cac9c04d16d3db_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Land use for vegetable oil crops f374e2ae454b64c766cac9c04d16d3db v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="is-palm-oil-responsible-for-deforestation"><a class="deep-link" href="#is-palm-oil-responsible-for-deforestation"></a>Is palm oil responsible for deforestation?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Land use to grow palm has more than quadrupled since 1980. But has this expansion came at the expense of tropical forest?</p><p>This seems like a simple question, but is not as straightforward as we might expect. The IUCN (International Union for Conservation of Nature) Oil Palm Task Force conducted an in-depth review of the literature to understand the impact of palm oil on deforestation.<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a> There was a lot of variability in the results, depending on how a forest was defined, the geographic focus of the analysis, and timeframe that was considered.</p><p>Having done my own review of the literature I conclude that palm oil <em>has</em> been a significant driver of tropical deforestation, especially in Southeast Asia.</p><p>Some studies suggest that palm oil has played a very small role in global forest loss. One study suggests that palm oil is responsible for around 2% of global tree loss.<a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a> Another suggests it is responsible for only 0.2% of intact forest loss.<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a> This seems very low. But there are a couple of caveats to these figures. Firstly, they measure <em>forest loss</em>, which combines both permanent deforestation (where trees do not regrow) and forest degradation (which is a temporary thinning of forests with subsequent regrowth). As we discuss in our <strong>related article</strong> on this, deforestation accounts for just one-quarter of global tree loss. Palm oil&#x2019;s contribution to <em>deforestation </em>&#x2013; which has greater environmental impacts than degradation &#x2013; would be higher. </p><p>Secondly, the 0.2% figure is based on <em>intact</em> forest loss. Intact forests are a specific subset of primary forests which are very rich sites of biodiversity, and are largely undisturbed by human activity. Only 6% of global intact forest is in Southeast Asia, the hotspot of palm oil expansion. Only 2.8% was in Indonesia, and 0.2% in Malaysia. So, even if all of these countries&#x2019; forests were wiped out by palm oil plantations, it would still make very little difference to this metric of global intact forest loss. The authors of the original study make it clear that intact forest loss should not be confused with primary forest loss.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>So, how much of palm oil&#x2019;s expansion has really come at the expense of forests? Let&#x2019;s focus on the two key countries driving production: Indonesia and Malaysia. In the chart here we see the drivers of deforestation in Indonesia from 2001 to 2016.<a id="ref-8" class="ref" href="#note-8"><sup>8</sup></a> Oil palm plantations were the largest driver of deforestation over this period, accounting for 23%. However, we also see that its role has declined over the last decade: there was a peak in 2008&#x2013;2009, when it reached almost 40% of Indonesia deforestation, but it has since declined to less than 15%.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/deforestation-drivers-indonesia?tab=chart&amp;stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/deforestation-drivers-indonesia?tab=chart&amp;stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/deforestation-drivers-indonesia-f374e2ae454b64c766cac9c04d16d3db_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Deforestation drivers indonesia f374e2ae454b64c766cac9c04d16d3db v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Part of what makes this question so challenging to answer is that it depends on whether you only consider palm plantations which immediately and directly replaced existing forest, or whether you include plantations which very quickly replaced forests which had been logged for wood, paper and pulp. In a paper published in <em>Nature</em>, David Gaveau and colleagues (2016) used satellite imagery to assess what types of land industrial plantations replaced in the Borneo region.<a id="ref-9" class="ref" href="#note-9"><sup>9</sup></a> Industrial plantations include palm oil and pulpwood tree plantations, but are dominated by the former. This is shown for the Indonesian and Malaysian Borneo in the chart.&#xA0;</p>
+
+
+
+<p>75% of these plantations were grown on land that was previously forested in 1973. Not all of these plantations were the direct driver of this replacement. In fact, only one-quarter of post-1973 plantations in the Borneo was driven by rapid conversion of this land to plantations (20&#x2013;21% oil-palm; 4.3&#x2013;4.8% pulpwood). This is shown in green in the chart. Direct deforestation for palm oil played a larger role in Malaysia; 60% was driven by plantations, whilst in Indonesia it was only 16%.</p>
+
+
+
+<p>This study only looks at the Borneo region. But this is reasonably consistent with studies that have looked at the expansion of palm plantations more broadly. A global study of palm-driven deforestation found that in Southeast Asia, 45% of oil palm plantations came from areas that were forests in 1989.<a id="ref-10" class="ref" href="#note-10"><sup>10</sup></a> In Indonesia this was 54% and in Malaysia, 40%.</p>
+
+
+
+<p>These distinctions on how quickly palm oil plantations replaced forests make it difficult to give a clear, single number on how much deforestation it has caused. But, most of the research concludes that, particularly in tropical forests in Southeast Asia, palm expansion has played a significant role.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="800" height="432" src="https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo-800x432.png" alt="Land expansion of palm oil in borneo" class="wp-image-40114" srcset="https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo-800x432.png 800w, https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo-400x216.png 400w, https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo-150x81.png 150w, https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo-768x415.png 768w, https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo-1536x829.png 1536w, https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo.png 1950w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Land-expansion-of-palm-oil-in-Borneo.png"></figure>
+</div>
+</div><h3 id="palm-oil-versus-the-alternatives"><a class="deep-link" href="#palm-oil-versus-the-alternatives"></a>Palm oil versus the alternatives</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Palm oil has been an important driver of deforestation. But would the alternatives have fared any better?</p>
+
+
+
+<p>There are a couple of reasons why palm oil has been the favored crop to meet growing demand for vegetable oils. Firstly, it has lowest production costs.<a id="ref-11" class="ref" href="#note-11"><sup>11</sup></a> Secondly, its composition means it&#x2019;s versatile and can be used for food and non-food purposes alike: some oils are not suited for cosmetic uses such as shampoos and detergents. Third, it gets incredibly high yields.</p>
+
+
+
+<p>If we weren&#x2019;t meeting global oil demand through palm oil, another oilcrop would have to take its place. Would the alternatives be any better for the environment?</p>
+
+
+
+<p>We can compare crops in terms of their yields &#x2013; how much oil we can produce from one hectare of land. This comparison is shown in the chart.<a id="ref-12" class="ref" href="#note-12"><sup>12</sup></a> Palm oil stands out immediately. It achieves a much higher yield than the alternatives. From each hectare of land, you can produce about four tonnes of palm oil. That&#x2019;s nearly six times higher than alternatives such as sunflower or rapeseed oil (where you get about 0.7 tonnes per hectare); and twenty times higher than popular alternatives such as coconut or groundnut oil (where you get 0.2 tonnes per hectare).<a id="ref-13" class="ref" href="#note-13"><sup>13</sup></a></p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/oil-yield-by-crop?tab=chart&amp;stackMode=absolute&amp;time=earliest..latest&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/oil-yield-by-crop?tab=chart&amp;stackMode=absolute&amp;time=earliest..latest&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/oil-yield-by-crop-5d8edcdd2a639fc52dcb35ab218cc9e7_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Oil yield by crop 5d8edcdd2a639fc52dcb35ab218cc9e7 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Let&#x2019;s take a look at how this comparison affects the global landscape of oilcrops in terms of production and land use. In the chart we see the breakdown of global vegetable oil production in 2017. The world produced 210 million tonnes of it. On the left we have each crop&#x2019;s share of global land use for vegetable oils; on the right we have its share of production.</p>
+
+
+
+<p>We know from our yield comparison that palm oil achieves a much higher yield. What this means is that it accounts for a very high share of oil <em>production</em> without taking up much land. In 2017 it produced 36% of our vegetable oil, but took up only 6% the land.</p>
+
+
+
+<p>Sunflower oil was almost exactly proportional in terms of how much oil it produced relative to how much land it took up: it produced 8.8% of oil, and required 8.5% of land. Rape and mustardseed oil were also in proportion. The rest &#x2013; soybean, olive, coconut, groundnut, and sesameseed &#x2013; used more land than they gave back in oil production. Coconut oil, for example, provided only 1.2% of global oil but required 4% of the land.&#xA0;</p>
+
+
+
+<p>It&#x2019;s of course true that some crops provide co-products in the process. The non-oil fraction of soybeans, for example, can be <a href="https://ourworldindata.org/soy">allocated to other uses</a> such as high-protein animal feed. Therefore using this land to grow the crop is meeting other food demand at the same time. But this doesn&#x2019;t change the fact that if the world requires a given amount of vegetable oil, it is the <em>oil</em> yield per hectare of each crop that we care about &#x2013; regardless of whether it provides co-products in the process.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="2211" height="1264" src="https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly.png" alt="Vegetable oil production and land use &#x2013; butterfly" class="wp-image-40115" srcset="https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly.png 2211w, https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly-400x229.png 400w, https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly-800x457.png 800w, https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly-150x86.png 150w, https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly-768x439.png 768w, https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly-1536x878.png 1536w, https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly-2048x1171.png 2048w" sizes="(max-width: 2211px) 100vw, 2211px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Vegetable-oil-production-and-land-use-&#x2013;-butterfly.png"></figure>
+</div>
+</div><h3 id="what-would-be-the-impact-of-substituting-palm-oil"><a class="deep-link" href="#what-would-be-the-impact-of-substituting-palm-oil"></a>What would be the impact of substituting palm oil?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Palm oil achieves very high yields relative to other oilcrops. Why does this matter?</p><p>If we want to limit our environmental impact, reducing the amount of land we devote to agriculture is key. To make space for more croplands and pastures, we have been displacing forests, grasslands and peatlands &#x2013; areas of rich biodiversity. The less land we need for farming, the better.</p><p>The high yields from palm oil means that it, in some sense, &#x2018;spares&#x2019; the world additional farmland we would need if we want to meet global oil demand from the alternatives. We can look at this in terms of the amount of land we would need if total global demand for vegetable oil was met from a single crop alone. In other words, how much land would be needed if the 210 million tonnes of oil was only produced from palm oil, or only produced from rapeseed? This comparison is shown in the chart. As we&#x2019;d expect, we see vast differences.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Let&#x2019;s give these numbers some context. Currently the world devotes around 300 million hectares to oilseed crops. That&#x2019;s an area similar to the size of India. If global oil was supplied solely from palm, we&#x2019;d need 52 million hectares, around six times less. If we got it from rapeseed we&#x2019;d need an area similar to the size we use today; from coconuts, an area the size of Canada; and in the most extreme case, we&#x2019;d have to devote 2.3 billion hectares to sesame seeds &#x2013; a bit more than Canada, the USA, and India combined.</p>
+
+
+
+<p>In this sense, palm oil has been a &#x2018;land sparing&#x2019; crop. Switching to alternatives would mean the world would need to use more farmland, and face the environmental costs that come with it. A global boycott on palm oil would not fix the problem: it would simply shift it elsewhere, and at a greater scale because the world would need more land to meet demand.</p>
+
+
+
+<p>This is true for other tropical oilcrops such as coconut, groundnut, or soy. However, we might argue that this oversimplifies the comparison to more temperate crops: it assumes the environmental impact of devoting one hectare of land for sunflower seeds in Europe is the same as cutting down tropical rainforests to grow palm or coconut plantations. We know that tropical forests are incredibly <a href="https://ourworldindata.org/grapher/endemic-mammal-species-by-country">rich in biodiversity</a>, and store a lot of carbon from the atmosphere. In some cases, especially for European domestic markets, some substitution for rapeseed or sunflower seed oils could have a positive environmental impact even if it required using a bit more land.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/area-land-needed-to-global-oil?tab=chart&amp;stackMode=absolute&amp;region=World" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/area-land-needed-to-global-oil?tab=chart&amp;stackMode=absolute&amp;region=World" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/area-land-needed-to-global-oil-f374e2ae454b64c766cac9c04d16d3db_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Area land needed to global oil f374e2ae454b64c766cac9c04d16d3db v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="how-can-we-use-palm-oil-without-destroying-tropical-forests"><a class="deep-link" href="#how-can-we-use-palm-oil-without-destroying-tropical-forests"></a>How can we use palm oil without destroying tropical forests?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>There are a number of steps we can take to ensure we meet global demand for oils, without destroying our tropical forests.&#xA0;</p><p><strong>Substitutes for palm oil do not always exist</strong>. As we&#x2019;ve discussed, substituting palm oil with alternatives can do more harm than good. But it&#x2019;s also true that alternative oils are not always suitable for the products we need. Palm oil is unique in its versatility, meaning it is suitable for a range of foods, cosmetics, industrial applications and biofuels. Substitution would be feasible for most food products. Substitution in industrial processes would be more difficult, especially if we want to replace it with oils grown in temperate countries: sunflower or rapeseed oil is not suited to products such as soaps, detergents or cosmetics. One sector where alternatives do exist is bioenergy, which brings us to our next point.</p><p><strong>European countries should stop using palm oil for biofuels</strong>. The EU &#x2013; after China and India &#x2013; is the third largest <a href="https://ourworldindata.org/grapher/palm-oil-imports">importer of palm oil</a>. There are some products where using palm is our best option. This is not the case for biofuels, yet <a href="https://www.transportenvironment.org/what-we-do/biofuels/why-palm-oil-biodiesel-bad">two-thirds of</a> the EU&#x2019;s imported palm oil goes to bioenergy production. Using palm oil as a biofuel is <em>worse</em> for the environment than petrol. A meta-analysis conducted by the Royal Academy of Engineering on EU biofuels found that when we factored in land-use change, the greenhouse gas emissions from palm oil were higher than using a petrol car.<a id="ref-14" class="ref" href="#note-14"><sup>14</sup></a> Other studies have shown that when we take the additional environmental impacts into account, these biofuels are much worse than conventional fuels.<a id="ref-15" class="ref" href="#note-15"><sup>15</sup></a> By using palm oil, EU countries are not only increasing emissions, they&#x2019;re passing the responsibility and accountability of these emissions on to other countries. A ban on using palm oil for biofuels would reduce this impact while allowing global palm oil to be used for purposes where there are few better alternatives &#x2013; food and cosmetic products.&#xA0;</p><p><strong>Increase companies sourcing from suppliers with sustainability certification</strong>. There are now a number of certification schemes which help to verify whether palm oil is being produced in a sustainable way. The most well-known is the Roundtable on Sustainable Palm Oil (RSPO). The RSPO was launched in 2004, and provides certification for suppliers who produce their crop in a more sustainable way by conducting impact assessments, managing high-value areas of biodiversity, not clearing primary forest and avoiding land clearance through fires.<a id="ref-16" class="ref" href="#note-16"><sup>16</sup></a> For example, suppliers can only be certified if their plantations since 2005 have not replaced primary forest or areas rich in biodiversity. Consumer demand for sustainable palm oil puts pressure on food and cosmetic companies to source from certified suppliers, and ultimately rewards the most sustainable growers.&#xA0;</p><p>Only 19% of palm oil production <a href="https://rspo.org/impact#certification-figures">is covered by</a> the RSPO.<a id="ref-17" class="ref" href="#note-17"><sup>17</sup></a> Research into the impact of the RSPO found that it was successful in reducing deforestation.<a id="ref-18" class="ref" href="#note-18"><sup>18</sup></a> However, it found that this most avoided deforestation from older plantations, which is not where most tropical forests remain. To have a real, permanent impact, certification needs to cover a much larger number of growers.</p><p><strong>Increased crop yields. </strong>If we want to reduce agricultural expansion, we want to maximise <a href="https://ourworldindata.org/crop-yields">crop yields</a> through effective management practices, improved varieties and choosing the most productive areas of land.</p><p>This combination of interventions involves actors across the full production line, from agricultural scientists improving crop varieties, to palm oil growers, governments, food and cosmetic producers, retailers and consumers. Pressure from consumers can filter through to growers. To do this effectively, understanding for consumers has to be clearer. Many believe that boycotting palm oil is how we make a difference. But as we&#x2019;ve seen, the alternatives are not necessarily better; more sustainable palm oil (used for food, not fuel) rather than no palm oil is what we should be pushing for.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="explore-more-of-our-work-on-forests-and-deforestation"><a class="deep-link" href="#explore-more-of-our-work-on-forests-and-deforestation"></a>Explore more of our work on Forests and Deforestation</h2></div></div></div><div class="wp-block-owid-grid">
+		
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/forest-area">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Forest-area-768x404.png" class="attachment-medium_large size-medium_large" alt="Forest area" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Forest-area-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Forest-area-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Forest-area-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Forest-area-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Forest-area.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Forest-area.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See the distribution of global forests and which countries have the most forest cover.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/deforestationExplore%20long-term%20changes%20in%20deforestation,%20and%20deforestation%20rates%20across%20the%20world%20today.">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Deforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Deforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Deforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Deforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Deforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Deforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Deforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Deforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore long-term changes in deforestation, and deforestation rates across the world today.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/afforestation">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Afforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Afforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Afforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Afforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Afforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Afforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Afforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Afforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See which countries are gaining forest though natural forest expansion and afforestation.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/drivers-of-deforestation">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-768x404.png" class="attachment-medium_large size-medium_large" alt="Drivers of deforestation" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Drivers-of-Deforestation.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>The world loses 5 million hectares of forest to deforestation each year. What activities are driving this?</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/palm-oil">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Palm-Oil-768x404.png" class="attachment-medium_large size-medium_large" alt="Palm oil" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Palm-Oil-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Palm-Oil-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Palm-Oil.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Palm-Oil.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore palm oil production across the world, and its impacts on the environment.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/soy">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/02/Soy-768x404.png" class="attachment-medium_large size-medium_large" alt="Soy" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/02/Soy-768x404.png 768w, https://ourworldindata.org/uploads/2021/02/Soy-400x210.png 400w, https://ourworldindata.org/uploads/2021/02/Soy-800x421.png 800w, https://ourworldindata.org/uploads/2021/02/Soy-150x79.png 150w, https://ourworldindata.org/uploads/2021/02/Soy.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/02/Soy.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore global data on soy production, how it&#x2019;s used, and how much deforestation is caused by its expansion.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+	</div></section>
+
+
+	</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Ostfeld, R., Howarth, D., Reiner, D., &amp; Krasny, P. (2019). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/aaf0e4">Peeling back the label—exploring sustainable palm oil ecolabelling and consumption in the United Kingdom</a>. <em>Environmental Research Letters</em>, <em>14</em>(1), 014001.</p></li><li id="note-2"><p>Ocado, an online UK retailer is just <a href="https://www.ocado.com/browse/dietary-lifestyle-world-foods-30489/free-from-46010/palm-oil-free-230097">one example</a>.</p></li><li id="note-3"><p>This data is <a href="http://www.fao.org/faostat/en/#home">sourced from</a> the UN Food and Agriculture Organization (FAO).</p></li><li id="note-4"><p>Wahid, M. B., Abdullah, S. N. A., &amp; IE, H. (2005). <a href="https://www.tandfonline.com/doi/pdf/10.1626/pps.8.288">Oil palm</a>. <em>Plant Production Science</em>, <em>8</em>(3), 288-297.</p></li><li id="note-5"><p>Meijaard, E., Garcia-Ulloa, J., Sheil, D., Wich, S.A., Carlson, K.M., Juffe-Bignoli, D., and Brooks, T.M. (eds.) (2018). <a href="https://portals.iucn.org/library/sites/library/files/documents/2018-027-En.pdf">Oil palm and biodiversity. A situation analysis by the IUCN Oil Palm Task Force</a>. IUCN Oil Palm Task Force Gland, Switzerland: IUCN. xiii + 116pp.</p></li><li id="note-6"><p>Pendrill, F., Persson, U. M., Godar, J., &amp; Kastner, T. (2019). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/ab0d41">Deforestation displaced: trade in forest-risk commodities and the prospects for a global forest transition</a>. <em>Environmental Research Letters</em>, <em>14</em>(5), 055003.</p></li><li id="note-7"><p>Potapov, P., Hansen, M. C., Laestadius, L., Turubanova, S., Yaroshenko, A., Thies, C., &#8230; &amp; Esipova, E. (2017). <a href="https://advances.sciencemag.org/content/3/1/e1600821">The last frontiers of wilderness: Tracking loss of intact forest landscapes from 2000 to 2013</a>. <em>Science advances</em>, <em>3</em>(1), e1600821.</p></li><li id="note-8"><p>Austin, K. G., Schwantes, A., Gu, Y., &amp; Kasibhatla, P. S. (2019). <a href="https://iopscience.iop.org/article/10.1088/1748-9326/aaf6db">What causes deforestation in Indonesia?</a>. <em>Environmental Research Letters</em>, 14(2), 024007.<br><br>Seymour, F., &amp; Harris, N. L. (2019). <a href="https://science.sciencemag.org/content/365/6455/756">Reducing tropical deforestation</a>. <em>Science</em>, <em>365</em>(6455), 756-757.</p></li><li id="note-9"><p>Gaveau, D. L., Sheil, D., Salim, M. A., Arjasakusuma, S., Ancrenaz, M., Pacheco, P., &amp; Meijaard, E. (2016). <a href="https://www.nature.com/articles/srep32017">Rapid conversions and avoided deforestation: examining four decades of industrial plantation expansion in Borneo</a>. <em>Scientific reports</em>, <em>6</em>(1), 1-13.</p></li><li id="note-10"><p>Vijay, V., Pimm, S. L., Jenkins, C. N., &amp; Smith, S. J. (2016). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0159668">The impacts of oil palm on recent deforestation and biodiversity loss</a>. <em>PloS one</em>, <em>11</em>(7), e0159668.</p></li><li id="note-11"><p>Carter, C., Finley, W., Fry, J., Jackson, D., &amp; Willis, L. (2007). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ejlt.200600256?casa_token=aXRuqMRxZBkAAAAA:L0rzA0gzmlg94rutywz5tJnUweNXggdMQj73_bQdF_ArEvSWPS3Det8V8qiUua96lGk1yT_S7Cb_zdnr">Palm oil markets and future supply</a>. <em>European Journal of Lipid Science and Technology</em>, <em>109</em>(4), 307-314.</p></li><li id="note-12"><p>Here I have calculated the actual yield of <em>oil</em> from each crop, rather than the yield of the total crop. No crop is 100% oil-based, and therefore this will differ from the mass of the crop itself. Ultimately this is what matters if our question is how to meet global oil demand.<br><br>I have calculated oil yield for each crop by dividing the actual <em>oil</em> production by the area harvested for each. Both of these metrics are sourced from the <a href="http://www.fao.org/faostat/en/">UN Food and Agriculture Organization</a> (FAO).</p></li><li id="note-13"><p>To demonstrate this, let’s turn crop yields on its head and look at the inverse: the area of land you would need to produce one tonne of vegetable oil. We can simply calculate this as 1 / Yield (in tonnes per hectare).</p>
+
+
+
+<p>This comparison by crop is shown <a href="https://ourworldindata.org/grapher/area-per-tonne-oil"><strong>here</strong></a>. To produce one tonne of oil we need only 0.3 hectares of land from palm oil; 1.4 hectares from sunflower or rapeseed; 4.8 hectares from coconut; or 5.5 hectares from groundnut. If you want to produce one tonne of oil, you would need 5 times the amount of cropland devoted to sunflower or rapeseed, or 20 times the amount of land devoted to coconut production.</p></li><li id="note-14"><p>Royal Academy of Engineering (2017). <a href="http://www.raeng.org.uk/news/news-releases/2017/july/biofuels-made-from-waste-are-the-business,-says-ac">Sustainability of liquid biofuels</a>.</p></li><li id="note-15"><p>R. Zah et al., Ökobilanz Von Energieprodukten: Ökologische Bewertung Von Biotreibstoffen (EMPA, Abteilung Technologie und Gesellschaft, St. Gallen, Switzerland, 2007).</p></li><li id="note-16"><p>Meijaard, E., Garcia-Ulloa, J., Sheil, D., Wich, S.A., Carlson, K.M., Juffe-Bignoli, D., and Brooks, T.M. (eds.) (2018). <a href="https://portals.iucn.org/library/node/47753">Oil palm and biodiversity. A situation analysis by the IUCN Oil Palm Task Force</a>. IUCN Oil Palm Task Force Gland, Switzerland: IUCN. xiii + 116pp.</p></li><li id="note-17"><p>This is based on reported figures as of November 2020.</p></li><li id="note-18"><p>Carlson, K. M., Heilmayr, R., Gibbs, H. K., Noojipady, P., Burns, D. N., Morton, D. C., &#8230; &amp; Kremen, C. (2018). <a href="https://www.pnas.org/content/115/1/121">Effect of oil palm sustainability certification on deforestation and fire in Indonesia</a>. <em>Proceedings of the National Academy of Sciences</em>, <em>115</em>(1), 121-126.</p></li></ol></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=39956&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookiePreferencesManager();
+                runCovid();
+                runFootnotes();
+                if (!document.querySelector(".ChartPage")) {
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[{"text":"Palm oil production has grown to meet rising demands for vegetable oils","html":"Palm oil production has grown to meet rising demands for vegetable oils","slug":"palm-oil-production-has-grown-to-meet-rising-demands-for-vegetable-oils","isSubheading":true},{"text":"Who uses palm oil and what is it used for?","html":"Who uses palm oil and what is it used for?","slug":"who-uses-palm-oil-and-what-is-it-used-for","isSubheading":true},{"text":"Where is palm oil grown?","html":"Where is palm oil grown?","slug":"where-is-palm-oil-grown","isSubheading":true},{"text":"How has land use for palm oil changed over time?","html":"How has land use for palm oil changed over time?","slug":"how-has-land-use-for-palm-oil-changed-over-time","isSubheading":true},{"text":"Is palm oil responsible for deforestation?","html":"Is palm oil responsible for deforestation?","slug":"is-palm-oil-responsible-for-deforestation","isSubheading":true},{"text":"Palm oil versus the alternatives","html":"Palm oil versus the alternatives","slug":"palm-oil-versus-the-alternatives","isSubheading":true},{"text":"What would be the impact of substituting palm oil?","html":"What would be the impact of substituting palm oil?","slug":"what-would-be-the-impact-of-substituting-palm-oil","isSubheading":true},{"text":"How can we use palm oil without destroying tropical forests?","html":"How can we use palm oil without destroying tropical forests?","slug":"how-can-we-use-palm-oil-without-destroying-tropical-forests","isSubheading":true},{"text":"Explore more of our work on Forests and Deforestation","slug":"explore-more-of-our-work-on-forests-and-deforestation","isSubheading":false},{"text":"Endnotes","slug":"endnotes","isSubheading":false}],"pageTitle":"Palm Oil"})
+                        runRelatedCharts([])
+                        </script></body></html>
