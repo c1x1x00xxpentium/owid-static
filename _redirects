@@ -570,8 +570,8 @@
 /grapher/population-growth-rate-by-world-region-1955-2015-projections-2020-2100 /grapher/population-growth-rate-by-level-of-development 302!
 /grapher/population-growth-rate-by-world-region-1955-2015-and-projection-for-2020-2100 /grapher/population-growth-rate-by-level-of-development 302!
 /grapher/population-growth-rate-by-world-region-1955-2015-and-projections-for-2020-2100 /grapher/population-growth-rate-by-level-of-development 302!
-/grapher/the-decline-of-child-mortality-vs-share-of-vaccinated-children /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-typhoid 302!
-/grapher/child-mortality-vs-share-of-vaccinated-children /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-typhoid 302!
+/grapher/the-decline-of-child-mortality-vs-share-of-vaccinated-children /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-tetanus 302!
+/grapher/child-mortality-vs-share-of-vaccinated-children /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-tetanus 302!
 /grapher/co2-emissions-embedded-in-trade-as-a-share-of-domestic-emissions /grapher/share-co2-embedded-in-trade 302!
 /grapher/co-emissions-embedded-in-trade-as-a-share-of-domestic-emissions /grapher/share-co2-embedded-in-trade 302!
 /grapher/military-expenditure-of-gdp /grapher/military-expenditure-as-share-of-gdp 302!
@@ -1207,3 +1207,4 @@
 /grapher/confirmed-covid-19-deaths-total-vs-daily /grapher/confirmed-covid-19-deaths-cumulative-vs-daily 302!
 /grapher/total-deaths-and-cases-covid-19 /grapher/cumulative-deaths-and-cases-covid-19 302!
 /grapher/covid-19-total-confirmed-cases-vs-total-confirmed-deaths /grapher/covid-19-cumulative-confirmed-cases-vs-confirmed-deaths 302!
+/grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-typhoid /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-tetanus 302!
