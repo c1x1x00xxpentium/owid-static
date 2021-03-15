@@ -1,8 +1,8 @@
 {
-  "commons.css": "css/commons.css",
-  "commons.js": "js/commons.js",
-  "admin.css": "css/admin.css",
-  "admin.js": "js/admin.js",
-  "owid.css": "css/owid.css",
-  "owid.js": "js/owid.js"
+  "commons.css": "commons.css",
+  "commons.js": "commons.js",
+  "admin.css": "admin.css",
+  "admin.js": "admin.js",
+  "owid.css": "owid.css",
+  "owid.js": "owid.js"
 }
