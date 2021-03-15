@@ -2,7 +2,7 @@ const embedSnippet = () => {
 const link = document.createElement('link')
 link.type = 'text/css'
 link.rel = 'stylesheet'
-link.href = 'https://ourworldindata.org/assets/commons.css'
+link.href = '/assets/commons.css'
 document.head.appendChild(link)
 
 let loadedScripts = 0;
@@ -14,8 +14,8 @@ const checkReady = () => {
 
 const coreScripts = [
     'https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch',
-    'https://ourworldindata.org/assets/commons.js',
-    'https://ourworldindata.org/assets/owid.js'
+    '/assets/commons.js',
+    '/assets/owid.js'
 ]
 
 coreScripts.forEach(url => {
