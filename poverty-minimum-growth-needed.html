@@ -1,0 +1,461 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>How much economic growth is necessary to reduce global poverty substantially? - Our World in Data</title><meta name="description" content="Billions of people in the world are living in poverty. Adjusted for the purchasing power in each country, 85% of the world population live on less than $30 per day. "/><link rel="canonical" href="https://ourworldindata.org/poverty-minimum-growth-needed"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/poverty-minimum-growth-needed"/><meta property="og:title" content="How much economic growth is necessary to reduce global poverty substantially?"/><meta property="og:description" content="Billions of people in the world are living in poverty. Adjusted for the purchasing power in each country, 85% of the world population live on less than $30 per day. "/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2021/03/Screen-Shot-2021-03-15-at-12.14.00-768x383.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="How much economic growth is necessary to reduce global poverty substantially?"/><meta name="twitter:description" content="Billions of people in the world are living in poverty. Adjusted for the purchasing power in each country, 85% of the world population live on less than $30 per day. "/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2021/03/Screen-Shot-2021-03-15-at-12.14.00-768x383.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">How much economic growth is necessary to reduce global poverty substantially?</h1></div><div class="authors-byline"><a href="/team">by Max Roser</a></div><time>March 15, 2021</time><div class="blog-info">
+<p>Our World in Data presents the data and research to make progress against the world&#x2019;s largest problems.<br>This post draws on data and research discussed in our entries on <strong><a href="https://ourworldindata.org/income-inequality" target="_blank" rel="noopener">Income Inequality</a></strong>, <strong><a href="https://ourworldindata.org/extreme-poverty" target="_blank" rel="noopener">Global Extreme Poverty</a></strong> and <strong><a href="https://ourworldindata.org/economic-growth" target="_blank" rel="noopener">Economic Growth</a></strong>.</p>
+</div><div class="tools"><a href="#licence"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="creative-commons" class="svg-inline--fa fa-creative-commons fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M245.83 214.87l-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93-22.13 0-33.22 14.61-33.22 43.84 0 23.57 9.21 43.84 33.22 43.84 14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98-22.6 0-73.96-10.32-73.96-77.05 0-58.69 43-77.06 72.63-77.06 30.72-.01 52.7 11.95 65.99 35.86zm143.05 0l-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93-22.14 0-33.22 14.61-33.22 43.84 0 23.55 9.23 43.84 33.22 43.84 14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98-22.69 0-73.96-9.87-73.96-77.05 0-58.67 42.97-77.06 72.63-77.06 30.71-.01 52.58 11.95 65.56 35.86zM247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248 129.93 0 248.44-100.87 248.44-248 0-137.87-106.62-248-248.44-248zm.87 450.81c-112.54 0-203.7-93.04-203.7-202.81 0-105.42 85.43-203.27 203.72-203.27 112.53 0 202.82 89.46 202.82 203.26-.01 121.69-99.68 202.82-202.84 202.82z"></path></svg>Reuse our work <strong>freely</strong></a></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content">
+
+
+
+<section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Billions of people in the world are living in poverty. Adjusted for the purchasing power in each country, 85% of the world population live on less than $30 per day.&#xA0;</p><p>In an earlier post <a href="https://ourworldindata.org/poverty-growth-needed">I said</a> that &#x2018;if we want global poverty to decline substantially then the economies that are home to the poorest billions of people need to grow.&#x2019; In this post I want to make this statement more concrete. I will look at the depth of global poverty today to get a quantitative sense of just how much the global income distribution would need to change to reduce global poverty substantially.&#xA0;</p><p>As a starting point for the discussion I will consider the inequality of incomes in the world today and think through a scenario that would allow the maximal reduction of global poverty under minimal global aggregate income growth. After calculating the minimum aggregate growth that is required to reduce global poverty substantially I will consider in which ways a possible more realistic scenario of the future might differ from the minimum scenario.</p><p>In <a href="https://ourworldindata.org/higher-poverty-global-line">an earlier text</a> I asked who is considered poor in a high-income country. Based on existing national poverty lines &#x2013; but also the size of social care payouts, a proposal for Universal Basic Income, and survey results &#x2013; I found that $30 per day is, very approximately, the level below which people are considered poor in high-income countries.&#xA0;</p><p>One of the most important insights of economics is that people live in poverty not because of who they are, but because of <em>where </em>they are. A person&#x2019;s knowledge, their skills, and how hard they work all matter for whether they are poor or not &#x2013; but all these personal factors together <a href="https://voxeu.org/article/income-inequality-and-citizenship">matter less</a> than the one factor that is entirely outside of a person&#x2019;s control: whether the place they happen to be born into has a large, productive economy or not.</p><p>The comparison of a high-income country like Denmark and a much poorer country like Ethiopia makes clear just how important this aspect is. A person living in Denmark has a chance of 86% that they are not poor. A person who happens to be born into a country where the average income is low is almost certainly living in poverty. In Ethiopia more than 99% of the population live on less than $30 per day. This is why a rise in the average level of income in a country &#x2013; economic growth &#x2013; is so crucial for reducing poverty.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<figure class="wp-block-image"><img src="https://lh6.googleusercontent.com/BzSMunaUd5S-YSlQR_o9tBEOoYFF3LKG2js7sANpgBByYsNbLNJAgx8ccj5EeVykZmD6XcJkvVlc7yYswHM1YW9PIPmlg2dLhLcJC5uaKozhPR6p1z8XGm0RJMO7Gavp6M4bZqRc" alt="Bzsmunaud5s yslqr o9tbeooyff3lkg2js7sanpgbbyysnblnjagx8ccj5eevykzmd6xcjkvvlc7yyswhm1yw9pipmlg2dlhlcjc5uakozhpr6p1z8xgm0rjmo7gavp6m4bzqrc" data-high-res-src="https://lh6.googleusercontent.com/BzSMunaUd5S-YSlQR_o9tBEOoYFF3LKG2js7sANpgBByYsNbLNJAgx8ccj5EeVykZmD6XcJkvVlc7yYswHM1YW9PIPmlg2dLhLcJC5uaKozhPR6p1z8XGm0RJMO7Gavp6M4bZqRc" loading="lazy"></figure>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Throughout this entire text all poverty statistics are adjusted for differences in purchasing power across different countries. Without taking into account the price differences it is not possible to compare people&#x2019;s living standards in different countries. See the footnote for a more detailed explanation of how poverty is measured.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a></p></div><div class="wp-block-column"></div></div><h3 id="most-people-in-the-world-live-in-countries-in-which-more-than-80-live-on-less-than-30-per-day"><a class="deep-link" href="#most-people-in-the-world-live-in-countries-in-which-more-than-80-live-on-less-than-30-per-day"></a>Most people in the world live in countries in which more than 80% live on less than $30 per day</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>This large visualization here shows the same comparison that we have just seen for Denmark and Ethiopia, but now for countries around the world. In purple you see the share of each country&#x2019;s population living on less than $30 per day.&#xA0;</p><p>I ordered the countries by income: from the poorest countries on the very left of this chart to the richest countries on the right. The width of each country corresponds to the country&#x2019;s population size.</p><p>This visualization shows the extent of global poverty today. The huge majority of the world lives in countries where the majority is poor. As you can read above this chart, 84% of the world population live in countries in which more than 80% live on less than $30 per day.</p></div><div class="wp-block-column"></div></div><figure class="wp-block-image size-full wp-block-full-content-width"><img loading="lazy" width="4276" height="2556" src="https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30.png" alt="Share living on less than 30" class="wp-image-41649" srcset="https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30.png 4276w, https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30-400x239.png 400w, https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30-800x478.png 800w, https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30-150x90.png 150w, https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30-768x459.png 768w, https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30-1536x918.png 1536w, https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30-2048x1224.png 2048w" sizes="(max-width: 4276px) 100vw, 4276px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Share-living-on-less-than-30.png"></figure><h3 id="poverty-is-not-inevitable"><a class="deep-link" href="#poverty-is-not-inevitable"></a>Poverty is not inevitable</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>In the past it was unimaginable that it would ever be possible to reduce poverty. In a world in which every <a href="https://ourworldindata.org/child-mortality-in-the-past">second child died</a> and where hunger was <a href="https://ourworldindata.org/famines">widespread</a>, the majority of people <a href="https://ourworldindata.org/extreme-history-methods">lived in poverty</a>. And since <a href="https://ourworldindata.org/breaking-the-malthusian-trap">poverty did not change</a>, it was easy to believe that poverty was unchangeable.&#xA0;</p><p>Today we know that this was wrong, we know that poverty is not inevitable because poverty has declined very substantially in many countries. The population of Denmark was once as poor as the population of Ethiopia today, but since then poverty declined&#xA0;and living conditions improved: average incomes increased <a href="https://ourworldindata.org/grapher/average-real-gdp-per-capita-across-countries-and-regions?time=earliest..2016&amp;country=ETH~DNK">more than 25-fold</a>, the child mortality rate <a href="https://ourworldindata.org/grapher/child-mortality?tab=chart&amp;time=earliest..2016&amp;country=~DNK">declined from more than a quarter</a> to less than half a percent &#x2013; one of the lowest levels in the world &#x2013; and Denmark is today one of the countries where people report to be most <a href="https://ourworldindata.org/grapher/gdp-vs-happiness">satisfied with their lives</a>.</p><p>As such I will use Denmark as a benchmark of what it means for poverty to fall &#x2018;substantially&#x2019;. Using Denmark as a benchmark, we can ask: how equal and rich would countries around the world need to become for global poverty to be similarly low as in Denmark?</p><p>Denmark is not the only country with a small share living on less than $30, as the visualization above showed. In Norway and Switzerland an even smaller share of the population (7% and 12%) is living in such poverty. I chose Denmark, where 14% live in poverty, as a benchmark because the country is achieving this low poverty rate despite having a substantially lower average income than Switzerland or Norway.</p><p>Considering a scenario in which global poverty declines to the level of poverty in Denmark is a more modest scenario than one that considers an end of global poverty altogether. It is a scenario in which global poverty would fall from 85% to 14% and so it would certainly mean a substantial reduction of poverty.&#xA0;</p><p>If you think that my poverty line of $30 per day is too low or too high, or if you want to rely on a different country than Denmark as a benchmark, or if you would prefer a scenario in which no one in the world would remain in poverty, you can follow my methodology and replace my numbers with yours.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a> What I want to do in this text is to give an idea of the magnitude of the changes that are necessary to substantially reduce global poverty.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-living-standards-in-denmark-and-a-poorer-country-compare"><a class="deep-link" href="#how-do-living-standards-in-denmark-and-a-poorer-country-compare"></a>How do living standards in Denmark and a poorer country compare?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>The previous chart showed that in the majority of the world&#x2019;s countries the vast majority lives on less than $30 per day. The following chart zooms in from the global view of the previous chart to a more detailed comparison of just two countries: our benchmark country Denmark in red and Ethiopia in blue.&#xA0;</p><p>There is no <em>global</em> survey of incomes: researchers need to rely on the available <em>national</em> surveys. Such surveys are designed with cross-country comparability in mind, but because they reflect the circumstances and priorities of individual countries there are some important differences across countries. In most richer countries the surveys capture people&#x2019;s incomes, while in poorer countries these surveys capture people&#x2019;s consumption. The two concepts are closely related: the income of a household equals their consumption plus any saving (or minus any borrowing).<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a> When speaking about these statistics it would therefore be accurate to speak about &#x2018;the income of people in richer countries and the monetary value of consumption in poorer countries&#x2019;. But since it&#x2019;d be a bit much to repeat this every time researchers simply speak of &#x2018;living standards&#x2019; or &#x2018;income&#x2019; instead. I do the same in this text.</p><p>It&#x2019;s also important to remember that in poorer countries many work as subsistence farmers who do not, or only partly, rely on a monetary income. To properly capture their living standards, and allow comparisons between households, the statisticians who conduct the household surveys include an estimate of the monetary value of the food and other goods that they produce for their own consumption.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a></p><p>What does the chart tell us about living standards in these two countries?&#xA0;</p><p>If we want to know how much the distribution of Ethiopia would need to change to reduce the share in poverty to Denmark&#x2019;s level we can read it off the two parameters that describe the distribution &#x2013; the average level of income and the inequality of those incomes.</p><p>Ethiopia has a much lower average income: an increase of average incomes is called economic growth and to increase the average from $3.30 per day to $55 would mean that Ethiopia would need to increase its income 16.7-fold (because $55 is 16.7-times higher than $3.30).<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a></p><p>Inequality is also higher in Ethiopia. To reach the same level of poverty at the same level of average income the Gini would have to fall by 5 points. But the current average is so far below $30 a day that without economic growth no amount of redistribution would lower the poverty rate relative to this threshold.<a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a></p><p>A more than 16-fold increase in average incomes is certainly not easy to achieve, but it is also not impossible. The average income in Denmark grew <a href="https://ourworldindata.org/grapher/average-real-gdp-per-capita-across-countries-and-regions?stackMode=relative&amp;time=earliest..2016&amp;country=DNK~ETH">by more than that</a> over the last few generations, and such growth is <a href="https://ourworldindata.org/economic-growth-since-1950">not rare</a> in recent economic history.&#xA0;</p></div><div class="wp-block-column"><figure class="wp-block-image size-full"><img loading="lazy" width="3000" height="1570" src="https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018.png" alt="Incomes poor and rich country ethiopia vs denmark 2018" class="wp-image-41651" srcset="https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018.png 3000w, https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018-400x209.png 400w, https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018-800x419.png 800w, https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018-768x402.png 768w, https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018-1536x804.png 1536w, https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018-2048x1072.png 2048w" sizes="(max-width: 3000px) 100vw, 3000px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Incomes-poor-and-rich-country-Ethiopia-vs-Denmark-2018.png"></figure></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-would-average-incomes-need-to-change-globally"><a class="deep-link" href="#how-would-average-incomes-need-to-change-globally"></a>How would average incomes need to change globally?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>We have seen that the average income in Ethiopia is 16.7-times lower than the average in Denmark. How do the incomes of people in all other countries in the world compare with Denmark?</p><p>The chart here shows us the answer by plotting the average incomes for all countries in the world. The height of each bar represents the average daily income in a country; the width of each country again corresponds to the country&#x2019;s population size and again I have ordered the countries by income: from the poorest country on the very left to the richest country on the very right.</p><p>The reason why such substantial economic growth is necessary for reducing global poverty is that the average income in many countries in the world is very low: 82% of the world population live in countries where the mean income is less than $20 per day.</p><p>Denmark is highlighted in green. With an average income of $55 per day it is among the richest countries in the world, though there are several countries where average incomes are higher still.</p></div><div class="wp-block-column"><figure class="wp-block-image size-full"><img loading="lazy" width="2921" height="2474" src="https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight.png" alt="Mean income by country denmark highlight" class="wp-image-41652" srcset="https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight.png 2921w, https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight-400x339.png 400w, https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight-649x550.png 649w, https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight-150x127.png 150w, https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight-768x650.png 768w, https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight-1536x1301.png 1536w, https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight-2048x1735.png 2048w" sizes="(max-width: 2921px) 100vw, 2921px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/mean-income-by-country-Denmark-highlight.png"></figure></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-much-would-average-incomes-have-to-increase-to-reach-the-level-of-denmark"><a class="deep-link" href="#how-much-would-average-incomes-have-to-increase-to-reach-the-level-of-denmark"></a>How much would average incomes have to increase to reach the level of Denmark?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>This next chart is based directly on the previous one and shows for every country by how much the mean income would need to increase to reach Denmark&#x2019;s mean income.&#xA0;</p><p>I rotated the orientation of this chart so that now the height of each bar is proportional to the size of that country&#x2019;s population. The population size is relevant because we need to take into account each country&#x2019;s share in world population, and expected future population growth, in order to calculate the minimum necessary global aggregate growth that is required to reduce poverty.</p><p>The chart shows that Ethiopia is among the poorer countries and, as we have seen above, its average income would need to increase 16.7-fold to reach Denmark&#x2019;s. The countries that have a lower average income than Ethiopia need higher economic growth to reach the level of Denmark; the countries that are already richer than Ethiopia require less.</p><p>The very richest countries don&#x2019;t need additional growth to reach Denmark, they are already richer. If they would achieve a reduction of inequality they could reduce the share of their population living on less than $30 per day to the level of Denmark. Those countries I have shown in red and for the calculation of the minimum necessary global growth I assumed that these countries reduce the average income of the people that live there.&#xA0;</p><p>The simple idea of this hypothetical scenario is that every country that is poorer than Denmark increases average incomes to the level of Denmark and every country that is richer decreases the income of the people in those countries. And in addition to this every country in the world reduces its income inequality to the low level of Denmark.</p><p>How much growth would be needed in total?</p><p>You find the calculation in the footnote. The minimum necessary growth to reduce global poverty to the level of poverty in Denmark is 410%.<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a></p><p>An increase by 100% would mean that the size of the economy would double. A 410% increase is therefore a 5.1-fold increase of the global economy.</p><p>Or put differently, a world economy with substantially less poverty is <em>at a minimum</em> 5-times bigger than today&#x2019;s global economy.</p><p>A five-fold increase is a <em>minimum</em> estimate of the economic growth that is necessary to reduce global poverty substantially. In the following box I discuss in which ways a more realistic expectation of what the future might look like would imply larger economic growth.</p></div><div class="wp-block-column"><figure class="wp-block-image size-full"><img loading="lazy" width="2921" height="3087" src="https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark.png" alt="Growth needed to reach denmark" class="wp-image-41653" srcset="https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark.png 2921w, https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark-378x400.png 378w, https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark-520x550.png 520w, https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark-142x150.png 142w, https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark-768x812.png 768w, https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark-1453x1536.png 1453w, https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark-1938x2048.png 1938w" sizes="(max-width: 2921px) 100vw, 2921px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/growth-needed-to-reach-Denmark.png"></figure></div></div><div class="block-wrapper" data-reactroot><div data-variation="full-width" data-default-open="false" class="wp-block-owid-additional-information"><h3 data-track-note="additional-information-toggle" id="in-which-ways-does-a-realistic-scenario-differ-from-the-minimum-scenario"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>In which ways does a realistic scenario differ from the minimum scenario?</h3><div style="height:0;overflow:hidden" aria-hidden="true" class="rah-static rah-static--height-zero"><div style="transition:opacity 250ms ease 0ms;-webkit-transition:opacity 250ms ease 0ms;opacity:0"><div class="content">
+
+
+
+
+
+<div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>To calculate the <em>minimum</em> growth that is necessary one has to rely on a scenario that would allow the maximal reduction of global poverty under minimal growth. This is what I did in the previous section.</p>
+
+
+
+<p>The result of this calculation is that the total size of the global economy would need to be more than 5-times larger than currently to substantially decrease global poverty.</p>
+
+
+
+<p>A minimum growth scenario for poverty reduction of course implies much lower economic growth than any realistic scenario of how the future global economy might look like. It therefore makes sense to consider in which ways a more realistic scenario would imply more economic growth than this minimum scenario.</p>
+
+
+
+<p><strong>In this scenario every country stops economic growth entirely once they reach the average income of Denmark</strong></p>
+
+
+
+<p>This calculation is based on a scenario in which every country stops economic growth once they reach the level of Denmark. The chart just above shows this: After additional economic growth of 30% South Korea would reach the average income of Denmark and in this scenario it would stop exactly there. Russia would grow until incomes are 2.8-fold higher than now and stop then. And the same is assumed for all other countries in this scenario.</p>
+
+
+
+<p>The reason I went with this assumption for this scenario is to calculate the minimum growth needed to substantially reduce global poverty. Of course there is no reason to expect that countries would actually do this, which means that global economic growth would be higher before global poverty is substantially reduced.</p>
+
+
+
+<p><strong>In this scenario every country that is richer than Denmark reduces average incomes</strong></p>
+
+
+
+<p>To calculate the minimum necessary aggregate growth I assumed that the countries that are richer than Denmark would shrink their economies so that people&#x2019;s incomes there would decline.<a id="ref-8" class="ref" href="#note-8"><sup>8</sup></a> Again, this is helpful to see the minimum growth needed, but since there is no reason to expect that countries would actually do this we should expect more economic growth before global poverty is substantially reduced.</p>
+
+
+
+<p><strong>As a consequence there is no global inequality between countries in this scenario</strong></p>
+
+
+
+<p>The consequence of the previous two features of this scenario is that global inequality between countries disappears entirely: every country in the world would have an average income of $55 per day.&#xA0;</p>
+
+
+
+<p>You have to be extremely optimistic about the future of inequality to think this is likely. If you don&#x2019;t think this will happen, then the economic growth that the world will see before any possible substantial reduction of global poverty will be higher.</p>
+
+
+
+<p>In a scenario in which countries do not decrease average incomes of the population and in which average incomes of all countries increase at a rate of 2% per year, the global economy would be 7.2-times larger.<a id="ref-9" class="ref" href="#note-9"><sup>9</sup></a></p>
+
+
+
+<p><strong>In this scenario inequality within countries declines very substantially</strong></p>
+
+
+
+<p>The scenario assumes a massive reduction of inequality within many countries. Denmark is one of the most equal countries in the world today (see <a href="https://ourworldindata.org/grapher/economic-inequality-gini-index?time=2015">this map</a>) so that almost all countries in the world would need to achieve large reductions of within-country inequality to reach a poverty headcount ratio as low as Denmark on an average income of $55.&#xA0;</p>
+
+
+
+<p>In many countries around the world inequality <a href="https://ourworldindata.org/income-inequality-since-1990"><em>did</em> decrease</a> over the past generation and this might give us some confidence that further reductions of inequality are indeed possible. But you need to be extremely optimistic about the future of inequality to believe that all countries will achieve the very low inequality of Denmark. Again, I assumed it here to calculate the <em>minimum</em> growth necessary. If you believe that this scenario is not realistic then the implication is that the necessary economic growth to reduce global poverty will in reality be higher.</p>
+
+
+
+<p>An even more optimistic scenario would be to expect that perfect equality between every single person in the world could be achieved. The richest person in the world would live on $30 per day &#x2013; just above the poverty line &#x2013; and the poorest person too. Even then very substantial economic growth would be needed to end global poverty: the world economy would need to more than double.<a id="ref-10" class="ref" href="#note-10"><sup>10</sup></a></p>
+
+
+
+<p><strong>This scenario is based on Denmark rather than the richer countries where a smaller share of the population live in poverty today</strong></p>
+
+
+
+<p>In this scenario I have based all calculations on Denmark. The country that actually has the lowest share of the population living in poverty is Norway, a country that is substantially richer than Denmark. Calculating the growth required for every country in the world to reach the average income of Norway would therefore yield higher necessary minimum growth.&#xA0;</p>
+
+
+
+<p><strong>The required economic growth in GDP terms will be higher than in household income terms</strong></p>
+
+
+
+<p>None of the discussion and none of the calculations here relied on GDP per capita. The average incomes reported throughout this post are based on what people report in household surveys. GDP per capita is the more commonly used measure of average incomes as it is a more comprehensive measure of people&#x2019;s incomes &#x2013; importantly GDP per capita includes government expenditure (for more background on the differences see footnote 24 of <a href="https://ourworldindata.org/higher-poverty-global-line">this post</a>).&#xA0;</p>
+
+
+
+<p>The differences between these two average income measures matter for the calculation of the necessary minimum growth. The gap between average incomes as determined in household surveys and GDP per capita typically increases with rising income, which means that if we would consider the necessary minimum growth in GDP terms rather than household income terms the required growth would be larger.</p>
+
+
+
+<p><strong>It would not be the end of poverty &#x2013; only a substantial reduction of poverty</strong></p>
+
+
+
+<p>And lastly keep in mind that this is a scenario in which there will still be people in poverty. Poverty is lower in Denmark than in much of the rest of the world, but it is nevertheless a large problem in Denmark. In the scenario here the same would be true for the world. Global poverty would be reduced very substantially, but it will nevertheless be a world in which 14% of the population live on less than $30 per day.</p>
+
+
+
+<p><strong>How much does future population growth matter?</strong></p>
+
+
+
+<p>In the calculations here I relied on the most widely used demographic projection of future population growth, the UN Population Division&#x2019;s mid-variant projections. There are other projections and it makes sense to consider how different demographic scenarios would impact the calculations, in particular because the demographic research literature <a href="https://ourworldindata.org/fertility-rate#what-explains-the-change-in-the-number-of-children-women-have">suggests</a> that increases in incomes would lead to a decline of fertility rates.&#xA0;</p>
+
+
+
+<p>On the other hand it is important to not overstate the possible impact of these changes. The number of children in the world is already <a href="https://ourworldindata.org/peak-child">close to the peak</a> and much of the future population growth is due to &#x2018;<a href="https://ourworldindata.org/population-momentum">population momentum</a>&#x2019;.&#xA0;</p>
+
+
+
+<p>In our entry on <a href="https://ourworldindata.org/future-population-growth">future population growth</a> we discuss several global population projections, those who expect lower population growth expect a world population that is about 18-20% smaller than the UN mid-variant. Accordingly the minimum size of total incomes would therefore need to be about 18-20% lower under a lower population growth scenario.</p>
+
+
+
+<p><strong>My takeaway</strong></p>
+
+
+
+<p>The purpose of this scenario was to calculate the <em>minimum</em> necessary growth. I&#x2019;m cautiously optimistic about the possibility that global income inequality <a href="https://osf.io/preprints/socarxiv/du5g6">declines further</a>, but I&#x2019;m not as optimistic as this minimum scenario envisages and I therefore think that <em>if</em> the world will ever substantially reduce poverty then it would be a future with more aggregate global economic growth than a 5-fold increase.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+</div></div></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="reducing-poverty-is-not-the-only-goal"><a class="deep-link" href="#reducing-poverty-is-not-the-only-goal"></a>Reducing poverty is not the only goal</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Reducing global poverty is not the only important global goal, it will also be crucial to reduce humanity&#x2019;s very large impact on the environment. Yes, it will be hard to achieve both goals at the same time and I believe we should be clear about the difficulty of this challenge: </p><ul><li>In considering this challenge we might come to the conclusion that additional economic growth cannot possibly be achieved while reducing humanity&#x2019;s impact on the environment. In that case we should be honest with ourselves and see that this means to accept widespread global poverty.</li><li>Or you consider this challenge and you come to the opposite conclusion. In this case you decide that you want to see in which ways humanity can reduce its impact on the environment while continuing to make progress against global poverty. Much of our work on Our World in Data is dedicated to this goal &#x2013; we document humanity&#x2019;s impact on the environment and consider possible solutions for how to reduce this harm (some of the texts you might be interested in, in this regard: <a href="https://ourworldindata.org/cheap-renewables-growth">1</a>, <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">2</a>, <a href="https://ourworldindata.org/land-use-diets">3</a>, <a href="https://ourworldindata.org/worlds-energy-problem">4</a>, <a href="https://ourworldindata.org/what-are-drivers-deforestation">5</a>, <a href="https://ourworldindata.org/outdoor-air-pollution">6</a>, <a href="https://ourworldindata.org/renewable-energy">7</a>, <a href="https://ourworldindata.org/water-use-stress">8</a>, <a href="https://ourworldindata.org/safest-sources-of-energy">9</a>, <a href="https://ourworldindata.org/energy-access">10</a>, <a href="https://ourworldindata.org/fossil-fuels">11</a>, <a href="https://ourworldindata.org/environmental-impacts-of-food">12</a>, <a href="https://ourworldindata.org/forests-and-deforestation">13</a> and many more).</li></ul><p>What is not helpful however is to pretend that there are easy ways out. If you consider someone who lives on less than $30 per day to be poor then it is not possible to reduce global poverty substantially without very large aggregate growth.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="is-it-possible-for-poor-countries-to-achieve-this-growth"><a class="deep-link" href="#is-it-possible-for-poor-countries-to-achieve-this-growth"></a>Is it possible for poor countries to achieve this growth?&#xA0;</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Before discussing the possibilities for future growth I also want to stress that the level of economic inequality matters for the reduction of poverty. We saw this in the data above: the average income in the US is higher than in Denmark, yet because these incomes are much less equally distributed there is a higher share of Americans living in poverty.</p><p>But whether or not global poverty can possibly decline that much &#x2013; from the current level of 85% to Denmark&#x2019;s level of 14% &#x2013; overwhelmingly depends on whether the average incomes in those countries that are home to the poorest billions of people in the world will increase or not.</p><p>One reason why you might want to consider that this is possible is the reality of those countries in which the majority left poverty behind in recent decades. As we have seen before, even a country like Denmark was extremely poor until recently and there is no reason to believe that the productivity increases that made economic growth in Denmark possible should not be possible elsewhere.</p><p>Another reason to think that many countries in the world can make progress against poverty in the future is to consider some of the reasons that were holding these countries back in the past. One important reason why a large number of people live in poverty today is that these countries were <a href="https://voxeu.org/article/economic-impact-colonialism">exploited by colonial powers</a> that did not allow those economies to grow and instead impoverished them. The actions of rich countries still harm the prospects of poorer countries in <a href="https://www.cgdev.org/publication/new-estimates-eu-agricultural-support-un-common-agricultural-policy">many</a> <a href="https://www.jstor.org/stable/20034426?seq=1#metadata_info_tab_contents">ways</a>, but the end of colonialism was extremely important for the prospects of billions of people in the world and since the end of colonial rule many former colonies did substantially reduce poverty.&#xA0;</p><p>A third aspect to consider is that countries around the world saw large improvements in <a href="https://ourworldindata.org/health-meta">health</a> and <a href="https://ourworldindata.org/global-education">education</a> in recent years. Health and education do not automatically translate into higher prosperity, but surely make it more likely that a country can leave poverty behind.</p><p>A fourth reason is to see that <a href="https://ourworldindata.org/economic-growth#growth-at-the-technological-frontier-and-catch-up-growth">&#x2019;catch-up growth&#x2019; can be very fast</a>: several countries have achieved annual growth rates of more than 5% in recent decades.&#xA0;</p><p>And a last reason to consider is that up to the pandemic the majority of countries in the world &#x2013; <a href="https://ourworldindata.org/extreme-poverty-projections">but not all</a> &#x2013; <em>did</em> make progress against poverty. Global poverty has declined very substantially in recent decades, <a href="https://ourworldindata.org/no-matter-what-global-poverty-line">no matter</a> what poverty line you want to draw.&#xA0;</p><p>Increasing productivity substantially and reducing humanity&#x2019;s impact on the environment are certainly not easy, but these are some of the points to consider when thinking about the question of whether it might be possible to make progress towards these two goals.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="conclusion"><a class="deep-link" href="#conclusion"></a>Conclusion&#xA0;</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>What this post has shown is that if you consider a person who lives on less than $30 per day to be poor, then the extent of poverty in our world today requires very large global aggregate growth to substantially reduce global poverty.</p><p>Personally I certainly believe that a person who lives on less than $30 per day is poor and I believe it is unjust that in most countries in the world the majority lives in such poverty. This is why I believe that the economies that are home to the poorest billions of people need to grow if we want global poverty to decline substantially.</p><p>If you are opposed to global economic growth for one reason or another, then I hope this post is helpful in considering the implications of this opposition.</p><hr class="wp-block-separator" id="block-3b267837-eb86-4261-8c36-10661a418d16"><p id="block-e516cb16-4d90-475e-a618-428e83b2b833"><em>Continue reading Our World in Data:</em> My colleague Hannah Ritchie has just published a series of posts on the drivers of deforestation and how to bring humanity&#x2019;s long history of deforestation to an end. You find her work <a href="https://ourworldindata.org/blog">here</a>.</p><p id="block-c5b72515-60b3-4670-b276-489e0ca2f023"><strong>Acknowledgement:</strong> I would like to thank Joe Hasell for his thoughtful comments on draft versions of this article.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>In this article – and in global income and expenditure data generally – the statisticians who produce these figures are careful to make these numbers as comparable as possible. </p>
+
+
+
+<p>First, many poorer people rely on subsistence farming and do not have a monetary income. To take this into account and make a fair comparison of their living standards, the statisticians that produce these figures estimate the monetary value of their home production and add it to their income/expenditure.<br>Second, price changes over time (inflation) and price differences across countries are both taken into account: all measures are adjusted for differences in purchasing power. This is possible by relying on the work of the International Comparison Project, which monitors the prices of goods and services around the world.</p>
+
+
+
+<p>To this end incomes and expenditures are expressed in so-called international dollars. This is a hypothetical currency that results from the price adjustments across time and place. An international dollar is defined as having the same purchasing power as one US-$ in the US. This means no matter where in the world a person is living on int.-$30, they can buy the goods and services that cost $30 in the US. None of these adjustments are ever going to be perfect, but in a world where price differences are large it is important to attempt to account for these differences as well as possible, and this is what these adjustments do.<br><br>Angus Deaton and Alan Heston (2010) discuss the methods behind such price adjustments and many of the difficulties and limitations involved.<br>Deaton, A., and Heston, A. 2010. “Understanding PPPs and PPP-Based National Accounts.” American Economic Journal: Macroeconomics 2 (4): 1–35.<br>Throughout this text I’m always adjusting incomes for price changes over time and price differences between countries in this way. All dollar values discussed here are presented in int.-$; the UN does the same for the $1.90 poverty line. Sometimes I leave out ‘international’ as it is awkward to repeat it all the time; but every time I mention any $ amount in this text I’m referring to international-$ and not US-$. [Keep in mind that in the special case of the US the US-$ equals the international-$.]</p></li><li id="note-2"><p>You find all data for countries around the world at <a href="http://iresearch.worldbank.org/PovcalNet/povDuplicateWB.aspx">PovcalNet</a>.</p></li><li id="note-3"><p>The <a href="http://iresearch.worldbank.org/PovcalNet/povOnDemand.aspx">PovcalNet database</a> that I rely on here indicates for each household survey that they rely on whether it is a consumption or income survey. In the sources it is indicated by the letters c or i respectively. For very rich people that are able to save much of their income, the two concepts can differ substantially, for most people in the world they are very close.</p></li><li id="note-4"><p>For detail <a href="http://iresearch.worldbank.org/PovcalNet/methodology.aspx">see PovcalNet here</a> –&nbsp;as well as the references there.<br>The importance of capturing people’s living standards in this way is easy to see when you consider what it would mean to only capture the monetary income of people around the world: the resulting minimum growth that would be necessary to reduce global poverty would then be much larger, because it would not accurately capture the living standards in poorer countries.</p></li><li id="note-5"><p>In the interest of keeping the text readable I rounded the numbers. The precise average income reported by PovcalNet is $55.48 in Denmark and $3.33 in Ethiopia so that the ratio is 55.48/3.33=16.66. In the text But the ratio between the two incomes (which expresses the necessary average income growth) remains the same: 5.50/3.30=16.67<br>If you want to think of this in terms of a growth rate (rather than a multiplier) then the necessary growth for Ethiopia is (55.48-3.33)/3.33=1566%.</p></li><li id="note-6"><p>The share living on more than $30 per day would actually very slightly increase because the small share who is currently living on more than $30 per day are the very richest in Ethiopia and their income would decline if inequality would decrease.</p></li><li id="note-7"><p>This calculation has to take three metrics into account: the average income in each country (as plotted above from PovcalNet), the average income of Denmark ($55.48) as a target, and the expected population growth in each country (I take the latest UN projection until 2100 for each country).</p>
+
+
+
+<p>The daily total income in 2100 in which every country reaches the average income of Denmark today is simply $55.48 multiplied by the expected number of people that will be alive in 2100.</p>
+
+
+
+<p>The daily total income in 2017 is each country’s mean income multiplied by the number of people in each country.</p>
+
+
+
+<p>The ratio between these two total income figures is 5.1. Expressed in terms of growth, the minimum total income in 2100 that is necessary to bring global poverty down to the level of Denmark today is 410.3% higher than the total income in 2017.<br>Since PovcalNet does not include data for several smaller countries (Aruba, Curacao, Cuba, Brunei and several others) these countries are not taken into account in 2017 or 2100. Since most of these countries are poorer than Denmark this lowers the estimate for total necessary growth.</p></li><li id="note-8"><p>You could also think of this aspect of the scenario as a redistribution of incomes from richer countries to poorer countries.</p></li><li id="note-9"><p>In this scenario all countries in the world keep increasing average incomes by 2% every year and those countries which would not reach Denmark’s average income by 2100 on this growth path are assumed to catch up. In this scenario the total size of incomes would increase by 622% before by 2100.</p></li><li id="note-10"><p>Calculation: In a scenario in which perfect equality between every person on the planet would be achieved the global economy would need to be 2.7-fold larger than today.</p>
+
+
+
+<p>Again we need to take into account population growth. As the world population is expected to increase by 44% from 2017 (latest income data) before <a href="https://ourworldindata.org/future-population-growth">global population growth comes to an end at the end of this century</a> the economy needs to grow in proportion to keep per capita incomes at the required level.</p>
+
+
+
+<p>There are several ways to arrive at this result. One simple way to calculate the necessary growth is to consider that an income of int.-$30 for a global population that is 44% larger is equivalent to an increase from the current level to int.-$42.3 ($30*1.44). The required growth from the current mean income is therefore ((30*1.44-16)/16)=170%.</p></li></ol><h3 id="licence">Reuse our work freely</h3><p>All visualizations, data, and code produced by Our World in Data are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.</p><p>The data produced by third parties and made available by Our World in Data is subject to the license terms from the original third-party authors. We will always indicate the original source of the data in our documentation, so you should always check the license of any such third-party data before use and redistribution.</p><p>All of <a href="/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=41648&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookiePreferencesManager();
+                runCovid();
+                runFootnotes();
+                if (!document.querySelector(".ChartPage")) {
+                    GrapherPageUtils.embedAll();
+                    runGlobalEntityControl(GrapherPageUtils.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[],"pageTitle":"How much economic growth is necessary to reduce global poverty substantially?"})
+                        runRelatedCharts(undefined)
+                        </script></body></html>
