@@ -5298,7 +5298,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-exemplar-germany</loc>
-        <lastmod>2021-03-17</lastmod>
+        <lastmod>2021-03-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-exemplar-vietnam</loc>
@@ -5751,6 +5751,10 @@
     <url>
         <loc>https://ourworldindata.org/energy-overview</loc>
         <lastmod>2021-03-19</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/covid-exemplar-germany-2020</loc>
+        <lastmod>2021-03-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-exemplar-south-korea-2020</loc>
