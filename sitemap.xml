@@ -11657,7 +11657,7 @@
         <lastmod>2019-12-13</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/gdp-per-capita-from-the-world-bank-in-constant-2011-international-vs-gdp-per-capita-from-the-maddison-project-in-2011us-multiple-benchmarks</loc>
+        <loc>https://ourworldindata.org/grapher/gdp-per-capita-from-the-world-bank-and-maddison-project</loc>
         <lastmod>2021-03-26</lastmod>
     </url>
     <url>
@@ -12027,10 +12027,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/maddison-data-gdp-per-capita-in-2011us-single-benchmark</loc>
         <lastmod>2021-03-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/gdp-per-capita-from-the-world-bank-in-constant-2011-international-vs-gdp-per-capita-from-the-maddison-project-in-2011us-single-benchmarks</loc>
-        <lastmod>2018-12-24</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/exports-by-destination</loc>
