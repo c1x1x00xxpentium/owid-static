@@ -1758,7 +1758,7 @@ const grapherConfigs =
   },
   {
     "id": 4322,
-    "version": 8,
+    "version": 9,
     "slug": "share-electricity-nuclear",
     "title": "Share of electricity production from nuclear",
     "hideTitleAnnotation": true,
@@ -1773,7 +1773,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -1814,14 +1815,23 @@ const grapherConfigs =
         "display": {
           "name": "Nuclear",
           "unit": "%",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143094
       }
+    ],
+    "selectedEntityNames": [
+      "France",
+      "Sweden",
+      "World",
+      "Germany",
+      "Japan"
     ],
     "selectedEntityIds": [
       3,
@@ -1833,7 +1843,7 @@ const grapherConfigs =
   },
   {
     "id": 4323,
-    "version": 8,
+    "version": 9,
     "slug": "share-electricity-wind",
     "title": "Share of electricity production from wind",
     "hideTitleAnnotation": true,
@@ -1848,7 +1858,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
       "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
@@ -1877,14 +1887,24 @@ const grapherConfigs =
         "display": {
           "name": "Wind",
           "unit": "%",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143096
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "United Kingdom",
+      "United States",
+      "India",
+      "Austria",
+      "Denmark"
     ],
     "selectedEntityIds": [
       355,
@@ -1897,7 +1917,7 @@ const grapherConfigs =
   },
   {
     "id": 4324,
-    "version": 8,
+    "version": 9,
     "slug": "share-electricity-solar",
     "title": "Share of electricity production from solar",
     "hideTitleAnnotation": true,
@@ -1912,7 +1932,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -1932,14 +1953,24 @@ const grapherConfigs =
         "display": {
           "name": "Solar",
           "unit": "%",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143095
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "United Kingdom",
+      "India",
+      "Spain",
+      "Italy",
+      "Chile"
     ],
     "selectedEntityIds": [
       355,
@@ -1952,7 +1983,7 @@ const grapherConfigs =
   },
   {
     "id": 4325,
-    "version": 7,
+    "version": 8,
     "slug": "share-electricity-fossil-fuels",
     "title": "Share of electricity production from fossil fuels",
     "hideTitleAnnotation": true,
@@ -1967,7 +1998,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -1987,14 +2019,25 @@ const grapherConfigs =
         "display": {
           "name": "Fossil fuels",
           "unit": "%",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143100
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "China",
+      "Australia",
+      "United States",
+      "South Africa",
+      "Sweden",
+      "France"
     ],
     "selectedEntityIds": [
       355,
@@ -2008,7 +2051,7 @@ const grapherConfigs =
   },
   {
     "id": 4326,
-    "version": 7,
+    "version": 8,
     "slug": "share-electricity-renewables",
     "title": "Share of electricity production from renewables",
     "subtitle": "Renewables includes electricity production from hydropower, solar, wind, biomass. and waste, geothermal, wave and tidal sources.",
@@ -2024,7 +2067,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -2044,14 +2088,25 @@ const grapherConfigs =
         "display": {
           "name": "Renewables",
           "unit": "%",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143099
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "Sweden",
+      "France",
+      "Brazil",
+      "China",
+      "India",
+      "United States"
     ],
     "selectedEntityIds": [
       355,
@@ -3853,7 +3908,7 @@ const grapherConfigs =
   },
   {
     "id": 4435,
-    "version": 6,
+    "version": 7,
     "slug": "share-electricity-oil",
     "title": "Share of electricity production from oil",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -3869,7 +3924,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "Oranges",
         "binningStrategy": "manual",
@@ -3894,14 +3950,25 @@ const grapherConfigs =
         "display": {
           "name": "Oil",
           "unit": "%",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143092
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "Sweden",
+      "United States",
+      "United Kingdom",
+      "China",
+      "India",
+      "Brazil"
     ],
     "selectedEntityIds": [
       355,
@@ -4272,7 +4339,7 @@ const grapherConfigs =
   },
   {
     "id": 4443,
-    "version": 6,
+    "version": 7,
     "slug": "electricity-fossil-fuels",
     "title": "Electricity generation from fossil fuels",
     "subtitle": "Electricity generation from coal, oil and gas sources combined.",
@@ -4289,7 +4356,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -4313,15 +4381,25 @@ const grapherConfigs =
     "dimensions": [
       {
         "display": {
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143079
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "Spain",
+      "Japan",
+      "Germany"
     ],
     "selectedEntityIds": [
       13,
@@ -4334,7 +4412,7 @@ const grapherConfigs =
   },
   {
     "id": 4444,
-    "version": 6,
+    "version": 7,
     "slug": "electricity-coal",
     "title": "Electricity generation from coal",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -4351,7 +4429,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "Oranges",
         "binningStrategy": "manual",
@@ -4373,15 +4452,25 @@ const grapherConfigs =
     "dimensions": [
       {
         "display": {
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143077
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "India",
+      "South Africa",
+      "Japan",
+      "Germany",
+      "Sweden"
     ],
     "selectedEntityIds": [
       13,
@@ -4394,7 +4483,7 @@ const grapherConfigs =
   },
   {
     "id": 4445,
-    "version": 6,
+    "version": 7,
     "slug": "electricity-oil",
     "title": "Electricity generation from oil",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -4410,7 +4499,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "Reds",
         "binningStrategy": "manual",
@@ -4429,14 +4519,24 @@ const grapherConfigs =
     "dimensions": [
       {
         "display": {
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143084
       }
+    ],
+    "selectedEntityNames": [
+      "France",
+      "Australia",
+      "Brazil",
+      "Sweden",
+      "South Africa",
+      "South Korea"
     ],
     "selectedEntityIds": [
       3,
@@ -4449,7 +4549,7 @@ const grapherConfigs =
   },
   {
     "id": 4446,
-    "version": 6,
+    "version": 7,
     "slug": "electricity-gas",
     "title": "Electricity generation from gas",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -4465,7 +4565,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "Purples",
         "binningStrategy": "manual",
@@ -4485,15 +4586,25 @@ const grapherConfigs =
     "dimensions": [
       {
         "display": {
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143080
       }
+    ],
+    "selectedEntityNames": [
+      "Brazil",
+      "United Kingdom",
+      "Germany",
+      "Spain",
+      "South Korea",
+      "Belgium"
     ],
     "selectedEntityIds": [
       37,
@@ -4506,7 +4617,7 @@ const grapherConfigs =
   },
   {
     "id": 4447,
-    "version": 6,
+    "version": 7,
     "slug": "low-carbon-electricity",
     "title": "Electricity generation from low-carbon sources",
     "subtitle": "Low-carbon electricity is the sum of electricity generation from nuclear and renewable sources. Renewable sources include hydropower, solar, wind, geothermal, bioenergy, wave and tidal.",
@@ -4523,7 +4634,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "BuGn",
         "binningStrategy": "manual",
@@ -4549,15 +4661,26 @@ const grapherConfigs =
           "name": "Low-carbon electricity",
           "unit": "terawatt-hours",
           "shortUnit": "TWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143082
       }
+    ],
+    "selectedEntityNames": [
+      "China",
+      "India",
+      "Spain",
+      "United States",
+      "Canada",
+      "France",
+      "Sweden"
     ],
     "selectedEntityIds": [
       171,
@@ -4571,7 +4694,7 @@ const grapherConfigs =
   },
   {
     "id": 4448,
-    "version": 6,
+    "version": 7,
     "slug": "electricity-renewables",
     "title": "Electricity generation from renewables",
     "subtitle": "Renewable sources include hydropower, solar, wind, geothermal, bioenergy, wave and tidal.",
@@ -4588,7 +4711,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -4608,15 +4732,25 @@ const grapherConfigs =
     "dimensions": [
       {
         "display": {
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143086
       }
+    ],
+    "selectedEntityNames": [
+      "Spain",
+      "France",
+      "India",
+      "Brazil",
+      "United Kingdom",
+      "Denmark"
     ],
     "selectedEntityIds": [
       9,
@@ -4685,7 +4819,7 @@ const grapherConfigs =
   },
   {
     "id": 4451,
-    "version": 5,
+    "version": 6,
     "slug": "coal-electricity-per-capita",
     "title": "Per capita generation of coal electricity",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -4699,6 +4833,7 @@ const grapherConfigs =
     },
     "map": {
       "time": "latest",
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -4721,6 +4856,7 @@ const grapherConfigs =
           "name": "Coal electricity per capita",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
@@ -4732,6 +4868,13 @@ const grapherConfigs =
         "variableId": 143253
       }
     ],
+    "selectedEntityNames": [
+      "India",
+      "China",
+      "United States",
+      "United Kingdom",
+      "Japan"
+    ],
     "selectedEntityIds": [
       137,
       171,
@@ -4742,7 +4885,7 @@ const grapherConfigs =
   },
   {
     "id": 4452,
-    "version": 5,
+    "version": 6,
     "slug": "oil-electricity-per-capita",
     "title": "Per capita electricity generation from oil",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -4756,6 +4899,7 @@ const grapherConfigs =
     },
     "map": {
       "time": "latest",
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
@@ -4778,15 +4922,24 @@ const grapherConfigs =
           "name": "Oil electricity per capita",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143254
       }
+    ],
+    "selectedEntityNames": [
+      "Japan",
+      "France",
+      "Spain",
+      "Brazil",
+      "United States"
     ],
     "selectedEntityIds": [
       14,
@@ -4798,7 +4951,7 @@ const grapherConfigs =
   },
   {
     "id": 4453,
-    "version": 5,
+    "version": 6,
     "slug": "fossil-electricity-per-capita",
     "title": "Per capita electricity generation from fossil fuels",
     "subtitle": "Electricity from fossil fuels is the sum of electricity generation from coal, oil and gas.",
@@ -4813,6 +4966,7 @@ const grapherConfigs =
     },
     "map": {
       "time": "latest",
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "Oranges",
         "binningStrategy": "manual",
@@ -4836,15 +4990,25 @@ const grapherConfigs =
           "name": "Fossil fuel electricity per capita",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143256
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "United Kingdom",
+      "India",
+      "China",
+      "South Africa",
+      "Australia"
     ],
     "selectedEntityIds": [
       13,
@@ -4857,7 +5021,7 @@ const grapherConfigs =
   },
   {
     "id": 4454,
-    "version": 5,
+    "version": 6,
     "slug": "gas-electricity-per-capita",
     "title": "Per capita electricity generation from gas",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -4870,7 +5034,8 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
@@ -4893,15 +5058,25 @@ const grapherConfigs =
           "name": "Gas electricity per capita",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143255
       }
+    ],
+    "selectedEntityNames": [
+      "Austria",
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "Brazil",
+      "Norway"
     ],
     "selectedEntityIds": [
       24,
@@ -4914,7 +5089,7 @@ const grapherConfigs =
   },
   {
     "id": 4455,
-    "version": 5,
+    "version": 6,
     "slug": "renewable-electricity-per-capita",
     "title": "Per capita electricity generation from renewables",
     "subtitle": "Renewable electricity is the sum of electricity from hydropower, solar, wind, geothermal, biomass, wave and tidal sources.",
@@ -4929,6 +5104,7 @@ const grapherConfigs =
     },
     "map": {
       "time": "latest",
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlGn",
         "binningStrategy": "manual",
@@ -4952,15 +5128,25 @@ const grapherConfigs =
           "name": "Renewble electricity per capita",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143257
       }
+    ],
+    "selectedEntityNames": [
+      "Spain",
+      "India",
+      "China",
+      "United States",
+      "South Korea",
+      "Vietnam"
     ],
     "selectedEntityIds": [
       9,
@@ -4973,7 +5159,7 @@ const grapherConfigs =
   },
   {
     "id": 4456,
-    "version": 6,
+    "version": 7,
     "slug": "low-carbon-elec-per-capita",
     "title": "Low-carbon electricity generation per capita",
     "subtitle": "Low-carbon electricity is the sum of electricity generation from nuclear and renewable sources. Renewable sources include hydropower, solar, wind, geothermal, biomass, wave and tidal.",
@@ -4987,7 +5173,8 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "binningStrategy": "manual",
         "binningStrategyBinCount": 6,
@@ -5014,15 +5201,25 @@ const grapherConfigs =
           "name": "Low-carbon electricity per capita",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143258
       }
+    ],
+    "selectedEntityNames": [
+      "China",
+      "Japan",
+      "Germany",
+      "Spain",
+      "India",
+      "World"
     ],
     "selectedEntityIds": [
       171,
@@ -5035,7 +5232,7 @@ const grapherConfigs =
   },
   {
     "id": 4457,
-    "version": 6,
+    "version": 7,
     "slug": "nuclear-electricity-per-capita",
     "title": "Per capita electricity generation from nuclear",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
@@ -5047,7 +5244,8 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "manual",
@@ -5071,15 +5269,25 @@ const grapherConfigs =
           "name": "Nuclear electricity per capita",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143259
       }
+    ],
+    "selectedEntityNames": [
+      "France",
+      "Germany",
+      "Japan",
+      "Sweden",
+      "United States",
+      "South Korea"
     ],
     "selectedEntityIds": [
       3,
