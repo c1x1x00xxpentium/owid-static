@@ -101,7 +101,7 @@ const grapherConfigs =
   },
   {
     "id": 737,
-    "version": 10,
+    "version": 11,
     "slug": "per-capita-electricity-consumption",
     "title": "Per capita electricity consumption",
     "subtitle": "Average annual electricity consumption per capita, measured in kilowatt-hours (kWh) per year.",
@@ -117,8 +117,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
-      "timeTolerance": 1,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "colorSchemeInvert": false,
@@ -159,15 +159,27 @@ const grapherConfigs =
           "name": "Per capita electricity use",
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
+          "includeInTable": true,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143089
       }
+    ],
+    "selectedEntityNames": [
+      "United Kingdom",
+      "United States",
+      "India",
+      "China",
+      "Brazil",
+      "Australia",
+      "France",
+      "South Africa"
     ],
     "selectedEntityIds": [
       1,
@@ -431,7 +443,7 @@ const grapherConfigs =
   },
   {
     "id": 1403,
-    "version": 8,
+    "version": 9,
     "slug": "solar-energy-consumption",
     "title": "Solar power generation",
     "subtitle": "Electricity generation from solar, measured in terawatt-hours (TWh) per year.",
@@ -450,7 +462,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -479,14 +492,25 @@ const grapherConfigs =
     "dimensions": [
       {
         "display": {
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143087
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "China",
+      "Australia",
+      "United States",
+      "South Africa",
+      "Spain",
+      "World"
     ],
     "selectedEntityIds": [
       137,
@@ -500,7 +524,7 @@ const grapherConfigs =
   },
   {
     "id": 1410,
-    "version": 8,
+    "version": 9,
     "slug": "wind-generation",
     "title": "Wind power generation",
     "subtitle": "Annual electricity generation from wind is measured in terawatt-hours (TWh) per year. This includes both onshore and offshore wind sources.",
@@ -517,7 +541,8 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "PuBu",
         "binningStrategy": "manual",
@@ -541,14 +566,23 @@ const grapherConfigs =
     "dimensions": [
       {
         "display": {
+          "tolerance": 2,
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
         "variableId": 143088
       }
+    ],
+    "selectedEntityNames": [
+      "United Kingdom",
+      "India",
+      "Australia",
+      "New Zealand",
+      "Denmark"
     ],
     "selectedEntityIds": [
       1,
