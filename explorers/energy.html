@@ -1260,7 +1260,7 @@ const grapherConfigs =
   },
   {
     "id": 4297,
-    "version": 9,
+    "version": 10,
     "slug": "solar-share-energy",
     "title": "Share of primary energy from solar",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1281,13 +1281,13 @@ const grapherConfigs =
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
         "customNumericValues": [
+          0.01,
+          0.03,
           0.1,
-          0.2,
-          0.4,
-          0.6,
-          0.8,
+          0.3,
           1,
-          1.2
+          3,
+          10
         ],
         "equalSizeBins": true
       },
@@ -1304,6 +1304,11 @@ const grapherConfigs =
         "property": "y",
         "variableId": 143022
       }
+    ],
+    "selectedEntityNames": [
+      "North America",
+      "Slovenia",
+      "Turkey"
     ],
     "selectedEntityIds": [
       294,
