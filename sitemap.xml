@@ -5777,6 +5777,14 @@
         <lastmod>2021-03-22</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/biodiversity</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/mammals</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-261</loc>
         <lastmod>2021-03-23</lastmod>
     </url>
@@ -5809,6 +5817,14 @@
         <lastmod>2021-04-03</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/living-planet-index</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/extinctions</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-269</loc>
         <lastmod>2021-04-05</lastmod>
     </url>
@@ -5817,16 +5833,40 @@
         <lastmod>2021-03-27</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/poaching-and-wildlife-trade</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-271</loc>
         <lastmod>2021-04-03</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/fish</loc>
+        <lastmod>2021-04-16</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-272</loc>
         <lastmod>2021-03-25</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/birds</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/protected-areas-and-conservation</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/biodiversity-and-wildlife</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-273</loc>
         <lastmod>2021-04-05</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/threats-to-wildlife</loc>
+        <lastmod>2021-04-16</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-274</loc>
@@ -5837,12 +5877,16 @@
         <lastmod>2021-04-01</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/habitat-loss</loc>
+        <lastmod>2021-04-16</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-276</loc>
         <lastmod>2021-03-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-277</loc>
-        <lastmod>2021-04-05</lastmod>
+        <lastmod>2021-04-16</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/suicide-rates-by-country</loc>
