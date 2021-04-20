@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-03-20T15:02:00.000Z</updated>
+<updated>2021-04-20T11:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Wild mammals have declined by 85% since the rise of humans, but there is a possible future where they flourish]]></title>
+            <id>https://ourworldindata.org/wild-mammal-decline</id>
+            <link rel="alternate" href="https://ourworldindata.org/wild-mammal-decline"/>
+            <published>2021-04-20T11:00:00.000Z</published>
+            <updated>2021-04-20T11:04:14.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Wild mammal biomass has declined by 80% since the rise of humans. Our history has been a zero-sum game but the future doesn’t have to be.<br><br><a href="https://ourworldindata.org/wild-mammal-decline" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/04/Wild-mammal-thumbnail-768x402.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Emerging COVID-19 success story: Germany’s push to maintain progress]]></title>
             <id>https://ourworldindata.org/covid-exemplar-germany</id>
@@ -86,14 +95,5 @@
             <updated>2021-03-01T11:41:21.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Rich countries import foods produced on deforested land in the tropics. How much deforestation do they import?<br><br><a href="https://ourworldindata.org/exporting-deforestation" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/02/net-deforestation-in-trade-768x378.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Cutting down forests: what are the drivers of deforestation?]]></title>
-            <id>https://ourworldindata.org/what-are-drivers-deforestation</id>
-            <link rel="alternate" href="https://ourworldindata.org/what-are-drivers-deforestation"/>
-            <published>2021-02-23T12:00:00.000Z</published>
-            <updated>2021-02-23T12:16:14.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Three-quarters of deforestation is driven by agriculture. Most comes from the production of beef, palm oil, soy and logging industries.<br><br><a href="https://ourworldindata.org/what-are-drivers-deforestation" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/02/deforestation-drivers-thumbnail-01-768x402.png"/></a>]]></summary>
             </entry>
 </feed>
