@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-04-20T11:00:00.000Z</updated>
+<updated>2021-04-21T07:54:20.000Z</updated>
+<entry>
+            <title><![CDATA[We just published our new collection of work on Biodiversity]]></title>
+            <id>https://ourworldindata.org/biodiversity-launch</id>
+            <link rel="alternate" href="https://ourworldindata.org/biodiversity-launch"/>
+            <published>2021-04-21T07:54:20.000Z</published>
+            <updated>2021-04-21T07:54:43.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Explore our new collection of work on the topic of biodiversity and wildlife.<br><br><a href="https://ourworldindata.org/biodiversity-launch" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/03/Biodiversity-thumbnail-768x404.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Wild mammals have declined by 85% since the rise of humans, but there is a possible future where they flourish]]></title>
             <id>https://ourworldindata.org/wild-mammal-decline</id>
@@ -86,14 +95,5 @@
             <updated>2021-03-04T12:52:07.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[If everyone shifted to a plant-based diet we would reduce global land use for agriculture by 75%. This large reduction of agricultural land use would be possible thanks to a reduction in land used for grazing and a smaller need for land to grow crops.<br><br><a href="https://ourworldindata.org/land-use-diets" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/03/land-use-thumbnail-768x428.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Do rich countries import deforestation from overseas?]]></title>
-            <id>https://ourworldindata.org/exporting-deforestation</id>
-            <link rel="alternate" href="https://ourworldindata.org/exporting-deforestation"/>
-            <published>2021-03-01T11:30:00.000Z</published>
-            <updated>2021-03-01T11:41:21.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Rich countries import foods produced on deforested land in the tropics. How much deforestation do they import?<br><br><a href="https://ourworldindata.org/exporting-deforestation" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/02/net-deforestation-in-trade-768x378.png"/></a>]]></summary>
             </entry>
 </feed>
