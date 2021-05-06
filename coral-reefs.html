@@ -1,0 +1,1593 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Coral Reefs - Our World in Data</title><meta name="description" content="Explore the distribution of coral reefs across the world and how they are changing from human pressures."/><link rel="canonical" href="https://ourworldindata.org/coral-reefs"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/coral-reefs"/><meta property="og:title" content="Coral Reefs"/><meta property="og:description" content="Explore the distribution of coral reefs across the world and how they are changing from human pressures."/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2021/05/coral-reefs-thumbnail-768x404.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Coral Reefs"/><meta name="twitter:description" content="Explore the distribution of coral reefs across the world and how they are changing from human pressures."/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2021/05/coral-reefs-thumbnail-768x404.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page with-sidebar large-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Coral Reefs</h1></div><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div></header></div><div class="content-wrapper"><div><aside class="entry-sidebar"><div class="sticky-sentinel"></div><nav class="entry-toc"><ul><li><a href="#">Coral Reefs</a></li><li class="section"><a href="#summary">Summary</a></li><li class="section"><a href="#number-of-coral-species">Number of coral species</a></li><li class="subsection"><a href="#how-many-coral-species-are-there">How many coral species are there?</a></li><li class="subsection"><a href="#coral-reefs-across-the-world">Coral reefs across the world</a></li><li class="section"><a href="#corals-threatened-with-extinction-today">Corals threatened with extinction today</a></li><li class="subsection"><a href="#how-many-coral-species-are-threatened-with-extinction">How many coral species are threatened with extinction?</a></li><li class="section"><a href="#threats-to-coral-reefs">Threats to coral reefs</a></li><li class="subsection"><a href="#what-threats-to-corals-face">What threats to corals face?</a></li><li class="subsection"><a href="#coral-reefs-have-always-encountered-threats-humans-just-increasing-their-intensity-and-frequency">Coral reefs have always encountered threats; humans just increasing their intensity and frequency</a></li><li class="subsection"><a href="#timing-and-extent-of-coral-degradation-varies-from-region-to-region">Timing and extent of coral degradation varies from region to region</a></li><li class="section"><a href="#coral-bleaching">Coral bleaching</a></li><li class="subsection"><a href="#coral-bleaching-events-are-becoming-more-common-and-severe">Coral bleaching events are becoming more common and severe</a></li><li class="subsection"><a href="#do-coral-reefs-die-when-they-experience-coral-bleaching">Do coral reefs die when they experience coral bleaching?</a></li><li class="subsection"><a href="#how-do-bleaching-events-vary-across-the-world-s-coral-reefs">How do bleaching events vary across the world’s coral reefs?</a></li><li class="subsection"><a href="#can-coral-reefs-adapt-to-a-warming-ocean">Can coral reefs adapt to a warming ocean?</a></li><li class="section"><a href="#ocean-acidification">Ocean acidification</a></li><li class="subsection"><a href="#what-impact-will-ocean-acidification-have-on-coral-reefs">What impact will ocean acidification have on coral reefs?</a></li><li class="section"><a href="#to-understand-the-impact-of-climate-change-and-ocean-acidification-on-coral-reefs-we-need-more-experiments-at-lower-levels-of-warming-and-co2-concentrations">To understand the impact of climate change and ocean acidification on coral reefs we need more experiments at lower levels of warming and CO2 concentrations</a></li><li class="section"><a href="#explore-more-of-work-on-biodiversity">Explore more of work on Biodiversity</a></li><li class="section"><a href="#endnotes">Endnotes</a></li></ul></nav><div class="toggle-toc"><button data-track-note="page-toggle-toc" aria-label="Open table of contents"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-alt" class="svg-inline--fa fa-list-alt fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z"></path></svg></button></div></aside></div><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><div class="wp-block-owid-summary">
+		<h2 id="summary"><a class="deep-link" href="#summary"></a>Summary</h2>
+		
+
+<ul><li>More than 2,000 species of coral have been identified and described.</li><li>Most coral reefs are found in the tropics and subtropics.</li><li>More than 200 coral species are listed as threatened with extinction on the IUCN Red List. Although recent research suggests this figure could be an overestimate.</li><li>Corals face multiple threats, including mass bleaching, overfishing, pollution of local waters, and ocean acidification.</li><li>Mass bleaching events are becoming more common and severe.</li><li>The time between bleaching events is getting shorter &#x2013; often too short for corals to recover from</li><li>Large bleaching events used to be reserved for warm El Ni&#xF1;o years. Now they even occur in La Ni&#xF1;a years, the &#x2018;cold&#x2019; phase of the ENSO cycle.</li><li>Some corals die immediately when exposed to warming. Others bleach, then either recover or die.</li><li>Some corals are much more resilient to warming than others.</li><li>It&#x2019;s unclear how corals will respond to ocean acidification over the next century.</li><li>More experiments of coral responses at lower levels of warming and acidification are needed.</li></ul>
+
+
+	</div></div><div class="wp-block-column"></div></div></section>
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="number-of-coral-species"><a class="deep-link" href="#number-of-coral-species"></a>Number of coral species</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#how-many-coral-species-are-there"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>How many coral species are there?</span></a></li><li><a href="#coral-reefs-across-the-world"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Coral reefs across the world</span></a></li></ul></div></div><h3 id="how-many-coral-species-are-there"><a class="deep-link" href="#how-many-coral-species-are-there"></a>How many coral species are there?</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Our oceans are home to many types of coral &#x2013; some shallow, warm water species; others cold, deep-water species. But just how many species of coral are there?</p>
+
+
+
+<p>As with any other group of wildlife, it&#x2019;s hard to say with complete certainty: this is because there is always the possibility that there are coral species that we&#x2019;re yet to discover. New animal species are unearthed every year.</p>
+
+
+
+<p>What we can say is how many species have been identified, named and described. These are listed by the <a href="https://www.iucnredlist.org/">IUCN Red List</a> and updated every year.</p>
+
+
+
+<p>In the chart we see the number of described species across a range of taxonomic groups. Due to the issue of finding and counting every species, these are likely to be underestimates.</p>
+
+
+
+<p>We see that there are more than 2,000 described coral species in the world.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/number-of-described-species" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/number-of-described-species" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/number-of-described-species_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Number of described species v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="coral-reefs-across-the-world"><a class="deep-link" href="#coral-reefs-across-the-world"></a>Coral reefs across the world</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Coral reefs are some of the most beautiful and diverse lifeforms on the planet. Yet they&#x2019;re also some of the most misunderstood. Are corals animals, plants, or something else? What happens when a coral dies; can it come back to life?</p><p>The fact that they live in our oceans means that, like much of the planet&#x2019;s marine life, only a tiny fraction of people will ever see one up close. Yet they provide immense value to communities across the world. More than 450 million people across more than 100 countries live close to coral reefs and rely on them for their livelihoods.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> They generate an estimated $375 billion per year through the goods and services they provide.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a></p><p>They&#x2019;re so valuable because they form the bedrock of diverse ecosystems built on top of them. You will only find corals in small areas of the world&#x2019;s oceans &#x2013; they cover only 0.5% of the ocean floor. Yet they support almost 30% of the world&#x2019;s marine fish species.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a> Reefs in the Indo-Pacific region alone (spanning Australia and Southeast Asia) are home to more than half a trillion corals.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a> That&#x2019;s more than the number of trees in the Amazon rainforest.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-are-coral-reefs"><a class="deep-link" href="#what-are-coral-reefs"></a>What are coral reefs?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Corals are animals that belong to the phylum of cnidarians &#x2013; a group of more than 11,000 water-based animals. Most live in marine environments. There are two main types of corals: shallow, warm-water corals; and cold, deep-water corals. The obvious difference between the two is that warm-water corals live close to the sea surface &#x2013; usually in coastal waters &#x2013; whereas cold-water reefs can extend to depths of 3,000 meters below the surface.<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a></p>
+
+
+
+<p>Warm and cold-water reefs therefore function in very different ways. Corals use calcium carbonate in ocean waters to build a hard exoskeleton. But the key to their success is how they get their energy. Warm-water corals contain microscopic algae called zooxanthellae in a symbiotic relationship. The algae photosynthesize for them, providing corals with most of their energy.<a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a> These corals wouldn&#x2019;t be able to survive without them. They can only do this by living close to the surface where light is abundant.</p>
+
+
+
+<p>Once we reach 200 meters below the surface &#x2013; which is where most cold-water corals live &#x2013; there is so little light that photosynthesis is not possible. Cold-water corals don&#x2019;t have these symbiotic algae, and get their energy from feeding on particles on the ocean floor instead.</p>
+
+
+
+<p>A <em>reef</em> is then an assemblage of corals. Much like a collection of them. Reefs can be composed of many different types of coral &#x2013; there are more than 2,000 identified species. Each can form unique structures and grow at very different rates. <em>Acropora palmata</em>, for example, is a reef-building coral found in the Caribbean. It forms a complex structure with branches that look a bit like antlers, which is why it&#x2019;s commonly known as &#x2018;Elkhorn coral&#x2019;. It grows very quickly, at around 5 to 10 centimeters per year. Contrast that with the species, <em>Porites lichen</em>, which are common in lagoons and form very flat and smooth plate-like structures. Usually a shockingly bright yellow. Or so-called &#x2018;brain coral&#x2019; &#x2013; most common in the <em>Favia</em> genus &#x2013; which form round structures with grooved surfaces much like the human brain.</p>
+
+
+
+<p>Reefs can therefore form with a wide array of different species, leading to highly complex structures. Each of these species has its advantages and disadvantages. The branching <em>Acropora palmata</em>, for example, can break more easily when exposed to storm or wave damage. But it grows back very quickly. Brain coral is much more resilient to storms because it&#x2019;s spherical, compact structure is harder to break down. The downside is that it grows more slowly. These differences matter for how corals respond to increasing pressures, and how the structure of reefs might change over time.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="where-do-we-find-coral-reefs"><a class="deep-link" href="#where-do-we-find-coral-reefs"></a>Where do we find coral reefs?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>You will find most coral reefs in the tropics and subtropics.</p>
+
+
+
+<p>Warm-water corals &#x2013; which cover around 0.1% of the ocean surface &#x2013; tend to live within 30&#xB0; of the equator. Their optimal water temperature is between 23&#xB0; and 29&#xB0;C.<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a> In fact, coral species tend to live in waters at the very top of their temperature optimal range which is bad news for their prospects as the oceans warm. A temperature increase of a degree or two is enough to push them past the threshold they can tolerate.</p>
+
+
+
+<p>The distribution of the world&#x2019;s warm-water coral reefs is shown in the map. Each box represents a gridded location where NASA collected high-resolution imaging and data on the ocean&#x2019;s corals as part of its <a href="https://www.nasa.gov/vision/earth/lookingatearth/coral_assessment.html">Millennium Coral Reef Mapping Project</a>.</p>
+
+
+
+<p>There are several key reef clusters across the tropics. We often distinguish them based on their geographical location, or ocean they&#x2019;re in. Caribbean reefs; the Great Barrier Reef; the Red Sea; Arabian Sea; and Persian Gulf reefs.</p>
+
+
+
+<p>The Great Barrier Reef is the most well-known. It&#x2019;s the largest coral reef system in the world, extending 2,300 kilometers from the Torres Strait, just south of Papua New Guinea down the eastern coast of Australia. In fact, it&#x2019;s the world&#x2019;s largest structure built from living organisms. It&#x2019;s even clearly visible from space.</p>
+
+
+
+<p>It, like the many other reef systems, is home to some of the planet&#x2019;s most diverse habitats. But they&#x2019;re increasingly threatened from a range of pressures: overfishing, water pollution, coral bleaching and ocean acidification. If we want to protect these ecosystems from decline we need to take action. If we don&#x2019;t we risk damaging them beyond repair.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1132" height="657" src="https://ourworldindata.org/uploads/2021/05/coral-reefs-nasa.jpeg" alt="Coral reefs nasa" class="wp-image-42768" srcset="https://ourworldindata.org/uploads/2021/05/coral-reefs-nasa.jpeg 1132w, https://ourworldindata.org/uploads/2021/05/coral-reefs-nasa-400x232.jpeg 400w, https://ourworldindata.org/uploads/2021/05/coral-reefs-nasa-800x464.jpeg 800w, https://ourworldindata.org/uploads/2021/05/coral-reefs-nasa-150x87.jpeg 150w, https://ourworldindata.org/uploads/2021/05/coral-reefs-nasa-768x446.jpeg 768w" sizes="(max-width: 1132px) 100vw, 1132px" data-high-res-src="https://ourworldindata.org/uploads/2021/05/coral-reefs-nasa.jpeg"><figcaption>Global distribution of shallow-water coral reefs<a id="ref-8" class="ref" href="#note-8"><sup>8</sup></a></figcaption></figure>
+
+
+
+<h5>Related chart:</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/endemic-reef-forming-coral-species" target="_blank">
+          <figure><img src="/grapher/exports/endemic-reef-forming-coral-species.svg" alt="Endemic reef forming coral species" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Endemic reef-forming coral species<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="corals-threatened-with-extinction-today"><a class="deep-link" href="#corals-threatened-with-extinction-today"></a>Corals threatened with extinction today</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#how-many-coral-species-are-threatened-with-extinction"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>How many coral species are threatened with extinction?</span></a></li></ul></div></div><h3 id="how-many-coral-species-are-threatened-with-extinction"><a class="deep-link" href="#how-many-coral-species-are-threatened-with-extinction"></a>How many coral species are threatened with extinction?</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Over the course of Earth&#x2019;s history, corals have seen multiple episodes of extinction. In each of the <a href="https://ourworldindata.org/extinctions">&#x2018;Big Five&#x2019; mass extinctions</a>, there were intense periods of global warming or cooling, and dramatic changes in the chemistry of the world&#x2019;s oceans. Each time, corals across the world&#x2019;s oceans went extinct.</p>
+
+
+
+<p>Although there have been <a href="https://ourworldindata.org/grapher/extinct-species-since-1500">no recorded coral extinctions</a> in recent centuries, a large number are still threatened with extinction today.</p>
+
+
+
+<p>The&#xA0;<a href="https://www.iucnredlist.org/">IUCN Red List</a>&#xA0;of Threatened Species evaluates species across the world for their level of extinction risk. The IUCN has not evaluated all of the world&#x2019;s known species; in fact, in many taxonomic groups it has assessed only a very small percentage. Only 1% of known insects, for example, have been assessed. The coverage for birds is much better: in fact, 100% of known bird species&#xA0;<a href="https://ourworldindata.org/grapher/share-of-species-evaluated-iucn?country=Fishes~Reptiles~Mammals~Horseshoe+Crabs~Corals~Birds~Amphibians~Insects~Plants~Crustaceans~Arachnids~Red+Algae~Fungi+and+Protists">have been evaluated</a>&#xA0;for their extinction risk.</p>
+
+
+
+<p>We should also be clear about what &#x2018;threatened with extinction&#x2019; actually means. The IUCN labels a species as<em>&#xA0;threatened</em>&#xA0;if it falls into one of the following three categories.</p>
+
+
+
+<ul id="block-901350b9-8d27-4965-a2ec-eba7cf4ebb21"><li><em><strong>Critically endangered</strong></em>&#xA0;species have a probability of extinction higher than 50% in ten years or three generations;</li><li><em><strong>Endangered species</strong></em>&#xA0;have a greater than 20% probability in 20 years or five generations;</li><li><em><strong>Vulnerable</strong></em>&#xA0;have a probability greater than 10% over a century.</li></ul>
+
+
+
+<p>In the chart we see the number of species threatened with extinction across taxonomic groups. It estimates that over 200 corals species are threatened with extinction.</p>
+
+
+
+<p>Emerging research suggests this number could be too high. In a study published in <em>Nature Ecology and Evolution</em>, Andreas Dietzel and colleagues undertook a large-scale assessment to estimate the total number and population size of more than 300 coral species spanning the Pacific Ocean.<a id="ref-9" class="ref" href="#note-9"><sup>9</sup></a> It&#x2019;s hard to conduct such large-scale assessments of coral populations and so this study fills a large gap in the existing research.</p>
+
+
+
+<p>What became clear is just how abundant corals are. There were around half a trillion corals across these reefs &#x2013; more than the number of trees in the Amazon. Two-thirds of the species had population sizes exceeding 100 million colonies, and one-fifth had populations of more than one billion.</p>
+
+
+
+<p>Their findings suggest that while the loss of coral cover and severe local depletions of corals is a very clear and imminent risk, the threat of total extinction of species is likely to be lower than previously suggested. In fact, they found examples where species currently listed as &#x2018;threatened&#x2019; were massively abundant. 12 of the 80 species in their analysis that were listed as &#x2018;threatened&#x2019; on the IUCN Red List has populations of over one billion colonies. And, conversely, some of the rarest species in their analysis &#x2013; with much smaller populations &#x2013; were listed as &#x2018;least concern&#x2019; on the Red List. </p>
+
+
+
+<p>This research suggests that while local or regional extinctions of corals are possible in the near- or medium-term future, global extinctions of Indo-Pacific corals would take much longer. They suggest that a major update to listed extinction risk of the world&#x2019;s corals is urgently needed.  </p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/number-species-threatened" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/number-species-threatened" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/number-species-threatened_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Number species threatened v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="threats-to-coral-reefs"><a class="deep-link" href="#threats-to-coral-reefs"></a>Threats to coral reefs</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#what-threats-to-corals-face"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>What threats to corals face?</span></a></li><li><a href="#coral-reefs-have-always-encountered-threats-humans-just-increasing-their-intensity-and-frequency"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Coral reefs have always encountered threats; humans just increasing their intensity and frequency</span></a></li><li><a href="#timing-and-extent-of-coral-degradation-varies-from-region-to-region"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Timing and extent of coral degradation varies from region to region</span></a></li></ul></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Coral reefs are home to some of the most diverse and oldest ecosystems on Earth.</p><p>Like all lifeforms they have faced a range of threats over their history, encountering periods of intense pressure and period of relative calm. But humans are putting increasing pressure on these ecosystems in a number of ways. These threats are becoming more frequent and intense than many corals can recover from. If we don&#x2019;t tackle them then we risk losing many of these beautiful ecosystems in the century ahead.</p><p>In this article we look at the threats that coral reefs face today, and how they might respond to these pressures.</p></div><div class="wp-block-column"></div></div><h3 id="what-threats-to-corals-face"><a class="deep-link" href="#what-threats-to-corals-face"></a>What threats to corals face?</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>When people think of the threats to coral reefs it&#x2019;s usually bleaching that comes to mind. Bleaching happens when corals expel the algae that they rely on to harvest sunlight &#x2013; this starves them of their energy source, and can ultimately lead to mortality. This happens when they&#x2019;re exposed to extreme warming. I look at coral bleaching in more detail <strong>here</strong>.</p>
+
+
+
+<p>But corals face a wide range of pressures. Some of them have naturally occurred throughout history, but many are also human-driven and have accelerated over the last few decades. In the table I have listed the main pressures that corals face today.</p>
+
+
+
+<p>This might seem like a long list of problems. But they actually boil down to only a few key drivers.<br><br><strong>First is our </strong><a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions"><strong>emissions of greenhouse gases</strong></a>. This can cause three key problems for corals: bleaching from warming surface waters, as we already discussed; an increased risk of damage from storms if climate change makes them more frequent and intense; and ocean acidification from our emissions of carbon dioxide (CO<sub>2</sub>). Ocean acidification is the result of increased dissolution of CO<sub>2 </sub>in our oceans which makes them more acidic; this can lead to the dissolution of calcium carbonate which corals use to build their skeletons.</p>
+
+
+
+<p><strong>Second is our </strong><a href="https://ourworldindata.org/fish"><strong>fishing</strong></a><strong> and shipping activities</strong>. Coral reefs are part of an impressive ecosystem of marine life; overfishing leads to the depletion of key species which are needed to maintain these ecosystems. Destructive practices such as fishing with explosives; dredging; boat anchors and shipping lanes can severely damage the physical structure of coral reefs.&#xA0;</p>
+
+
+
+<p><strong>Third is pollution and disease</strong>. Human development on coastal areas can create large impacts for the chemistry of coastal waters. Fertilizer and manure from nearby farms can runoff into the ocean; coastal populations might have sewage disposal pipes; and developments along the shoreline can cause sedimentation and cloudy coastal waters. This pours excessive nutrients, and potentially heavy metals and toxins into the water. Algae and other microbial lifeforms thrive on these nutrients and can take over the whole ecosystem. They block out sunlight and starve the waters of oxygen. Corals, and the ecosystems they have built around them, can quickly die off.</p>
+
+
+
+<p>These are large threats that could transform the world&#x2019;s coral reefs beyond recognition. But by aggregating them into three key areas we can also focus on three core solutions. Admittedly these are simple in principle, but difficult in practice. First, reduce greenhouse gas emissions. Second, create marine protected areas around coral reefs to limit fishing and shipping activities. Third, regulate coastal development activities around key reef zones.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><figure class="wp-block-table wp-block-full-content-width"><div class="tableContainer"><table><tbody><tr><td><strong>Type of disturbance</strong></td><td><strong>Human pressure</strong></td><td><strong>Impact on corals</strong></td><td><strong>Solution</strong></td></tr><tr><td>Greenhouse gas emissions</td><td>Warmer waters from climate change</td><td>Bleaching, resulting in coral mortality</td><td>Reduce greenhouse gas emissions</td></tr><tr><td></td><td>Ocean acidification from more CO<sub>2</sub></td><td>Dissolution of corals, and reduced growth rates</td><td>Reduce CO<sub>2</sub> emissions</td></tr><tr><td></td><td>Potential increase in intensity and frequency of storms</td><td>Physical damage to the structure of coral reefs; in-tact coral can be destroyed</td><td>Reduce greenhouse gas emissions</td></tr><tr><td>Fishing and shipping</td><td>Overfishing</td><td>Loss of coral and the ecosystems they support&#xA0;</td><td>Marine protected areas (MPAs)</td></tr><tr><td></td><td>Destructive fishing with explosives</td><td>Localised, acute loss of coral reefs</td><td>Marine protected areas (MPAs)</td></tr><tr><td></td><td>Shipping lanes, anchors and boat groundings</td><td>Destruction of physical structure of coral reefs</td><td>Marine protected areas (MPAs)</td></tr><tr><td>Pollution</td><td>Sewage and nutrient runoff from land</td><td>Replacement of coral with algae. Higher risk of disease. Impaired growth from toxins or heavy metals.</td><td>Marine protected areas (MPAs). Regulation on sewage disposal and coastal agriculture.</td></tr><tr><td></td><td>Sedimentation from coastal development</td><td>Particles cloud the water and block sunlight, reducing coral growth</td><td>Regulations on coastal development around reef zones</td></tr><tr><td></td><td>Invasive species</td><td>Possible introduction of disease and competition with existing species</td><td>Limit introductions to native species, or carefully selected new species</td></tr></tbody></table></div></figure><h3 id="coral-reefs-have-always-encountered-threats-humans-just-increasing-their-intensity-and-frequency"><a class="deep-link" href="#coral-reefs-have-always-encountered-threats-humans-just-increasing-their-intensity-and-frequency"></a>Coral reefs have always encountered threats; humans just increasing their intensity and frequency</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>The threats to global corals &#x2013; warming waters, ocean acidification, changes in ocean chemistry, and the dynamics of ecosystems &#x2013; are nothing new. Corals have experienced pressures to varying degrees throughout Earth&#x2019;s history.&#xA0;</p>
+
+
+
+<p>In the very distant past some of these changes were extreme. There have been five <a href="https://ourworldindata.org/extinctions#the-big-five-mass-extinctions">mass extinctions</a> in our planet&#x2019;s history &#x2013; the so-called &#x2018;Big Five&#x2019;. Each of them involved large changes in the global climate and the chemistry of the world&#x2019;s oceans.<a id="ref-10" class="ref" href="#note-10"><sup>10</sup></a> These events were devastating for the world&#x2019;s corals. After every one there were no living reefs for several million years; this left so-called &#x2018;reef gaps&#x2019; in the geological record where there are no remains of living reefs.<a id="ref-11" class="ref" href="#note-11"><sup>11</sup></a></p>
+
+
+
+<p>Of course that&#x2019;s taking the extreme case of extinction events. But even in a present world without humans, corals would still experience some stresses. They would be hit by storms and cyclones. They would experience bleaching events, particularly in warm El Ni&#xF1;o years. And they would see period changes in the dynamics of their ecosystems. Corals are put under pressure and they can usually recover over the following years or decades.</p>
+
+
+
+<p>What&#x2019;s changed in the more recent past is that human pressures are increasing the frequency at which these events occur. Rather than bleaching events being reserved for warm El Ni&#xF1;o years, they&#x2019;re happening every year, even in the &#x2018;cool&#x2019; La Ni&#xF1;a phase. This means they have almost no time to recover before being hit with another mass bleaching event. They can be hit with cyclones more often, or at a higher intensity. And the pressure of overfishing, algal blooms and the depletion of the ecosystems that corals thrive alongside only adds to these stresses.</p>
+
+
+
+<p>The dating and extent of these increased pressures varies a lot from region to region. While coral bleaching impacts have only really ramped up since the 1990s <em>[see our </em><strong><em>related article</em></strong><em> on the extent of coral bleaching]</em>, other pressures date back further.&#xA0;</p>
+
+
+
+<p>See, for example, the decline of the primary coral species <em>Acropora</em> in the Caribbean.<a id="ref-12" class="ref" href="#note-12"><sup>12</sup></a> The share of Caribbean reefs where Acropora was dominant or present is shown in the chart. Katie Cramer and colleagues reconstructed these long-term trends in corals and estimated that coral cover in 1950 was similar to what it was 10,000 or even 100,000 years ago. But, from 1950 we see a steep decline: in 1950 it was present at 92% of Caribbean reefs; by the 2000s this had fallen to 19%. What we see is that this decline started well before the onset of more intense bleaching in the 1980s or 1990s. By the 1950s, populations were becoming increasingly developed close to the coast. With these populations came agriculture and increasing amounts of fertilizer. Excessive or poor management of this fertilizer can runoff into coastal waters, creating algal blooms and large shifts in the composition of the marine ecosystem.</p>
+
+
+
+<p>This decline is not just a transition from Acropora corals to other species. In a study published in <em>Science</em>, researchers estimate that total coral cover in the Caribbean declined from 50% in 1977 to just 10% by 2001.<a id="ref-13" class="ref" href="#note-13"><sup>13</sup></a>&#xA0;</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/caribbean-acropora?country=~Caribbean" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/caribbean-acropora?country=~Caribbean" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/caribbean-acropora-ee6d594d88b81a41fbb35c3cadbc039b_v1_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Caribbean acropora ee6d594d88b81a41fbb35c3cadbc039b v1 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="timing-and-extent-of-coral-degradation-varies-from-region-to-region"><a class="deep-link" href="#timing-and-extent-of-coral-degradation-varies-from-region-to-region"></a>Timing and extent of coral degradation varies from region to region</h3><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>This degradation of coral ecosystems that we saw in the Caribbean is reflected in other regions of the world, but often not to the same extent. Caribbean reefs have seen the greatest decline over the last 50 years, and have fundamentally changed from ecosystems of coral to ones dominated by algae.</p>
+
+
+
+<p>This wider point about the degradation of reef systems is an important one. We often rely on metrics such as coral cover or coral mortality as a marker of reef health. But this does not always give us an accurate comparison of reef health. As we saw discussed earlier, corals have always gone through periods of coral decline and recovery. Simply having low coral cover does not necessarily indicate poor reef health if it is on the path to recovery.<a id="ref-14" class="ref" href="#note-14"><sup>14</sup></a> A reef with 20% coral cover that is restoring quickly is arguably in a better state than a reef with 60% cover that is seeing year-on-year declines.</p>
+
+
+
+<p>Many researchers have stressed that it&#x2019;s not necessarily the absolute level of coral cover that matters for reef health, but where the reef lies between two states of equilibrium. Corals are often described in terms of a phase-shift. In one phase, a reef is resilient to pressures such as bleaching, storms, or disease; when these events occur they feel the short-term impacts but can quickly recover. This is the &#x2018;coral-dominated state&#x2019;.&#xA0;</p>
+
+
+
+<p>But there is another phase: one triggered by a non-linear response. Reefs can be pushed too far and &#x2018;flip&#x2019; into an &#x2018;algae-dominated&#x2019; state. This is a state where the ecosystems have fundamentally changed from one dominated by coral to one of macroalgae. This new state of equilibrium is difficult to recover from. A reef in this state is an unhealthy one.</p>
+
+
+
+<p>To go back to our example of Caribbean reefs: we can see them flip from a coral-dominated to algae-dominated state over time, but also compare them to other regions. In the chart we see the different reef compositions in the Caribbean, Florida Keys and the Great Barrier Reef in the early 2000s.<a id="ref-15" class="ref" href="#note-15"><sup>15</sup></a> We see such a stark contrast between the Caribbean and the Great Barrier Reef. In the Caribbean we find reefs of algae, not of coral: 40% is covered by macroalgae versus only 15% of coral. It has always been this way: in the 1970s, macroalgae covered only 2% of Caribbean reefs.<a id="ref-16" class="ref" href="#note-16"><sup>16</sup></a> A 20-fold increase. And a phase-shift from coral to algae-dominated reefs. One major shock that contributed to this shift was a disease outbreak in 1983 among the sea urchin, <em>Diadema antillarum</em>.<a id="ref-17" class="ref" href="#note-17"><sup>17</sup></a> This upset the dynamics of the ecosystem and allowed algae to take hold.</p>
+
+
+
+<p>Contrast that with the Great Barrier Reef where less than 5% of cover was algae, and 25% was coral. Its reefs are still very much in the &#x2018;coral-dominated&#x2019; phase. This means they are resilient to pressures and can bounce back. This is good news: the local protection of the Great Barrier Reef means it has experienced less of the early pressures of fertilizer runoff, sewage and overfishing, but it&#x2019;s not being hit with more and more mass bleaching episodes [we look at this in more detail <strong>here</strong>]. To stand a chance of recovering from these events it needs to stay in this coral-dominated, healthy state.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1051" height="1062" src="https://ourworldindata.org/uploads/2021/04/Caribbean-and-Pacific-coral-vs.-algae-cover.png" alt="Caribbean and pacific coral vs. algae cover" class="wp-image-42642" srcset="https://ourworldindata.org/uploads/2021/04/Caribbean-and-Pacific-coral-vs.-algae-cover.png 1051w, https://ourworldindata.org/uploads/2021/04/Caribbean-and-Pacific-coral-vs.-algae-cover-396x400.png 396w, https://ourworldindata.org/uploads/2021/04/Caribbean-and-Pacific-coral-vs.-algae-cover-544x550.png 544w, https://ourworldindata.org/uploads/2021/04/Caribbean-and-Pacific-coral-vs.-algae-cover-148x150.png 148w, https://ourworldindata.org/uploads/2021/04/Caribbean-and-Pacific-coral-vs.-algae-cover-768x776.png 768w" sizes="(max-width: 1051px) 100vw, 1051px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/Caribbean-and-Pacific-coral-vs.-algae-cover.png"></figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="coral-bleaching"><a class="deep-link" href="#coral-bleaching"></a>Coral bleaching</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#coral-bleaching-events-are-becoming-more-common-and-severe"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Coral bleaching events are becoming more common and severe</span></a></li><li><a href="#do-coral-reefs-die-when-they-experience-coral-bleaching"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Do coral reefs die when they experience coral bleaching?</span></a></li><li><a href="#how-do-bleaching-events-vary-across-the-world-s-coral-reefs"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>How do bleaching events vary across the world&#x2019;s coral reefs?</span></a></li><li><a href="#can-coral-reefs-adapt-to-a-warming-ocean"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Can coral reefs adapt to a warming ocean?</span></a></li></ul></div></div><h3 id="coral-bleaching-events-are-becoming-more-common-and-severe"><a class="deep-link" href="#coral-bleaching-events-are-becoming-more-common-and-severe"></a>Coral bleaching events are becoming more common and severe</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Coral reefs form some of the most diverse ecosystems on the planet. But, for most of us, they are hidden from view. We are blind to how these ecosystems might be changing.</p><p>Coral reefs face a number of threats &#x2013; most of them are increasing with human pressure. One of the most pressing is coral bleaching: potentially fatal events caused by our warming oceans.</p><p>In this article, I look at how coral bleaching is changing over time. We see that these events are becoming increasingly common and more severe; they&#x2019;re now happening more frequently than most corals can recover from.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-is-coral-bleaching"><a class="deep-link" href="#what-is-coral-bleaching"></a>What is coral bleaching?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Corals are animals that belong to the phylum of cnidarians &#x2013; a group of more than 11,000 water-based animals. Most live in marine environments. Corals use calcium carbonate in waters to build a hard exoskeleton. But the key to their success is their symbiotic relationship with algae. They contain microscopic algae called zooxanthellae that photosynthesize (just like any other plant would), providing corals with the majority of their energy. Corals wouldn&#x2019;t be able to survive without them.</p><p>This important relationship can be disrupted when corals are put under stress. One of the biggest stressors is warmer temperatures. When exposed to warmer waters, corals expel their algal symbionts, meaning they lose their source of energy. Without their algae, corals turn pale; this is why this process is called &#x2018;bleaching&#x2019;.&#xA0;</p><p>Corals do not always die immediately after bleaching. Some do, but most survive. Throughout history, corals have experienced infrequent coral bleaching events.<a id="ref-18" class="ref" href="#note-18"><sup>18</sup></a> They usually recovered over the course of a decade or more. But when corals are hit with bleaching event after bleaching event, in short succession, they struggle to recover. These events often kill them off.</p><p>It should seem obvious why coral bleaching is a growing concern for the world&#x2019;s coral reefs. With climate change, the global average temperature is rising. We often think about atmospheric or terrestrial temperatures, but our oceans are warming too. The global average sea surface <a href="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly?country=~Global">temperature has increased</a> by around 1&#xB0;C since 1850.<a id="ref-19" class="ref" href="#note-19"><sup>19</sup></a> Importantly, the peak temperatures in summer &#x2013; when bleaching events are most likely to occur &#x2013; has also increased in recent decades.<a id="ref-20" class="ref" href="#note-20"><sup>20</sup></a></p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="the-number-of-coral-bleaching-events-has-increased-in-recent-decades"><a class="deep-link" href="#the-number-of-coral-bleaching-events-has-increased-in-recent-decades"></a>The number of coral bleaching events has increased in recent decades</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>We might expect that corals have been under increasing pressure from warming waters. Do we see evidence for this in the real world?</p>
+
+
+
+<p>Many studies have documented an increase in the number of bleaching events across the world&#x2019;s coral reefs. Satellite data allows us to track specific changes in water temperatures around specific reefs, and the level of thermal stress that they are exposed to. The first study to do this at a global scale found that the percentage of global reefs that were impacted by bleached stress tripled over the 28-year period from 1985 to 2012.<a id="ref-21" class="ref" href="#note-21"><sup>21</sup></a></p>
+
+
+
+<p>In a more recent study, published in <em>Science</em>, Terry Hughes and colleagues tracked the frequency of coral bleaching events across 100 pantropical locations from 1980 to 2016.<a id="ref-22" class="ref" href="#note-22"><sup>22</sup></a> This included all of the key coral hotspots spanning 54 countries, from the West Pacific, to the Atlantic, the Indian Ocean to the Great Barrier Reef in Australasia.</p>
+
+
+
+<p>They not only quantified the total number of bleaching events but also their intensity. Bleaching events are differentiated into two categories: <em>moderate</em> bleaching occurs when less than 30% of the corals at a given location are affected; <em>severe</em> bleaching is when 30% or more are. Severe episodes represent events where mass, rather than localized, bleaching has happened.</p>
+
+
+
+<p>In the chart, we see the number of events that occurred across these 100 reef locations by year. Moderate events are shown in blue; severe events in red. What we see is a general increase in the number of bleaching episodes over time. In the 1980s and &#x2018;90s, it was rare for there to be <em>more</em> than ten events in any given year. From the millennium onwards, it was rare that there would be <em>less</em> than ten.</p>
+
+
+
+<p>We also see large spikes in particular years: 1983, 1987, 1998, 2010, and 2016. Most of these events were triggered by the so-called El Ni&#xF1;o climate cycle that leads to unusually warm waters in the Pacific. But, as we&#x2019;ll now see, severe bleaching events might have been restricted to El Ni&#xF1;o years in the past but a warming planet means this is no longer the case.&#xA0;</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/coral-bleaching-events?country=~OWID_WRL" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/coral-bleaching-events?country=~OWID_WRL" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/coral-bleaching-events-ed9cc8bcc7e00c8a5b0c73d8f2310738_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Coral bleaching events ed9cc8bcc7e00c8a5b0c73d8f2310738 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="bleaching-is-no-longer-an-event-reversed-for-el-nino-years"><a class="deep-link" href="#bleaching-is-no-longer-an-event-reversed-for-el-nino-years"></a>Bleaching is no longer an event reversed for El Nino years</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>The <a href="https://en.wikipedia.org/wiki/El_Ni%C3%B1o%E2%80%93Southern_Oscillation">El Ni&#xF1;o&#x2013;Southern Oscillation</a> (ENSO) is a natural climate phenomenon that affects surface water temperatures in the eastern Pacific Ocean. But it has an impact on the climate across the tropics and subtropics more broadly. It transitions between the El Ni&#xF1;o part of the cycle, which is the &#x2018;warm phase&#x2019;, and the La Ni&#xF1;a which is the &#x2018;cool phase&#x2019;.</p>
+
+
+
+<p>As we might expect, bleaching is usually worse in El Ni&#xF1;o years when surface waters become warmer. In fact, that&#x2019;s exactly what we see in the record from a few decades ago. In the chart we see the number of bleaching events across the 100 locations we looked at previously, colored by the phase of the ENSO cycle at the time. El Ni&#xF1;o years are shown in red; La Ni&#xF1;a in blue; and moderate years between these transitions in grey.</p>
+
+
+
+<p>In the 1980s, most bleaching events were reserved for El Ni&#xF1;o years. We see examples of this in the 1983 and 1987 spikes. Bleaching was rare in moderate or La Ni&#xF1;a years. This was particularly pronounced when we look at <em>severe</em> bleaching events, which is shown in the next chart. There was almost no severe bleaching in the absence of El Ni&#xF1;o.</p>
+
+
+
+<p>This is no longer the case. Over these decades we&#x2019;ve seen more and more events in moderate ENSO years, and even in La Ni&#xF1;a years, the &#x2018;cold phase&#x2019; of the cycle. This applies to the total number of bleaching events, but also the severe ones. Coral bleaching is no longer a rare El Ni&#xF1;o occurrence; it happens every year, regardless.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/bleaching-events-enso?country=El+Nino~Moderate~La+Nina" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/bleaching-events-enso?country=El+Nino~Moderate~La+Nina" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/bleaching-events-enso-3d02dcd1971008d2ee0a2926f51c22ff_v1_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Bleaching events enso 3d02dcd1971008d2ee0a2926f51c22ff v1 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/severe-bleaching-events-enso?country=El+Nino~Moderate~La+Nina" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/severe-bleaching-events-enso?country=El+Nino~Moderate~La+Nina" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/severe-bleaching-events-enso-3d02dcd1971008d2ee0a2926f51c22ff_v1_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Severe bleaching events enso 3d02dcd1971008d2ee0a2926f51c22ff v1 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>When we look at sea surface temperature data over these decades, this makes sense. In the chart we see the tropical sea surface temperature anomaly &#x2013; the change in the sea surface temperature relative to the average from 1961-1990.<a id="ref-23" class="ref" href="#note-23"><sup>23</sup></a> El Ni&#xF1;o years are shown as the red markers; La Ni&#xF1;a years in blue; and moderate in black.</p>
+
+
+
+<p>We see is that the temperature anomaly during moderate or La Ni&#xF1;a years in the last decade or two is higher than the temperatures during El Ni&#xF1;o years a few decades ago. In other words, the &#x2018;cool phase&#x2019; of the cycle is now warmer than the &#x2018;warm phase&#x2019; of the cycle a couple of decades ago. This means the temperature threshold for coral bleaching is now surpassed in most years of the ENSO cycle when this was reserved for El Ni&#xF1;o years in the past.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="547" height="550" src="https://ourworldindata.org/uploads/2021/04/sst-anomaly-by-enso-547x550.png" alt="Sst anomaly by enso" class="wp-image-42643" srcset="https://ourworldindata.org/uploads/2021/04/sst-anomaly-by-enso-547x550.png 547w, https://ourworldindata.org/uploads/2021/04/sst-anomaly-by-enso-398x400.png 398w, https://ourworldindata.org/uploads/2021/04/sst-anomaly-by-enso-150x150.png 150w, https://ourworldindata.org/uploads/2021/04/sst-anomaly-by-enso-768x772.png 768w, https://ourworldindata.org/uploads/2021/04/sst-anomaly-by-enso.png 1310w" sizes="(max-width: 547px) 100vw, 547px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/sst-anomaly-by-enso.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="coral-bleaching-is-becoming-an-increasingly-common-occurrence"><a class="deep-link" href="#coral-bleaching-is-becoming-an-increasingly-common-occurrence"></a>Coral bleaching is becoming an increasingly common occurrence</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>It&#x2019;s not just the total number of corals that are affected each year that is an issue, but also the frequency with which individual reefs are impacted. As I already mentioned, occasional bleaching episodes have been a constant phenomenon for most corals. Most of them survive. What&#x2019;s new and concerning is prolonged and repeated bleaching episodes that they don&#x2019;t have time to recover from.</p>
+
+
+
+<p>In the chart we see the frequency of the coral bleaching events across our 100 locations from 1980 onwards. The height of each bar represents the number of locations that experienced the given number of events over these decades. This is shown separately for the total number of events (the pale bars) and severe events (the dark red bars).</p>
+
+
+
+<p>By looking at the two extremes of the chart we see just how widespread global bleaching is. On the far left we see that only 3 of the 100 locations <em>did not</em> experience a bleaching event over this period. And, only 9 did not have a severe event. 91% of locations experienced severe, mass bleaching. On the far right we see that many experienced bleaching events every few years. Nearly one-third of locations had eight or more episodes since 1980. That&#x2019;s one every few years.</p>
+
+
+
+<p>Just over half of the reefs experienced two or three <em>severe</em> bleaching events. Some experienced many more. This means the vast majority had a severe bleaching event at least once per decade.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1488" height="1497" src="https://ourworldindata.org/uploads/2021/04/Frequency-of-coral-bleaching-events.png" alt="Frequency of coral bleaching events" class="wp-image-42644" srcset="https://ourworldindata.org/uploads/2021/04/Frequency-of-coral-bleaching-events.png 1488w, https://ourworldindata.org/uploads/2021/04/Frequency-of-coral-bleaching-events-398x400.png 398w, https://ourworldindata.org/uploads/2021/04/Frequency-of-coral-bleaching-events-547x550.png 547w, https://ourworldindata.org/uploads/2021/04/Frequency-of-coral-bleaching-events-150x150.png 150w, https://ourworldindata.org/uploads/2021/04/Frequency-of-coral-bleaching-events-768x773.png 768w" sizes="(max-width: 1488px) 100vw, 1488px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/Frequency-of-coral-bleaching-events.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="the-time-between-severe-bleaching-events-is-getting-shorter-too-short-for-coral-to-recover-from"><a class="deep-link" href="#the-time-between-severe-bleaching-events-is-getting-shorter-too-short-for-coral-to-recover-from"></a>The time between severe bleaching events is getting shorter &#x2013; too short for coral to recover from</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>The frequency distribution tells us something about how common bleaching events are. But it doesn&#x2019;t give us an accurate picture of how the time between events has been changing. Shorter recovery times can mean a higher likelihood of corals dying off.</p>
+
+
+
+<p>In the chart here we see the return time of <em>severe</em> coral bleaching events across the 100 locations. This measures the number of years after a severe bleaching event that we would expect another one to hit. In dark blue we have the return times in the 1980s and 90s; in green we have the return times since the year 2000.</p>
+
+
+
+<p>Overall, the estimated return time of severe bleaching events has declined from once every 27 years in the 1980s to once every 5.9 years in 2016. That&#x2019;s a 4.6-fold reduction.</p>
+
+
+
+<p>This reduction is visible in the chart. If we look at the blue bars, which show us the return times in the 1980s and 90s, we see a roughly equal distribution: around one-fifth of reefs experienced severe events every 1 to 3 years; one-fifth every 4 to 6 years; all the way to 13 years or more. Contrast that to the green bars, showing this distribution since 2000. It has shifted to the left, towards shorter times. Much fewer locations have return times of ten years or more. And the number of locations with 1 to 3 years; or 4 to 6 years has increased a lot.</p>
+
+
+
+<p>What&#x2019;s concerning is the number of locations that experienced severe events every year or every few years. One-third (33%) of return times since the year 2000 have been just one, two or three years. This is much shorter than the typical 10 to 15 years that most corals need to recover from severe bleaching. Some can recover faster, but most do not.</p>
+
+
+
+<p>Shorter and shorter times between events will ultimately lead to the mortality of many corals. It will also change the composition of the reefs that remain. Some species are more resilient than others to warmer waters; these might survive while the less resilient species die.&#xA0;</p>
+
+
+
+<p>The ability of coral reefs to adapt to warmer waters has been a hot topic for conservation. In a <strong>follow-up article</strong> I take a look at the latest research on how adaptable reefs are to warming and what their future prospects might look like.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1296" height="1399" src="https://ourworldindata.org/uploads/2021/04/Return-time-of-coral-bleaching-events.png" alt="Return time of coral bleaching events" class="wp-image-42645" srcset="https://ourworldindata.org/uploads/2021/04/Return-time-of-coral-bleaching-events.png 1296w, https://ourworldindata.org/uploads/2021/04/Return-time-of-coral-bleaching-events-371x400.png 371w, https://ourworldindata.org/uploads/2021/04/Return-time-of-coral-bleaching-events-510x550.png 510w, https://ourworldindata.org/uploads/2021/04/Return-time-of-coral-bleaching-events-139x150.png 139w, https://ourworldindata.org/uploads/2021/04/Return-time-of-coral-bleaching-events-768x829.png 768w" sizes="(max-width: 1296px) 100vw, 1296px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/Return-time-of-coral-bleaching-events.png"></figure>
+</div>
+</div><h3 id="do-coral-reefs-die-when-they-experience-coral-bleaching"><a class="deep-link" href="#do-coral-reefs-die-when-they-experience-coral-bleaching"></a>Do coral reefs die when they experience coral bleaching?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Coral bleaching is a phenomenon that many people have heard of, but have never seen in the real world. It&#x2019;s also not clear to many people what actually happens when coral bleaches. Does it immediately die? Is a bleached coral a dead coral? Can it recover?</p><p>The frequency and intensity of coral bleaching events have been increasing as a result of climate change <em>[I looked at the global trends in bleaching events </em><strong><em>here</em></strong><em>]</em>. As our oceans continue to warm in the coming decades, we would expect corals to experience even more. We need to understand what happens to a coral when it bleaches, and what its prospects are for recovery if we&#x2019;re to assess what this means for the future of our reefs.</p><p>To do this we&#x2019;re going to focus on the impact of a single bleaching episode in a specific location. In a study published in <em>Nature</em>, Terry Hughes and colleagues looked at the impact of the record-breaking marine heatwave in 2016 on the Great Barrier Reef &#x2013; the world&#x2019;s largest and most well-known coral.<a id="ref-24" class="ref" href="#note-24"><sup>24</sup></a> This gives a detailed look at how corals across a reef ecosystem respond to an extreme period of warming.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="some-corals-immediately-die-when-they-experience-extreme-warming"><a class="deep-link" href="#some-corals-immediately-die-when-they-experience-extreme-warming"></a>Some corals immediately die when they experience extreme warming</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>We should first briefly cover what coral bleaching actually is.</p>
+
+
+
+<p>Corals build a hard exoskeleton using calcium carbonate in ocean waters. But the key to their success is their symbiotic relationship with algae. They contain microscopic algae called zooxanthellae that photosynthesize (just like any other plant would), providing corals with the majority of their energy. Corals wouldn&#x2019;t be able to survive without them.</p>
+
+
+
+<p>When corals are put under stress through extreme temperatures this important relationship breaks down. They expel their algal symbionts and lose their source of energy. Without their algae, corals turn pale; this is why this process is called &#x2018;bleaching&#x2019;.</p>
+
+
+
+<p>Now, let&#x2019;s turn towards the Great Barrier Reef (GBR) to see how this plays out in reality. Hughes et al. (2018) looked at the impact of warming across 1,156 individual reefs across the GBR ecosystem using high-resolution aerial surveys. They combined this with underwater assessments on 63 reefs spread right along the coast. These reefs covered the full spectrum of heat stress and exposure to bleaching.</p>
+
+
+
+<p>They measured a number of key metrics: initial mortality; the extent of coral bleaching; longer-term changes in coral cover; and changes in the <em>composition</em> of these reefs.</p>
+
+
+
+<p>All of these metrics were measured relative to the levels of heat stress that corals experienced. This gives us an understanding of what levels of warming need to be reached for corals to die; become bleached; and what stresses they might still be able to recover from. Heat stress is given by a metric called &#x2018;<a href="https://coralreefwatch.noaa.gov/satellite/methodology/methodology.php#dhw">degree-heating weeks</a>&#x2019; (DHW). DHW measures the amount of stress that corals have been under in the previous 12-weeks. It&#x2019;s given as a combination of the length of time that corals are exposed to temperatures above their &#x2018;bleaching threshold&#x2019; and the amount that they exceed this temperature by.&#xA0;</p>
+
+
+
+<p>A coral could have a DHW value of 2 if:</p>
+
+
+
+<ul><li>local water temperatures were 1&#xB0;C above the bleaching threshold for two weeks <em>[1&#xB0;C multiplied by 2 weeks]</em>;</li><li>or if local water temperatures were 2&#xB0;C above the threshold for one week <em>[2&#xB0;C multiplied by 1 week]</em>.</li></ul>
+
+
+
+<p>The higher the value of DHW, the more heat stress a reef is under. A large amount of reefs across the Great Barrier Reef were exposed to high levels of heat stress: one-third experienced at least 4&#xB0;C-weeks and one-fifth experienced 8&#xB0;C-weeks or more.</p>
+
+
+
+<p>Many millions of corals died almost immediately in the northern Great Barrier Reef in March 2016. This happened at the peak of the extreme temperatures over the course of only two to three weeks. This initial mortality was not caused by the normal process of bleaching where corals lose their algal symbionts and ultimately starve. Instead, temperature-sensitive corals died immediately from being exposed to stress that they had no hopes of recovering from.</p>
+
+
+
+<p>In the chart we see the percentage of corals on each of the 63 sampled reefs that died off immediately. This is plotted against levels of heat stress, where further to the right means more heat stress. When heat stress was low very few corals died off immediately: fewer than 5% of corals died off on reefs exposed to less than&#xA0; 4&#xB0;C-weeks. But, as we see, there was a significant drop-off on reefs that were exposed to more heat stress: on reefs with 4 to 8&#xB0;C-weeks of exposure, the median loss was 16%. For those with more than 8&#xB0;C-weeks, this was 27%.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1310" height="1416" src="https://ourworldindata.org/uploads/2021/04/Initial-coral-mortality-from-heat-stresspng.png" alt="Initial coral mortality from heat stresspng" class="wp-image-42649" srcset="https://ourworldindata.org/uploads/2021/04/Initial-coral-mortality-from-heat-stresspng.png 1310w, https://ourworldindata.org/uploads/2021/04/Initial-coral-mortality-from-heat-stresspng-370x400.png 370w, https://ourworldindata.org/uploads/2021/04/Initial-coral-mortality-from-heat-stresspng-509x550.png 509w, https://ourworldindata.org/uploads/2021/04/Initial-coral-mortality-from-heat-stresspng-139x150.png 139w, https://ourworldindata.org/uploads/2021/04/Initial-coral-mortality-from-heat-stresspng-768x830.png 768w" sizes="(max-width: 1310px) 100vw, 1310px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/Initial-coral-mortality-from-heat-stresspng.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="some-corals-recover-quickly-others-die-off-with-prolonged-bleaching"><a class="deep-link" href="#some-corals-recover-quickly-others-die-off-with-prolonged-bleaching"></a>Some corals recover quickly; others die off with prolonged bleaching</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>So, some corals die off immediately when they&#x2019;re exposed to extreme temperatures. These deaths are not driven by bleaching. But, more corals <em>can</em> die from bleaching episodes over the months and years that follow.</p><p>On the GBR, over the winter that followed the extreme warming episode in 2016, corals took one of two paths. Some survived and recovered their algae. This means they regained their color. In fact, nearly all of the surviving corals got their color back quickly: less than 1% of the survivors were still bleached after eight months had passed. Other corals did remain bleached and continued to die off over the winter months. They could not recover their algae and the vital energy source that they provided.</p><p>In the chart we see the relationship between the reduction in coral cover &#x2013; the amount of corals that die off &#x2013; and the extent of coral bleaching. As we might expect, there is a strong relationship between the amount of corals that are bleached and the amount that die off. On reefs with less than 25% bleaching, there was very little loss of coral after eight months. But above this level of bleaching, reefs lost more and more coral with further bleaching.</p><p>In the right-hand panel, we also see how the change in coral cover relates to exposure to heat stress. As we might expect, reefs that experienced more heat stress tended to see a larger reduction in coral cover. More heat stress led to more bleaching which led to more long-term coral loss.&#xA0;<br>But, this response wasn&#x2019;t linear. There was a threshold beyond which corals died off <em>very </em>quickly. Reefs exposed to less than 3&#xB0;C-weeks lost almost none of their corals to bleaching. But by 4&#xB0;C-weeks this dropped off steeply to a decline of 40%. At 8&#xB0;C-weeks, two-thirds of coral cover was lost. And under very extreme heat stress of 9&#xB0;C-weeks or more, most of the corals bleached and could not recover.</p></div><div class="wp-block-column"></div></div><figure class="wp-block-image size-full wp-block-full-content-width"><img loading="lazy" width="1909" height="1157" src="https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress.png" alt="Coral bleaching and coral cover vs. heat stress" class="wp-image-42650" srcset="https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress.png 1909w, https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress-400x242.png 400w, https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress-800x485.png 800w, https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress-150x91.png 150w, https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress-768x465.png 768w, https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress-1536x931.png 1536w" sizes="(max-width: 1909px) 100vw, 1909px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/Coral-bleaching-and-coral-cover-vs.-heat-stress.png"></figure><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="some-coral-species-are-more-resilient-to-bleaching-than-others"><a class="deep-link" href="#some-coral-species-are-more-resilient-to-bleaching-than-others"></a>Some coral species are more resilient to bleaching than others</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Just like any other animal, corals span a wide range of species. These species have different characteristics, shapes, and grow at different rates. Some grow like platelets; others like branching trees. Some grow rapidly; others much more slowly. This means that reefs can have very different compositions depending on the types of corals that are present.</p>
+
+
+
+<p>Coral taxa respond differently to heat exposure. Some are highly intolerant to heat stress and die off immediately, while others can withstand high levels of stress and recover quickly. This creates &#x2018;winners&#x2019; and &#x2018;losers&#x2019; during bleaching episodes. For example, the tabular staghorn Acropora, Seriatopora hystrix, and Stylophora pistillata are fast-growing branching species that dominate many reefs in the Indo-Pacific region. But, they&#x2019;re also very vulnerable to bleaching episodes and experience a high mortality rate. On the GBR, these species declined by more than 75% during the 2016 bleaching event.</p>
+
+
+
+<p>The fact that there are winners and losers means that it&#x2019;s not just the amount of coral on a reef that changes during extreme temperatures, but also its composition. It becomes more dominant in the resilient species and loses all of the vulnerable ones. Researchers can measure changes in reef composition using a metric called the nMDS score. A higher score means a larger change in the make-up of a reef ecosystem.</p>
+
+
+
+<p>In the chart we see the shift in composition across the sampled Great Barrier reefs in 2016. This is measured relative to the amount of heat stress that each reef experienced.</p>
+
+
+
+<p>Again, we see that the relationship is not linear. On reefs exposed to less than 6&#xB0;C-weeks, there was very little change in structure. At lower levels of heat stress, bleaching levels are lower and there is not much differentiation between winners and losers. But above 6&#xB0;C-weeks there is a dramatic shift in composition as the losing species die off quickly. This leaves only the species that can withstand high levels of heat stress. They become the dominant species, which can completely transform reef ecosystems.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1188" height="1429" src="https://ourworldindata.org/uploads/2021/04/Shift-in-reef-composition.png" alt="Shift in reef composition" class="wp-image-42651" srcset="https://ourworldindata.org/uploads/2021/04/Shift-in-reef-composition.png 1188w, https://ourworldindata.org/uploads/2021/04/Shift-in-reef-composition-333x400.png 333w, https://ourworldindata.org/uploads/2021/04/Shift-in-reef-composition-457x550.png 457w, https://ourworldindata.org/uploads/2021/04/Shift-in-reef-composition-125x150.png 125w, https://ourworldindata.org/uploads/2021/04/Shift-in-reef-composition-768x924.png 768w" sizes="(max-width: 1188px) 100vw, 1188px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/Shift-in-reef-composition.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="corals-might-die-at-lower-levels-of-heat-stress-than-previously-thought"><a class="deep-link" href="#corals-might-die-at-lower-levels-of-heat-stress-than-previously-thought"></a>Corals might die at lower levels of heat stress than previously thought</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>With satellites, surveys and climate modelling we can now track changes in the atmosphere and the oceans at high-resolution. This means scientists can understand when and where we would expect coral bleaching to be a problem in any given season. The US National Oceanic and Atmospheric Administration (NOAA) make <a href="https://coralreefwatch.noaa.gov/">forecasts of coral bleaching</a> continuously, and provide alerts when corals are exposed to extreme temperatures.</p><p>To make these forecasts we need to make assumptions about what levels of heat stress lead to seriously bleaching, and mortality. But, these recent studies on the Great Barrier Reef suggest the current guidelines on tolerable levels of heat stress might be too low. The NOAA provide guidance that corals experience significant bleaching at 4&#xB0;C-weeks, and possible mortality at 8&#xB0;C-weeks.<a id="ref-25" class="ref" href="#note-25"><sup>25</sup></a> Other modelling studies on the resilience of the GBR to climate change assumed that corals only begin to die off when heat stress is over 6&#xB0;C-weeks.</p><p>The experience of the 2016 heatwave on the Great Barrier Reef suggests that these guidelines are too high. Corals can bleach and die at lower levels of stress. As we&#x2019;ve seen, many corals died immediately at 3 to 4&#xB0;C-weeks. Many reefs lost more than half of their corals once they reached 4 to 5&#xB0;C-weeks.</p><p>As our oceans continue to warm, this is bad news for the world&#x2019;s reefs. The loss of many of its corals is almost an inevitability. The biggest thing we can do to protect them is to slow global climate change by reducing our greenhouse gas emissions as quickly as possible.</p></div><div class="wp-block-column"></div></div><h3 id="how-do-bleaching-events-vary-across-the-world-s-coral-reefs"><a class="deep-link" href="#how-do-bleaching-events-vary-across-the-world-s-coral-reefs"></a>How do bleaching events vary across the world&#x2019;s coral reefs?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Globally we have seen an increase in the frequency and intensity of coral bleaching events. This has been driven by increasing temperatures, with warmer waters putting corals under stress.&#xA0;</p><p>The frequency of <em>severe</em> bleaching events &#x2013; where more than 30% of the reef&#x2019;s corals are bleached &#x2013; has increased significantly in recent decades. The average time between mass bleaching events has fallen five-fold, from once every 27 years in the 1980s to once every 5.9 years in 2016.</p><p>This is a truly global change. Very few corals have managed to escape these impacts completely. Most reefs in the world have experienced bleaching events in the last few decades.</p><p>But, there are still distinct differences in the intensity of bleaching across the world&#x2019;s reefs. All have been affected, but some more than others. In this article, I look at how coral bleaching varies from ocean to ocean, and whether this has changed with warming waters in recent decades.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="corals-around-the-equator-seem-to-be-more-resilient-to-warming-than-the-subtropics"><a class="deep-link" href="#corals-around-the-equator-seem-to-be-more-resilient-to-warming-than-the-subtropics"></a>Corals around the equator seem to be more resilient to warming than the subtropics</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Before we look at the bleaching trends for specific oceans, there is a larger meta-point about the disproportionate impact on some reefs versus others.</p>
+
+
+
+<p>Most of the world&#x2019;s coral reefs lie in the tropics or subtropics. But there appears to be a marked distinction in the vulnerability of corals across these zones. Reefs that lie closest to the equator have often fared better; those across mid-latitudes experienced worse bleaching. This is despite the fact that corals in both zones have been exposed to similar levels of thermal stress. We see this in the map here which shows the intensity of bleaching across the world&#x2019;s coral reefs. Purple markers highlight reefs where very little (only one to a few percent) of the corals were bleached. Yellow markers show reefs where most of the corals were affected.</p>
+
+
+
+<p>Reefs closer to the equator might be less vulnerable to bleaching because they have adapted to larger swings in temperature over time. Equatorial reefs often experience much more variability in temperature over short timeframes: they see large swings of heating and cooling on a daily basis. This exposure to constant fluctuations might have made them more resilient and adaptable over time.</p>
+
+
+
+<p>Reefs at higher latitudes will have less experience of this. When larger changes in sea surface temperature occur, they are less prepared.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="3076" height="712" src="https://ourworldindata.org/uploads/2021/04/world-corals-bleached.png" alt="World corals bleached" class="wp-image-42657" srcset="https://ourworldindata.org/uploads/2021/04/world-corals-bleached.png 3076w, https://ourworldindata.org/uploads/2021/04/world-corals-bleached-400x93.png 400w, https://ourworldindata.org/uploads/2021/04/world-corals-bleached-800x185.png 800w, https://ourworldindata.org/uploads/2021/04/world-corals-bleached-150x35.png 150w, https://ourworldindata.org/uploads/2021/04/world-corals-bleached-768x178.png 768w, https://ourworldindata.org/uploads/2021/04/world-corals-bleached-1536x356.png 1536w, https://ourworldindata.org/uploads/2021/04/world-corals-bleached-2048x474.png 2048w" sizes="(max-width: 3076px) 100vw, 3076px" data-high-res-src="https://ourworldindata.org/uploads/2021/04/world-corals-bleached.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="differences-in-mass-bleaching-across-the-world-s-oceans"><a class="deep-link" href="#differences-in-mass-bleaching-across-the-world-s-oceans"></a>Differences in mass bleaching across the world&#x2019;s oceans</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Let&#x2019;s then take a closer look at how reefs across each of the world&#x2019;s oceans are affected.</p><p>In a study published in <em>Science</em>, Terry Hughes and colleagues tracked the frequency of coral bleaching events across 100 pantropical locations from 1980 to 2016.<a id="ref-26" class="ref" href="#note-26"><sup>26</sup></a> This included all of the key coral hotspots spanning 54 countries, from the West Pacific, to the Atlantic, the Indian Ocean to the Great Barrier Reef in Australasia.</p><p>They not only quantified the total number of bleaching events but also their intensity. Bleaching events are differentiated into two categories: <em>moderate</em> bleaching occurs when less than 30% of the corals at a given location are affected; <em>severe</em> bleaching is when 30% or more are. Severe episodes represent events where mass, rather than localized, bleaching has happened.</p><p>In the charts here we see the number of moderate and severe bleaching events that occurred in each ocean from 1980 onwards. There are large geographical differences in the timing, intensity, and frequency of these events.</p><p>The Western Atlantic warmed earlier than elsewhere, and therefore also saw an earlier uptick in the frequency of bleaching. Its reefs were experiencing regular bleaching much sooner &#x2013; as early as the 1990s. By 1998 its was seeing an average of four bleaching events per location, compared to 0.4 to 1.6 in other oceans. Over the course of the entire period &#x2013; from 1980 to 2016 &#x2013; the Western Atlantic has seen the highest number of bleaching events, averaging ten events per location. This is two to three times higher than other regions.</p><p>But it&#x2019;s not just the <em>number</em> of bleaching events that&#x2019;s different, but also the intensity. It has also seen the greatest number of <em>severe</em> mass bleaching events.&#xA0;</p><p>The Western Atlantic might have been the most exposed to bleaching in the 1980s, but this has also changed a lot over time. In the 1980s bleaching risk was highest in the Western Atlantic, followed by the Pacific, with relatively low risk in the Indian Ocean and Australasia. But this has since flipped.&#xA0;</p><p>We see in the charts that the Indian Ocean and Australasia have seen the strongest <em>rise</em> in bleaching over time. In the 1980s, bleaching events were rare. By now it&#x2019;s rare that there would be a bleaching-free year. This is even true of <em>severe</em> mass bleaching events.</p><p>The return times of severe bleaching events &#x2013; how long following an event that we would expect another &#x2013; have declined in all regions apart from the Western Atlantic. In contrast to the earlier period, the Western Atlantic managed to escape a major bleaching event between 2010 and 2016. This shortening of return times for many of the world&#x2019;s corals is obviously bad news for overall reef health: corals can recover from intense bleaching but need enough time between events to do so. For most, this is 10 to 15 years. Getting hit by one bleaching episode after another means corals will struggle to recover.</p><p>As we&#x2019;ve seen, most of the world&#x2019;s corals are under increasing pressure from bleaching. But they differ in <em>how much</em> pressure and rate that this has changed over time. What might explain these differences?&#xA0;</p><p>An important finding from this study was that there doesn&#x2019;t seem to be a relationship between the <em>average</em> level of warming and the change in bleaching. The corals that had seen the largest rise in bleaching were not necessarily the ones that had encountered the biggest increase in average water temperature. This might seem counter-intuitive since bleaching is driven by warming waters. But it supports the understanding that it&#x2019;s specific pulses of high temperature &#x2013; in other words, large changes in the <em>variability</em> &#x2013; that causes bleaching. It&#x2019;s about larger extremes in temperature &#x2013; often over the course of only a few weeks &#x2013; rather than the background level that matters most.<a id="ref-27" class="ref" href="#note-27"><sup>27</sup></a></p><p>This point matters for our understanding of how reefs will be affected by bleaching in the future. It&#x2019;s tempting to try to make projections based on the expected rise in average sea surface temperatures. This is relatively simple to do. But the relationship to bleaching is a bit more complex. Instead, we need to understand how warming oceans will affect the frequency and intensity of short-term episodes of extreme warming.</p><p>An important question is whether reefs will be able to adapt to these extreme temperatures. And if some, but not all of them can, whether it will mean very different coral ecosystems from what we have today. In our <strong>follow-up article</strong> we look at how adaptable our corals might be to a warming ocean.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/coral-bleaching-events?country=~Pacific" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/coral-bleaching-events?country=~Pacific" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/coral-bleaching-events-9857a1b906404207a6272314e70c1720_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Coral bleaching events 9857a1b906404207a6272314e70c1720 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/coral-bleaching-events?country=~West+Atlantic" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/coral-bleaching-events?country=~West+Atlantic" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/coral-bleaching-events-0a47dc75e668b61f37e0ce0cbe76be35_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Coral bleaching events 0a47dc75e668b61f37e0ce0cbe76be35 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/coral-bleaching-events?country=~Indian+Ocean%2FMiddle+East" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/coral-bleaching-events?country=~Indian+Ocean%2FMiddle+East" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/coral-bleaching-events-366d948d3341dc282bd9458636e514b7_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Coral bleaching events 366d948d3341dc282bd9458636e514b7 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/coral-bleaching-events?country=~Australasia" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/coral-bleaching-events?country=~Australasia" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/coral-bleaching-events-1a1ae8b987fff6375a65aaeb66a04e88_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Coral bleaching events 1a1ae8b987fff6375a65aaeb66a04e88 v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="can-coral-reefs-adapt-to-a-warming-ocean"><a class="deep-link" href="#can-coral-reefs-adapt-to-a-warming-ocean"></a>Can coral reefs adapt to a warming ocean?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>As our oceans get warmer with climate change, the world&#x2019;s coral reefs are experiencing more frequent and more intense bleaching episodes. This is when they expel their algal symbionts &#x2013; which are their primary source &#x2013; due to environmental stress. Some corals die immediately when exposed to extreme temperatures. Others become bleached then either recover or slowly die over the coming months. As the time between successive bleaching events get shorter and shorter, corals do not have the time they need to recover.</p><p>Under current warming trends, the future for many of the world&#x2019;s corals looks bleak.</p><p>Some have suggested that there might be a silver lining. Perhaps coral reefs are more resilient than we give them credit for, and can adapt to a warming ocean. The broader question of whether corals can adapt touches on two related but distinct questions.</p><p>First, the question of whether an individual coral becomes more resilient to bleaching over time. If a coral experiences coral bleaching, are they more resilient to future events? Effectively, is there a protective effect of past bleaching?</p><p>Second, the question of whether coral reef <em>systems</em> can adapt. If particular coral species are more resilient than others, perhaps the reef as a whole can continue to thrive by &#x2018;selecting&#x2019; for the species that can survive.</p><p>In this article we take a look at the evidence for whether we see this adaptation happening, and what the future of the world&#x2019;s corals might look like.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="do-previous-bleaching-episodes-protect-corals-from-later-ones"><a class="deep-link" href="#do-previous-bleaching-episodes-protect-corals-from-later-ones"></a>Do previous bleaching episodes protect corals from later ones?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>If a coral experiences and recovers from an intense bleaching episode, will they be protected from another event years later?</p><p>There are a couple of ways in which organisms can acclimatize or adapt to different conditions.&#xA0; Organisms can often adjust to new environments &#x2013; such as a change in temperature, pH, moisture level or altitude &#x2013; to make sure they can survive across a range of conditions.<a id="ref-28" class="ref" href="#note-28"><sup>28</sup></a></p><p>We see many examples of this in nature. Sheep, for example, grow thicker coats in colder climates then shed them in the Spring or Summer. We even see examples in humans. When we climb a mountain our bodies produce more haemoglobin &#x2013; the protein in red blood cells &#x2013; which transport oxygen around the body. This helps us to adapt to higher altitudes. When we move to a hot climate our bodies adjust by sweating at a lower core body temperature while also reducing the amount of salt in our sweat.<a id="ref-29" class="ref" href="#note-29"><sup>29</sup></a></p><p>In corals, there are a couple of ways that this might work.<a id="ref-30" class="ref" href="#note-30"><sup>30</sup></a> Some involve changes in the coral <em>host</em>, and some in the <em>symbiont</em>.</p><p>First, the coral <em>hosts</em> can release higher levels of specific genes involved in stress-resistant traits. By releasing heat shock proteins and antioxidants, they can respond efficiently to pulses in warming and cooling. One study, published in <em>Science,</em> took the species <em>Acropora hyacinthus</em> &#x2013; an important coral in the Pacific that tends to bleach easily &#x2013; and transplanted it to an environment with very frequent swings in temperature.<a id="ref-31" class="ref" href="#note-31"><sup>31</sup></a> The corals acquired heat resistance in their new environment. This resistance that comes with being in a rapidly shifting environment mirrors the heat tolerance we see in corals elsewhere: corals close to the equator tend to experience much less bleaching than those at mid-latitudes; this is because they experience much larger swings in temperature on a day-to-day basis. They&#x2019;ve adapted resilience to warming and cooling pulses.</p><p>Second, acclimatization traits could be passed onto offspring. When corals reproduce, most of the inheritance of key traits is based on genetic factors. But experiments on species such as <em>Acropora</em>, <em>Goniastrea</em>, <em>Platygyra</em> and <em>Porites</em>, suggest that some acclimatization from generation-to-generation could influence the tolerance of offspring.<a id="ref-32" class="ref" href="#note-32"><sup>32</sup></a> However, the problem with this type of acclimatization is always the timescales involved: generational cycles tend to be 4 to 8 years long.<a id="ref-33" class="ref" href="#note-33"><sup>33</sup></a> This might not be able to keep pace with warming.</p><p>The third involves the selection of particularly heat-resistant <em>symbionts</em>. There are large differences in how well different types of Symbiodinium can repair photosynthetic damage &#x2013; the cause of heat stress and bleaching.<a id="ref-34" class="ref" href="#note-34"><sup>34</sup></a> Some, but not all, corals can become more resistant to warming by selecting for these heat-tolerant species.<a id="ref-35" class="ref" href="#note-35"><sup>35</sup></a> One symbiodinium that is very tolerant to changes in temperature is the so-called D1 (&#x2018;Symbiodinium trenchi&#x2019;).<a id="ref-36" class="ref" href="#note-36"><sup>36</sup></a> We find that corals accumulate much more D1 symbionts in waters that experience higher levels of warming. These are often much more resistant to bleaching.</p><p>There is mixed evidence on how well these three processes work to protect reefs in practice. Some results suggest that the threshold for coral bleaching has increased over the course of decades, or even years. Corals species that bleached heavily across the world&#x2019;s reefs in the 1990s seem to show more resistance to bleaching since the millennium. There&#x2019;s evidence of this in multiple locations including the Great Barrier Reef; the Maldives; Moorea in the French Polynesia; and Southeast Asia.<a id="ref-37" class="ref" href="#note-37"><sup>37</sup></a></p><p>In contrast, more recent studies on the Great Barrier Reef have found no evidence of a protective effect of past bleaching.<a id="ref-38" class="ref" href="#note-38"><sup>38</sup></a> The reefs that experienced the most bleaching in the 1998 and 2002 warming events did not fare any better than others in the 2016 event. They bleached just as much. This would suggest that previous exposure did not improve their resilience to subsequent bleaching events.</p><p>It&#x2019;s important to note is that the 2016 warming event was a particularly extreme one. It was the <a href="https://ourworldindata.org/grapher/coral-bleaching-events?country=~Australasia">largest mass bleaching event</a> on record in Australasia.<a id="ref-39" class="ref" href="#note-39"><sup>39</sup></a></p><p>This might point towards an explanation for why we have conflicting results &#x2013; that some studies show that previous bleaching provides some adaptive protection while others do not. Perhaps reefs can and do adapt to previous heat stress, <em>but only up to a certain point</em>. There may be a limit to what they can adapt to. Their adaptive success might show in more moderate bleaching episodes but when extreme events &#x2013; like the Great Barrier Reef bleaching in 2016 &#x2013; arrive, they are pushed beyond their limits.</p><p>How well corals can acclimatize or adapt to climate change will therefore depend on the frequency and intensity of these very extreme bleaching episodes.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="can-coral-reefs-adapt-by-selecting-more-resilient-coral-species"><a class="deep-link" href="#can-coral-reefs-adapt-by-selecting-more-resilient-coral-species"></a>Can coral reefs adapt by selecting more resilient coral species?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>There might be another way that reefs can continue to survive, or even thrive, in a warming ocean: by &#x2018;selecting&#x2019; for the most resilient coral species. In this case we&#x2019;re not talking about the adaptability of individual corals but the adaptability of the reef system as a whole.&#xA0;</p><p>Let&#x2019;s say we have a reef that is built from two coral species: Coral A is very intolerant to warming events and dies off quickly; in contrast, Coral B is hardy and bounces back quickly after 1&#xB0;C or 2&#xB0;C of warming. The prospects for Coral A over the next century don&#x2019;t look good: after several mass bleaching events most of it is gone. But this doesn&#x2019;t necessarily mean that our reef is gone. Coral B is still going strong and soon takes the place of the disappearing Coral A. In the end our reef system looks very different to how it started. But it&#x2019;s there nonetheless.</p><p>How does this play out in the real world? Do we really see such large differences in the tolerance of different coral species?</p><p>We already know that different species can tolerate very different environmental conditions. The temperature, pH or salinity of the world&#x2019;s oceans are not the same everywhere: corals in the Red Sea can withstand different conditions to corals on the Great Barrier Reef or the Arabian Sea.&#xA0;</p><p>Corals in the Persian Gulf already exist in waters that reach 34 to 35&#xB0;C in the summer.<a id="ref-40" class="ref" href="#note-40"><sup>40</sup></a> That&#x2019;s already warmer than what most of the world&#x2019;s corals would have to survive by the end of the century with climate change. So it&#x2019;s not impossible for corals to withstand these temperatures. The caveat is that these corals probably adapted to these temperatures over the course of thousands of years, rather than the decades that today&#x2019;s corals have to adapt to climate change.</p><p>Rather than comparing corals in different environments we should compare the bleaching or mortality thresholds of species within their current environments. Even there we see large differences in response from species to species.</p><p><strong>Coral taxa show large differences in their sensitivity to bleaching</strong></p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>In a study in Moorea in the French Polynesia, researchers looked at how different species of coral were affected in a mass bleaching event in 2007.<a id="ref-41" class="ref" href="#note-41"><sup>41</sup></a> They studied four common corals &#x2013; <em>Acropora</em>, <em>Montipora</em>, <em>Pocillopra</em> and <em>Porites</em> &#x2013; and looked at how badly each of them were bleached. This &#x2018;bleaching susceptibility&#x2019; was measured as the percentage of corals that were bleached weighted by how severe the bleaching was. The results are shown in the chart.</p>
+
+
+
+<p><em>Acropora</em> &#x2013; also known as &#x2018;elkhorn coral&#x2019; because it has branches that look like antlers &#x2013; was the most intolerant to heat stress. Bleaching susceptibility was more than 50% in colonies of all sizes (from less than 10 centimeters to more than 50 centimeters). <em>Montipora </em>experienced moderate bleaching. The susceptibility of <em>Pocillopora</em> was very different: small colonies of these species were very tolerant to heat stress, but the largest ones experienced a lot of bleaching. Finally, at the bottom we have <em>Porites, </em>a stony coral that tends to form small finger-like structures. It was very resistant to heat stress &#x2013; almost none of its corals experienced bleaching.&#xA0;</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1388" height="1551" src="https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013.png" alt="Bleaching by coral species pratchett et al. 2013" class="wp-image-42740" srcset="https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013.png 1388w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013-358x400.png 358w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013-492x550.png 492w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013-134x150.png 134w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013-768x858.png 768w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013-1375x1536.png 1375w" sizes="(max-width: 1388px) 100vw, 1388px" data-high-res-src="https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Pratchett-et-al.-2013.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>This variability in response to heat stress is not unique to these particular coral taxa. A number of studies have shown the same across a range of coral taxa and reefs across the world.<a id="ref-42" class="ref" href="#note-42"><sup>42</sup></a> One study looked at the bleaching susceptibility of coral taxa in Florida Keys over the course of eight years.<a id="ref-43" class="ref" href="#note-43"><sup>43</sup></a> In the chart we see how the probability of corals bleaching changed with increasing heat stress. Heat stress is measured using a metric called &#x2018;degree heating weeks&#x2019; &#x2013; more degree heating weeks equals more heat stress.&#xA0;</p>
+
+
+
+<p>As we&#x2019;d expect, the probability of bleaching increases with increasing heat stress. This is true of all coral taxa. But there are large differences in the sensitivity of each. As we saw from our study in the French Polynesia, <em>Acropora</em> is highly susceptible to bleaching and comes out on top. But what&#x2019;s interesting is that this is only true when heat stress reaches a certain threshold &#x2013; around four degree heating weeks. Other taxa &#x2013; such as <em>Siderastrea siderea</em> and <em>Stephanocoenia intersepta &#x2013; </em>experience small amounts of bleaching even at very low levels of heat stress. The difference is that these corals are much less responsive to even more heat stress.&#xA0;</p>
+
+
+
+<p>This means that not only do different corals respond differently to warmer temperatures, the magnitude of these differences really depends on how extreme the warming event is and the amount of stress they are put under.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1769" height="1330" src="https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008.png" alt="Bleaching by coral species yee et al. 2008" class="wp-image-42741" srcset="https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008.png 1769w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008-400x301.png 400w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008-732x550.png 732w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008-150x113.png 150w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008-768x577.png 768w, https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008-1536x1155.png 1536w" sizes="(max-width: 1769px) 100vw, 1769px" data-high-res-src="https://ourworldindata.org/uploads/2021/05/Bleaching-by-coral-species-Yee-et-al.-2008.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p><strong>Changes in reefs will also reflect differences in how quickly corals recover and grow</strong></p>
+
+
+
+<p>If some corals bleach &#x2013; and possibly die off &#x2013; much more easily than other species, it seems likely that reefs will begin to be dominated by the most resilient ones. This seems likely. But sensitivity to bleaching is just one part of the story.</p>
+
+
+
+<p>We also need to consider how quickly corals can recover and grow. If corals that bleach easily then bounce&#xA0; back quickly, they might be able to maintain their spot on the reef. Conversely, if more resilient corals that experience only moderate bleaching take 10 to 20 years to recover and grow back slowly, they could lose theirs.</p>
+
+
+
+<p>Researchers have looked at this dynamic between some specific corals in detail. The two corals which dominate many reefs in the Indo-Pacific region &#x2013; which includes corals off the coasts of Southeast Asia and the Great Barrier Reef &#x2013; are <em>Acropora palmata </em>and <em>Porites</em>. These corals could not be more different. As we&#x2019;ve already seen, <em>Acropora</em> bleaches easily when exposed to high levels of heat stress. <em>Porites</em> is much more resilient. But their growth rates and recovery times are also very different: <em>Acropora</em> grows quickly; <em>Porites</em> grows slowly.</p>
+
+
+
+<p>This means infrequent but severe disturbances tend to favor <em>Acropora</em> because it can grow back quickly. But moderate, frequent events tend to favor <em>Porites</em> which is much less-affected by moderate warming. Models that look at the dynamics of these two corals on a reef system suggest that <em>Acropora</em> continues to dominate as long as the interval between bleaching events is more than two years.<a id="ref-44" class="ref" href="#note-44"><sup>44</sup></a> Since it grows quickly, two years gives it sufficient time to recover and grow. If the interval between events is less than two years then <em>Porites</em> starts to dominate because even the fast-growing <em>Acropora </em>cannot recover quickly enough.</p>
+
+
+
+<p>Researchers therefore expect<em> </em>susceptible corals like <em>Acropora </em>to decline in abundance as a result of increased warming. But depending on the frequency of bleaching events they may not decline by as much as their response to heat stress would suggest.<a id="ref-45" class="ref" href="#note-45"><sup>45</sup></a></p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="the-future-of-coral-reefs-will-depend-on-the-intensity-of-warming"><a class="deep-link" href="#the-future-of-coral-reefs-will-depend-on-the-intensity-of-warming"></a>The future of coral reefs will depend on the intensity of warming</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>As we&#x2019;ve seen, corals can adapt to changing environments in multiple ways. The corals themselves can adapt and acclimatize to changing temperatures through genetic changes in the host, or changes in the selection of heat-resistant symbionts. But reefs as a whole can also change and adapt, with more resilient species becoming more dominant while others die away.</p><p>It&#x2019;s unlikely that the coral reefs of the future will look like they do today. Reef assemblages will be different. Just how different, and how much coral cover we will lose completely will depend on the intensity and frequency of extreme bleaching events.</p><p>The research suggests that corals themselves can adapt to changes &#x2013; but only up to a certain point. More and more extreme events will push beyond these limits. And the assemblages of coral reefs will depend on how frequent bleaching episodes are &#x2013; fast-growing corals have a chance of survival as long as bleaching events don&#x2019;t happen every year or two.</p><p>Human emissions are driving climate change. The intensity of coral bleaching depends on how much greenhouse gases we emit. The future of the world&#x2019;s coral reefs rests on the decisions we make to tackle climate change today.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="ocean-acidification"><a class="deep-link" href="#ocean-acidification"></a>Ocean acidification</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#what-impact-will-ocean-acidification-have-on-coral-reefs"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>What impact will ocean acidification have on coral reefs?</span></a></li></ul></div></div><h3 id="what-impact-will-ocean-acidification-have-on-coral-reefs"><a class="deep-link" href="#what-impact-will-ocean-acidification-have-on-coral-reefs"></a>What impact will ocean acidification have on coral reefs?</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>When we think of the impacts of carbon dioxide (CO<sub>2</sub>) emissions we tend to focus on its impact on climate change. But for marine organisms, these emissions pose a double threat. CO<sub>2</sub> emissions could risk the future of marine life, including coral reefs through <em>ocean acidification</em>.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-is-ocean-acidification"><a class="deep-link" href="#what-is-ocean-acidification"></a>What is ocean acidification?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Before we look at the potential impact of ocean acidification on the world&#x2019;s corals, we should first understand what it is, and why it happens.</p>
+
+
+
+<p>How much CO<sub>2</sub> exists in the atmosphere is determined by the balance of how much is emitted, and how much is absorbed by land and ocean &#x2018;sinks&#x2019;. If we emit more than can be absorbed by forests, other vegetation and the ocean, then the atmospheric concentration increases. The Global Carbon Project shows this nicely in the graphic.<a id="ref-46" class="ref" href="#note-46"><sup>46</sup></a></p>
+
+
+
+<p>What this means is that the ocean absorbs a lot of CO<sub>2</sub>. As we can see from the chart &#x2013; the amount of absorbed CO<sub>2</sub> has been increasing over time as a result of increased emissions from fossil fuels. So it&#x2019;s not just the <em>atmospheric</em> concentration that has been increasing, but also the concentration in the ocean.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="848" height="478" src="https://ourworldindata.org/uploads/2020/06/CO2-sources-sinks.png" alt="Co2 sources sinks" class="wp-image-34225" srcset="https://ourworldindata.org/uploads/2020/06/CO2-sources-sinks.png 848w, https://ourworldindata.org/uploads/2020/06/CO2-sources-sinks-400x225.png 400w, https://ourworldindata.org/uploads/2020/06/CO2-sources-sinks-800x451.png 800w, https://ourworldindata.org/uploads/2020/06/CO2-sources-sinks-150x85.png 150w, https://ourworldindata.org/uploads/2020/06/CO2-sources-sinks-768x433.png 768w" sizes="(max-width: 848px) 100vw, 848px" data-high-res-src="https://ourworldindata.org/uploads/2020/06/CO2-sources-sinks.png"><figcaption>Source: Global Carbon Project<a id="ref-47" class="ref" href="#note-47"><sup>47</sup></a></figcaption></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Now, on to chemistry. When CO2 is absorbed in water, it reacts to form other substances. When we combine CO<sub>2</sub> and water (H<sub>2</sub>O) we get carbonic acid. (H<sub>2</sub>CO<sub>3</sub>). This reaction occurs:</p>
+
+
+
+<p>CO<sub>2</sub> + H<sub>2</sub>O &#x2192; H<sub>2</sub>CO<sub>3</sub></p>
+
+
+
+<p>H<sub>2</sub>CO<sub>3</sub> can then lose its hydrogen atoms to form bicarbonate (HCO<sub>3</sub>) then carbonate (CO<sub>3</sub>) ions.</p>
+
+
+
+<p>H<sub>2</sub>CO<sub>3</sub> &#x2192; HCO<sub>3</sub> + H<sup>+</sup></p>
+
+
+
+<p>HCO<sub>3</sub> &#x2192; CO<sub>3</sub> + H<sup>+</sup></p>
+
+
+
+<p>You might remember that the acidity of water &#x2013; its pH &#x2013; is driven by the concentration of hydrogen (H<sup>+</sup>) atoms. More H<sup>+</sup> atoms makes water more acidic. So we can see that through these reactions, our seawater becomes increasingly acidic. This chain of reactions was started by adding CO<sub>2</sub> to the water.</p>
+
+
+
+<p>But that&#x2019;s just part of the story. The pH of water does decrease (being more acidic) when we add CO<sub>2</sub>, but not quite as much as we might expect. This is because water tries to &#x2018;buffer&#x2019; against this acidity. It creates reactions to work against this process. Some of the CO<sub>2</sub> that&#x2019;s added to water also reacts with carbonate ions (CO<sub>3</sub>) to form bicarbonate ions:</p>
+
+
+
+<p>CO<sub>2</sub> + CO<sub>3</sub> + H<sub>2</sub>O &#x2192; 2HCO<sub>3</sub></p>
+
+
+
+<p>Overall, there are two outcomes of adding CO<sub>2</sub> to water. First, the pH decreases a bit and our water becomes more acidic. Second, some carbonate (CO<sub>3</sub>) ions are consumed to buffer against this process.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-impact-does-ocean-acidification-have-on-marine-life"><a class="deep-link" href="#what-impact-does-ocean-acidification-have-on-marine-life"></a>What impact does ocean acidification have on marine life?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Why does this matter? Why are carbonate ions so important? Corals and other marine life build their shells and exoskeletons using the mineral calcium carbonate (CaCO<sub>3</sub>). To build them, they need carbonate ions in the water. Clearly, as carbonate reacts with CO<sub>2</sub>, we end up with less and less in the water. Less carbonate for marine life to form their shells.</p>
+
+
+
+<p>Whether carbonate crystals form depends on what we call the &#x2018;saturation state&#x2019; (&#x1D6C0;) of seawater. The saturation state is the ratio between the amount of carbonate ions in seawater, and the &#x2018;saturation&#x2019; amount for carbonate ions in the water. The &#x2018;saturation&#x2019; concentration depends on the temperature, salinity, and depth of the water.&#xA0;</p>
+
+
+
+<p>&#x3A9; = [CO<sub>3</sub> <sub>seawater</sub>] / [CO<sub>3</sub> <sub>saturation</sub>]</p>
+
+
+
+<p>If there is enough carbonate (CO<sub>3</sub>) in the seawater, then &#x3A9; is greater than 1 (it&#x2019;s supersaturated) and carbonate crystals can form. If there is not enough CO<sub>3</sub>, then &#x3A9;&#xA0; is less than 1 (it&#x2019;s undersaturated) and so they can&#x2019;t form.</p>
+
+
+
+<p>We can see how this will affect corals and other marine organisms: when ocean acidification happens and the amount of carbonate ions in seawater decreases, the value of &#x3A9; decreases. Without continued acidification, &#x3A9; could fall below one. Corals then risk the dissolution of their current skeletons and struggle to form new ones.</p>
+
+
+
+<p>When the erosion rate of organisms is higher than the rate that they can build new skeletons, they slowly disappear.&#xA0;</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="the-potential-future-of-coral-reefs-under-ocean-acidification"><a class="deep-link" href="#the-potential-future-of-coral-reefs-under-ocean-acidification"></a>The potential future of coral reefs under ocean acidification</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>This leads to the question of how much ocean acidification we might expect to see in the coming century. Is it large enough to shift seawater from its &#x2018;supersaturated&#x2019; state where corals and other organisms can form? Or will reefs struggle to survive and grow?</p>
+
+
+
+<p>There are two elements of this question. First, how do we expect our emissions of CO<sub>2</sub> to affect the chemistry of seawater? Second, how will corals respond to these changing conditions?</p>
+
+
+
+<p>Scientists can try to test future acidification in controlled experiments. They can expose corals to waters with different concentrations of dissolved CO<sub>2</sub> &#x2013; mimicking the process of human emissions &#x2013; and monitor how they respond. Many experiments have tried to look at the response of corals to this acidification.</p>
+
+
+
+<p>It&#x2019;s actually very difficult to say what the future of coral reefs look like for the coming century. This is because most of the experiments have exposed corals to CO<sub>2</sub> concentrations that are much higher than we expect to see in the real world. As we cover in a <strong>related article</strong>, Hughes et al. (2017) reviewed 336 experiments across 137 studies and found none that assessed the impacts of concentrations in the range of 400 &#x2013; 500 ppm, the concentrations that we&#x2019;d expect coral reefs to experience in the coming century.<a id="ref-48" class="ref" href="#note-48"><sup>48</sup></a> The lowest concentrations started at 500 ppm: one-third of the experiments ranged from 500 to 750 ppm. Another third ranged from 750 to 1000 ppm, and the remaining third were over 1,000 ppm.</p>
+
+
+
+<p>A meta-analysis of the sensitivity of corals to acidification found that calcification declined by around 15% when &#x3A9; fell by one unit.<a id="ref-49" class="ref" href="#note-49"><sup>49</sup></a> What would it take for &#x3A9; to fall by one unit? Atmospheric concentrations of CO<sub>2</sub> would have to almost double from around 400 to 800 ppm. Even the worst (and unrealistically higher) scenarios of CO<sub>2</sub> emissions barely reach 800 ppm by the end of the century. It&#x2019;s incredibly unlikely that we reach this point.</p>
+
+
+
+<p>At lower levels, these studies have suggested that there is a &#x2018;threshold&#x2019; concentration of around 560 ppm. The understanding is that below 560 ppm, most corals are still in a &#x2018;supersaturated&#x2019; state. They continue to grow as normal. But above 560 ppm, their rate of calcification begins to decline. This concentration of 560 ppm is getting closer to the concentrations of CO<sub>2</sub> that we might begin to see by the end of the century. But, due to the lack of experiments that have focused on coral responses in the range of 400 to 500 ppm, we still don&#x2019;t have a good understanding of what the impact on corals might be over the coming decades.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="coral-respond-differently-to-ocean-acidification"><a class="deep-link" href="#coral-respond-differently-to-ocean-acidification"></a>Coral respond differently to ocean acidification</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>It would also be wrong to assume that all corals respond in the same way to acidifying waters. Just as we understand from differences in the extent of mass bleaching, coral species do not respond in the same way to environmental stressors. Some bleach easily; others are very resilient. It seems to be the same for ocean acidification: some corals struggle at low levels of acidification, while others continue to thrive even in very acidic waters.</p>
+
+
+
+<p>In some experiments, calcification for some corals didn&#x2019;t change when CO<sub>2</sub> concentrations were doubled or even tripled.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="to-understand-the-impact-of-climate-change-and-ocean-acidification-on-coral-reefs-we-need-more-experiments-at-lower-levels-of-warming-and-co2-concentrations"><a class="deep-link" href="#to-understand-the-impact-of-climate-change-and-ocean-acidification-on-coral-reefs-we-need-more-experiments-at-lower-levels-of-warming-and-co2-concentrations"></a>To understand the impact of climate change and ocean acidification on coral reefs we need more experiments at lower levels of warming and CO<sub>2</sub> concentrations</h2></div></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>The world&#x2019;s coral reefs face a double-threat from carbon dioxide emissions. They can bleach or die from warming oceans but also by ocean acidification; the dissolution of CO<sub>2</sub> in the oceans can make it increasingly difficult for corals to build their carbonate exoskeletons.&#xA0;</p>
+
+
+
+<p>To understand the future prospects of the world&#x2019;s corals we need to know how they might respond to changes in temperature and CO<sub>2 </sub>concentrations. This needs to be in line with realistic projections of what we might expect from emissions in the coming decades or century.&#xA0;</p>
+
+
+
+<p>We&#x2019;ve set a global climate target of keeping average temperature rise to &#x201C;well below 2&#xB0;C&#x201D; and to &#x201C;pursue efforts to limit the temperature increase to 1.5 &#xB0;C&#x201D;. We&#x2019;re currently not on track to achieve either of these targets, and are instead on course for an average warming of around&#xA0; 3&#xB0;C above pre-industrial temperatures by the end of the century. But, we&#x2019;re now thankfully well below the extreme &#x2018;business-as-usual&#x2019; pathways that would take us to 6&#xB0;C, 7&#xB0;C, 8&#xB0;C warming and CO<sub>2 </sub>concentrations of 6000 to 1000 ppm.</p>
+
+
+
+<p>It&#x2019;s important to note that the 1.5 &#xB0;C and 2 &#xB0;C targets are less relevant for coral reefs. The oceans experience different changes in temperature. The average tropical sea surface temperature increased by 0.57 &#xB0;C between 1880 and 2015. That&#x2019;s lower than the 0.88 &#xB0;C increase in global average temperature for the same period. There is also a lot of spatial and temporal variation across the oceans: corals are particularly vulnerable to spikes in summer water temperatures, and this can vary a lot from location to location. Due to this heterogeneity, there is no single &#x2018;safe&#x2019; level of warming for coral reefs.</p>
+
+
+
+<p>If the world was to follow the lowest emissions scenario (RCP2.6) we&#x2019;d expect to see a warming of 0.3&#xB0;C to 0.68 &#xB0;C between different reefs. That&#x2019;s an increase similar to the warming we&#x2019;ve already seen over the past century. What would be the impact on the world&#x2019;s corals?</p>
+
+
+
+<p>We don&#x2019;t really know. The problem is that most experiments which look at the temperature and acidification effects on corals have focused on temperatures and CO<sub>2 </sub>concentrations that are much higher than this. In a paper published in <em>Nature</em>, Terry Hughes and colleagues looked at the range of experimental studies that had been done on coral responses to climate change.<a id="ref-50" class="ref" href="#note-50"><sup>50</sup></a> This involved 336 experiments across 137 studies. These experiments expose corals to one or more treatments of elevated water temperatures for periods ranging from a single day to a year or longer. Or in the case of ocean acidification, expose them to waters with varying concentrations of dissolved CO<sub>2</sub>.</p>
+
+
+
+<p>The chart shows the distribution of experimental conditions in the studies. The height of each bar represents how often a given temperature or CO<sub>2</sub> concentration had been assessed.&#xA0;</p>
+
+
+
+<p>We see that almost none of the studies looked at effects of up to 1&#xB0;C or 2&#xB0;C warming that we would expect over the next century.&#xA0; The median change across the experiments was an increase of 4&#xB0;C (almost 5 &#xB0;C above pre-industrial temperatures).</p>
+
+
+
+<p>In fact, no study had done experiments on the biological response of corals to temperature increases in the 0.30&#x2013;0.68 &#xB0;C range that we would expect under the RCP2.6 scenario of limiting warming to &#x201C;well below 2&#xB0;C&#x201D;.</p>
+
+
+
+<p>The same is true for experiments on ocean acidification. Since pre-industrial times, the average pH of the ocean surface waters has declined by about 0.1 units, from pH 8.21 to 8.1.<a id="ref-51" class="ref" href="#note-51"><sup>51</sup></a> Some of the research on ocean acidification has painted a bleak picture for the world&#x2019;s coral: studies have suggested that the pH of ocean waters will fall by another 0.3 to 0.4 units, and reefs across the subtropics will dissolve. This will confine the optimal conditions for coral calcification to a narrower band across the equator.</p>
+
+
+
+<p>But, these studies are based on very high emissions scenarios (such as RCP8.5) where CO<sub>2</sub> concentrations reach 800 ppm. This is not what we should expect. If we were to stabilise atmospheric concentrations of CO<sub>2</sub> at 450ppm, the pH of the world&#x2019;s oceans would remain at around 8.1 in most tropical waters &#x2013; this would keep them in an optimal state for coral calcification.</p>
+
+
+
+<p>As we see in the chart, most experiments have been conducted at very high CO<sub>2</sub> concentrations. Most experiments were designed to match conditions of unconstrained greenhouse gas emissions.</p>
+
+
+
+<p>Hughes et al. (2017) reviewed 336 experiments across 137 studies and found none that assessed the impacts of 400 &#x2013; 500 ppm, the concentrations that we&#x2019;d expect coral reefs to experience in the coming century. The lowest concentrations started at 500 ppm: one-third of experiments ranged from 500 to 750 ppm. Another third ranged from 750 to 1000 ppm; and the remaining third were over 1,000 ppm.</p>
+
+
+
+<p>Not only are most of these implausibly high, they also simulate conditions in a world that would have killed off most of the world&#x2019;s corals regardless. A world with CO<sub>2</sub> concentrations of over 1,000 ppm would be at least 6 &#xB0;C warmer than today. The corals would have died from severe warming already. They wouldn&#x2019;t be around to experience these levels of&#xA0; ocean acidification.</p>
+
+
+
+<p>What this review highlights is the massive gap in our understanding of what corals will face under realistic warming and acidification conditions over the next century. We need to adjust the range of temperature and pH conditions that we test corals under. And importantly, test what the combined impact of warming and acidification might be under the more realistic range of scenarios of 1&#xB0;C to 2&#xB0;C of warming.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="1854" height="1166" src="https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments.png" alt="Coral reef experiments" class="wp-image-42746" srcset="https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments.png 1854w, https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments-400x252.png 400w, https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments-800x503.png 800w, https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments-150x94.png 150w, https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments-768x483.png 768w, https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments-1536x966.png 1536w" sizes="(max-width: 1854px) 100vw, 1854px" data-high-res-src="https://ourworldindata.org/uploads/2021/05/Coral-reef-experiments.png"></figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="explore-more-of-work-on-biodiversity"><a class="deep-link" href="#explore-more-of-work-on-biodiversity"></a>Explore more of work on <em>Biodiversity</em></h2></div></div></div><div class="wp-block-owid-grid">
+		
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/biodiversity-across-the-world">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Biodiversity-and-Wildlife-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Biodiversity and wildlife thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Biodiversity-and-Wildlife-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Biodiversity-and-Wildlife-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Biodiversity-and-Wildlife-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Biodiversity-and-Wildlife-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Biodiversity-and-Wildlife-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Biodiversity-and-Wildlife-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore the diversity of wildlife across the planet &#x2013; how many species are in each group, and where they live.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/mammals">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Mammals-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Mammals thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Mammals-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Mammals-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Mammals-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Mammals-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Mammals-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Mammals-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See how wild mammal populations have changed over time; where they live today; and where they are threatened with extinction.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/birds">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Birds-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Birds thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Birds-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Birds-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Birds-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Birds-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Birds-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Birds-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore the diversity of birds across the world; how many species have gone extinct; and how populations are changing.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/fish">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Fish-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Fish thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Fish-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Fish-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Fish-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Fish-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Fish-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Fish-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See data on wild fish stocks; threatened species and how seafood production is changing.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/living-planet-index">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Living-Planet-Index-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Living planet index thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Living-Planet-Index-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Living-Planet-Index-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Living-Planet-Index-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Living-Planet-Index-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Living-Planet-Index-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Living-Planet-Index-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>The Living Planet Index is one of the most-common biodiversity metrics. What does it tell us about the world&#x2019;s wildlife?</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/extinctions">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Extinctions-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Extinctions thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Extinctions-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Extinctions-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Extinctions-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Extinctions-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Extinctions-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Extinctions-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore the long-term history of Earth&#x2019;s extinctions, and where we are today.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/threats-to-wildlife">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Threats-to-Wildlife-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Threats to wildlife thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Threats-to-Wildlife-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Threats-to-Wildlife-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Threats-to-Wildlife-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Threats-to-Wildlife-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Threats-to-Wildlife-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Threats-to-Wildlife-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Explore the latest data and research on the biggest threats to global wildlife.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/poaching-and-wildlife-trade">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Poaching-and-Wildlife-Trade-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Poaching and wildlife trade thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Poaching-and-Wildlife-Trade-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Poaching-and-Wildlife-Trade-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Poaching-and-Wildlife-Trade-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Poaching-and-Wildlife-Trade-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Poaching-and-Wildlife-Trade-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Poaching-and-Wildlife-Trade-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>Hunting is one of the largest threats to wildlife. See how poaching rates and trade has changed over time, and across species.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/habitat-loss">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Habitat-Loss-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Habitat loss thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Habitat-Loss-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Habitat-Loss-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Habitat-Loss-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Habitat-Loss-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Habitat-Loss-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Habitat-Loss-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See how human expansion and habitat loss has changed landscapes over millennia, and how this has impacted global biodiversity.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="wp-block-owid-card  with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/protected-areas-and-conservation">
+            <figure><img width="768" height="404" src="https://ourworldindata.org/uploads/2021/03/Protected-Areas-Conservation-thumbnail-768x404.png" class="attachment-medium_large size-medium_large" alt="Protected areas conservation thumbnail" loading="lazy" srcset="https://ourworldindata.org/uploads/2021/03/Protected-Areas-Conservation-thumbnail-768x404.png 768w, https://ourworldindata.org/uploads/2021/03/Protected-Areas-Conservation-thumbnail-400x210.png 400w, https://ourworldindata.org/uploads/2021/03/Protected-Areas-Conservation-thumbnail-800x421.png 800w, https://ourworldindata.org/uploads/2021/03/Protected-Areas-Conservation-thumbnail-150x79.png 150w, https://ourworldindata.org/uploads/2021/03/Protected-Areas-Conservation-thumbnail.png 1200w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2021/03/Protected-Areas-Conservation-thumbnail.png"></figure>
+            <div class="text-wrapper">
+              
+              <div class="description">
+                
+
+<p>See how protected areas and conservation efforts are changing over time, and their impacts on protecting the world&#x2019;s wildlife.</p>
+
+
+              </div>
+            </div>
+        </a>
+      </div>
+
+	</div></section>
+
+
+	
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Morrison, T. H., Hughes, T. P., Adger, W. N., Brown, K., Barnett, J., &amp; Lemos, M. C. (2019). <a href="https://www.nature.com/articles/d41586-019-02737-8">Save reefs to rescue all ecosystems</a>. <em>Nature</em>.</p></li><li id="note-2"><p>Burke, L., Reytar, K., Spalding, M., &amp; Perry, A. (2011). <a href="https://digitalarchive.worldfishcenter.org/handle/20.500.12348/1107">Reefs at risk revisited</a>. <em>World Resources Institute</em>.</p></li><li id="note-3"><p>Morrison, T. H., Hughes, T. P., Adger, W. N., Brown, K., Barnett, J., &amp; Lemos, M. C. (2019). <a href="https://www.nature.com/articles/d41586-019-02737-8">Save reefs to rescue all ecosystems</a>. <em>Nature</em>.</p></li><li id="note-4"><p>Dietzel, A., Bode, M., Connolly, S. R., &amp; Hughes, T. P. (2021). <a href="https://www.nature.com/articles/s41559-021-01393-4">The population sizes and global extinction risk of reef-building coral species at biogeographic scales</a>. <em>Nature Ecology &amp; Evolution</em>, 1-7.</p></li><li id="note-5"><p>Hoegh-Guldberg, O., Poloczanska, E. S., Skirving, W., &amp; Dove, S. (2017). <a href="https://www.frontiersin.org/articles/10.3389/fmars.2017.00158/full">Coral reef ecosystems under climate change and ocean acidification</a>. <em>Frontiers in Marine Science</em>, 4, 158.</p></li><li id="note-6"><p>They also get small amounts of energy through particle feeding from the ocean floor.</p></li><li id="note-7"><p>Spalding, M. D., &amp; Brown, B. E. (2015). <a href="https://science.sciencemag.org/content/350/6262/769">Warm-water coral reefs and climate change</a>. <em>Science</em>, 350(6262), 769-771.</p></li><li id="note-8"><p>Source: NASA Millennium Coral Reef Mapping Project</p></li><li id="note-9"><p>Dietzel, A., Bode, M., Connolly, S. R., &amp; Hughes, T. P. (2021). <a href="https://www.nature.com/articles/s41559-021-01393-4">The population sizes and global extinction risk of reef-building coral species at biogeographic scales</a>.&nbsp;<em>Nature Ecology &amp; Evolution</em>, 1-7.</p></li><li id="note-10"><p>Barnosky, A. D., Matzke, N., Tomiya, S., Wogan, G. O., Swartz, B., Quental, T. B., … &amp; Ferrer, E. A. (2011). <a href="https://www.nature.com/articles/nature09678">Has the Earth’s sixth mass extinction already arrived?</a>. <em>Nature</em>, 471(7336), 51-57.</p></li><li id="note-11"><p>Veron, J. E. (2008). <a href="https://link.springer.com/article/10.1007%2Fs00338-008-0381-8">Mass extinctions and ocean acidification: biological constraints on geological dilemmas</a>. <em>Coral Reefs</em>, 27(3), 459-472.</p></li><li id="note-12"><p>Cramer, K. L., Jackson, J. B., Donovan, M. K., Greenstein, B. J., Korpanty, C. A., Cook, G. M., &amp; Pandolfi, J. M. (2020). <a href="https://advances.sciencemag.org/content/6/17/eaax9395">Widespread loss of Caribbean acroporid corals was underway before coral bleaching and disease outbreaks</a>. <em>Science Advances</em>, 6(17), eaax9395.</p></li><li id="note-13"><p>Gardner, T. A., Côté, I. M., Gill, J. A., Grant, A., &amp; Watkinson, A. R. (2003). <a href="https://science.sciencemag.org/content/301/5635/958.full">Long-term region-wide declines in Caribbean corals</a>. <em>Science</em>, <em>301</em>(5635), 958-960.</p></li><li id="note-14"><p>Hughes, T. P., Graham, N. A., Jackson, J. B., Mumby, P. J., &amp; Steneck, R. S. (2010). <a href="https://www.sciencedirect.com/science/article/pii/S0169534710001825">Rising to the challenge of sustaining coral reef resilience</a>. <em>Trends in Ecology &amp; Evolution</em>, <em>25</em>(11), 633-642.</p></li><li id="note-15"><p>This was measured as the average cover over the period from 1996 to 2006.<br><br>Hughes, T. P., Graham, N. A., Jackson, J. B., Mumby, P. J., &amp; Steneck, R. S. (2010). <a href="https://www.sciencedirect.com/science/article/pii/S0169534710001825">Rising to the challenge of sustaining coral reef resilience</a>. <em>Trends in Ecology &amp; Evolution</em>, <em>25</em>(11), 633-642.</p></li><li id="note-16"><p>Côté, I. M., Gill, J. A., Gardner, T. A., &amp; Watkinson, A. R. (2005). <a href="https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2004.1591?casa_token=NTJJozpBFcoAAAAA:s1SpDztZXFBsFPgrwqRr3f0knIHI0KlK20EwRI69cYKAsoMasZh_vPZgDxdx00olcTCNfmjetw0lZQHr">Measuring coral reef decline through meta-analyses</a>. <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em>, <em>360</em>(1454), 385-395</p></li><li id="note-17"><p>Lessios, H. A., Robertson, D. R., &amp; Cubit, J. D. (1984). <a href="https://science.sciencemag.org/content/226/4672/335">Spread of Diadema mass mortality through the Caribbean</a>. <em>Science</em>, <em>226</em>(4672), 335-337.</p></li><li id="note-18"><p>Spalding, M. D., &amp; Brown, B. E. (2015). <a href="https://science.sciencemag.org/content/350/6262/769">Warm-water coral reefs and climate change</a>. <em>Science</em>, 350(6262), 769-771.</p></li><li id="note-19"><p>This is based on data published by the Met Office Hadley Centre. Available <a href="https://www.metoffice.gov.uk/hadobs/hadsst4/data/download.html"><strong>here</strong></a>.</p></li><li id="note-20"><p>Heron, S. F., Maynard, J. A., Van Hooidonk, R., &amp; Eakin, C. M. (2016). <a href="https://www.nature.com/articles/srep38402">Warming trends and bleaching stress of the world’s coral reefs 1985–2012</a>. <em>Scientific Reports</em>, 6(1), 1-14.</p></li><li id="note-21"><p>Heron, S. F., Maynard, J. A., Van Hooidonk, R., &amp; Eakin, C. M. (2016). <a href="https://www.nature.com/articles/srep38402">Warming trends and bleaching stress of the world’s coral reefs 1985–2012</a>. <em>Scientific Reports</em>, 6(1), 1-14.</p></li><li id="note-22"><p>Hughes, T. P., Anderson, K. D., Connolly, S. R., Heron, S. F., Kerry, J. T., Lough, J. M., &#8230; &amp; Wilson, S. K. (2018).<a href="https://science.sciencemag.org/content/359/6371/80"> Spatial and temporal patterns of mass bleaching of corals in the Anthropocene</a>. <em>Science</em>, 359(6371), 80-83.</p></li><li id="note-23"><p>This data captures sea surface temperature anomalies averaged across 1670 1° latitude–by–1° longitude boxes containing coral reefs at latitudes between 31°N and 31°S.</p>
+
+
+
+<p>Hughes, T. P., Anderson, K. D., Connolly, S. R., Heron, S. F., Kerry, J. T., Lough, J. M., &#8230; &amp; Wilson, S. K. (2018).<a href="https://science.sciencemag.org/content/359/6371/80"> Spatial and temporal patterns of mass bleaching of corals in the Anthropocene</a>. <em>Science</em>, 359(6371), 80-83.</p></li><li id="note-24"><p>Hughes, T. P., Kerry, J. T., Baird, A. H., Connolly, S. R., Dietzel, A., Eakin, C. M., &#8230; &amp; Torda, G. (2018). <a href="https://www.nature.com/articles/s41586-018-0041-2">Global warming transforms coral reef assemblages</a>. <em>Nature</em>, 556(7702), 492-496.</p></li><li id="note-25"><p>Eakin, C. M., Morgan, J. A., Heron, S. F., Smith, T. B., Liu, G., Alvarez-Filip, L., &#8230; &amp; Yusuf, Y. (2010). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0013969">Caribbean corals in crisis: record thermal stress, bleaching, and mortality in 2005</a>. <em>PloS one</em>, 5(11), e13969.</p>
+
+
+
+<p>Liu, G., Heron, S. F., Eakin, C. M., Muller-Karger, F. E., Vega-Rodriguez, M., Guild, L. S., &#8230; &amp; Lynds, S. (2014). <a href="https://www.mdpi.com/2072-4292/6/11/11579">Reef-scale thermal stress monitoring of coral ecosystems: new 5-km global products from NOAA Coral Reef Watch</a>. <em>Remote Sensing</em>, 6(11), 11579-11606.</p></li><li id="note-26"><p>Hughes, T. P., Anderson, K. D., Connolly, S. R., Heron, S. F., Kerry, J. T., Lough, J. M., &#8230; &amp; Wilson, S. K. (2018).<a href="https://science.sciencemag.org/content/359/6371/80"> Spatial and temporal patterns of mass bleaching of corals in the Anthropocene</a>. <em>Science</em>, 359(6371), 80-83.</p></li><li id="note-27"><p>Spalding, M. D., &amp; Brown, B. E. (2015). <a href="https://science.sciencemag.org/content/350/6262/769.abstract?casa_token=gIFD0d65628AAAAA:b0kqKDceFhVRsi6VVZRIiMPRo3Z3fcozQDgxL3EWc6dNkORJeB0UoJpuxhUz-CglgLyKgD5AInjgWUdU">Warm-water coral reefs and climate change</a>. <em>Science</em>, 350(6262), 769-771.<br><br>Hughes, T. P., Kerry, J. T., Álvarez-Noriega, M., Álvarez-Romero, J. G., Anderson, K. D., Baird, A. H., &#8230; &amp; Wilson, S. K. (2017). <a href="https://www.nature.com/articles/nature21707">Global warming and recurrent mass bleaching of corals</a>. <em>Nature</em>, 543(7645), 373-377.</p></li><li id="note-28"><p>This is also referred to as ‘phenotypic plasticity’.</p></li><li id="note-29"><p>Dill, D. B., Hall, F. G., &amp; Edwards, H. T. (1938). <a href="https://journals.physiology.org/doi/pdf/10.1152/ajplegacy.1938.123.2.412">Changes in composition of sweat during acclimatization to heat</a>. <em>American Journal of Physiology-Legacy Content</em>, <em>123</em>(2), 412-419.</p></li><li id="note-30"><p>Hoey, A. S., Howells, E., Johansen, J. L., Hobbs, J. P. A., Messmer, V., McCowan, D. M., &#8230; &amp; Pratchett, M. S. (2016). <a href="https://www.mdpi.com/1424-2818/8/2/12/htm">Recent advances in understanding the effects of climate change on coral reefs</a>. <em>Diversity</em>, 8(2), 12.</p></li><li id="note-31"><p>Palumbi, S. R., Barshis, D. J., Traylor-Knowles, N., &amp; Bay, R. A. (2014). <a href="https://science.sciencemag.org/content/344/6186/895.full">Mechanisms of reef coral resistance to future climate change</a>. <em>Science</em>, 344(6186), 895-898.</p></li><li id="note-32"><p>Dixon, G. B., Davies, S. W., Aglyamova, G. V., Meyer, E., Bay, L. K., &amp; Matz, M. V. (2015). <a href="https://science.sciencemag.org/content/348/6242/1460.full">Genomic determinants of coral heat tolerance across latitudes</a>. <em>Science</em>, 348(6242), 1460-1462.</p></li><li id="note-33"><p>Babcock, R. C. (1991). <a href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.2307/2937107">Comparative demography of three species of scleractinian corals using age‐and size‐dependent classifications</a>. <em>Ecological Monographs</em>, 61(3), 225-244.</p></li><li id="note-34"><p>Krueger, T., Becker, S., Pontasch, S., Dove, S., Hoegh‐Guldberg, O., Leggat, W., &#8230; &amp; Davy, S. K. (2014). Antioxidant plasticity and thermal sensitivity in four types of Symbiodinium sp. <em>Journal of Phycology</em>, 50(6), 1035-1047.<br><br>Tchernov, D., Gorbunov, M. Y., De Vargas, C., Yadav, S. N., Milligan, A. J., Häggblom, M., &amp; Falkowski, P. G. (2004). <a href="https://www.pnas.org/content/101/37/13531">Membrane lipids of symbiotic algae are diagnostic of sensitivity to thermal bleaching in corals</a>. <em>Proceedings of the National Academy of Sciences</em>, <em>101</em>(37), 13531-13535.<br><br>McGinty, E. S., Pieczonka, J., &amp; Mydlarz, L. D. (2012). <a href="https://link.springer.com/article/10.1007/s00248-012-0085-z">Variations in reactive oxygen release and antioxidant activity in multiple Symbiodinium types in response to elevated temperature</a>. <em>Microbial Ecology</em>, 64(4), 1000-1007.</p></li><li id="note-35"><p>Abrego, D., Ulstrup, K. E., Willis, B. L., &amp; van Oppen, M. J. (2008). <a href="https://royalsocietypublishing.org/doi/abs/10.1098/rspb.2008.0180">Species–specific interactions between algal endosymbionts and coral hosts define their bleaching response to heat and light stress</a>. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 275(1648), 2273-2282.</p></li><li id="note-36"><p>LaJeunesse, T. C., Wham, D. C., Pettay, D. T., Parkinson, J. E., Keshavmurthy, S., &amp; Chen, C. A. (2014). <a href="https://www.tandfonline.com/doi/full/10.2216/13-186.1">Ecologically differentiated stress-tolerant endosymbionts in the dinoflagellate genus Symbiodinium (Dinophyceae) Clade D are different species</a>. <em>Phycologia</em>, <em>53</em>(4), 305-319.</p></li><li id="note-37"><p>Maynard, J. A., Anthony, K. R. N., Marshall, P. A., &amp; Masiri, I. (2008). <a href="https://link.springer.com/article/10.1007/s00227-008-1015-y">Major bleaching events can lead to increased thermal tolerance in corals</a>. <em>Marine Biology</em>, 155(2), 173-182.<br><br>Berkelmans, R. (2009). <a href="https://link.springer.com/chapter/10.1007/978-3-540-69775-6_7">Bleaching and mortality thresholds: how much is too much?</a>. <em>Coral bleaching</em>, 103-119.<br><br>Guest, J. R., Baird, A. H., Maynard, J. A., Muttaqin, E., Edwards, A. J., Campbell, S. J., &#8230; &amp; Chou, L. M. (2012). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0033353">Contrasting patterns of coral bleaching susceptibility in 2010 suggest an adaptive response to thermal stress</a>. <em>PloS one</em>, 7(3), e33353.<br><br>Pratchett, M. S., McCowan, D., Maynard, J. A., &amp; Heron, S. F. (2013). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070443">Changes in bleaching susceptibility among corals subject to ocean warming and recurrent bleaching in Moorea, French Polynesia</a>. <em>PLoS one</em>, 8(7), e70443.<br><br>McClanahan, T. R., &amp; Muthiga, N. A. (2014). <a href="https://www.sciencedirect.com/science/article/pii/S0025326X14000368?casa_token=9tLxDHhoSCgAAAAA:2mH-1mLSqKs_OASZjRYRYazLpmKQjh5K6T1odfBDH_lP2-J6Innx-vSY_4cnVeF9jCPkTODNnj3p">Community change and evidence for variable warm-water temperature adaptation of corals in Northern Male Atoll, Maldives</a>. <em>Marine Pollution Bulletin</em>, 80(1-2), 107-113.</p></li><li id="note-38"><p>Hughes, T. P., Kerry, J. T., Álvarez-Noriega, M., Álvarez-Romero, J. G., Anderson, K. D., Baird, A. H., &#8230; &amp; Wilson, S. K. (2017). <a href="https://www.nature.com/articles/nature21707">Global warming and recurrent mass bleaching of corals</a>. <em>Nature</em>, 543(7645), 373-377.</p></li><li id="note-39"><p>Hughes, T. P., Anderson, K. D., Connolly, S. R., Heron, S. F., Kerry, J. T., Lough, J. M., &#8230; &amp; Wilson, S. K. (2018). <a href="https://science.sciencemag.org/content/359/6371/80">Spatial and temporal patterns of mass bleaching of corals in the Anthropocene</a>. <em>Science</em>, 359(6371), 80-83.</p></li><li id="note-40"><p>Riegl, B. M., Purkis, S. J., Al-Cibahy, A. S., Abdel-Moati, M. A., &amp; Hoegh-Guldberg, O. (2011). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024802">Present limits to heat-adaptability in corals and population-level responses to climate extremes</a>. <em>PloS one</em>, 6(9), e24802.</p></li><li id="note-41"><p>Pratchett, M. S., McCowan, D., Maynard, J. A., &amp; Heron, S. F. (2013). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070443">Changes in bleaching susceptibility among corals subject to ocean warming and recurrent bleaching in Moorea, French Polynesia</a>. <em>PLoS one</em>, <em>8</em>(7), e70443.</p></li><li id="note-42"><p>Pandolfi, J. M., Connolly, S. R., Marshall, D. J., &amp; Cohen, A. L. (2011). <a href="https://science.sciencemag.org/content/333/6041/418">Projecting coral reef futures under global warming and ocean acidification</a>. <em>Science</em>, <em>333</em>(6041), 418-422.</p></li><li id="note-43"><p>Yee, S. H., Santavy, D. L., &amp; Barron, M. G. (2008). <a href="https://www.sciencedirect.com/science/article/pii/S0304380008003141https://www.sciencedirect.com/science/article/pii/S0304380008003141">Comparing environmental influences on coral bleaching across and within species using clustered binomial regression</a>. <em>Ecological Modelling</em>, <em>218</em>(1-2), 162-174.</p></li><li id="note-44"><p>Pratchett, M. S., McWilliam, M. J., &amp; Riegl, B. (2020). <a href="https://link.springer.com/article/10.1007/s00338-020-01936-4">Contrasting shifts in coral assemblages with increasing disturbances</a>. <em>Coral Reefs</em>, <em>39</em>(3), 783-793.</p></li><li id="note-45"><p>Mora, C., Graham, N. A., &amp; Nyström, M. (2016). <a href="https://link.springer.com/article/10.1007/s00338-016-1479-z">Ecological limitations to the resilience of coral reefs</a>. <em>Coral Reefs</em>, 35(4), 1271-1280.</p></li><li id="note-46"><p>Global Carbon Project (2019) Carbon budget and trends 2019. [www.globalcarbonproject.org/carbonbudget]</p></li><li id="note-47"><p>Global Carbon Project (2019) Carbon budget and trends 2019. [www.globalcarbonproject.org/carbonbudget]</p></li><li id="note-48"><p>Hughes, T. P., Barnes, M. L., Bellwood, D. R., Cinner, J. E., Cumming, G. S., Jackson, J. B., &#8230; &amp; Scheffer, M. (2017). <a href="https://www.nature.com/articles/nature22901">Coral reefs in the Anthropocene</a>. <em>Nature</em>, 546(7656), 82-90.</p></li><li id="note-49"><p>Chan, N. C., &amp; Connolly, S. R. (2013). <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.12011">Sensitivity of coral calcification to ocean acidification: a meta‐analysis</a>. <em>Global Change Biology</em>, 19(1), 282-290.</p></li><li id="note-50"><p>Hughes, T. P., Barnes, M. L., Bellwood, D. R., Cinner, J. E., Cumming, G. S., Jackson, J. B., &#8230; &amp; Scheffer, M. (2017). <a href="https://www.nature.com/articles/nature22901">Coral reefs in the Anthropocene</a>. <em>Nature</em>, 546(7656), 82-90.</p></li><li id="note-51"><p>Rhein, M. et al. in Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change (eds Stocker, T. F. et al.) Ch. 3, 255–315 (Cambridge Univ. Press, 2013).</p></li></ol></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=42406&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>
+                        runTableOfContents({"headings":[{"text":"Summary","slug":"summary","isSubheading":false},{"text":"Number of coral species","slug":"number-of-coral-species","isSubheading":false},{"text":"How many coral species are there?","html":"How many coral species are there?","slug":"how-many-coral-species-are-there","isSubheading":true},{"text":"Coral reefs across the world","html":"Coral reefs across the world","slug":"coral-reefs-across-the-world","isSubheading":true},{"text":"Corals threatened with extinction today","slug":"corals-threatened-with-extinction-today","isSubheading":false},{"text":"How many coral species are threatened with extinction?","html":"How many coral species are threatened with extinction?","slug":"how-many-coral-species-are-threatened-with-extinction","isSubheading":true},{"text":"Threats to coral reefs","slug":"threats-to-coral-reefs","isSubheading":false},{"text":"What threats to corals face?","html":"What threats to corals face?","slug":"what-threats-to-corals-face","isSubheading":true},{"text":"Coral reefs have always encountered threats; humans just increasing their intensity and frequency","html":"Coral reefs have always encountered threats; humans just increasing their intensity and frequency","slug":"coral-reefs-have-always-encountered-threats-humans-just-increasing-their-intensity-and-frequency","isSubheading":true},{"text":"Timing and extent of coral degradation varies from region to region","html":"Timing and extent of coral degradation varies from region to region","slug":"timing-and-extent-of-coral-degradation-varies-from-region-to-region","isSubheading":true},{"text":"Coral bleaching","slug":"coral-bleaching","isSubheading":false},{"text":"Coral bleaching events are becoming more common and severe","html":"Coral bleaching events are becoming more common and severe","slug":"coral-bleaching-events-are-becoming-more-common-and-severe","isSubheading":true},{"text":"Do coral reefs die when they experience coral bleaching?","html":"Do coral reefs die when they experience coral bleaching?","slug":"do-coral-reefs-die-when-they-experience-coral-bleaching","isSubheading":true},{"text":"How do bleaching events vary across the world’s coral reefs?","html":"How do bleaching events vary across the world&#x2019;s coral reefs?","slug":"how-do-bleaching-events-vary-across-the-world-s-coral-reefs","isSubheading":true},{"text":"Can coral reefs adapt to a warming ocean?","html":"Can coral reefs adapt to a warming ocean?","slug":"can-coral-reefs-adapt-to-a-warming-ocean","isSubheading":true},{"text":"Ocean acidification","slug":"ocean-acidification","isSubheading":false},{"text":"What impact will ocean acidification have on coral reefs?","html":"What impact will ocean acidification have on coral reefs?","slug":"what-impact-will-ocean-acidification-have-on-coral-reefs","isSubheading":true},{"text":"To understand the impact of climate change and ocean acidification on coral reefs we need more experiments at lower levels of warming and CO2 concentrations","slug":"to-understand-the-impact-of-climate-change-and-ocean-acidification-on-coral-reefs-we-need-more-experiments-at-lower-levels-of-warming-and-co2-concentrations","isSubheading":false},{"text":"Explore more of work on Biodiversity","slug":"explore-more-of-work-on-biodiversity","isSubheading":false},{"text":"Endnotes","slug":"endnotes","isSubheading":false}],"pageTitle":"Coral Reefs"})
+                        runRelatedCharts([])
+                        </script></body></html>
