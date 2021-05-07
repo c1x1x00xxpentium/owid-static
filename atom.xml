@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-05-01T07:00:00.000Z</updated>
+<updated>2021-05-07T05:13:15.000Z</updated>
+<entry>
+            <title><![CDATA[We just published our new work on Coral Reefs]]></title>
+            <id>https://ourworldindata.org/coral-reefs-published</id>
+            <link rel="alternate" href="https://ourworldindata.org/coral-reefs-published"/>
+            <published>2021-05-07T05:13:15.000Z</published>
+            <updated>2021-05-07T06:48:17.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Explore the research on coral reefs. This is part of our latest collection of work on Biodiversity and Wildlife.<br><br><a href="https://ourworldindata.org/coral-reefs-published" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/05/coral-reefs-thumbnail-768x404.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Where does the plastic in our oceans come from?]]></title>
             <id>https://ourworldindata.org/ocean-plastics</id>
@@ -86,14 +95,5 @@
             <updated>2021-03-05T18:24:41.000Z</updated>
             <author><name>Guest Authors</name></author>
             <summary><![CDATA[South Korea is one country which has responded well to the Coronavirus pandemic. How did they do so? In-country experts provide key insights.<br><br><a href="https://ourworldindata.org/covid-exemplar-south-korea" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/06/Screen-Shot-2021-03-04-at-8.12.36-PM-768x404.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Global poverty in an unequal world: Who is considered poor in a rich country? And what does this mean for our understanding of global poverty?]]></title>
-            <id>https://ourworldindata.org/higher-poverty-global-line</id>
-            <link rel="alternate" href="https://ourworldindata.org/higher-poverty-global-line"/>
-            <published>2021-03-05T11:02:06.000Z</published>
-            <updated>2021-03-10T23:35:16.000Z</updated>
-            <author><name>Max Roser</name></author>
-            <summary><![CDATA[What does global poverty look like if we rely on the notions of poverty in countries like Denmark, the US, or Germany? And how should this perspective inform our aspirations for the future of global poverty?<br><br><a href="https://ourworldindata.org/higher-poverty-global-line" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/03/Screen-Shot-2021-03-05-at-14.35.22-768x364.png"/></a>]]></summary>
             </entry>
 </feed>
