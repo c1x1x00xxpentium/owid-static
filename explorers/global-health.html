@@ -391,7 +391,7 @@ const grapherConfigs =
   },
   {
     "id": 311,
-    "version": 14,
+    "version": 16,
     "slug": "prevalence-of-undernourishment",
     "title": "Share of the population that are undernourished",
     "subtitle": "Share of individuals who have a habitual energy intake lower than their requirements.",
@@ -433,19 +433,10 @@ const grapherConfigs =
           "",
           ""
         ],
-        "customNumericColors": [
-          "#ffd53e",
-          "#feb24c",
-          "#fd8d3c",
-          null,
-          "#fc4e2a",
-          null,
-          null
-        ],
+        "customNumericColorsActive": true,
         "equalSizeBins": true,
         "customCategoryColors": {
-          "<5.0": "#ffffb2",
-          "No data": "#8b8b8b"
+          "<2.5": "#c9e3ee"
         },
         "customHiddenCategories": {
           "<5.0": true,
@@ -458,8 +449,17 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 135239
+        "variableId": 146684
       }
+    ],
+    "selectedEntityNames": [
+      "Mali",
+      "India",
+      "Bangladesh",
+      "Chad",
+      "Nigeria",
+      "Niger",
+      "Sudan"
     ],
     "selectedEntityIds": [
       137,
@@ -4521,7 +4521,7 @@ const grapherConfigs =
   },
   {
     "id": 3984,
-    "version": 2,
+    "version": 3,
     "slug": "number-undernourished",
     "title": "Number of people that are undernourished",
     "subtitle": "Undernourishment is measured as having a caloric intake which is insufficient to meet the minimum energy requirements necessary for a given individual. Countries with undernourishment rates below 2.5% are not shown.",
@@ -4531,7 +4531,6 @@ const grapherConfigs =
     "minTime": 2000,
     "maxTime": 2017,
     "hasMapTab": true,
-    "tab": "map",
     "originUrl": "ourworldindata.org/hunger-and-undernourishment",
     "isPublished": true,
     "yAxis": {
@@ -4551,23 +4550,30 @@ const grapherConfigs =
           100000000,
           200000000
         ],
-        "customNumericColors": [
-          null,
-          null
-        ],
-        "equalSizeBins": true
+        "customNumericColorsActive": true,
+        "equalSizeBins": true,
+        "customCategoryColors": {
+          "<0.1": "#9c9995"
+        },
+        "customCategoryLabels": {
+          "<0.1": "<0.1M"
+        }
       },
       "variableId": 135216
     },
     "dimensions": [
       {
-        "display": {
-          "unit": "people",
-          "conversionFactor": 1000000
-        },
         "property": "y",
-        "variableId": 135216
+        "variableId": 146685
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "Bangladesh",
+      "Pakistan",
+      "Nigeria",
+      "Chad",
+      "Brazil"
     ],
     "selectedEntityIds": [
       137,
