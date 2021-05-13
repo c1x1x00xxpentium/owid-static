@@ -7338,7 +7338,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/social-spending-oecd-longrun</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2021-05-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/life-satisfaction-vs-life-expectancy</loc>
@@ -21839,5 +21839,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccinations-vs-gdp-per-capita</loc>
         <lastmod>2021-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/un-projection-of-annual-infant-deaths</loc>
+        <lastmod>2021-05-13</lastmod>
     </url>
 </urlset>
