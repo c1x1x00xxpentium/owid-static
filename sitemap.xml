@@ -21906,19 +21906,19 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cost-healthy-diet</loc>
-        <lastmod>2021-05-22</lastmod>
+        <lastmod>2021-05-25</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-calorie-diet-unaffordable</loc>
-        <lastmod>2021-05-21</lastmod>
+        <lastmod>2021-05-25</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-nutritional-diet-unaffordable</loc>
-        <lastmod>2021-05-21</lastmod>
+        <lastmod>2021-05-25</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-healthy-diet-unaffordable</loc>
-        <lastmod>2021-05-21</lastmod>
+        <lastmod>2021-05-25</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-calorie-diet-unaffordable</loc>
@@ -21955,5 +21955,17 @@
     <url>
         <loc>https://ourworldindata.org/grapher/cost-healthy-diet-vs-poverty-lines</loc>
         <lastmod>2021-05-24</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/cost-nutritious-diet-share-food-expenditure</loc>
+        <lastmod>2021-05-25</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/cost-healthy-diet-share-food-expenditure</loc>
+        <lastmod>2021-05-25</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/cost-calorie-sufficient-diet-share-food-expenditure</loc>
+        <lastmod>2021-05-25</lastmod>
     </url>
 </urlset>
