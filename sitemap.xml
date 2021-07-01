@@ -4162,7 +4162,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/sanitation</loc>
-        <lastmod>2021-06-30</lastmod>
+        <lastmod>2021-07-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/water-access</loc>
@@ -18594,7 +18594,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-without-safe-drinking-water</loc>
-        <lastmod>2020-02-09</lastmod>
+        <lastmod>2021-07-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-with-without-safe-water</loc>
@@ -22250,6 +22250,14 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/death-rates-no-handwashing</loc>
+        <lastmod>2021-07-01</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-without-improved-sanitation</loc>
+        <lastmod>2021-07-01</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-without-improved-water</loc>
         <lastmod>2021-07-01</lastmod>
     </url>
 </urlset>
