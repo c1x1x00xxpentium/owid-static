@@ -22185,6 +22185,10 @@
         <lastmod>2021-06-26</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/access-drinking-water-stacked</loc>
+        <lastmod>2021-07-01</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/change-share-cropland-pollinator-dependent</loc>
         <lastmod>2021-06-23</lastmod>
     </url>
@@ -22205,6 +22209,14 @@
         <lastmod>2021-06-24</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/share-of-the-population-with-access-to-sanitation-facilities</loc>
+        <lastmod>2021-07-01</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-of-the-population-with-access-to-handwashing-facilities</loc>
+        <lastmod>2021-07-01</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/use-of-interpolation-and-extrapolation-on-maddison-gdp-per-capita-data</loc>
         <lastmod>2021-06-26</lastmod>
     </url>
@@ -22223,6 +22235,10 @@
     <url>
         <loc>https://ourworldindata.org/grapher/yield-gap-vs-nitrogen-pollution</loc>
         <lastmod>2021-06-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/safe-sanitation-without</loc>
+        <lastmod>2021-07-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/death-rates-no-handwashing</loc>
