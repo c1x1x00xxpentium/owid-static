@@ -4046,7 +4046,7 @@ const grapherConfigs =
   },
   {
     "id": 3624,
-    "version": 3,
+    "version": 4,
     "slug": "number-without-improved-water",
     "title": "Number of people without access to an improved water source",
     "sourceDesc": "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply and Sanitation",
@@ -4062,11 +4062,13 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2015,
+      "time": 2020,
       "colorScale": {
-        "baseColorScheme": "GnBu",
+        "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
+        "customNumericMinValue": 0,
         "customNumericValues": [
+          100000,
           1000000,
           5000000,
           10000000,
@@ -4075,6 +4077,7 @@ const grapherConfigs =
           500000000
         ],
         "customNumericColors": [
+          null,
           null
         ],
         "equalSizeBins": true
@@ -4083,9 +4086,18 @@ const grapherConfigs =
     },
     "dimensions": [
       {
+        "display": {
+          "includeInTable": true,
+          "numDecimalPlaces": 0
+        },
         "property": "y",
-        "variableId": 145137
+        "variableId": 147428
       }
+    ],
+    "selectedEntityNames": [
+      "Gambia",
+      "Botswana",
+      "Venezuela"
     ],
     "selectedEntityIds": [
       355
