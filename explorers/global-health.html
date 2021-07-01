@@ -3984,14 +3984,13 @@ const grapherConfigs =
   },
   {
     "id": 3623,
-    "version": 2,
+    "version": 3,
     "slug": "number-without-access-to-improved-sanitation",
     "title": "Number of people without access to improved sanitation",
-    "sourceDesc": "Our World in Data based on the World Bank, World Development Indicators",
+    "sourceDesc": "Our World in Data based on WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply and Sanitation",
     "note": "Improved sanitation facilities include flush/pour flush (to piped sewer system, septic tank, pit latrine), ventilated improved pit (VIP) latrine, pit latrine with slab, and composting toilet.",
     "hideTitleAnnotation": true,
     "minTime": 1990,
-    "maxTime": 2015,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/sanitation",
@@ -4000,10 +3999,11 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2015,
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
+        "customNumericMinValue": 0,
         "customNumericValues": [
           1000000,
           5000000,
@@ -4024,9 +4024,21 @@ const grapherConfigs =
     },
     "dimensions": [
       {
+        "display": {
+          "includeInTable": true,
+          "numDecimalPlaces": 0
+        },
         "property": "y",
-        "variableId": 145134
+        "variableId": 147434
       }
+    ],
+    "selectedEntityNames": [
+      "China",
+      "India",
+      "Pakistan",
+      "Bangladesh",
+      "South Africa",
+      "Nigeria"
     ],
     "selectedEntityIds": [
       355
