@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-07-01T14:45:00.000Z</updated>
+<updated>2021-07-05T09:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Energy poverty and indoor air pollution: a problem as old as humanity that we can end within our lifetime]]></title>
+            <id>https://ourworldindata.org/energy-poverty-air-pollution</id>
+            <link rel="alternate" href="https://ourworldindata.org/energy-poverty-air-pollution"/>
+            <published>2021-07-05T09:00:00.000Z</published>
+            <updated>2021-07-05T09:35:23.000Z</updated>
+            <author><name>Max Roser</name></author>
+            <summary><![CDATA[About 3 billion people in the world do not have access to modern energy sources for cooking and heating their homes. They are suffering from indoor air pollution as a consequence and millions die every year.<br><br><a href="https://ourworldindata.org/energy-poverty-air-pollution" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/07/Screen-Shot-2021-07-01-at-11.08.27-768x336.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[The world is making progress on clean water and sanitation, but is far behind its target to ensure universal access by 2030]]></title>
             <id>https://ourworldindata.org/water-sanitation-2020-update</id>
@@ -86,14 +95,5 @@
             <updated>2021-05-17T09:57:17.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Beneath the popular index, the Living Planet database helps us understand where and what animals are deeply threatened, and what animals are thriving.<br><br><a href="https://ourworldindata.org/living-planet-index-understanding" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/05/lpi-thumbnail-768x301.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[What is economic growth? And why is it so important?]]></title>
-            <id>https://ourworldindata.org/what-is-economic-growth</id>
-            <link rel="alternate" href="https://ourworldindata.org/what-is-economic-growth"/>
-            <published>2021-05-13T10:18:00.000Z</published>
-            <updated>2021-06-23T08:01:33.000Z</updated>
-            <author><name>Max Roser</name></author>
-            <summary><![CDATA[The goods and services that we all need are not just there – they need to be produced – and growth means that their quality and quantity increases.<br><br><a href="https://ourworldindata.org/what-is-economic-growth" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/05/Screen-Shot-2021-05-13-at-14.26.30-768x341.png"/></a>]]></summary>
             </entry>
 </feed>
