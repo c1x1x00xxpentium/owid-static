@@ -21909,15 +21909,7 @@
         <lastmod>2021-05-17</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/iea-country-coverage</loc>
-        <lastmod>2021-05-17</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/bp-country-coverage</loc>
-        <lastmod>2021-05-17</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/iea-country-coverage</loc>
         <lastmod>2021-05-17</lastmod>
     </url>
     <url>
@@ -22243,5 +22235,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/covid-variants-bar</loc>
         <lastmod>2021-07-05</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/land-sparing-by-crop</loc>
+        <lastmod>2021-07-07</lastmod>
     </url>
 </urlset>
