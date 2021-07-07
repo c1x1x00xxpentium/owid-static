@@ -648,7 +648,7 @@
 /grapher/the-share-of-the-population-suffering-from-depression-around-the-world /grapher/share-of-the-population-suffering-from-depression 302!
 /grapher/daily-caloric-supply-per-capita-in-european-countries-and-the-usa-1700-2013 /grapher/daily-per-capita-supply-of-calories 302!
 /grapher/daily-caloric-supply-per-capita-over-the-long-run /grapher/daily-per-capita-supply-of-calories 302!
-/grapher/global-land-spared-from-cereal-yield-improvements /grapher/global-land-spared-as-a-result-of-cereal-yield-improvements 302!
+/grapher/global-land-spared-from-cereal-yield-improvements /grapher/cereal-land-spared 302!
 /grapher/child-mortality-by-world-region /grapher/child-mortality-around-the-world 302!
 /grapher/long-term-crop-yields-in-the-united-kingdom /grapher/long-term-cereal-yields-in-the-united-kingdom 302!
 /grapher/milestones-of-womens-political-representation /grapher/ordered-milestones-of-womens-political-representation 302!
@@ -1229,3 +1229,4 @@
 /grapher/willingness-to-get-vaccinated-covid /grapher/covid-vaccine-willingness-and-people-vaccinated-by-country 302!
 /grapher/long-term-price-index-in-food-commodities-1850-2015 /grapher/long-term-prices-food 302!
 /grapher/covid-vaccinations-by-age /grapher/covid-fully-vaccinated-by-age 302!
+/grapher/global-land-spared-as-a-result-of-cereal-yield-improvements /grapher/cereal-land-spared 302!
