@@ -1,0 +1,293 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Farm Size - Our World in Data</title><meta name="description" content="How does farm size vary across the world? How much of farmland is held by smallholders?"/><link rel="canonical" href="https://ourworldindata.org/farm-size"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/farm-size"/><meta property="og:title" content="Farm Size"/><meta property="og:description" content="How does farm size vary across the world? How much of farmland is held by smallholders?"/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Farm Size"/><meta name="twitter:description" content="How does farm size vary across the world? How much of farmland is held by smallholders?"/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="/coronavirus" data-track-note="covid-banner-click">Read more</a></div></div><main><article class="page with-sidebar large-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Farm Size</h1></div><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div><div class="blog-info">First published in July 2021.</div></header></div><div class="content-wrapper"><div class="toc-wrapper"><aside class="entry-sidebar"><div class="sticky-sentinel"></div><nav class="entry-toc"><ul><li><a href="#" data-track-note="toc-header">Farm Size</a></li><li class="section"><a href="#number-of-farms" data-track-note="toc-link">Number of farms</a></li><li class="subsection"><a href="#how-many-farms-are-there" data-track-note="toc-link">How many farms are there?</a></li><li class="section"><a href="#distribution-of-farm-sizes-across-the-world" data-track-note="toc-link">Distribution of farm sizes across the world</a></li><li class="subsection"><a href="#average-farm-size-by-country" data-track-note="toc-link">Average farm size by country</a></li><li class="subsection"><a href="#distribution-of-farm-size-by-country" data-track-note="toc-link">Distribution of farm size by country</a></li><li class="section"><a href="#changes-in-farm-size-over-time" data-track-note="toc-link">Changes in farm size over time</a></li><li class="section"><a href="#smallholder-farms" data-track-note="toc-link">Smallholder farms</a></li><li class="subsection"><a href="#what-share-of-farms-are-smallholders" data-track-note="toc-link">What share of farms are smallholders?</a></li><li class="subsection"><a href="#what-share-of-agricultural-land-is-owned-by-smallholders" data-track-note="toc-link">What share of agricultural land is owned by smallholders?</a></li><li class="section"><a href="#crop-types-and-end-uses-by-farm-size" data-track-note="toc-link">Crop types and end uses by farm size</a></li><li class="subsection"><a href="#do-smallholders-produce-different-types-of-foods" data-track-note="toc-link">Do smallholders produce different types of foods?</a></li><li class="subsection"><a href="#how-does-the-allocation-of-crops-vary-by-farm-size" data-track-note="toc-link">How does the allocation of crops vary by farm size?</a></li><li class="section"><a href="#endnotes" data-track-note="toc-link">Endnotes</a></li></ul></nav><div class="toggle-toc"><button data-track-note="page-toggle-toc" aria-label="Open table of contents"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><span class="label">Contents</span></button></div></aside></div><div class="offset-content"><div class="content-and-footnotes"><div class="article-content">
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="number-of-farms"><a class="deep-link" href="#number-of-farms"></a>Number of farms</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#how-many-farms-are-there"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>How many farms are there?</span></a></li></ul></div></div><h3 id="how-many-farms-are-there"><a class="deep-link" href="#how-many-farms-are-there"></a>How many farms are there?</h3><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>The most recent estimate of the number of farms in the world is around 570 million.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> </p>
+
+
+
+<p>This figure &#x2013; as the researchers stress &#x2013; is a crude estimate that is likely to be lower than the actual number of farms for a few reasons. First, Lowder et al. (2016) make this estimate based on the latest agricultural census data from 167 countries which represent 96% of the world&#x2019;s population, 97% of the population active in agriculture, and 90% of agricultural land. But, 40 smaller countries had no estimates and were not included. If they were included, this figure would be higher. </p>
+
+
+
+<p>Second, the latest agricultural census data for many countries is outdated. The majority of these estimates come from census data from 1990, 2000 or 2010. However, in some countries, the latest census data is much older. For example, the latest census for Brunei, Nigeria and Zimbabwe was 1960. The number of farms in several countries is likely to have increase since then.</p>
+
+
+
+<p>It&#x2019;s therefore likely that this 570 million figure is a lower-bound estimate. </p>
+
+
+
+<p>The number of farms in each country as of the latest agricultural census is shown in the map.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/number-of-farms" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="distribution-of-farm-sizes-across-the-world"><a class="deep-link" href="#distribution-of-farm-sizes-across-the-world"></a>Distribution of farm sizes across the world</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#average-farm-size-by-country"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Average farm size by country</span></a></li><li><a href="#distribution-of-farm-size-by-country"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Distribution of farm size by country</span></a></li></ul></div></div><h3 id="average-farm-size-by-country"><a class="deep-link" href="#average-farm-size-by-country"></a>Average farm size by country</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>The chart and map here shown the distribution of the average farm size by country.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a></p><p>In general we see a positive relationship between income and average farm size. Poorer countries tend to have smaller farms, and this increases towards middle and high incomes.</p><div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/average-farm-size-vs-gdp" target="_blank">
+          <figure><img src="/grapher/exports/average-farm-size-vs-gdp.svg" alt="Average farm size vs gdp" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Average farm size vs. GDP per capita<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/average-farm-size?tab=chart&amp;country=AUT~MWI~BRA~GBR~USA~IND~FRA~NLD~ETH~VNM~KEN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+
+
+
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/average-farm-size?time=2000&amp;country=AUT~MWI~BRA~GBR~USA~IND~FRA~NLD~ETH~VNM~KEN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+</div><h3 id="distribution-of-farm-size-by-country"><a class="deep-link" href="#distribution-of-farm-size-by-country"></a>Distribution of farm size by country</h3><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>How doe the distribution of farm sizes vary within a country? </p><p>In the charts we see the distribution by two measures. First, the <em>number</em> of farms of each size (in other words, the number of farms that are less than 1 hectare; 2 to 5 hectares etc.). Second, the distribution by <em>agricultural area</em> i.e. how many hectares in total fall within each farm size bracket.</p><p>We see large differences across the world. Lower-income countries tend to have many more smaller farms (less than 5 hectares, or even less than 1 hectare). High-income countries tend to have most farms in the range of tens to hundreds of hectares.</p><p>China is an important stand-out, being a middle-income country that is still dominated by lots of smallholder farms. In its last agricultural census, 93% of its farms were less than 1 hectare.</p><p>Globally &#x2013; based on a sample of 111 countries and territories with a total of nearly 460 million farms &#x2013; 72% of farms are smaller than one hectare in size; 12% are 1&#x2013;2 ha in size; and 10% are between 2 and 5 ha. Only 6% of farms are larger than 5 hectares. Note that this is based on the <em>number </em>of farms and not their percentage of total agricultural area, which can give very different results. Despite accounting for only 16% of farms, those larger than 2 hectares account for 88% of the world&#x2019;s farmland.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a></p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/number-farms-size?stackMode=relative&amp;country=MOZ~CHN~IND~BRA~KOR~JPN~USA~GBR" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+
+
+
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/agricultural-land-area-by-farm-size?country=ETH~DEU~BRA~IND~GBR~USA~AUS~ARG~IDN~KOR~PAK" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="changes-in-farm-size-over-time"><a class="deep-link" href="#changes-in-farm-size-over-time"></a>Changes in farm size over time</h2></div></div></div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>How has the size of farms changed over time?</p>
+
+
+
+<p>This map shows which countries have seen an increase, decrease or little change in the average farm size since 1960. </p>
+
+
+
+<p>We see that most high-income countries have seen an increase in average farm size. In contrast, most low and middle-income countries have seen a decline, which more disaggregation of land into smallholder farms.</p>
+
+
+
+<p>You can see the change in average farm size by country <strong><a href="https://ourworldindata.org/grapher/average-farm-size?tab=chart&amp;time=1960..latest&amp;country=AUT~MWI~BRA~GBR~USA~IND~FRA~NLD~ETH~VNM~KEN">here</a></strong>. </p>
+</div>
+
+
+
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/farm-size-change" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+</div></section>
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="smallholder-farms"><a class="deep-link" href="#smallholder-farms"></a>Smallholder farms</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#what-share-of-farms-are-smallholders"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>What share of farms are smallholders?</span></a></li><li><a href="#what-share-of-agricultural-land-is-owned-by-smallholders"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>What share of agricultural land is owned by smallholders?</span></a></li></ul></div></div><h3 id="what-share-of-farms-are-smallholders"><a class="deep-link" href="#what-share-of-farms-are-smallholders"></a>What share of farms are smallholders?</h3><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>This chart shows the share of farms that are defined as smallholders. The definition of a &#x2018;smallholder farm&#x2019; can vary: some classify it as a farm less than one hectares; others as less than 2 hectares; or even 5 hectares.</p>
+
+
+
+<p>Here we show the share of farms that are <strong>less than two hectares</strong>.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/share-farms-smallholders?country=BRA~IND~IDN~CIV~MWI~CHN~CHL~PAK~GBR~KOR~VNM~ETH~AUT" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+
+
+<h5>Related chart</h5>
+
+
+      <div class="wp-block-owid-prominent-link is-style-thin with-image" data-no-lightbox>
+        <a href="https://ourworldindata.org/grapher/share-farms-smallholders-vs-gdp" target="_blank">
+          <figure><img src="/grapher/exports/share-farms-smallholders-vs-gdp.svg" alt="Share farms smallholders vs gdp" loading="lazy"></figure>
+          <div class="content-wrapper">
+            <div class="content">
+              
+            </div>
+            <div class="title">Share of farms that are smallholders vs. GDP per capita<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div>
+          </div>
+        </a>
+      </div></div>
+</div><h3 id="what-share-of-agricultural-land-is-owned-by-smallholders"><a class="deep-link" href="#what-share-of-agricultural-land-is-owned-by-smallholders"></a>What share of agricultural land is owned by smallholders?</h3><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>This chart shows the share of agricultural land that is operated as smallholder farms. A smallholder farm is defined as being less than two hectares.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<iframe src="https://ourworldindata.org/grapher/share-agriculture-smallholder-farms?country=BRA~CIV~NAM~NLD~NPL~IND~IDN~GBR~ITA~BEL~COD" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div class="section-heading"><div class="wrapper"><div><h2 id="crop-types-and-end-uses-by-farm-size"><a class="deep-link" href="#crop-types-and-end-uses-by-farm-size"></a>Crop types and end uses by farm size</h2></div><div class="in-this-section"><div class="label">In this section</div><div class="border"></div></div><ul class="subheadings"><li><a href="#do-smallholders-produce-different-types-of-foods"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>Do smallholders produce different types of foods?</span></a></li><li><a href="#how-does-the-allocation-of-crops-vary-by-farm-size"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg><span>How does the allocation of crops vary by farm size?</span></a></li></ul></div></div><h3 id="do-smallholders-produce-different-types-of-foods"><a class="deep-link" href="#do-smallholders-produce-different-types-of-foods"></a>Do smallholders produce different types of foods?</h3><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>This chart shows the distribution of the <em>types</em> of foods grown by farm size. This data is sourced from Ricciardi et al. (2018), which mapped the distribution of global food production by farm size.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a></p>
+
+
+
+<p>The smallest farms (those less than 2 hectares) devote the largest percentage of their overall crop production to cereals. They also tend to grow more fruit, pulses and roots and tubers. Medium-sized farms tend to produce more vegetables and nuts. While the largest farms tend to produce more oilcrops (such as soybeans or oil palm).</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/global-crop-production-by-farm-size?country=0+to+1+ha~1+to+2+ha~2+to+5+ha~5+to+10+ha~10+to+20+ha~20+to+50+ha~50+to+100+ha~100+to+200+ha~200+to+500+ha~500+to+1000+ha~%3E+1000+ha" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/global-crop-production-by-farm-size?country=0+to+1+ha~1+to+2+ha~2+to+5+ha~5+to+10+ha~10+to+20+ha~20+to+50+ha~50+to+100+ha~100+to+200+ha~200+to+500+ha~500+to+1000+ha~%3E+1000+ha" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/global-crop-production-by-farm-size-51d4dd61c0ccb5912a2538513352cb30_v1_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Global crop production by farm size 51d4dd61c0ccb5912a2538513352cb30 v1 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><h3 id="how-does-the-allocation-of-crops-vary-by-farm-size"><a class="deep-link" href="#how-does-the-allocation-of-crops-vary-by-farm-size"></a>How does the allocation of crops vary by farm size?</h3><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+<p>This chart shows the distribution of the allocation of crops to their end use by farm size. In other words, how much of crops grown are allocated towards human food, animal feed, and industrial uses such as biofuels. This data is sourced from Ricciardi et al. (2018), which mapped the distribution of global food production by farm size.<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a></p>
+
+
+
+<p>The smallest farms (those less than 2 hectares) tend to allocate the greatest share &#x2013; between 55% to 59% &#x2013; of their crop production to direct human food.</p>
+
+
+
+<p>As farm size increases, more production tend to be allocated towards animal feed and processing into other products. Farms in the range of 200 to 500 hectares allocated the greatest share towards animal feed (16% to 29%). The largest farms (greater than 1000 hectares) allocated 12% to 32% to processing.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/crop-allocation-farm-size?country=0+to+1+ha~1+to+2+ha~2+to+5+ha~5+to+10+ha~10+to+20+ha~20+to+50+ha~50+to+100+ha~100+to+200+ha~200+to+500+ha~500+to+1000+ha~%3E+1000+ha" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/crop-allocation-farm-size?country=0+to+1+ha~1+to+2+ha~2+to+5+ha~5+to+10+ha~10+to+20+ha~20+to+50+ha~50+to+100+ha~100+to+200+ha~200+to+500+ha~500+to+1000+ha~%3E+1000+ha" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/crop-allocation-farm-size-51d4dd61c0ccb5912a2538513352cb30_v1_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Crop allocation farm size 51d4dd61c0ccb5912a2538513352cb30 v1 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Lowder, S. K., Skoet, J., &amp; Raney, T. (2016). T<a href="https://www.sciencedirect.com/science/article/pii/S0305750X15002703">he number, size, and distribution of farms, smallholder farms, and family farms worldwide</a>. <em>World Development</em>, <em>87</em>, 16-29.</p></li><li id="note-2"><p>Lowder, S. K., Skoet, J., &amp; Raney, T. (2016). <a href="https://www.sciencedirect.com/science/article/pii/S0305750X15002703">The number, size, and distribution of farms, smallholder farms, and family farms worldwide</a>. <em>World Development</em>, <em>87</em>, 16-29.</p></li><li id="note-3"><p>Lowder, S. K., Skoet, J., &amp; Raney, T. (2016). <a href="https://www.sciencedirect.com/science/article/pii/S0305750X15002703">The number, size, and distribution of farms, smallholder farms, and family farms worldwide</a>. <em>World Development</em>, <em>87</em>, 16-29.</p></li><li id="note-4"><p>Ricciardi, V., Ramankutty, N., Mehrabi, Z., Jarvis, L., &amp; Chookolingo, B. (2018). <a href="https://www.sciencedirect.com/science/article/pii/S2211912417301293#f0025">How much of the world&#8217;s food do smallholders produce?</a>. <em>Global Food Security</em>, <em>17</em>, 64-72.</p></li><li id="note-5"><p>Ricciardi, V., Ramankutty, N., Mehrabi, Z., Jarvis, L., &amp; Chookolingo, B. (2018). <a href="https://www.sciencedirect.com/science/article/pii/S2211912417301293#f0025">How much of the world&#8217;s food do smallholders produce?</a>. <em>Global Food Security</em>, <em>17</em>, 64-72.</p></li></ol></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=44112&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>
+                        runTableOfContents({"headings":[{"text":"Number of farms","slug":"number-of-farms","isSubheading":false},{"text":"How many farms are there?","html":"How many farms are there?","slug":"how-many-farms-are-there","isSubheading":true},{"text":"Distribution of farm sizes across the world","slug":"distribution-of-farm-sizes-across-the-world","isSubheading":false},{"text":"Average farm size by country","html":"Average farm size by country","slug":"average-farm-size-by-country","isSubheading":true},{"text":"Distribution of farm size by country","html":"Distribution of farm size by country","slug":"distribution-of-farm-size-by-country","isSubheading":true},{"text":"Changes in farm size over time","slug":"changes-in-farm-size-over-time","isSubheading":false},{"text":"Smallholder farms","slug":"smallholder-farms","isSubheading":false},{"text":"What share of farms are smallholders?","html":"What share of farms are smallholders?","slug":"what-share-of-farms-are-smallholders","isSubheading":true},{"text":"What share of agricultural land is owned by smallholders?","html":"What share of agricultural land is owned by smallholders?","slug":"what-share-of-agricultural-land-is-owned-by-smallholders","isSubheading":true},{"text":"Crop types and end uses by farm size","slug":"crop-types-and-end-uses-by-farm-size","isSubheading":false},{"text":"Do smallholders produce different types of foods?","html":"Do smallholders produce different types of foods?","slug":"do-smallholders-produce-different-types-of-foods","isSubheading":true},{"text":"How does the allocation of crops vary by farm size?","html":"How does the allocation of crops vary by farm size?","slug":"how-does-the-allocation-of-crops-vary-by-farm-size","isSubheading":true},{"text":"Endnotes","slug":"endnotes","isSubheading":false}],"pageTitle":"Farm Size"})
+                        runRelatedCharts([])
+                        </script></body></html>
