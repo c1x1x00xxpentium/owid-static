@@ -194,7 +194,7 @@ const grapherConfigs =
   },
   {
     "id": 1377,
-    "version": 8,
+    "version": 10,
     "slug": "coal-consumption-by-country-terawatt-hours-twh",
     "title": "Coal consumption",
     "subtitle": "Coal consumption by country or region, measured in terawatt-hour (TWh) equivalents.",
@@ -211,7 +211,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
@@ -231,19 +231,28 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "Coal consumption, terrawatt-hours (TWh)"
       },
-      "variableId": 143275
+      "variableId": 147615
     },
     "dimensions": [
       {
         "display": {
+          "shortUnit": "TWh",
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
-        "variableId": 143275
+        "variableId": 147615
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "Japan",
+      "Germany",
+      "United States",
+      "United Kingdom"
     ],
     "selectedEntityIds": [
       137,
@@ -255,7 +264,7 @@ const grapherConfigs =
   },
   {
     "id": 1380,
-    "version": 5,
+    "version": 7,
     "slug": "oil-consumption-by-country",
     "title": "Oil consumption",
     "subtitle": "Oil consumption is measured in terawatt-hour (TWh) equivalents per year.",
@@ -269,7 +278,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -289,19 +298,30 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "Oil consumption, terrawatt-hours per year"
       },
-      "variableId": 143332
+      "variableId": 147653
     },
     "dimensions": [
       {
         "display": {
+          "shortUnit": "TWh",
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
-        "variableId": 143332
+        "variableId": 147653
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "Australia",
+      "United Kingdom",
+      "Canada",
+      "South Africa",
+      "Norway",
+      "China"
     ],
     "selectedEntityIds": [
       13,
@@ -315,7 +335,7 @@ const grapherConfigs =
   },
   {
     "id": 1382,
-    "version": 7,
+    "version": 9,
     "slug": "gas-consumption-by-country",
     "title": "Gas consumption",
     "subtitle": "Natural gas consumption is measured in terawatt-hour (TWh) equivalents per year.",
@@ -333,7 +353,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "Purples",
         "binningStrategy": "manual",
@@ -353,19 +373,30 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "Natural gas consumption, terrawatt-hours per year"
       },
-      "variableId": 143284
+      "variableId": 147629
     },
     "dimensions": [
       {
         "display": {
+          "shortUnit": "TWh",
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
-          }
+          },
+          "includeInTable": true
         },
         "property": "y",
-        "variableId": 143284
+        "variableId": 147629
       }
+    ],
+    "selectedEntityNames": [
+      "Argentina",
+      "Austria",
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "South Korea",
+      "China"
     ],
     "selectedEntityIds": [
       21,
