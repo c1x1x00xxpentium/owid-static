@@ -3681,10 +3681,10 @@ const grapherConfigs =
   },
   {
     "id": 3487,
-    "version": 6,
+    "version": 8,
     "slug": "expected-years-of-schooling",
-    "title": "Expected years of schooling",
-    "subtitle": "The number of years a child of school entrance age can expect to receive if the current age-specific enrolment rates persist throughout the child’s years of schooling.",
+    "title": "School life expectancy",
+    "subtitle": "This measure tell us how many years of education a child of school entrance age can expect to receive if the current age-specific enrolment rates persist throughout the child’s years of schooling.",
     "sourceDesc": "United Nations Development Programme (UNDP)",
     "hideTitleAnnotation": true,
     "minTime": 1990,
@@ -3692,6 +3692,7 @@ const grapherConfigs =
     "logo": "owid",
     "hasMapTab": true,
     "tab": "map",
+    "originUrl": "https://ourworldindata.org/global-education",
     "isPublished": true,
     "yAxis": {
       "min": 0
@@ -3700,7 +3701,21 @@ const grapherConfigs =
       "time": 2017,
       "colorScale": {
         "baseColorScheme": "PuBu",
-        "binningStrategy": "equalInterval"
+        "binningStrategy": "manual",
+        "customNumericValues": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          25
+        ],
+        "customNumericColors": [
+          null,
+          null,
+          null
+        ],
+        "equalSizeBins": true
       },
       "variableId": 104467
     },
@@ -3709,6 +3724,15 @@ const grapherConfigs =
         "property": "y",
         "variableId": 104467
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "China",
+      "Ethiopia",
+      "Ghana",
+      "United States",
+      "Philippines",
+      "South Korea"
     ],
     "selectedEntityIds": [
       137,
