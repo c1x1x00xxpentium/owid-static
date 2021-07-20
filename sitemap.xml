@@ -6074,7 +6074,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/labour-cost-ratio-and-attainment-levels-2009-or-latest-available-year</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2021-07-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-number-of-people-aged-15-with-no-education-in-millions-by-continent-1970-2050</loc>
@@ -22287,5 +22287,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/frequency-depressive-symptoms-us</loc>
         <lastmod>2021-07-15</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/excess-nitrogen</loc>
+        <lastmod>2021-07-20</lastmod>
     </url>
 </urlset>
