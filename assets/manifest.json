@@ -1,10 +1,13 @@
 {
   "commons.css": "commons.css",
   "commons.js": "commons.js",
+  "commons.js.map": "commons.js.map",
   "admin.css": "admin.css",
   "admin.js": "admin.js",
+  "admin.js.map": "admin.js.map",
   "owid.css": "owid.css",
   "owid.js": "owid.js",
+  "owid.js.map": "owid.js.map",
   "admin.js.LICENSE.txt": "admin.js.LICENSE.txt",
   "commons.js.LICENSE.txt": "commons.js.LICENSE.txt",
   "owid.js.LICENSE.txt": "owid.js.LICENSE.txt"
