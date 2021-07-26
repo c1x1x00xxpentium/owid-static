@@ -597,8 +597,8 @@
 /grapher/fertility-vs-level-of-prosperity /grapher/children-per-woman-fertility-rate-vs-level-of-prosperity 302!
 /grapher/children-per-woman-fertility-vs-level-of-prosperity-1955-2010 /grapher/children-per-woman-fertility-rate-vs-level-of-prosperity 302!
 /grapher/cost-per-megabase-pairs-mb-of-human-genome-dna-sequencing /grapher/cost-per-megabase-mb-of-human-genome-dna-sequencing 302!
-/grapher/fisheries-and-aquaculture-production /grapher/capture-fisheries-vs-aquaculture-farmed-fish-production 302!
-/grapher/wild-fisheries-vs-aquaculture-farmed-fish-production /grapher/capture-fisheries-vs-aquaculture-farmed-fish-production 302!
+/grapher/fisheries-and-aquaculture-production /grapher/capture-fisheries-vs-aquaculture 302!
+/grapher/wild-fisheries-vs-aquaculture-farmed-fish-production /grapher/capture-fisheries-vs-aquaculture 302!
 /grapher/number-of-deaths-from-natural-catastrophes /grapher/number-of-deaths-from-natural-disasters 302!
 /grapher/public-support-for-continued-nuclear-energy-builds /grapher/public-opposition-to-nuclear-energy-production 302!
 /grapher/public-opposition-continued-nuclear-energy-builds /grapher/public-opposition-to-nuclear-energy-production 302!
@@ -1234,3 +1234,4 @@
 /grapher/covid-vaccinations-by-age /grapher/covid-fully-vaccinated-by-age 302!
 /grapher/global-land-spared-as-a-result-of-cereal-yield-improvements /grapher/cereal-land-spared 302!
 /grapher/manuscript-production-absolute-century /grapher/manuscript-production-century 302!
+/grapher/capture-fisheries-vs-aquaculture-farmed-fish-production /grapher/capture-fisheries-vs-aquaculture 302!
