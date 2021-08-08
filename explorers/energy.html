@@ -410,7 +410,7 @@ const grapherConfigs =
   },
   {
     "id": 1385,
-    "version": 7,
+    "version": 8,
     "slug": "coal-consumption-per-capita",
     "title": "Per capita energy consumption from coal",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population",
@@ -432,16 +432,16 @@ const grapherConfigs =
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
-          2.5,
-          5,
-          7.5,
-          10,
-          12.5,
-          15,
-          20,
-          30,
-          40,
-          50
+          1000,
+          2500,
+          5000,
+          10000,
+          25000,
+          50000,
+          100000
+        ],
+        "customNumericColors": [
+          null
         ],
         "equalSizeBins": true
       },
@@ -451,17 +451,26 @@ const grapherConfigs =
       {
         "display": {
           "name": "Coal per capita",
-          "unit": "megawatt-hours",
-          "shortUnit": "MWh",
+          "unit": "kilowatt-hours",
+          "shortUnit": "kWh",
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
-          "conversionFactor": 0.001
+          "includeInTable": true,
+          "conversionFactor": 1
         },
         "property": "y",
         "variableId": 143211
       }
+    ],
+    "selectedEntityNames": [
+      "Indonesia",
+      "India",
+      "China",
+      "United States",
+      "Australia",
+      "United Kingdom"
     ],
     "selectedEntityIds": [
       136,
@@ -2156,7 +2165,7 @@ const grapherConfigs =
   },
   {
     "id": 4376,
-    "version": 9,
+    "version": 10,
     "slug": "per-capita-oil",
     "title": "Per capita oil consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
@@ -2195,18 +2204,30 @@ const grapherConfigs =
       {
         "display": {
           "name": "Oil per capita",
-          "unit": "megawatt-hours",
-          "shortUnit": "MWh",
+          "unit": "kilowatt-hours",
+          "shortUnit": "kWh",
           "tableDisplay": {
             "hideAbsoluteChange": false,
             "hideRelativeChange": false
           },
-          "conversionFactor": 0.001,
+          "includeInTable": true,
+          "conversionFactor": 1,
           "numDecimalPlaces": 0
         },
         "property": "y",
         "variableId": 143212
       }
+    ],
+    "selectedEntityNames": [
+      "Chile",
+      "United States",
+      "United Kingdom",
+      "Norway",
+      "China",
+      "Brazil",
+      "South Africa",
+      "Australia",
+      "India"
     ],
     "selectedEntityIds": [
       172,
