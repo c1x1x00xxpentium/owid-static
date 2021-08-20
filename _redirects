@@ -1045,7 +1045,7 @@
 /grapher/sex-ratio-by-age-males-per-100-females /grapher/sex-ratio-by-age 302!
 /grapher/infectious-disease-death-rates-per-100000 /grapher/infectious-disease-death-rates 302!
 /grapher/child-mortality-2010-vs-2017 /grapher/child-mortality-2010-vs-2017-slope 302!
-/grapher/child-mortality-2010-vs-2017-slope /grapher/child-mortality-1990-vs-2017-slope 302!
+/grapher/child-mortality-2010-vs-2017-slope /grapher/child-mortality-1990-vs-latest-slope 302!
 /grapher/cancer-death-rates-per-100000 /grapher/cancer-death-rates 302!
 /grapher/share-with-mental-or-substance-disorders-males-vs-females /grapher/share-with-mental-or-substance-disorders-by-sex 302!
 /grapher/ambient-pollution-death-rates-2016-1990 /grapher/ambient-pollution-death-rates-2017-1990 302!
@@ -1239,3 +1239,4 @@
 /grapher/child-mortality-2010-vs-2017-scatter /grapher/child-mortality-2010-vs-2019-scatter 302!
 /grapher/u5mr-vs-2017 /grapher/u5mr-vs-2019 302!
 /grapher/child-deaths-in-1960-vs-2017 /grapher/child-deaths-in-1960-vs-2019 302!
+/grapher/child-mortality-1990-vs-2017-slope /grapher/child-mortality-1990-vs-latest-slope 302!
