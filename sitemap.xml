@@ -9109,8 +9109,8 @@
         <lastmod>2019-11-22</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/female-labor-force-participation-rates-2016-vs-1980</loc>
-        <lastmod>2021-08-09</lastmod>
+        <loc>https://ourworldindata.org/grapher/female-labor-force-participation-rates-latest-vs-1980</loc>
+        <lastmod>2021-08-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/fertilizer-consumption-per-hectare-vs-gdp-per-capita</loc>
@@ -22422,6 +22422,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mean-income-per-person-per-day-marimekko</loc>
+        <lastmod>2021-08-20</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-of-adults-that-are-overweight-or-obese-vs-share-of-people-who-smoke-every-day</loc>
         <lastmod>2021-08-20</lastmod>
     </url>
 </urlset>

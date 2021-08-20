@@ -710,8 +710,8 @@
 /grapher/crop-production-over-the-long-term /grapher/crop-production-in-england-over-the-long-term-million-tonnes 302!
 /grapher/crop-production-over-the-long-term-england /grapher/crop-production-in-england-over-the-long-term-million-tonnes 302!
 /grapher/female-labor-force-participation-by-national-per-capita-income /grapher/female-labor-force-participation-rates-by-national-per-capita-income 302!
-/grapher/female-labor-force-participation-2015-vs-1980 /grapher/female-labor-force-participation-rates-2016-vs-1980 302!
-/grapher/female-labor-force-participation-rates-2015-vs-1980 /grapher/female-labor-force-participation-rates-2016-vs-1980 302!
+/grapher/female-labor-force-participation-2015-vs-1980 /grapher/female-labor-force-participation-rates-latest-vs-1980 302!
+/grapher/female-labor-force-participation-rates-2015-vs-1980 /grapher/female-labor-force-participation-rates-latest-vs-1980 302!
 /grapher/long-term-energy-transitions-in-europe-and-the-americas /grapher/long-term-energy-transitions 302!
 /grapher/family-benefits-public-spending-vs-female-labor-force-participation-rate /grapher/female-labor-force-participation-rates-by-family-benefits-public-spending 302!
 /grapher/child-dependency-ratio-the-ration-between-under-19-year-olds-and-20-to-69-year-olds /grapher/child-dependency-ratio-the-ratio-between-under-19-year-olds-and-20-to-69-year-olds 302!
@@ -1241,3 +1241,4 @@
 /grapher/child-deaths-in-1960-vs-2017 /grapher/child-deaths-in-1960-vs-2019 302!
 /grapher/child-mortality-1990-vs-2017-slope /grapher/child-mortality-1990-vs-latest-slope 302!
 /grapher/female-employment-to-population-ratio-2015-vs-1980 /grapher/female-employment-to-population-ratio-latest-vs-1980 302!
+/grapher/female-labor-force-participation-rates-2016-vs-1980 /grapher/female-labor-force-participation-rates-latest-vs-1980 302!
