@@ -544,14 +544,13 @@ const grapherConfigs =
   },
   {
     "id": 389,
-    "version": 14,
+    "version": 15,
     "slug": "infant-mortality",
     "title": "Infant mortality rate",
     "subtitle": "The share of newborns who die before reaching one year of age.",
-    "sourceDesc": "UN Interagency Group for Child Mortality Estimation (IGME)",
     "hideTitleAnnotation": true,
     "minTime": 1960,
-    "maxTime": 2017,
+    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "variantName": "UN IGME (1960 to 2017)",
@@ -561,7 +560,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2017,
+      "time": 2019,
       "timeTolerance": 1,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
@@ -592,19 +591,28 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "Infant mortality"
       },
-      "variableId": 3394
+      "variableId": 147851
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 3394,
+        "variableId": 147851,
         "display": {
           "name": "Infant mortality rate",
           "unit": "%",
+          "shortUnit": "%",
           "conversionFactor": 0.1,
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Kenya",
+      "Pakistan",
+      "Colombia",
+      "World",
+      "China",
+      "India"
     ],
     "selectedEntityIds": [
       129,
