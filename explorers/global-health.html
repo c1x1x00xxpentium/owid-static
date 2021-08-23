@@ -1449,14 +1449,13 @@ const grapherConfigs =
   },
   {
     "id": 714,
-    "version": 12,
+    "version": 13,
     "slug": "neonatal-mortality-WDI",
     "title": "Neonatal mortality rate",
     "subtitle": "The share of newborns who die before reaching 28 days of age.",
-    "sourceDesc": "UN Interagency Group for Child Mortality Estimation (IGME)",
     "hideTitleAnnotation": true,
-    "minTime": 1969,
-    "maxTime": 2017,
+    "minTime": 1960,
+    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "variantName": "UN IGME (1960 to 2017)",
@@ -1466,7 +1465,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2017,
+      "time": 2019,
       "timeTolerance": 1,
       "colorScale": {
         "baseColorScheme": "OrRd",
@@ -1500,20 +1499,28 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "Neonatal mortality rate (per 1,000 live births)"
       },
-      "variableId": 3397
+      "variableId": 147858
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 3397,
+        "variableId": 147858,
         "display": {
           "unit": "%",
+          "shortUnit": "%",
           "isProjection": false,
           "conversionFactor": 0.1,
           "tolerance": 5,
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "Bangladesh",
+      "South Africa",
+      "South Korea",
+      "China"
     ],
     "selectedEntityIds": [
       137,
