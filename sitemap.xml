@@ -10810,7 +10810,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/proportion-of-domestic-budget-funded-by-domestic-taxes-of-gdp</loc>
-        <lastmod>2019-11-25</lastmod>
+        <lastmod>2021-08-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-government-revenue-of-gdp</loc>
@@ -10833,8 +10833,8 @@
         <lastmod>2021-08-26</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/gdp-per-person-employed-constant-2011-ppp</loc>
-        <lastmod>2018-12-22</lastmod>
+        <loc>https://ourworldindata.org/grapher/gdp-per-person-employed-constant-ppp</loc>
+        <lastmod>2021-08-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/proportion-of-women-who-make-their-own-informed-health-care-decisions</loc>
@@ -10930,11 +10930,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gender-wage-gap-vs-gdp-per-capita</loc>
-        <lastmod>2019-11-26</lastmod>
+        <lastmod>2021-08-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-low-pay-earners-who-are-female-vs-gdp-per-capita</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2021-08-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/womens-weekly-earnings-as-a-percentage-of-mens-by-age-bureau-of-labor-statistics-2017</loc>
@@ -10998,7 +10998,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/pupils-per-qualified-teacher-vs-gdp-per-capita</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2021-08-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cancer-death-rates-by-age</loc>
@@ -11014,7 +11014,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/starting-yearly-teacher-salaries-in-public-primary-education</loc>
-        <lastmod>2019-11-24</lastmod>
+        <lastmod>2021-08-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gdp-per-capita-vs-staff-compensation-as-share-of-total-expenditure-in-primary-public-education</loc>
