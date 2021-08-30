@@ -20,11 +20,12 @@ const grapherConfigs =
 [
   {
     "id": 768,
-    "version": 4,
+    "version": 5,
     "slug": "cereal-yield",
     "title": "Cereal yield",
     "subtitle": "Cereal yields are measured in tonnes per hectare. Cereals include wheat, rice, maize, barley, oats, rye, millet, sorghum, buckwheat, and mixed grains. ",
     "sourceDesc": "UN Food and Agriculture Organization (FAO)",
+    "hideTitleAnnotation": true,
     "minTime": 1961,
     "maxTime": 2018,
     "hasMapTab": true,
@@ -32,7 +33,8 @@ const grapherConfigs =
     "originUrl": "https://ourworldindata.org/crop-yields",
     "isPublished": true,
     "yAxis": {
-      "min": 0
+      "min": 0,
+      "facetDomain": "shared"
     },
     "map": {
       "time": 2018,
@@ -75,6 +77,14 @@ const grapherConfigs =
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "Asia",
+      "Africa",
+      "Northern America",
+      "Europe",
+      "South America"
     ],
     "selectedEntityIds": [
       355,
