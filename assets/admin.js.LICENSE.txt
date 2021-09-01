@@ -18,6 +18,8 @@
  * MIT license
  */
 
+/*! https://mths.be/he v1.2.0 by @mathias | MIT license */
+
 /**
  * @license
  * Lodash <https://lodash.com/>
