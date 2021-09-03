@@ -5131,7 +5131,7 @@ const grapherConfigs =
   },
   {
     "id": 4550,
-    "version": 3,
+    "version": 5,
     "slug": "mean-years-of-schooling-female",
     "title": "Average years of schooling for women",
     "subtitle": "Average number of years women older than 25 participated in formal education.",
@@ -5146,30 +5146,43 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2014,
-      "timeTolerance": 4,
+      "timeTolerance": 5,
       "colorScale": {
-        "baseColorScheme": "GnBu",
+        "baseColorScheme": "RdYlBu",
         "binningStrategy": "manual",
         "binningStrategyBinCount": 6,
         "customNumericValues": [
+          1,
           2,
+          3,
           4,
+          5,
           6,
+          7,
           8,
+          9,
           10,
+          11,
           12
+        ],
+        "customNumericColors": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
         ]
       },
-      "variableId": 39296
+      "variableId": 171280
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 39296,
+        "variableId": 171280,
         "display": {
-          "unit": "years",
-          "shortUnit": "years",
+          "unit": "",
+          "shortUnit": "",
           "includeInTable": true
         }
       }
@@ -5177,7 +5190,7 @@ const grapherConfigs =
   },
   {
     "id": 4551,
-    "version": 3,
+    "version": 5,
     "slug": "mean-years-of-schooling-male",
     "title": "Average years of schooling for men",
     "subtitle": "Average number of years men older than 25 participated in formal education.",
@@ -5192,10 +5205,9 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2014,
-      "timeTolerance": 4,
+      "timeTolerance": 5,
       "colorScale": {
-        "baseColorScheme": "Oranges",
+        "baseColorScheme": "RdYlBu",
         "binningStrategy": "manual",
         "binningStrategyBinCount": 6,
         "customNumericValues": [
@@ -5204,18 +5216,24 @@ const grapherConfigs =
           6,
           8,
           10,
-          12
+          12,
+          14,
+          16
+        ],
+        "customNumericColors": [
+          null,
+          null
         ]
       },
-      "variableId": 39297
+      "variableId": 171281
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 39297,
+        "variableId": 171281,
         "display": {
-          "unit": "years",
-          "shortUnit": "years",
+          "unit": "",
+          "shortUnit": "",
           "includeInTable": true
         }
       }
