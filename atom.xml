@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-09-07T09:36:00.000Z</updated>
+<updated>2021-09-09T11:33:00.000Z</updated>
+<entry>
+            <title><![CDATA[Can we reduce fertilizer use without sacrificing food production?]]></title>
+            <id>https://ourworldindata.org/reducing-fertilizer-use</id>
+            <link rel="alternate" href="https://ourworldindata.org/reducing-fertilizer-use"/>
+            <published>2021-09-09T11:33:00.000Z</published>
+            <updated>2021-09-09T11:58:46.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Some countries need more fertilizers to increase crop yields. But some could cut back without sacrificing food production.<br><br><a href="https://ourworldindata.org/reducing-fertilizer-use" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/09/reducing-fertilizer-768x301.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Excess fertilizer use: Which countries cause environmental damage by overapplying fertilizers?]]></title>
             <id>https://ourworldindata.org/excess-fertilizer</id>
@@ -86,14 +95,5 @@
             <updated>2021-07-20T12:54:12.000Z</updated>
             <author><name>Max Roser</name></author>
             <summary><![CDATA[About 3 billion people in the world do not have access to modern energy sources for cooking and heating their homes. They are suffering from indoor air pollution as a consequence and millions die every year.<br><br><a href="https://ourworldindata.org/energy-poverty-air-pollution" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/07/Screen-Shot-2021-07-01-at-11.08.27-768x336.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[The world is making progress on clean water and sanitation, but is far behind its target to ensure universal access by 2030]]></title>
-            <id>https://ourworldindata.org/water-sanitation-2020-update</id>
-            <link rel="alternate" href="https://ourworldindata.org/water-sanitation-2020-update"/>
-            <published>2021-07-01T14:45:00.000Z</published>
-            <updated>2021-07-01T15:29:54.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[All countries pledged to provide safe water and sanitation for everyone by 2030. How far are we from reaching these targets?<br><br><a href="https://ourworldindata.org/water-sanitation-2020-update" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/06/wash-thumbnail-768x301.png"/></a>]]></summary>
             </entry>
 </feed>
