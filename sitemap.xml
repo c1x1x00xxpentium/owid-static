@@ -14586,7 +14586,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/municipal-waste-recycled</loc>
-        <lastmod>2018-06-07</lastmod>
+        <lastmod>2021-09-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/municipal-waste-recycling-rate</loc>
@@ -22570,6 +22570,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-people-directly-affected-by-natural-disasters</loc>
+        <lastmod>2021-09-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/electronic-waste-recycling-rate</loc>
         <lastmod>2021-09-13</lastmod>
     </url>
 </urlset>
