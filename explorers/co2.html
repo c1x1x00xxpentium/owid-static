@@ -414,13 +414,12 @@ const grapherConfigs =
   },
   {
     "id": 696,
-    "version": 15,
+    "version": 17,
     "slug": "share-co2-embedded-in-trade",
     "title": "CO₂ emissions embedded in trade",
     "subtitle": "Share of carbon dioxide (CO₂) emissions embedded in trade, measured as emissions exported or imported as the percentage of domestic production emissions. Positive values (red) represent net importers of CO₂ (i.e. \"20%\" would mean a country imported emissions equivalent to 20% of its domestic emissions). Negative values (blue) represent net exporters of CO₂.",
-    "sourceDesc": "Peters et al. (2012 updated); Global Carbon Project",
     "hideTitleAnnotation": true,
-    "minTime": 1990,
+    "minTime": 1750,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/",
@@ -432,7 +431,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2018,
+      "time": 2019,
       "timeTolerance": 1,
       "colorScale": {
         "baseColorScheme": "RdBu",
@@ -467,17 +466,26 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "CO₂ traded as share of domestic (production) emissions"
       },
-      "variableId": 145698
+      "variableId": 176152
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145698,
+        "variableId": 176152,
         "display": {
           "unit": "%",
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "China",
+      "India",
+      "Germany",
+      "Sweden",
+      "Brazil",
+      "Australia"
     ],
     "selectedEntityIds": [
       13,
