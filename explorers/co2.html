@@ -626,13 +626,12 @@ const grapherConfigs =
   },
   {
     "id": 3488,
-    "version": 13,
+    "version": 15,
     "slug": "consumption-co2-per-capita",
     "title": "Per capita consumption-based CO₂ emissions",
     "subtitle": "Consumption-based carbon dioxide (CO₂) emissions are national or regional emissions which have been adjusted for trade (i.e. territorial/production emissions minus emissions embedded in exports, plus emissions embedded in imports).",
-    "sourceDesc": "OWID based on Global Carbon Project & UN Population",
     "hideTitleAnnotation": true,
-    "minTime": 1990,
+    "minTime": 1800,
     "hideRelativeToggle": false,
     "hasMapTab": true,
     "tab": "map",
@@ -645,7 +644,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2019,
       "colorScale": {
         "baseColorScheme": "Reds",
         "binningStrategy": "manual",
@@ -665,13 +664,22 @@ const grapherConfigs =
         ],
         "equalSizeBins": true
       },
-      "variableId": 145706
+      "variableId": 176136
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145706
+        "variableId": 176136
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "Canada",
+      "China",
+      "India",
+      "South Korea",
+      "South Africa",
+      "France"
     ],
     "selectedEntityIds": [
       13,
@@ -685,13 +693,12 @@ const grapherConfigs =
   },
   {
     "id": 3621,
-    "version": 14,
+    "version": 16,
     "slug": "consumption-co2-emissions",
     "title": "Consumption-based CO₂ emissions",
     "subtitle": "In contrast to production-based emissions, consumption-based emissions are adjusted for trade: emissions that were caused abroad by the production of imported goods are included; emissions caused in the production of goods that were exported to another country are excluded.",
-    "sourceDesc": "Le Quéré et al. (2019). Global Carbon Project.",
     "hideTitleAnnotation": true,
-    "minTime": 1990,
+    "minTime": 1750,
     "hideRelativeToggle": false,
     "hasMapTab": true,
     "tab": "map",
@@ -704,7 +711,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2017,
+      "time": 2019,
       "colorScale": {
         "baseColorScheme": "Reds",
         "binningStrategy": "manual",
@@ -723,13 +730,23 @@ const grapherConfigs =
         ],
         "equalSizeBins": true
       },
-      "variableId": 145696
+      "variableId": 176135
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145696
+        "variableId": 176135
       }
+    ],
+    "selectedEntityNames": [
+      "Australia",
+      "Austria",
+      "Switzerland",
+      "Sweden",
+      "Mexico",
+      "Spain",
+      "Argentina",
+      "Brazil"
     ],
     "selectedEntityIds": [
       23,
