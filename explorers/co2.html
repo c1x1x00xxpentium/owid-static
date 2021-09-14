@@ -78,13 +78,13 @@ const grapherConfigs =
 [
   {
     "id": 485,
-    "version": 16,
+    "version": 18,
     "slug": "cumulative-co-emissions",
     "title": "Cumulative CO₂ emissions",
-    "subtitle": "Cumulative carbon dioxide (CO₂) emissions represents the total sum of CO₂ emissions produced from fossil fuels and cement since 1751, and is measured in tonnes. This measures CO₂ emissions from fossil fuels and cement production only – land use change is not included.",
+    "subtitle": "Cumulative carbon dioxide (CO₂) emissions represents the total sum of CO₂ emissions produced from fossil fuels and cement since 1750, and is measured in tonnes. This measures CO₂ emissions from fossil fuels and cement production only – land use change is not included.",
     "sourceDesc": "Our World in Data based on the Global Carbon Project",
     "hideTitleAnnotation": true,
-    "maxTime": 2017,
+    "maxTime": 2019,
     "hideRelativeToggle": false,
     "hasMapTab": true,
     "tab": "map",
@@ -133,13 +133,16 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "Cumulative CO₂ emissions"
       },
-      "variableId": 145719
+      "variableId": 176138
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145719
+        "variableId": 176138
       }
+    ],
+    "selectedEntityNames": [
+      "World"
     ],
     "selectedEntityIds": [
       355
@@ -147,15 +150,15 @@ const grapherConfigs =
   },
   {
     "id": 486,
-    "version": 27,
+    "version": 28,
     "slug": "co-emissions-per-capita",
     "title": "Per capita CO₂ emissions",
     "subtitle": "Carbon dioxide (CO₂) emissions from the burning of fossil fuels for energy and cement production. Land use change is not included.",
     "sourceDesc": "Our World in Data based on the Global Carbon Project; Gapminder & UN",
     "note": "CO₂ emissions are measured on a production basis, meaning they do not correct for emissions embedded in traded goods.",
     "hideTitleAnnotation": true,
-    "minTime": 1800,
-    "maxTime": 2017,
+    "minTime": 1750,
+    "maxTime": 2019,
     "hideRelativeToggle": false,
     "hasMapTab": true,
     "tab": "map",
@@ -205,12 +208,12 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "CO₂ emissions per capita"
       },
-      "variableId": 145699
+      "variableId": 176102
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145699
+        "variableId": 176102
       }
     ],
     "selectedEntityIds": [
