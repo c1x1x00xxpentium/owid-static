@@ -1504,12 +1504,11 @@ const grapherConfigs =
   },
   {
     "id": 4256,
-    "version": 8,
+    "version": 10,
     "slug": "per-capita-co2-cement",
     "title": "Per capita CO2 emissions from cement",
-    "sourceDesc": "Our World in Data base don Global Carbon Project and UN Population",
     "hideTitleAnnotation": true,
-    "minTime": 1930,
+    "minTime": 1800,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions",
@@ -1521,7 +1520,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2019,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "manual",
@@ -1534,13 +1533,22 @@ const grapherConfigs =
           0.6
         ]
       },
-      "variableId": 145704
+      "variableId": 176108
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145704
+        "variableId": 176108
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "China",
+      "India",
+      "South Africa",
+      "United States",
+      "Argentina",
+      "Australia"
     ],
     "selectedEntityIds": [
       355,
@@ -1554,11 +1562,10 @@ const grapherConfigs =
   },
   {
     "id": 4267,
-    "version": 16,
+    "version": 18,
     "slug": "co2-per-unit-energy",
     "title": "Carbon intensity of energy production",
     "subtitle": "Carbon intensity of energy production is measured as the quantity of carbon dioxide emitted per unit of energy production. This is measured in kilograms of CO₂ per kilowatt-hour.",
-    "sourceDesc": "Calculated by Our World in Data based on Global Carbon Project; BP; IEA via the World Bank",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
     "tab": "map",
@@ -1570,7 +1577,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2016,
+      "time": 2019,
       "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
@@ -1591,13 +1598,22 @@ const grapherConfigs =
         ],
         "equalSizeBins": true
       },
-      "variableId": 145729
+      "variableId": 176134
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145729
+        "variableId": 176134
       }
+    ],
+    "selectedEntityNames": [
+      "World",
+      "China",
+      "India",
+      "United States",
+      "United Kingdom",
+      "Australia",
+      "France"
     ],
     "selectedEntityIds": [
       355,
@@ -1611,11 +1627,10 @@ const grapherConfigs =
   },
   {
     "id": 4331,
-    "version": 7,
+    "version": 9,
     "slug": "consumption-based-carbon-intensity",
     "title": "Consumption-based carbon intensity",
     "subtitle": "Carbon intensity measured in kilograms of CO₂ per unit of GDP (measured in international-$ in 2011 prices). This is measured based on consumption-based CO₂ emissions.",
-    "sourceDesc": "Our World in Data based on Global Carbon Project and World Bank",
     "note": "For consumption-based emissions,  emissions that were caused abroad by the production of imported goods are included; emissions caused in the production of goods that were exported to another country are excluded.",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
@@ -1629,7 +1644,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2018,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -1650,13 +1665,23 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 145728
+      "variableId": 176137
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145728
+        "variableId": 176137
       }
+    ],
+    "selectedEntityNames": [
+      "Australia",
+      "United States",
+      "China",
+      "India",
+      "Sweden",
+      "Switzerland",
+      "Japan",
+      "South Africa"
     ],
     "selectedEntityIds": [
       23,
@@ -1671,12 +1696,11 @@ const grapherConfigs =
   },
   {
     "id": 4332,
-    "version": 8,
+    "version": 10,
     "slug": "annual-co2-flaring",
     "title": "Annual CO₂ emissions from flaring",
-    "sourceDesc": "Global Carbon Project",
     "hideTitleAnnotation": true,
-    "minTime": 1948,
+    "minTime": 1750,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/co2-and-other-greenhouse-gas-emissions",
@@ -1688,7 +1712,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2019,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -1700,13 +1724,16 @@ const grapherConfigs =
           25000000
         ]
       },
-      "variableId": 145691
+      "variableId": 176115
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145691
+        "variableId": 176115
       }
+    ],
+    "selectedEntityNames": [
+      "World"
     ],
     "selectedEntityIds": [
       355
@@ -1714,12 +1741,11 @@ const grapherConfigs =
   },
   {
     "id": 4333,
-    "version": 8,
+    "version": 10,
     "slug": "per-capita-co2-flaring",
     "title": "Per capita CO2 emissions from flaring",
-    "sourceDesc": "Our World in Data based on Global Carbon Project and UN Population",
     "hideTitleAnnotation": true,
-    "minTime": 1950,
+    "minTime": 1800,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/co2-and-other-greenhouse-gas-emissions",
@@ -1731,7 +1757,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2019,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -1744,13 +1770,16 @@ const grapherConfigs =
           0.3
         ]
       },
-      "variableId": 145703
+      "variableId": 176116
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145703
+        "variableId": 176116
       }
+    ],
+    "selectedEntityNames": [
+      "World"
     ],
     "selectedEntityIds": [
       355
