@@ -698,11 +698,10 @@ const grapherConfigs =
   },
   {
     "id": 486,
-    "version": 28,
+    "version": 29,
     "slug": "co-emissions-per-capita",
     "title": "Per capita CO₂ emissions",
     "subtitle": "Carbon dioxide (CO₂) emissions from the burning of fossil fuels for energy and cement production. Land use change is not included.",
-    "sourceDesc": "Our World in Data based on the Global Carbon Project; Gapminder & UN",
     "note": "CO₂ emissions are measured on a production basis, meaning they do not correct for emissions embedded in traded goods.",
     "hideTitleAnnotation": true,
     "minTime": 1750,
@@ -764,6 +763,16 @@ const grapherConfigs =
         "variableId": 176102
       }
     ],
+    "selectedEntityNames": [
+      "World",
+      "United States",
+      "United Kingdom",
+      "China",
+      "India",
+      "Australia",
+      "South Africa",
+      "Brazil"
+    ],
     "selectedEntityIds": [
       355,
       13,
@@ -783,14 +792,13 @@ const grapherConfigs =
   },
   {
     "id": 488,
-    "version": 25,
+    "version": 27,
     "slug": "annual-co2-emissions-per-country",
     "title": "Annual CO₂ emissions",
     "subtitle": "Carbon dioxide (CO₂) emissions from the burning of fossil fuels for energy and cement production. Land use change is not included.",
-    "sourceDesc": "Global Carbon Project; Carbon Dioxide Information Analysis Centre (CDIAC)",
     "note": "CO₂ emissions are measured on a production basis, meaning they do not correct for emissions embedded in traded goods.",
     "hideTitleAnnotation": true,
-    "minTime": 1800,
+    "minTime": 1750,
     "hideRelativeToggle": false,
     "hasMapTab": true,
     "tab": "map",
@@ -839,13 +847,23 @@ const grapherConfigs =
         "equalSizeBins": true,
         "legendDescription": "Annual CO₂ emissions"
       },
-      "variableId": 145686
+      "variableId": 176101
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145686
+        "variableId": 176101
       }
+    ],
+    "selectedEntityNames": [
+      "China",
+      "United States",
+      "United Kingdom",
+      "EU-27",
+      "India",
+      "South Africa",
+      "Russia",
+      "Brazil"
     ],
     "selectedEntityIds": [
       171,
