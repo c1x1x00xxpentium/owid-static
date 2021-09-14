@@ -499,13 +499,12 @@ const grapherConfigs =
   },
   {
     "id": 3218,
-    "version": 13,
+    "version": 15,
     "slug": "share-of-cumulative-co2",
     "title": "Share of global cumulative CO₂ emissions",
-    "subtitle": "Each country or region's share of cumulative global carbon dioxide (CO₂) emissions. Cumulative emissions are calculated as the sum of annuals emissions from 1751 to a given year.",
-    "sourceDesc": "Our World in Data based on the Global Carbon Project",
+    "subtitle": "Each country or region's share of cumulative global carbon dioxide (CO₂) emissions. Cumulative emissions are calculated as the sum of annuals emissions from 1750 to a given year.",
     "hideTitleAnnotation": true,
-    "maxTime": 2017,
+    "maxTime": 2019,
     "entityType": "country/region",
     "hasMapTab": true,
     "tab": "map",
@@ -537,13 +536,20 @@ const grapherConfigs =
         ],
         "equalSizeBins": true
       },
-      "variableId": 145726
+      "variableId": 176160
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145726
+        "variableId": 176160
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "United Kingdom",
+      "China",
+      "India",
+      "EU-27"
     ],
     "selectedEntityIds": [
       13,
@@ -555,14 +561,13 @@ const grapherConfigs =
   },
   {
     "id": 3219,
-    "version": 17,
+    "version": 19,
     "slug": "annual-share-of-co2-emissions",
     "title": "Annual share of global CO₂ emissions",
     "subtitle": "Each country's share of global carbon dioxide (CO₂) emissions. This is measured as each country's emissions divided by the sum of all countries' emissions in a given year plus international aviation and shipping (known as 'bunkers') and 'statistical differences' in carbon accounts.",
-    "sourceDesc": "Our World in Data based on Global Carbon Project",
     "hideTitleAnnotation": true,
-    "minTime": 1753,
-    "maxTime": 2017,
+    "minTime": 1750,
+    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions",
@@ -592,13 +597,22 @@ const grapherConfigs =
         ],
         "equalSizeBins": true
       },
-      "variableId": 145713
+      "variableId": 176153
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145713
+        "variableId": 176153
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "United Kingdom",
+      "China",
+      "India",
+      "Germany",
+      "South Africa",
+      "EU-27"
     ],
     "selectedEntityIds": [
       13,
