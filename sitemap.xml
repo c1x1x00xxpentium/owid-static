@@ -22581,6 +22581,10 @@
         <lastmod>2021-09-15</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/total-hazardous-waste-generation</loc>
+        <lastmod>2021-09-15</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/fish-stocks-catch-by-region</loc>
         <lastmod>2021-09-10</lastmod>
     </url>
@@ -22734,6 +22738,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coverage-of-wetlands</loc>
+        <lastmod>2021-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/treatment-of-hazardous-waste</loc>
         <lastmod>2021-09-15</lastmod>
     </url>
 </urlset>
