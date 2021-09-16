@@ -207,17 +207,17 @@ const grapherConfigs =
   },
   {
     "id": 5187,
-    "version": 3,
+    "version": 4,
     "slug": "snow-cover",
     "title": "Snow cover",
-    "subtitle": "This metric measures the average area covered by snow in a given calendar year, based on an analysis of weekly maps. The area is measured in square miles. These data cover all of North America (not including Greenland).",
+    "subtitle": "This metric measures the average area covered by snow in a given calendar year, based on an analysis of weekly maps. These data cover all of North America (not including Greenland).",
     "sourceDesc": "Rutgers University Global Snow Lab via the US EPA",
     "hideTitleAnnotation": true,
     "originUrl": "ourworldindata.org/climate-change",
     "isPublished": true,
     "yAxis": {
       "min": 0,
-      "max": 4000000
+      "max": 10000000
     },
     "map": {
       "variableId": 175912
@@ -228,8 +228,9 @@ const grapherConfigs =
         "variableId": 176309,
         "display": {
           "name": "Snow cover",
-          "unit": "square miles",
-          "shortUnit": "sq. m",
+          "unit": "square kilometers",
+          "shortUnit": "km²",
+          "conversionFactor": 2.58999,
           "includeInTable": true
         }
       }
