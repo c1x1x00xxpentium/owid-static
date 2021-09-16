@@ -1,0 +1,630 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Climate Change Impacts Data Explorer - Our World in Data</title><meta name="description" content="Research and data to make progress against the world’s largest problems"/><link rel="canonical" href="https://ourworldindata.org/climate-change"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/climate-change"/><meta property="og:title" content="Climate Change Impacts Data Explorer"/><meta property="og:description" content="Research and data to make progress against the world’s largest problems"/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Climate Change Impacts Data Explorer"/><meta name="twitter:description" content="Research and data to make progress against the world’s largest problems"/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/><script>if (window != window.top) document.documentElement.classList.add('IsInIframe')</script></head><body class="StandaloneGrapherOrExplorerPage"><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Updated daily</strong></div><a href="/covid-vaccinations" data-track-note="covid-banner-click">View our work on COVID-19 vaccinations</a></div></div><main id="ExplorerContainer"><div class="loading-indicator"><span style="border-color:#333"></span></div></main><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/vendors.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>const explorerProgram = 
+//EMBEDDED_EXPLORER
+{
+  "program": "explorerTitle\tClimate Change Impacts Data Explorer\nisPublished\ttrue\nentityType\tregion\nexplorerSubtitle\tExplore the impacts of global climate change.\nselection\tWorld\nsubNavId\nsubNavCurrentId\nwpBlockId\ntab\tchart\ngraphers\n\tgrapherId\tMetric Dropdown\n\t5283\tTemperature anomaly\n\t5284\tSea surface temperature anomaly\n\t5183\tOcean heat content (top 700m)\n\t5184\tOcean heat content (top 2000m)\n\t5282\tOcean pH\n\t5286\tSea level rise\n\t5186\tArctic sea ice minimum\n\t5185\tAntarctic sea ice minimum\n\t5288\tMass balance of glaciers\n\t5287\tMass balance of U.S. Glaciers\n\t5187\tSnow cover\n\t5279\tCO₂ concentrations\n\t5280\tCH₄ concentrations\n\t5281\tN₂O concentrations",
+  "slug": "climate-change",
+  "lastCommit": {
+    "hash": "bfe57580f0d22e637ba3b07a73376544ade0e117",
+    "date": "2021-09-16T17:37:32+00:00",
+    "message": "Updated climate-change",
+    "refs": "HEAD -> master",
+    "body": "",
+    "author_name": "Hannah Ritchie",
+    "author_email": "hannah@ourworldindata.org"
+  }
+}
+//EMBEDDED_EXPLORER
+;
+const grapherConfigs = 
+//EMBEDDED_EXPLORER_GRAPHER_CONFIGS
+[
+  {
+    "id": 5183,
+    "version": 3,
+    "slug": "ocean-heat-700m",
+    "title": "Heat Content in the Top 700 Meters of the World’s Oceans",
+    "subtitle": "Ocean heat content is measured relative to the 1971–2000 average, which is set at zero for reference.",
+    "sourceDesc": "CSIRO, NOAA, IAP, and MRI via the US Environment Protection Agency",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 0
+    },
+    "map": {
+      "variableId": 175897
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176306,
+        "display": {
+          "name": "IAP",
+          "includeInTable": true,
+          "color": "#3c4e66"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176308,
+        "display": {
+          "name": "NOAA",
+          "includeInTable": true,
+          "color": "#00823f"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176305,
+        "display": {
+          "name": "CSIRO",
+          "includeInTable": true,
+          "color": "#9e061b"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176307,
+        "display": {
+          "name": "MRI",
+          "includeInTable": true,
+          "color": "#a15b18"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5184,
+    "version": 2,
+    "slug": "ocean-heat-2000m",
+    "title": "Heat Content in the Top 2,000 Meters of the World’s Oceans",
+    "subtitle": "Ocean heat content is measured relative to the 1971–2000 average, which is set at zero for reference.",
+    "sourceDesc": "NOAA, IAP, and MRI via the US Environment Protection Agency",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "max": 33
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176313,
+        "display": {
+          "name": "IAP",
+          "includeInTable": true
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176314,
+        "display": {
+          "name": "NOAA",
+          "includeInTable": true
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176315,
+        "display": {
+          "name": "MRI",
+          "includeInTable": true
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5185,
+    "version": 2,
+    "slug": "antarctic-sea-ice-extent",
+    "title": "Antarctic sea ice extent",
+    "subtitle": "The minimum and maximum sea ice extent typically occur in February and September each year.",
+    "sourceDesc": "NSIDC (National Snow and Ice Data Center) via the US EPA",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "hideRelativeToggle": false,
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 0,
+      "max": 8000000
+    },
+    "map": {
+      "variableId": 175907
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176336,
+        "display": {
+          "name": "September",
+          "unit": "square miles",
+          "shortUnit": "sq. m",
+          "conversionFactor": 1000000,
+          "includeInTable": true,
+          "color": "#aa0b21"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176335,
+        "display": {
+          "name": "February",
+          "unit": "square miles",
+          "shortUnit": "sq. m",
+          "conversionFactor": 1000000,
+          "includeInTable": true,
+          "color": "#366388"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "Antarctica",
+      "World"
+    ]
+  },
+  {
+    "id": 5186,
+    "version": 4,
+    "slug": "arctic-minimum-sea-ice-extent",
+    "title": "Arctic minimum sea ice extent",
+    "subtitle": "Arctic sea ice reaches its minimum each September.",
+    "sourceDesc": "NSIDC (National Snow and Ice Data Center) via NASA",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "disabled",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 0,
+      "max": 8000000
+    },
+    "map": {
+      "variableId": 175904
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176316,
+        "display": {
+          "name": "Arctic minimum sea ice extent",
+          "unit": "square kilometers",
+          "shortUnit": "km²",
+          "conversionFactor": 1000000,
+          "includeInTable": true
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "Arctic"
+    ]
+  },
+  {
+    "id": 5187,
+    "version": 3,
+    "slug": "snow-cover",
+    "title": "Snow cover",
+    "subtitle": "This metric measures the average area covered by snow in a given calendar year, based on an analysis of weekly maps. The area is measured in square miles. These data cover all of North America (not including Greenland).",
+    "sourceDesc": "Rutgers University Global Snow Lab via the US EPA",
+    "hideTitleAnnotation": true,
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 0,
+      "max": 4000000
+    },
+    "map": {
+      "variableId": 175912
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176309,
+        "display": {
+          "name": "Snow cover",
+          "unit": "square miles",
+          "shortUnit": "sq. m",
+          "includeInTable": true
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "North America"
+    ]
+  },
+  {
+    "id": 5279,
+    "version": 3,
+    "slug": "monthly-atm-co2",
+    "title": "Global monthly atmospheric CO₂ concentrations",
+    "subtitle": "Atmospheric carbon dioxide (CO₂) concentrations are measured in parts per million (ppm).",
+    "sourceDesc": "National Oceanic and Atmospheric Administration (NOAA)",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 320,
+      "max": 420
+    },
+    "map": {
+      "variableId": 176333
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176333,
+        "display": {
+          "name": "Monthly mean",
+          "unit": "ppm",
+          "shortUnit": "ppm",
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true,
+          "color": "#a5152a"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176334,
+        "display": {
+          "name": "Trend",
+          "includeInTable": true,
+          "color": "#3c4e66"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5280,
+    "slug": "monthly-atm-ch4",
+    "title": "Global monthly atmospheric CH₄ concentrations",
+    "subtitle": "Atmospheric methane (CH₄) concentrations are measured in parts per billion (ppb).",
+    "sourceDesc": "National Oceanic and Atmospheric Administration (NOAA)",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 1600
+    },
+    "map": {
+      "variableId": 176331
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176331,
+        "display": {
+          "name": "Monthly mean",
+          "unit": "ppb",
+          "shortUnit": "ppb",
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true,
+          "color": "#a5152a"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176332,
+        "display": {
+          "name": "Trend",
+          "includeInTable": true,
+          "color": "#3c4e66"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5281,
+    "slug": "monthly-atm-n2o",
+    "title": "Global monthly atmospheric N₂O concentrations",
+    "subtitle": "Atmospheric nitrous oxide (N₂O) concentrations are measured in parts per billion (ppb).",
+    "sourceDesc": "National Oceanic and Atmospheric Administration (NOAA)",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 300,
+      "max": 335
+    },
+    "map": {
+      "variableId": 176320
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176320,
+        "display": {
+          "name": "Monthly mean",
+          "unit": "ppb",
+          "shortUnit": "ppb",
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true,
+          "color": "#a5152a"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176321,
+        "display": {
+          "name": "Trend",
+          "includeInTable": true,
+          "color": "#3c4e66"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5282,
+    "slug": "mean-seawater-ph",
+    "title": "Mean seawater pH",
+    "subtitle": "Mean seawater pH is shown based on calculations of oceanic pH from the Aloha station time series.",
+    "sourceDesc": "University of Hawaii",
+    "hideTitleAnnotation": true,
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 8,
+      "max": 8.16
+    },
+    "map": {
+      "variableId": 176325
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176325,
+        "display": {
+          "name": "Mean seawater pH",
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "Hawaii"
+    ]
+  },
+  {
+    "id": 5283,
+    "version": 2,
+    "slug": "global-monthly-temperature-anomaly",
+    "title": "Monthly temperature anomaly",
+    "subtitle": "The combined land-surface air and sea-surface water temperature anomaly is given as the deviation from the 1951 - 1980 mean.",
+    "sourceDesc": "National Aeronautics and Space Administration (NASA); Goddard Institute for Space Studies (GISS)",
+    "hideTitleAnnotation": true,
+    "entityType": "region",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": -1,
+      "max": 1.5
+    },
+    "map": {
+      "variableId": 176326
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176326,
+        "display": {
+          "name": "Combined land-surface air and sea-surface water temperature anomalies (deviations from the 1951-1980 means)",
+          "unit": "°C",
+          "shortUnit": "°C",
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5284,
+    "version": 2,
+    "slug": "monthly-sea-surface-temperature",
+    "title": "Monthly sea surface temperature anomaly",
+    "subtitle": "This is measured at a nominal depth of 20cm, and given relative to the average temperature from the period of 1961 - 1990.",
+    "sourceDesc": "Met Office Hadley Center",
+    "hideTitleAnnotation": true,
+    "entityType": "region",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": 0
+    },
+    "map": {
+      "variableId": 176322
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176322,
+        "display": {
+          "name": "Median",
+          "unit": "°C",
+          "shortUnit": "°C",
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true,
+          "color": "#3c4e66"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5286,
+    "slug": "sea-level-rise",
+    "title": "Sea level rise",
+    "subtitle": "Global mean sea level rise is measured relative to the 1993 - 2008 average sea level. This is shown across multiple measurement sources.",
+    "sourceDesc": " National Oceanic and Atmospheric Administration (NOAA)",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": -220,
+      "max": 80
+    },
+    "map": {
+      "variableId": 176329
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176329,
+        "display": {
+          "name": "Median",
+          "unit": "mm",
+          "shortUnit": "mm",
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true,
+          "color": "#3c4e66"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176327,
+        "display": {
+          "name": "Church & White",
+          "includeInTable": true,
+          "color": "#578145"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176328,
+        "display": {
+          "name": "UHLSC",
+          "includeInTable": true,
+          "color": "#8c4569"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "World"
+    ]
+  },
+  {
+    "id": 5287,
+    "slug": "mass-balance-us-glaciers",
+    "title": "Cumulative mass balance of U.S. glaciers",
+    "subtitle": "Cumulative mass balance of four U.S. reference glaciers, set at zero for the base year of 1965. \nThis is given in meters of water equivalent, which represent changes in the average thickness of a glacier.",
+    "sourceDesc": "US Geological Survey via the United States Environmental Protection Agency (EPA)",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "disabled",
+    "originUrl": "ourworldindata.org/climate change",
+    "isPublished": true,
+    "yAxis": {
+      "min": -50,
+      "max": 10
+    },
+    "map": {
+      "variableId": 176304
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176304,
+        "display": {
+          "name": "Cumulative mass balance of U.S. glaciers",
+          "unit": "meters of water equivalent",
+          "includeInTable": true
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "Gulkana Glacier",
+      "Lemon Creek Glacier",
+      "South Cascade Glacier",
+      "Wolverine Glacier"
+    ]
+  },
+  {
+    "id": 5288,
+    "version": 2,
+    "slug": "cumulative-change-land-ice",
+    "title": "Cumulative mass balance of ice sheets",
+    "subtitle": "– Cumulative change in mass in the ice sheets of Greenland and Antarctica. This is measured relative to a base year of 2002.\n– For reference, 1 trillion metric tons is equal to about 260 cubic miles of ice—enough to raise sea level by about 3 millimeters.\n",
+    "sourceDesc": "IMBIE and NASA via United States Environmental Protection Agency (EPA)",
+    "note": "\"Combined measurements\" are based on more than 20 different studies that have been combined for each region.",
+    "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
+    "entityType": "region",
+    "originUrl": "ourworldindata.org/climate-change",
+    "isPublished": true,
+    "yAxis": {
+      "min": -5500000000000,
+      "max": 1000000000000
+    },
+    "map": {
+      "variableId": 176318
+    },
+    "dimensions": [
+      {
+        "property": "y",
+        "variableId": 176318,
+        "display": {
+          "name": "Seasonal variation",
+          "unit": "metric tons",
+          "shortUnit": "t",
+          "conversionFactor": 1000000000,
+          "yearIsDay": true,
+          "zeroDay": "1800-01-01",
+          "includeInTable": true,
+          "color": "#3c4e66"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 176319,
+        "display": {
+          "name": "Combined measurements",
+          "unit": "metric tons",
+          "shortUnit": "t",
+          "conversionFactor": 1000000000,
+          "includeInTable": true,
+          "color": "#0f739c"
+        }
+      }
+    ],
+    "selectedEntityNames": [
+      "Greenland"
+    ],
+    "selectedEntityColors": {
+      "Greenland": "#00823f",
+      "Antarctica": "#3c4e66"
+    }
+  }
+]
+//EMBEDDED_EXPLORER_GRAPHER_CONFIGS
+;
+const urlMigrationSpec = undefined;
+window.Explorer.renderSingleExplorerOnExplorerPage(explorerProgram, grapherConfigs, urlMigrationSpec);</script></body></html>
