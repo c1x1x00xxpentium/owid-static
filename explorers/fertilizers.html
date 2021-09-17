@@ -20,7 +20,7 @@ const grapherConfigs =
 [
   {
     "id": 780,
-    "version": 3,
+    "version": 4,
     "slug": "fertilizer-use-in-kg-per-hectare-of-arable-land",
     "title": "Fertilizer use per hectare of cropland",
     "subtitle": "Fertilizer products cover nitrogenous, potash, and phosphate fertilizers (including ground rock phosphate). Animal and plant manures are not included. Application rates are measured in kilograms per hectare.",
@@ -32,8 +32,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2018,
-      "timeTolerance": 1,
+      "timeTolerance": 3,
       "colorScale": {
         "baseColorScheme": "BuGn",
         "colorSchemeInvert": false,
@@ -47,7 +46,7 @@ const grapherConfigs =
           300,
           500,
           1000,
-          2000
+          3000
         ],
         "customNumericLabels": [
           "",
@@ -74,11 +73,17 @@ const grapherConfigs =
         "display": {
           "name": "",
           "unit": "kilograms per hectare of arable land",
+          "shortUnit": "kg",
           "isProjection": false,
           "tolerance": 5,
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Greece",
+      "Cambodia",
+      "Afghanistan"
     ],
     "selectedEntityIds": [
       149,
