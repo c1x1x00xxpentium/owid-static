@@ -1146,7 +1146,7 @@
 /grapher/three-day-daily-tests-per-thousand-since-5th-death /grapher/seven-day-daily-tests-per-thousand-since-1-per-mil-confirmed-cases 302!
 /grapher/restrictions-on-internal-movement-oxbsg /grapher/internal-movement-covid 302!
 /grapher/covid-contract-tracing /grapher/covid-contact-tracing 302!
-/grapher/no2-concentration /grapher/n2o-concentration 302!
+/grapher/no2-concentration /grapher/n2o-concentration-long 302!
 /grapher/three-day-daily-tests-per-thousand-since-1-per-mil-confirmed-cases /grapher/seven-day-daily-tests-per-thousand-since-1-per-mil-confirmed-cases 302!
 /grapher/co-emissions-per-capita-vs-gdp-per-capita-international- /grapher/co2-emissions-vs-gdp 302!
 /grapher/co2-emissionsvs-gdp /grapher/co2-emissions-vs-gdp 302!
@@ -1256,3 +1256,5 @@
 /grapher/companies-publishing-sustainability-reports /grapher/companies-publishing-sustainability-reports-minimum-requirements 302!
 /grapher/excess-mortality-p-scores /grapher/excess-mortality-p-scores-average-baseline 302!
 /grapher/excess-mortality-p-scores-by-age /grapher/excess-mortality-p-scores-average-baseline-by-age 302!
+/grapher/n2o-concentration /grapher/n2o-concentration-long 302!
+/grapher/ch4-concentration /grapher/ch4-concentration-long 302!
