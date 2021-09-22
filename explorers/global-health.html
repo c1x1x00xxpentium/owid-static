@@ -698,7 +698,7 @@ const grapherConfigs =
   },
   {
     "id": 486,
-    "version": 30,
+    "version": 32,
     "slug": "co-emissions-per-capita",
     "title": "Per capita CO₂ emissions",
     "subtitle": "Carbon dioxide (CO₂) emissions from the burning of fossil fuels for energy and cement production. Land use change is not included.",
@@ -718,20 +718,20 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
-      "timeTolerance": 1,
+      "timeTolerance": 3,
       "colorScale": {
-        "baseColorScheme": "OrRd",
+        "baseColorScheme": "YlOrBr",
         "colorSchemeInvert": false,
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
+          0.1,
+          0.2,
+          0.5,
           1,
-          2.5,
+          2,
           5,
-          7.5,
           10,
-          15,
           20,
           50
         ],
@@ -750,6 +750,9 @@ const grapherConfigs =
           ""
         ],
         "customNumericColors": [
+          null,
+          null,
+          null,
           null
         ],
         "equalSizeBins": true,
