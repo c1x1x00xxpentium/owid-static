@@ -1,3 +1,9 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
 /*!
  * Pikaday
  *
@@ -11,12 +17,7 @@
  * @license  MIT
  */
 
-/*!
- * https://github.com/Starcounter-Jack/JSON-Patch
- * json-patch-duplex.js version: 0.5.7
- * (c) 2013 Joachim Wester
- * MIT license
- */
+/*! @license DOMPurify 2.3.3 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.3.3/LICENSE */
 
 /*! https://mths.be/he v1.2.0 by @mathias | MIT license */
 
