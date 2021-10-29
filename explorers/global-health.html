@@ -3533,32 +3533,34 @@ const grapherConfigs =
   },
   {
     "id": 3264,
-    "version": 5,
+    "version": 6,
     "slug": "people-without-electricity-country",
     "title": "Number of people without access to electricity",
     "sourceDesc": "Based on World Bank and UN Population Prospects",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
+    "tab": "map",
     "originUrl": "https://ourworldindata.org/energy-access",
     "isPublished": true,
     "yAxis": {
       "min": 0
     },
     "map": {
-      "time": 2016,
+      "time": 2019,
       "colorScale": {
-        "baseColorScheme": "YlGnBu",
+        "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
         "customNumericValues": [
-          500000,
           1000000,
           5000000,
           10000000,
-          25000000,
           50000000,
-          100000000
+          100000000,
+          500000000,
+          1000000000
         ],
         "customNumericColors": [
+          null,
           null,
           null,
           null
@@ -3572,6 +3574,14 @@ const grapherConfigs =
         "property": "y",
         "variableId": 99380
       }
+    ],
+    "selectedEntityNames": [
+      "China",
+      "India",
+      "Brazil",
+      "Kenya",
+      "Sudan",
+      "World"
     ],
     "selectedEntityIds": [
       171,
