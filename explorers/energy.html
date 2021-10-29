@@ -1091,7 +1091,7 @@ const grapherConfigs =
   },
   {
     "id": 4293,
-    "version": 9,
+    "version": 10,
     "slug": "fossil-fuels-share-energy",
     "title": "Share of primary energy from fossil fuels",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1109,10 +1109,11 @@ const grapherConfigs =
     "map": {
       "time": "latest",
       "colorScale": {
-        "baseColorScheme": "YlOrRd",
+        "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
-        "customNumericMinValue": 40,
+        "customNumericMinValue": 0,
         "customNumericValues": [
+          25,
           50,
           60,
           70,
@@ -1121,6 +1122,7 @@ const grapherConfigs =
           100
         ],
         "customNumericColors": [
+          null,
           null
         ]
       },
@@ -1138,6 +1140,11 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Taiwan",
+      "Poland",
+      "Denmark"
     ],
     "selectedEntityIds": [
       198,
