@@ -1154,7 +1154,7 @@ const grapherConfigs =
   },
   {
     "id": 4294,
-    "version": 10,
+    "version": 11,
     "slug": "nuclear-primary-energy",
     "title": "Share of primary energy from nuclear",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1170,18 +1170,21 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2019,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
         "customNumericValues": [
           2.5,
           5,
-          7.5,
           10,
-          15,
           20,
-          25
+          30,
+          40,
+          50
+        ],
+        "customNumericColors": [
+          null
         ]
       },
       "variableId": 143019
@@ -1198,6 +1201,11 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Peru",
+      "Oman",
+      "Argentina"
     ],
     "selectedEntityIds": [
       97,
