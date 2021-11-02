@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-10-14T10:00:00.000Z</updated>
+<updated>2021-11-02T11:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Access to basic education: Almost 60 million children in primary school age are not in school]]></title>
+            <id>https://ourworldindata.org/children-not-in-school</id>
+            <link rel="alternate" href="https://ourworldindata.org/children-not-in-school"/>
+            <published>2021-11-02T11:00:00.000Z</published>
+            <updated>2021-11-02T11:53:08.000Z</updated>
+            <author><name>Max Roser</name></author>
+            <summary><![CDATA[<br><br><a href="https://ourworldindata.org/children-not-in-school" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/09/Screen-Shot-2021-09-17-at-14.54.25-768x381.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[We just published our new work on global fish stocks and overfishing]]></title>
             <id>https://ourworldindata.org/overfishing-launch</id>
@@ -86,14 +95,5 @@
             <updated>2021-08-06T10:48:47.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Most of the world’s farmers are smallholders. They are also often the poorest. How much of the world’s food do they produce?<br><br><a href="https://ourworldindata.org/smallholder-food-production" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/08/smallholders-thumbnail-768x301.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[How much of the world’s food production is dependent on pollinators?]]></title>
-            <id>https://ourworldindata.org/pollinator-dependence</id>
-            <link rel="alternate" href="https://ourworldindata.org/pollinator-dependence"/>
-            <published>2021-08-02T10:00:00.000Z</published>
-            <updated>2021-08-02T10:38:35.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Many of the world’s pollinator insects are in decline. What does this mean for global food production?<br><br><a href="https://ourworldindata.org/pollinator-dependence" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/07/Pollinator-thumbnail-768x301.png"/></a>]]></summary>
             </entry>
 </feed>
