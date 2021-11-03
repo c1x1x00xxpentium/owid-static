@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-11-02T11:00:00.000Z</updated>
+<updated>2021-11-03T07:55:56.000Z</updated>
+<entry>
+            <title><![CDATA[Fossil fuel subsidies: If we want to reduce greenhouse gas emissions we should not pay people to burn fossil-fuels]]></title>
+            <id>https://ourworldindata.org/fossil-fuel-subsidies</id>
+            <link rel="alternate" href="https://ourworldindata.org/fossil-fuel-subsidies"/>
+            <published>2021-11-03T07:55:56.000Z</published>
+            <updated>2021-11-03T07:56:17.000Z</updated>
+            <author><name>Max Roser</name></author>
+            <summary><![CDATA[Repealing subsidies is not easy, but it is possible – and the world is slowly making progress in this direction<br><br><a href="https://ourworldindata.org/fossil-fuel-subsidies" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/11/Screen-Shot-2021-11-03-at-08.54.08-768x364.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Access to basic education: Almost 60 million children in primary school age are not in school]]></title>
             <id>https://ourworldindata.org/children-not-in-school</id>
@@ -86,14 +95,5 @@
             <updated>2021-09-01T11:20:19.000Z</updated>
             <author><name>Saloni Dattani</name></author>
             <summary><![CDATA[Depression is the most common mental health condition. What do we know about its symptoms, severity and how these are measured?<br><br><a href="https://ourworldindata.org/what-is-depression" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/08/depression-thumbnail-768x301.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Smallholders produce one-third of the world’s food, less than half of what many headlines claim]]></title>
-            <id>https://ourworldindata.org/smallholder-food-production</id>
-            <link rel="alternate" href="https://ourworldindata.org/smallholder-food-production"/>
-            <published>2021-08-06T10:00:00.000Z</published>
-            <updated>2021-08-06T10:48:47.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Most of the world’s farmers are smallholders. They are also often the poorest. How much of the world’s food do they produce?<br><br><a href="https://ourworldindata.org/smallholder-food-production" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/08/smallholders-thumbnail-768x301.png"/></a>]]></summary>
             </entry>
 </feed>
