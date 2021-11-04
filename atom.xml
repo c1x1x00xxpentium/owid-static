@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-11-04T07:30:00.000Z</updated>
+<updated>2021-11-04T12:10:17.000Z</updated>
+<entry>
+            <title><![CDATA[When will countries phase out coal power?]]></title>
+            <id>https://ourworldindata.org/coal-phase-out</id>
+            <link rel="alternate" href="https://ourworldindata.org/coal-phase-out"/>
+            <published>2021-11-04T12:10:17.000Z</published>
+            <updated>2021-11-04T12:33:20.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Which countries have committed to phasing out coal power?<br><br><a href="https://ourworldindata.org/coal-phase-out" target="_blank"><img src="https://ourworldindata.org/default-thumbnail.jpg"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[We’ve just updated all of our data on global CO₂ emissions]]></title>
             <id>https://ourworldindata.org/co2-data-update-2021</id>
@@ -86,14 +95,5 @@
             <updated>2021-09-08T15:03:29.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Nutrients are essential for crop growth. But when they’re overapplied they become a pollutant. Which countries generate the most pollution?<br><br><a href="https://ourworldindata.org/excess-fertilizer" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/09/excess-fertilizer-768x301.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[To protect the world’s wildlife we must improve crop yields – especially across Africa]]></title>
-            <id>https://ourworldindata.org/yields-habitat-loss</id>
-            <link rel="alternate" href="https://ourworldindata.org/yields-habitat-loss"/>
-            <published>2021-09-02T09:33:00.000Z</published>
-            <updated>2021-09-04T19:29:06.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Habitat loss is the biggest threat to the world’s animals. Without improvements in crop yields, thousands of species could see much of their habitat lost to farmland. <br><br><a href="https://ourworldindata.org/yields-habitat-loss" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/09/Biodiversity-habitat.png"/></a>]]></summary>
             </entry>
 </feed>
