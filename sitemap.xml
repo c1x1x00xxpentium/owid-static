@@ -23221,12 +23221,28 @@
         <lastmod>2021-11-08</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/production-vs-consumption-energy</loc>
+        <lastmod>2021-11-10</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/traded-energy-share-domestic</loc>
+        <lastmod>2021-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/consumption-based-energy-per-capita</loc>
         <lastmod>2021-11-10</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/merchandise-trade-as-a-proportion-of-gdp</loc>
         <lastmod>2021-11-09</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/production-consumption-energy-per-person</loc>
+        <lastmod>2021-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/energy-embedded-traded-goods</loc>
+        <lastmod>2021-11-10</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/legal-controls-lead-paint</loc>
