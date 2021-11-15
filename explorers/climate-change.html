@@ -527,12 +527,13 @@ const grapherConfigs =
   },
   {
     "id": 5282,
-    "version": 4,
+    "version": 5,
     "slug": "mean-seawater-ph",
     "title": "Ocean acidification: mean seawater pH",
     "subtitle": "Mean seawater pH is shown based on in-situ measurements of pH from the Aloha station.",
     "sourceDesc": "University of Hawaii",
     "hideTitleAnnotation": true,
+    "addCountryMode": "change-country",
     "originUrl": "ourworldindata.org/climate-change",
     "isPublished": true,
     "yAxis": {
@@ -547,10 +548,20 @@ const grapherConfigs =
         "property": "y",
         "variableId": 176325,
         "display": {
-          "name": "Mean seawater pH",
+          "name": "Monthly pH measurement",
           "yearIsDay": true,
           "zeroDay": "1800-01-01",
-          "includeInTable": true
+          "includeInTable": true,
+          "color": "#a5152a"
+        }
+      },
+      {
+        "property": "y",
+        "variableId": 180064,
+        "display": {
+          "name": "Annual average",
+          "includeInTable": true,
+          "color": "#3c4e66"
         }
       }
     ],
