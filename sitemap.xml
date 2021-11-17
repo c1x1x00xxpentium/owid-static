@@ -21218,7 +21218,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccination-doses-per-capita</loc>
-        <lastmod>2021-11-10</lastmod>
+        <lastmod>2021-11-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-gov_expenditure-in-gdp-vs-gdp-per-capita</loc>
@@ -21910,7 +21910,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cumulative-covid-vaccinations-income-group</loc>
-        <lastmod>2021-10-19</lastmod>
+        <lastmod>2021-11-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/iea-country-coverage</loc>
@@ -23138,7 +23138,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cumulative-covid-19-vaccinations-vs-population</loc>
-        <lastmod>2021-10-19</lastmod>
+        <lastmod>2021-11-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/real-gdp-growth</loc>
@@ -23335,5 +23335,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/lead-blood-usa-children</loc>
         <lastmod>2021-11-16</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/co2-emissions-and-gdp</loc>
+        <lastmod>2021-11-17</lastmod>
     </url>
 </urlset>
