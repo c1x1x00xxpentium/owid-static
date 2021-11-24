@@ -512,8 +512,6 @@
 /grapher/breakdown-of-united-nations-peacekeeping-forces-around-the-world-1992-2014 /grapher/breakdown-of-united-nations-peacekeeping-forces 302!
 /grapher/child-mortality-by-cause /grapher/global-child-deaths-by-cause 302!
 /grapher/global-child-mortality-by-cause /grapher/global-child-deaths-by-cause 302!
-/grapher/number-of-internet-users-by-world-region-1990-2014 /grapher/internet-users-by-world-region 302!
-/grapher/number-of-internet-users-by-world-region /grapher/internet-users-by-world-region 302!
 /grapher/total-number-of-people-experiencing-rough-sleeping /grapher/number-of-unsheltered-homeless-people 302!
 /grapher/people-experiencing-rough-sleeping-per-100000 /grapher/number-of-unsheltered-homeless-people-per-100000-population 302!
 /grapher/the-size-of-the-global-poverty-gap-in-int--2011-ppp /grapher/the-poverty-gap-in-int--2011-ppp 302!
@@ -1279,3 +1277,4 @@
 /grapher/globalization-over-5-centuries-all /grapher/globalization-over-5-centuries 302!
 /grapher/world-population-1750-2015-and-un-projection-until-2100 /grapher/population 302!
 /grapher/total-population-living-in-extreme-poverty-by-world-region-1 /grapher/total-population-living-in-extreme-poverty-by-world-region 302!
+/grapher/internet-users-by-world-region /grapher/number-of-internet-users-by-country 302!
