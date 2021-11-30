@@ -1,0 +1,243 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Primary energy production is not final energy use: what are the different ways of measuring energy? - Our World in Data</title><meta name="description" content="Understanding the breakdown of our energy systems – how much energy we get from coal, oil or gas, how much from nuclear, solar or wind – is crucial. It allows us to compare energy mixes across the world; track whether we are making progress on decarbonizing our energy systems; and plan and manage demands for natural resources. "/><link rel="canonical" href="https://ourworldindata.org/energy-substitution-method"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/energy-substitution-method"/><meta property="og:title" content="Primary energy production is not final energy use: what are the different ways of measuring energy?"/><meta property="og:description" content="Understanding the breakdown of our energy systems – how much energy we get from coal, oil or gas, how much from nuclear, solar or wind – is crucial. It allows us to compare energy mixes across the world; track whether we are making progress on decarbonizing our energy systems; and plan and manage demands for natural resources. "/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Primary energy production is not final energy use: what are the different ways of measuring energy?"/><meta name="twitter:description" content="Understanding the breakdown of our energy systems – how much energy we get from coal, oil or gas, how much from nuclear, solar or wind – is crucial. It allows us to compare energy mixes across the world; track whether we are making progress on decarbonizing our energy systems; and plan and manage demands for natural resources. "/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Updated daily</strong></div><a href="/covid-vaccinations" data-track-note="covid-banner-click">View our work on COVID-19 vaccinations</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Primary energy production is not final energy use: what are the different ways of measuring energy?</h1></div><div class="authors-byline"><a href="/team">by Hannah Ritchie</a></div><time>November 09, 2021</time><div class="tools"><a href="#licence"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="creative-commons" class="svg-inline--fa fa-creative-commons fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M245.83 214.87l-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93-22.13 0-33.22 14.61-33.22 43.84 0 23.57 9.21 43.84 33.22 43.84 14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98-22.6 0-73.96-10.32-73.96-77.05 0-58.69 43-77.06 72.63-77.06 30.72-.01 52.7 11.95 65.99 35.86zm143.05 0l-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93-22.14 0-33.22 14.61-33.22 43.84 0 23.55 9.23 43.84 33.22 43.84 14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98-22.69 0-73.96-9.87-73.96-77.05 0-58.67 42.97-77.06 72.63-77.06 30.71-.01 52.58 11.95 65.56 35.86zM247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248 129.93 0 248.44-100.87 248.44-248 0-137.87-106.62-248-248.44-248zm.87 450.81c-112.54 0-203.7-93.04-203.7-202.81 0-105.42 85.43-203.27 203.72-203.27 112.53 0 202.82 89.46 202.82 203.26-.01 121.69-99.68 202.82-202.84 202.82z"></path></svg>Reuse our work freely</a></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Understanding the breakdown of our energy systems &#x2013; how much energy we get from coal, oil or gas, how much from nuclear, solar or wind &#x2013; is crucial. It allows us to compare energy mixes across the world; track whether we are making progress on decarbonizing our energy systems; and plan and manage demands for natural resources.&#xA0;</p><p>But what seems like a simple exercise &#x2013; adding up the produced energy from all the different sources &#x2013; is in fact not straightforward at all. These difficulties result in different approaches for &#x2018;energy accounting&#x2019; and present a different picture of the energy mix.</p><p>Below, we take a look at the two key methodologies applied to primary energy accounting: &#x2018;direct&#x2019; primary energy and primary energy via the &#x2018;substitution method&#x2019;. These methods are discussed (or debated) often, but I couldn&#x2019;t find particularly clear or simple explanations of how they differ and what this means for understanding our energy mix. The aim here is to fill that gap.</p><p>What&#x2019;s important is to understand why there are two different methods and how they affect our perspective on the energy mix.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="direct-vs-substituted-primary-energy-what-s-the-difference"><a class="deep-link" href="#direct-vs-substituted-primary-energy-what-s-the-difference"></a>Direct vs. substituted primary energy: what&#x2019;s the difference?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>&#x2018;Primary energy&#x2019;&#xA0; refers to energy in its raw form, before it has been converted by humans into other forms of energy like electricity, heat or transport fuels. Think of this as inputs into an energy system: coal, oil or gas before we burn them; or solar or wind energy before we convert them to electricity.</p><p>When we are asking how much energy is consumed or what the breakdown of the sources of energy is we are asking about primary energy.</p><p>Here we look at two ways in which &#x2018;primary energy&#x2019; is calculated: the &#x2018;direct&#x2019; and the &#x2018;substituted&#x2019; method. The simplest way to think of the difference between these methods is that &#x2018;direct&#x2019; primary energy <em>does not</em> take account of the energy lost in the conversion of fossil fuels to usable energy. The substitution method <em>does</em> attempt to correct for this loss.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="an-example-of-the-difference-between-direct-and-substituted-energy"><a class="deep-link" href="#an-example-of-the-difference-between-direct-and-substituted-energy"></a>An example of the difference between &#x2018;direct&#x2019; and &#x2018;substituted&#x2019; energy</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>To understand why this distinction is important we need to first consider the process of energy production.</p>
+
+
+
+<p>When we burn fuel in a thermal power plant most of the energy we put into the process is lost &#x2013; primarily in the form of heat. Most fossil fuel plants run with an efficiency of around 33% to 40%.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a> The remaining 60% to 67% of energy is wasted as heat. This means for every unit of energy that we can use, another two are wasted.</p>
+
+
+
+<p>When we measure electricity&#xA0; generation from renewables or nuclear power, we&#x2019;re measuring the direct&#xA0; <em>output</em>, with no losses or waste to consider.</p>
+
+
+
+<p>Let&#x2019;s take an example &#x2013; shown in the graphic here. Imagine we have a country that needs 100 terawatt-hours (TWh) of energy. We have three different energy mixes: only fossil fuels; only renewable or nuclear energy; and a mix of both.&#xA0;</p>
+
+
+
+<ol><li>If we only rely on <strong>fossil fuels</strong> we need 263 TWh of energy input. This is because only around 38% of these inputs are converted into &#x2018;useful&#x2019; energy.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a> 163 TWh is energy lost as heat.</li><li><strong>If we only rely on either renewable or nuclear energy</strong> these losses do not occur &#x2013; the quantity of electricity generated is the same quantity we can use. So we only need 100 TWh.</li><li><strong><strong>If we rely on renewables/nuclear and fossil fuels</strong> it depends on the mix: </strong>let&#x2019;s say we produce 50 TWh from renewables or nuclear sources. We need another 50 TWh from fossil fuels. But to produce the additional 50 TWh from fossil fuels, we actually need 132 TWh, because we lose 82 TWh as heat <em>[50 TWh / 0.38 = 132 TWh]</em>. Combined, we need 182 TWh of energy input <em>[50 TWh from renewables/nuclear + 50 TWh &#x2018;useful&#x2019; fossil fuel energy + 82 TWh wasted]</em>.</li></ol>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="800" height="500" src="https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-800x500.png" alt="Three scenarios to supply 100twh of energy" class="wp-image-36081" srcset="https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-800x500.png 800w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-400x250.png 400w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-150x94.png 150w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-768x480.png 768w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy-1536x961.png 1536w, https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy.png 1765w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/Three-scenarios-to-supply-100TWh-of-energy.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Based on this example we can understand the difference between direct primary energy and the substitution method.&#xA0;</p>
+
+
+
+<p>Let&#x2019;s take the third scenario &#x2013; a mixture of fossil fuels and low-carbon energy &#x2013; and see how the low-carbon share differs between the two methods. This is shown in the figure.</p>
+
+
+
+<p>From the direct method we get 50 TWh / 182 TWh = 27%. From the substitution&#xA0; method we get 50 TWh / 100 TWh = 50%.</p>
+
+
+
+<p>I find it helpful to think of the distinction as:</p>
+
+
+
+<ul><li>Low-carbon&#x2019;s share in <strong>direct primary energy</strong> = % of <strong>total primary energy</strong> consumption (including all of the inefficiencies of fossil fuel production)</li></ul>
+
+
+
+<ul><li>Low carbon&#x2019;s share in <strong>substituted primary energy = </strong>% of <strong>useful energy </strong>(once we subtract all of the wasted energy in the burning of fossil fuels)</li></ul>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="800" height="490" src="https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-800x490.png" alt="How are energy mixes calculated" class="wp-image-36082" srcset="https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-800x490.png 800w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-400x245.png 400w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-150x92.png 150w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-768x470.png 768w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated-1536x941.png 1536w, https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated.png 1763w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/How-are-energy-mixes-calculated.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-effect-does-our-choice-of-accounting-method-have-on-the-breakdown-of-the-global-energy-mix"><a class="deep-link" href="#what-effect-does-our-choice-of-accounting-method-have-on-the-breakdown-of-the-global-energy-mix"></a>What effect does our choice of accounting method have on the breakdown of the global energy mix?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>A question many want the answer to is, how much of our energy comes from low-carbon sources? How close are we to getting rid of fossil fuels?</p>
+
+
+
+<p>As we now know, it depends on whether we&#x2019;re using the direct or substitution method. In the chart here we show the breakdown of the global primary energy mix in 2019 to compare the two methods.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a></p>
+
+
+
+<p>As we should expect from the example we worked through, when we calculate the share of energy from low-carbon sources via the substitution method we get a higher figure: 16% vs. only 7% from the direct method. When we strip away the differences in efficiencies between the sources, both renewables and nuclear make a larger contribution.&#xA0;</p>
+
+
+
+<p>In the interactive charts you can also compare each source&#x2019;s share of energy based on the two methods. Using the &#x201C;change country&#x201D; button in the bottom-left of each chart, you can also see this for different countries.</p>
+
+
+
+<p>Most sources tend to prefer and report on the substitution method (or a similar approach &#x2013; the &#x2018;physical content&#x2019; method &#x2013; which we don&#x2019;t discuss here but which gives similar results) rather than the direct method. The substitution method is also the preferred approach of the <em>Intergovernmental Panel on Climate Change (IPCC)</em>, for example.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="800" height="426" src="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-800x426.png" alt="Global primary energy breakdown &#x2013; sub vs. direct" class="wp-image-35641" srcset="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-800x426.png 800w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-400x213.png 400w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-150x80.png 150w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-768x409.png 768w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-1536x817.png 1536w, https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct-2048x1090.png 2048w" sizes="(max-width: 800px) 100vw, 800px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/Global-primary-energy-breakdown-&#x2013;-sub-vs.-direct.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-of-primary-energy-consumption-by-source" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-of-primary-energy-consumption-by-source" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-of-primary-energy-consumption-by-source_v11_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share of primary energy consumption by source v11 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-energy-source-sub" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-energy-source-sub" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-energy-source-sub_v11_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share energy source sub v11 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-we-convert-from-direct-to-substituted-primary-energy"><a class="deep-link" href="#how-do-we-convert-from-direct-to-substituted-primary-energy"></a>How do we convert from direct to substituted primary energy?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>At Our World in Data we get most of our energy data from BP; each year it publishes its <em>Statistical Review of World Energy </em>report. It applies the substitution method to its primary energy data <em>[you can read its methodology </em><a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/using-the-review/methodology.html#accordion_primary-energy-methodology"><strong><em>here</em></strong></a><em>]</em>.</p>
+
+
+
+<p>How does it convert from direct primary energy &#x2013; that we can measure &#x2013; into the substitution breakdown?&#xA0;</p>
+
+
+
+<p>In the schematic explanation above, we looked at calculating the share of energy from low-carbon energy sources by comparing it with the amount of useful energy (subtracting the wasted energy) from fossil fuels.</p>
+
+
+
+<p>But we can also do the opposite of this to get the same result. In fact, this inverse approach is what is most commonly applied by BP and others who use the &#x2018;substitution method&#x2019;. So, instead of assuming fossil fuels have the same efficiency as renewables/nuclear, we do the opposite: we assume renewables/nuclear are as inefficient as fossil fuels. We calculate the equivalent amount of fossil fuels that would be required to produce the amount of electricity we get from non-fossil based sources.</p>
+
+
+
+<p>So, let&#x2019;s say we produce 100 TWh of electricity from wind. And we assume the efficiency of a fossil fuel plant is 38%. We would convert this wind electricity into &#x2018;input-equivalent&#x2019; primary energy by dividing by this efficiency <em>[100 / 0.38 = 263 TWh]</em>. This would be the amount of primary energy that would be required from fossil fuels to produce the same amount of electricity as wind.</p>
+
+
+
+<p>We should note that this conversion is used as an approximation &#x2013; a standard &#x2018;efficiency&#x2019; factor is applied across-the-board. But we know that some power plants have a slightly lower or higher efficiency and it can change over time. In fact, BP changed its methodology in its 2020 assessment to reflect this change over time. Previously it assumed a 38% efficiency factor consistently. But it now applies a &#x2018;time-dependent&#x2019; model to build in improvements over time. Changes in this conversion factor are summarised in the table below.<br>The substitution method gives us a more accurate understanding of how low-carbon energy is competing with fossil fuels. For this reason: when we look at the breakdowns of energy mix on <em>Our World in Data</em> we have tried wherever possible to use primary energy measured by the substitution method.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<h6>Conversion factors applied in converting renewable and nuclear electricity outputs to primary energy<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a></h6>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="551" height="550" src="https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-551x550.png" alt="Bp primary energy conversion factors" class="wp-image-36086" srcset="https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-551x550.png 551w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-400x400.png 400w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-150x150.png 150w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors-768x766.png 768w, https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors.png 770w" sizes="(max-width: 551px) 100vw, 551px" data-high-res-src="https://ourworldindata.org/uploads/2020/08/BP-Primary-Energy-Conversion-Factors.png"></figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><hr class="wp-block-separator"></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="related-articles"><a class="deep-link" href="#related-articles"></a>Related articles</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>#https://ourworldindata.org/global-energy-mix</p><p>#https://ourworldindata.org/global-low-carbon-energy</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="back-to-the-overview-of-all-our-work-on-energy"><a class="deep-link" href="#back-to-the-overview-of-all-our-work-on-energy"></a>Back to the overview of all our work on Energy</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>#https://ourworldindata.org/energy</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>This can vary from plant-to-plant, and by fuel type. We look in more detail at the assumed efficiencies of power plants later.</p></li><li id="note-2"><p>We can calculate this by dividing our 100 TWh demand by 0.38.</p></li><li id="note-3"><p>This is based on data from the <em>BP Statistical Review of World Energy</em>; it considers only commercially-traded fuels, so traditional biomass is not included.</p></li><li id="note-4"><p>Krey V., O. Masera, G. Blanford, T. Bruckner, R. Cooke, K. Fisher-Vanden, H. Haberl, E. Hertwich, E. Kriegler, D. Mueller, S. Paltsev, L. Price, S. Schlömer, D. Ürge-Vorsatz, D. van Vuuren, and T. Zwickel, 2014: <a href="https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-ii.pdf">Annex II: Metrics &amp; Methodology</a>. In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.</p></li><li id="note-5"><p>BP Statistical Review of World Energy, <em><a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/using-the-review/definitions-and-explanatory-notes.html">Definitions and Exploratory Notes</a></em> (2020)</p></li></ol><h3 id="licence">Reuse our work freely</h3><p>All visualizations, data, and code produced by Our World in Data are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.</p><p>The data produced by third parties and made available by Our World in Data is subject to the license terms from the original third-party authors. We will always indicate the original source of the data in our documentation, so you should always check the license of any such third-party data before use and redistribution.</p><p>All of <a href="/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=45839&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/vendors.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>
+                        runTableOfContents({"headings":[],"pageTitle":"Primary energy production is not final energy use: what are the different ways of measuring energy?"})
+                        runRelatedCharts(undefined)
+                        </script></body></html>
