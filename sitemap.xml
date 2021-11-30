@@ -2870,7 +2870,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/famines</loc>
-        <lastmod>2021-07-03</lastmod>
+        <lastmod>2021-11-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/crop-yields</loc>
@@ -6114,6 +6114,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/low-carbon-electricity</loc>
+        <lastmod>2021-11-30</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/low-carbon-electricity-by-country</loc>
         <lastmod>2021-11-30</lastmod>
     </url>
     <url>
