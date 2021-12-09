@@ -23369,8 +23369,24 @@
         <lastmod>2021-11-29</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/share-of-clinical-trials-that-report-results-in-time-by-country</loc>
+        <lastmod>2021-12-09</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/trend-in-clinical-trials-that-report-results-within-a-year</loc>
+        <lastmod>2021-12-09</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/total-number-of-rcts-published-in-high-ranked-medical-journals</loc>
+        <lastmod>2021-12-09</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/world-population-by-political-regime</loc>
         <lastmod>2021-12-01</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/dropouts-in-antidepressant-trials-by-cause</loc>
+        <lastmod>2021-12-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccination-one-dose-vs-covid-death-rate</loc>
