@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2021-12-09T11:30:00.000Z</updated>
+<updated>2021-12-16T11:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[We just published our new Global Food Data Explorer]]></title>
+            <id>https://ourworldindata.org/global-food-explorer-launch</id>
+            <link rel="alternate" href="https://ourworldindata.org/global-food-explorer-launch"/>
+            <published>2021-12-16T11:00:00.000Z</published>
+            <updated>2021-12-16T11:40:14.000Z</updated>
+            <author><name>Hannah Ritchie</name></author><author><name>Lucas Rodés-Guirao</name></author><author><name>Marcel Gerber</name></author>
+            <summary><![CDATA[Explore the global food system from field to plate, for all countries in the world.<br><br><a href="https://ourworldindata.org/global-food-explorer-launch" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/12/global-food-explorer-thumbnail-768x403.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[Global economic inequality: what matters most for your living conditions is not who you are, but where you are]]></title>
             <id>https://ourworldindata.org/global-economic-inequality-introduction</id>
@@ -86,14 +95,5 @@
             <updated>2021-11-04T08:36:58.000Z</updated>
             <author><name>Bobbie Macdonald</name></author><author><name>Hannah Ritchie</name></author><author><name>Edouard Mathieu</name></author>
             <summary><![CDATA[Our annual update based on the latest release from the Global Carbon Project. Explore it here.<br><br><a href="https://ourworldindata.org/co2-data-update-2021" target="_blank"><img src="https://ourworldindata.org/app/uploads/2020/08/CO2-Landing-page-768x402.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Fossil fuel subsidies: If we want to reduce greenhouse gas emissions we should not pay people to burn fossil-fuels]]></title>
-            <id>https://ourworldindata.org/fossil-fuel-subsidies</id>
-            <link rel="alternate" href="https://ourworldindata.org/fossil-fuel-subsidies"/>
-            <published>2021-11-03T07:55:56.000Z</published>
-            <updated>2021-11-03T09:42:22.000Z</updated>
-            <author><name>Max Roser</name></author>
-            <summary><![CDATA[Repealing subsidies is not easy, but it is possible – and the world is slowly making progress in this direction<br><br><a href="https://ourworldindata.org/fossil-fuel-subsidies" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/11/Screen-Shot-2021-11-03-at-08.54.08-768x364.png"/></a>]]></summary>
             </entry>
 </feed>
