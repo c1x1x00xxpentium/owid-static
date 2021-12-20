@@ -502,6 +502,9 @@
 /explorers/ / 301!
 /coronavirus/country/czechia /coronavirus/country/czech-republic 301!
 /co2-by-fuel /emissions-by-fuel 301!
+/co2 /co2-and-other-greenhouse-gas-emissions 301!
+/cov /coronavirus 301!
+/grapher/case-fatality-rate-of-covid-19-vs-total-covid-19-tests-per-million-people /coronavirus 301!
 /grapher/latest /grapher/share-of-children-vaccinated-against-measles 302
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/scatterplot-of-national-suicide-rates-and-mean-years-of-schooling-in-population-over-age-15-2005 /grapher/scatterplot-of-national-suicide-rates-and-mean-years-of-schooling-in-population-over-age-15 302!
@@ -1282,3 +1285,4 @@
 /grapher/switzerland-liechtenstein-covid-19-weekly-death-rate-by-vaccination-status /grapher/chile-covid-19-mortality-rate-by-vaccination-status 302!
 /grapher/share-of-sars-cov-2-sequences-that-are-the-omicron-variant /grapher/covid-cases-omicron 302!
 /grapher/distribution-of-population-across-income-thresholds /grapher/distribution-of-population-across-income-thresholds-stacked-bar-30-only 302!
+/grapher/total-covid-cases-deaths-per- /grapher/total-covid-cases-deaths-per-million 302!
