@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2022-01-10T14:16:48.000Z</updated>
+<updated>2022-01-11T10:30:00.000Z</updated>
+<entry>
+            <title><![CDATA[The history of the end of poverty has just begun]]></title>
+            <id>https://ourworldindata.org/history-of-poverty-has-just-begun</id>
+            <link rel="alternate" href="https://ourworldindata.org/history-of-poverty-has-just-begun"/>
+            <published>2022-01-11T10:30:00.000Z</published>
+            <updated>2022-01-11T10:46:26.000Z</updated>
+            <author><name>Max Roser</name></author>
+            <summary><![CDATA[The decline of global poverty is one of the most important achievements in history, but the end of poverty is still very far away.<br><br><a href="https://ourworldindata.org/history-of-poverty-has-just-begun" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/11/Screen-Shot-2021-11-21-at-21.06.10-768x277.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[How do key COVID-19 metrics compare to previous waves?]]></title>
             <id>https://ourworldindata.org/covid-metrics-previous-waves</id>
@@ -86,14 +95,5 @@
             <updated>2021-12-27T13:08:13.000Z</updated>
             <author><name>Edouard Mathieu</name></author><author><name>Max Roser</name></author>
             <summary><![CDATA[To understand how the pandemic is evolving, it’s crucial to know how death rates from COVID-19 are affected by vaccination status.<br><br><a href="https://ourworldindata.org/covid-deaths-by-vaccination" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/11/Screen-Shot-2021-11-23-at-15.21.00-768x317.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[We’ve just published our new data explorer on Natural Disasters]]></title>
-            <id>https://ourworldindata.org/natural-disasters-explorer-launch</id>
-            <link rel="alternate" href="https://ourworldindata.org/natural-disasters-explorer-launch"/>
-            <published>2021-11-23T11:00:00.000Z</published>
-            <updated>2021-11-23T12:12:14.000Z</updated>
-            <author><name>Hannah Ritchie</name></author><author><name>Lucas Rodés-Guirao</name></author>
-            <summary><![CDATA[Explore death rates, numbers of people affected, and economic damages from natural disasters across the world.<br><br><a href="https://ourworldindata.org/natural-disasters-explorer-launch" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/01/data_explorer-featured-768x404.png"/></a>]]></summary>
             </entry>
 </feed>
