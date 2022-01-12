@@ -23561,11 +23561,19 @@
         <lastmod>2022-01-11</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/global-peak-farmland</loc>
+        <lastmod>2022-01-12</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/distribution-of-population-across-income-thresholds-stacked-bar-multiple-thresholds</loc>
         <lastmod>2022-01-12</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/germany-covid-cases-hospital-icu-deaths</loc>
+        <lastmod>2022-01-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/global-cropland</loc>
         <lastmod>2022-01-12</lastmod>
     </url>
 </urlset>
