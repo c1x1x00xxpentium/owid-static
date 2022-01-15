@@ -3794,7 +3794,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/team</loc>
-        <lastmod>2022-01-12</lastmod>
+        <lastmod>2022-01-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/former-team-members</loc>
@@ -23573,6 +23573,10 @@
         <lastmod>2022-01-12</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/share-who-currently-had-depression-by-age-and-gender</loc>
+        <lastmod>2022-01-15</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/global-cropland</loc>
         <lastmod>2022-01-12</lastmod>
     </url>
@@ -23581,8 +23585,16 @@
         <lastmod>2022-01-13</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/share-who-had-depression-in-the-past-year-or-lifetime</loc>
+        <lastmod>2022-01-15</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/corn-production-land-us</loc>
         <lastmod>2022-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-who-recalled-lifetime-depression-at-a-given-time-vs-over-time</loc>
+        <lastmod>2022-01-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-living-on-less-than-550-per-day-vs-average-daily-income</loc>
