@@ -5318,7 +5318,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/microbes-battle-science-vaccines</loc>
-        <lastmod>2021-12-13</lastmod>
+        <lastmod>2022-01-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/marriages-and-divorces</loc>
@@ -5438,7 +5438,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/us-life-expectancy-low</loc>
-        <lastmod>2021-02-01</lastmod>
+        <lastmod>2022-01-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/usa-electoral-turnout</loc>
@@ -19886,7 +19886,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-due-to-measles-gbd</loc>
-        <lastmod>2020-07-17</lastmod>
+        <lastmod>2022-01-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-cost-of-inequality-economic-disparity-and-the-fraction-of-workers-employed-as-guards</loc>
@@ -20970,7 +20970,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-deaths-from-opioid-overdoses</loc>
-        <lastmod>2020-10-27</lastmod>
+        <lastmod>2022-01-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/current-covid-patients-hospital</loc>
@@ -22090,7 +22090,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-age-group-stacked-bar</loc>
-        <lastmod>2021-07-22</lastmod>
+        <lastmod>2022-01-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/fertilizer-consumption</loc>
@@ -23594,6 +23594,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-natural-share</loc>
+        <lastmod>2022-01-17</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-who-had-depression-in-the-past-year-or-lifetime-so-far</loc>
         <lastmod>2022-01-17</lastmod>
     </url>
 </urlset>
