@@ -5510,7 +5510,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-vaccinations</loc>
-        <lastmod>2022-01-17</lastmod>
+        <lastmod>2022-01-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/measure-working-hours</loc>
@@ -10338,7 +10338,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/annual-number-of-deaths-by-cause</loc>
-        <lastmod>2019-11-14</lastmod>
+        <lastmod>2022-01-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/age-standardized-death-rate-from-non-communicable-diseases</loc>
@@ -11118,7 +11118,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/causes-of-death-in-5-14-year-olds</loc>
-        <lastmod>2019-12-12</lastmod>
+        <lastmod>2022-01-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/causes-of-death-in-15-49-year-olds</loc>
@@ -12538,7 +12538,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-deaths-by-cause</loc>
-        <lastmod>2020-12-13</lastmod>
+        <lastmod>2022-01-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/immunization-coverage-against-diphtheria-tetanus-and-pertussis-dtp3-vs-gdp-per-capita</loc>
@@ -19013,16 +19013,8 @@
         <lastmod>2020-04-30</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/total-and-daily-covid-cases-per-million</loc>
-        <lastmod>2021-11-02</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/total-covid-cases-deaths-per-million</loc>
         <lastmod>2021-12-20</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-daily-covid-deaths-per-million</loc>
-        <lastmod>2020-04-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/rate-confirmed-cases-vs-rate-confirmed-deaths</loc>
@@ -19053,10 +19045,6 @@
         <lastmod>2020-04-30</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/covid-confirmed-daily-cases-epidemiological-trajectory</loc>
-        <lastmod>2020-07-03</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/incidence-of-hivaids-age-standardized</loc>
         <lastmod>2020-03-27</lastmod>
     </url>
@@ -19079,10 +19067,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/covid-stringency-index</loc>
         <lastmod>2021-12-24</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/covid-confirmed-daily-deaths-epidemiological-trajectory</loc>
-        <lastmod>2020-07-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-confirmed-deaths-comparison-with-rolling-average</loc>
@@ -19181,14 +19165,6 @@
         <lastmod>2020-11-30</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/covid-daily-deaths-trajectory-per-million</loc>
-        <lastmod>2020-07-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/covid-daily-cases-trajectory-per-million</loc>
-        <lastmod>2020-07-03</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/covid-cases-income</loc>
         <lastmod>2020-04-22</lastmod>
     </url>
@@ -19229,24 +19205,12 @@
         <lastmod>2020-04-14</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/daily-covid-cases-per-million-three-day-avg</loc>
-        <lastmod>2020-04-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-covid-deaths-per-million-3-day-avg</loc>
-        <lastmod>2020-05-11</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/seven-day-daily-tests-per-thousand-since-1-per-mil-confirmed-cases</loc>
         <lastmod>2020-11-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-number-of-tests-for-each-confirmed-case-since-5th-death</loc>
         <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-tests-per-thousand-since-per-cap-death-threshold</loc>
-        <lastmod>2021-04-12</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/historys-hockey-stick-worldwide-historical-real-gross-domestic-product-per-capita-finn</loc>
@@ -19327,10 +19291,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/cfr-vs-covid-cases-per-capita</loc>
         <lastmod>2020-04-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-tests-per-thousand-since-per-cap-death-threshold-incl-before-outbreak</loc>
-        <lastmod>2020-11-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cereals-imports-vs-exports</loc>
@@ -19565,10 +19525,6 @@
         <lastmod>2020-06-21</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/daily-new-confirmed-cases-of-covid-19-tests-per-case</loc>
-        <lastmod>2020-07-30</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/government-response-stringency-index-vs-biweekly-change-in-confirmed-covid-19-cases</loc>
         <lastmod>2020-06-05</lastmod>
     </url>
@@ -19607,10 +19563,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/covvid-deaths-vs-cases-exemplars</loc>
         <lastmod>2020-12-02</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-new-confirmed-cases-of-covid-19-per-million-tests-per-case</loc>
-        <lastmod>2020-07-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-tests-per-case</loc>
@@ -19695,14 +19647,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/daily-covid-cases-deaths-7-day-ra</loc>
         <lastmod>2020-06-23</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-new-confirmed-cases-of-covid-19-positive-rate</loc>
-        <lastmod>2020-07-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/rate-of-daily-new-confirmed-cases-of-covid-19-positive-rate</loc>
-        <lastmod>2020-07-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-positive-rate</loc>
@@ -22361,10 +22305,6 @@
         <lastmod>2021-07-26</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/moving-average-case-fatality-rate-of-covid-19-vs-vaccination-coverage</loc>
-        <lastmod>2021-07-27</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/employed-fisheries-aquaculture</loc>
         <lastmod>2021-07-30</lastmod>
     </url>
@@ -23478,11 +23418,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cumulative-number-of-objects-launched-into-outer-space</loc>
-        <lastmod>2021-12-15</lastmod>
+        <lastmod>2022-01-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space</loc>
-        <lastmod>2021-12-15</lastmod>
+        <lastmod>2022-01-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/distribution-of-population-across-income-thresholds-stacked-bar-30-only</loc>
