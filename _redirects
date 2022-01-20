@@ -677,7 +677,7 @@
 /grapher/daily-caloric-supply-per-capita-over-the-long-run /grapher/daily-per-capita-supply-of-calories 302!
 /grapher/global-land-spared-from-cereal-yield-improvements /grapher/cereal-land-spared 302!
 /grapher/child-mortality-by-world-region /grapher/child-mortality-around-the-world 302!
-/grapher/long-term-crop-yields-in-the-united-kingdom /grapher/long-term-cereal-yields-in-the-united-kingdom 302!
+/grapher/long-term-crop-yields-in-the-united-kingdom /grapher/cereal-yields-uk 302!
 /grapher/milestones-of-womens-political-representation /grapher/ordered-milestones-of-womens-political-representation 302!
 /grapher/yields-change-vs-land-use-change /grapher/land-use-vs-yield-change-in-cereal-production 302!
 /grapher/human-height-over-the-long-run-europe /grapher/human-heights-over-the-long-run 302!
@@ -1302,3 +1302,4 @@
 /grapher/average-price-of-a-pack-of-cigarettes /grapher/affordability-cigarettes 302!
 /grapher/forest-area-percent /grapher/forest-area-as-share-of-land-area 302!
 /grapher/coal /grapher/annual-co2-coal 302!
+/grapher/long-term-cereal-yields-in-the-united-kingdom /grapher/cereal-yields-uk 302!
