@@ -6146,7 +6146,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-deaths-by-vaccination</loc>
-        <lastmod>2022-01-18</lastmod>
+        <lastmod>2022-01-24</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/global-economic-inequality-introduction</loc>
@@ -23255,6 +23255,10 @@
     <url>
         <loc>https://ourworldindata.org/grapher/population-since-1800</loc>
         <lastmod>2021-11-19</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/united-states-rates-of-covid-19-deaths-by-vaccination-status</loc>
+        <lastmod>2022-01-24</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/chile-covid-19-mortality-rate-by-vaccination-status</loc>
