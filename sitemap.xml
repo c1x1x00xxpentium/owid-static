@@ -13229,14 +13229,6 @@
         <lastmod>2021-08-24</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/outdoor-air-pollution-deaths-by-age</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/indoor-air-pollution-deaths-by-age</loc>
-        <lastmod>2019-11-22</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/number-of-people-in-extreme-poverty</loc>
         <lastmod>2018-03-15</lastmod>
     </url>
@@ -14583,10 +14575,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/total-value-of-exports-by-country-to-world-national-vs-dyadic</loc>
         <lastmod>2018-05-17</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/dah-by-health-cause</loc>
-        <lastmod>2018-05-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/drowning-death-rates-under-5</loc>
@@ -18501,10 +18489,6 @@
         <lastmod>2020-01-12</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/share-of-people-living-with-active</loc>
-        <lastmod>2019-12-11</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/prevalence-of-tuberculosis-by-drug-susceptibility</loc>
         <lastmod>2022-01-18</lastmod>
     </url>
@@ -18551,10 +18535,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-illicit-drugs</loc>
         <lastmod>2022-01-19</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/number-of-people-with-active-tuberculosis</loc>
-        <lastmod>2019-12-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-from-cardiovascular-diseases-by-risk-factor</loc>
