@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2022-01-11T10:30:00.000Z</updated>
+<updated>2022-01-25T11:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Around one-in-three children globally suffer from lead poisoning. What can we do to reduce this?]]></title>
+            <id>https://ourworldindata.org/reducing-lead-poisoning</id>
+            <link rel="alternate" href="https://ourworldindata.org/reducing-lead-poisoning"/>
+            <published>2022-01-25T11:00:00.000Z</published>
+            <updated>2022-01-25T11:01:55.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[The WHO estimates that around every third child in the world suffers from lead poisoning. What can we do to reduce this?<br><br><a href="https://ourworldindata.org/reducing-lead-poisoning" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/01/lead-pollution-thumbnail-768x403.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[The history of the end of poverty has just begun]]></title>
             <id>https://ourworldindata.org/history-of-poverty-has-just-begun</id>
@@ -86,14 +95,5 @@
             <updated>2021-11-30T11:42:39.000Z</updated>
             <author><name>Max Roser</name></author>
             <summary><![CDATA[This Data Review presents published estimates of the global death toll from air pollution and provides the context that makes them understandable. <br><br><a href="https://ourworldindata.org/data-review-air-pollution-deaths" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/11/Screen-Shot-2021-11-22-at-09.37.17-768x328.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[How do death rates from COVID-19 differ between people who are vaccinated and those who are not?]]></title>
-            <id>https://ourworldindata.org/covid-deaths-by-vaccination</id>
-            <link rel="alternate" href="https://ourworldindata.org/covid-deaths-by-vaccination"/>
-            <published>2021-11-23T15:00:00.000Z</published>
-            <updated>2022-01-24T21:33:35.000Z</updated>
-            <author><name>Edouard Mathieu</name></author><author><name>Max Roser</name></author>
-            <summary><![CDATA[To understand how the pandemic is evolving, it’s crucial to know how death rates from COVID-19 are affected by vaccination status.<br><br><a href="https://ourworldindata.org/covid-deaths-by-vaccination" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/11/Screen-Shot-2021-11-23-at-15.21.00-768x317.png"/></a>]]></summary>
             </entry>
 </feed>
