@@ -5206,7 +5206,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/epi-curve-covid-19</loc>
-        <lastmod>2021-01-13</lastmod>
+        <lastmod>2022-01-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/co2-emissions</loc>
@@ -18926,7 +18926,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/tests-of-covid-19-per-thousand-people-vs-gdp-per-capita</loc>
-        <lastmod>2021-05-14</lastmod>
+        <lastmod>2022-01-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-confirmed-deaths-of-covid-19-per-million-people-vs-gdp-per-capita</loc>
@@ -19121,31 +19121,11 @@
         <lastmod>2020-04-30</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/total-tests-per-thousand-since-5th-death</loc>
-        <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case-by-country-income</loc>
         <lastmod>2020-06-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-tests-per-confirmed-case-vs-total-confirmed-cases-of-covid-19-per-million-people</loc>
-        <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/number-of-tests-per-confirmed-case-vs-estimated-percentage-of-symptomatic-covid-19-cases-reported-russel-et-al</loc>
-        <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/number-of-tests-per-confirmed-case-vs-estimated-percentage-of-symptomatic-covid-19-cases-reported-russel-et-al-no-russia</loc>
-        <lastmod>2020-04-14</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/seven-day-daily-tests-per-thousand-since-1-per-mil-confirmed-cases</loc>
-        <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/the-number-of-tests-for-each-confirmed-case-since-5th-death</loc>
         <lastmod>2020-11-30</lastmod>
     </url>
     <url>
@@ -19183,10 +19163,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/covid-19-positive-rate-bar</loc>
         <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/covid19-positive-rate-since-5th-death</loc>
-        <lastmod>2020-06-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-tests-per-thousand-people-vs-tests</loc>
@@ -19493,10 +19469,6 @@
         <lastmod>2020-12-02</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-tests-per-case</loc>
-        <lastmod>2020-07-30</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/co2-emissions-by-fuel-line</loc>
         <lastmod>2021-11-03</lastmod>
     </url>
@@ -19507,10 +19479,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-ghg-sector</loc>
         <lastmod>2021-02-01</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/per-million-daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-tests-per-case</loc>
-        <lastmod>2020-07-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-confirmed-covid-19-deaths-vs-confirmed-cases</loc>
@@ -19575,14 +19543,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/daily-covid-cases-deaths-7-day-ra</loc>
         <lastmod>2020-06-23</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-positive-rate</loc>
-        <lastmod>2020-07-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/rate-daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-positive-rate</loc>
-        <lastmod>2020-07-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/advertising-expenditure-and-market-share-of-breakfast-cereals-in-chicago</loc>
@@ -19743,10 +19703,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-estimated-covid-19-infections-ihme-model</loc>
         <lastmod>2022-01-16</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-tests-map-colors-for-explorer</loc>
-        <lastmod>2020-07-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/nuclear-energy-generation</loc>
