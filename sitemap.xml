@@ -19053,14 +19053,6 @@
         <lastmod>2020-11-30</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/covid-tests-cases-deaths-per-million</loc>
-        <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/covid-tests-cases-deaths</loc>
-        <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/cumulative-covid-cases-region</loc>
         <lastmod>2021-02-02</lastmod>
     </url>
@@ -19083,10 +19075,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/population-in-2020</loc>
         <lastmod>2021-08-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-tests-per-thousand-since-100th-case</loc>
-        <lastmod>2020-11-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand</loc>
@@ -19550,7 +19538,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-estimated-infections-of-covid-19</loc>
-        <lastmod>2022-01-16</lastmod>
+        <lastmod>2022-01-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/co2-per-unit-energy</loc>
@@ -19702,7 +19690,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-estimated-covid-19-infections-ihme-model</loc>
-        <lastmod>2022-01-16</lastmod>
+        <lastmod>2022-01-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/nuclear-energy-generation</loc>
@@ -20143,10 +20131,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/mean-daily-expenditure-per-capita-vs-national-poverty-line</loc>
         <lastmod>2020-08-04</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/weekly-case-growth-rate-vs-daily-case-rate</loc>
-        <lastmod>2020-11-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-death-growth-rate-vs-daily-death-rate</loc>
