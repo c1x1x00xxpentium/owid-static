@@ -2814,7 +2814,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/quality-of-education</loc>
-        <lastmod>2021-07-20</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/tertiary-education</loc>
@@ -3362,7 +3362,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/water-use-stress</loc>
-        <lastmod>2022-01-14</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/antibiotic-resistance-from-livestock</loc>
@@ -6365,10 +6365,6 @@
         <lastmod>2021-09-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/correlation-between-oecd-pisa-reading-test-score-and-un-human-development-index-2012</loc>
-        <lastmod>2021-09-03</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/population-breakdown-by-highest-level-of-education-achieved-for-those-aged-15-in</loc>
         <lastmod>2020-02-06</lastmod>
     </url>
@@ -6666,7 +6662,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/children-per-woman-vs-human-development-index</loc>
-        <lastmod>2020-09-30</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/projection-of-world-population-SSP2-IIASA</loc>
@@ -7023,10 +7019,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-people-paying-bribes-vs-corruption-perception</loc>
         <lastmod>2019-05-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/central-gov-spending-gdp-20th-century</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/government-expenditure-as-share-of-gdp-weighted-average</loc>
@@ -7654,7 +7646,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/public-health-expenditure-share-GDP-OWID</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/various-measures-of-child-labour-incidence</loc>
@@ -8481,39 +8473,7 @@
         <lastmod>2021-05-25</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/atkinson-coefficient-epsilon1</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/atkinson-coefficient-epsilon-05</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/percentile-ratio-9050</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/percentile-ratio-9010</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/percentile-ratio-8020</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/gini-coefficient</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-income-received-by-the-richest-1-of-the-population</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/top-5-income-share</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/top-10-income-share</loc>
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
@@ -8975,10 +8935,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/commodity-price-index-of-cereal-crops-and-petroleum-1850-2015</loc>
         <lastmod>2019-02-19</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-government-expenditure-on-education-gdpslope</loc>
-        <lastmod>2021-08-24</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/index-of-us-maternal-mortality-and-female-labor-force-participation-flfp</loc>
@@ -9650,10 +9606,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/labor-force-participation-rates-for-women-ages-15-24-2020-vs-1980</loc>
-        <lastmod>2021-08-30</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/procurement-expenditure-gdp-vs-gdp-per-capita</loc>
         <lastmod>2021-08-30</lastmod>
     </url>
     <url>
@@ -10477,8 +10429,8 @@
         <lastmod>2021-09-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/percentage-of-teachers-in-primary-education-who-are-qualified-both-sexes</loc>
-        <lastmod>2021-09-03</lastmod>
+        <loc>https://ourworldindata.org/grapher/share-of-primary-teachers-qualified</loc>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/economic-damage-from-natural-disasters</loc>
@@ -10746,14 +10698,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/youth-literacy-female</loc>
-        <lastmod>2021-09-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/adult-literacy-male</loc>
-        <lastmod>2021-09-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/adult-literacy-female</loc>
         <lastmod>2021-09-03</lastmod>
     </url>
     <url>
@@ -11593,14 +11537,6 @@
         <lastmod>2021-08-24</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/ores-and-metals-exports</loc>
-        <lastmod>2021-08-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/fuel-exports</loc>
-        <lastmod>2021-08-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960</loc>
         <lastmod>2020-08-25</lastmod>
     </url>
@@ -11702,7 +11638,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-graduates-stem-female</loc>
-        <lastmod>2021-09-03</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uranium-production</loc>
@@ -11767,10 +11703,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/health-expenditure-government-expenditure</loc>
         <lastmod>2020-10-02</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/government-expenditure-on-education</loc>
-        <lastmod>2021-08-26</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/government-expenditure-education</loc>
@@ -11966,7 +11898,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/risk-of-impoverishing-expenditure-for-surgical-care</loc>
-        <lastmod>2021-08-26</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/risk-of-catastrophic-expenditure-for-surgical-care</loc>
@@ -12601,10 +12533,6 @@
         <lastmod>2021-09-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/adult-literacy-rate-population-15-years-female</loc>
-        <lastmod>2021-09-03</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/projected-female-population-by-highest-educational-attainment</loc>
         <lastmod>2021-09-03</lastmod>
     </url>
@@ -13207,14 +13135,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-reported-road-incidents</loc>
         <lastmod>2018-03-16</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-tax-revenue-gdp-vs-state-effectiveness</loc>
-        <lastmod>2021-08-27</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-tax-revenue-gdp-vs-govt-effectiveness</loc>
-        <lastmod>2021-08-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/political-competition-vs-political-participation</loc>
@@ -14071,10 +13991,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/co2-concentration-long-term</loc>
         <lastmod>2021-09-21</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/percentage-of-all-students-in-tertiary-education-enrolled-in-isced-6-both-sexes</loc>
-        <lastmod>2021-09-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/battle-related-deaths-in-state-based-conflicts-since-1946</loc>
@@ -16227,10 +16143,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/new-neonatal-tetanus-cases-per-million</loc>
         <lastmod>2019-11-25</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/vaccinated-vs-neonatal-tetanus-incidence-x</loc>
-        <lastmod>2022-01-06</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gini-index-of-consumption-in-2015-vs-1990-gcip</loc>

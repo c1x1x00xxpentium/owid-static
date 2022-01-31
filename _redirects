@@ -643,7 +643,6 @@
 /grapher/incidence-of-hiv-among-uninfected-population-ages-15-49 /grapher/incidence-of-hiv-the-share-of-new-infections-among-the-previously-uninfected-population-ages-15-49 302!
 /grapher/global-hunger-index-vs /grapher/global-hunger-index-vs-extreme-poverty 302!
 /grapher/continents-according-to-our-worldin-data /grapher/continents-according-to-our-world-in-data 302!
-/grapher/top-1-income-share /grapher/share-of-income-received-by-the-richest-1-of-the-population 302!
 /grapher/number-of-malaria-cases-per-100000-population /grapher/number-of-malaria-cases-per-100000-individuals 302!
 /grapher/global-share-of-men-defined-as-underweight-healthy-overweight-and-obese /grapher/men-weight-categories 302!
 /grapher/global-share-of-women-defined-as-underweight-healthy-overweight-or-obese /grapher/share-of-women-defined-as-underweight-healthy-overweight-or-obese 302!
@@ -1024,7 +1023,6 @@
 /grapher/disability-adjusted-life-years-dalys-lost-from-particulate-pollution /grapher/dalys-particulate-matter 302!
 /grapher/the-maternal-mortality-rate-in-1990-and-2015 /grapher/the-maternal-mortality-ratio-in-2000-and-2017 302!
 /grapher/maternal-mortality-rate-vs-gdp-per-capita /grapher/maternal-mortality-ratio-vs-gdp-per-capita 302!
-/grapher/vaccinated-vs-neonatal-tetanus-incidence /grapher/vaccinated-vs-neonatal-tetanus-incidence-x 302!
 /grapher/gini-index-of-income-in-2015-vs-gini-index-of-income-in-1990 /grapher/gini-index-of-income-in-2015-vs-1990-gcip-including-non-survey-years 302!
 /grapher/gini-index-of-income-in-2015-vs-1990-including-non-survey-years /grapher/gini-index-of-income-in-2015-vs-1990-gcip-including-non-survey-years 302!
 /grapher/protein-supply-by-region-in-grams-per-person-per-day-1961-2013 /grapher/protein-supply-by-region 302!
@@ -1302,3 +1300,7 @@
 /grapher//grapher/electricity-prod-source-stack /grapher/electricity-prod-source-stacked 302!
 /grapher//grapher/covid-confirmed-daily-deaths-epidemiological-trajectory /grapher/new-covid-deaths-per-million 302!
 /grapher//grapher/primary-energy-production /grapher/primary-energy-cons 302!
+/grapher/percentage-of-teachers-in-primary-education-who-are-qualified-both-sexes /grapher/share-of-primary-teachers-qualified 302!
+/grapher/water-requirement-per-kilocalorie /grapher/freshwater-withdrawals-per-1000kcal 302!
+/grapher/water-requirement-protein /grapher/water-per-protein-poore 302!
+/grapher/water-per-tonne-food /grapher/water-withdrawals-per-kg-poore 302!
