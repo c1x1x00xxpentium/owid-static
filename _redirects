@@ -535,8 +535,6 @@
 /grapher/global-child-mortality-by-cause /grapher/global-child-deaths-by-cause 302!
 /grapher/total-number-of-people-experiencing-rough-sleeping /grapher/number-of-unsheltered-homeless-people 302!
 /grapher/people-experiencing-rough-sleeping-per-100000 /grapher/number-of-unsheltered-homeless-people-per-100000-population 302!
-/grapher/the-size-of-the-global-poverty-gap-in-int--2011-ppp /grapher/the-poverty-gap-in-int--2011-ppp 302!
-/grapher/the-size-of-the-global-poverty-gap /grapher/the-poverty-gap-in-int--2011-ppp 302!
 /grapher/total-number-of-unsheltered-homeless-people-per-100000 /grapher/number-of-unsheltered-homeless-people-per-100000-population 302!
 /grapher/people-experiencing-homelessness-per-100000-oecd-circa-2013 /grapher/number-of-homeless-people-per-100000-population-circa-2013 302!
 /grapher/total-number-of-unsheltered-homeless-people /grapher/number-of-unsheltered-homeless-people 302!
@@ -545,7 +543,6 @@
 /grapher/extreme-poverty-rate-vs-extreme-poverty-gap /grapher/poverty-headcount-rate-vs-poverty-gap 302!
 /grapher/poverty-headcount-rate-vs-poverty-gap-index /grapher/poverty-headcount-rate-vs-poverty-gap 302!
 /grapher/poverty-headcount-rate-vs-poverty-gap-index-2013 /grapher/poverty-headcount-rate-vs-poverty-gap 302!
-/grapher/cost-of-filling-the-poverty-gap-including-and-excluding-china /grapher/size-poverty-gap-china 302!
 /grapher/price-level-ratio-of-ppp-conversion-factor-gdp-to-market-exchange-rate /grapher/gdp-price-levels-relative-to-the-us 302!
 /grapher/gdp-per-capita-ppp-adjusted-vs-us-market-exchange /grapher/gdp-per-capita-in-international-and-market-dollars 302!
 /grapher/gdp-per-capita-ppp-int--and-the-price-level-ratio-of-ppp-conversion-factor-gdp-to-market-exchange-rate /grapher/gdp-per-capita-in-international-dollars-vs-price-levels-relative-to-us 302!
@@ -643,7 +640,6 @@
 /grapher/incidence-of-hiv-among-uninfected-population-ages-15-49 /grapher/incidence-of-hiv-the-share-of-new-infections-among-the-previously-uninfected-population-ages-15-49 302!
 /grapher/global-hunger-index-vs /grapher/global-hunger-index-vs-extreme-poverty 302!
 /grapher/continents-according-to-our-worldin-data /grapher/continents-according-to-our-world-in-data 302!
-/grapher/number-of-malaria-cases-per-100000-population /grapher/number-of-malaria-cases-per-100000-individuals 302!
 /grapher/global-share-of-men-defined-as-underweight-healthy-overweight-and-obese /grapher/men-weight-categories 302!
 /grapher/global-share-of-women-defined-as-underweight-healthy-overweight-or-obese /grapher/share-of-women-defined-as-underweight-healthy-overweight-or-obese 302!
 /grapher/prevalence-of-obesity-in-males /grapher/prevalence-of-obesity-in-adult-males 302!
@@ -718,7 +714,6 @@
 /grapher/daily-per-capita-fat-supply-1961-2013 /grapher/daily-per-capita-fat-supply 302!
 /grapher/the-demographic-transition-in-england-and-wales /grapher/the-demographic-transition 302!
 /grapher/government-revenues-national-income-us /grapher/government-revenues-national-income 302!
-/grapher/correlation-between-mean-years-of-schooling-and-gdp-per-capita-2000 /grapher/correlation-between-mean-years-of-schooling-and-gdp-per-capita 302!
 /grapher/so-emissions /grapher/so2-emissions 302!
 /grapher/domestic-cereal-distribution-to-food-animal-feed-and-other-uses-tonnes-per-year /grapher/cereal-distribution-to-uses 302!
 /grapher/global-warming-potential-of-greenhouse-gases-over-100-year-timescale /grapher/global-warming-potential-of-greenhouse-gases-over-100-year-timescale-gwp 302!
@@ -821,9 +816,6 @@
 /grapher/total-number-of-teachers-across-education-levels /grapher/number-of-teachers-across-education-levels 302!
 /grapher/wealth-per-capita-by-asset-type---world-bank-2017 /grapher/total-wealth-per-capita-by-asset 302!
 /grapher/total-wealth /grapher/total-wealth-per-capita-by-income-groups-in-2014-us-dollars 302!
-/grapher/absolute-net-change-in-global-population /grapher/absolute-increase-global-population 302!
-/grapher/absolute-net-increase-in-global-population /grapher/absolute-increase-global-population 302!
-/grapher/absolute-increase-in-global-population-per-year /grapher/absolute-increase-global-population 302!
 /grapher/measures-of-national-savinginvestment-compared-to-gdp /grapher/various-measures-of-national-savinginvestment-compared-to-gdp-per-capita-in-international-dollars 302!
 /grapher/various-measures-of-national-savinginvestment-compared-to-gdp /grapher/various-measures-of-national-savinginvestment-compared-to-gdp-per-capita-in-international-dollars 302!
 /grapher/genuine-saving-1900-2000 /grapher/genuine-savings-per-capita-in-international-dollars-1900-2000 302!
@@ -992,7 +984,6 @@
 /grapher/population-younger-than-15-of-all-world-regions-including-the-un-projection-until-2100 /grapher/younger-than-15-projection-until-2100-un 302!
 /grapher/share-of-students-achieving-the-intermediate-threshold-altinok-angrist-and-patrinos-2018 /grapher/share-of-students-achieving-the-intermediate-threshold-score 302!
 /grapher/education-quality-vs-real-gdp-per-capita /grapher/learning-outcomes-vs-gdp-per-capita 302!
-/grapher/number-of-shark-attacks /grapher/total-shark-attacks-per-year 302!
 /grapher/employment-rates-by-education /grapher/employment-rates-with-tertiary-vs-below-upper-secondary-education 302!
 /grapher/employment-rate-with-vocational-vs-tertiary-education /grapher/employment-rate-with-tertiary-vs-vocational-education 302!
 /grapher/employment-rates-with-tertiary-vs-upper-secondary-education /grapher/employment-rates-with-tertiary-vs-below-upper-secondary-education 302!
