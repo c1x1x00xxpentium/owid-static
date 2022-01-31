@@ -7050,7 +7050,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/oecd-expenditures-on-government-outsourcing-gdp</loc>
-        <lastmod>2019-09-28</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/government-procurement-share-gdp</loc>
@@ -7249,10 +7249,6 @@
         <lastmod>2021-08-09</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/size-poverty-gap-china</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/gdp-price-levels-relative-to-the-us</loc>
         <lastmod>2021-09-09</lastmod>
     </url>
@@ -7262,11 +7258,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/size-poverty-gap-world</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/size-poverty-gap-countries</loc>
-        <lastmod>2019-03-06</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gdp-per-capita-in-international-and-market-dollars</loc>
@@ -8422,7 +8418,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ratio-of-female-to-male-labor-force-participation-rates-ILO-WDI</loc>
-        <lastmod>2021-08-23</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ratio-of-female-to-male-labor-force-participation-rates-slopes</loc>
@@ -9289,10 +9285,6 @@
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/world-bank-income-thresholds-gni-per-capita-in-us</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/female-to-male-ratio-of-time-devoted-to-unpaid-care-work</loc>
         <lastmod>2018-03-16</lastmod>
     </url>
@@ -9327,10 +9319,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/child-mortality-rate-including-un-projections-through-2100</loc>
         <lastmod>2021-05-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/pump-price-for-gasoline-us-per-liter</loc>
-        <lastmod>2021-08-26</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-alcohol-consumption-per-capita-litres-of-pure-alcohol</loc>
@@ -10141,10 +10129,6 @@
         <lastmod>2021-08-24</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/pump-price-for-diesel-fuel-us-per-liter</loc>
-        <lastmod>2021-08-09</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/GDP-vs-industry-GDP-at-constant-prices</loc>
         <lastmod>2021-03-28</lastmod>
     </url>
@@ -10597,18 +10581,6 @@
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/water-per-tonne-food</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/water-requirement-per-kilocalorie</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/water-requirement-protein</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/water-access-since-1990</loc>
         <lastmod>2021-08-09</lastmod>
     </url>
@@ -10771,14 +10743,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-renewable-freshwater-resources</loc>
         <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/government-expenditure-per-student-tertiary-of-gdp-per-capita</loc>
-        <lastmod>2021-08-23</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/productivity-growth-vs-rd-expenditure</loc>
-        <lastmod>2021-08-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/women-believe-husband-justified-beating-wife</loc>
@@ -11534,7 +11498,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/natural-resource-rents</loc>
-        <lastmod>2021-08-24</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960</loc>
@@ -11674,15 +11638,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/adequacy-of-social-insurance-programs</loc>
-        <lastmod>2021-08-19</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/adequacy-of-unemployment-benefits</loc>
-        <lastmod>2021-08-23</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/adequacy-of-social-safety-net-programs</loc>
-        <lastmod>2021-08-19</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/urban-poverty-at-national-poverty-lines</loc>
@@ -12057,10 +12017,6 @@
         <lastmod>2021-08-29</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/debt-service-of-exports-of-goods-services</loc>
-        <lastmod>2021-08-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/tariff-rate-applied-weighted-mean-all-products</loc>
         <lastmod>2021-08-19</lastmod>
     </url>
@@ -12217,20 +12173,12 @@
         <lastmod>2021-03-28</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/exports-by-destination</loc>
-        <lastmod>2018-12-13</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/number-of-reported-guinea-worm-dracunculiasis-cases</loc>
         <lastmod>2019-11-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/global-case-numbers-of-infectious-diseases</loc>
         <lastmod>2022-01-18</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/import-by-source</loc>
-        <lastmod>2018-12-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/male-to-female-ratio-courses-in-usa</loc>
@@ -13982,11 +13930,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/military-expenditure-constant-2015-us</loc>
-        <lastmod>2018-04-10</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/military-expenditure-per-capita-constant-2015-us</loc>
-        <lastmod>2018-04-24</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/co2-concentration-long-term</loc>
@@ -14022,7 +13970,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/military-expenditure-share-gdp-sipri</loc>
-        <lastmod>2021-08-24</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/armed-forces-personnel-percent</loc>
@@ -14086,7 +14034,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/rural-land-below-5-meters</loc>
-        <lastmod>2021-08-23</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/terrain-ruggedness-index</loc>
@@ -14805,10 +14753,6 @@
         <lastmod>2021-08-25</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/risk-of-impoverishing-expenditure-for-surgical-care-of-people-at-risk</loc>
-        <lastmod>2021-02-01</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/how-europeans-spend-their-time</loc>
         <lastmod>2018-08-20</lastmod>
     </url>
@@ -14906,7 +14850,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/merchandise-imports-gdp-cepii</loc>
-        <lastmod>2018-11-06</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/growth-of-income-and-trade</loc>
@@ -15061,16 +15005,8 @@
         <lastmod>2018-07-22</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/growth-of-cities</loc>
-        <lastmod>2018-08-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/cumulative-global-plastics</loc>
         <lastmod>2018-07-19</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/levels-of-urbanization-in-various-regional-cities</loc>
-        <lastmod>2018-08-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/level-of-urbanization</loc>
@@ -15863,10 +15799,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/exports-from-western-europe-to-other-regions</loc>
         <lastmod>2021-03-11</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/exports-within-western-europe</loc>
-        <lastmod>2018-10-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/human-capital-index-vs-gdp</loc>
@@ -16890,7 +16822,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/revenue-from-corporate-income-taxes-gdp</loc>
-        <lastmod>2019-09-06</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/suffrage</loc>
@@ -17054,10 +16986,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-population-covered-by-social-protection</loc>
-        <lastmod>2019-06-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/cost-of-1gb-of-mobile-data</loc>
         <lastmod>2019-06-26</lastmod>
     </url>
     <url>
