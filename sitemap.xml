@@ -2946,7 +2946,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/coverage</loc>
-        <lastmod>2022-01-30</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/optimism-pessimism</loc>
@@ -6375,10 +6375,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/government-expenditure-on-tertiary-education-by-country</loc>
         <lastmod>2021-09-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/government-expenditure-on-secondary-education-by-country-1974-2014</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/projections-of-the-share-of-the-population-aged-15-educated-to-degree-level-by-country</loc>
@@ -13985,10 +13981,6 @@
         <lastmod>2018-04-13</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/gapminder-test-womens-education</loc>
-        <lastmod>2018-04-13</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/capital-intensity-vs-labor-productivity</loc>
         <lastmod>2018-04-13</lastmod>
     </url>
@@ -14801,10 +14793,6 @@
         <lastmod>2021-08-27</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/3g-mobile-network-coverage-of-population</loc>
-        <lastmod>2018-07-04</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/daily-hempseed-production</loc>
         <lastmod>2020-02-14</lastmod>
     </url>
@@ -14883,22 +14871,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/secondary-net-enrolment-gpi</loc>
         <lastmod>2021-09-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/abortion-rates</loc>
-        <lastmod>2018-07-16</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-pregnancies-abortion</loc>
-        <lastmod>2018-07-16</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/unintended-pregnancy-rates</loc>
-        <lastmod>2018-07-16</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/unintended-pregnancies-ending-in-abortion</loc>
-        <lastmod>2018-07-16</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/legality-status-of-abortion</loc>
