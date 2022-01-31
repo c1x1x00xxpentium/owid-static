@@ -5478,7 +5478,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-vaccinations</loc>
-        <lastmod>2022-01-30</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/measure-working-hours</loc>
@@ -6258,6 +6258,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/data-analyst-econ</loc>
+        <lastmod>2022-01-31</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/building-a-team-for-better-data</loc>
         <lastmod>2022-01-31</lastmod>
     </url>
     <url>
@@ -7482,7 +7486,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/air-pollution-deaths-as-percentage-of-global-disease-burden</loc>
-        <lastmod>2022-01-28</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/death-rate-by-source-from-indoor-air-pollution</loc>
@@ -13662,7 +13666,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mental-health-share-of-total-disease-burden</loc>
-        <lastmod>2018-04-15</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-rate-mental-and-neurodevelopmental-disorders</loc>
@@ -13698,7 +13702,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/alcohol-drug-use-disorders-share-total-disease</loc>
-        <lastmod>2019-12-06</lastmod>
+        <lastmod>2022-01-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-rate-from-alcohol-and-drug-use-disorders</loc>
