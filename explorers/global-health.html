@@ -1364,7 +1364,7 @@ const grapherConfigs =
   },
   {
     "id": 712,
-    "version": 11,
+    "version": 12,
     "slug": "child-mortality-igme",
     "title": "Child mortality rate",
     "subtitle": "The share of newborns who die before reaching the age of five.",
@@ -1390,13 +1390,15 @@ const grapherConfigs =
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
+          0.1,
+          0.2,
+          0.5,
           1,
-          2.5,
+          2,
           5,
-          7.5,
           10,
           20,
-          30
+          50
         ],
         "customNumericLabels": [
           "",
@@ -1408,6 +1410,7 @@ const grapherConfigs =
           ""
         ],
         "customNumericColors": [
+          null,
           null,
           null,
           null
