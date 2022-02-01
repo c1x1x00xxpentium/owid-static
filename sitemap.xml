@@ -6334,7 +6334,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-number-of-people-aged-15-with-no-education-in-millions-by-continent-1970-2050</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/homicides-per-100000-people-per-year</loc>
@@ -6362,7 +6362,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/population-breakdown-by-highest-level-of-education-achieved-for-those-aged-15-in</loc>
-        <lastmod>2020-02-06</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/correlation-between-internet-users-as-a-share-of-the-population-and-gdp-per-capita</loc>
@@ -6378,7 +6378,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/projections-of-the-share-of-the-population-aged-15-educated-to-degree-level-by-country</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/breakdown-of-united-nations-peacekeeping-forces</loc>
@@ -7338,7 +7338,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-particulate-matter</loc>
-        <lastmod>2022-01-26</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/so-emissions-by-world-region-in-million-tonnes</loc>
@@ -10818,7 +10818,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/proportion-of-youth-aged-1524-years-not-in-education-employment-or-training</loc>
-        <lastmod>2021-08-26</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gdp-per-person-employed-constant-ppp</loc>
@@ -10882,7 +10882,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/supercomputer-power-flops</loc>
-        <lastmod>2020-12-07</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/computing-efficiency</loc>
@@ -10942,7 +10942,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-by-risk-factor-over-70</loc>
-        <lastmod>2022-01-27</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/child-homicide-rate-per-100000</loc>
@@ -11646,7 +11646,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-depression-age-std-rate</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/disability-adjusted-life-years-major-depressive-disorders-age-std-rate</loc>
@@ -12019,10 +12019,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/death-rates-from-mental-health-and-substance-use-disorders</loc>
         <lastmod>2019-04-24</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/dalys-from-mental-health-and-substance-use-disorders</loc>
-        <lastmod>2022-01-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daly-from-mental-health-and-substance-use-disorders</loc>
@@ -12445,10 +12441,6 @@
         <lastmod>2021-09-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/projected-female-population-by-highest-educational-attainment</loc>
-        <lastmod>2021-09-03</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/age-standardized-death-rate-by-cause</loc>
         <lastmod>2022-01-13</lastmod>
     </url>
@@ -12574,7 +12566,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-from-eating-disorders-by-age</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/prevalence-of-bipolar-disorder-by-age</loc>
@@ -12602,7 +12594,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/bipolar-disorder-dalys-age-rate</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daly-rates-from-bipolar-disorder-by-age</loc>
@@ -12630,7 +12622,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/schizophrenia-dalys-rate</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daly-rates-from-schizophrenia-by-age</loc>
@@ -13318,11 +13310,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-from-autistic-spectrum-disorders</loc>
-        <lastmod>2022-01-18</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-autistic-spectrum</loc>
-        <lastmod>2022-01-18</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-population-with-adhd</loc>
@@ -13338,7 +13330,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-rates-from-adhd</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-with-idiopathic-developmental-intellectual-disability</loc>
@@ -13538,7 +13530,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-rate-from-alcohol-and-drug-use-disorders</loc>
-        <lastmod>2022-01-21</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-with-alcohol-use-disorder-vs-alcohol-consumption</loc>
@@ -13779,10 +13771,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/new-cases-of-hiv-unaids-vs-ihme</loc>
         <lastmod>2022-01-18</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/aids-deaths-in-male-vs-female-adults</loc>
-        <lastmod>2018-04-04</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-delivery-points-for-the-united-states-postal-service</loc>
@@ -14406,7 +14394,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/prevalence-of-daily-smoking-sdgs</loc>
-        <lastmod>2018-06-02</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coverage-of-key-vaccines-sdgs</loc>
@@ -14782,7 +14770,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/adolescent-fertility-ihme</loc>
-        <lastmod>2018-06-29</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/global-plastics-production</loc>
@@ -20794,7 +20782,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccination-doses-per-capita</loc>
-        <lastmod>2022-01-10</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-gov_expenditure-in-gdp-vs-gdp-per-capita</loc>
@@ -22326,10 +22314,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/annual-co-emissions-from-other-industry</loc>
-        <lastmod>2021-11-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/co-emissions-from-other-industry-per-capita</loc>
         <lastmod>2021-11-03</lastmod>
     </url>
     <url>
