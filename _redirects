@@ -1284,8 +1284,6 @@
 /grapher/coal /grapher/annual-co2-coal 302!
 /grapher/long-term-cereal-yields-in-the-united-kingdom /grapher/cereal-yields-uk 302!
 /grapher/long-term-agricultural-yields-in-the-united-kingdom /grapher/agri-yields-uk 302!
-/grapher//grapher/total-and-daily-covid-cases-per-million /grapher/covid-daily-vs-total-cases-per-million 302!
-/grapher//grapher/electricity-prod-source-stack /grapher/electricity-prod-source-stacked 302!
 /grapher/percentage-of-teachers-in-primary-education-who-are-qualified-both-sexes /grapher/share-of-primary-teachers-qualified 302!
 /grapher/water-requirement-per-kilocalorie /grapher/freshwater-withdrawals-per-1000kcal 302!
 /grapher/water-requirement-protein /grapher/water-per-protein-poore 302!
