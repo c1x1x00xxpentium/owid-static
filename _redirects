@@ -1188,7 +1188,6 @@
 /grapher/child-mortality-rate-per-1000-live-births /grapher/child-mortality-around-the-world 302!
 /grapher/total-and-daily-cases-covid-19 /grapher/covid-daily-vs-total-cases 302!
 /grapher/total-daily-covid-deaths-per-million /grapher/covid-deaths-daily-vs-total-per-million 302!
-/grapher/total-daily-covid-deaths /grapher/confirmed-covid-19-deaths-cumulative-vs-daily 302!
 /grapher/carbon-emission-intensity /grapher/co2-intensity 302!
 /grapher/methane-emissions-by-sector-gg-coe /grapher/methane-emissions-by-sector 302!
 /grapher/annual-hours-worked-per-worker /grapher/annual-working-hours-per-worker 302!
@@ -1213,7 +1212,6 @@
 /grapher/biweekly-cases-per-million-people /grapher/biweekly-covid-cases-per-million-people 302!
 /grapher/weekly-cases-per-million-people /grapher/weekly-covid-cases-per-million-people 302!
 /grapher/total-covid-deaths-region /grapher/cumulative-covid-deaths-region 302!
-/grapher/confirmed-covid-19-deaths-total-vs-daily /grapher/confirmed-covid-19-deaths-cumulative-vs-daily 302!
 /grapher/total-deaths-and-cases-covid-19 /grapher/cumulative-deaths-and-cases-covid-19 302!
 /grapher/covid-19-total-confirmed-cases-vs-total-confirmed-deaths /grapher/covid-19-cumulative-confirmed-cases-vs-confirmed-deaths 302!
 /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-typhoid /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-tetanus 302!
