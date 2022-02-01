@@ -6493,10 +6493,6 @@
         <lastmod>2018-10-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/disability-adjusted-life-years-due-to-communicable-diseases-per-100000</loc>
-        <lastmod>2021-10-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/disease-burden-to-communicable-diseases-vs-gdp</loc>
         <lastmod>2022-01-14</lastmod>
     </url>
@@ -10606,7 +10602,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-new-hiv-infections-per-1000-uninfected-population-aged-15-49</loc>
-        <lastmod>2021-08-10</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/measles-cases-and-death</loc>
@@ -10626,10 +10622,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/demand-for-family-planning</loc>
-        <lastmod>2021-08-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/adolescent-birth-rate</loc>
         <lastmod>2021-08-26</lastmod>
     </url>
     <url>
@@ -11649,14 +11641,6 @@
         <lastmod>2022-02-01</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/disability-adjusted-life-years-major-depressive-disorders-age-std-rate</loc>
-        <lastmod>2022-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/disability-adjusted-life-years-mental-and-abuse-disorders-age-std-rate</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/suicide-rate-vs-income-inequality</loc>
         <lastmod>2021-08-30</lastmod>
     </url>
@@ -12021,10 +12005,6 @@
         <lastmod>2019-04-24</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/daly-from-mental-health-and-substance-use-disorders</loc>
-        <lastmod>2019-04-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/deaths-from-alcohol-use-disorders</loc>
         <lastmod>2022-01-13</lastmod>
     </url>
@@ -12349,10 +12329,6 @@
         <lastmod>2019-04-24</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/dalys-from-mental-and-substance-disorder-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/share-with-depression</loc>
         <lastmod>2022-01-18</lastmod>
     </url>
@@ -12478,7 +12454,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/drug-disorder-dalys-rate</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daly-rates-from-drug-use-disorders-by-age</loc>
@@ -12506,7 +12482,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/anxiety-disorder-dalys-age-standardized-rate</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daly-rates-from-anxiety-disorders-by-age</loc>
@@ -12562,7 +12538,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/eating-disorder-dalys-rate</loc>
-        <lastmod>2022-01-13</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dalys-from-eating-disorders-by-age</loc>
@@ -18714,7 +18690,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-stringency-index</loc>
-        <lastmod>2021-12-24</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-confirmed-deaths-comparison-with-rolling-average</loc>
