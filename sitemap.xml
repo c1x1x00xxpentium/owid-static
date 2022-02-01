@@ -10533,14 +10533,6 @@
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/water-access-since-1990</loc>
-        <lastmod>2021-08-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/sanitation-access-since-1990</loc>
-        <lastmod>2021-08-09</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/urbanization-vs-gdp</loc>
         <lastmod>2021-03-28</lastmod>
     </url>
@@ -11187,10 +11179,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-employment-in-agriculture-1955-2015</loc>
         <lastmod>2021-08-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-intended-capitation-grants-received-by-schools-in-uganda-1991-1995</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/percentage-of-primary-schools-with-access-to-potable-water</loc>
@@ -12805,12 +12793,12 @@
         <lastmod>2021-09-09</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/change-in-global-hunger-index-1992-2017-global-hunger-index-2017-vs-population-growth-1992-2015-un-population-division</loc>
-        <lastmod>2018-03-15</lastmod>
+        <loc>https://ourworldindata.org/grapher/change-global-hunger-index-pop-growth</loc>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/change-in-global-hunger-index-1992-2017-vs-global-hunger-index-in-1992</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/labor-productivity-per-hour</loc>
@@ -18262,7 +18250,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/marriage-rate-1990-vs-2010</loc>
-        <lastmod>2021-08-09</lastmod>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-food-lost-type</loc>
@@ -23013,8 +23001,20 @@
         <lastmod>2022-01-14</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/age-of-electoral-democracy</loc>
+        <lastmod>2022-02-01</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/age-of-liberal-democracy</loc>
+        <lastmod>2022-02-01</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/land-natural-share</loc>
         <lastmod>2022-01-17</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-electoral-democracies-age</loc>
+        <lastmod>2022-02-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-who-had-depression-in-the-past-year-or-lifetime-so-far</loc>
