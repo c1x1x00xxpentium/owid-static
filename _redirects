@@ -517,6 +517,7 @@
 /covid-19-project-charts /explorers/coronavirus-data-explorer 301!
 /country-by-country / 301!
 /energy/country/ /energy#country-profiles 301!
+/grapher/rate-of-daily-new-confirmed-cases-of-covid-19-positive-rate /explorers/coronavirus-data-explorer?facet=none&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=true&country=USA~ITA~CAN~DEU~GBR~FRA~JPN 301!
 /grapher/latest /grapher/share-of-children-vaccinated-against-measles 302
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/scatterplot-of-national-suicide-rates-and-mean-years-of-schooling-in-population-over-age-15-2005 /grapher/scatterplot-of-national-suicide-rates-and-mean-years-of-schooling-in-population-over-age-15 302!

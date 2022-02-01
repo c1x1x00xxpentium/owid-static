@@ -1,16 +1,16 @@
 {
-  "commons.css": "commons.css",
-  "commons.js": "commons.js",
-  "commons.js.map": "commons.js.map",
-  "vendors.js": "vendors.js",
-  "vendors.js.map": "vendors.js.map",
   "admin.css": "admin.css",
   "admin.js": "admin.js",
-  "admin.js.map": "admin.js.map",
   "owid.css": "owid.css",
   "owid.js": "owid.js",
+  "vendors.js": "vendors.js",
+  "commons.css": "commons.css",
+  "commons.js": "commons.js",
+  "admin.css.map": "admin.css.map",
+  "admin.js.map": "admin.js.map",
+  "owid.css.map": "owid.css.map",
   "owid.js.map": "owid.js.map",
-  "admin.js.LICENSE.txt": "admin.js.LICENSE.txt",
-  "owid.js.LICENSE.txt": "owid.js.LICENSE.txt",
-  "vendors.js.LICENSE.txt": "vendors.js.LICENSE.txt"
+  "vendors.js.map": "vendors.js.map",
+  "commons.css.map": "commons.css.map",
+  "commons.js.map": "commons.js.map"
 }
