@@ -4337,7 +4337,7 @@ const grapherConfigs =
   },
   {
     "id": 3799,
-    "version": 4,
+    "version": 5,
     "slug": "number-of-neonatal-deaths-ihme",
     "title": "Number of neonatal deaths",
     "subtitle": "Number of newborns dying before reaching 28 days of age.",
@@ -4353,7 +4353,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2017,
+      "time": 2019,
       "colorScale": {
         "binningStrategy": "equalInterval"
       }
@@ -4361,8 +4361,17 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 109781
+        "variableId": 247383,
+        "display": {
+          "unit": "deaths",
+          "includeInTable": true
+        }
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "Bahrain",
+      "Venezuela"
     ],
     "selectedEntityIds": [
       31,
