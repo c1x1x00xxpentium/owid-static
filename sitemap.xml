@@ -18773,10 +18773,6 @@
         <lastmod>2021-03-23</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/covid-stringency-vs-days-cases-reached-100</loc>
-        <lastmod>2020-06-20</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/covid-19-daily-tests-vs-daily-new-confirmed-cases-per-million</loc>
         <lastmod>2021-06-09</lastmod>
     </url>
@@ -18942,7 +18938,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-tests-per-case-exemplars</loc>
-        <lastmod>2020-06-08</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-tests-vs-deaths-exemplars</loc>
@@ -19813,10 +19809,6 @@
         <lastmod>2022-01-20</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/stringency-index-vs-biweekly-covid-deaths</loc>
-        <lastmod>2020-08-25</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/covid-containment-and-health-index</loc>
         <lastmod>2021-03-23</lastmod>
     </url>
@@ -20346,7 +20338,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-tests-and-daily-new-confirmed-covid-cases</loc>
-        <lastmod>2020-11-05</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/co-emissions-per-capita-vs-fossil-fuel-consumption-per-capita</loc>
@@ -20417,28 +20409,8 @@
         <lastmod>2021-04-21</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/daily-covid-deaths-jhu-vs-ecdc</loc>
-        <lastmod>2020-11-17</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-covid-deaths-per-million-jhu-vs-ecdc</loc>
-        <lastmod>2020-11-17</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/daily-covid-cases-per-million-jhu-vs-ecdc</loc>
         <lastmod>2020-11-17</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-covid-cases-jhu-ecdc</loc>
-        <lastmod>2020-11-17</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/covid-deaths-new-per-day-jhu-ecdc</loc>
-        <lastmod>2022-02-02</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/covid-cases-per-day-jhu-ecdc</loc>
-        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/pollution-deaths-from-fossil-fuels</loc>
