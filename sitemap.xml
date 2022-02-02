@@ -18781,10 +18781,6 @@
         <lastmod>2021-06-09</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/confirmed-cases-of-covid-19-per-million-people-vs-bcg-immunization-coverage</loc>
-        <lastmod>2022-01-05</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/covid-19-daily-tests-vs-daily-new-confirmed-cases</loc>
         <lastmod>2020-11-30</lastmod>
     </url>
@@ -18806,7 +18802,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-covid-19-tests-smoothed-7-day</loc>
-        <lastmod>2020-05-29</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-growth-covid-deaths</loc>
@@ -18930,7 +18926,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/government-response-stringency-index-vs-biweekly-change-in-confirmed-covid-19-cases</loc>
-        <lastmod>2020-06-05</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-confirmed-deaths-since-5th-death-exemplar</loc>
@@ -19094,7 +19090,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biweekly-covid-cases-per-million-people</loc>
-        <lastmod>2021-02-03</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biweekly-covid-deaths-per-million-people</loc>
@@ -19102,7 +19098,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-covid-cases-per-million-people</loc>
-        <lastmod>2021-02-03</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biweekly-confirmed-cases-of-covid-19-per-million-people-vs-gdp-per-capita</loc>
@@ -19290,7 +19286,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/positivity-rate-vs-gdp-per-capita</loc>
-        <lastmod>2020-11-30</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/consumption-based-carbon-intensity</loc>
@@ -19634,7 +19630,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cumulative-confirmed-covid-19-cases-per-million-vs-gdp-per-capita-testing-colors</loc>
-        <lastmod>2021-08-27</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mean-versus-median-daily-per-capita-expenditure-or-income</loc>
@@ -19778,7 +19774,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/q2-gdp-growth-vs-confirmed-deaths-due-to-covid-19-per-million-people</loc>
-        <lastmod>2020-11-30</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/excess-mortality-p-scores-average-baseline-by-age</loc>
@@ -19802,7 +19798,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/q2-gdp-growth-vs-confirmed-cases-per-million-people</loc>
-        <lastmod>2020-11-30</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/economic-decline-in-the-second-quarter-of-2020</loc>
@@ -20438,11 +20434,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-deaths-new-per-day-jhu-ecdc</loc>
-        <lastmod>2020-11-17</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-cases-per-day-jhu-ecdc</loc>
-        <lastmod>2020-11-17</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/pollution-deaths-from-fossil-fuels</loc>
@@ -20501,10 +20497,6 @@
         <lastmod>2020-12-31</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/rate-of-confirmed-covid-19-cases-per-million-people-vs-visitors-to-retail-and-recreation-locations</loc>
-        <lastmod>2020-11-30</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/average-effective-retirement-men</loc>
         <lastmod>2020-12-02</lastmod>
     </url>
@@ -20530,7 +20522,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/government-response-stringency-index-vs-daily-new-confirmed-cases-of-covid-19-per-million-people</loc>
-        <lastmod>2020-12-08</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccination-policy</loc>
@@ -20602,27 +20594,27 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uk-daily-covid-cases-7day-average</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uk-daily-new-covid-cases</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uk-daily-covid-deaths</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uk-covid-positivity</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uk-covid-hospital-patients</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uk-daily-covid-admissions</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deforestation-drivers-indonesia</loc>
@@ -20822,7 +20814,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/sweden-official-covid-deaths</loc>
-        <lastmod>2021-02-04</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/agricultural-land</loc>
@@ -20830,7 +20822,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/israel-covid-19-cases-by-age</loc>
-        <lastmod>2022-02-01</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccine-doses-by-manufacturer</loc>
@@ -20838,23 +20830,23 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/israel-weekly-covid-cases-age</loc>
-        <lastmod>2021-02-10</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/israel-severe-hospitalizations-age</loc>
-        <lastmod>2021-02-11</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/israel-hospitalizations-age</loc>
-        <lastmod>2021-02-10</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/israel-new-hospitalizations-for-moderate-or-severe-covid-19-by-age</loc>
-        <lastmod>2021-02-14</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/israel-vaccination-by-age</loc>
-        <lastmod>2021-02-10</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/reconstruction-of-historical-global-extreme-poverty-rates-1820-2017-roser-and-hasell-2021-and-world-bank2020</loc>
@@ -20878,7 +20870,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/uk-cumulative-covid-deaths-rate</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/iwc-members</loc>
@@ -22438,7 +22430,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-people-vaccinated-marimekko</loc>
-        <lastmod>2021-11-05</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/obesity-vs-gini</loc>
@@ -22454,7 +22446,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cumulative-covid-19-vaccinations-vs-population</loc>
-        <lastmod>2021-11-17</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/real-gdp-growth</loc>
@@ -22714,7 +22706,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-cases-omicron</loc>
-        <lastmod>2022-01-06</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/primary-energy-share-nuclear-renewables</loc>
@@ -22746,11 +22738,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/excess-deaths-cumulative-economist</loc>
-        <lastmod>2021-12-09</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/excess-deaths-cumulative-per-100k-economist</loc>
-        <lastmod>2022-02-01</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-booster-vaccinated-by-age</loc>
@@ -22762,7 +22754,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/excess-deaths-cumulative-economist-single-entity</loc>
-        <lastmod>2021-12-09</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/youngest-age-covid-vaccination</loc>
