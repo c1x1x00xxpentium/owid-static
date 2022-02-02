@@ -528,6 +528,7 @@
 /grapher/covid-daily-cases-trajectory-per-million /explorers/coronavirus-data-explorer?zoomToSelection=true&facet=none&pickerSort=asc&pickerMetric=location&hideControls=true&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=GBR~USA~ESP~ITA~BRA~IND~KOR&Metric=Confirmed+cases 301!
 /data/owid-covid-data.json https://github.com/owid/covid-19-data/tree/master/public/data 301!
 /us-states-cases /us-states-vaccinations 301!
+/grapher/greenhouse-gas-emissions-by-gas /explorers/co2?facet=none&country=CHN~USA~IND~GBR~OWID_WRL&Gas=All+GHGs+%28CO%E2%82%82eq%29&Accounting=Production-based&Fuel=Total&Count=Per+capita 301!
 /grapher/latest /grapher/share-of-children-vaccinated-against-measles 302
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/scatterplot-of-national-suicide-rates-and-mean-years-of-schooling-in-population-over-age-15-2005 /grapher/scatterplot-of-national-suicide-rates-and-mean-years-of-schooling-in-population-over-age-15 302!
