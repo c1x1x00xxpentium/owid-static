@@ -6265,10 +6265,6 @@
         <lastmod>2022-01-31</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/suicide-rates-by-country</loc>
-        <lastmod>2019-01-16</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/average-height-of-men-for-selected-countries</loc>
         <lastmod>2019-02-08</lastmod>
     </url>
@@ -6291,10 +6287,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/percentage-of-individuals-using-the-internet-by-country-2000-2014</loc>
         <lastmod>2019-02-19</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/scatterplot-of-national-suicide-rates-and-mean-years-of-schooling-in-population-over-age-15</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/male-and-female-suicide-rate</loc>
@@ -6434,7 +6426,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/future-population-projections-by-country</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/map-of-genocides-and-politicides-around-the-world</loc>
@@ -7385,10 +7377,6 @@
         <lastmod>2021-03-08</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/suicide-rate-vs-self-reported-life-satisfaction</loc>
-        <lastmod>2019-05-08</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/depression-vs-self-reported-life-satisfaction</loc>
         <lastmod>2022-01-19</lastmod>
     </url>
@@ -7811,10 +7799,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/seats-held-by-women-in-national-parliaments</loc>
         <lastmod>2021-08-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/suicide-and-life-satisfaction-across-countries</loc>
-        <lastmod>2018-11-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/population-growth-rate-by-level-of-development</loc>
@@ -14050,7 +14034,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/projected-population-by-age-cohort</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/population-projections-by-age-cohort</loc>
@@ -14330,7 +14314,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/urban-area-long-term</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/incidence-and-prevalence-of-rabies</loc>
@@ -14538,7 +14522,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/urban-and-rural-populations-in-the-united-states</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/expected-concentraitons-of-cfc-11</loc>
@@ -15021,27 +15005,11 @@
         <lastmod>2018-08-14</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/european-urban-population-shares-from-1500-1980</loc>
-        <lastmod>2018-08-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/nations-in-olympics</loc>
         <lastmod>2018-08-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/athletes-in-olympics</loc>
-        <lastmod>2018-08-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/urban-and-rural-population-shares</loc>
-        <lastmod>2019-01-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/urbanization-over-the-long-run</loc>
-        <lastmod>2019-01-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-urban-and-rural-population-shares-region</loc>
         <lastmod>2018-08-15</lastmod>
     </url>
     <url>
@@ -15118,11 +15086,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/urban-and-rural-population-stacked</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/urban-and-rural-population-2050</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/urban-population-share-2050</loc>
@@ -15206,7 +15174,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/extreme-poverty-region-2030</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/extreme-poverty-country-2030</loc>
