@@ -342,15 +342,14 @@ const grapherConfigs =
   },
   {
     "id": 311,
-    "version": 19,
+    "version": 20,
     "slug": "prevalence-of-undernourishment",
     "title": "Share of the population that are undernourished",
     "subtitle": "Share of individuals who have a habitual energy intake lower than their requirements.",
-    "sourceDesc": "UN Food and Agriculture Organization (FAO)",
+    "sourceDesc": "Food and Agriculture Organization of the United Nations (via World Bank)",
     "note": "Undernourishment is defined as having food energy intake which is lower than an individual's requirements, taking into account their age, gender, height, weight and activity levels.",
     "hideTitleAnnotation": true,
     "minTime": 2000,
-    "maxTime": 2017,
     "hideRelativeToggle": false,
     "hasMapTab": true,
     "tab": "map",
@@ -360,14 +359,15 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2017,
+      "time": 2018,
       "timeTolerance": 0,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "colorSchemeInvert": false,
         "binningStrategy": "manual",
-        "customNumericMinValue": 2.5,
+        "customNumericMinValue": 0,
         "customNumericValues": [
+          2.5,
           5,
           10,
           20,
@@ -377,14 +377,26 @@ const grapherConfigs =
           60
         ],
         "customNumericLabels": [
+          "<2.5%",
           "",
           "",
           "",
           "",
           "",
-          ""
+          null,
+          null
         ],
         "customNumericColorsActive": true,
+        "customNumericColors": [
+          "#e4eaf6",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "equalSizeBins": true,
         "customCategoryColors": {
           "<2.5": "#c9e3ee"
@@ -398,22 +410,22 @@ const grapherConfigs =
         },
         "legendDescription": ""
       },
+      "tooltipUseCustomLabels": true,
       "variableId": 135239
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 146684
+        "variableId": 158389,
+        "display": {
+          "unit": "%",
+          "shortUnit": "%",
+          "includeInTable": true
+        }
       }
     ],
     "selectedEntityNames": [
-      "Mali",
-      "India",
-      "Bangladesh",
-      "Chad",
-      "Nigeria",
-      "Niger",
-      "Sudan"
+      "World"
     ],
     "selectedEntityIds": [
       137,
