@@ -6277,6 +6277,10 @@
         <lastmod>2022-02-04</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/stunting-definition</loc>
+        <lastmod>2022-02-04</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/average-height-of-men-for-selected-countries</loc>
         <lastmod>2019-02-08</lastmod>
     </url>
@@ -9383,10 +9387,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-hours-worked-by-children-7-14-vs-gdp-per-capita-ppp</loc>
         <lastmod>2021-08-29</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-children-younger-than-5-who-suffer-from-stunting-no-tolerance-on-years</loc>
-        <lastmod>2021-08-24</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/stunting-vs-level-of-prosperity-over-time-by-income-group</loc>
