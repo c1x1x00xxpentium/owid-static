@@ -6285,6 +6285,10 @@
         <lastmod>2022-02-06</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/faqs-environmental-impacts-food</loc>
+        <lastmod>2022-02-07</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/average-height-of-men-for-selected-countries</loc>
         <lastmod>2019-02-08</lastmod>
     </url>
@@ -18703,14 +18707,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/covid-19-testing-policy</loc>
         <lastmod>2021-03-23</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/countries-included-in-the-covid-19-testing-dataset</loc>
-        <lastmod>2020-05-11</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/how-recent-is-the-latest-testing-data-for-each-country-last-update</loc>
-        <lastmod>2021-05-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/workplace-closures-covid</loc>
