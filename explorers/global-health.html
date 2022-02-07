@@ -4356,7 +4356,7 @@ const grapherConfigs =
   },
   {
     "id": 3798,
-    "version": 3,
+    "version": 4,
     "slug": "infant-mortality-rate",
     "title": "Infant mortality rate",
     "subtitle": "The share of newborns who die before reaching one year of age.",
@@ -4372,7 +4372,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2017,
+      "time": 2019,
       "colorScale": {
         "binningStrategy": "equalInterval"
       },
@@ -4381,8 +4381,17 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 109782
+        "variableId": 247439,
+        "display": {
+          "unit": "deaths per 100,00",
+          "includeInTable": true
+        }
       }
+    ],
+    "selectedEntityNames": [
+      "Libya",
+      "Fiji",
+      "Antigua and Barbuda"
     ],
     "selectedEntityIds": [
       164,
@@ -4709,7 +4718,7 @@ const grapherConfigs =
   },
   {
     "id": 3969,
-    "version": 3,
+    "version": 4,
     "slug": "number-of-infant-deaths-ihme",
     "title": "Number of infant deaths",
     "subtitle": "The number of infants dying before reaching one year of age.",
@@ -4723,7 +4732,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2017,
+      "time": 2019,
       "colorScale": {
         "binningStrategy": "equalInterval"
       },
@@ -4732,12 +4741,17 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 109783,
+        "variableId": 247438,
         "display": {
-          "name": "Number of infant deaths",
+          "unit": "deaths",
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Middle SDI",
+      "Latvia",
+      "Argentina"
     ]
   },
   {
