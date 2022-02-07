@@ -5094,7 +5094,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-209</loc>
-        <lastmod>2020-11-30</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/policy-responses-covid</loc>
@@ -5102,7 +5102,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/coronavirus-testing</loc>
-        <lastmod>2021-07-07</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/government-responses-covid</loc>
@@ -17158,19 +17158,19 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-use-per-kg-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ghg-per-kg-poore</loc>
-        <lastmod>2021-05-28</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/water-withdrawals-per-kg-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/scarcity-water-per-kg-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/antenatal-care-coverage</loc>
@@ -17178,31 +17178,31 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/eutrophying-emissions-per-kg-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-use-protein-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ghg-per-protein-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/water-per-protein-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/scarcity-water-protein-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-use-kcal-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ghg-kcal-poore</loc>
-        <lastmod>2021-04-19</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-childbearing-age</loc>
@@ -18481,10 +18481,6 @@
         <lastmod>2021-03-23</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/full-list-covid-19-tests-per-day</loc>
-        <lastmod>2020-05-28</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/full-list-total-tests-for-covid-19</loc>
         <lastmod>2020-05-28</lastmod>
     </url>
@@ -18566,10 +18562,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand</loc>
-        <lastmod>2020-05-28</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/full-list-daily-covid-19-tests-per-thousand</loc>
         <lastmod>2020-05-28</lastmod>
     </url>
     <url>
@@ -22850,7 +22842,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/environmental-footprint-milks</loc>
-        <lastmod>2022-01-18</lastmod>
+        <lastmod>2022-02-07</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/us-covid-cases-hospital-icu-deaths</loc>
