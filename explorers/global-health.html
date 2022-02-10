@@ -906,11 +906,11 @@ const grapherConfigs =
   },
   {
     "id": 555,
-    "version": 4,
+    "version": 5,
     "slug": "annual-healthcare-expenditure-per-capita",
     "title": "Health expenditure per person",
     "subtitle": "The sum of public and private annual health expenditure per person, measured in international-$.",
-    "sourceDesc": "World Health Organization (WHO)",
+    "sourceDesc": "WHO, Global Health Observatory (GHO)",
     "note": "Figures are given in international-$. This means they are adjusted for price differences between countries and adjusted for inflation to allow comparisons between countries and over time.",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
@@ -921,7 +921,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2014,
+      "time": 2018,
       "timeTolerance": 1,
       "colorScale": {
         "baseColorScheme": "PuBu",
@@ -949,6 +949,7 @@ const grapherConfigs =
           ""
         ],
         "customNumericColorsActive": false,
+        "equalSizeBins": true,
         "legendDescription": "Health expenditure per capita (in int.-$)"
       },
       "variableId": 3367
@@ -956,15 +957,21 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 3367,
+        "variableId": 197227,
         "display": {
-          "name": "",
-          "unit": "constant 2011 international $",
-          "isProjection": false,
-          "tolerance": 5,
+          "unit": "constant international-$",
+          "shortUnit": "$",
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "United States",
+      "United Kingdom",
+      "India",
+      "China",
+      "Brazil",
+      "European Union"
     ],
     "selectedEntityIds": [
       174,
