@@ -815,7 +815,7 @@ const grapherConfigs =
   },
   {
     "id": 488,
-    "version": 34,
+    "version": 36,
     "slug": "annual-co2-emissions-per-country",
     "title": "Annual CO₂ emissions",
     "subtitle": "Carbon dioxide (CO₂) emissions from the burning of fossil fuels for energy and cement production. Land use change is not included.",
@@ -834,23 +834,23 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
-      "timeTolerance": 1,
+      "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "Reds",
         "colorSchemeInvert": false,
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
+          20000000,
           50000000,
           100000000,
-          250000000,
+          200000000,
           500000000,
           1000000000,
-          2500000000,
+          2000000000,
           5000000000,
-          7500000000,
-          10000000000
+          10000000000,
+          20000000000
         ],
         "customNumericLabels": [
           "",
@@ -865,6 +865,11 @@ const grapherConfigs =
           "",
           "",
           ""
+        ],
+        "customNumericColors": [
+          null,
+          null,
+          null
         ],
         "equalSizeBins": true,
         "legendDescription": "Annual CO₂ emissions"
