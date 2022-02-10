@@ -6,7 +6,7 @@
 
 
 
-<p>Our main metric &#x2013; annual CO<sub>2</sub> emissions &#x2013; is sourced from the <a href="https://www.globalcarbonproject.org/carbonbudget/21/data.htm">Global Carbon Project</a>. This is the primary raw metric that we rely on to calculate the range of derived metrics that I explain below.</p>
+<p>Our main metric &#x2013; annual CO<sub>2</sub> emissions &#x2013; is sourced from the <a href="https://www.globalcarbonproject.org/carbonbudget/21/data.htm">Global Carbon Project</a>. This is the primary raw metric that we rely on to calculate the range of derived metrics presented below.</p>
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<p>The main Global Carbon Project dataset (available <a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget"><strong>here</strong></a>) provides annual emissions from 1959 onwards. However, a long-term dataset from 1750 onwards is also supplied by Robbie Andrews and Glen Peters <a href="https://zenodo.org/record/5569235#.YgP1F_XP2dZ"><strong>here</strong></a>. It is this long-term dataset that we rely on.</p>
+<p>The main Global Carbon Project dataset (available <a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget">here</a>) provides annual emissions from 1959 onwards. However, a long-term dataset from 1750 onwards is also supplied by Robbie Andrews and Glen Peters <a href="https://zenodo.org/record/5569235#.YgP1F_XP2dZ">here</a>. It is this long-term dataset that we rely on.</p>
 
 
 
@@ -38,11 +38,7 @@
 
 
 
-<p>Full citation:</p>
-
-
-
-<p>Friedlingstein, P., Jones, M. W., O&#x2019;Sullivan, M., Andrew, R. M., Bakker, D. C., Hauck, J., &#x2026; &amp; Zeng, J. (2021). Global carbon budget 2021. <em>Earth System Science Data Discussions</em>, 1-191.</p>
+<p><strong>Full citation: </strong>Friedlingstein, P., Jones, M. W., O&#x2019;Sullivan, M., Andrew, R. M., Bakker, D. C., Hauck, J., &#x2026; &amp; Zeng, J. (2021). Global carbon budget 2021. <em>Earth System Science Data Discussions</em>, 1-191.</p>
 
 
 
@@ -50,7 +46,7 @@
 
 
 
-<p>Our data on annual consumption-based CO<sub>2 </sub>emissions is also sourced from the <a href="https://www.globalcarbonproject.org/carbonbudget/21/data.htm">Global Carbon Project</a>. The data is available <a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget"><strong>here</strong></a>.</p>
+<p>Our data on annual consumption-based CO<sub>2 </sub>emissions is also sourced from the <a href="https://www.globalcarbonproject.org/carbonbudget/21/data.htm">Global Carbon Project</a>. The data is available <a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget">here</a>.</p>
 
 
 
@@ -70,7 +66,7 @@
 
 
 
-<p>Below I explain how these metrics are calculated, and any additional sources used.</p>
+<p>Below we explain how these metrics are calculated, and any additional sources used.</p>
 
 
 
@@ -78,11 +74,11 @@
 
 
 
-<p>CO<sub>2</sub> emissions per capita measures the average annual emissions per person for any country or region.</p>
+<p>CO<sub>2</sub> emissions per capita measure the average annual emissions per person for a country or region.</p>
 
 
 
-<p>It is calculated by dividing the total annual emissions of any country or region by its total population.</p>
+<p>It is calculated by dividing the total annual emissions of the country or region by its total population.</p>
 
 
 
@@ -90,7 +86,7 @@
 
 
 
-<p>The population data used in this calculation is our long-run population series which combines three underlying data sources: the HYDE database (History database of the Global Environment); Gapminder; and the UN World Population Prospects. We describe how this population dataset is constructed <a href="https://ourworldindata.org/population-sources"><strong>here</strong></a>.</p>
+<p>The population data used in this calculation is our long-run population series which combines three underlying data sources: the HYDE database (History database of the Global Environment); Gapminder; and the UN World Population Prospects. We describe how this population dataset is constructed <a href="https://ourworldindata.org/population-sources">here</a>.</p>
 
 
 
@@ -102,7 +98,7 @@
 
 
 
-<p>For example, cumulative emissions in 1755 is the sum of emissions from 1750, 1751, 1752, 1753, 1754, and 1755.</p>
+<p>For example, cumulative emissions in 1755 are the sum of emissions from 1750, 1751, 1752, 1753, 1754, and 1755.</p>
 
 
 
@@ -122,7 +118,7 @@
 
 
 
-<p>[1 / 36 * 100] = 2.8% of global emissions.</p>
+<p>[1 / 36] * 100 = 2.8% of global emissions.</p>
 
 
 
@@ -130,11 +126,11 @@
 
 
 
-<p>CO<sub>2</sub><strong> </strong>emissions per unit of primary energy is used to measure how carbon-intensive a country&#x2019;s energy mix is. A country that relies heavily on coal, for example, will emit large amounts of CO<sub>2</sub><strong> </strong>emissions per unit of energy. A country which has lots of nuclear and renewables will emit much less.</p>
+<p>CO<sub>2</sub><strong> </strong>emissions per unit of primary energy are used to measure how carbon-intensive a country&#x2019;s energy mix is. A country that relies heavily on coal, for example, will emit large amounts of CO2 emissions per unit of energy. A country that has lots of nuclear and renewables will emit much less.</p>
 
 
 
-<p>We calculate this metric by dividing the total annual emissions of any country or region by its primary energy consumption.</p>
+<p>We calculate this metric by dividing the total annual emissions of a country or region by its primary energy consumption.</p>
 
 
 
@@ -142,7 +138,7 @@
 
 
 
-<p>For annual energy consumption, we combined two sources. Our primary data source is the <a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html">BP Statistical Review of World Energy</a>. However, it does not provide data on primary energy consumption for all countries. For countries absent from this dataset, we calculate primary energy by multiplying the <a href="https://databank.worldbank.org/source/world-development-indicators">World Bank, World Development Indicators</a> metric <em>Energy use per capita</em> by total population figures (from <a href="https://ourworldindata.org/population-sources">our long-run dataset</a>).</p>
+<p>For annual energy consumption, we combined two sources. Our primary data source is the <a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html">BP Statistical Review of World Energy</a>. However, it does not provide data on primary energy consumption for all countries. For countries absent from this dataset, we calculate primary energy by multiplying the <a href="https://databank.worldbank.org/source/world-development-indicators">World Bank&#x2019;s World Development Indicators</a> metric <em>Energy use per capita</em> by total population figures (from <a href="https://ourworldindata.org/population-sources">our long-run dataset</a>).</p>
 
 
 
@@ -150,7 +146,7 @@
 
 
 
-<p>CO<sub>2</sub><strong> </strong>emissions per dollar is used to measure how carbon-intensive a country&#x2019;s economy is (hence why it is often called the &#x2018;carbon intensity of economies&#x2019;).</p>
+<p>CO<sub>2</sub><strong> </strong>emissions per dollar are used to measure how carbon-intensive a country&#x2019;s economy is (hence why it is often called the &#x2018;carbon intensity of economies&#x2019;).</p>
 
 
 
@@ -166,11 +162,7 @@
 
 
 
-<p><strong>Full citation:&#xA0;</strong></p>
-
-
-
-<p>Maddison Project Database, version 2020. Bolt, Jutta and Jan Luiten van Zanden (2020), &#x201C;Maddison style estimates of the evolution of the world economy. A new 2020 update&#x201D;.</p>
+<p><strong>Full citation:&#xA0;</strong>Maddison Project Database, version 2020. Bolt, Jutta and Jan Luiten van Zanden (2020), &#x201C;Maddison style estimates of the evolution of the world economy. A new 2020 update&#x201D;.</p>
 
 
 
@@ -182,11 +174,11 @@
 
 
 
-<p>It is consumption-based emissions minus production-based emissions in any given year. This means net <em>importers</em> of emissions have positive values. Net <em>exporters</em> have negative values.</p>
+<p>It is equal to consumption-based emissions minus production-based emissions in any given year. This means net <em>importers</em> of emissions have positive values. Net <em>exporters</em> have negative values.</p>
 
 
 
-<p>This metric is shown <a href="https://ourworldindata.org/grapher/co-emissions-embedded-in-global-trade"><strong>here</strong></a>.</p>
+<p>This metric is shown <a href="https://ourworldindata.org/grapher/co-emissions-embedded-in-global-trade">here</a>.</p>
 
 
 
@@ -202,7 +194,7 @@
 
 
 
-<p>This metric is shown <a href="https://ourworldindata.org/explorers/co2?facet=none&amp;country=CHN~USA~IND~GBR&amp;Gas=CO%E2%82%82&amp;Accounting=Consumption-based&amp;Fuel=Total&amp;Count=Share+of+emissions+embedded+in+trade"><strong>here</strong></a>.</p>
+<p>This metric is shown <a href="https://ourworldindata.org/explorers/co2?facet=none&amp;country=CHN~USA~IND~GBR&amp;Gas=CO%E2%82%82&amp;Accounting=Consumption-based&amp;Fuel=Total&amp;Count=Share+of+emissions+embedded+in+trade">here</a>.</p>
 
 
 
@@ -222,7 +214,7 @@
 
 
 
-<p>Calculcating the amount of CO<sub>2</sub> emitted from energy production is relatively simple. We need to know three things:</p>
+<p>Calculating the amount of CO<sub>2</sub> emitted from energy production is relatively simple. We need to know three things:</p>
 
 
 
@@ -238,11 +230,11 @@
 
 
 
-<p>Points (2) and (3) are now well-established for the range of fuels that we use for energy &#x2013; coal, oil and gas (as well as the variation within these fuels &#x2013; for example, lignite is a form of coal that has a low carbon content <a href="https://www.eia.gov/energyexplained/coal/">compared to</a> bituminous coal).</p>
+<p>Points (2) and (3) are now well-established for the range of fuels that we use for energy &#x2013; coal, oil, and gas (as well as the variation within these fuels &#x2013; for example, lignite is a form of coal that has a low carbon content <a href="https://www.eia.gov/energyexplained/coal/">compared to</a> bituminous coal).</p>
 
 
 
-<p>For factor (1) researchers use detailed accounts of fossil fuel extraction, production and trade to estimate how much of a given fuel is burned in each country. For a country, this would be calculated as:</p>
+<p>For factor (1) researchers use detailed accounts of fossil fuel extraction, production, and trade to estimate how much of a given fuel is burned in each country. For a country, this would be calculated as:</p>
 
 
 
@@ -250,7 +242,7 @@
 
 
 
-<p>For modern data this is much more straightforward: most countries and industries have and need detailed accounts of energy supply and demand (<em>see our </em><a href="https://ourworldindata.org/explorers/energy"><em>Energy Data Explorer</em></a><em>, for example</em>).Researchers have invested large efforts into reconstructions of historical energy statistics, dating back to 1750 (see, for example, <a href="https://www.tandfonline.com/doi/pdf/10.3402/tellusb.v51i4.16483">Andres et al. (1999)</a>; and <a href="https://books.google.co.uk/books/about/World_Energy_Production_1800_1985.html?id=zMKhAAAACAAJ&amp;redir_esc=y">Etemad et al. (1998)</a>). The further back in time we go, the less detailed our records are; and for some countries these figures have a greater uncertainty. Nonetheless, they provide solid estimates of long-term trends in energy consumption &#x2013; and derived CO<sub>2</sub> emissions.</p>
+<p>For modern data this is much more straightforward: most countries and industries have and need detailed accounts of energy supply and demand (<em>see our </em><a href="https://ourworldindata.org/explorers/energy"><em>Energy Data Explorer</em></a><em>, for example</em>). Researchers have invested large efforts into reconstructions of historical energy statistics, dating back to 1750 (see, for example, Andres et al. (1999); Etemad et al. (1998)). The further back in time we go, the less detailed our records are; and for some countries, these figures have greater uncertainty. Nonetheless, they provide solid estimates of long-term trends in energy consumption &#x2013; and derived CO<sub>2</sub> emissions.</p>
 
 
 
@@ -258,15 +250,15 @@
 
 
 
-<p>The majority of the data we present CO<sub>2</sub> &#x2013; specifically all of the data we show for CO<sub>2 </sub>in our data explorer &#x2013; does not include emissions from land use change. It only includes fossil emissions from energy production (the burning of coal, oil, gas and flaring), and more industrial processes with direct emissions, which includes cement and steel manufacturing.</p>
+<p>The majority of the data we present CO<sub>2</sub> &#x2013; specifically all of the data we show for CO<sub>2 </sub>in our data explorer &#x2013; does not include emissions from land-use change. It only includes fossil emissions from energy production (the burning of coal, oil, gas, and flaring), and more industrial processes with direct emissions, which include cement and steel manufacturing.</p>
 
 
 
-<p>In our chart <a href="https://ourworldindata.org/grapher/global-co2-fossil-plus-land-use?country=~OWID_WRL">here</a> we show global emissions from land use change as a separate time-series.</p>
+<p>In our chart <a href="https://ourworldindata.org/grapher/global-co2-fossil-plus-land-use?country=~OWID_WRL">here</a> we show global emissions from land-use change as a separate time series.</p>
 
 
 
-<p>The reason that land use change is not included in national emissions estimates is because of the large uncertainties in this data, and difficulties in monitoring it at the resolution necessary to provide annual updates.</p>
+<p>The reason that land-use change is not included in national emissions estimates is because of the large uncertainties in this data, and difficulties in monitoring it at the resolution necessary to provide annual updates.</p>
 
 
 
@@ -278,7 +270,7 @@
 
 
 
-<p>They are, however, included in the global total. You also <a href="https://ourworldindata.org/grapher/annual-co-emissions-by-region"><strong>find it here</strong></a> as a separate category.</p>
+<p>They are, however, included in the global total. You also <a href="https://ourworldindata.org/grapher/annual-co-emissions-by-region">find it here</a> as a separate category.</p>
 
 
 
@@ -290,11 +282,11 @@
 
 
 
-<p>The standard reported metric is <a href="https://ourworldindata.org/explorers/co2?facet=none&amp;country=CHN~USA~IND~GBR~OWID_WRL&amp;Gas=CO%E2%82%82&amp;Accounting=Production-based&amp;Fuel=Total&amp;Count=Per+capita"><strong>production-based CO</strong><strong><sub>2</sub></strong><strong> emissions</strong></a>. This is the metric typically reported by countries, and the method used to set targets and monitor progress towards them. It <em>does not</em> adjust for emissions embedded in traded goods. It allocates emissions to each country on the basis of <em>where the CO</em><em><sub>2</sub></em><em> was emitted</em>. For example, If China burns coal to produce goods that are then sold and shipped to the UK, these emissions are allocated to China.</p>
+<p>The standard reported metric is <a href="https://ourworldindata.org/explorers/co2?facet=none&amp;country=CHN~USA~IND~GBR~OWID_WRL&amp;Gas=CO%E2%82%82&amp;Accounting=Production-based&amp;Fuel=Total&amp;Count=Per+capita">production-based CO<sub>2</sub> emissions</a>. This is the metric typically reported by countries, and the method used to set targets and monitor progress towards them. It <em>does not</em> adjust for emissions embedded in traded goods. It allocates emissions to each country on the basis of <em>where the CO<sub>2</sub> was emitted</em>. For example, If China burns coal to produce goods that are then sold and shipped to the UK, these emissions are allocated to China.</p>
 
 
 
-<p>But we also provide <a href="https://ourworldindata.org/explorers/co2?facet=none&amp;country=CHN~USA~IND~GBR~OWID_WRL&amp;Gas=CO%E2%82%82&amp;Accounting=Consumption-based&amp;Fuel=Total&amp;Count=Per+capita"><strong>consumption-based CO</strong><strong><sub>2</sub></strong><strong> emissions</strong></a> as a second metric. This <em>does</em> adjust for emissions embedded in traded goods and services. Emissions are allocated to the country where the final goods are used. In the example above, the emissions would instead be allocated to the UK.</p>
+<p>But we also provide <a href="https://ourworldindata.org/explorers/co2?facet=none&amp;country=CHN~USA~IND~GBR~OWID_WRL&amp;Gas=CO%E2%82%82&amp;Accounting=Consumption-based&amp;Fuel=Total&amp;Count=Per+capita">consumption-based CO<sub>2</sub> emissions</a> as a second metric. This <em>does</em> adjust for emissions embedded in traded goods and services. Emissions are allocated to the country where the final goods are used. In the example above, the emissions would instead be allocated to the UK.</p>
 
 
 
@@ -306,7 +298,7 @@
 
 
 
-<p>To calculate consumption-based emissions we need detailed trade data between countries, and the emissions intensity (the amount of CO<sub>2</sub> emitted per dollar spent) across many industries and sectors in each country. Prior to 1990, there is insufficient high-quality, high-resolution data to produce these calculations.</p>
+<p>To calculate consumption-based emissions we need detailed trade data between countries and the emissions intensity (the amount of CO<sub>2</sub> emitted per dollar spent) across many industries and sectors in each country. Prior to 1990, there is insufficient high-quality, high-resolution data to produce these calculations.</p>
 
 
 
@@ -330,11 +322,7 @@
 
 
 
-<p>Cement has a binding agent called &#x2018;clinker&#x2019;. To produce this clinker, limestone (calcium carbonate: CaCO<sub>3</sub>) is heated to very high temperatures in a low-oxygen environment. This produces lime (CaO). But it also produces CO<sub>2 </sub>as a by-product.&#xA0;</p>
-
-
-
-<p>So, we get:</p>
+<p>Cement has a binding agent called &#x2018;clinker&#x2019;. To produce this clinker, limestone (calcium carbonate: CaCO<sub>3</sub>) is heated to very high temperatures in a low-oxygen environment. This produces lime (CaO). But it also produces CO<sub>2 </sub>as a by-product.&#xA0;So, we get:</p>
 
 
 
@@ -354,7 +342,7 @@
 
 
 
-<p>The Global Carbon Project (GCP) update annually &#x2013; typically in November or December each year. We aim to update very soon after each new release.</p>
+<p>The Global Carbon Project (GCP) updates its data annually &#x2013; typically in November or December each year. We aim to update very soon after each new release.</p>
 </div><div class="wp-block-column"></div></div></section></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/vendors.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>const explorerProgram = 
 //EMBEDDED_EXPLORER
 {
