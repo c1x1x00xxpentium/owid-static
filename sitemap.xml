@@ -7569,14 +7569,6 @@
         <lastmod>2019-11-27</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/real-gdp-by-economic-sector-in-sweden-constant-SEK</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/GDP-Agriculture-Sweden-Constant-SEK</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/labor-productivity-agriculture-sweden</loc>
         <lastmod>2018-03-15</lastmod>
     </url>
@@ -22827,5 +22819,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/machinery-per-agricultural-land</loc>
         <lastmod>2022-02-09</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/agriculture-share-gdp</loc>
+        <lastmod>2022-02-10</lastmod>
     </url>
 </urlset>
