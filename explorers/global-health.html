@@ -911,7 +911,7 @@ const grapherConfigs =
   },
   {
     "id": 555,
-    "version": 5,
+    "version": 6,
     "slug": "annual-healthcare-expenditure-per-capita",
     "title": "Health expenditure per person",
     "subtitle": "The sum of public and private annual health expenditure per person, measured in international-$.",
@@ -926,22 +926,22 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2018,
-      "timeTolerance": 1,
+      "timeTolerance": 5,
       "colorScale": {
         "baseColorScheme": "PuBu",
         "colorSchemeInvert": false,
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
+          50,
           100,
+          200,
           500,
           1000,
           2000,
-          4000,
-          6000,
-          8000,
-          10000
+          5000,
+          10000,
+          20000
         ],
         "customNumericLabels": [
           "",
@@ -2688,7 +2688,7 @@ const grapherConfigs =
   },
   {
     "id": 1915,
-    "version": 6,
+    "version": 7,
     "slug": "health-expenditure-government-expenditure",
     "title": "Health spending as a share of total government expenditure",
     "sourceDesc": "World Health Organization (WHO)",
@@ -2701,22 +2701,22 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2014,
+      "timeTolerance": 5,
       "colorScale": {
         "baseColorScheme": "YlGn",
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
-          2.5,
-          5,
-          7.5,
-          10,
-          12.5,
+          3,
+          6,
+          9,
+          12,
           15,
-          17.5,
-          20,
-          22.5,
-          25
+          18,
+          21,
+          24,
+          27,
+          30
         ],
         "customNumericColors": [
           null,
