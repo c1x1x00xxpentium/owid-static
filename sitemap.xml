@@ -3410,7 +3410,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/how-is-literacy-measured</loc>
-        <lastmod>2021-08-06</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/sources-for-eradication-of-diseases</loc>
@@ -3494,7 +3494,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/sdg-tracker-update</loc>
-        <lastmod>2019-01-22</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/global-education-slides</loc>
@@ -8409,24 +8409,8 @@
         <lastmod>2021-08-10</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/prevalence-of-obesity-in-adult-males</loc>
-        <lastmod>2022-01-25</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/prevalence-of-obesity-in-adult-females</loc>
-        <lastmod>2022-01-24</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/GDP-vs-manufacturing-employment</loc>
         <lastmod>2021-07-08</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-adult-women-overweight-or-obese</loc>
-        <lastmod>2022-01-24</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-of-adult-men-overweight-or-obese</loc>
-        <lastmod>2022-01-24</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/GDP-vs-manufacturing-GDP</loc>
@@ -8518,7 +8502,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/obesity-in-men-vs-obesity-in-women</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-maternal-mortality-ratio-in-2000-and-2017</loc>
@@ -13858,19 +13842,19 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-females-defined-as-obese</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-females-defined-as-overweight</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-men-defined-as-obese</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-men-defined-as-overweight</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/depression-by-level-of-education-employment</loc>
@@ -16886,7 +16870,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-overweight-men-vs-women</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-02-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/obesity-vs-gdp</loc>
