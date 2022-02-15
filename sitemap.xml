@@ -6078,7 +6078,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/democratic-rights</loc>
-        <lastmod>2022-02-03</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/regimes-of-the-world-data</loc>
@@ -13238,7 +13238,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-with-mental-health-males-vs-females</loc>
-        <lastmod>2022-02-14</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-with-mental-health-disorders-by-sex</loc>
@@ -19110,27 +19110,27 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-electricity-hydro</loc>
-        <lastmod>2021-03-29</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-electricity-nuclear</loc>
-        <lastmod>2021-03-29</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-electricity-wind</loc>
-        <lastmod>2021-03-29</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-electricity-solar</loc>
-        <lastmod>2021-03-29</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-electricity-fossil-fuels</loc>
-        <lastmod>2021-03-29</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-electricity-renewables</loc>
-        <lastmod>2021-03-29</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-gdp-vs-gdp-per-capita-maddison</loc>
@@ -21190,7 +21190,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-electricity-source-stacked</loc>
-        <lastmod>2021-08-26</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-energy-source-stacked</loc>
@@ -22318,7 +22318,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/elec-mix-bar</loc>
-        <lastmod>2021-11-03</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-and-disappearances-during-migration</loc>
@@ -22811,5 +22811,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/adolescents-not-in-school</loc>
         <lastmod>2022-02-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/elec-mix-bar</loc>
+        <lastmod>2022-02-15</lastmod>
     </url>
 </urlset>
