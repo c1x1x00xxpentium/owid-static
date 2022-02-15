@@ -6237,6 +6237,10 @@
         <lastmod>2022-02-15</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/calorie-supply-sources</loc>
+        <lastmod>2022-02-15</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/average-height-of-men-for-selected-countries</loc>
         <lastmod>2019-02-08</lastmod>
     </url>
@@ -7938,7 +7942,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-per-capita-caloric-supply</loc>
-        <lastmod>2022-02-14</lastmod>
+        <lastmod>2022-02-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-per-capita-protein-supply</loc>
