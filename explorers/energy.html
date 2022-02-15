@@ -571,18 +571,21 @@ const grapherConfigs =
   },
   {
     "id": 1410,
-    "version": 14,
+    "version": 15,
     "slug": "wind-generation",
     "title": "Wind power generation",
     "subtitle": "Annual electricity generation from wind is measured in terawatt-hours (TWh) per year. This includes both onshore and offshore wind sources.",
     "hideTitleAnnotation": true,
     "minTime": 1965,
+    "maxTime": 2021,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/renewable-energy",
     "isPublished": true,
     "yAxis": {
-      "min": 0
+      "min": 0,
+      "canChangeScaleType": true,
+      "scaleType": "log"
     },
     "colorScale": {
       "binningStrategy": "equalInterval"
@@ -641,19 +644,21 @@ const grapherConfigs =
   },
   {
     "id": 1419,
-    "version": 13,
+    "version": 14,
     "slug": "hydropower-consumption",
     "title": "Hydropower generation",
     "subtitle": "Annual hydropower generation is measured in terawatt-hours (TWh).",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & Ember",
     "hideTitleAnnotation": true,
     "minTime": 1965,
+    "maxTime": 2021,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/renewable-energy",
     "isPublished": true,
     "yAxis": {
-      "min": 0
+      "min": 0,
+      "canChangeScaleType": true
     },
     "colorScale": {
       "binningStrategy": "equalInterval"
