@@ -2766,7 +2766,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/employment-in-agriculture</loc>
-        <lastmod>2022-01-03</lastmod>
+        <lastmod>2022-02-16</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/world-population-growth</loc>
@@ -6541,10 +6541,6 @@
         <lastmod>2022-02-02</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/population-density-3</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/child-mortality-by-income-level-of-country</loc>
         <lastmod>2021-08-26</lastmod>
     </url>
@@ -8623,10 +8619,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/cropland-per-capita</loc>
         <lastmod>2021-01-08</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/cropland-per-capita-vs-population-density</loc>
-        <lastmod>2020-07-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/feed-required-to-produce-one-kilogram-of-meat-or-dairy-product</loc>
@@ -21462,10 +21454,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/annual-per-capita-consumption-books</loc>
-        <lastmod>2021-07-20</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/share-labor-force-agriculture</loc>
         <lastmod>2021-07-20</lastmod>
     </url>
     <url>
