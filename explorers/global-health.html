@@ -4616,14 +4616,13 @@ const grapherConfigs =
   },
   {
     "id": 3887,
-    "version": 5,
+    "version": 6,
     "slug": "share-of-children-vaccinated-with-mcv2",
     "title": "Share of children vaccinated with the second dose of measles vaccine (MCV2)",
-    "sourceDesc": "UN, SDG (2019)",
+    "sourceDesc": "WHO, Global Health Observatory",
     "note": "Measles is a highly contagious viral disease, most common in young children. Its effects include blindness, inflammation of the brain, severe diarrhoea, and severe respiratory infections such as pneumonia. Recommended child's age for MCV2 vaccination varies by country.",
     "hideTitleAnnotation": true,
     "minTime": 2000,
-    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/vaccination/",
@@ -4632,7 +4631,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -4657,8 +4656,15 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145110
+        "variableId": 197991,
+        "display": {
+          "unit": "%",
+          "includeInTable": true
+        }
       }
+    ],
+    "selectedEntityNames": [
+      "World"
     ],
     "selectedEntityIds": [
       355
