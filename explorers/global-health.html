@@ -4007,14 +4007,13 @@ const grapherConfigs =
   },
   {
     "id": 3594,
-    "version": 18,
+    "version": 20,
     "slug": "share-of-one-year-olds-who-received-the-final-dose-of-pneumococcal-vaccine",
-    "title": "Share of one-year-olds vaccinated against pneumococcal conjugate (PCV3)",
-    "sourceDesc": "World Health Organization (WHO); UNICEF",
+    "title": "Share of one-year-olds vaccinated with  pneumococcal conjugate (PCV3)",
+    "sourceDesc": "WHO, Global Health Observatory",
     "note": "Streptococcus pneumoniae is a bacterium that causes a number of common diseases including meningitis, septicaemia and pneumonia. It is most common in young children and the elderly.",
     "hideTitleAnnotation": true,
     "minTime": 2009,
-    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/pneumonia",
@@ -4023,7 +4022,8 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2019,
+      "time": "latest",
+      "timeTolerance": 1,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -4047,8 +4047,17 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145111
+        "variableId": 208605,
+        "display": {
+          "unit": "%",
+          "includeInTable": true
+        }
       }
+    ],
+    "selectedEntityNames": [
+      "Sao Tome and Principe",
+      "Micronesia",
+      "India"
     ],
     "selectedEntityIds": [
       355
