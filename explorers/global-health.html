@@ -3889,15 +3889,13 @@ const grapherConfigs =
   },
   {
     "id": 3553,
-    "version": 7,
+    "version": 8,
     "slug": "share-of-one-year-olds-who-received-the-rotavirus-vaccine",
     "title": "Share of one-year-olds vaccinated against rotavirus",
     "subtitle": "The share of one-year-old children who received the final recommended dose of rotavirus vaccine.",
-    "sourceDesc": "World Health Organization (WHO); UNICEF",
+    "sourceDesc": "WHO, Global Health Observatory",
     "note": "Rotaviruses are the most common cause of diarrhoeal disease in young children.",
     "hideTitleAnnotation": true,
-    "minTime": 2009,
-    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/vaccination",
@@ -3907,7 +3905,8 @@ const grapherConfigs =
       "max": 100
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
+      "timeTolerance": 1,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -3936,8 +3935,15 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 145114
+        "variableId": 208697,
+        "display": {
+          "unit": "%",
+          "includeInTable": true
+        }
       }
+    ],
+    "selectedEntityNames": [
+      "Liberia"
     ],
     "selectedEntityIds": [
       79,
