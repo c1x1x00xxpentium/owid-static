@@ -22793,7 +22793,11 @@
         <lastmod>2022-02-17</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/literacy-rate-female</loc>
+        <loc>https://ourworldindata.org/grapher/adult-literacy-female</loc>
+        <lastmod>2022-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/adult-literacty-male</loc>
         <lastmod>2022-02-17</lastmod>
     </url>
 </urlset>
