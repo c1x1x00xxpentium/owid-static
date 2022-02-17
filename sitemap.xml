@@ -21886,15 +21886,15 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coverage-of-pneumococcal-conjugate-vaccine</loc>
-        <lastmod>2021-11-03</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coverage-of-diphtheria-tetanus-pertussis-vaccine</loc>
-        <lastmod>2021-11-03</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coverage-of-the-human-papillomavirus-vaccine</loc>
-        <lastmod>2021-11-03</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/annual-co-emissions-from-other-industry</loc>
@@ -21914,23 +21914,23 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/change-in-total-mangrove-area</loc>
-        <lastmod>2021-11-04</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-land-covered-by-lakes-and-rivers</loc>
-        <lastmod>2021-11-03</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coverage-of-wetlands</loc>
-        <lastmod>2021-11-04</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/treatment-of-hazardous-waste</loc>
-        <lastmod>2021-11-03</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/hazardous-waste-generated-per-capita</loc>
-        <lastmod>2021-11-04</lastmod>
+        <lastmod>2022-02-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ratification-and-accession-to-unclos</loc>
@@ -22802,6 +22802,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/providers-of-development-coordination</loc>
+        <lastmod>2022-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/coverage-of-the-human-papillomavirus-vaccine</loc>
         <lastmod>2022-02-17</lastmod>
     </url>
 </urlset>
