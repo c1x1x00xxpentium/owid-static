@@ -847,7 +847,7 @@
 /grapher/tax-revenue-of-gdp /grapher/proportion-of-domestic-budget-funded-by-domestic-taxes-of-gdp 302!
 /grapher/proportion-of-women-aged-1549-years-who-make-their-own-informed-decisions-for-their-own-health-care /grapher/proportion-of-women-who-make-their-own-informed-health-care-decisions 302!
 /grapher/world-bank-gender-statistics---gender /grapher/law-mandate-nondiscrimination-hiring 302!
-/grapher/legislation-explicitly-criminalises-marital-rape-1yes-0no /grapher/does-legislation-explicitly-criminalise-marital-rape 302!
+/grapher/legislation-explicitly-criminalises-marital-rape-1yes-0no /grapher/does-legislation-explicitly-criminalize-marital-rape 302!
 /grapher/law-mandates-paid-or-unpaid-maternity-leave-1yes-0no /grapher/does-law-mandate-paid-or-unpaid-maternity-leave 302!
 /grapher/share-of-children-ages-13-15-who-report-being-bullied-last-month /grapher/share-of-children-ages-13-15-who-report-being-bullied 302!
 /grapher/children-ages-13-15-who-report-being-in-a-school-fight-last-year /grapher/share-of-children-ages-13-15-who-report-being-in-a-school-fight-last-year 302!
@@ -855,9 +855,9 @@
 /grapher/deaths-from-road-accidents-per-100000 /grapher/death-rates-road-incidents 302!
 /grapher/staff-compensation-as-share-of-total-expenditure-in-primary-public-education /grapher/gdp-per-capita-vs-staff-compensation-as-share-of-total-expenditure-in-primary-public-education 302!
 /grapher/all-staff-compensation-as-of-total-expenditure-in-primary-public-institutions /grapher/staff-compensation-share-primary-spending 302!
-/grapher/primary-enrolment-data-available-at-last-cutoff /grapher/is-primary-enrolment-data-available-in-the-global-education-monitoring-report-2018 302!
-/grapher/is-primary-enrolment-data-available-in-global-monitoring-report-2018 /grapher/is-primary-enrolment-data-available-in-the-global-education-monitoring-report-2018 302!
-/grapher/is-primary-enrolment-data-available-in-the-global-monitoring-report-2018 /grapher/is-primary-enrolment-data-available-in-the-global-education-monitoring-report-2018 302!
+/grapher/primary-enrolment-data-available-at-last-cutoff /grapher/is-primary-enrollment-data-available-in-the-global-education-monitoring-report-2018 302!
+/grapher/is-primary-enrolment-data-available-in-global-monitoring-report-2018 /grapher/is-primary-enrollment-data-available-in-the-global-education-monitoring-report-2018 302!
+/grapher/is-primary-enrolment-data-available-in-the-global-monitoring-report-2018 /grapher/is-primary-enrollment-data-available-in-the-global-education-monitoring-report-2018 302!
 /grapher/sdg-4-indicators-by-available-sources /grapher/data-availability-for-indicators-in-the-sdg-4 302!
 /grapher/sdg-4-indicators-by-sources-available /grapher/data-availability-for-indicators-in-the-sdg-4 302!
 /grapher/exports-of-goods-and-services-of-gdp-vs-poverty-headcount-at-190-a-day-2011-ppp-world-bank-wdi-2015 /grapher/poverty-headcount-ratio-at-190-by-exports-share-in-gdp 302!
@@ -1307,3 +1307,13 @@
 /grapher/share-of-urban-population-with-improved-sanitation-faciltities /grapher/share-of-urban-population-with-improved-sanitation-facilities 302!
 /grapher/labour-share-of-gdp /grapher/labor-share-of-gdp 302!
 /grapher/unemployment-rates-of-two-high-and-two-low-labour-market-performers /grapher/unemployment-rates-of-two-high-and-two-low-labor-market-performers 302!
+/grapher/tractors-per-100-square-kilometres-of-arable-land /grapher/tractors-per-100-square-kilometers-of-arable-land 302!
+/grapher/does-legislation-explicitly-criminalise-marital-rape /grapher/does-legislation-explicitly-criminalize-marital-rape 302!
+/grapher/is-primary-enrolment-data-available-in-the-global-education-monitoring-report-2018 /grapher/is-primary-enrollment-data-available-in-the-global-education-monitoring-report-2018 302!
+/grapher/net-enrolment-rate-pre-primary /grapher/net-enrollment-rate-pre-primary 302!
+/grapher/net-enrolment-rate-primary-gender-parity-index-gpi /grapher/net-enrollment-rate-primary-gender-parity-index-gpi 302!
+/grapher/attendance-vs-enrolment-rates-primary-education /grapher/attendance-vs-enrollment-rates-primary-education 302!
+/grapher/gross-enrolment-gpi-secondary /grapher/gross-enrollment-gpi-secondary 302!
+/grapher/primary-net-enrolment-gpi /grapher/primary-net-enrollment-gpi 302!
+/grapher/net-enrolment-pre-primary-boys-vs-girls /grapher/net-enrollment-pre-primary-boys-vs-girls 302!
+/grapher/secondary-net-enrolment-gpi /grapher/secondary-net-enrollment-gpi 302!
