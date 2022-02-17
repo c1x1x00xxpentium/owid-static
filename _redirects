@@ -504,7 +504,7 @@
 /co2-by-fuel /emissions-by-fuel 301!
 /co2 /co2-and-other-greenhouse-gas-emissions 301!
 /cov /coronavirus 301!
-/grapher/case-fatality-rate-of-covid-19-vs-total-covid-19-tests-per-million-people /coronavirus 301!
+/grapher/case-fatality-rate-of-covid-19-vs-total-covid-19-tests-per-million-people /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=asc&pickerMetric=location&Metric=Case+fatality+rate&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=JPN~USA~GBR~ITA~DEU~FRA~CAN 301!
 /coronavirus/country/cote-d'ivoire /coronavirus/country/cote-divoire 301!
 /world-population-growthhttps://ourworldindata.org/grapher/population /world-population-growth 301!
 /coronavirus/country /coronavirus#coronavirus-country-profiles 301!
@@ -536,6 +536,8 @@
 /mental-health-new-entry-now-online /mental-health 301!
 /poverty-home-production-and-consumption /extreme-history-methods 301!
 /what-is-obesity-and-how-is-it-measured /obesity-definition 301!
+/grapher/number-of-tests-per-confirmed-case-vs-case-fatality-rate /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=asc&pickerMetric=location&Metric=Case+fatality+rate&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=JPN~USA~GBR~ITA~DEU~FRA~CAN 301!
+/grapher/case-fatality-rate-of-covid-19-vs-median-age /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=asc&pickerMetric=location&Metric=Case+fatality+rate&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=JPN~USA~GBR~ITA~DEU~FRA~CAN 301!
 /grapher/latest /grapher/share-of-children-vaccinated-against-measles 302
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
