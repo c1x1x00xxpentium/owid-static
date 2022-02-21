@@ -5390,7 +5390,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-vaccinations</loc>
-        <lastmod>2022-02-20</lastmod>
+        <lastmod>2022-02-21</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/measure-working-hours</loc>
@@ -22830,6 +22830,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/implementation-of-integrated-water-resource-management</loc>
+        <lastmod>2022-02-21</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/expenditure-on-cultural-and-natural-heritage-per-capita</loc>
         <lastmod>2022-02-21</lastmod>
     </url>
 </urlset>
