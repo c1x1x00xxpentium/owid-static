@@ -1325,3 +1325,6 @@
 /grapher/global-peak-farmland /grapher/global-peak-agricultural-land 302!
 /grapher/mean-years-of-schooling-1 /grapher/mean-years-of-schooling 302!
 /grapher/average-years-of-schooling-vs-corruption-perception-index-1 /grapher/average-years-of-schooling-vs-corruption-perception-index 302!
+/grapher/mean-years-schooling /grapher/mean-years-of-schooling 302!
+/grapher/annual-number-of-deaths-in-under-5s /grapher/causes-of-death-in-children-under-5 302!
+/grapher/global-greenhouse-gas-emissions-by-sector /grapher/ghg-emissions-by-sector 302!
