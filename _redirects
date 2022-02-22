@@ -428,7 +428,6 @@
 /uploads/2020/02/Safest-sources-of-energy.png /uploads/2020/02/Safest-source-of-energy.png 301!
 /the-spanish-flu-1918-20-the-global-impact-of-the-largest-influenza-pandemic-in-history /spanish-flu-largest-influenza-pandemic-in-history 301!
 /coronavirus-disease-covid-19 /coronavirus 301!
-/https-ourworldindata-org-covid-testing /covid-testing 301!
 /covid-testing-10march /covid-testing 301!
 /coronavirus-disease-covid-19-statistics-and-research /coronavirus-data 301!
 /covid-testing-20march /covid-testing 301!
@@ -506,7 +505,6 @@
 /cov /coronavirus 301!
 /grapher/case-fatality-rate-of-covid-19-vs-total-covid-19-tests-per-million-people /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=asc&pickerMetric=location&Metric=Case+fatality+rate&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=JPN~USA~GBR~ITA~DEU~FRA~CAN 301!
 /coronavirus/country/cote-d'ivoire /coronavirus/country/cote-divoire 301!
-/world-population-growthhttps://ourworldindata.org/grapher/population /world-population-growth 301!
 /coronavirus/country /coronavirus#coronavirus-country-profiles 301!
 /uploads/2018/09/Population-cartogram_World-2.png /world-population-cartogram 301!
 /co2/country/ /co2-and-other-greenhouse-gas-emissions#co2-and-greenhouse-gas-emissions-country-profiles 301!
@@ -1148,7 +1146,6 @@
 /grapher/covid-tests-since-100th-case /grapher/covid-confirmed-cases-since-100th-case 302!
 /grapher/full-list-cumulative-total-tests-per-million /grapher/full-list-cumulative-total-tests-per-thousand 302!
 /grapher/covid-19-total-confirmed-cases-vs-total-tests-per-million-people /grapher/covid-19-tests-cases-scatter-with-comparisons 302!
-/grapher/https://ourworldindata.org/grapher/covid19-tests-per-million-people /grapher/full-list-cumulative-total-tests-per-thousand 302!
 /grapher/covid19-tests-per-million-people /grapher/full-list-cumulative-total-tests-per-thousand 302!
 /grapher/tests-of-covid-19-per-million-people-vs-gdp-per-capita /grapher/tests-of-covid-19-per-thousand-people-vs-gdp-per-capita 302!
 /grapher/restrictions-on-internal-movement-oxbsg /grapher/internal-movement-covid 302!
@@ -1262,7 +1259,6 @@
 /grapher/n2o-concentration /grapher/n2o-concentration-long 302!
 /grapher/ch4-concentration /grapher/ch4-concentration-long 302!
 /grapher/world-regions-according-to-the-united-nations /grapher/world-regions-sdg-united-nations 302!
-/grapher//ghg-emissions-by-sector /grapher/greenhouse-gas-emissions-by-sector 302!
 /grapher/greenhouse-gas-emissions-by-sector /grapher/ghg-emissions-by-sector 302!
 /grapher/ghg-emissions-by-sector-land-use-excluded /grapher/ghg-emissions-by-sector 302!
 /grapher/fish-stocks-catch-by-region /grapher/fish-stocks-by-region 302!
@@ -1281,7 +1277,6 @@
 /grapher/share-of-sars-cov-2-sequences-that-are-the-omicron-variant /grapher/covid-cases-omicron 302!
 /grapher/distribution-of-population-across-income-thresholds /grapher/distribution-of-population-across-income-thresholds-stacked-bar-30-only 302!
 /grapher/total-covid-cases-deaths-per- /grapher/total-covid-cases-deaths-per-million 302!
-/grapher//grapher/total-population-living-in-extreme-poverty-by-world- /grapher/total-population-living-in-extreme-poverty-by-world-region 302!
 /grapher/suicide-rate-1990-2017 /grapher/suicide-rate-1990-2019 302!
 /grapher/average-price-of-a-pack-of-cigarettes /grapher/affordability-cigarettes 302!
 /grapher/forest-area-percent /grapher/forest-area-as-share-of-land-area 302!
