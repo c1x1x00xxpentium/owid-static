@@ -6701,10 +6701,6 @@
         <lastmod>2019-11-18</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/mean-years-of-schooling</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/public-education-expenditure-as-share-of-gdp</loc>
         <lastmod>2021-07-17</lastmod>
     </url>
@@ -6963,10 +6959,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/unpaid-parking-violations-per-diplomat</loc>
         <lastmod>2022-02-01</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/average-years-of-schooling-vs-corruption-perception-index</loc>
-        <lastmod>2019-05-08</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/human-development-index-vs-corruption-perception-index</loc>
@@ -8839,10 +8831,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/population-of-all-world-regions-including-the-un-projection-until-2100</loc>
         <lastmod>2021-08-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/greenhouse-gas-emissions-by-sector</loc>
-        <lastmod>2020-06-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/greenhouse-gas-emissions-from-agriculture</loc>
@@ -10785,10 +10773,6 @@
         <lastmod>2019-11-26</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/causes-of-death-in-under-5s</loc>
-        <lastmod>2019-08-01</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/causes-of-death-in-5-14-year-olds</loc>
         <lastmod>2022-01-18</lastmod>
     </url>
@@ -11323,10 +11307,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/malnutrition-death-rate-vs-gdp-per-capita</loc>
         <lastmod>2022-02-14</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/diarrheal-death-rates-vs-gdp-per-capita</loc>
-        <lastmod>2019-06-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/diarrheal-death-rates-vs-sanitation</loc>
@@ -17769,10 +17749,6 @@
         <lastmod>2022-01-31</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/tfr-vs-gdp-pc</loc>
-        <lastmod>2019-11-30</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/ghg-capita-per-day</loc>
         <lastmod>2019-12-01</lastmod>
     </url>
@@ -17802,7 +17778,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/yfv-coverage</loc>
-        <lastmod>2020-10-06</lastmod>
+        <lastmod>2022-02-22</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/co2-emissions-and-gdp-per-capita</loc>
@@ -17895,10 +17871,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/primary-energy-consumption-by-source</loc>
         <lastmod>2021-07-16</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/deaths-low-carbon-energy</loc>
-        <lastmod>2020-01-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/marriage-rate-per-1000-inhabitants</loc>
@@ -18303,10 +18275,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/total-confirmed-deaths-of-covid-19-per-million-people-vs-gdp-per-capita</loc>
         <lastmod>2021-11-02</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/total-and-daily-cases-covid-19</loc>
-        <lastmod>2020-05-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cumulative-deaths-and-cases-covid-19</loc>
@@ -19897,10 +19865,6 @@
         <lastmod>2022-02-16</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/yellow-fever-vaccine-coverage</loc>
-        <lastmod>2020-10-02</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/dtp3-children-unvaccinated</loc>
         <lastmod>2020-10-02</lastmod>
     </url>
@@ -20822,10 +20786,6 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/global-land-use-since-1000bc</loc>
-        <lastmod>2021-03-28</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/test-1-maddison-chart</loc>
         <lastmod>2021-03-28</lastmod>
     </url>
     <url>

@@ -543,7 +543,6 @@
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
-/grapher/mean-years-schooling /grapher/mean-years-of-schooling 302!
 /grapher/public-expenditure-on-education-as-share-of-national-gdp /grapher/public-education-expenditure-as-share-of-gdp 302!
 /grapher/education-expenditure-as-share-of-gdp /grapher/public-education-expenditure-as-share-of-gdp 302!
 /grapher/us-education-expenditure-as-share-of-gdp-public-and-private /grapher/us-education-expenditure-as-share-of-gdp-public-and-private-institutions 302!
@@ -854,7 +853,6 @@
 /grapher/law-mandates-paid-or-unpaid-maternity-leave-1yes-0no /grapher/does-law-mandate-paid-or-unpaid-maternity-leave 302!
 /grapher/share-of-children-ages-13-15-who-report-being-bullied-last-month /grapher/share-of-children-ages-13-15-who-report-being-bullied 302!
 /grapher/children-ages-13-15-who-report-being-in-a-school-fight-last-year /grapher/share-of-children-ages-13-15-who-report-being-in-a-school-fight-last-year 302!
-/grapher/annual-number-of-deaths-in-under-5s /grapher/causes-of-death-in-under-5s 302!
 /grapher/deaths-from-road-accidents-per-100000 /grapher/death-rates-road-incidents 302!
 /grapher/staff-compensation-as-share-of-total-expenditure-in-primary-public-education /grapher/gdp-per-capita-vs-staff-compensation-as-share-of-total-expenditure-in-primary-public-education 302!
 /grapher/all-staff-compensation-as-of-total-expenditure-in-primary-public-institutions /grapher/staff-compensation-share-primary-spending 302!
@@ -1043,7 +1041,6 @@
 /grapher/the-maternal-mortality-ratio-in-1990-and-2015 /grapher/the-maternal-mortality-ratio-in-2000-and-2017 302!
 /grapher/number-of-new-neonatal-tetanus-cases-who-2017-per-1000000-people /grapher/new-neonatal-tetanus-cases-per-million 302!
 /grapher/nitrous-oxide-emissions-by-sector-gg-coe /grapher/nitrous-oxide-emissions-by-sector 302!
-/grapher/global-greenhouse-gas-emissions-by-sector /grapher/greenhouse-gas-emissions-by-sector 302!
 /grapher/annual-co-emissions-per-country /grapher/annual-co2-emissions-per-country 302!
 /grapher/fruit-consumption-per-capita-kilograms-per-year /grapher/fruit-consumption-per-capita 302!
 /grapher/vegetable-consumption-per-capita-kilograms-per-year /grapher/vegetable-consumption-per-capita 302!
