@@ -4506,7 +4506,7 @@ const grapherConfigs =
   },
   {
     "id": 3873,
-    "version": 3,
+    "version": 4,
     "slug": "share-of-mothers-receiving-at-least-four-antenatal-visits-during-pregnancy",
     "title": "Share of mothers receiving at least four antenatal visits during pregnancy",
     "sourceDesc": "World Health Organization (WHO); UNICEF",
@@ -4521,7 +4521,8 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2019,
+      "time": "latest",
+      "timeTolerance": 2,
       "colorScale": {
         "binningStrategy": "equalInterval"
       },
@@ -4536,6 +4537,11 @@ const grapherConfigs =
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "South Africa",
+      "Sudan",
+      "Eritrea"
     ],
     "selectedEntityIds": [
       81,
