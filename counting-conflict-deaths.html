@@ -1,0 +1,167 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Counting world conflict deaths: why do sources differ? - Our World in Data</title><meta name="description" content="Sources report different figures for the number of deaths from conflict. What explains these differences?"/><link rel="canonical" href="https://ourworldindata.org/counting-conflict-deaths"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/counting-conflict-deaths"/><meta property="og:title" content="Counting world conflict deaths: why do sources differ?"/><meta property="og:description" content="Sources report different figures for the number of deaths from conflict. What explains these differences?"/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Counting world conflict deaths: why do sources differ?"/><meta name="twitter:description" content="Sources report different figures for the number of deaths from conflict. What explains these differences?"/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Updated daily</strong></div><a href="/covid-vaccinations" data-track-note="covid-banner-click">View our work on COVID-19 vaccinations</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Counting world conflict deaths: why do sources differ?</h1></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><div class="article-meta"><div class="excerpt">Sources report different figures for the number of deaths from conflict. What explains these differences?</div><div class="authors-byline"><a href="/team">by Joe Hasell</a></div><div class="published-updated"><time>February 24, 2022</time></div></div></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>To answer the question of how many people die in conflicts today, and how this has changed over time, we can turn to a number of different datasets.</p>
+
+
+
+<p>Here we show&#xA0;the world conflict death rate since 1989 according to five sources.</p>
+
+
+
+<p>The &#x2018;UCDP all&#x2019; series is an aggregation of the deaths recorded in each of the three categories of conflict used by <em><a href="https://ucdp.uu.se/">Uppsala Conflict Data Program</a></em>: state-based conflict, non-state conflict and one-sided violence. (We show the data for these categories separately <a href="https://ourworldindata.org/war-and-peace#other-forms-of-large-scale-violence">here</a>).</p>
+
+
+
+<p>We&#x2019;ve summarised more information about the data sources and how we handled them to produce the chart above in a document,&#xA0;<em><a href="https://ourworldindata.org/uploads/2018/09/Notes-on-five-sources-of-the-world-conflict-death-rate-since-1989.pdf">World conflict deaths since 1989: Notes on five sources</a></em>.</p>
+
+
+
+<p>You see in the chart that there are certainly similarities across the different sources. Overall they show a decline in conflict deaths into the 2000s, followed by an increase in the 2010a.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a></p>
+
+
+
+<p>But there are also large differences. Most noticeably, there is a large jump in 1994 &#x2013; marking the Rwandan genocide &#x2013; which is present in some series, but absent from others.</p>
+
+
+
+<p>If you look closely, you&#x2019;ll see that there are large relative differences between the series over the entire period as well, though they are understated by the 1994 peak. If you hover over the datapoints, you can see the exact figures: the highest figure for a given year is typically well more than double the lowest.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/conflict-deaths-per-100000-world-various-sources" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/conflict-deaths-per-100000-world-various-sources" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/conflict-deaths-per-100000-world-various-sources_v4_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Conflict deaths per 100000 world various sources v4 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-explains-the-differences"><a class="deep-link" href="#what-explains-the-differences"></a>What explains the differences?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Discrepancies between different sources of conflict deaths data are partly to do with the differences in how the underlying source information&#xA0;&#x2013; for instance newswires, death registers, government or NGO reports, or indeed other conflict databases &#x2013; are selected and interpreted.</p><p>But they also reflect conceptual differences in terms of which deaths are and aren&#x2019;t included in the source&#x2019;s definition.</p><p>Below we relate some of the differences visible in the chart above in terms of some key conceptual differences lying along three dimensions: <em>Who</em>, <em>How</em>&#xA0;and <em>What.</em></p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="the-who-how-and-what-of-conflict-deaths-data"><a class="deep-link" href="#the-who-how-and-what-of-conflict-deaths-data"></a>The Who, How, and What of conflict deaths data</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p><strong>Who:&#xA0;</strong><em>civillian vs military deaths</em></p><p>The <em>Correlates of War&#xA0;</em>series aims to include only deaths of military personnel, whereas the other sources capture &#x2013; at least to some extent &#x2013; civilian deaths too. As we would expect then, the <em>Correlates of War</em>&#xA0;figures are generally lower than the others.</p><p><strong>How:</strong><em> direct vs indirect deaths</em></p><p>In addition to those deaths caused directly by violence &#x2013; for instance those from gunshot or explosions &#x2013; a significant proportion of lives lost in conflict are <em>indirect</em>: due to disease, starvation or exposure. This is particularly true where conflicts lead to famine or outbreaks of disease among the civilian population. But historically, such indirect deaths were also a major cause of military fatalities.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a></p><p>The UCDP and IHME data include only direct deaths. The <em>Correlates of War</em> series includes military personnel that died from diseases &#x2018;contracted in the war theatre&#x2019;. The <em>Conflict Catalog</em> series (running to 2000 only) tries to include indirect deaths of both the military and civilian populations. Peter Brecke, the author of the dataset, however acknowledges that the degree to which this is in fact achieved varies considerably across conflicts.<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a></p><p><span style="font-weight: 400;">While indirect deaths represent a </span><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)31437-5/fulltext"><span style="font-weight: 400;">substantial proportion</span></a><span style="font-weight: 400;"> of the social costs of conflict, t</span>here is a conceptual difficulty in drawing a consistent boundary between indirect deaths attributable to the conflict and those due to other factors. For instance, whilst famines are often triggered by conflicts, <a href="https://ourworldindata.org/famines#why-do-famines-occur">many factors contribute</a> to their onset and severity, such as the level of sanitation or the transportation infrastructure present.</p><p>Brecke does not attempt to provide a clear-cut definition, and this conceptual boundary has been largely dictated by the available primary sources he used in each estimate. Nevertheless, as we would expect, the death rates reported in the <em>Conflict Catalog</em> do come out the highest.</p><p><strong>What:</strong> <em>state involvement and one-sided violence</em></p><p>Across the various sources there three broad <em>kinds</em> of violent event distinguished: state-based conflict, non-state conflict and one-sided violence. The kind of event depends on the type of actors involved. State-based conflict is that involving at least one state-actor, and includes conflicts between states (&#x201C;inter-state&#x201D; conflicts) and those between a state and non-state actor (&#x201C;extra-state&#x201D; conflicts), such as civil wars or colonial wars.</p><p>Non-state actors are those that demonstrate a degree of coordinated military organisation but whose identity falls short of statehood. Non-state conflicts are those between two or more non-state actors, with no state involvement.</p><p>&#x2018;One-sided violence&#x2019; on the other hand is where one organized actor (either a state or non-state group) attacks people that do not have any organized military capability to defend themselves, as in the case of genocide or &#x2018;<a href="https://en.wikipedia.org/wiki/Politicide">politicide</a>&#x2018;.</p><p>The <em>UCDP state-based</em> and <em>Correlates of War</em> series do not include such events. It is for this reason that they do not show the jump in 1994 that marks the Rwandan genocide.</p><p>Here we picture the definitions used in the various sources across these three dimensions.</p></div><div class="wp-block-column"><div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="3510" height="2822" src="https://ourworldindata.org/uploads/2018/09/Five-sources-cube.png" alt="Five sources cube" class="wp-image-20481" srcset="https://ourworldindata.org/uploads/2018/09/Five-sources-cube.png 3510w, https://ourworldindata.org/uploads/2018/09/Five-sources-cube-150x121.png 150w, https://ourworldindata.org/uploads/2018/09/Five-sources-cube-400x322.png 400w, https://ourworldindata.org/uploads/2018/09/Five-sources-cube-768x617.png 768w, https://ourworldindata.org/uploads/2018/09/Five-sources-cube-684x550.png 684w" sizes="(max-width: 3510px) 100vw, 3510px" data-high-res-src="https://ourworldindata.org/uploads/2018/09/Five-sources-cube.png"></figure></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="are-deaths-from-terrorism-included-in-counts-of-conflict-deaths"><a class="deep-link" href="#are-deaths-from-terrorism-included-in-counts-of-conflict-deaths"></a>Are deaths from terrorism included in counts of conflict deaths?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>There are also efforts to collect data specifically on the number of people dying from acts of <em>terrorism</em> &#x2013; this is discussed in our entry on <a href="https://ourworldindata.org/terrorism">Terrorism</a>.</p><p>How does the concept of terrorism relate to the concepts of conflict used in the data shown above? To what extent are terrorism deaths included in this data?</p><p>In general, definitions of terrorism include only violent episodes that are carried out by <em>non-state</em> actors, and definitions often emphasise events where civilians or to military personnel who are unarmed or not on duty are the target.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a></p><p>As such, definitions of conflict deaths that include both civilian deaths and deaths caused by non-state actors will include a large fraction of the deaths normally attributed to terrorism. That is true for instance of the &#x2018;UCDP all&#x2019; series in the charts shown above. This dataset, for example, includes direct deaths occurring in the September 11 attacks in the United States, and in the Taliban insurgency following the 2001 war in Afghanistan.</p><p>There are however some situations where deaths that would fall under typical definitions of terrorism might not get included even in the UCDP&#x2019;s broad definition of conflict. In particular, as mentioned above, the UCDP classification system has a requirement that non-state actors must have a certain degree of institutional organisation for an event to be included in its dataset. Deaths caused by attackers falling below this threshold of organisation &#x2013; such as in &#x2019;lone wolf&#x2019; attacks perpetrated by ideologically-motivated individuals &#x2013; would not be included in the UCDP data but might fit under common definitions of terrorism.</p><p>Because deaths due to conflict and terrorism can be attributed and grouped into &#x2019;events&#x2019; or &#x2018;episodes&#x2019; in different ways in different datasets, it is difficult to make direct comparisons and know exactly the extent to which deaths included in one dataset are included or excluded in another. But because the <em>larger</em> events that would fall under typical definitions of terrorism &#x2013; for instance those that are conducted by well-organised groups or are part of long-running insurgencies &#x2013; will also be included in broad definitions of conflict like those used by UCDP, the latter are likely to include the majority of deaths commonly attributed to terrorism.</p><hr class="wp-block-separator"><h5>Keep reading at <em>Our World in Data</em></h5><div class="block-wrapper"><div class="wp-block-owid-prominent-link with-image" data-no-lightbox="true" data-style="is-style-thin" data-title="War and Peace"><a href="https://ourworldindata.org/war-and-peace"><figure><img src="https://ourworldindata.org/uploads/2020/03/battle-related-deaths-in-state-based-conflicts-since-1946-by-world-region-150x106.png" data-high-res-src="https://ourworldindata.org/uploads/2020/03/battle-related-deaths-in-state-based-conflicts-since-1946-by-world-region.png" alt="Battle related deaths in state based conflicts since 1946 by world region" loading="lazy"></figure><div class="content-wrapper"><div class="title"><span>War and Peace</span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div></div></a></div></div><div class="block-wrapper"><div class="wp-block-owid-prominent-link with-image" data-no-lightbox="true" data-style="is-style-thin" data-title="Terrorism"><a href="https://ourworldindata.org/terrorism"><figure><img width="768" height="558" src="https://ourworldindata.org/uploads/2019/10/Share-in-the-US-worried-about-terrorism-768x558.png" class="attachment-medium_large size-medium_large" alt="Share in the us worried about terrorism" loading="lazy" srcset="https://ourworldindata.org/uploads/2019/10/Share-in-the-US-worried-about-terrorism-768x558.png 768w, https://ourworldindata.org/uploads/2019/10/Share-in-the-US-worried-about-terrorism-150x109.png 150w, https://ourworldindata.org/uploads/2019/10/Share-in-the-US-worried-about-terrorism-400x291.png 400w, https://ourworldindata.org/uploads/2019/10/Share-in-the-US-worried-about-terrorism-757x550.png 757w" sizes="(max-width: 768px) 100vw, 768px" data-high-res-src="https://ourworldindata.org/uploads/2019/10/Share-in-the-US-worried-about-terrorism.png"></figure><div class="content-wrapper"><div class="title"><span>Terrorism</span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></div></div></a></div></div></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    </div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>From country-level data we can see that this rise is driven largely by the war in Syria.</p></li><li id="note-2"><p>For instance, roughly two-thirds of military fatalities in the American Civil War were due to disease, according to Sartin, 1993. Infectious Diseases During the Civil War: The Triumph of the “Third Army”. Clinical Infectious Diseases Vol. 16, No. 4.</p></li><li id="note-3"><p>“The total fatalities estimates, I am sure, vary significantly in terms of the degree to which they include disease, starvation, etc.” <a href="http://www.cgeh.nl/sites/default/files/Notes%20about%20Conflict%20Catalog.pdf">Notes Regarding the Conflict Catalog</a>, 2012</p></li><li id="note-4"><p>See for instance the definitions employed by the Global Terrorism Database, discussed <a href="https://ourworldindata.org/terrorism#the-criteria-for-terrorism">here in our entry on Terrorism</a>. </p></li></ol><h3 id="licence">Reuse our work freely</h3><p>All visualizations, data, and code produced by Our World in Data are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.</p><p>The data produced by third parties and made available by Our World in Data is subject to the license terms from the original third-party authors. We will always indicate the original source of the data in our documentation, so you should always check the license of any such third-party data before use and redistribution.</p><p>All of <a href="/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=49520&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/vendors.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>
+                        runTableOfContents({"headings":[],"pageTitle":"Counting world conflict deaths: why do sources differ?"})
+                        runRelatedCharts(undefined)
+                        </script></body></html>
