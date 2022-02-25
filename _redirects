@@ -631,7 +631,6 @@
 /grapher/child-mortality-vs-share-of-vaccinated-children /grapher/child-mortality-vs-share-of-children-immunized-against-diphtheria-pertussis-and-tetanus 302!
 /grapher/co2-emissions-embedded-in-trade-as-a-share-of-domestic-emissions /grapher/share-co2-embedded-in-trade 302!
 /grapher/co-emissions-embedded-in-trade-as-a-share-of-domestic-emissions /grapher/share-co2-embedded-in-trade 302!
-/grapher/military-expenditure-of-gdp /grapher/military-expenditure-as-share-of-gdp 302!
 /grapher/the-decline-of-child-mortality-by-level-of-prosperity-regression /grapher/child-mortality-byvs-level-of-prosperity-regression 302!
 /grapher/fertilizer-vs-crop-yield /grapher/cereal-crop-yield-vs-fertilizer-application 302!
 /grapher/number-of-human-genome-base-pairs-sequenced-per-million-us /grapher/number-of-human-genome-base-pairs-sequenced-per-us 302!
@@ -1328,7 +1327,7 @@
 /grapher/global-greenhouse-gas-emissions-by-sector /grapher/ghg-emissions-by-sector 302!
 /grapher/total-size-of-united-nations-peacekeeping-forces-around-the-world-1947-2014 /grapher/un-peacekeeping-forces 302!
 /grapher/number-of-united-nations-peacekeeping-operations-around-the-world-1948-2014 /grapher/number-un-peacekeeping-missions 302!
-/grapher/military-expenditure-since-1914 /grapher/military-expenditure 302!
-/grapher/military-expenditure-by-country-in-thousands-of-2000-us-dollars /grapher/military-expenditure 302!
 /grapher/military-expenditure-by-country-in-thousands-of-1900-uk-pounds /grapher/military-expenditure-as-a-share-of-gdp-2 302!
 /grapher/number-of-nuclear-weapons-tests-for-selected-nuclear-powers-1945-1998 /grapher/number-of-nuclear-weapons-tests 302!
+/grapher/military-expenditure-share-gdp-sipri /grapher/military-expenditure-share-gdp 302!
+/grapher/military-expenditure-as-share-of-gdp /grapher/military-expenditure-share-gdp 302!
