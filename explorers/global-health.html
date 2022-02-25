@@ -6545,7 +6545,7 @@ const grapherConfigs =
   },
   {
     "id": 5111,
-    "version": 14,
+    "version": 15,
     "slug": "share-of-population-in-extreme-poverty",
     "title": "Share of population in extreme poverty",
     "subtitle": "The share of individuals living below the International Poverty Line of 1.90 international-$ per day.",
@@ -6566,20 +6566,24 @@ const grapherConfigs =
         "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
         "customNumericValues": [
+          0.1,
+          0.2,
+          0.5,
           1,
-          3,
+          2,
           5,
           10,
-          30,
+          20,
           50,
           100
         ],
         "customNumericColors": [
           "#e31a1c",
+          null,
+          null,
+          null,
           "#bd0026",
           null,
-          "#9f0026",
-          "#800026",
           null
         ],
         "equalSizeBins": true
