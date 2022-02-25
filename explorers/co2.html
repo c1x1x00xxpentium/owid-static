@@ -1104,7 +1104,7 @@ const grapherConfigs =
   },
   {
     "id": 4147,
-    "version": 11,
+    "version": 12,
     "slug": "total-ghg-emissions",
     "title": "Total greenhouse gas emissions",
     "subtitle": "Greenhouse gas emissions – from carbon dioxide, methane, nitrous oxide, and F-gases – are summed up and measured in tonnes of carbon-dioxide equivalents (CO₂e), where “equivalent” means “having the same warming effect as CO₂ over a period of 100 years”. Emissions from land use change – which can be positive or negative – are taken into account.",
@@ -1123,11 +1123,12 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2018,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
+        "customNumericMinValue": -1,
         "customNumericValues": [
+          0,
           10000000,
           50000000,
           100000000,
@@ -1137,6 +1138,7 @@ const grapherConfigs =
           10000000000
         ],
         "customNumericColors": [
+          null,
           null,
           null,
           null
