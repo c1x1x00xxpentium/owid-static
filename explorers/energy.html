@@ -1844,7 +1844,7 @@ const grapherConfigs =
   },
   {
     "id": 4322,
-    "version": 14,
+    "version": 18,
     "slug": "share-electricity-nuclear",
     "title": "Share of electricity production from nuclear",
     "hideTitleAnnotation": true,
@@ -1859,19 +1859,19 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2021,
-      "timeTolerance": 2,
+      "timeTolerance": 5,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
         "customNumericValues": [
           0,
-          15,
+          10,
           20,
           30,
           40,
           50,
-          60
+          60,
+          70
         ],
         "customNumericLabels": [
           "no nuclear",
@@ -1884,7 +1884,8 @@ const grapherConfigs =
         ],
         "customNumericColorsActive": true,
         "customNumericColors": [
-          "#ffede6",
+          "#dedede",
+          null,
           null,
           null,
           null,
