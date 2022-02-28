@@ -951,7 +951,7 @@
 /grapher/maximum-antarctic-ozone-hole-area /grapher/antarctic-ozone-hole-area 302!
 /grapher/global-number-of-reported-dracunculiasis-cases /grapher/global-number-of-reported-guinea-worm-cases 302!
 /grapher/per-capita-milk-consumption-kilograms /grapher/per-capita-milk-consumption 302!
-/grapher/military-expenditure-as-a-share-of-gdp-since-1945 /grapher/military-expenditure-as-a-share-of-gdp-2 302!
+/grapher/military-expenditure-as-a-share-of-gdp-since-1945 /grapher/military-expenditure-as-a-share-of-gdp-long 302!
 /grapher/the-difference-between-the-reported-and-the-estimated-actual-number-of-paralytic-polio-cases /grapher/reported-vs-estimated-total-number-of-paralytic-polio-cases-globally 302!
 /grapher/dalys-loss-rates-from-all-causes-by-age /grapher/daly-rates-from-all-causes-by-age 302!
 /grapher/dalys-lost-to-autistic-spectrum /grapher/dalys-autistic-spectrum 302!
@@ -1327,7 +1327,7 @@
 /grapher/global-greenhouse-gas-emissions-by-sector /grapher/ghg-emissions-by-sector 302!
 /grapher/total-size-of-united-nations-peacekeeping-forces-around-the-world-1947-2014 /grapher/un-peacekeeping-forces 302!
 /grapher/number-of-united-nations-peacekeeping-operations-around-the-world-1948-2014 /grapher/number-un-peacekeeping-missions 302!
-/grapher/military-expenditure-by-country-in-thousands-of-1900-uk-pounds /grapher/military-expenditure-as-a-share-of-gdp-2 302!
+/grapher/military-expenditure-by-country-in-thousands-of-1900-uk-pounds /grapher/military-expenditure-as-a-share-of-gdp-long 302!
 /grapher/number-of-nuclear-weapons-tests-for-selected-nuclear-powers-1945-1998 /grapher/number-of-nuclear-weapons-tests 302!
 /grapher/military-expenditure-share-gdp-sipri /grapher/military-expenditure-share-gdp 302!
 /grapher/military-expenditure-as-share-of-gdp /grapher/military-expenditure-share-gdp 302!
@@ -1338,3 +1338,4 @@
 /grapher/battle-related-deaths-in-state-based-conflicts-since-1946 /grapher/deaths-in-state-based-conflicts 302!
 /grapher/rate-of-violent-deaths-in-conflicts-and-one-sided-violence-per-100000-since-1989 /grapher/deaths-per-100000-in-conflicts-and-one-sided-violence 302!
 /grapher/number-of-conflicts-and-incidences-of-one-sided-violence /grapher/the-number-of-active-state-based-conflicts 302!
+/grapher/military-expenditure-as-a-share-of-gdp-2 /grapher/military-expenditure-as-a-share-of-gdp-long 302!
