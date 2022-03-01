@@ -4046,7 +4046,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/water-access</loc>
-        <lastmod>2021-07-01</lastmod>
+        <lastmod>2022-03-01</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/our-world-in-data-history</loc>
@@ -6445,10 +6445,6 @@
         <lastmod>2021-08-26</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/political-regimes-over-time</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/foreign-direct-investment-net-inflows-as-share-of-gdp</loc>
         <lastmod>2021-08-26</lastmod>
     </url>
@@ -6795,10 +6791,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/literate-and-illiterate-world-population</loc>
         <lastmod>2019-02-02</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/political-regime-updated2016</loc>
-        <lastmod>2019-05-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/world-pop-by-political-regime</loc>
