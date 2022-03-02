@@ -1340,9 +1340,10 @@
 /grapher/total-tax-revenue-gdp-vs-democracy /grapher/taxation-vs-liberal-democracy 302!
 /grapher/democracy-vs-govt-effectiveness /grapher/govt-effectiveness-vs-liberal-democracy 302!
 /grapher/total-tax-revenue-gdp-vs-liberal-democracy /grapher/taxation-vs-liberal-democracy 302!
-/grapher/correlation-between-education-and-democracy-vdem /grapher/liberal-democracy-vs-schooling-past 302!
-/grapher/education-past-and-democracy-today /grapher/liberal-democracy-vs-schooling-past 302!
+/grapher/correlation-between-education-and-democracy-vdem /grapher/liberal-democracy-today-vs-past-schooling 302!
+/grapher/education-past-and-democracy-today /grapher/liberal-democracy-today-vs-past-schooling 302!
 /grapher/govt-effectiveness-and-liberal-democracy /grapher/govt-effectiveness-vs-liberal-democracy 302!
 /grapher/life-expectancy-vs-liberal-democracy-index /grapher/life-expectancy-vs-liberal-democracy 302!
-/grapher/democracy-vs-schooling-past /grapher/liberal-democracy-vs-schooling-past 302!
+/grapher/democracy-vs-schooling-past /grapher/liberal-democracy-today-vs-past-schooling 302!
 /grapher/taxes-and-liberal-democracy /grapher/taxation-vs-liberal-democracy 302!
+/grapher/liberal-democracy-vs-schooling-past /grapher/liberal-democracy-today-vs-past-schooling 302!
