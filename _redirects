@@ -1337,11 +1337,12 @@
 /grapher/number-of-nuclear-warheads-in-the-inventory-of-the-nuclear-powers /grapher/nuclear-warhead-stockpiles 302!
 /grapher/v-dem-liberal-democracy-index /grapher/liberal-democracy 302!
 /grapher/elected-officials-index /grapher/elected-officials 302!
-/grapher/total-tax-revenue-gdp-vs-democracy /grapher/taxes-and-liberal-democracy 302!
+/grapher/total-tax-revenue-gdp-vs-democracy /grapher/taxation-vs-liberal-democracy 302!
 /grapher/democracy-vs-govt-effectiveness /grapher/govt-effectiveness-vs-liberal-democracy 302!
-/grapher/total-tax-revenue-gdp-vs-liberal-democracy /grapher/taxes-and-liberal-democracy 302!
+/grapher/total-tax-revenue-gdp-vs-liberal-democracy /grapher/taxation-vs-liberal-democracy 302!
 /grapher/correlation-between-education-and-democracy-vdem /grapher/liberal-democracy-vs-schooling-past 302!
 /grapher/education-past-and-democracy-today /grapher/liberal-democracy-vs-schooling-past 302!
 /grapher/govt-effectiveness-and-liberal-democracy /grapher/govt-effectiveness-vs-liberal-democracy 302!
 /grapher/life-expectancy-vs-liberal-democracy-index /grapher/life-expectancy-vs-liberal-democracy 302!
 /grapher/democracy-vs-schooling-past /grapher/liberal-democracy-vs-schooling-past 302!
+/grapher/taxes-and-liberal-democracy /grapher/taxation-vs-liberal-democracy 302!
