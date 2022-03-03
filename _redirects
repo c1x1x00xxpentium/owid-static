@@ -429,6 +429,7 @@
 /the-spanish-flu-1918-20-the-global-impact-of-the-largest-influenza-pandemic-in-history /spanish-flu-largest-influenza-pandemic-in-history 301!
 /coronavirus-disease-covid-19 /coronavirus 301!
 /war-in-the-ukraine /ukraine-war 301!
+/genocides /war-and-peace 301!
 /covid-testing-10march /covid-testing 301!
 /coronavirus-disease-covid-19-statistics-and-research /coronavirus-data 301!
 /covid-testing-20march /covid-testing 301!
@@ -1074,7 +1075,7 @@
 /grapher/human-rights-protection /grapher/human-rights-scores 302!
 /grapher/human-rights-rating-vs-gdp /grapher/human-rights-score-vs-gdp-per-capita 302!
 /grapher/human-rights-score-vs-gdp /grapher/human-rights-score-vs-gdp-per-capita 302!
-/grapher/human-rights-vs-the-political-regime /grapher/human-rights-score-vs-political-regime-type 302!
+/grapher/human-rights-vs-the-political-regime /grapher/human-rights-vs-liberal-democracy 302!
 /grapher/proportion-of-important-sites-for-terrestrial-biodiversity-covered-by-protected-areas /grapher/protected-terrestrial-biodiversity-sites 302!
 /grapher/child-mortality-rate /grapher/child-mortality-rate-ihme 302!
 /grapher/share-of-children-under-5-who-received-diarrhea-treatment /grapher/children-who-receive-ors 302!
@@ -1347,3 +1348,4 @@
 /grapher/trust-attitudes-in-the-us /grapher/interpersonal-trust-in-the-us 302!
 /grapher/average-rating-of-trust-in-others-selected-countries /grapher/interpersonal-trust-in-europe 302!
 /grapher/projected-extreme-poverty-among-different-groupings-of-fragile-states-crespo-cuaresma-et-al-2018 /grapher/projected-extreme-poverty-different-classifications-of-fragile-states 302!
+/grapher/human-rights-score-vs-political-regime-type /grapher/human-rights-vs-liberal-democracy 302!
