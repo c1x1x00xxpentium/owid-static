@@ -1351,5 +1351,6 @@
 /grapher/human-rights-score-vs-political-regime-type /grapher/human-rights-vs-liberal-democracy 302!
 /grapher/income-vs-type-of-political-regime /grapher/gdp-per-capita-vs-liberal-democracy 302!
 /grapher/child-mortality-vs-type-of-political-regime /grapher/child-mortality-vs-liberal-democracy 302!
-/grapher/numbers-of-autocracies-and-democracies /grapher/number-of-autocracies-democracies 302!
-/grapher/number-of-different-political-regimes /grapher/number-of-autocracies-democracies 302!
+/grapher/numbers-of-autocracies-and-democracies /grapher/number-of-different-political-regimes-bmr 302!
+/grapher/number-of-different-political-regimes /grapher/number-of-different-political-regimes-bmr 302!
+/grapher/number-of-autocracies-democracies /grapher/number-of-different-political-regimes-bmr 302!
