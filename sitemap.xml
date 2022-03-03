@@ -2874,7 +2874,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/malaria</loc>
-        <lastmod>2022-02-25</lastmod>
+        <lastmod>2022-03-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/land-use</loc>
@@ -2890,7 +2890,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/hiv-aids</loc>
-        <lastmod>2022-01-17</lastmod>
+        <lastmod>2022-03-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/economic-growth</loc>
@@ -4378,7 +4378,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/diarrheal-diseases</loc>
-        <lastmod>2021-02-24</lastmod>
+        <lastmod>2022-03-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-100</loc>
@@ -4442,7 +4442,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/pneumonia</loc>
-        <lastmod>2021-04-02</lastmod>
+        <lastmod>2022-03-03</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-114</loc>
@@ -6415,18 +6415,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/future-population-projections-by-country</loc>
         <lastmod>2022-02-02</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/map-of-genocides-and-politicides-around-the-world</loc>
-        <lastmod>2019-11-18</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/number-of-active-genocides-and-politicides-around-the-world</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/map-of-genocide-and-politicide-deaths-around-the-world</loc>
-        <lastmod>2019-11-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/life-expectancy-at-age-10</loc>
