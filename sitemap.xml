@@ -22249,7 +22249,7 @@
         <lastmod>2021-12-02</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/excess-deaths-weekly-economist</loc>
+        <loc>https://ourworldindata.org/grapher/excess-deaths-daily-economist</loc>
         <lastmod>2022-03-08</lastmod>
     </url>
     <url>
@@ -22633,7 +22633,11 @@
         <lastmod>2022-03-04</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/excess-deaths-weekly-per-100k-economist</loc>
+        <loc>https://ourworldindata.org/grapher/excess-deaths-daily-per-100k-economist</loc>
+        <lastmod>2022-03-08</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/excess-deaths-daily-economist-single-entity</loc>
         <lastmod>2022-03-08</lastmod>
     </url>
 </urlset>
