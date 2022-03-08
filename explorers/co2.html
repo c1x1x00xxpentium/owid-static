@@ -1380,7 +1380,7 @@ const grapherConfigs =
   },
   {
     "id": 4244,
-    "version": 5,
+    "version": 7,
     "slug": "per-capita-nitrous-oxide",
     "title": "Per capita nitrous oxide emissions",
     "subtitle": "Per capita nitrous oxide emissions are measured in tonnes of carbon-dioxide equivalents (CO<sub>2</sub>e) per person per year. This metric converts all greenhouse gases to  CO<sub>2</sub>e based on their global warming potential value over a 100-year timescale.",
@@ -1396,17 +1396,19 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2018,
+      "timeTolerance": 5,
       "colorScale": {
-        "baseColorScheme": "Purples",
+        "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
         "customNumericValues": [
           0.5,
           1,
           1.5,
           2,
-          2.5
-        ]
+          2.5,
+          3
+        ],
+        "equalSizeBins": true
       },
       "variableId": 347618
     },
@@ -1421,6 +1423,14 @@ const grapherConfigs =
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "United Kingdom",
+      "Ireland",
+      "New Zealand",
+      "India",
+      "Brazil",
+      "China"
     ],
     "selectedEntityIds": [
       1,
