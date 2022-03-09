@@ -6250,7 +6250,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/ukraine-war</loc>
-        <lastmod>2022-03-02</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/war-in-the-ukraine</loc>
@@ -6265,7 +6265,7 @@
         <lastmod>2022-03-08</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/migration-sources</loc>
+        <loc>https://ourworldindata.org/migration-definition</loc>
         <lastmod>2022-03-09</lastmod>
     </url>
     <url>
@@ -11681,10 +11681,6 @@
         <lastmod>2021-11-04</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/personal-remittances-received-of-gdp</loc>
-        <lastmod>2022-02-28</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/foreign-direct-investment-net-outflows-of-gdp</loc>
         <lastmod>2021-08-29</lastmod>
     </url>
@@ -13699,10 +13695,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/unit-labor-cost-by-main-economic-activity-isic-rev4</loc>
         <lastmod>2018-04-23</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/net-migration</loc>
-        <lastmod>2022-02-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/refugee-population-by-country-or-territory-of-origin</loc>
@@ -15965,8 +15957,8 @@
         <lastmod>2022-03-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/voter-turnout-in-most-recent-national-election</loc>
-        <lastmod>2021-08-12</lastmod>
+        <loc>https://ourworldindata.org/grapher/voter-turnout</loc>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/life-expectancy-un-pop-division-projection</loc>
@@ -18415,14 +18407,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/co-emissions-by-sector</loc>
         <lastmod>2022-02-22</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/personal-remittances-received</loc>
-        <lastmod>2022-02-28</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/personal-remittances-paid</loc>
-        <lastmod>2022-02-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/changes-visitors-covid</loc>

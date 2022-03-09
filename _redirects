@@ -546,7 +546,13 @@
 /migration /explorers/migration 301!
 /migration-data-explorer-launch /explorers/migration 301!
 /grapher/share-of-a-countrys-population-that-is-not-born-within-the-country /explorers/migration?facet=none&Metric=Number+of+emigrants&Period=Total&Sub-metric=Per+capita+%2F+Share+of+population 301!
+/grapher/international-migrant-stock-total /explorers/migration?facet=none&Metric=Number+of+international+immigrants&Period=Total&Sub-metric=Total 301!
 /international-migrant-stock /explorers/migration?facet=none&Metric=Number+of+international+immigrants&Period=Total&Sub-metric=Total 301!
+/grapher/net-migration /explorers/migration?facet=none&Metric=Net+migration+number&Period=Total&Sub-metric=Total 301!
+/grapher/personal-remittances-received-of-gdp /explorers/migration?facet=none&Metric=Remittances+received+%28%25+of+GDP%29&Period=Total&Sub-metric=Total 301!
+/grapher/personal-remittances-received /explorers/migration?facet=none&Metric=Remittances+received+%28%25+of+GDP%29&Period=Total&Sub-metric=Total 301!
+/grapher/personal-remittances-paid /explorers/migration?facet=none&Metric=Remittances+received+%28%25+of+GDP%29&Period=Total&Sub-metric=Total 301!
+/migration-sources /migration-definition 301!
 /grapher/latest /grapher/share-of-children-vaccinated-against-measles 302
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
@@ -1058,7 +1064,7 @@
 /grapher/cancer-death-rates-per-100000 /grapher/cancer-death-rates 302!
 /grapher/share-with-mental-or-substance-disorders-males-vs-females /grapher/share-with-mental-or-substance-disorders-by-sex 302!
 /grapher/ambient-pollution-death-rates-2016-1990 /grapher/ambient-pollution-death-rates-2017-1990 302!
-/grapher/election-turnout-2017-or-most-recent-election /grapher/voter-turnout-in-most-recent-national-election 302!
+/grapher/election-turnout-2017-or-most-recent-election /grapher/voter-turnout 302!
 /grapher/share-of-people-paying-bribes-2013 /grapher/bribery-rates 302!
 /grapher/share-of-population-with-access-to-basic-infrastructure-services /grapher/access-to-basic-resources 302!
 /grapher/nitrogen-fertilizer-production-tonnes /grapher/nitrogen-fertilizer-production 302!
@@ -1372,3 +1378,4 @@
 /grapher/share-of-population-covered-by-the-internet /grapher/share-of-individuals-using-the-internet 302!
 /grapher/excess-deaths-weekly-economist /grapher/excess-deaths-daily-economist 302!
 /grapher/excess-deaths-weekly-per-100k-economist /grapher/excess-deaths-daily-per-100k-economist 302!
+/grapher/voter-turnout-in-most-recent-national-election /grapher/voter-turnout 302!
