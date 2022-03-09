@@ -547,7 +547,7 @@
 /migration-data-explorer-launch /explorers/migration 301!
 /grapher/share-of-a-countrys-population-that-is-not-born-within-the-country /explorers/migration?facet=none&Metric=Number+of+emigrants&Period=Total&Sub-metric=Per+capita+%2F+Share+of+population 301!
 /grapher/international-migrant-stock-total /explorers/migration?facet=none&Metric=Number+of+international+immigrants&Period=Total&Sub-metric=Total 301!
-/international-migrant-stock /explorers/migration?facet=none&Metric=Number+of+international+immigrants&Period=Total&Sub-metric=Total 301!
+/grapher/international-migrant-stock /explorers/migration?facet=none&Metric=Number+of+international+immigrants&Period=Total&Sub-metric=Total 301!
 /grapher/net-migration /explorers/migration?facet=none&Metric=Net+migration+number&Period=Total&Sub-metric=Total 301!
 /grapher/personal-remittances-received-of-gdp /explorers/migration?facet=none&Metric=Remittances+received+%28%25+of+GDP%29&Period=Total&Sub-metric=Total 301!
 /grapher/personal-remittances-received /explorers/migration?facet=none&Metric=Remittances+received+%28%25+of+GDP%29&Period=Total&Sub-metric=Total 301!
