@@ -7730,7 +7730,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-demographic-transition</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/maternal-mortality-slope-chart</loc>
@@ -9502,7 +9502,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/hadcrut-surface-temperature-anomaly</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/hadcrut-surface-temperature-anomaly-weighted-by-area</loc>
@@ -9942,7 +9942,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/disposable-household-income-the-income-cutoff-to-the-poorest-decile-vs-mean-income</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/alcohol-consumption-vs-gdp-per-capita</loc>
@@ -10234,7 +10234,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-wealth-per-capita-by-income-groups-in-2014-us-dollars</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/wealth-per-capita-by-country-grouping</loc>
@@ -10306,15 +10306,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/wealth-per-capita-by-asset-group-with-natural-capital-disaggregated-in-2014-us-dollars</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/adjusted-net-saving-current-us-dollars</loc>
         <lastmod>2021-08-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/wealth-per-capita-by-component-by-country---world-bank-2017</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/time-required-to-start-business</loc>
@@ -10674,7 +10670,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/projections-of-the-total-population-by-education-scenario</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-by-risk-under5s</loc>
@@ -16066,7 +16062,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/world-press-freedom</loc>
-        <lastmod>2022-03-04</lastmod>
+        <lastmod>2022-03-09</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/causes-of-death-in-children</loc>
@@ -16987,10 +16983,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/child-deaths-from-malaria-number</loc>
         <lastmod>2022-01-17</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/wealth-as-percent-national-income-by-wealth-type-piketty-2014</loc>
-        <lastmod>2019-11-18</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-new-hiv-child-infections-vs-number-of-infections-averted-due-to-pmtct</loc>
