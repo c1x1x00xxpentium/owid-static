@@ -1359,7 +1359,7 @@
 /grapher/human-rights-scores /grapher/human-rights-protection 302!
 /grapher/human-rights-vs-liberal-democracy /grapher/human-rights-protection-vs-liberal-democracy 302!
 /grapher/human-rights-vs-gdp-per-capita /grapher/human-rights-protection-vs-gdp-per-capita 302!
-/grapher/world-map-of-the-freedom-of-the-press-status /grapher/freedom-of-the-press 302!
+/grapher/world-map-of-the-freedom-of-the-press-status /grapher/press-freedom 302!
 /grapher/number-of-different-political-regimes-row /grapher/political-regimes-by-year-row 302!
 /grapher/political-regimes /grapher/political-regime 302!
 /grapher/political-regimes-bmr /grapher/political-regime-bmr 302!
@@ -1373,3 +1373,4 @@
 /grapher/voter-turnout-in-most-recent-national-election /grapher/voter-turnout 302!
 /grapher/universal-suffrage-granted-to-women /grapher/universal-suffrage-women 302!
 /grapher/risk-of-catastrophic-expenditure-for-surgical-care /grapher/share-of-the-population-at-risk-of-catastrophic-expenditure-when-surgical-care-is-required 302!
+/grapher/freedom-of-the-press /grapher/press-freedom 302!
