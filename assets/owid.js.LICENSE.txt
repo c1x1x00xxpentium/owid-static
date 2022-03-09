@@ -21,6 +21,6 @@
 	THE SOFTWARE.
 */
 
-/*! algoliasearch-lite.umd.js | 4.2.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
+/*! algoliasearch-lite.umd.js | 4.12.2 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
 
 /*! smooth-scroll v16.1.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
