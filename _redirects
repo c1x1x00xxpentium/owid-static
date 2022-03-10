@@ -553,6 +553,7 @@
 /grapher/personal-remittances-received /explorers/migration?facet=none&Metric=Remittances+received+%28%25+of+GDP%29&Period=Total&Sub-metric=Total 301!
 /grapher/personal-remittances-paid /explorers/migration?facet=none&Metric=Remittances+received+%28%25+of+GDP%29&Period=Total&Sub-metric=Total 301!
 /migration-sources /migration-definition 301!
+/fossil-fuels-explorer-launch /explorers/natural-resources 301!
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!

@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2022-03-09T11:30:00.000Z</updated>
+<updated>2022-03-10T11:30:00.000Z</updated>
+<entry>
+            <title><![CDATA[We just published our new data explorer on fossil fuels]]></title>
+            <id>https://ourworldindata.org/fossil-fuels-explorer-launch</id>
+            <link rel="alternate" href="https://ourworldindata.org/fossil-fuels-explorer-launch"/>
+            <published>2022-03-10T11:30:00.000Z</published>
+            <updated>2022-03-10T12:11:24.000Z</updated>
+            <author><name>Pablo Rosado</name></author><author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Explore data on fossil fuels reserves, production, trade and consumption.<br><br><a href="https://ourworldindata.org/fossil-fuels-explorer-launch" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/03/Fossil-Fuels-Data-Explorer-768x403.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[We just published our new Migration Data Explorer]]></title>
             <id>https://ourworldindata.org/migration-data-explorer-launch</id>
@@ -86,14 +95,5 @@
             <updated>2022-01-11T10:46:26.000Z</updated>
             <author><name>Max Roser</name></author>
             <summary><![CDATA[The decline of global poverty is one of the most important achievements in history, but the end of poverty is still very far away.<br><br><a href="https://ourworldindata.org/history-of-poverty-has-just-begun" target="_blank"><img src="https://ourworldindata.org/app/uploads/2021/11/Screen-Shot-2021-11-21-at-21.06.10-768x277.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[How do key COVID-19 metrics compare to previous waves?]]></title>
-            <id>https://ourworldindata.org/covid-metrics-previous-waves</id>
-            <link rel="alternate" href="https://ourworldindata.org/covid-metrics-previous-waves"/>
-            <published>2022-01-10T14:16:48.000Z</published>
-            <updated>2022-02-18T11:05:29.000Z</updated>
-            <author><name>Edouard Mathieu</name></author>
-            <summary><![CDATA[How are confirmed cases translating into hospitalizations, ICU admissions and deaths now that many have been vaccinated?<br><br><a href="https://ourworldindata.org/covid-metrics-previous-waves" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/01/covid-previous-waves-768x301.png"/></a>]]></summary>
             </entry>
 </feed>
