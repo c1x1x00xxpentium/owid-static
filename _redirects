@@ -555,6 +555,8 @@
 /migration-sources /migration-definition 301!
 /fossil-fuels-explorer-launch /explorers/natural-resources 301!
 /how-long-before-we-run-out-of-fossil-fuels /fossil-fuels#when-will-the-world-run-out-of-fossil-fuels 301!
+/educational-mobility-inequality /global-education#what-has-been-the-evolution-of-gender-inequalities-in-education 301!
+/emissions‐drivers /emissions-drivers 301!
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
@@ -1381,3 +1383,4 @@
 /grapher/press-freedom /grapher/press-freedom-fh 302!
 /grapher/full-list-covid-19-tests-per-day /grapher/daily-tests-per-thousand-people-smoothed-7-day 302!
 /grapher/literacy-rates-most-recent /grapher/literacy-rate 302!
+/grapher/share-of-employment-in-agriculture-industry-and-services /grapher/employment-by-economic-sector 302!
