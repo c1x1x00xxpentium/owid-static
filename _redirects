@@ -563,6 +563,7 @@
 /grapher/daily-covid-cases-per-million-three-day-avg /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=asc&pickerMetric=location&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=USA~GBR~CAN~DEU~ITA~IND 301!
 /daily-per-capita-caloric-supply /grapher/daily-per-capita-caloric-supply 301!
 /co2‐and‐other‐greenhouse‐gas‐emissions /co2-and-other-greenhouse-gas-emissions 301!
+/grapher/main-religion-of-the-country-in a:3:{s:8:"url_from";s:26:"https://ourworldindata.org";s:11:"url_notfrom";s:0:"";s:6:"server";s:26:"https://ourworldindata.org";} 301!
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
@@ -1392,3 +1393,4 @@
 /grapher/share-of-employment-in-agriculture-industry-and-services /grapher/employment-by-economic-sector 302!
 /grapher/confirmed-covid-19-deaths-total-vs-daily /grapher/covid-deaths-daily-vs-total-per-million 302!
 /grapher/suicide-rates-by-country /grapher/suicide-rate 302!
+/grapher/moving-average-case-fatality-rate-of-covid-19-vs-vaccination-coverage /grapher/covid-19-cumulative-confirmed-cases-vs-confirmed-deaths 302!
