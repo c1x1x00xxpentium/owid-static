@@ -2682,7 +2682,7 @@ const grapherConfigs =
   },
   {
     "id": 1831,
-    "version": 16,
+    "version": 17,
     "slug": "tuberculosis-death-rates",
     "title": "Death rate from tuberculosis",
     "subtitle": "The number of deaths from tuberculosis per 100,000 people.",
@@ -2694,22 +2694,22 @@ const grapherConfigs =
     "originUrl": "https://ourworldindata.org/causes-of-death",
     "isPublished": true,
     "map": {
-      "time": 2019,
+      "timeTolerance": 5,
       "colorScale": {
-        "baseColorScheme": "YlOrRd",
+        "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
+          1,
+          2,
           5,
           10,
-          25,
+          20,
           50,
-          75,
           100,
-          125,
-          150,
           200,
-          250
+          500,
+          1000
         ],
         "customNumericColors": [
           null,
@@ -2729,6 +2729,15 @@ const grapherConfigs =
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Australia",
+      "Belgium",
+      "Brazil",
+      "India",
+      "Malawi",
+      "United Kingdom",
+      "United States"
     ],
     "selectedEntityIds": [
       23,
