@@ -500,7 +500,6 @@
 /per-capita-energy-2 /per-capita-energy 301!
 /causes-of-death-globally-what-do-people-die-from /causes-of-death-treemap 301!
 /global-food-explorer-launch /explorers/global-food 301!
-/explorers/ / 301!
 /coronavirus/country/czechia /coronavirus/country/czech-republic 301!
 /co2-by-fuel /emissions-by-fuel 301!
 /co2 /co2-and-other-greenhouse-gas-emissions 301!
@@ -563,7 +562,8 @@
 /grapher/daily-covid-cases-per-million-three-day-avg /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=asc&pickerMetric=location&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=USA~GBR~CAN~DEU~ITA~IND 301!
 /daily-per-capita-caloric-supply /grapher/daily-per-capita-caloric-supply 301!
 /co2‐and‐other‐greenhouse‐gas‐emissions /co2-and-other-greenhouse-gas-emissions 301!
-/grapher/main-religion-of-the-country-in a:3:{s:8:"url_from";s:26:"https://ourworldindata.org";s:11:"url_notfrom";s:0:"";s:6:"server";s:26:"https://ourworldindata.org";} 301!
+/returns-to-education /financing-education#why-do-governments-finance-education 301!
+/grapher/main-religion-of-the-country-in / 301!
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
