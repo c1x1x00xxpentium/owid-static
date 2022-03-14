@@ -5214,7 +5214,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-health-economy</loc>
-        <lastmod>2020-09-01</lastmod>
+        <lastmod>2022-03-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/text-for-covid-data-explorer</loc>
@@ -5350,7 +5350,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-vaccinations</loc>
-        <lastmod>2022-03-11</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/measure-working-hours</loc>
@@ -8113,8 +8113,8 @@
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/share-of-protein-supply-from-animal-based-foods-vs-gdp-per-capita</loc>
-        <lastmod>2019-10-26</lastmod>
+        <loc>https://ourworldindata.org/grapher/animal-protein-vs-gdp</loc>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/women-participating-in-decisionmaking-vs-fertility</loc>
@@ -14390,7 +14390,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/river-plastics-by-region</loc>
-        <lastmod>2018-07-17</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/plastic-waste-generated</loc>
@@ -14410,11 +14410,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mismanaged-plastic-waste-by-region-2025</loc>
-        <lastmod>2018-07-19</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mismanaged-plastic-waste-by-region-2010</loc>
-        <lastmod>2019-07-31</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-harmonized-learning-outcome-scores</loc>
@@ -14482,7 +14482,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/plastic-waste-polymer</loc>
-        <lastmod>2021-04-08</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coastal-population-vs-mismanaged-plastic</loc>
@@ -14514,11 +14514,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/surface-plastic-mass-by-ocean</loc>
-        <lastmod>2018-07-24</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/surface-plastic-particles-by-ocean</loc>
-        <lastmod>2018-07-24</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/plastic-exports-to-china</loc>
@@ -14690,7 +14690,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/grocery-bag-environmental-impact</loc>
-        <lastmod>2021-07-04</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-daily-hours-worked-by-industry-united-states</loc>
@@ -14822,7 +14822,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/urban-share-european-commission</loc>
-        <lastmod>2019-01-15</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/time-spent-on-activities-in-an-average-day</loc>
@@ -15990,7 +15990,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/perception-of-corruption-by-institution</loc>
-        <lastmod>2019-05-10</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/child-deaths-by-life-stage</loc>
@@ -16774,7 +16774,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-use-per-kg-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ghg-per-kg-poore</loc>
@@ -16786,7 +16786,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/scarcity-water-per-kg-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/antenatal-care-coverage</loc>
@@ -16794,15 +16794,15 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/eutrophying-emissions-per-kg-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-use-protein-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ghg-per-protein-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/water-per-protein-poore</loc>
@@ -16810,15 +16810,15 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/scarcity-water-protein-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-use-kcal-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/ghg-kcal-poore</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-childbearing-age</loc>
@@ -17694,15 +17694,15 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/scarcity-water-use-kcals</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/eutrophying-emissions-protein</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/eutrophying-emissions-kcal</loc>
-        <lastmod>2022-02-07</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-countries-legal-homosexuality</loc>
@@ -19294,7 +19294,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/economic-decline-in-the-second-quarter-of-2020</loc>
-        <lastmod>2020-09-01</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/primary-sub-energy-source</loc>
@@ -19702,15 +19702,15 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-trees</loc>
-        <lastmod>2020-10-13</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-trees-per-km</loc>
-        <lastmod>2020-10-13</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/trees-per-capita</loc>
-        <lastmod>2020-10-14</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/working-hours-uk-millennium</loc>
@@ -20050,7 +20050,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/historical-share-of-population-living-on-less-than-5-per-day-roser-hasell</loc>
-        <lastmod>2021-06-26</lastmod>
+        <lastmod>2022-03-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/deaths-attributed-to-air-pollution-from-fossil-fuels-and-deaths-due-to-terrorism</loc>
@@ -20326,7 +20326,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/regional_pov_rate</loc>
-        <lastmod>2021-06-26</lastmod>
+        <lastmod>2022-03-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-burden-of-disease-vs-gdp-per-capita</loc>
@@ -20486,11 +20486,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/endemic-shark-and-ray-species</loc>
-        <lastmod>2021-03-30</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/endemic-freshwater-crab-species</loc>
-        <lastmod>2021-03-30</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/drivers-of-recovery-in-european-bird-populations</loc>
@@ -20542,7 +20542,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-ocean-plastic-waste</loc>
-        <lastmod>2021-04-30</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mismanaged-plastic-waste-per-capita</loc>
@@ -20562,7 +20562,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/plastic-waste-mismanaged</loc>
-        <lastmod>2021-04-30</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/probability-mismanaged-plastic-ocean</loc>
@@ -21594,7 +21594,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-use-seafood</loc>
-        <lastmod>2021-09-17</lastmod>
+        <lastmod>2022-03-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/nitrogen-emissions-seafood</loc>
@@ -21774,7 +21774,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccination-global-projections</loc>
-        <lastmod>2022-03-10</lastmod>
+        <lastmod>2022-03-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/new-passenger-vehicles-type</loc>
@@ -22122,7 +22122,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/chile-covid-19-mortality-rate-by-vaccination-status</loc>
-        <lastmod>2022-03-07</lastmod>
+        <lastmod>2022-03-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/england-covid-19-mortality-rate-by-vaccination-status</loc>
@@ -22186,7 +22186,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/switzerland-covid-19-weekly-death-rate-by-vaccination-status</loc>
-        <lastmod>2022-03-07</lastmod>
+        <lastmod>2022-03-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/excess-deaths-cumulative-economist-single-entity</loc>

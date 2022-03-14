@@ -567,6 +567,8 @@
 /grapher/main-religion-of-the-country-in / 301!
 /materialism-and-post-materialism / 301!
 /measuring-poverty-globally /extreme-poverty 301!
+/projections-of-future-education /global-education 301!
+/pertussis /health-meta 301!
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
@@ -1403,3 +1405,7 @@
 /grapher/correlation-between-mean-years-of-schooling-and-gdp-per-capita /grapher/average-years-of-schooling-vs-gdp-per-capita 302!
 /grapher/food-supply-by-region-in-kilocalories-per-person-per-day-1961-2013 /grapher/daily-per-capita-caloric-supply 302!
 /grapher/absolute-increase-global-population /grapher/population-past-future 302!
+/grapher/per-million-daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-tests-per-case /grapher/rate-daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases 302!
+/grapher/3g-mobile-network-coverage-of-population /grapher/mobile-cellular-subscriptions-per-100-people 302!
+/grapher/confirmed-covid-19-deaths-cumulative-vs-daily /grapher/covid-deaths-daily-vs-total-per-million 302!
+/grapher/share-of-protein-supply-from-animal-based-foods-vs-gdp-per-capita /grapher/animal-protein-vs-gdp 302!
