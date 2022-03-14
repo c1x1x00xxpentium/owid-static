@@ -16209,7 +16209,7 @@
         <lastmod>2020-10-01</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/political-regimes-by-year-bmr</loc>
+        <loc>https://ourworldindata.org/grapher/share-democracies-bmr</loc>
         <lastmod>2022-03-14</lastmod>
     </url>
     <url>
@@ -22549,7 +22549,7 @@
         <lastmod>2022-03-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/political-regimes-by-year-row</loc>
+        <loc>https://ourworldindata.org/grapher/share-democracies</loc>
         <lastmod>2022-03-14</lastmod>
     </url>
     <url>
@@ -22574,6 +22574,14 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/civil-liberties</loc>
+        <lastmod>2022-03-14</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-democracies</loc>
+        <lastmod>2022-03-14</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-democracies-bmr</loc>
         <lastmod>2022-03-14</lastmod>
     </url>
 </urlset>
