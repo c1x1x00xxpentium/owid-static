@@ -556,11 +556,14 @@
 /fossil-fuels-explorer-launch /explorers/natural-resources 301!
 /how-long-before-we-run-out-of-fossil-fuels /fossil-fuels 301!
 /educational-mobility-inequality /global-education#what-has-been-the-evolution-of-gender-inequalities-in-education 301!
+/covid-testing-us-uk-korea-italy /coronavirus-testing 301!
 /grapher/covid-19-death-rate-vs-population-density /covid-deaths 301!
 /civil-wars /war-and-peace 301!
 /grapher/covid-tests-cases-deaths /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&uniformYAxis=0&pickerSort=asc&pickerMetric=location&Metric=Vaccine+doses%2C+cases%2C+ICU+patients%2C+and+deaths&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=USA~GBR~CAN~DEU~ITA~IND 301!
 /grapher/daily-covid-cases-per-million-three-day-avg /explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=asc&pickerMetric=location&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=USA~GBR~CAN~DEU~ITA~IND 301!
 /daily-per-capita-caloric-supply /grapher/daily-per-capita-caloric-supply 301!
+/covid-mortality-risk /mortality-risk-covid 301!
+/vaccination-israel-impact /explorers/coronavirus-data-explorer?zoomToSelection%3Dtrue%26time%3D2020-03-01..latest%26uniformYAxis%3D0%26pickerSort%3Dasc%26pickerMetric%3Dlocation%26Metric%3DVaccine%2Bdoses%252C%2Bpeople%2Bvaccinated%252C%2Band%2Bbooster%2Bdoses%26Interval%3D7-day%2Brolling%2Baverage%26Relative%2Bto%2BPopulation%3Dtrue%26Color%2Bby%2Btest%2Bpositivity%3Dfalse%26country%3D~ISR&sa=D&source=editors&ust=1647448629401250&usg=AOvVaw3vY3cmOR795-5Y7WlEmQ0C 301!
 /returns-to-education /financing-education#why-do-governments-finance-education 301!
 /grapher/main-religion-of-the-country-in / 301!
 /materialism-and-post-materialism / 301!
