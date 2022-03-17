@@ -5144,13 +5144,12 @@ const grapherConfigs =
   },
   {
     "id": 4546,
-    "version": 3,
+    "version": 6,
     "slug": "population-unwpp",
     "title": "Population",
     "hideTitleAnnotation": true,
-    "maxTime": 2020,
+    "timelineMinTime": 1950,
     "hasMapTab": true,
-    "tab": "map",
     "internalNotes": "UNWPP estimates",
     "originUrl": "ourworldindata.org/world-population-growth",
     "isPublished": true,
@@ -5158,7 +5157,7 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2020,
+      "timeTolerance": 10,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -5178,13 +5177,13 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143753,
-        "display": {
-          "unit": "",
-          "conversionFactor": 1000,
-          "includeInTable": true
-        }
+        "variableId": 72
       }
+    ],
+    "selectedEntityNames": [
+      "China",
+      "India",
+      "United States"
     ],
     "selectedEntityIds": [
       355
