@@ -18182,7 +18182,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-19-positive-rate-bar</loc>
-        <lastmod>2020-11-30</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-tests-per-thousand-people-vs-tests</loc>
@@ -18230,7 +18230,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-covid-19-tests-per-confirmed-case-bar-chart</loc>
-        <lastmod>2022-02-01</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-contact-tracing</loc>
@@ -18274,11 +18274,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-19-daily-tests-vs-daily-new-confirmed-cases-per-million</loc>
-        <lastmod>2021-06-09</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-19-daily-tests-vs-daily-new-confirmed-cases</loc>
-        <lastmod>2020-11-30</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-deaths-daily-vs-total-per-million</loc>
@@ -18294,11 +18294,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-tests-per-thousand-people-smoothed-7-day</loc>
-        <lastmod>2021-09-22</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-covid-19-tests-smoothed-7-day</loc>
-        <lastmod>2022-03-04</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-growth-covid-deaths</loc>
@@ -18318,11 +18318,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/tests-per-confirmed-case-daily-smoothed</loc>
-        <lastmod>2021-05-14</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/positive-rate-daily-smoothed</loc>
-        <lastmod>2021-03-10</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/adult-obesity-vs-protein</loc>
@@ -18422,7 +18422,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-tests-per-case-exemplars</loc>
-        <lastmod>2022-02-02</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-tests-vs-deaths-exemplars</loc>
@@ -18458,7 +18458,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-confirmed-covid-19-deaths-vs-confirmed-cases</loc>
-        <lastmod>2020-07-30</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-methane-emissions</loc>
@@ -18763,10 +18763,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-estimated-covid-19-infections-icl-model</loc>
         <lastmod>2022-02-22</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/positivity-rate-vs-gdp-per-capita</loc>
-        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/consumption-based-carbon-intensity</loc>
@@ -19110,7 +19106,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cumulative-confirmed-covid-19-cases-per-million-vs-gdp-per-capita-testing-colors</loc>
-        <lastmod>2022-02-02</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/mean-versus-median-daily-per-capita-expenditure-or-income</loc>
@@ -19818,7 +19814,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-tests-and-daily-new-confirmed-covid-cases</loc>
-        <lastmod>2022-02-02</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/co-emissions-per-capita-vs-fossil-fuel-consumption-per-capita</loc>
@@ -19826,7 +19822,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/current-rate-covid-19-tests-vs-cases</loc>
-        <lastmod>2020-11-30</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-new-confirmed-covid-19-deaths-in-sweden-oct-2020</loc>
