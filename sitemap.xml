@@ -7870,7 +7870,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use</loc>
-        <lastmod>2021-08-30</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-per-capita-caloric-supply</loc>
@@ -10182,7 +10182,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/global-change-over-the-last-50-years</loc>
-        <lastmod>2021-11-03</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-wealth-per-capita-by-income-groups-in-2014-us-dollars</loc>
@@ -15746,7 +15746,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-milk-vs-gdp</loc>
-        <lastmod>2021-08-29</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/population-growth-rate-vs-median-age</loc>
@@ -15822,7 +15822,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/infant-mortality-by-sex</loc>
-        <lastmod>2021-08-23</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/infant-death-rates-by-cause-by-sex</loc>
@@ -16342,23 +16342,23 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/literacy-rate-vs-gdp-per-capita</loc>
-        <lastmod>2021-08-27</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-years-of-schooling-vs-gdp-per-capita</loc>
-        <lastmod>2021-08-27</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-schooling-vs-expected-schooling</loc>
-        <lastmod>2022-03-09</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/medical-doctors-per-1000-people-vs-gdp-per-capita</loc>
-        <lastmod>2021-08-23</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/human-development-index-vs-gdp-per-capita</loc>
-        <lastmod>2021-08-27</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/number-of-departures-per-1000</loc>
@@ -16418,7 +16418,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/tourist-departures-per-1000-vs-gdp</loc>
-        <lastmod>2021-08-27</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/measles-prevalence-vaccine-attitudes</loc>
@@ -16570,7 +16570,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/researchers-in-rd-per-million-people-vs-gdp-pc</loc>
-        <lastmod>2021-08-24</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/pneumonia-and-lower-respiratory-diseases-deaths</loc>
@@ -17933,10 +17933,6 @@
         <lastmod>2021-12-28</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/population-wdi</loc>
-        <lastmod>2021-08-19</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/covid-confirmed-cases-per-million-since-1-per-million</loc>
         <lastmod>2021-11-02</lastmod>
     </url>
@@ -18558,7 +18554,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/kaya-identity-co2</loc>
-        <lastmod>2022-03-09</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/co2-gdp-growth</loc>
@@ -19058,7 +19054,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/expected-years-of-schooling-vs-co-emissions-per-capita</loc>
-        <lastmod>2022-01-31</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/maddison-data-gdp-per-capita-in-2011us-slopechart</loc>
@@ -21214,7 +21210,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/school-life-expectancy-marimekko</loc>
-        <lastmod>2021-08-27</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/liberal-democracy-today-vs-past-schooling</loc>
@@ -22046,7 +22042,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/consumption-kaya-identity</loc>
-        <lastmod>2021-11-15</lastmod>
+        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/decadal-average-death-rates-from-natural-disasters</loc>
