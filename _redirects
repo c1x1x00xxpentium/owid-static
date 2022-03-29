@@ -1198,7 +1198,6 @@
 /grapher/daily-covid-deaths-3-day-average /grapher/daily-covid-deaths-7-day 302!
 /grapher/child-mortality-rate-per-1000-live-births /grapher/child-mortality-around-the-world 302!
 /grapher/total-and-daily-cases-covid-19 /grapher/covid-daily-vs-total-cases 302!
-/grapher/total-daily-covid-deaths-per-million /grapher/covid-deaths-daily-vs-total-per-million 302!
 /grapher/carbon-emission-intensity /grapher/co2-intensity 302!
 /grapher/methane-emissions-by-sector-gg-coe /grapher/methane-emissions-by-sector 302!
 /grapher/annual-hours-worked-per-worker /grapher/annual-working-hours-per-worker 302!
@@ -1398,7 +1397,6 @@
 /grapher/full-list-covid-19-tests-per-day /grapher/daily-tests-per-thousand-people-smoothed-7-day 302!
 /grapher/literacy-rates-most-recent /grapher/literacy-rate 302!
 /grapher/share-of-employment-in-agriculture-industry-and-services /grapher/employment-by-economic-sector 302!
-/grapher/confirmed-covid-19-deaths-total-vs-daily /grapher/covid-deaths-daily-vs-total-per-million 302!
 /grapher/suicide-rates-by-country /grapher/suicide-rate 302!
 /grapher/moving-average-case-fatality-rate-of-covid-19-vs-vaccination-coverage /grapher/covid-19-cumulative-confirmed-cases-vs-confirmed-deaths 302!
 /grapher/global-demand-for-education-world-population-and-projected-growth-to-2100-by-agegroup /grapher/global-demand-for-education-global-population-projection-until-2100-by-age-group-by-the-wittgenstein-centre 302!
@@ -1409,7 +1407,6 @@
 /grapher/absolute-increase-global-population /grapher/population-past-future 302!
 /grapher/per-million-daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases-tests-per-case /grapher/rate-daily-new-confirmed-cases-of-covid-19-vs-cumulative-cases 302!
 /grapher/3g-mobile-network-coverage-of-population /grapher/mobile-cellular-subscriptions-per-100-people 302!
-/grapher/confirmed-covid-19-deaths-cumulative-vs-daily /grapher/covid-deaths-daily-vs-total-per-million 302!
 /grapher/share-of-protein-supply-from-animal-based-foods-vs-gdp-per-capita /grapher/animal-protein-vs-gdp 302!
 /grapher/per-capita-electricity-consumption /grapher/per-capita-electricity-generation 302!
 /grapher/world-population-by-political-regime /grapher/people-living-in-democracies 302!
