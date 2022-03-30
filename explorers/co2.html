@@ -728,7 +728,7 @@ const grapherConfigs =
   },
   {
     "id": 696,
-    "version": 21,
+    "version": 24,
     "slug": "share-co2-embedded-in-trade",
     "title": "CO₂ emissions embedded in trade",
     "subtitle": "Share of carbon dioxide (CO₂) emissions embedded in trade, measured as emissions exported or imported as the percentage of domestic production emissions. Positive values (red) represent net importers of CO₂ (i.e. \"20%\" would mean a country imported emissions equivalent to 20% of its domestic emissions). Negative values (blue) represent net exporters of CO₂.",
@@ -746,16 +746,15 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "timeTolerance": 1,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "colorSchemeInvert": true,
         "binningStrategy": "manual",
-        "customNumericMinValue": -80,
+        "customNumericMinValue": -200,
         "customNumericValues": [
-          -60,
-          -40,
+          -100,
+          -50,
           -20,
           -10,
           0,
@@ -763,7 +762,7 @@ const grapherConfigs =
           20,
           50,
           100,
-          450
+          200
         ],
         "customNumericLabels": [
           "",
@@ -778,6 +777,12 @@ const grapherConfigs =
           ""
         ],
         "customNumericColorsActive": false,
+        "customNumericColors": [
+          null,
+          null,
+          null,
+          null
+        ],
         "legendDescription": "CO₂ traded as share of domestic (production) emissions"
       },
       "variableId": 179892
