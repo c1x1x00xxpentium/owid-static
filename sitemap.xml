@@ -22588,4 +22588,8 @@
         <loc>https://ourworldindata.org/grapher/net-electricity-imports</loc>
         <lastmod>2022-03-31</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/electricity-imports-share-demand</loc>
+        <lastmod>2022-03-31</lastmod>
+    </url>
 </urlset>
