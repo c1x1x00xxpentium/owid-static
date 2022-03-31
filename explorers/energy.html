@@ -905,11 +905,12 @@ const grapherConfigs =
   },
   {
     "id": 4289,
-    "version": 15,
+    "version": 16,
     "slug": "electricity-generation",
     "title": "Electricity generation",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
+    "tab": "map",
     "originUrl": "ourworldindata.org/energy",
     "isPublished": true,
     "yAxis": {
@@ -5840,6 +5841,7 @@ const grapherConfigs =
   },
   {
     "id": 5637,
+    "version": 2,
     "slug": "electricity-imports-share-demand",
     "title": "Net electricity imports as a share of electricity demand",
     "subtitle": "Net electricity imports are calculated as electricity imports minus exports. This is given as a share of a country's electricity demand. Countries with positive values are net importers of electricity; negative values are net exporters. ",
@@ -5857,16 +5859,16 @@ const grapherConfigs =
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
         "binningStrategyBinCount": 6,
-        "customNumericMinValue": -100,
+        "customNumericMinValue": -50,
         "customNumericValues": [
-          -75,
-          -50,
           -25,
+          -10,
+          -5,
           0,
+          5,
+          10,
           25,
-          50,
-          75,
-          100
+          50
         ]
       },
       "variableId": 413899
