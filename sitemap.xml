@@ -18586,7 +18586,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/electricity-generation</loc>
-        <lastmod>2022-02-15</lastmod>
+        <lastmod>2022-03-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coal-energy-share</loc>
@@ -22582,6 +22582,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/electricity-demand</loc>
+        <lastmod>2022-03-31</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/net-electricity-imports</loc>
         <lastmod>2022-03-31</lastmod>
     </url>
 </urlset>
