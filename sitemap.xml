@@ -18294,11 +18294,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-growth-covid-deaths</loc>
-        <lastmod>2022-03-29</lastmod>
+        <lastmod>2022-03-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-growth-covid-cases</loc>
-        <lastmod>2020-12-03</lastmod>
+        <lastmod>2022-03-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/weekly-covid-cases</loc>
@@ -18329,14 +18329,6 @@
         <lastmod>2020-12-03</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/week-by-week-change-of-covid-deaths-vs-gdp-per-capita</loc>
-        <lastmod>2022-03-29</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/week-by-week-change-of-covid-cases-vs-gdp-per-capita</loc>
-        <lastmod>2020-05-31</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/change-visitors-retail-recreation</loc>
         <lastmod>2020-12-03</lastmod>
     </url>
@@ -18350,7 +18342,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biweekly-growth-covid-cases</loc>
-        <lastmod>2021-10-01</lastmod>
+        <lastmod>2022-03-31</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biweekly-covid-deaths</loc>
@@ -18395,10 +18387,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/nitrous-oxide-emissions</loc>
         <lastmod>2022-02-22</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/government-response-stringency-index-vs-biweekly-change-in-confirmed-covid-19-cases</loc>
-        <lastmod>2022-02-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-confirmed-deaths-since-5th-death-exemplar</loc>
