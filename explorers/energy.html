@@ -720,11 +720,11 @@ const grapherConfigs =
   },
   {
     "id": 3868,
-    "version": 7,
+    "version": 9,
     "slug": "primary-energy-cons",
     "title": "Primary energy consumption",
     "subtitle": "Primary energy consumption is measured in terawatt-hours (TWh). ",
-    "sourceDesc": "BP Statistical Review of Global Energy",
+    "sourceDesc": "BP Statistical Review of World Energy; and EIA",
     "note": "Data includes only commercially-traded fuels (coal, oil, gas), nuclear and modern renewables. It does not include traditional biomass.",
     "hideTitleAnnotation": true,
     "minTime": 1965,
@@ -740,7 +740,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "timeTolerance": 3,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
@@ -754,12 +754,12 @@ const grapherConfigs =
           25000
         ]
       },
-      "variableId": 143360
+      "variableId": 413912
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143360,
+        "variableId": 413912,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -768,6 +768,11 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Serbia",
+      "Africa",
+      "Croatia"
     ],
     "selectedEntityIds": [
       88,
