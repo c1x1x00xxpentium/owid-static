@@ -593,6 +593,8 @@
 /grapher/global-monthly-temperature-anomaly /explorers/climate-change?facet=none&Metric=Temperature+anomaly&Long-run+series%3F=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~North+America~South+Cascade+Glacier~Wolverine+Glacier 301!
 /grapher/sea-level-rise /explorers/climate-change?facet=none&Metric=Sea+level+rise&Long-run+series%3F=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~North+America~South+Cascade+Glacier~Wolverine+Glacier 301!
 /grapher/antarctic-sea-ice-extent /explorers/climate-change?facet=none&Metric=Antarctic+sea+ice+extent&Long-run+series%3F=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~North+America~South+Cascade+Glacier~Wolverine+Glacier 301!
+/grapher/ocean-heat-700m /explorers/climate-change?facet=none&Metric=Ocean+heat+content+%28top+700m%29&Long-run+series%3F=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~North+America~South+Cascade+Glacier~Wolverine+Glacier 301!
+/grapher/mass-balance-us-glaciers /explorers/climate-change?facet=none&Metric=Mass+balance+of+U.S.+Glaciers&Long-run+series%3F=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~North+America~South+Cascade+Glacier~Wolverine+Glacier 301!
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
