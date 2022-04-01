@@ -578,7 +578,12 @@
 /human-development-index/country-by-country-perspective-over-the-last-three-decades /human-development-index#country-by-country-perspective-over-the-last-three-decades 301!
 /grapher/weekly-death-growth-rate-vs-daily-death-rate /coronavirus 301!
 /grapher/co2-concentration-long-term /explorers/climate-change?facet=none&country=~OWID_WRL&Metric=CO%E2%82%82+concentrations&Long-run+series%3F=true 301!
-/global-co-concentration-ppm /explorers/climate-change?time=1..2018&facet=none&country=~OWID_WRL&Metric=CO%E2%82%82+concentrations&Long-run+series%3F=true&hideControls=true 301!
+/grapher/global-co-concentration-ppm /explorers/climate-change?time=1..2018&facet=none&country=~OWID_WRL&Metric=CO%E2%82%82+concentrations&Long-run+series%3F=true&hideControls=true 301!
+/grapher/n2o-concentration-long /explorers/climate-change?facet=none&country=~OWID_WRL&Metric=N%E2%82%82O+concentrations&Long-run+series%3F=true 301!
+/grapher/ch4-concentration-long /explorers/climate-change?facet=none&country=~OWID_WRL&Metric=CH₄+concentrations&Long-run+series%3F=true 301!
+/grapher/monthly-atm-n2o /explorers/climate-change?facet=none&country=~OWID_WRL&Metric=N₂O+concentrations&Long-run+series%3F=false 301!
+/grapher/monthly-atm-co2 /explorers/climate-change?facet=none&country=~OWID_WRL&Metric=CO₂+concentrations&Long-run+series%3F=false 301!
+/grapher/monthly-atm-ch4 /explorers/climate-change?facet=none&country=~OWID_WRL&Metric=CH₄+concentrations&Long-run+series%3F=false 301!
 /grapher/male-and-female-age-adjusted-suicide-rates-for-selected-countries-1950-2004 /grapher/male-and-female-suicide-rate 302!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
