@@ -3143,7 +3143,7 @@ const grapherConfigs =
   },
   {
     "id": 4391,
-    "version": 7,
+    "version": 8,
     "slug": "annual-change-gas",
     "title": "Annual change in gas consumption",
     "subtitle": "Shown is the change in gas energy consumption relative to the previous year, measured in terawatt-hours.",
@@ -3161,7 +3161,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PiYG",
         "colorSchemeInvert": true,
@@ -3181,12 +3181,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143030
+      "variableId": 413958
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143030,
+        "variableId": 413958,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -3206,13 +3206,14 @@ const grapherConfigs =
   },
   {
     "id": 4392,
-    "version": 8,
+    "version": 9,
     "slug": "annual-percentage-change-gas",
     "title": "Annual percentage change in gas consumption",
     "subtitle": "Shown is the percentage change in gas energy consumption relative to the previous year.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -3225,7 +3226,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PiYG",
         "binningStrategy": "manual",
@@ -3242,12 +3243,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143029
+      "variableId": 413957
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143029,
+        "variableId": 413957,
         "display": {
           "name": "Gas",
           "unit": "%",
@@ -3271,7 +3272,7 @@ const grapherConfigs =
   },
   {
     "id": 4393,
-    "version": 8,
+    "version": 9,
     "slug": "annual-change-fossil-fuels",
     "title": "Annual change in fossil fuel consumption",
     "subtitle": "Shown is the change in fossil energy consumption relative to the previous year, measured in terawatt-hours. This is the sum of energy from coal, oil and gas.",
@@ -3289,7 +3290,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BrBG",
         "colorSchemeInvert": true,
@@ -3306,12 +3307,12 @@ const grapherConfigs =
           250
         ]
       },
-      "variableId": 143046
+      "variableId": 413962
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143046,
+        "variableId": 413962,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -3333,13 +3334,14 @@ const grapherConfigs =
   },
   {
     "id": 4394,
-    "version": 8,
+    "version": 9,
     "slug": "annual-percentage-change-fossil-fuels",
     "title": "Annual percentage change in fossil fuel consumption",
     "subtitle": "Shown is the percentage change in fossil energy consumption relative to the previous year. This is the sum of energy from coal, oil and gas.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -3352,7 +3354,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BrBG",
         "colorSchemeInvert": true,
@@ -3371,12 +3373,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143045
+      "variableId": 413961
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143045,
+        "variableId": 413961,
         "display": {
           "name": "Fossil fuels",
           "unit": "%",
@@ -3400,7 +3402,7 @@ const grapherConfigs =
   },
   {
     "id": 4395,
-    "version": 8,
+    "version": 9,
     "slug": "annual-change-renewables",
     "title": "Annual change in renewable energy generation",
     "subtitle": "Shown is the change in renewable energy generation relative to the previous year, measured in terawatt-hours. This is the sum of energy from hydropower, solar, wind, geothermal, wave and tidal, and bioenergy.",
@@ -3418,7 +3420,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -3437,12 +3439,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143044
+      "variableId": 413968
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143044,
+        "variableId": 413968,
         "display": {
           "name": "Renewables",
           "unit": "terawatt-hours",
@@ -3466,12 +3468,12 @@ const grapherConfigs =
   },
   {
     "id": 4396,
-    "version": 8,
+    "version": 9,
     "slug": "annual-percentage-change-renewables",
     "title": "Annual percentage change in renewable energy generation",
     "subtitle": "Shown is the percentage change in renewable energy generation relative to the previous year. This is the sum of energy from hydropower, solar, wind, geothermal, wave and tidal, and bioenergy.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
-    "minTime": 2018,
+    "minTime": 1966,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -3484,7 +3486,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -3500,12 +3502,12 @@ const grapherConfigs =
           100
         ]
       },
-      "variableId": 143043
+      "variableId": 413967
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143043,
+        "variableId": 413967,
         "display": {
           "name": "Renewables",
           "unit": "%",
@@ -3529,7 +3531,7 @@ const grapherConfigs =
   },
   {
     "id": 4397,
-    "version": 9,
+    "version": 10,
     "slug": "annual-change-hydro",
     "title": "Annual change in hydropower generation",
     "subtitle": "Shown is the change in renewable energy generation relative to the previous year, measured in terawatt-hours. ",
@@ -3547,7 +3549,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdYlBu",
         "binningStrategy": "manual",
@@ -3563,12 +3565,12 @@ const grapherConfigs =
           50
         ]
       },
-      "variableId": 143036
+      "variableId": 413964
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143036,
+        "variableId": 413964,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -3655,13 +3657,13 @@ const grapherConfigs =
   },
   {
     "id": 4399,
-    "version": 9,
+    "version": 10,
     "slug": "annual-change-wind",
     "title": "Annual change in wind energy generation",
     "subtitle": "Shown is the change in wind energy generation relative to the previous year, measured in terawatt-hours. ",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": 1996,
+    "minTime": 1966,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -3674,7 +3676,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3690,12 +3692,12 @@ const grapherConfigs =
           25
         ]
       },
-      "variableId": 143040
+      "variableId": 413972
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143040,
+        "variableId": 413972,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -3717,13 +3719,14 @@ const grapherConfigs =
   },
   {
     "id": 4400,
-    "version": 9,
+    "version": 10,
     "slug": "annual-percentage-change-wind",
     "title": "Annual percentage change in wind energy generation",
     "subtitle": "Shown is the percentage change in wind energy generation relative to the previous year. ",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -3736,7 +3739,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3752,12 +3755,12 @@ const grapherConfigs =
           50
         ]
       },
-      "variableId": 143039
+      "variableId": 413971
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143039,
+        "variableId": 413971,
         "display": {
           "name": "Wind",
           "unit": "%",
@@ -3781,13 +3784,13 @@ const grapherConfigs =
   },
   {
     "id": 4401,
-    "version": 9,
+    "version": 10,
     "slug": "annual-change-solar",
     "title": "Annual change in solar energy generation",
     "subtitle": "Shown is the change in solar energy generation relative to the previous year, measured in terawatt-hours. ",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": 1996,
+    "minTime": 1966,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -3800,7 +3803,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -3824,12 +3827,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143038
+      "variableId": 413970
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143038,
+        "variableId": 413970,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -3849,13 +3852,14 @@ const grapherConfigs =
   },
   {
     "id": 4402,
-    "version": 11,
+    "version": 12,
     "slug": "annual-percentage-change-solar",
     "title": "Annual percentage change in solar energy generation",
     "subtitle": "Shown is the percentage change in solar energy generation relative to the previous year. ",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "originUrl": "ourworldindata.org/energy",
     "isPublished": true,
@@ -3867,7 +3871,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3883,12 +3887,12 @@ const grapherConfigs =
           100
         ]
       },
-      "variableId": 143037
+      "variableId": 413969
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143037,
+        "variableId": 413969,
         "display": {
           "name": "Solar",
           "unit": "%",
@@ -4257,7 +4261,7 @@ const grapherConfigs =
   },
   {
     "id": 4437,
-    "version": 7,
+    "version": 8,
     "slug": "primary-energy-nuclear",
     "title": "Primary energy consumption from nuclear",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4276,7 +4280,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
@@ -4291,12 +4295,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143225
+      "variableId": 413919
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143225,
+        "variableId": 413919,
         "display": {
           "name": "Nuclear",
           "unit": "terawatt-hours",
@@ -4321,7 +4325,7 @@ const grapherConfigs =
   },
   {
     "id": 4438,
-    "version": 6,
+    "version": 7,
     "slug": "primary-energy-renewables",
     "title": "Primary energy consumption from renewables",
     "subtitle": "Renewable energy includes hydropower, solar, wind, geothermal, wave and tidal and bioenergy. Traditional biofuels are not included. Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4340,7 +4344,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGn",
         "binningStrategy": "manual",
@@ -4353,12 +4357,12 @@ const grapherConfigs =
           1000
         ]
       },
-      "variableId": 143226
+      "variableId": 413920
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143226,
+        "variableId": 413920,
         "display": {
           "name": "Renewables",
           "unit": "terawatt-hours",
@@ -4382,7 +4386,7 @@ const grapherConfigs =
   },
   {
     "id": 4439,
-    "version": 6,
+    "version": 7,
     "slug": "primary-energy-hydro",
     "title": "Primary energy consumption from hydropower",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4400,7 +4404,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -4413,12 +4417,12 @@ const grapherConfigs =
           1000
         ]
       },
-      "variableId": 143224
+      "variableId": 413918
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143224,
+        "variableId": 413918,
         "display": {
           "name": "Hydropower",
           "unit": "terawatt-hours",
@@ -4441,7 +4445,7 @@ const grapherConfigs =
   },
   {
     "id": 4440,
-    "version": 7,
+    "version": 8,
     "slug": "primary-energy-consumption-from-solar",
     "title": "Primary energy consumption from solar",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4459,7 +4463,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -4476,12 +4480,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143227
+      "variableId": 413921
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143227,
+        "variableId": 413921,
         "display": {
           "name": "Solar",
           "unit": "terawatt-hours",
@@ -4505,7 +4509,7 @@ const grapherConfigs =
   },
   {
     "id": 4441,
-    "version": 7,
+    "version": 8,
     "slug": "primary-energy-wind",
     "title": "Primary energy consumption from wind",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4524,17 +4528,17 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "equalInterval"
       },
-      "variableId": 143228
+      "variableId": 413922
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143228,
+        "variableId": 413922,
         "display": {
           "name": "Wind",
           "unit": "terawatt-hours",
@@ -4982,7 +4986,7 @@ const grapherConfigs =
   },
   {
     "id": 4449,
-    "version": 5,
+    "version": 6,
     "slug": "fossil-fuel-primary-energy",
     "title": "Fossil fuel consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
@@ -4999,7 +5003,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -5013,12 +5017,12 @@ const grapherConfigs =
           50000
         ]
       },
-      "variableId": 143005
+      "variableId": 413926
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143005,
+        "variableId": 413926,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
