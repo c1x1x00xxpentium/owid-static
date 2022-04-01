@@ -1303,7 +1303,7 @@ const grapherConfigs =
   },
   {
     "id": 4296,
-    "version": 9,
+    "version": 10,
     "slug": "hydro-share-energy",
     "title": "Share of primary energy from hydroelectric power",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1320,7 +1320,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -1333,12 +1333,12 @@ const grapherConfigs =
           25
         ]
       },
-      "variableId": 143020
+      "variableId": 413946
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143020,
+        "variableId": 413946,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1356,7 +1356,7 @@ const grapherConfigs =
   },
   {
     "id": 4297,
-    "version": 10,
+    "version": 11,
     "slug": "solar-share-energy",
     "title": "Share of primary energy from solar",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1373,7 +1373,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -1387,12 +1387,12 @@ const grapherConfigs =
           10
         ]
       },
-      "variableId": 143022
+      "variableId": 413948
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143022,
+        "variableId": 413948,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1415,7 +1415,7 @@ const grapherConfigs =
   },
   {
     "id": 4298,
-    "version": 10,
+    "version": 11,
     "slug": "wind-share-energy",
     "title": "Share of primary energy from wind",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1432,7 +1432,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "manual",
@@ -1449,12 +1449,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143023
+      "variableId": 413949
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143023,
+        "variableId": 413949,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1477,7 +1477,7 @@ const grapherConfigs =
   },
   {
     "id": 4303,
-    "version": 11,
+    "version": 12,
     "slug": "low-carbon-share-energy",
     "title": "Share of primary energy from low-carbon sources",
     "subtitle": "Low-carbon energy is defined as the sum of nuclear and renewable sources. Renewable sources include hydropower, solar, wind, geothermal, wave and tidal and bioenergy. Traditional biofuels are not included.",
@@ -1495,7 +1495,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -1508,12 +1508,12 @@ const grapherConfigs =
           60
         ]
       },
-      "variableId": 143026
+      "variableId": 413952
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143026,
+        "variableId": 413952,
         "display": {
           "unit": "%",
           "includeInTable": true,
@@ -2524,14 +2524,15 @@ const grapherConfigs =
   },
   {
     "id": 4380,
-    "version": 14,
+    "version": 15,
     "slug": "per-capita-wind",
     "title": "Per capita energy consumption from wind",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
     "note": "'Primary energy’ refers to energy in its raw form, before conversion into electricity, heat or transport fuels. It is here measured in terms of 'input equivalents' via the substitution method: the amount of primary energy that would be required from fossil fuels to generate the same amount of electricity from wind.",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -2544,7 +2545,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGn",
         "binningStrategy": "manual",
@@ -2558,12 +2559,12 @@ const grapherConfigs =
           1500
         ]
       },
-      "variableId": 143216
+      "variableId": 413986
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143216,
+        "variableId": 413986,
         "display": {
           "name": "Wind",
           "unit": "kilowatt-hours",
@@ -2589,13 +2590,14 @@ const grapherConfigs =
   },
   {
     "id": 4381,
-    "version": 10,
+    "version": 11,
     "slug": "per-capita-solar",
     "title": "Per capita energy consumption from solar",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
     "note": "'Primary energy’ refers to energy in its raw form, before conversion into electricity, heat or transport fuels. It is here measured in terms of 'input equivalents' via the substitution method: the amount of primary energy that would be required from fossil fuels to generate the same amount of electricity from solar.",
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -2608,7 +2610,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
@@ -2622,12 +2624,12 @@ const grapherConfigs =
           750
         ]
       },
-      "variableId": 143215
+      "variableId": 413985
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143215,
+        "variableId": 413985,
         "display": {
           "name": "Solar",
           "unit": "kilowatt-hours",
@@ -2654,14 +2656,14 @@ const grapherConfigs =
   },
   {
     "id": 4382,
-    "version": 11,
+    "version": 12,
     "slug": "per-capita-nuclear",
     "title": "Per capita energy consumption from nuclear",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
     "note": "'Primary energy’ refers to energy in its raw form, before conversion into electricity, heat or transport fuels. It is here measured in terms of 'input equivalents' via the substitution method: the amount of primary energy that would be required from fossil fuels to generate the same amount of electricity from nuclear.",
     "hideTitleAnnotation": true,
-    "minTime": 2018,
+    "minTime": 1965,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -2674,7 +2676,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "manual",
@@ -2687,12 +2689,12 @@ const grapherConfigs =
           7500
         ]
       },
-      "variableId": 143214
+      "variableId": 413983
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143214,
+        "variableId": 413983,
         "display": {
           "name": "Nuclear",
           "unit": "kilowatt-hours",
@@ -2718,13 +2720,14 @@ const grapherConfigs =
   },
   {
     "id": 4383,
-    "version": 10,
+    "version": 11,
     "slug": "per-capita-low-carbon-energy",
     "title": "Per capita consumption of low-carbon energy",
     "subtitle": "Low carbon energy is the sum of nuclear and renewable energy sources. This is based on primary energy equivalents, rather than final electricity use.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -2737,7 +2740,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -2750,12 +2753,12 @@ const grapherConfigs =
           8000
         ]
       },
-      "variableId": 143220
+      "variableId": 413988
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143220,
+        "variableId": 413988,
         "display": {
           "name": "Low-carbon",
           "unit": "kilowatt-hours",
@@ -2781,7 +2784,7 @@ const grapherConfigs =
   },
   {
     "id": 4385,
-    "version": 10,
+    "version": 11,
     "slug": "annual-change-nuclear",
     "title": "Annual change in nuclear energy generation",
     "subtitle": "Shown is the change in nuclear energy generation relative to the previous year, measured in terawatt-hours.",
@@ -2799,7 +2802,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdYlBu",
         "binningStrategy": "manual",
@@ -2818,12 +2821,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143034
+      "variableId": 413966
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143034,
+        "variableId": 413966,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -2844,13 +2847,13 @@ const grapherConfigs =
   },
   {
     "id": 4386,
-    "version": 8,
+    "version": 9,
     "slug": "annual-percentage-change-nuclear",
     "title": "Annual percentage change in nuclear energy generation",
     "subtitle": "Shown is the percentage change in nuclear energy generation relative to the previous year.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": 2018,
+    "minTime": 1966,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -2863,7 +2866,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -2883,12 +2886,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143033
+      "variableId": 413965
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143033,
+        "variableId": 413965,
         "display": {
           "name": "Nuclear",
           "unit": "%",
@@ -2910,7 +2913,7 @@ const grapherConfigs =
   },
   {
     "id": 4387,
-    "version": 8,
+    "version": 10,
     "slug": "annual-change-coal",
     "title": "Annual change in coal energy consumption",
     "subtitle": "Shown is the change in coal energy consumption relative to the previous year, measured in terawatt-hours.",
@@ -2918,7 +2921,6 @@ const grapherConfigs =
     "hideTitleAnnotation": true,
     "minTime": "latest",
     "hasMapTab": true,
-    "tab": "map",
     "originUrl": "ourworldindata.org/energy",
     "isPublished": true,
     "yAxis": {
@@ -2965,19 +2967,25 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Switzerland",
+      "United Kingdom",
+      "France"
+    ],
     "selectedEntityIds": [
       7
     ]
   },
   {
     "id": 4388,
-    "version": 11,
+    "version": 12,
     "slug": "annual-percentage-change-coal",
     "title": "Annual percentage change in coal energy consumption",
     "subtitle": "Shown is the percentage change in coal energy consumption relative to the previous year.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "originUrl": "ourworldindata.org/energy",
     "isPublished": true,
@@ -2989,7 +2997,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BrBG",
         "colorSchemeInvert": true,
@@ -3006,12 +3014,12 @@ const grapherConfigs =
           100
         ]
       },
-      "variableId": 143027
+      "variableId": 413953
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143027,
+        "variableId": 413953,
         "display": {
           "name": "Coal",
           "unit": "%",
@@ -3035,7 +3043,7 @@ const grapherConfigs =
   },
   {
     "id": 4389,
-    "version": 7,
+    "version": 8,
     "slug": "annual-change-oil",
     "title": "Annual change in oil consumption",
     "subtitle": "Shown is the change in oil energy consumption relative to the previous year, measured in terawatt-hours.",
@@ -3053,7 +3061,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PRGn",
         "colorSchemeInvert": true,
@@ -3071,12 +3079,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143032
+      "variableId": 413956
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143032,
+        "variableId": 413956,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -3097,12 +3105,13 @@ const grapherConfigs =
   },
   {
     "id": 4390,
-    "version": 7,
+    "version": 8,
     "slug": "annual-percentage-change-oil",
     "title": "Annual percentage change in oil consumption",
     "subtitle": "Shown is the percentage change in oil energy consumption relative to the previous year.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "originUrl": "ourworldindata.org/energy",
     "isPublished": true,
     "yAxis": {
@@ -3115,12 +3124,13 @@ const grapherConfigs =
     "map": {
       "colorScale": {
         "binningStrategy": "equalInterval"
-      }
+      },
+      "variableId": 413955
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143031,
+        "variableId": 413955,
         "display": {
           "name": "Oil",
           "unit": "%",
@@ -3591,13 +3601,14 @@ const grapherConfigs =
   },
   {
     "id": 4398,
-    "version": 9,
+    "version": 10,
     "slug": "annual-percentage-change-hydro",
     "title": "Annual percentage change in hydropower generation",
     "subtitle": "Shown is the percentage change in hydropower generation relative to the previous year. ",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "originUrl": "ourworldindata.org/energy",
     "isPublished": true,
@@ -3609,7 +3620,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3628,12 +3639,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143035
+      "variableId": 413963
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143035,
+        "variableId": 413963,
         "display": {
           "name": "Hydropower",
           "unit": "%",
