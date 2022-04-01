@@ -644,7 +644,6 @@
 /grapher/annual-co2-emissions-per-countryy /grapher/annual-co2-emissions-per-country 302!
 /grapher/annual-co2-emissions-by-region /grapher/annual-co-emissions-by-region 302!
 /grapher/cumulative-co2-emissions /grapher/cumulative-co-emissions 302!
-/grapher/global-co2-concentration-ppm /grapher/global-co-concentration-ppm 302!
 /grapher/co2-emissions-per-capita /grapher/co-emissions-per-capita 302!
 /grapher/so2-emissions-per-capita-tonnes-per-year /grapher/so-emissions-per-capita-tonnes-per-year 302!
 /grapher/so2-emissions-million-tonnes-per-year /grapher/so-emissions-tonnes-per-year 302!
@@ -1168,7 +1167,6 @@
 /grapher/tests-of-covid-19-per-million-people-vs-gdp-per-capita /grapher/tests-of-covid-19-per-thousand-people-vs-gdp-per-capita 302!
 /grapher/restrictions-on-internal-movement-oxbsg /grapher/internal-movement-covid 302!
 /grapher/covid-contract-tracing /grapher/covid-contact-tracing 302!
-/grapher/no2-concentration /grapher/n2o-concentration-long 302!
 /grapher/co-emissions-per-capita-vs-gdp-per-capita-international- /grapher/co2-emissions-vs-gdp 302!
 /grapher/co2-emissionsvs-gdp /grapher/co2-emissions-vs-gdp 302!
 /grapher/annual-change-co2 /grapher/absolute-change-co2 302!
@@ -1273,8 +1271,6 @@
 /grapher/companies-publishing-sustainability-reports /grapher/companies-publishing-sustainability-reports-minimum-requirements 302!
 /grapher/excess-mortality-p-scores /grapher/excess-mortality-p-scores-average-baseline 302!
 /grapher/excess-mortality-p-scores-by-age /grapher/excess-mortality-p-scores-average-baseline-by-age 302!
-/grapher/n2o-concentration /grapher/n2o-concentration-long 302!
-/grapher/ch4-concentration /grapher/ch4-concentration-long 302!
 /grapher/world-regions-according-to-the-united-nations /grapher/world-regions-sdg-united-nations 302!
 /grapher/greenhouse-gas-emissions-by-sector /grapher/ghg-emissions-by-sector 302!
 /grapher/ghg-emissions-by-sector-land-use-excluded /grapher/ghg-emissions-by-sector 302!
