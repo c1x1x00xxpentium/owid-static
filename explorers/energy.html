@@ -417,7 +417,7 @@ const grapherConfigs =
   },
   {
     "id": 1385,
-    "version": 8,
+    "version": 9,
     "slug": "coal-consumption-per-capita",
     "title": "Per capita energy consumption from coal",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population",
@@ -434,7 +434,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
@@ -452,12 +452,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143211
+      "variableId": 413977
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143211,
+        "variableId": 413977,
         "display": {
           "name": "Coal per capita",
           "unit": "kilowatt-hours",
@@ -970,7 +970,7 @@ const grapherConfigs =
   },
   {
     "id": 4290,
-    "version": 9,
+    "version": 10,
     "slug": "coal-energy-share",
     "title": "Share of primary energy from coal",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -987,17 +987,17 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "equalInterval"
       },
-      "variableId": 143016
+      "variableId": 413941
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143016,
+        "variableId": 413941,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1015,7 +1015,7 @@ const grapherConfigs =
   },
   {
     "id": 4291,
-    "version": 9,
+    "version": 10,
     "slug": "oil-share-energy",
     "title": "Share of primary energy from oil",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1032,17 +1032,17 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "equalInterval"
       },
-      "variableId": 143018
+      "variableId": 413943
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143018,
+        "variableId": 413943,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1060,7 +1060,7 @@ const grapherConfigs =
   },
   {
     "id": 4292,
-    "version": 9,
+    "version": 10,
     "slug": "gas-share-energy",
     "title": "Share of primary energy from gas",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1077,7 +1077,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "Blues",
         "binningStrategy": "manual",
@@ -1089,12 +1089,12 @@ const grapherConfigs =
           50
         ]
       },
-      "variableId": 143017
+      "variableId": 413942
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143017,
+        "variableId": 413942,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1112,7 +1112,7 @@ const grapherConfigs =
   },
   {
     "id": 4293,
-    "version": 10,
+    "version": 11,
     "slug": "fossil-fuels-share-energy",
     "title": "Share of primary energy from fossil fuels",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1129,7 +1129,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -1148,12 +1148,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143025
+      "variableId": 413951
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143025,
+        "variableId": 413951,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1176,7 +1176,7 @@ const grapherConfigs =
   },
   {
     "id": 4294,
-    "version": 11,
+    "version": 12,
     "slug": "nuclear-primary-energy",
     "title": "Share of primary energy from nuclear",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1193,7 +1193,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2019,
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
@@ -1210,12 +1210,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143019
+      "variableId": 413945
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143019,
+        "variableId": 413945,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -1238,7 +1238,7 @@ const grapherConfigs =
   },
   {
     "id": 4295,
-    "version": 13,
+    "version": 14,
     "slug": "renewable-share-energy",
     "title": "Share of primary energy from renewable sources",
     "subtitle": "Renewable energy sources include hydropower, solar, wind, geothermal, bioenergy, wave, and tidal. They don't include traditional biofuels, which can be a key energy source, especially in lower-income settings.",
@@ -1256,7 +1256,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "timeTolerance": 10,
       "colorScale": {
         "baseColorScheme": "Greens",
@@ -1275,12 +1275,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143021
+      "variableId": 413947
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143021,
+        "variableId": 413947,
         "display": {
           "includeInTable": true,
           "tableDisplay": {
@@ -2247,7 +2247,7 @@ const grapherConfigs =
   },
   {
     "id": 4376,
-    "version": 10,
+    "version": 12,
     "slug": "per-capita-oil",
     "title": "Per capita oil consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
@@ -2264,7 +2264,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -2280,12 +2280,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143212
+      "variableId": 413978
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143212,
+        "variableId": 413978,
         "display": {
           "name": "Oil per capita",
           "unit": "kilowatt-hours",
@@ -2325,12 +2325,13 @@ const grapherConfigs =
   },
   {
     "id": 4377,
-    "version": 7,
+    "version": 8,
     "slug": "per-capita-gas",
     "title": "Per capita gas consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
     "hideTitleAnnotation": true,
-    "minTime": "latest",
+    "minTime": 2020,
+    "maxTime": 2020,
     "hasMapTab": true,
     "originUrl": "ourworldindata.org/energy",
     "isPublished": true,
@@ -2342,7 +2343,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
@@ -2358,12 +2359,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143213
+      "variableId": 413979
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143213,
+        "variableId": 413979,
         "display": {
           "unit": "kilowatt-hours",
           "shortUnit": "kWh",
@@ -2388,13 +2389,13 @@ const grapherConfigs =
   },
   {
     "id": 4378,
-    "version": 11,
+    "version": 12,
     "slug": "per-capita-renewables",
     "title": "Per capita energy consumption from renewables",
     "subtitle": "Renewables is the sum of energy from hydropower, wind, solar, geothermal, wave and tidal, and bioenergy. Traditional biofuels are not included.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
     "note": "'Primary energy’ refers to energy in its raw form, before conversion into electricity, heat or transport fuels. It is here measured in terms of 'input equivalents' via the substitution method: the amount of primary energy that would be required from fossil fuels to generate the same amount of electricity from renewables.",
-    "minTime": 2018,
+    "minTime": 1965,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -2407,7 +2408,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -2421,12 +2422,12 @@ const grapherConfigs =
           50
         ]
       },
-      "variableId": 143218
+      "variableId": 413984
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143218,
+        "variableId": 413984,
         "display": {
           "name": "Renewables",
           "unit": "megawatt-hours",
@@ -2454,14 +2455,14 @@ const grapherConfigs =
   },
   {
     "id": 4379,
-    "version": 11,
+    "version": 12,
     "slug": "per-capita-hydro",
     "title": "Per capita energy consumption from hydropower",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
     "note": "'Primary energy’ refers to energy in its raw form, before conversion into electricity, heat or transport fuels. It is here measured in terms of 'input equivalents' via the substitution method: the amount of primary energy that would be required from fossil fuels to generate the same amount of electricity from hydropower.",
     "hideTitleAnnotation": true,
-    "minTime": 2018,
+    "minTime": 1965,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/energy",
@@ -2474,7 +2475,7 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": "latest",
+      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBu",
         "binningStrategy": "manual",
@@ -2492,12 +2493,12 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 143217
+      "variableId": 413982
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 143217,
+        "variableId": 413982,
         "display": {
           "name": "Hydropower",
           "unit": "kilowatt-hours",
