@@ -1448,4 +1448,5 @@
 /grapher/public-expenditure-on-healthcare-as-share-of-national-gdp /grapher/public-health-expenditure-share-GDP-OWID 302!
 /grapher/world-health-expenditure-as-share-of-global-gdp /grapher/share-of-public-expenditure-on-healthcare-by-country 302!
 /grapher/public-expenditure-on-healthcare-by-country-income-groups /grapher/share-of-public-expenditure-on-healthcare-by-country 302!
-/grapher/share-of-global-mismanaged-plastic-waste /grapher/mismanaged-waste-global-total 302!
+/grapher/mismanaged-waste-global-total /grapher/share-of-global-mismanaged-plastic-waste 302!
+/grapher/mismanaged-plastic-waste-by-region-2010 /grapher/share-of-global-plastic-waste-emitted-to-the-ocean 302!
