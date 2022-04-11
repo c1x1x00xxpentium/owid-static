@@ -7430,7 +7430,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-people-who-say-they-are-happy-Eurobarometer</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/children-per-woman-by-gdp-per-capita</loc>
@@ -8302,7 +8302,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/maize-yields</loc>
-        <lastmod>2020-02-14</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/cocoa-bean-yields</loc>
@@ -14110,7 +14110,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/maize-production</loc>
-        <lastmod>2020-03-08</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/rice-production-by-region</loc>
@@ -18178,7 +18178,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-ghg-emissions</loc>
-        <lastmod>2022-02-25</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-ghg-emissions-excluding-lufc</loc>
@@ -18418,7 +18418,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-ghg-emissions</loc>
-        <lastmod>2022-02-22</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/per-capita-ghg-sector</loc>
@@ -21590,11 +21590,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/donated-official-development-assistance-grants-for-poverty-reduction</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/received-official-development-assistance-grants-for-poverty-reduction</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-population-living-on-less-than-half-of-the-median-income</loc>
@@ -21886,7 +21886,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/broad-money-to-total-reserves-ratio</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/zero-emission-vehicle-commitments</loc>
@@ -21898,19 +21898,19 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/bank-capital-to-total-assets-ratio</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/foreign-direct-investment-net-inflows-as-a-share-of-gdp</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/annual-broad-money-growth</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/total-reserves-in-months-of-imports</loc>
-        <lastmod>2022-02-17</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/annual-growth-of-the-gross-capital-formation</loc>
@@ -22390,11 +22390,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/implementation-of-integrated-water-resource-management</loc>
-        <lastmod>2022-02-21</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/expenditure-on-cultural-and-natural-heritage-per-capita</loc>
-        <lastmod>2022-04-08</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/country-position-nuclear-weapons</loc>
@@ -22522,10 +22522,14 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-final-energy-consumption-from-renewable-sources</loc>
-        <lastmod>2022-04-08</lastmod>
+        <lastmod>2022-04-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/public-healthcare-spending-share-gdp</loc>
         <lastmod>2022-04-08</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/national-progress-towards-aichi-biodiversity-target-2</loc>
+        <lastmod>2022-04-11</lastmod>
     </url>
 </urlset>
