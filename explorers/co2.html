@@ -1175,7 +1175,7 @@ const grapherConfigs =
   },
   {
     "id": 4222,
-    "version": 6,
+    "version": 8,
     "slug": "methane-emissions",
     "title": "Methane emissions",
     "subtitle": "Methane (CH₄) emissions are measured in tonnes of carbon dioxide equivalents (CO₂e) based on a 100-year global warming potential value. ",
@@ -1193,18 +1193,17 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2018,
+      "timeTolerance": 5,
       "colorScale": {
         "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
         "customNumericValues": [
           10000000,
-          50000000,
+          30000000,
           100000000,
-          50000000,
-          100000000,
-          500000000,
-          1000000000
+          300000000,
+          1000000000,
+          3000000000
         ],
         "customNumericColors": [
           null
@@ -1217,6 +1216,14 @@ const grapherConfigs =
         "property": "y",
         "variableId": 347635
       }
+    ],
+    "selectedEntityNames": [
+      "Netherlands",
+      "France",
+      "United States",
+      "United Kingdom",
+      "China",
+      "India"
     ],
     "selectedEntityIds": [
       5,
