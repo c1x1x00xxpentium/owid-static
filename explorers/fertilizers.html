@@ -93,7 +93,7 @@ const grapherConfigs =
   },
   {
     "id": 1088,
-    "version": 3,
+    "version": 4,
     "slug": "phosphate-application-per-hectare-of-cropland",
     "title": "Phosphate fertilizer use per hectare of cropland",
     "subtitle": "Application of phosphate fertilizer, measured in kilograms of total nutrient per hectare.",
@@ -107,24 +107,22 @@ const grapherConfigs =
       "max": 0
     },
     "map": {
-      "time": 2017,
-      "timeTolerance": 1,
+      "timeTolerance": 5,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "colorSchemeInvert": false,
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
-          2.5,
+          1,
+          2,
           5,
           10,
-          25,
+          20,
           50,
-          75,
           100,
-          150,
           200,
-          250
+          500
         ],
         "customNumericLabels": [
           "",
@@ -153,6 +151,11 @@ const grapherConfigs =
           "includeInTable": true
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Poland",
+      "Norway",
+      "Namibia"
     ],
     "selectedEntityIds": [
       11,
