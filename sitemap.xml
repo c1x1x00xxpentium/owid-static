@@ -2786,7 +2786,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/technological-change</loc>
-        <lastmod>2022-03-29</lastmod>
+        <lastmod>2022-04-20</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/happiness-and-life-satisfaction</loc>
@@ -22454,6 +22454,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/government-transparency</loc>
+        <lastmod>2022-04-20</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/historical-cost-of-computer-memory-and-storage</loc>
         <lastmod>2022-04-20</lastmod>
     </url>
 </urlset>
