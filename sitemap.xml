@@ -5550,7 +5550,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/covid-exemplar-vietnam-2020</loc>
-        <lastmod>2022-03-16</lastmod>
+        <lastmod>2022-04-22</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/land-use-diets</loc>
@@ -22459,5 +22459,9 @@
     <url>
         <loc>https://ourworldindata.org/grapher/historical-cost-of-computer-memory-and-storage</loc>
         <lastmod>2022-04-20</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/covid-tests-per-confirmed-case-exemplars</loc>
+        <lastmod>2022-04-22</lastmod>
     </url>
 </urlset>
