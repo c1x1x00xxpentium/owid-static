@@ -1435,7 +1435,7 @@
 /grapher/political-regimes-by-year-bmr /grapher/share-democracies-bmr 302!
 /grapher/median-age-vs-children-per-woman /grapher/median-age-vs-births-per-woman 302!
 /grapher/population-wdi /grapher/population 302!
-/grapher/sector-of-ai-training-compute /grapher/sector-providing-ai-training-compute 302!
+/grapher/sector-of-ai-training-compute /grapher/sector-providing-ai-training-compute-large-runs 302!
 /grapher/incidence-of-child-labour-in-india /grapher/incidence-of-child-labour 302!
 /grapher/correlation-between-education-and-democracy /grapher/liberal-democracy-today-vs-past-schooling 302!
 /grapher/political-regime-updated2016 /grapher/political-regime 302!
@@ -1459,3 +1459,4 @@
 /grapher/reported-cases-of-paralytic-polio /grapher/the-number-of-reported-paralytic-polio-cases 302!
 /grapher/reported-polio-cases-per-million /grapher/reported-paralytic-polio-cases-per-1-million-people 302!
 /grapher/voter-turnout-rate-by-age /grapher/voter-turnout-rate-by-age-usa 302!
+/grapher/sector-providing-ai-training-compute /grapher/sector-providing-ai-training-compute-large-runs 302!
