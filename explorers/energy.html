@@ -711,7 +711,7 @@ const grapherConfigs =
   },
   {
     "id": 3868,
-    "version": 9,
+    "version": 10,
     "slug": "primary-energy-cons",
     "title": "Primary energy consumption",
     "subtitle": "Primary energy consumption is measured in terawatt-hours (TWh). ",
@@ -731,7 +731,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "timeTolerance": 3,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
@@ -773,7 +772,7 @@ const grapherConfigs =
   },
   {
     "id": 4287,
-    "version": 8,
+    "version": 9,
     "slug": "change-energy-consumption",
     "title": "Annual change in primary energy consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & World Bank",
@@ -789,7 +788,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "RdYlBu",
@@ -827,13 +825,16 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "World"
+    ],
     "selectedEntityIds": [
       355
     ]
   },
   {
     "id": 4288,
-    "version": 11,
+    "version": 12,
     "slug": "abs-change-energy-consumption",
     "title": "Absolute annual change in primary energy consumption",
     "subtitle": "The annual change in primary energy consumption is measured in terawatt-hours (TWh) in one year relative to the previous year.",
@@ -852,7 +853,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "timeTolerance": 3,
       "colorScale": {
         "baseColorScheme": "PuOr",
@@ -887,6 +887,11 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Finland",
+      "Philippines",
+      "South Africa"
     ],
     "selectedEntityIds": [
       155,
@@ -960,7 +965,7 @@ const grapherConfigs =
   },
   {
     "id": 4290,
-    "version": 10,
+    "version": 11,
     "slug": "coal-energy-share",
     "title": "Share of primary energy from coal",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -977,7 +982,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "equalInterval"
@@ -997,6 +1001,11 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Pakistan",
+      "World",
+      "Mexico"
+    ],
     "selectedEntityIds": [
       101,
       355,
@@ -1005,7 +1014,7 @@ const grapherConfigs =
   },
   {
     "id": 4291,
-    "version": 10,
+    "version": 11,
     "slug": "oil-share-energy",
     "title": "Share of primary energy from oil",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1022,7 +1031,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "equalInterval"
@@ -1042,6 +1050,11 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Malaysia",
+      "Egypt",
+      "Slovenia"
+    ],
     "selectedEntityIds": [
       116,
       65,
@@ -1050,7 +1063,7 @@ const grapherConfigs =
   },
   {
     "id": 4292,
-    "version": 10,
+    "version": 11,
     "slug": "gas-share-energy",
     "title": "Share of primary energy from gas",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1067,7 +1080,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "Blues",
         "binningStrategy": "manual",
@@ -1094,6 +1106,11 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "North Macedonia",
+      "Luxembourg",
+      "Slovakia"
+    ],
     "selectedEntityIds": [
       66,
       210,
@@ -1102,7 +1119,7 @@ const grapherConfigs =
   },
   {
     "id": 4293,
-    "version": 11,
+    "version": 12,
     "slug": "fossil-fuels-share-energy",
     "title": "Share of primary energy from fossil fuels",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1119,7 +1136,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -1227,7 +1243,7 @@ const grapherConfigs =
   },
   {
     "id": 4295,
-    "version": 14,
+    "version": 15,
     "slug": "renewable-share-energy",
     "title": "Share of primary energy from renewable sources",
     "subtitle": "Renewable energy sources include hydropower, solar, wind, geothermal, bioenergy, wave, and tidal. They don't include traditional biofuels, which can be a key energy source, especially in lower-income settings.",
@@ -1245,7 +1261,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "timeTolerance": 10,
       "colorScale": {
         "baseColorScheme": "Greens",
@@ -1292,7 +1307,7 @@ const grapherConfigs =
   },
   {
     "id": 4296,
-    "version": 10,
+    "version": 11,
     "slug": "hydro-share-energy",
     "title": "Share of primary energy from hydroelectric power",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1309,7 +1324,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -1337,6 +1351,11 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Croatia",
+      "Pakistan",
+      null
+    ],
     "selectedEntityIds": [
       165,
       101,
@@ -1345,7 +1364,7 @@ const grapherConfigs =
   },
   {
     "id": 4297,
-    "version": 11,
+    "version": 12,
     "slug": "solar-share-energy",
     "title": "Share of primary energy from solar",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1362,7 +1381,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -1404,7 +1422,7 @@ const grapherConfigs =
   },
   {
     "id": 4298,
-    "version": 11,
+    "version": 12,
     "slug": "wind-share-energy",
     "title": "Share of primary energy from wind",
     "note": "Primary energy is calculated using the 'substitution method' which takes account of the inefficiencies energy production from fossil fuels.",
@@ -1421,7 +1439,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "manual",
@@ -1466,7 +1483,7 @@ const grapherConfigs =
   },
   {
     "id": 4303,
-    "version": 12,
+    "version": 13,
     "slug": "low-carbon-share-energy",
     "title": "Share of primary energy from low-carbon sources",
     "subtitle": "Low-carbon energy is defined as the sum of nuclear and renewable sources. Renewable sources include hydropower, solar, wind, geothermal, wave and tidal and bioenergy. Traditional biofuels are not included.",
@@ -1484,7 +1501,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -1512,6 +1528,16 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "New Zealand",
+      "Italy",
+      "World",
+      "France",
+      "China",
+      "India",
+      "Japan",
+      "United States"
     ],
     "selectedEntityIds": [
       106,
@@ -2231,7 +2257,7 @@ const grapherConfigs =
   },
   {
     "id": 4376,
-    "version": 12,
+    "version": 13,
     "slug": "per-capita-oil",
     "title": "Per capita oil consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
@@ -2248,7 +2274,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -2309,7 +2334,7 @@ const grapherConfigs =
   },
   {
     "id": 4377,
-    "version": 8,
+    "version": 9,
     "slug": "per-capita-gas",
     "title": "Per capita gas consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy & UN Population Division",
@@ -2327,7 +2352,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
@@ -2361,6 +2385,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Singapore",
+      "Norway",
+      "Germany",
+      "South Korea",
+      "Russia",
+      "United States",
+      "Canada"
+    ],
     "selectedEntityIds": [
       86,
       102,
@@ -2373,7 +2406,7 @@ const grapherConfigs =
   },
   {
     "id": 4378,
-    "version": 12,
+    "version": 13,
     "slug": "per-capita-renewables",
     "title": "Per capita energy consumption from renewables",
     "subtitle": "Renewables is the sum of energy from hydropower, wind, solar, geothermal, wave and tidal, and bioenergy. Traditional biofuels are not included.",
@@ -2392,7 +2425,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -2426,6 +2458,16 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "South Africa",
+      "Netherlands",
+      "United Kingdom",
+      "France",
+      "Sweden",
+      "United States",
+      "India",
+      "Brazil"
+    ],
     "selectedEntityIds": [
       81,
       5,
@@ -2439,7 +2481,7 @@ const grapherConfigs =
   },
   {
     "id": 4379,
-    "version": 12,
+    "version": 13,
     "slug": "per-capita-hydro",
     "title": "Per capita energy consumption from hydropower",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -2459,7 +2501,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBu",
         "binningStrategy": "manual",
@@ -2496,6 +2537,16 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Sweden",
+      "France",
+      "United Kingdom",
+      "Brazil",
+      "Chile",
+      "China",
+      "Argentina",
+      "Canada"
+    ],
     "selectedEntityIds": [
       10,
       3,
@@ -2509,7 +2560,7 @@ const grapherConfigs =
   },
   {
     "id": 4380,
-    "version": 15,
+    "version": 16,
     "slug": "per-capita-wind",
     "title": "Per capita energy consumption from wind",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -2530,7 +2581,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGn",
         "binningStrategy": "manual",
@@ -2563,6 +2613,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "India",
+      "China",
+      "Germany",
+      "United States",
+      "United Kingdom",
+      "Denmark",
+      "Switzerland"
+    ],
     "selectedEntityIds": [
       137,
       171,
@@ -2575,7 +2634,7 @@ const grapherConfigs =
   },
   {
     "id": 4381,
-    "version": 11,
+    "version": 12,
     "slug": "per-capita-solar",
     "title": "Per capita energy consumption from solar",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -2595,7 +2654,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "OrRd",
         "binningStrategy": "manual",
@@ -2628,6 +2686,16 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Spain",
+      "India",
+      "Portugal",
+      "United Kingdom",
+      "China",
+      "Australia",
+      "New Zealand",
+      "United States"
+    ],
     "selectedEntityIds": [
       9,
       137,
@@ -2641,7 +2709,7 @@ const grapherConfigs =
   },
   {
     "id": 4382,
-    "version": 12,
+    "version": 13,
     "slug": "per-capita-nuclear",
     "title": "Per capita energy consumption from nuclear",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -2661,7 +2729,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "manual",
@@ -2693,6 +2760,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "France",
+      "Germany",
+      "Japan",
+      "China",
+      "South Korea",
+      "India",
+      "Sweden"
+    ],
     "selectedEntityIds": [
       3,
       6,
@@ -2705,7 +2781,7 @@ const grapherConfigs =
   },
   {
     "id": 4383,
-    "version": 11,
+    "version": 12,
     "slug": "per-capita-low-carbon-energy",
     "title": "Per capita consumption of low-carbon energy",
     "subtitle": "Low carbon energy is the sum of nuclear and renewable energy sources. This is based on primary energy equivalents, rather than final electricity use.",
@@ -2725,7 +2801,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -2757,6 +2832,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Sweden",
+      "France",
+      "Australia",
+      "United States",
+      "United Kingdom",
+      "China",
+      "Japan"
+    ],
     "selectedEntityIds": [
       10,
       3,
@@ -2769,7 +2853,7 @@ const grapherConfigs =
   },
   {
     "id": 4385,
-    "version": 11,
+    "version": 12,
     "slug": "annual-change-nuclear",
     "title": "Annual change in nuclear energy generation",
     "subtitle": "Shown is the change in nuclear energy generation relative to the previous year, measured in terawatt-hours.",
@@ -2787,7 +2871,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdYlBu",
         "binningStrategy": "manual",
@@ -2821,6 +2904,14 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "World",
+      "India",
+      "Germany",
+      "China",
+      "Japan",
+      "United States"
+    ],
     "selectedEntityIds": [
       355,
       137,
@@ -2832,7 +2923,7 @@ const grapherConfigs =
   },
   {
     "id": 4386,
-    "version": 9,
+    "version": 10,
     "slug": "annual-percentage-change-nuclear",
     "title": "Annual percentage change in nuclear energy generation",
     "subtitle": "Shown is the percentage change in nuclear energy generation relative to the previous year.",
@@ -2851,7 +2942,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -2888,6 +2978,13 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Canada",
+      "World",
+      "France",
+      "Germany",
+      "China"
+    ],
     "selectedEntityIds": [
       44,
       355,
@@ -2898,7 +2995,7 @@ const grapherConfigs =
   },
   {
     "id": 4387,
-    "version": 14,
+    "version": 15,
     "slug": "annual-change-coal",
     "title": "Annual change in coal energy consumption",
     "subtitle": "Shown is the change in coal energy consumption relative to the previous year, measured in terawatt-hours.",
@@ -2916,7 +3013,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BrBG",
         "colorSchemeInvert": true,
@@ -2966,7 +3062,7 @@ const grapherConfigs =
   },
   {
     "id": 4388,
-    "version": 12,
+    "version": 13,
     "slug": "annual-percentage-change-coal",
     "title": "Annual percentage change in coal energy consumption",
     "subtitle": "Shown is the percentage change in coal energy consumption relative to the previous year.",
@@ -2985,7 +3081,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BrBG",
         "colorSchemeInvert": true,
@@ -3019,6 +3114,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Italy",
+      "World",
+      "China",
+      "India",
+      "Germany",
+      "United States",
+      "France"
+    ],
     "selectedEntityIds": [
       8,
       355,
@@ -3031,7 +3135,7 @@ const grapherConfigs =
   },
   {
     "id": 4389,
-    "version": 8,
+    "version": 9,
     "slug": "annual-change-oil",
     "title": "Annual change in oil consumption",
     "subtitle": "Shown is the change in oil energy consumption relative to the previous year, measured in terawatt-hours.",
@@ -3049,7 +3153,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PRGn",
         "colorSchemeInvert": true,
@@ -3081,6 +3184,14 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "Finland",
+      "Portugal",
+      "Norway",
+      "Brazil",
+      "Australia",
+      "United States"
     ],
     "selectedEntityIds": [
       155,
@@ -3141,7 +3252,7 @@ const grapherConfigs =
   },
   {
     "id": 4391,
-    "version": 8,
+    "version": 9,
     "slug": "annual-change-gas",
     "title": "Annual change in gas consumption",
     "subtitle": "Shown is the change in gas energy consumption relative to the previous year, measured in terawatt-hours.",
@@ -3159,7 +3270,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PiYG",
         "colorSchemeInvert": true,
@@ -3194,6 +3304,13 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "Brazil",
+      "Russia"
+    ],
     "selectedEntityIds": [
       13,
       44,
@@ -3204,7 +3321,7 @@ const grapherConfigs =
   },
   {
     "id": 4392,
-    "version": 9,
+    "version": 10,
     "slug": "annual-percentage-change-gas",
     "title": "Annual percentage change in gas consumption",
     "subtitle": "Shown is the percentage change in gas energy consumption relative to the previous year.",
@@ -3224,7 +3341,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PiYG",
         "binningStrategy": "manual",
@@ -3258,6 +3374,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "United States",
+      "United Kingdom",
+      "Spain",
+      "Russia",
+      "China",
+      "India",
+      "World"
+    ],
     "selectedEntityIds": [
       13,
       1,
@@ -3270,7 +3395,7 @@ const grapherConfigs =
   },
   {
     "id": 4393,
-    "version": 9,
+    "version": 10,
     "slug": "annual-change-fossil-fuels",
     "title": "Annual change in fossil fuel consumption",
     "subtitle": "Shown is the change in fossil energy consumption relative to the previous year, measured in terawatt-hours. This is the sum of energy from coal, oil and gas.",
@@ -3288,7 +3413,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BrBG",
         "colorSchemeInvert": true,
@@ -3320,6 +3444,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "China",
+      "India",
+      "United States",
+      "United Kingdom",
+      "Germany",
+      "Japan",
+      "South Africa"
+    ],
     "selectedEntityIds": [
       171,
       137,
@@ -3332,7 +3465,7 @@ const grapherConfigs =
   },
   {
     "id": 4394,
-    "version": 9,
+    "version": 10,
     "slug": "annual-percentage-change-fossil-fuels",
     "title": "Annual percentage change in fossil fuel consumption",
     "subtitle": "Shown is the percentage change in fossil energy consumption relative to the previous year. This is the sum of energy from coal, oil and gas.",
@@ -3352,7 +3485,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BrBG",
         "colorSchemeInvert": true,
@@ -3388,6 +3520,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "World",
+      "China",
+      "India",
+      "United States",
+      "United Kingdom",
+      "Germany",
+      "Spain"
+    ],
     "selectedEntityIds": [
       355,
       171,
@@ -3400,7 +3541,7 @@ const grapherConfigs =
   },
   {
     "id": 4395,
-    "version": 9,
+    "version": 10,
     "slug": "annual-change-renewables",
     "title": "Annual change in renewable energy generation",
     "subtitle": "Shown is the change in renewable energy generation relative to the previous year, measured in terawatt-hours. This is the sum of energy from hydropower, solar, wind, geothermal, wave and tidal, and bioenergy.",
@@ -3418,7 +3559,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -3455,6 +3595,14 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "China",
+      "India",
+      "United States",
+      "France",
+      "Germany",
+      "Australia"
+    ],
     "selectedEntityIds": [
       171,
       137,
@@ -3466,7 +3614,7 @@ const grapherConfigs =
   },
   {
     "id": 4396,
-    "version": 9,
+    "version": 10,
     "slug": "annual-percentage-change-renewables",
     "title": "Annual percentage change in renewable energy generation",
     "subtitle": "Shown is the percentage change in renewable energy generation relative to the previous year. This is the sum of energy from hydropower, solar, wind, geothermal, wave and tidal, and bioenergy.",
@@ -3484,7 +3632,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -3517,6 +3664,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "World",
+      "China",
+      "India",
+      "United States",
+      "United Kingdom",
+      "Australia",
+      "Spain"
+    ],
     "selectedEntityIds": [
       355,
       171,
@@ -3529,7 +3685,7 @@ const grapherConfigs =
   },
   {
     "id": 4397,
-    "version": 10,
+    "version": 11,
     "slug": "annual-change-hydro",
     "title": "Annual change in hydropower generation",
     "subtitle": "Shown is the change in renewable energy generation relative to the previous year, measured in terawatt-hours. ",
@@ -3547,7 +3703,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdYlBu",
         "binningStrategy": "manual",
@@ -3578,6 +3733,14 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Switzerland",
+      "Sweden",
+      "Germany",
+      "France",
+      "China",
+      "India"
+    ],
     "selectedEntityIds": [
       7,
       10,
@@ -3589,7 +3752,7 @@ const grapherConfigs =
   },
   {
     "id": 4398,
-    "version": 10,
+    "version": 11,
     "slug": "annual-percentage-change-hydro",
     "title": "Annual percentage change in hydropower generation",
     "subtitle": "Shown is the percentage change in hydropower generation relative to the previous year. ",
@@ -3608,7 +3771,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3644,6 +3806,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "World",
+      "China",
+      "India",
+      "United States",
+      "United Kingdom",
+      "France",
+      "Germany"
+    ],
     "selectedEntityIds": [
       355,
       171,
@@ -3656,7 +3827,7 @@ const grapherConfigs =
   },
   {
     "id": 4399,
-    "version": 10,
+    "version": 11,
     "slug": "annual-change-wind",
     "title": "Annual change in wind energy generation",
     "subtitle": "Shown is the change in wind energy generation relative to the previous year, measured in terawatt-hours. ",
@@ -3675,7 +3846,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3706,6 +3876,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Hungary",
+      "Sweden",
+      "United Kingdom",
+      "Ireland",
+      "India",
+      "Denmark",
+      "Austria"
+    ],
     "selectedEntityIds": [
       138,
       10,
@@ -3718,7 +3897,7 @@ const grapherConfigs =
   },
   {
     "id": 4400,
-    "version": 10,
+    "version": 11,
     "slug": "annual-percentage-change-wind",
     "title": "Annual percentage change in wind energy generation",
     "subtitle": "Shown is the percentage change in wind energy generation relative to the previous year. ",
@@ -3738,7 +3917,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3771,6 +3949,15 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "United States",
+      "United Kingdom",
+      "World",
+      "Sweden",
+      "India",
+      "China",
+      "Finland"
+    ],
     "selectedEntityIds": [
       13,
       1,
@@ -3783,7 +3970,7 @@ const grapherConfigs =
   },
   {
     "id": 4401,
-    "version": 10,
+    "version": 11,
     "slug": "annual-change-solar",
     "title": "Annual change in solar energy generation",
     "subtitle": "Shown is the change in solar energy generation relative to the previous year, measured in terawatt-hours. ",
@@ -3802,7 +3989,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -3840,6 +4026,13 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "China",
+      "Australia",
+      "Spain",
+      "United States"
     ],
     "selectedEntityIds": [
       137,
@@ -3914,7 +4107,7 @@ const grapherConfigs =
   },
   {
     "id": 4403,
-    "version": 9,
+    "version": 10,
     "slug": "annual-change-low-carbon-energy",
     "title": "Annual change in low-carbon energy generation",
     "subtitle": "Shown is the change in low-carbon energy generation relative to the previous year, measured in terawatt-hours. This is the sum of energy from nuclear and renewable sources.",
@@ -3933,7 +4126,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuOr",
         "binningStrategy": "manual",
@@ -3970,6 +4162,14 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "China",
+      "India",
+      "United States",
+      "United Kingdom",
+      "Australia",
+      "Brazil"
+    ],
     "selectedEntityIds": [
       171,
       137,
@@ -3981,7 +4181,7 @@ const grapherConfigs =
   },
   {
     "id": 4404,
-    "version": 12,
+    "version": 13,
     "slug": "annual-percentage-change-low-carbon",
     "title": "Annual percentage change in low-carbon energy generation",
     "subtitle": "Shown is the percentage change in renewable energy generation relative to the previous year. This is the sum of nuclear and renewable sources.",
@@ -3999,7 +4199,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "RdBu",
         "binningStrategy": "manual",
@@ -4035,6 +4234,17 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Spain",
+      "China",
+      "World",
+      "France",
+      "Norway",
+      "United States",
+      "Germany",
+      "India",
+      "Australia"
+    ],
     "selectedEntityIds": [
       9,
       171,
@@ -4049,7 +4259,7 @@ const grapherConfigs =
   },
   {
     "id": 4434,
-    "version": 11,
+    "version": 12,
     "slug": "fossil-fuels-per-capita",
     "title": "Fossil fuel consumption per capita",
     "subtitle": "Fossil fuel consumption per capita is measured as the average consumption of energy from coal, oil and gas per person.",
@@ -4067,7 +4277,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -4198,7 +4407,7 @@ const grapherConfigs =
   },
   {
     "id": 4436,
-    "version": 7,
+    "version": 8,
     "slug": "low-carbon-energy-consumption",
     "title": "Low-carbon energy consumption",
     "subtitle": "Low-carbon energy is defined as the sum of nuclear and renewable sources. Renewable sources include hydropower, solar, wind, geothermal, wave and tidal and bioenergy. Traditional biofuels are not included.",
@@ -4217,7 +4426,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -4251,6 +4459,11 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "Oman",
+      "Africa",
+      "Indonesia"
+    ],
     "selectedEntityIds": [
       217,
       273,
@@ -4259,7 +4472,7 @@ const grapherConfigs =
   },
   {
     "id": 4437,
-    "version": 8,
+    "version": 9,
     "slug": "primary-energy-nuclear",
     "title": "Primary energy consumption from nuclear",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4278,7 +4491,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "BuPu",
         "binningStrategy": "manual",
@@ -4312,6 +4524,14 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "France",
+      "China",
+      "Sweden",
+      "United States",
+      "Germany",
+      "Japan"
+    ],
     "selectedEntityIds": [
       3,
       171,
@@ -4323,7 +4543,7 @@ const grapherConfigs =
   },
   {
     "id": 4438,
-    "version": 7,
+    "version": 8,
     "slug": "primary-energy-renewables",
     "title": "Primary energy consumption from renewables",
     "subtitle": "Renewable energy includes hydropower, solar, wind, geothermal, wave and tidal and bioenergy. Traditional biofuels are not included. Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4342,7 +4562,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlGn",
         "binningStrategy": "manual",
@@ -4374,6 +4593,13 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "United States",
+      "United Kingdom",
+      "France",
+      "India",
+      "China"
+    ],
     "selectedEntityIds": [
       13,
       1,
@@ -4384,7 +4610,7 @@ const grapherConfigs =
   },
   {
     "id": 4439,
-    "version": 7,
+    "version": 8,
     "slug": "primary-energy-hydro",
     "title": "Primary energy consumption from hydropower",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4402,7 +4628,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "GnBu",
         "binningStrategy": "manual",
@@ -4434,6 +4659,12 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "France",
+      "Sweden",
+      "Canada",
+      "China"
+    ],
     "selectedEntityIds": [
       3,
       10,
@@ -4443,7 +4674,7 @@ const grapherConfigs =
   },
   {
     "id": 4440,
-    "version": 8,
+    "version": 9,
     "slug": "primary-energy-consumption-from-solar",
     "title": "Primary energy consumption from solar",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4461,7 +4692,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrRd",
         "binningStrategy": "manual",
@@ -4496,6 +4726,14 @@ const grapherConfigs =
         }
       }
     ],
+    "selectedEntityNames": [
+      "India",
+      "China",
+      "United States",
+      "United Kingdom",
+      "Brazil",
+      "Spain"
+    ],
     "selectedEntityIds": [
       137,
       171,
@@ -4507,7 +4745,7 @@ const grapherConfigs =
   },
   {
     "id": 4441,
-    "version": 8,
+    "version": 9,
     "slug": "primary-energy-wind",
     "title": "Primary energy consumption from wind",
     "subtitle": "Energy consumption is based on primary energy equivalents, rather than final electricity use.",
@@ -4526,7 +4764,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "equalInterval"
@@ -4548,6 +4785,14 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "China",
+      "Portugal",
+      "Spain",
+      "United Kingdom",
+      "Brazil"
     ],
     "selectedEntityIds": [
       137,
@@ -4978,7 +5223,7 @@ const grapherConfigs =
   },
   {
     "id": 4449,
-    "version": 6,
+    "version": 7,
     "slug": "fossil-fuel-primary-energy",
     "title": "Fossil fuel consumption",
     "sourceDesc": "Our World in Data based on BP Statistical Review of World Energy",
@@ -4995,7 +5240,6 @@ const grapherConfigs =
       "binningStrategy": "equalInterval"
     },
     "map": {
-      "time": 2020,
       "colorScale": {
         "baseColorScheme": "YlOrBr",
         "binningStrategy": "manual",
@@ -5023,6 +5267,14 @@ const grapherConfigs =
           }
         }
       }
+    ],
+    "selectedEntityNames": [
+      "India",
+      "South Africa",
+      "Japan",
+      "Australia",
+      "United States",
+      "United Kingdom"
     ],
     "selectedEntityIds": [
       137,
@@ -5851,7 +6103,7 @@ const grapherConfigs =
   },
   {
     "id": 5636,
-    "version": 3,
+    "version": 4,
     "slug": "net-electricity-imports",
     "title": "Net electricity imports",
     "subtitle": "Net electricity imports are calculated as electricity imports minus exports. Countries with positive values are net importers of electricity; negative values are net exporters.",
@@ -5863,7 +6115,6 @@ const grapherConfigs =
       "min": 0
     },
     "map": {
-      "time": 2021,
       "timeTolerance": 2,
       "colorScale": {
         "baseColorScheme": "RdBu",
