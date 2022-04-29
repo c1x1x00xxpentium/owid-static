@@ -2754,7 +2754,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/food-supply</loc>
-        <lastmod>2022-03-03</lastmod>
+        <lastmod>2022-04-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/literacy</loc>
@@ -4242,7 +4242,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-77</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-04-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-78</loc>
@@ -8101,14 +8101,6 @@
         <lastmod>2022-02-25</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/protein-supply-by-region</loc>
-        <lastmod>2019-01-15</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/fat-supply-by-region</loc>
-        <lastmod>2018-12-12</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/daily-protein-supply-per-capita-vs-gdp-per-capita</loc>
         <lastmod>2019-10-26</lastmod>
     </url>
@@ -10003,10 +9995,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/us-women-are-overrepresented-in-low-wage-occupations</loc>
         <lastmod>2019-11-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/average-per-capita-supply-of-pulses</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/agricultural-land-irrigation</loc>
@@ -12747,10 +12735,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-top-1-in-pre-tax-national-income</loc>
         <lastmod>2018-07-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/daily-protein-plant-and-animal-products</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/global-meat-projections-to-2050</loc>
@@ -15687,10 +15671,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/average-learning-outcomes-by-total-education-expenditure-per-capita</loc>
         <lastmod>2019-02-28</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/per-capita-milk-vs-gdp</loc>
-        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/population-growth-rate-vs-median-age</loc>
