@@ -3206,7 +3206,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/agricultural-land-by-global-diets</loc>
-        <lastmod>2022-02-10</lastmod>
+        <lastmod>2022-04-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/meat-production</loc>
@@ -7506,7 +7506,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/fish-consumption-vs-gdp-per-capita</loc>
-        <lastmod>2021-08-29</lastmod>
+        <lastmod>2022-04-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/national-gdp</loc>
@@ -8411,10 +8411,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/dietary-land-use-vs-beef-consumption</loc>
         <lastmod>2022-04-12</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/dietary-land-use-vs-pigmeat-consumption</loc>
-        <lastmod>2018-03-15</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/peaking-farmland-global-arable-and-permanent-crop-area-and-ausubel-2013-projections-of-peak-farmland</loc>
@@ -10242,7 +10238,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/antibiotic-use-in-livestock-vs-meat-supply-per-capita</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2022-04-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/does-livestock-antibiotic-use-exceed-suggested-target</loc>
@@ -10254,7 +10250,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/daily-meat-consumption-per-person</loc>
-        <lastmod>2022-04-25</lastmod>
+        <lastmod>2022-04-29</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/antibiotic-use-in-livestock-vs-gdp-per-capita</loc>
