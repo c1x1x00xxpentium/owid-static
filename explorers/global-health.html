@@ -3416,11 +3416,11 @@ const grapherConfigs =
   },
   {
     "id": 2926,
-    "version": 11,
+    "version": 12,
     "slug": "the-incidence-of-malaria-per-1000-population",
     "title": "Incidence of malaria",
     "subtitle": "Incidence refers to the number of new malaria infections per 1,000 people at risk.",
-    "sourceDesc": "Institute for Health Metrics and Evaluation (IHME)",
+    "sourceDesc": "Institute for Health Metrics and Evaluation, Global Burden of Disease (2019)",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
     "tab": "map",
@@ -3431,19 +3431,20 @@ const grapherConfigs =
       "max": 0
     },
     "map": {
+      "time": "latest",
       "colorScale": {
         "baseColorScheme": "Oranges",
         "binningStrategy": "manual",
         "customNumericValues": [
-          0,
           10,
+          50,
           100,
-          200,
-          300,
-          300
+          250,
+          500,
+          1000
         ],
         "customNumericLabels": [
-          "0",
+          "",
           null,
           null,
           null,
@@ -3452,7 +3453,7 @@ const grapherConfigs =
         ],
         "customNumericColorsActive": true,
         "customNumericColors": [
-          "#fff8f2",
+          null,
           null,
           "#fca55a",
           null,
@@ -4515,14 +4516,14 @@ const grapherConfigs =
   },
   {
     "id": 3798,
-    "version": 8,
+    "version": 10,
     "slug": "infant-mortality-rate",
     "title": "Infant mortality rate",
     "subtitle": "The share of newborns who die before reaching one year of age.",
-    "sourceDesc": "Institute for Health Metrics and Evaluation (IHME)",
+    "sourceDesc": "Institute for Health Metrics and Evaluation, Global Burden of Disease (2019)",
     "hideTitleAnnotation": true,
     "minTime": 1990,
-    "maxTime": 2017,
+    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/child-mortality",
@@ -4532,15 +4533,26 @@ const grapherConfigs =
       "max": 0
     },
     "map": {
+      "time": "latest",
       "colorScale": {
-        "binningStrategy": "equalInterval"
+        "binningStrategy": "manual",
+        "customNumericValues": [
+          1000,
+          2500,
+          5000,
+          10000,
+          25000
+        ],
+        "customNumericColors": [
+          null
+        ]
       },
       "variableId": 109782
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 247439,
+        "variableId": 418385,
         "display": {
           "unit": "deaths per 100,000 people",
           "includeInTable": true
@@ -4560,14 +4572,14 @@ const grapherConfigs =
   },
   {
     "id": 3799,
-    "version": 8,
+    "version": 10,
     "slug": "number-of-neonatal-deaths-ihme",
     "title": "Number of neonatal deaths",
     "subtitle": "Number of newborns dying before reaching 28 days of age.",
-    "sourceDesc": "Institute for Health Metrics and Evaluation (IHME)",
+    "sourceDesc": "Institute for Health Metrics and Evaluation, Global Burden of Disease (2019)",
     "hideTitleAnnotation": true,
     "minTime": 1990,
-    "maxTime": 2017,
+    "maxTime": 2019,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "https://ourworldindata.org/child-mortality",
@@ -4578,13 +4590,26 @@ const grapherConfigs =
     },
     "map": {
       "colorScale": {
-        "binningStrategy": "equalInterval"
-      }
+        "binningStrategy": "manual",
+        "customNumericValues": [
+          25000,
+          50000,
+          100000,
+          250000,
+          500000,
+          1000000,
+          2500000
+        ],
+        "customNumericColors": [
+          null
+        ]
+      },
+      "variableId": 418553
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 247383,
+        "variableId": 418553,
         "display": {
           "unit": "deaths",
           "includeInTable": true
