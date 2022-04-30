@@ -4925,11 +4925,11 @@ const grapherConfigs =
   },
   {
     "id": 3969,
-    "version": 7,
+    "version": 9,
     "slug": "number-of-infant-deaths-ihme",
     "title": "Number of infant deaths",
     "subtitle": "The number of infants dying before reaching one year of age.",
-    "sourceDesc": "Institute for Health Metrics and Evaluation (IHME)",
+    "sourceDesc": "Institute for Health Metrics and Evaluation, Global Burden of Disease (2019)",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
     "tab": "map",
@@ -4941,14 +4941,28 @@ const grapherConfigs =
     },
     "map": {
       "colorScale": {
-        "binningStrategy": "equalInterval"
+        "binningStrategy": "manual",
+        "customNumericValues": [
+          10000,
+          25000,
+          50000,
+          100000,
+          250000,
+          500000,
+          1000000,
+          2500000
+        ],
+        "customNumericColors": [
+          null,
+          null
+        ]
       },
       "variableId": 109783
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 247438,
+        "variableId": 418383,
         "display": {
           "unit": "deaths",
           "includeInTable": true
