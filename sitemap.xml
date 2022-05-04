@@ -22452,4 +22452,12 @@
         <loc>https://ourworldindata.org/grapher/quantity-oil-spills</loc>
         <lastmod>2022-05-04</lastmod>
     </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/quantity-oil-spills-decadal-average</loc>
+        <lastmod>2022-05-04</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/large-oil-spills-decadal</loc>
+        <lastmod>2022-05-04</lastmod>
+    </url>
 </urlset>
