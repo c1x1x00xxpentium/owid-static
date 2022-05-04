@@ -1398,12 +1398,12 @@
 /grapher/human-rights-vs-liberal-democracy /grapher/human-rights-protection-vs-liberal-democracy 302!
 /grapher/human-rights-vs-gdp-per-capita /grapher/human-rights-protection-vs-gdp-per-capita 302!
 /grapher/world-map-of-the-freedom-of-the-press-status /grapher/press-freedom-fh 302!
-/grapher/number-of-different-political-regimes-row /grapher/share-democracies 302!
+/grapher/number-of-different-political-regimes-row /grapher/share-democracies-row 302!
 /grapher/political-regimes /grapher/political-regime 302!
 /grapher/political-regimes-bmr /grapher/political-regime-bmr 302!
-/grapher/political-regime-row /grapher/share-democracies 302!
+/grapher/political-regime-row /grapher/share-democracies-row 302!
 /grapher/number-of-different-political-regimes-bmr /grapher/share-democracies-bmr 302!
-/grapher/political-regimes-row /grapher/share-democracies 302!
+/grapher/political-regimes-row /grapher/share-democracies-row 302!
 /grapher/life-expectancy-years-vs-real-gdp-per-capita-2011us /grapher/life-expectancy-vs-gdp-per-capita 302!
 /grapher/share-of-population-covered-by-the-internet /grapher/share-of-individuals-using-the-internet 302!
 /grapher/excess-deaths-weekly-economist /grapher/excess-deaths-daily-economist 302!
@@ -1431,7 +1431,7 @@
 /grapher/share-of-protein-supply-from-animal-based-foods-vs-gdp-per-capita /grapher/animal-protein-vs-gdp 302!
 /grapher/per-capita-electricity-consumption /grapher/per-capita-electricity-generation 302!
 /grapher/world-population-by-political-regime /grapher/people-living-in-democracies 302!
-/grapher/political-regimes-by-year-row /grapher/share-democracies 302!
+/grapher/political-regimes-by-year-row /grapher/share-democracies-row 302!
 /grapher/political-regimes-by-year-bmr /grapher/share-democracies-bmr 302!
 /grapher/median-age-vs-children-per-woman /grapher/median-age-vs-births-per-woman 302!
 /grapher/population-wdi /grapher/population 302!
@@ -1466,3 +1466,5 @@
 /grapher/experience-with-liberal-democracy /grapher/experience-with-liberal-democracy-row 302!
 /grapher/experience-with-electoral-democracy-bmr /grapher/experience-with-democracy-bmr 302!
 /grapher/global-quantity-of-oil-spilt-from-tankers /grapher/quantity-oil-spills 302!
+/grapher/number-democracies /grapher/number-democracies-row 302!
+/grapher/share-democracies /grapher/share-democracies-row 302!
