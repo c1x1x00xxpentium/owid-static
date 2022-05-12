@@ -22505,6 +22505,18 @@
         <lastmod>2022-05-05</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/share-long-standing-democracies-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-long-standing-electoral-democracies-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/people-living-in-long-standing-democracies-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/liberal-democracy-popw-vdem</loc>
         <lastmod>2022-05-05</lastmod>
     </url>
@@ -22541,6 +22553,10 @@
         <lastmod>2022-05-11</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/political-regime-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/dietary-choices-of-british-adults</loc>
         <lastmod>2022-05-11</lastmod>
     </url>
@@ -22555,6 +22571,34 @@
     <url>
         <loc>https://ourworldindata.org/grapher/share-democracies-amb-row</loc>
         <lastmod>2022-05-11</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-long-standing-electoral-democracies-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-democracies-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/people-living-in-long-standing-democracies-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/people-living-in-democracies-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-democracies-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-long-standing-electoral-democracies-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/experience-with-democracy-womsuffr-bmr</loc>
+        <lastmod>2022-05-12</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/dietary-choices-uk</loc>
