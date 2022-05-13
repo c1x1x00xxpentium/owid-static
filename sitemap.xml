@@ -22573,8 +22573,8 @@
         <lastmod>2022-05-12</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/participatory-democracy-vdem</loc>
-        <lastmod>2022-05-11</lastmod>
+        <loc>https://ourworldindata.org/grapher/participatory-political-institutions</loc>
+        <lastmod>2022-05-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/egalitarian-democracy-vdem</loc>
@@ -22742,6 +22742,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/legislative-constraints-on-executive</loc>
+        <lastmod>2022-05-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/participatory-democracy-vdem</loc>
         <lastmod>2022-05-13</lastmod>
     </url>
 </urlset>
