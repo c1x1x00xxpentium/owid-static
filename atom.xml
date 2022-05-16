@@ -7,13 +7,13 @@
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
 <updated>2022-05-13T09:00:00.000Z</updated>
 <entry>
-            <title><![CDATA[What share of people are vegetarian, vegan, or flexitarian?]]></title>
+            <title><![CDATA[What share of people say they are vegetarian, vegan, or flexitarian?]]></title>
             <id>https://ourworldindata.org/vegetarian-vegan</id>
             <link rel="alternate" href="https://ourworldindata.org/vegetarian-vegan"/>
             <published>2022-05-13T09:00:00.000Z</published>
-            <updated>2022-05-13T10:23:56.000Z</updated>
+            <updated>2022-05-16T20:44:04.000Z</updated>
             <author><name>Edouard Mathieu</name></author><author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Most people still eat some meat. But survey data shows that many are adopting a diet with less animal products. Young people are more likely to be non- or only occasional meat-eaters.<br><br><a href="https://ourworldindata.org/vegetarian-vegan" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/05/British-diets-thumbnail-768x301.png"/></a>]]></summary>
+            <summary><![CDATA[Most people still eat some meat. But survey data shows that many report adopting a diet with less animal products. Young people are more likely to be non- or only occasional meat-eaters.<br><br><a href="https://ourworldindata.org/vegetarian-vegan" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/05/British-diets-thumbnail-768x301.png"/></a>]]></summary>
             </entry>
 <entry>
             <title><![CDATA[The largest mammals have always been at the greatest risk of extinction – this is still the case today]]></title>
