@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2022-05-13T09:00:00.000Z</updated>
+<updated>2022-05-18T10:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[What is the lifetime risk of depression?]]></title>
+            <id>https://ourworldindata.org/depression-lifetime-risk</id>
+            <link rel="alternate" href="https://ourworldindata.org/depression-lifetime-risk"/>
+            <published>2022-05-18T10:00:00.000Z</published>
+            <updated>2022-05-18T10:27:14.000Z</updated>
+            <author><name>Saloni Dattani</name></author>
+            <summary><![CDATA[Depression is one of the world’s most common health conditions. It’s estimated that one-in-three women and one-in-five men have an episode of major depression by the age of 65.<br><br><a href="https://ourworldindata.org/depression-lifetime-risk" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/05/Lifetime-risk-of-depression-thumbnail-768x381.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[What share of people say they are vegetarian, vegan, or flexitarian?]]></title>
             <id>https://ourworldindata.org/vegetarian-vegan</id>
@@ -86,14 +95,5 @@
             <updated>2022-04-05T10:49:09.000Z</updated>
             <author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Agricultural productivity across Sub-Saharan Africa needs to improve to reduce hunger, poverty, and the destruction of biodiversity.<br><br><a href="https://ourworldindata.org/africa-yields-problem" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/03/Yields-vs.-land-use-marimekko-featured-image-01-768x301.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[How could the war in Ukraine impact global food supplies?]]></title>
-            <id>https://ourworldindata.org/ukraine-russia-food</id>
-            <link rel="alternate" href="https://ourworldindata.org/ukraine-russia-food"/>
-            <published>2022-03-24T11:30:00.000Z</published>
-            <updated>2022-05-03T17:24:56.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Both Ukraine and Russia are some of the world’s largest food exporters. How could global food be impacted?<br><br><a href="https://ourworldindata.org/ukraine-russia-food" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/03/ukraine-russia-food-thumbnail-768x301.png"/></a>]]></summary>
             </entry>
 </feed>
