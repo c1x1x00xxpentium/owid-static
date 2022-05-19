@@ -1409,7 +1409,7 @@
 /grapher/excess-deaths-weekly-economist /grapher/excess-deaths-daily-economist 302!
 /grapher/excess-deaths-weekly-per-100k-economist /grapher/excess-deaths-daily-per-100k-economist 302!
 /grapher/voter-turnout-in-most-recent-national-election /grapher/voter-turnout 302!
-/grapher/universal-suffrage-granted-to-women /grapher/universal-suffrage-women 302!
+/grapher/universal-suffrage-granted-to-women /grapher/universal-suffrage-women-lied 302!
 /grapher/risk-of-catastrophic-expenditure-for-surgical-care /grapher/share-of-the-population-at-risk-of-catastrophic-expenditure-when-surgical-care-is-required 302!
 /grapher/freedom-of-the-press /grapher/press-freedom-fh 302!
 /grapher/human-rights-violations /grapher/human-rights-protection 302!
@@ -1470,3 +1470,4 @@
 /grapher/share-democracies /grapher/share-democracies-row 302!
 /grapher/number-electoral-democracies-age-bmr /grapher/number-democracies-age-bmr 302!
 /grapher/political-regime-lexical /grapher/political-regime-lied 302!
+/grapher/universal-suffrage-women /grapher/universal-suffrage-women-lied 302!
