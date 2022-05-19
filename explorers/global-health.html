@@ -2827,10 +2827,10 @@ const grapherConfigs =
   },
   {
     "id": 1915,
-    "version": 8,
+    "version": 10,
     "slug": "health-expenditure-government-expenditure",
     "title": "Health spending as a share of total government expenditure",
-    "sourceDesc": "World Health Organization (WHO)",
+    "sourceDesc": "WHO, Global Health Observatory (2022)",
     "hideTitleAnnotation": true,
     "hasMapTab": true,
     "tab": "map",
@@ -2841,49 +2841,49 @@ const grapherConfigs =
       "max": 0
     },
     "map": {
+      "time": "latest",
       "timeTolerance": 5,
       "colorScale": {
         "baseColorScheme": "YlGn",
         "binningStrategy": "manual",
         "customNumericMinValue": 0,
         "customNumericValues": [
-          3,
-          6,
-          9,
-          12,
+          5,
+          10,
           15,
-          18,
-          21,
-          24,
-          27,
-          30
+          20,
+          25,
+          30,
+          35,
+          40,
+          45
         ],
         "customNumericColors": [
           null,
           null,
           null,
+          null,
+          null,
+          null,
+          null,
           null
-        ]
+        ],
+        "customHiddenCategories": {
+          "No data": true
+        }
       },
       "variableId": 3471
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 209934,
-        "display": {
-          "unit": "%",
-          "shortUnit": "%",
-          "includeInTable": true
-        }
+        "variableId": 428666
       }
     ],
     "selectedEntityNames": [
-      "United States",
-      "United Kingdom",
-      "France",
-      "India",
-      "Nigeria"
+      "Trinidad and Tobago",
+      "Bhutan",
+      "Low-income"
     ],
     "selectedEntityIds": [
       116,
