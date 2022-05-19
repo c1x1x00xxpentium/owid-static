@@ -3778,7 +3778,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/happiness-and-friends</loc>
-        <lastmod>2022-02-14</lastmod>
+        <lastmod>2022-05-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/support-for-vaccination</loc>
@@ -4782,7 +4782,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-186</loc>
-        <lastmod>2022-02-14</lastmod>
+        <lastmod>2022-05-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/untitled-reusable-block-187</loc>
@@ -6391,10 +6391,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/percentage-of-individuals-using-the-internet-by-country-2000-2014</loc>
         <lastmod>2019-02-19</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/male-and-female-suicide-rate</loc>
-        <lastmod>2022-02-14</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/lung-cancer-deaths-per-100000-by-sex-1950-2002</loc>
@@ -14051,10 +14047,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/forest-area-km</loc>
         <lastmod>2022-05-11</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/incidence-and-prevalence-of-tuberculosis-by-who-and-ihme-data-sources</loc>
-        <lastmod>2022-04-30</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/the-number-of-deaths-due-to-tuberculosis-by-who-and-ihme-data</loc>
