@@ -6302,7 +6302,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/democracy-data-basics</loc>
-        <lastmod>2022-05-13</lastmod>
+        <lastmod>2022-05-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/democracy-data-measurement-challenges</loc>
@@ -6330,7 +6330,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-democracy-data-basics</loc>
-        <lastmod>2022-05-13</lastmod>
+        <lastmod>2022-05-19</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-copy-of-democracy-data-basics</loc>
@@ -13633,10 +13633,6 @@
         <lastmod>2022-05-19</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/ratio-of-diabetes-to-obesity-prevalence</loc>
-        <lastmod>2018-04-21</lastmod>
-    </url>
-    <url>
         <loc>https://ourworldindata.org/grapher/share-of-females-defined-as-obese</loc>
         <lastmod>2022-05-19</lastmod>
     </url>
@@ -16691,18 +16687,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/share-of-total-child-deaths-by-period-of-death</loc>
         <lastmod>2019-10-03</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/preterm-birth-rates</loc>
-        <lastmod>2022-04-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/number-of-preterm-births</loc>
-        <lastmod>2019-10-02</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/preterm-birth-rate-vs-gdp-per-capita</loc>
-        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/diarrheal-prevalence-rates-vs-gdp-per-capita</loc>
