@@ -22613,6 +22613,10 @@
         <lastmod>2022-05-16</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/excess-deaths-cumulative-economist-who</loc>
+        <lastmod>2022-05-26</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/people-living-in-democracies-amb-row</loc>
         <lastmod>2022-05-11</lastmod>
     </url>
@@ -22651,6 +22655,10 @@
     <url>
         <loc>https://ourworldindata.org/grapher/experience-with-democracy-womsuffr-bmr</loc>
         <lastmod>2022-05-12</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/excess-deaths-cumulative-who</loc>
+        <lastmod>2022-05-26</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/political-regime-fh</loc>
@@ -22926,6 +22934,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/competitiveness-executive-recruitment-polity</loc>
+        <lastmod>2022-05-26</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/openness-executive-recruitment-polity</loc>
         <lastmod>2022-05-26</lastmod>
     </url>
 </urlset>
