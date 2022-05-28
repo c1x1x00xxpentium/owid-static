@@ -6322,7 +6322,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/copy-of-democracy-data-basics</loc>
-        <lastmod>2022-05-26</lastmod>
+        <lastmod>2022-05-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/copy-of-democracy-data-basics-2</loc>
@@ -6379,6 +6379,46 @@
     <url>
         <loc>https://ourworldindata.org/monkeypox</loc>
         <lastmod>2022-05-24</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-democracy-data-how-is-democracy-characterized</loc>
+        <lastmod>2022-05-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/average-height-of-men-for-selected-countries</loc>
@@ -20762,7 +20802,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-fully-vaccinated-by-age</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-05-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/air-pollution-london</loc>
@@ -20854,7 +20894,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-vaccine-by-age</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-05-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-partly-vaccinated-by-age</loc>
@@ -22002,7 +22042,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-booster-vaccinated-by-age</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-05-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/switzerland-covid-19-weekly-death-rate-by-vaccination-status</loc>
@@ -23062,6 +23102,46 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/children-born-per-woman-world-bank</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/democracy-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/civil-liberties-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/democratic-culture-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/functioning-government-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/electoral-pluralism-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/number-democracies-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/people-living-in-democracies-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/political-regime-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/share-democracies-eiu</loc>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/popw-democracy-eiu</loc>
         <lastmod>2022-05-27</lastmod>
     </url>
 </urlset>
