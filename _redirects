@@ -525,7 +525,6 @@
 /global-food /explorers/global-food 301!
 /grapher/covid-confirmed-daily-cases-epidemiological-trajectory /explorers/coronavirus-data-explorer?zoomToSelection=true&facet=none&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=false&country=GBR~USA~ESP~ITA~BRA~IND~KOR 301!
 /grapher/daily-new-confirmed-cases-of-covid-19-positive-rate /explorers/coronavirus-data-explorer?facet=none&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=true&country=USA~ITA~CAN~DEU~GBR~FRA~JPN&Metric=Confirmed+cases 301!
-/better-learning /global-education 301!
 /omicron /explorers/coronavirus-data-explorer?facet=none&Metric=Omicron+variant+%28share%29&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=USA~ITA~CAN~DEU~GBR~FRA~JPN 301!
 /grapher/covid-daily-cases-trajectory-per-million /explorers/coronavirus-data-explorer?zoomToSelection=true&facet=none&pickerSort=asc&pickerMetric=location&hideControls=true&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=GBR~USA~ESP~ITA~BRA~IND~KOR&Metric=Confirmed+cases 301!
 /data/owid-covid-data.json https://github.com/owid/covid-19-data/tree/master/public/data 301!
