@@ -6340,7 +6340,7 @@ const grapherConfigs =
   },
   {
     "id": 4577,
-    "version": 11,
+    "version": 12,
     "slug": "malaria-deaths-ihme",
     "title": "Number of deaths from malaria",
     "sourceDesc": "Institute for Health Metrics and Evaluation (IHME)",
@@ -6350,6 +6350,9 @@ const grapherConfigs =
     "tab": "map",
     "originUrl": "ourworldindata.org/malaria",
     "isPublished": true,
+    "yAxis": {
+      "min": 0
+    },
     "map": {
       "time": "latest",
       "colorScale": {
@@ -6381,11 +6384,7 @@ const grapherConfigs =
       }
     ],
     "selectedEntityNames": [
-      "India",
-      "South Africa",
-      "Kenya",
-      "Pakistan",
-      "Gambia"
+      "World"
     ],
     "selectedEntityIds": [
       137,
