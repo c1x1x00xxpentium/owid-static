@@ -168,7 +168,7 @@ const grapherConfigs =
   },
   {
     "id": 3457,
-    "version": 31,
+    "version": 32,
     "slug": "suffrage",
     "title": "Share of adult citizens who have the right to vote",
     "sourceDesc": "OWID based on V-Dem (v12)",
@@ -182,6 +182,7 @@ const grapherConfigs =
       "facetDomain": "shared"
     },
     "map": {
+      "time": "latest",
       "colorScale": {
         "baseColorScheme": "YlGnBu",
         "binningStrategy": "manual",
@@ -223,7 +224,12 @@ const grapherConfigs =
     "dimensions": [
       {
         "property": "y",
-        "variableId": 419319
+        "variableId": 419319,
+        "display": {
+          "unit": "%",
+          "shortUnit": "%",
+          "includeInTable": true
+        }
       }
     ],
     "selectedEntityNames": [
