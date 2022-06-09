@@ -1,0 +1,332 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>We need more testing to eradicate polio worldwide - Our World in Data</title><meta name="description" content="The world is close to eradicating polio, but has been set back in the last few years. To achieve the goal of global eradication, it’s crucial to improve testing."/><link rel="canonical" href="https://ourworldindata.org/polio-testing"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/polio-testing"/><meta property="og:title" content="We need more testing to eradicate polio worldwide"/><meta property="og:description" content="The world is close to eradicating polio, but has been set back in the last few years. To achieve the goal of global eradication, it’s crucial to improve testing."/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2022/06/Polio-surveillance-thumbnail-768x381.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="We need more testing to eradicate polio worldwide"/><meta name="twitter:description" content="The world is close to eradicating polio, but has been set back in the last few years. To achieve the goal of global eradication, it’s crucial to improve testing."/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2022/06/Polio-surveillance-thumbnail-768x381.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 417.1c-16.38 0-32.88-4.1-46.88-15.12L0 250.9v213.1C0 490.5 21.5 512 48 512h416c26.5 0 48-21.5 48-47.1V250.9l-209.1 151.1C288.9 412 272.4 417.1 256 417.1zM493.6 163C484.8 156 476.4 149.5 464 140.1v-44.12c0-26.5-21.5-48-48-48l-77.5 .0016c-3.125-2.25-5.875-4.25-9.125-6.5C312.6 29.13 279.3-.3732 256 .0018C232.8-.3732 199.4 29.13 182.6 41.5c-3.25 2.25-6 4.25-9.125 6.5L96 48c-26.5 0-48 21.5-48 48v44.12C35.63 149.5 27.25 156 18.38 163C6.75 172 0 186 0 200.8v10.62l96 69.37V96h320v184.7l96-69.37V200.8C512 186 505.3 172 493.6 163zM176 255.1h160c8.836 0 16-7.164 16-15.1c0-8.838-7.164-16-16-16h-160c-8.836 0-16 7.162-16 16C160 248.8 167.2 255.1 176 255.1zM176 191.1h160c8.836 0 16-7.164 16-16c0-8.838-7.164-15.1-16-15.1h-160c-8.836 0-16 7.162-16 15.1C160 184.8 167.2 191.1 176 191.1z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>COVID-19 vaccinations, cases, excess mortality, and much more</strong></div><a href="/coronavirus#explore-the-global-situation" data-track-note="covid-banner-click">Explore our COVID-19 data</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">We need more testing to eradicate polio worldwide</h1></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><div class="article-meta"><div class="excerpt">The world is close to eradicating polio, but has been set back in the last few years. To achieve the goal of global eradication, it’s crucial to improve testing.</div><div class="authors-byline"><a href="/team">by Saloni Dattani and Fiona Spooner</a></div><div class="published-updated"><time>June 09, 2022</time></div></div></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>The world is very close to eradicating polio.</p>
+
+
+
+<p>It’s <a href="https://ourworldindata.org/grapher/number-of-estimated-paralytic-polio-cases-by-world-region">estimated</a> that there were between 300,000 to 400,000 cases of paralytic polio every year in the early 80s. Since then, the number has declined dramatically. In 2020 there were less than 2,000.</p>
+
+
+
+<p>Until recently, there were three strains of wild poliovirus. The world has eradicated two of them, and just one is left in circulation today.<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a></p>
+
+
+
+<p>Despite being so close to the finishing line, we are in danger of moving backward.</p>
+
+
+
+<p>There has been a disruption in polio testing and reporting during the <a href="https://ourworldindata.org/coronavirus">COVID-19 pandemic</a>; this means there’s a risk that cases have gone undetected, and the poliovirus has spread further in recent years.</p>
+
+
+
+<p>Cases have been rising in the few countries where wild poliovirus remains endemic: Afghanistan and Pakistan. We see this in the chart, which shows that cases have risen since 2017.&nbsp;</p>
+
+
+
+<p>Worryingly, there is the risk that cases are spreading in countries that have been declared free of wild poliovirus. Malawi and Mozambique each reported a case in 2021 and 2022 respectively, after three decades of seeing no cases of wild polio.<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a></p>
+
+
+
+<p>Several countries have also reported cases of <a href="https://ourworldindata.org/polio#vaccine-induced-polio" data-type="URL" data-id="https://ourworldindata.org/polio#vaccine-induced-polio">vaccine-derived polio</a>, which can be combatted with the novel oral poliovirus vaccine (nOPV2).<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a></p>
+
+
+
+<p>To get back on track to eradicate this virus, the world needs two things: more vaccination and better monitoring of potential outbreaks. Here we focus on the latter: looking at where countries are falling short on monitoring, and what needs to be done.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-side-by-side">
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/the-number-of-reported-paralytic-polio-cases?tab=map&amp;country=NGA~AFG~PAK~MWI" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/the-number-of-reported-paralytic-polio-cases?tab=map&amp;country=NGA~AFG~PAK~MWI" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/the-number-of-reported-paralytic-polio-cases-623efc4124deceb25cdc9c6b84c8379b_v15_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox=""></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"></path>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"></path>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/the-number-of-reported-paralytic-polio-cases?tab=chart&amp;country=NGA~AFG~PAK~MWI" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/the-number-of-reported-paralytic-polio-cases?tab=chart&amp;country=NGA~AFG~PAK~MWI" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/the-number-of-reported-paralytic-polio-cases-8cebd34cd4fc10f68193d33f80dc8557_v15_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox=""></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"></path>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"></path>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-countries-monitor-for-polio"><a class="deep-link" href="#how-do-countries-monitor-for-polio"></a>How do countries monitor for polio?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>To identify which countries are falling behind on monitoring for polio, we first need to understand how a case of polio is identified.</p>
+
+
+
+<p>The primary sign of polio is a type of paralysis, which is called acute flaccid paralysis (AFP).&nbsp;</p>
+
+
+
+<p>This is how potential cases of polio are identified: when someone suddenly develops AFP, they are considered a potential case of polio.</p>
+
+
+
+<p>But polio is not the only illness that can cause AFP – other illnesses, such as Guillain-Barré syndrome, can also cause it. This means that, when a case of AFP is identified, healthcare workers need to test the patient for the presence of poliovirus.&nbsp;</p>
+
+
+
+<p>The World Health Organization (WHO) recommends that potential cases should be reported immediately and investigated within 48 hours. To test them, they need to have two stool samples taken within 14 days of the onset of paralysis.<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a></p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-many-potential-cases-of-polio-are-being-identified-through-screening"><a class="deep-link" href="#how-many-potential-cases-of-polio-are-being-identified-through-screening"></a>How many potential cases of polio are being identified through screening?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>We need to look at two measures to assess which countries are doing enough monitoring for polio. The first is how much <em>screening</em> they’re doing for potential cases. The second is how much <em>testing</em> they’re doing to confirm the presence of poliovirus.</p>
+
+
+
+<p>If a country is detecting very few cases of AFP overall, then it suggests it’s not screening enough for paralysis. So, to measure how much screening is ongoing, we can look at how many cases of AFP that are <em>not </em>caused by polio are being detected. This is called the non-polio AFP rate.&nbsp;</p>
+
+
+
+<p>This rate is measured per 100,000 children. The higher the rate, the more likely that potential cases of polio are being identified. The GPEI recommends that this rate should be at least 2.</p>
+
+
+
+<p>In the chart, we see the rate of non-polio AFP cases over time. You can view this metric for more countries by clicking the “<span class="add-country">
+            <span class="icon">
+                <svg width="16" height="16"><path d="M3,8 h10 m-5,-5 v10"></path></svg>
+            </span>
+            Add country
+        </span>” button.</p>
+
+
+
+<p>In Afghanistan and Pakistan, where polio remains endemic, the rate has improved considerably and has been well above the minimum recommendation, even during the COVID-19 pandemic, when the rate fell slightly.</p>
+
+
+
+<p>However, in Malawi, which recently reported a case of wild polio, the rate has fluctuated above and below the minimum recommendation. In other Eastern African countries such as Rwanda, Burundi, and Zimbabwe, the rate has been just slightly above the minimum recommendation for several years.</p>
+
+
+
+<p>With low screening in Malawi recently, it’s possible that polio cases could be more widespread.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/rate-of-acute-flaccid-paralysis-from-non-polio-causes?country=AFG~PAK~MWI~MOZ~BWA~RWA~KEN~IDN~BDI~ZWE" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/rate-of-acute-flaccid-paralysis-from-non-polio-causes?country=AFG~PAK~MWI~MOZ~BWA~RWA~KEN~IDN~BDI~ZWE" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/rate-of-acute-flaccid-paralysis-from-non-polio-causes-daa1c6dfef63c9ec7627be7e1a9f0fdf_v49_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox=""></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"></path>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"></path>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-many-potential-cases-are-being-tested-for-polio"><a class="deep-link" href="#how-many-potential-cases-are-being-tested-for-polio"></a>How many potential cases are being tested for polio?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>The second step is to assess how many potential cases <em>are being tested for poliovirus</em>.&nbsp;</p>
+
+
+
+<p>To do this, we look at the percentage of paralysis cases that have stool samples taken to test for polio. The higher this percentage, the more potential cases are being tested to confirm whether they are infected by the poliovirus.</p>
+
+
+
+<p>In this chart, we can see the testing rate of AFP cases. The WHO recommends that this percentage should be at least 80%.<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a></p>
+
+
+
+<p>In 2020, in Afghanistan and Pakistan, where polio remains endemic, the testing rate of AFP cases was above the minimum recommendation. Testing has been consistently above the minimum for more than a decade.</p>
+
+
+
+<p>Testing rates in Malawi and Mozambique fell below the minimum recommendation during the COVID-19 pandemic. This is particularly concerning, as they each recently reported a case of wild polio, which may mean that more cases are being missed.</p>
+
+
+
+<p>In other Eastern African countries, such as Zambia, Tanzania, and the Democratic Republic of Congo, testing rates have also fallen well below the minimum recommendation. Similarly, in Nigeria, which has recently reported cases of vaccine-derived polioviruses, testing has fallen dramatically during the pandemic.</p>
+
+
+
+<p>As these countries have had inadequate testing of potential cases in recent years, there is a risk that cases of polio in these countries may have been missed.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-of-potential-polio-cases-with-adequate-stool-collection?country=AFG~PAK~NGA~MWI~MOZ~IDN~ZMB~TZA~BWA" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-of-potential-polio-cases-with-adequate-stool-collection?country=AFG~PAK~NGA~MWI~MOZ~IDN~ZMB~TZA~BWA" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-of-potential-polio-cases-with-adequate-stool-collection-d79b70ca4907f374cbadb8ff73834a92_v14_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox=""></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"></path>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"></path>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="which-countries-are-screening-and-testing-insufficiently-for-polio"><a class="deep-link" href="#which-countries-are-screening-and-testing-insufficiently-for-polio"></a>Which countries are screening and testing insufficiently for polio?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>Both of these metrics – screening to identify <em>potential</em> cases of polio, and testing to confirm it – are important.&nbsp;</p>
+
+
+
+<p>In this map, you can see how countries are performing on both of these metrics.&nbsp;</p>
+
+
+
+<p>Some countries have their own screening and testing procedures and are <a href="https://polioeradication.org/wp-content/uploads/2022/05/GPSAP-2022-2024-EN.pdf">assessed</a> to have a low risk for polio by the Global Polio Eradication Initiative. These are shown in light blue and labeled ‘low risk’ in the chart.</p>
+
+
+
+<p>In 2021, the countries shown in dark blue, such as Afghanistan and Pakistan, which are endemic for polio, had adequate screening and testing for polio.</p>
+
+
+
+<p>But in the purple countries – Ukraine, Myanmar, and Cambodia – there was inadequate <em>screening</em> to identify potential cases of polio. This is distressing as Ukraine had reported two cases of vaccine-derived polio in 2021. Although a large vaccination campaign had begun in late 2021, this was halted <a href="https://ourworldindata.org/ukraine-war">by the war</a>.<a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a></p>
+
+
+
+<p>Meanwhile, in the countries shown in yellow – India, the Philippines, and Malaysia, as well as many countries in Africa – there was inadequate <em>testing</em> to confirm whether potential cases had polio.</p>
+
+
+
+<p>Further, in the red countries – Guinea-Bissau, Laos, and Indonesia – there was both inadequate screening <em>and </em>inadequate testing. This is particularly worrying because it’s possible that these countries may be missing cases of vaccine-derived polio, which can be averted using the novel oral poliovirus vaccine.</p>
+
+
+
+<p>Low rates of screening and testing make it challenging to direct efforts to contain the disease and they keep us back from achieving polio eradication worldwide.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/polio-screening-and-testing?country=PAK~NGA~MWI~AFG~IND" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/polio-screening-and-testing?country=PAK~NGA~MWI~AFG~IND" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/polio-screening-and-testing-6f1e35e5bc2754faeea19394f478d2ec_v52_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox=""></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"></path>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"></path>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="improving-the-monitoring-of-polio-is-crucial-to-achieve-global-eradication"><a class="deep-link" href="#improving-the-monitoring-of-polio-is-crucial-to-achieve-global-eradication"></a>Improving the monitoring of polio is crucial to achieve global eradication</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p>By not testing for poliovirus sufficiently, we risk letting more cases go undetected and potentially spread to new regions.<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a></p>
+
+
+
+<p>Testing is crucial to track the spread of the poliovirus, guide vaccination campaigns and identify people with paralytic polio who can be treated.&nbsp;</p>
+
+
+
+<p>To combat this, the Global Polio Eradication Initiative has launched a <a href="https://polioeradication.org/wp-content/uploads/2022/05/GPSAP-2022-2024-EN.pdf">surveillance action plan</a> that aims to improve the quality and speed of testing, as part of their <a href="https://polioeradication.org/news-post/global-polio-eradication-initiative-calls-for-renewed-commitments-to-achieve-promise-of-a-polio-free-world/">new strategy</a> to achieve a polio-free world.</p>
+
+
+
+<p>Without increased efforts, we risk rolling back our progress in achieving the global eradication of this terrible disease.</p>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><hr class="wp-block-separator alignfull"><p><strong><em>Keep reading on Our World in Data:</em></strong></p><div class="block-wrapper"><div class="wp-block-owid-prominent-link with-image" data-no-lightbox="true" data-style="is-style-thin" data-title="Polio"><a href="https://ourworldindata.org/polio"><figure><img src="https://ourworldindata.org/uploads/2022/04/Polio-featured-image-150x59.png"></figure><div class="content-wrapper"><div class="content">
+
+
+
+</div><div class="title"><span>Polio</span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg></div></div></a></div></div><p><strong>Acknowledgements:</strong> We would like to thank Hannah Ritchie and Max Roser for reading drafts of this post and their very helpful suggestions to improve it.</p></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Global Polio Eradication Initiative. (2019, October 24). Two out of three wild poliovirus strains were eradicated. <em>News Stories</em>. https://web.archive.org/web/20191024163941/http://polioeradication.org/news-post/two-out-of-three-wild-poliovirus-strains-eradicated/ </p></li><li id="note-2"><p>The cases in Malawi and Mozambique were found to be genetic descendants of polioviruses seen in Pakistan, even though they had no relevant travel history. Although this has not changed their status of polio-free certification, it suggests that there may be other undetected spread of the poliovirus in the region.<br>World Health Organization. (2022, March 3). Wild poliovirus type 1 (WPV1) &#8211; Malawi. <em>Disease Outbreak News</em>. <a href="https://web.archive.org/web/20220310133953/https://www.who.int/emergencies/disease-outbreak-news/item/wild-poliovirus-type-1-(WPV1)-malawi">https://web.archive.org/web/20220310133953/https://www.who.int/emergencies/disease-outbreak-news/item/wild-poliovirus-type-1-(WPV1)-malawi</a><br>Global Polio Eradication Initiative. (2022, May 18). GPEI statement on Mozambique WPV1 detection. <em>News Stories. </em><a href="https://web.archive.org/web/20220519023216/https://polioeradication.org/news-post/gpei-statement-on-mozambique-wpv1-detection/">https://web.archive.org/web/20220519023216/https://polioeradication.org/news-post/gpei-statement-on-mozambique-wpv1-detection/</a><br>Global Polio Eradication Initiative. (n.d.). Certification. <em>Preparing for a Polio-Free World</em>. <a href="https://web.archive.org/web/20220309151432/https://polioeradication.org/polio-today/preparing-for-a-polio-free-world/certification/">https://web.archive.org/web/20220309151432/https://polioeradication.org/polio-today/preparing-for-a-polio-free-world/certification/</a> </p></li><li id="note-3"><p>Global Polio Eradication Initiative. (2021, Oct). Preparing for nOPV2 Use: An overview of requirements for countries. <a href="https://polioeradication.org/wp-content/uploads/2021/10/nOPV2-Overview-Guidance.pdf">https://polioeradication.org/wp-content/uploads/2021/10/nOPV2-Overview-Guidance.pdf</a> </p></li><li id="note-4"><p>Their stool samples should then be processed in a GPEI-accredited laboratory for the presence of the poliovirus. If they test positive, they are considered a &#8216;confirmed case&#8217; of polio. <em>WHO-recommended surveillance standard of poliomyelitis</em>. (n.d.). World Health Organization.<a href="https://web.archive.org/web/20210423203212/https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/poliomyelitis_standards/en/"> </a><a href="https://web.archive.org/web/20210423203212/https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/poliomyelitis_standards/en/%7B/ref">https://web.archive.org/web/20210423203212/https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/poliomyelitis_standards/en/</a><br>Around 1 in 200 infections by the poliovirus result in paralysis. However, only infections that result in paralysis are considered cases of polio in the literature. To avoid confusion, these are labeled cases of paralytic polio.</p></li><li id="note-5"><p><em>WHO-recommended surveillance standard of poliomyelitis</em>. (n.d.). World Health Organization.<a href="https://web.archive.org/web/20210423203212/https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/poliomyelitis_standards/en/"> </a>https://web.archive.org/web/20210423203212/https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/poliomyelitis_standards/en/ </p></li><li id="note-6"><p>Global Polio Eradication Initiative. (2022, Mar). GPEI deeply concerned for health of Ukrainian people amid escalating crisis. <em>News Stories. </em><a href="https://web.archive.org/web/20220324043721/https://polioeradication.org/news-post/global-polio-eradication-initiative-deeply-concerned-for-health-of-ukrainian-people-amid-escalating-crisis/">https://web.archive.org/web/20220324043721/https://polioeradication.org/news-post/global-polio-eradication-initiative-deeply-concerned-for-health-of-ukrainian-people-amid-escalating-crisis/</a> </p></li><li id="note-7"><p>Centers for Disease Control and Prevention (CDC. (2006). Resurgence of wild poliovirus type 1 transmission and consequences of importation&#8211;21 countries, 2002-2005. <em>MMWR. Morbidity and mortality weekly report</em>, <em>55</em>(6), 145-150. <a href="https://pubmed.ncbi.nlm.nih.gov/16484977/">https://pubmed.ncbi.nlm.nih.gov/16484977/</a> </p></li></ol><h3 id="licence">Reuse our work freely</h3><p>All visualizations, data, and code produced by Our World in Data are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.</p><p>The data produced by third parties and made available by Our World in Data is subject to the license terms from the original third-party authors. We will always indicate the original source of the data in our documentation, so you should always check the license of any such third-party data before use and redistribution.</p><p>All of <a href="/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=51738&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest work</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://instagram.com/ourworldindata_official" data-track-note="footer-navigation">Instagram</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>Licenses: All visualizations, data, and articles produced by Our World in Data are open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All the software and code that we write is open source and made available via GitHub under the permissive <a href="https://github.com/owid/owid-grapher/blob/master/LICENSE.md " target="_blank" rel="noopener noreferrer">MIT license</a>. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/vendors.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>
+                        runTableOfContents({"headings":[],"pageTitle":"We need more testing to eradicate polio worldwide"})
+                        runRelatedCharts(undefined)
+                        </script></body></html>
