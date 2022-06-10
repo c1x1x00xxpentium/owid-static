@@ -22789,8 +22789,8 @@
         <lastmod>2022-05-19</lastmod>
     </url>
     <url>
-        <loc>https://ourworldindata.org/grapher/electoral-democracy-row</loc>
-        <lastmod>2022-05-19</lastmod>
+        <loc>https://ourworldindata.org/grapher/democratic-electoral-institutions-row</loc>
+        <lastmod>2022-06-10</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/access-to-justice-women-row</loc>
@@ -23186,6 +23186,10 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/electoral-democracy-lied</loc>
+        <lastmod>2022-06-10</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/electoral-democracy-row</loc>
         <lastmod>2022-06-10</lastmod>
     </url>
 </urlset>
