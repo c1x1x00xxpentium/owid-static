@@ -23177,8 +23177,36 @@
         <lastmod>2022-06-04</lastmod>
     </url>
     <url>
+        <loc>https://ourworldindata.org/grapher/annual-space-visits</loc>
+        <lastmod>2022-06-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/cumulative-space-visits</loc>
+        <lastmod>2022-06-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/cumulative-people-space</loc>
+        <lastmod>2022-06-13</lastmod>
+    </url>
+    <url>
         <loc>https://ourworldindata.org/grapher/varieties-democracy-vdem</loc>
         <lastmod>2022-06-07</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/cost-space-launches-low-earth-orbit</loc>
+        <lastmod>2022-06-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/nasa-annual-budget</loc>
+        <lastmod>2022-06-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/low-earth-orbits-objects</loc>
+        <lastmod>2022-06-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/space-objects-by-orbit</loc>
+        <lastmod>2022-06-13</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/liberal-democracy-row</loc>
@@ -23195,5 +23223,13 @@
     <url>
         <loc>https://ourworldindata.org/grapher/electoral-democracy-row</loc>
         <lastmod>2022-06-10</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/cumulative-exoplanets-by-method</loc>
+        <lastmod>2022-06-13</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/grapher/largest-impact-craters</loc>
+        <lastmod>2022-06-13</lastmod>
     </url>
 </urlset>
