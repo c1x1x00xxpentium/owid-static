@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2022-06-09T10:00:00.000Z</updated>
+<updated>2022-06-16T10:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[How does the land use of different electricity sources compare?]]></title>
+            <id>https://ourworldindata.org/land-use-per-energy-source</id>
+            <link rel="alternate" href="https://ourworldindata.org/land-use-per-energy-source"/>
+            <published>2022-06-16T10:00:00.000Z</published>
+            <updated>2022-06-16T10:25:52.000Z</updated>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[All energy production takes up land – whether it’s for a power plant, or to dig minerals out of the ground. Which sources use the most land, and which use it most efficiently?<br><br><a href="https://ourworldindata.org/land-use-per-energy-source" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/05/land-use-energy-768x301.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[We need more testing to eradicate polio worldwide]]></title>
             <id>https://ourworldindata.org/polio-testing</id>
@@ -87,14 +96,5 @@ What can we do to improve this?<br><br><a href="https://ourworldindata.org/bette
             <updated>2022-04-28T07:12:07.000Z</updated>
             <author><name>Saloni Dattani</name></author><author><name>Fiona Spooner</name></author>
             <summary><![CDATA[The world is close to eradicating polio. Explore the latest data on polio cases in 2021.<br><br><a href="https://ourworldindata.org/polio-update-2022" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/04/Polio-featured-image-768x301.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[Humans destroyed forests for thousands of years – we can become the first generation that achieves a world in which forests expand]]></title>
-            <id>https://ourworldindata.org/global-forest-transition</id>
-            <link rel="alternate" href="https://ourworldindata.org/global-forest-transition"/>
-            <published>2022-04-20T10:30:00.000Z</published>
-            <updated>2022-04-18T11:26:06.000Z</updated>
-            <author><name>Max Roser</name></author>
-            <summary><![CDATA[Why has humanity destroyed such vast forests? And how can we bring this to an end?<br><br><a href="https://ourworldindata.org/global-forest-transition" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/03/FEATURED-IMAGE-Global-forest-loss-since-ice-age-768x458.png"/></a>]]></summary>
             </entry>
 </feed>
