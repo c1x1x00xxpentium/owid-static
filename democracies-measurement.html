@@ -1,4 +1,977 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Democracy data: how do researchers identify which countries are democratic? - Our World in Data</title><meta name="description" content="Research and data to make progress against the world’s largest problems"/><link rel="canonical" href="https://ourworldindata.org/democracies-measurement"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/democracies-measurement"/><meta property="og:title" content="Democracy data: how do researchers identify which countries are democratic?"/><meta property="og:description" content="Research and data to make progress against the world’s largest problems"/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Democracy data: how do researchers identify which countries are democratic?"/><meta name="twitter:description" content="Research and data to make progress against the world’s largest problems"/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 417.1c-16.38 0-32.88-4.1-46.88-15.12L0 250.9v213.1C0 490.5 21.5 512 48 512h416c26.5 0 48-21.5 48-47.1V250.9l-209.1 151.1C288.9 412 272.4 417.1 256 417.1zM493.6 163C484.8 156 476.4 149.5 464 140.1v-44.12c0-26.5-21.5-48-48-48l-77.5 .0016c-3.125-2.25-5.875-4.25-9.125-6.5C312.6 29.13 279.3-.3732 256 .0018C232.8-.3732 199.4 29.13 182.6 41.5c-3.25 2.25-6 4.25-9.125 6.5L96 48c-26.5 0-48 21.5-48 48v44.12C35.63 149.5 27.25 156 18.38 163C6.75 172 0 186 0 200.8v10.62l96 69.37V96h320v184.7l96-69.37V200.8C512 186 505.3 172 493.6 163zM176 255.1h160c8.836 0 16-7.164 16-15.1c0-8.838-7.164-16-16-16h-160c-8.836 0-16 7.162-16 16C160 248.8 167.2 255.1 176 255.1zM176 191.1h160c8.836 0 16-7.164 16-16c0-8.838-7.164-15.1-16-15.1h-160c-8.836 0-16 7.162-16 15.1C160 184.8 167.2 191.1 176 191.1z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>COVID-19 vaccinations, cases, excess mortality, and much more</strong></div><a href="/coronavirus#explore-the-global-situation" data-track-note="covid-banner-click">Explore our COVID-19 data</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Democracy data: how do researchers identify which countries are democratic?</h1></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><div class="article-meta"><div class="authors-byline"><a href="/team">by Bastian Herre</a></div><div class="published-updated"><time>June 17, 2022</time></div></div></div><div class="wp-block-column"></div></div></section></div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="licence">Reuse our work freely</h3><p>All visualizations, data, and code produced by Our World in Data are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.</p><p>The data produced by third parties and made available by Our World in Data is subject to the license terms from the original third-party authors. We will always indicate the original source of the data in our documentation, so you should always check the license of any such third-party data before use and redistribution.</p><p>All of <a href="/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=51315&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest work</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://instagram.com/ourworldindata_official" data-track-note="footer-navigation">Instagram</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>Licenses: All visualizations, data, and articles produced by Our World in Data are open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All the software and code that we write is open source and made available via GitHub under the permissive <a href="https://github.com/owid/owid-grapher/blob/master/LICENSE.md " target="_blank" rel="noopener noreferrer">MIT license</a>. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/vendors.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Democracy data: how do researchers identify which countries are democratic? - Our World in Data</title><meta name="description" content="There are many ways to classify and measure political systems. What approaches do different researchers take?"/><link rel="canonical" href="https://ourworldindata.org/democracies-measurement"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/democracies-measurement"/><meta property="og:title" content="Democracy data: how do researchers identify which countries are democratic?"/><meta property="og:description" content="There are many ways to classify and measure political systems. What approaches do different researchers take?"/><meta property="og:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Democracy data: how do researchers identify which countries are democratic?"/><meta name="twitter:description" content="There are many ways to classify and measure political systems. What approaches do different researchers take?"/><meta name="twitter:image" content="https://ourworldindata.org/default-thumbnail.jpg"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/owid.css"/><style>
+tbody td {
+  text-align: left !important;
+  vertical-align: top;
+}
+</style></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg></div></form><ul class="site-primary-links"><li><a href="/blog" data-track-note="header-navigation">Latest</a></li><li><a href="/about" data-track-note="header-navigation">About</a></li><li><a href="/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 417.1c-16.38 0-32.88-4.1-46.88-15.12L0 250.9v213.1C0 490.5 21.5 512 48 512h416c26.5 0 48-21.5 48-47.1V250.9l-209.1 151.1C288.9 412 272.4 417.1 256 417.1zM493.6 163C484.8 156 476.4 149.5 464 140.1v-44.12c0-26.5-21.5-48-48-48l-77.5 .0016c-3.125-2.25-5.875-4.25-9.125-6.5C312.6 29.13 279.3-.3732 256 .0018C232.8-.3732 199.4 29.13 182.6 41.5c-3.25 2.25-6 4.25-9.125 6.5L96 48c-26.5 0-48 21.5-48 48v44.12C35.63 149.5 27.25 156 18.38 163C6.75 172 0 186 0 200.8v10.62l96 69.37V96h320v184.7l96-69.37V200.8C512 186 505.3 172 493.6 163zM176 255.1h160c8.836 0 16-7.164 16-15.1c0-8.838-7.164-16-16-16h-160c-8.836 0-16 7.162-16 16C160 248.8 167.2 255.1 176 255.1zM176 191.1h160c8.836 0 16-7.164 16-16c0-8.838-7.164-15.1-16-15.1h-160c-8.836 0-16 7.162-16 15.1C160 184.8 167.2 191.1 176 191.1z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>COVID-19 vaccinations, cases, excess mortality, and much more</strong></div><a href="/coronavirus#explore-the-global-situation" data-track-note="covid-banner-click">Explore our COVID-19 data</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><div class="article-titles"><h1 class="entry-title">Democracy data: how do researchers identify which countries are democratic?</h1></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content"><section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><div class="article-meta"><div class="excerpt">There are many ways to classify and measure political systems. What approaches do different researchers take?</div><div class="authors-byline"><a href="/team">by Bastian Herre</a></div><div class="published-updated"><time>June 17, 2022</time></div></div><p>Measuring the state of democracy across the world helps us understand the extent to which people have political rights and freedoms.</p><p>But measuring which countries are democratic comes with many challenges. People do not always agree on what characteristics define a democracy. Its characteristics — such as whether an election was free and fair — are difficult to assess. The assessments of experts are to some degree subjective and they may disagree; either about a specific characteristic, or how several characteristics can be reduced into a single measure of democracy.</p><p>So how do researchers address these challenges and identify which countries are democratic and undemocratic?</p><p>In our work on <a href="https://ourworldindata.org/democracy">Democracy</a>, we provide data from eight leading approaches of measuring democracy:</p><ul><li><a href="https://www.v-dem.net/vdemds.html">Varieties of Democracy (V-Dem)</a> by the V-Dem project<a id="ref-1" class="ref" href="#note-1"><sup>1</sup></a></li><li><a href="https://www.v-dem.net/vdemds.html">Regimes of the World (RoW)</a> by Lührmann et al. (2018)<a id="ref-2" class="ref" href="#note-2"><sup>2</sup></a>, which use V-Dem data</li><li><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WPKNIT">Lexical Index of Electoral Democracy (LIED)</a> by Skaaning et al. (2015)<a id="ref-3" class="ref" href="#note-3"><sup>3</sup></a></li><li><a href="https://sites.google.com/site/mkmtwo/data?authuser=0">Boix-Miller-Rosato</a> by Boix et al. (2013, BMR)<a id="ref-4" class="ref" href="#note-4"><sup>4</sup></a></li><li><a href="https://www.systemicpeace.org/inscrdata.html">Polity</a> by the Center for Systemic Peace<a id="ref-5" class="ref" href="#note-5"><sup>5</sup></a></li><li>Freedom House’s (FH) <a href="https://freedomhouse.org/report/freedom-world">Freedom in the World</a><a id="ref-6" class="ref" href="#note-6"><sup>6</sup></a></li><li><a href="https://bti-project.org/en/downloads">Bertelsmann Transformation Index (BTI)</a> by the Bertelsmann Foundation<a id="ref-7" class="ref" href="#note-7"><sup>7</sup></a></li><li>Economist Intelligence Unit’s (EIU) <a href="https://www.eiu.com/n/campaigns/democracy-index-2021/?utm_source=eiu-website&amp;utm_medium=blog&amp;utm_campaign=democracy-index-2021">Democracy Index</a><a id="ref-8" class="ref" href="#note-8"><sup>8</sup></a>.</li></ul><p>These approaches all measure democracy (or a closely related aspect), they cover many countries and years, and are commonly used by researchers and policymakers.You can delve into their data — the main democracy measures, indicators of specific characteristics, and global and regional overviews —&nbsp; in our <a href="https://ourworldindata.org/democracy-explorer">Democracy Data Explorer</a>.</p><p>Reassuringly, the approaches typically agree about big differences in countries’ political institutions: they readily distinguish between highly democratic countries, such as Chile and Norway, and highly undemocratic countries, such as North Korea and Saudi Arabia.</p><p>But they do not always agree. They come to different assessments about which of the two highly democratic countries – Chile and Norway – is more democratic, and whether Chile is more or less democratic than it was ten years ago. At times they come to strikingly different conclusions about countries that are neither highly democratic nor highly undemocratic, such as Nigeria today or the United States in the 19th century.</p><p>Why do these measures sometimes reach such different conclusions? In this article I summarize the key similarities and differences of these approaches.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-is-democracy-characterized"><strong>How is democracy characterized?</strong><a class="deep-link" href="#how-is-democracy-characterized"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>In this and the following tables I summarize how each approach defines and scores democracy, and what coverage each approach provides.<a id="ref-9" class="ref" href="#note-9"><sup>9</sup></a></p><p>We see that the approaches share a basic principle of democracy: a democracy is an electoral political system in which citizens get to participate in free and fair elections. The approaches also mostly agree that democracies are liberal political systems, in which citizens have additional civil rights and are protected from the state by constraining it.</p><p>Some approaches stop there, and stick to these narrower conceptions of democracy. Others characterize democracy in broader terms, and also see it as a participatory and deliberative (citizens engage in elections, civil society, and public discourse) as well as an effective (governments can act on citizens’ behalf) political system.</p><p>Varieties of Democracy — true to its name — offers both narrow and broader characterizations, by separately adding liberal, participatory, deliberative, as well as egalitarian (economic and social resources are equally distributed) political institutions to electoral democracy.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-133" class="tablepress tablepress-id-133">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How is democracy characterized?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">narrow and broader: electoral, liberal, participatory, deliberative, or egalitarian</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">narrow: electoral or liberal</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">narrow: electoral (or liberal)</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">narrow: electoral</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">narrow: electoral and liberal</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">narrow: electoral or liberal</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">broad: electoral, liberal, participatory, deliberative, and effective</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">broad: electoral, liberal, participatory, deliberative, and effective</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-is-democracy-scored"><strong>How is democracy scored?</strong><a class="deep-link" href="#how-is-democracy-scored"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>The approaches also differ in how they <em>score</em> democracy.</p><p>V-Dem treats democracy as a <strong>spectrum</strong>, with some countries being scored as more democratic than others.&nbsp;</p><p>Other approaches instead treat democracy as a binary, and <strong>classify</strong> a country as either a democracy or not.&nbsp;</p><p>A final group <strong>does both</strong>, using a spectrum of countries being more or less democratic, and setting thresholds above which a country is considered a democracy overall.</p><p>Approaches that classify countries into democracies and non-democracies further differ in whether all countries that are not democracies are considered autocracies or authoritarian regimes, or whether there are some countries that do not clearly belong in either group.</p><p>And while Freedom in the World identifies which countries are electoral democracies in recent years, its main classification distinguishes between free, partly-free, and not-free countries (which many treat as a proxy for liberal democracy).</p><p>Beyond these broad similarities in how the approaches characterize and score democracy, their exact definitions differ in smaller ways, too. If you are interested in the details, you can take a closer look at the specific defining characteristics at the end of this article.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-134" class="tablepress tablepress-id-134">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How is democracy scored?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">spectrum: 0 to 1, highly undemocratic to highly democratic</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">classification: closed autocracy &lt; electoral autocracy &lt; electoral democracy &lt; liberal democracy</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">classification: non-electoral autocracy &lt; one-party autocracy &lt; multi-party autocracy without elected executive &lt; multi-party autocracy<br>
+&lt; exclusive democracy &lt; male democracy &lt; electoral democracy &lt; polyarchy</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">classification: non-democracy &lt; democracy</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">spectrum: -10 to 10, hereditary monarchy to consolidated democracy<br>
+classification: autocracy &lt; anocracy &lt; democracy</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">classification 1: not free &lt; partly free &lt; free<br>
+classification 2: non-democracy &lt; electoral democracy</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">spectrum: 1 to 10, highly undemocratic to highly democratic<br>
+classification: hard-line autocracy &lt; moderate autocracy &lt; very defective democracy &lt; defective democracy &lt; consolidating democracy</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">spectrum: 0 to 10, highly undemocratic to 10 highly democratic<br>
+classification: authoritarian regime &lt; hybrid regime &lt; flawed democracy &lt; full democracy</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-differences-are-captured"><strong>What differences are captured?</strong><a class="deep-link" href="#what-differences-are-captured"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>How the approaches score democracy affects what differences in democracy they can capture.</p><p>Classifications tend to be coarser, and therefore cover big to medium differences in democracy: they reduce the complexity of political systems a lot and distinguish between broad types, such as the democracies of Chile and Norway on the one hand, and the non-democracies of North Korea and Saudi Arabia, on the other.</p><p>The fine-grained spectrums of other approaches meanwhile reduce political systems’ complexity a bit less, and capture both big and small differences in democracy, such as the difference in democratic quality between the democracies Chile and Norway, and the difference between autocracies North Korea and Saudi Arabia. Spectrums can also better capture small changes within political systems over time towards or away from democracy.</p><p>While some approaches use their classifications exclusively to reduce the complexity of their spectrums, others also use theirs to clearly define what features characterize each category.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-135" class="tablepress tablepress-id-135">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">What differences are captured?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">big to very small differences</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">big differences, with clear meaning</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">big to medium differences, with very clear meaning</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">big differences, with clear meaning</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">big to medium differences</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">big differences</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">big to small differences</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">big to small differences</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-years-and-countries-are-covered"><strong>What years and countries are covered?</strong><a class="deep-link" href="#what-years-and-countries-are-covered"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>The approaches also differ in what years and countries they cover.&nbsp;</p><p>All approaches cover the recent past, but differ in how far they go back in time. BTI and EIU begin in the mid-2000s. Freedom in the World starts in the early 1970s. The other approaches go back to the beginning of the 19th century or even the late 18th century. The Regimes of the World-data we ourselves extended <a href="https://ourworldindata.org/regimes-of-the-world-data">back from 1900</a>.</p><p>All approaches cover most countries in the world. They differ in how comprehensive their coverage is: BTI excludes long-term members of the OECD (which it considers consolidated democracies), while all other approaches assess them. Some approaches also include very small states and territories, and some also assess many non-independent countries, usually colonies.<a id="ref-10" class="ref" href="#note-10"><sup>10</sup></a></p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-136" class="tablepress tablepress-id-136">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">What years and countries are covered?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">1789 — 2021/ongoing; 202 countries, also non-independent</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">1789 — 2021/ongoing; 202 countries, also non-independent</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">1789 — 2021/ongoing; 242 countries, also non-independent and microstates<br>
+</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">1800 — 2020/ongoing; 218 countries, also microstates<br>
+</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">1800 — 2018; 192 countries<br>
+</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">1972 — 2021/ongoing; 229 countries and territories, also microentities<br>
+</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">2005 — 2021/ongoing; 138 countries, no consolidated democracies<br>
+</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">2006 — 2021/ongoing; 167 countries</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-are-democracy-s-characteristics-assessed"><strong>How are democracy’s characteristics assessed?</strong><a class="deep-link" href="#how-are-democracy-s-characteristics-assessed"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>The approaches also differ in how they go about assessing the characteristics of democracy.&nbsp;</p><p>Many rely on evaluations to assess democratic characteristics that are difficult to observe, such as whether elections were competitive and people were free to express their views. Some rely on evaluations by country experts to assess whether, or to which extent, democracy’s characteristics are present in any given country and year. Others depend on evaluations by their own researchers reviewing the academic literature and news reports. And many use both country experts and their own teams. A few additionally incorporate some representative surveys of regular citizens.</p><p>The Lexical Index and the Boix-Miller-Rosato data meanwhile work to avoid difficult evaluations by either experts or researchers, and mostly have their own teams assess easy-to-observe characteristics — such as whether regular elections are held and several parties compete in them — to identify (non-)democracies.</p><p>Depending on whether they score democracy as a spectrum or classification, the approaches then aggregate the scores for specific characteristics: some average, add, and/or weigh the scores, others assess whether necessary characteristics are present, and a few do both.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-137" class="tablepress tablepress-id-137">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How are democracy's characteristics assessed?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">mostly evaluations by experts; some easy-to-observe characteristics asses by own researchers<br>
+weighing, adding, and multiplying scores for (sub-)characteristics</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">mostly evaluations by experts; some easy-to-observe characteristics asses by own researchers<br>
+necessary characteristics are (not) present<br>
+weighing, adding, and multiplying scores for few characteristics</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">mostly easy-to-observe characteristics, few evaluations by own researchers based on academic research<br>
+necessary characteristics are (not) present</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">mostly easy-to-observe characteristics, few evaluations by own researchers based on academic literature<br>
+necessary characteristics are (not) present</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">evaluations by own researchers based on academic literature and news reports<br>
+weighing and adding scores for characteristics</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">evaluations by country and regional experts and own researchers based on different types of sources<br>
+free countries: adding scores for (sub-)characteristics<br>
+electoral democracies: adding scores and necessary conditions (not) met</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">mostly evaluations by country, regional, and general experts, some evaluations by representative surveys of regular citizens<br>
+spectrum: averaging of scores for (sub-)characteristics<br>
+classification: averaging and necessary characteristics (not) present</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">mostly evaluations by own researchers and country experts, some evaluations by representative surveys of regular citizens<br>
+averaging and minor weighting of scores for (sub-)characteristics</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-approaches-work-to-make-assessments-valid"><strong>How do approaches work to make assessments valid?</strong><a class="deep-link" href="#how-do-approaches-work-to-make-assessments-valid"></a></h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>The next tables summarize how the approaches address the challenges that come with measuring democracy. The first challenge is to make their assessments valid — to actually measure what they want to capture.</p><p>The approaches go about measuring democracy differently because they weigh the challenges of measurement differently.&nbsp;</p><p>For those mostly relying on experts, the priority is that democracy’s characteristics are evaluated by people that know the country well. For those relying on their own researchers, the priority is that the coders know the approach’s characterization of democracy and the measurement procedures well. And for those relying on representative surveys, capturing the difficult-to-observe lived realities of regular citizens is especially important.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-138" class="tablepress tablepress-id-138">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How do approaches work to make assessments valid?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">experts (often nationals or residents) know country and characteristics well, own researchers know measurement procedures well</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">experts (often nationals or residents) know country and characteristics well, own researchers know measurement procedures well</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">own researchers know measurement procedures well</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">own researchers know measurement procedures well</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">own researchers know measurement well</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">experts know country or region well, own researchers know measurement well</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">experts (about half of them local) know country well, regular citizens know their own experiences well</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">experts know country or region well, own researchers know measurement procedures well, regular citizens know their own experiences well</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-approaches-work-to-make-assessments-precise"><strong>How do approaches work to make assessments precise?</strong><a class="deep-link" href="#how-do-approaches-work-to-make-assessments-precise"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>The approaches are also concerned with making their assessments in a precise and reliable manner.</p><p>Expert-based approaches therefore often recruit many experts in total, several experts per country, or even several to many experts per country, year and characteristic.</p><p>Own-researcher-based approaches instead either focus more on making difficult subjective evaluation mostly unnecessary, or encourage their teams to rely on many different secondary sources, such as country-specific academic research, news reports, and personal conversations.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-139" class="tablepress tablepress-id-139">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How do approaches work to make assessments precise?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">several experts per country, year, and characteristic (usually 5 or more since 1900, often 25 per country)</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">several experts per country, year, and characteristic (usually 5 or more since 1900, often 25 per country)</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">characteristics easy to understand and observe; subjective evaluation mostly unnecessary</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">characteristics easy to understand and observe; subjective evaluation mostly unnecessary</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">several researchers</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">more than 100 experts and researchers in total; experts and researchers rely on academic research, news and NGO reports, personal conversations, and on-the-ground research</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">two experts per country and year</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">no information</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-approaches-work-to-make-assessments-comparable"><strong>How do approaches work to make assessments comparable?</strong><a class="deep-link" href="#how-do-approaches-work-to-make-assessments-comparable"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>The approaches also face the challenge of how to make the coders’ respective assessments comparable across countries and time.</p><p>The surveys therefore ask the experts questions about specific characteristics of democracy, such as the presence or absence of election fraud, instead of making them rely on their broad impressions. They also explain the scales on which the characteristics are scored, and often all of the scales’ values.</p><p>Measuring many specific low-level characteristics also helps users understand why a country received a specific score, and it allows them to create new measures tailored to their own interests.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-140" class="tablepress tablepress-id-140">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How do approaches work to make assessments comparable?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">experts asked very specific questions about sub-characteristics on completely explained scale<br>
+experts also code hypothetical countries and many code several countries, denote own uncertainty and personal demographic information<br>
+expert biases investigated and found to be limited</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">experts asked very specific questions about sub-characteristics on completely explained scale<br>
+experts also code hypothetical examples and many code several countries, denote own uncertainty and personal attributes<br>
+expert biases investigated and found to be limited</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">researchers asked specific questions about characteristics on explained scale<br>
+same researcher assesses all countries</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">no information</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">experts asked specific questions about characteristics on completely explained scale</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">experts asked questions about characteristics separately</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">experts asked specific questions about sub-characteristics on explained scale</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">experts asked specific questions about sub-characteristics on completely explained scale</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-are-remaining-differences-dealt-with"><strong>How are remaining differences dealt with?</strong><a class="deep-link" href="#how-are-remaining-differences-dealt-with"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>The approaches then all work to address any remaining differences between coders, even if they do so differently.&nbsp;&nbsp;</p><p>V-Dem and RoW work with a statistical model which uses the experts’ ratings of actual countries and hypothetical country examples, as well as the experts’ stated uncertainties and personal demographics to produce both best and upper- and lower-bound estimates of many characteristics. They thereby avoid forcing themselves to eliminate all uncertainty and thereby possibly biasing their scores, and acknowledge that its coders make errors. This also recognizes that small differences in democracy on fine-grained spectrums may actually not exist, or be reversed, because measurement is uncertain.</p><p>Most other approaches go about it differently, and have researchers and experts discuss differing scores to reconcile them. This adds an additional step to make the assessments comparable across coders, countries, and years.</p><p>And while it uses discussions, Freedom in the World still acknowledges that it refined its approach over time, which makes its scores not as readily comparable: they work best for comparing different countries at the same time, or comparing the same country over the course of a few years.</p><p>The Lexical Index and Polity meanwhile do not have several coders per country and year, but they still worked to assess coding differences by once having its researchers rate some countries independently and compare their results. Reassuringly, they found that they came to similar conclusions.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-141" class="tablepress tablepress-id-141">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How are remaining differences dealt with?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">measurement model uses main and additional information and provides estimates of remaining measurement uncertainty</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">measurement model uses main and additional information and provides estimates of remaining measurement uncertainty</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">second researcher for some countries reproduced most assessments</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">no information</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">discussion among researchers reconciles different standards across coders, countries, and years<br>
+separate researcher teams for some countries and years reproduced most assessments</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">discussion among experts and researchers reconciles different standards across coders, countries, and years</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">discussion among regional and general experts and own researchers reconciles different standards across coders, countries, and years</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">discussion among experts and own researchers reconciles different standards across coders, countries, and years</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-do-approaches-work-to-make-data-accessible-and-transparent"><strong>How do approaches work to make data accessible and transparent?</strong><a class="deep-link" href="#how-do-approaches-work-to-make-data-accessible-and-transparent"></a></h4></div><div class="wp-block-column"></div></div><p class="wp-block-full-content-width">
+</p><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p></p><p>Finally, the approaches all take steps to make their data accessible and the underlying measurement transparent. All approaches publicly release their data and almost all make the data straightforward to download and use. Most approaches release not only the overall classification and scores, but also the underlying (sub-)characteristics. V-Dem even releases the data coded by each (anonymous) expert.</p><p>Almost all release descriptions of how they characterize democracy, as well as the questions and coding procedures guiding the experts and researchers. V-Dem again stands out here for its very detailed descriptions that also discuss why it weighs, adds, and multiplies the scores for specific characteristics. Polity, Freedom in the World, and BTI meanwhile provide additional helpful information by explaining their quantitative scores in country reports that discuss influential events.</p></div><div class="wp-block-column"><div class="tableContainer"><table id="tablepress-142" class="tablepress tablepress-id-142">
+<thead>
+<tr class="row-1 odd">
+	<th colspan="2" class="column-1">How do approaches work to make data accessible and transparent?</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><strong>Varieties of Democracy</strong></td><td class="column-2">disaggregated data by country-year, country-date, and coder, detailed questions and coding procedures available and easy to access<br>
+democracy characteristics and their combination justified in detail</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><strong>Regimes of the World</strong></td><td class="column-2">data by country-year, country-date, and coder, detailed questions and coding procedures available and easy to access<br>
+democracy characteristics and their combination justified</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><strong>Lexical Index</strong></td><td class="column-2">disaggregated data by country-year, questions and coding procedures available and easy to access<br>
+democracy characteristics and their combination justified in detail</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><strong>Boix-Miller-Rosato</strong></td><td class="column-2">data by country-year, questions and coding procedures available and easy to access<br>
+democracy characteristics and their combination justified</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><strong>Polity</strong></td><td class="column-2">disaggregated data by country-year, detailed questions and coding procedures available and easy to access<br>
+country reports explaining scores</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><strong>Freedom House</strong></td><td class="column-2">recent disaggregated data by country-year, questions and coding procedures available and easy to access<br>
+democracy characteristics justified<br>
+country reports explaining scores</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><strong>Bertelsmann Transformation Index</strong></td><td class="column-2">disaggregated data by country-year, detailed questions and coding procedures available and easy to access<br>
+democracy characteristics and their combination justified<br>
+country reports explaining scores</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><strong>Economist Intelligence Unit</strong></td><td class="column-2">disaggregated data by country-year, questions and coding procedures available<br>
+democracy characteristics justified</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="the-best-democracy-measure-depends-on-our-questions"><strong>The best democracy measure depends on our questions</strong><a class="deep-link" href="#the-best-democracy-measure-depends-on-our-questions"></a></h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>There is no single ‘best’ approach to measuring democracy. Conceptions of democracy are too different, and the challenges of measurement are too diverse for that. All of the approaches put a lot of effort into measuring democracy in ways that are useful to researchers, policymakers, and interested citizens.</p><p>The most appropriate democracy measure depends on what question we want to answer. It is the one that captures the characteristics of democracy and the countries and years we are interested in.</p><p>This means that having several approaches to measuring democracy is not a flaw, but a strength: it gives us different tools to understand the past spread, current state, and possible future of democracy around the world.</p><p>If you want to explore and compare the data that each of these sources produce, &nbsp; you can do so in our <a href="https://ourworldindata.org/democracy-explorer">Democracy Data Explorer</a>.</p><hr class="wp-block-separator"><h5><strong>Keep reading at <em>Our World in Data</em></strong></h5><div class="block-wrapper"><div class="wp-block-owid-prominent-link with-image" data-no-lightbox="true" data-style="is-style-thin" data-title="Democracy Data Explorer"><a href="https://ourworldindata.org/explorers/democracy"><figure><img src="https://ourworldindata.org/default-thumbnail.jpg"></figure><div class="content-wrapper"><div class="title"><span>Democracy Data Explorer</span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg></div></div></a></div></div><div class="block-wrapper"><div class="wp-block-owid-prominent-link with-image" data-no-lightbox="true" data-style="is-style-thin" data-title="200 years ago, everyone lacked democratic rights. Now, billions of people have them"><a href="https://ourworldindata.org/democratic-rights"><figure><img src="https://ourworldindata.org/uploads/2021/12/democratic-rights-thumbnail-150x59.png"></figure><div class="content-wrapper"><div class="title"><span>200 years ago, everyone lacked democratic rights. Now, billions of people have them</span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg></div></div></a></div></div><div class="block-wrapper"><div class="wp-block-owid-prominent-link with-image" data-no-lightbox="true" data-style="is-style-thin" data-title="In most countries, democracy is a recent achievement. Dictatorship is far from a distant memory"><a href="https://ourworldindata.org/democracies-age"><figure><img src="https://ourworldindata.org/uploads/2022/02/number-electoral-democracies-age-1.svg"></figure><div class="content-wrapper"><div class="title"><span>In most countries, democracy is a recent achievement. Dictatorship is far from a distant memory</span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg></div></div></a></div></div><h5><strong>Acknowledgements</strong></h5><p>I thank Hannah Ritchie and Daniel Bachler for reading drafts of this text and for very helpful comments and ideas.</p><div class="wp-container-62acabbb28f56 wp-block-group">
+<div class="wp-container-62acabbb28d5a wp-block-group">
+
+
+
+	<div class="block-wrapper" data-reactroot=""><div data-variation="full-width" data-default-open="false" class="wp-block-owid-additional-information"><h3 data-track-note="additional-information-toggle"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg>What are democracy’s specific characteristics?</h3><div style="height:0;overflow:hidden" aria-hidden="true" class="rah-static rah-static--height-zero"><div style="transition:opacity 250ms ease 0ms;-webkit-transition:opacity 250ms ease 0ms;opacity:0"><div class="content">
+
+
+
+
+
+<div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<h4><strong>Varieties of Democracy</strong></h4>
+
+
+
+<p><strong>Spectrums:</strong></p>
+
+
+
+<ul><li><strong>electoral democracy</strong>: extent to which political leaders are elected in free and fair elections under comprehensive suffrage and freedoms of association and expression</li><li><strong>liberal democracy</strong>: electoral democracy and extent to which citizens have individual and minority rights, are equal before the law, and the actions of the executive are constrained by the legislative and the courts</li><li><strong>participatory democracy</strong>: electoral democracy and extent to which citizens can engage in civil society organizations and direct democracy</li><li><strong>deliberative democracy</strong>: electoral democracy and extent to which citizens and leaders discuss different views and seek public good</li><li><strong>egalitarian democracy</strong>: electoral democracy and extent to which economic and social resources are distributed equally</li></ul>
+
+
+
+
+
+
+
+<h4><strong>Regimes of the World</strong></h4>
+
+
+
+<p><strong>Classification:</strong></p>
+
+
+
+<ul><li><strong>closed autocracy</strong>: citizens do not have the right to choose either the chief executive of the government or the legislature through multi-party elections</li><li><strong>electoral autocracy</strong>: citizens have the right to choose the chief executive and the legislature through multi-party elections; but they lack some freedoms, such as the freedoms of association or expression that make the elections meaningful, free, and fair</li><li><strong>electoral democracy</strong>: citizens have the right to choose the chief executive and the legislature in meaningful, free and fair, and multi-party elections</li><li><strong>liberal democracy</strong>: electoral democracy and citizens enjoy individual and minority rights, are equal before the law, and the actions of the executive are constrained by the legislative and the courts</li></ul>
+
+
+
+
+
+
+
+<h4><strong>Lexical Index of Electoral Democracy</strong></h4>
+
+
+
+<p><strong>Classification:</strong></p>
+
+
+
+<ul><li><strong>non-electoral autocracy</strong>: citizens do not have the right to elect the chief executive or the legislature</li><li><strong>one-party autocracy</strong>: some citizens have the right to choose the chief executive or the legislature, but only have one choice</li><li><strong>multiparty autocracy without elected executive</strong>: some citizens have the right to choose the legislature and have more than one choice, but chief executive not elected</li><li><strong>multiparty autocracy</strong>: some citizens have the right to choose the chief executive and the legislature and have more than one choice, but election outcome is certain</li><li><strong>exclusive democracy</strong>: citizens have the right to choose the chief executive and the legislature in multi-party, uncertain elections, but suffrage is restricted</li><li><strong>male democracy</strong>: citizens have the right to choose the chief executive and the legislature in multi-party, uncertain elections, but suffrage is restricted to men</li><li><strong>electoral democracy</strong>: citizens have the right to choose the chief executive and the legislature in multi-party, uncertain elections</li><li><strong>polyarchy</strong>: citizens have the right to choose the chief executive and the legislature in multi-party, uncertain elections, and enjoy freedoms of expression, assembly, and association</li></ul>
+
+
+
+
+
+
+
+<h4><strong>Boix-Miller-Rosato (BMR)</strong></h4>
+
+
+
+<p><strong>Classifications:</strong></p>
+
+
+
+<ul><li><strong>democracy</strong>: a majority of adult men have the right to choose the chief executive and the legislature in free and fair elections</li><li><strong>democracy with women’s suffrage</strong>: a majority of adult men and women have the right to choose the chief executive and the legislature in free and fair elections</li></ul>
+
+
+
+
+
+
+
+<h4><strong>Polity</strong></h4>
+
+
+
+<p><strong>Spectrum &amp; Classification:</strong></p>
+
+
+
+<ul><li><strong>full/consolidated democracy</strong>: open, multi-party, and competitive elections choose chief executive, who faces comprehensive institutional constraints, and political participation is competitive</li><li><strong>democracy</strong>: mostly democratic characteristics</li><li><strong>anocracy</strong>: neither clearly democratic nor autocratic characteristics</li><li><strong>autocracy</strong>: mostly autocratic characteristics</li><li><strong>full autocracy/hereditary monarchy</strong>: hereditary succession chooses chief executive who faces no institutional constraints, and political participation is restricted and suppressed</li></ul>
+
+
+
+
+
+
+
+<h4><strong>Freedom in the World</strong></h4>
+
+
+
+<p><strong>Classification 1:</strong></p>
+
+
+
+<ul><li><strong>free country</strong>: citizens have many political rights (free and fair elections, political pluralism and participation, functioning government) and civil liberties (freedoms of expression and association, rule of law, personal autonomy)</li><li><strong>partly free country</strong>: citizens have some political rights and civil liberties</li><li><strong>not free country</strong>: citizens have few political rights and civil liberties</li></ul>
+
+
+
+<p><strong>Classification 2:</strong></p>
+
+
+
+<ul><li><strong>electoral democracy</strong>: citizens have the right to choose chief executive and legislature in broadly free and fair elections and have substantial other political rights and civil liberties<br></li></ul>
+
+
+
+
+
+
+
+<h4><strong>Bertelsmann Transformation Index (BTI)</strong></h4>
+
+
+
+<p><strong>Spectrum:</strong></p>
+
+
+
+<ul><li><strong>democratic features</strong>: extent of political participation, the rule of law, stable democratic institutions, political and social integration, and a capable state</li></ul>
+
+
+
+<p><strong>Classification:</strong></p>
+
+
+
+<ul><li><strong>consolidating democracy</strong>: comprehensive democratic features and minimum democratic characteristics (citizens can choose political leaders in free and fair elections and enjoy freedoms of association, expression and some further civil liberties, political power is separated, and leaders can effectively govern a state that fulfils basic functions)</li><li><strong>defective democracy</strong>: minimum democratic characteristics, but limited other democratic features</li><li><strong>very defective democracy</strong>: minimum democratic characteristics, but very limited other democratic features</li><li><strong>moderate autocracy</strong>: no minimum democratic characteristics, but possibly other broadly democratic features</li><li><strong>hard-line autocracy</strong>: no minimum democratic characteristics, and few other democratic features</li></ul>
+
+
+
+
+
+
+
+<h4><strong>Economist Intelligence Unit (EIU)</strong></h4>
+
+
+
+<p><strong>Spectrum:</strong></p>
+
+
+
+<ul><li><strong>democracy</strong>: extent to which citizens can choose their political leaders in free and fair elections, enjoy civil liberties, prefer democracy over other political systems, can and do participate in politics, and have a functioning government that acts on their behalf</li></ul>
+
+
+
+<p><strong>Classification:</strong></p>
+
+
+
+<div class="wp-container-62acabbb28a7a wp-block-group">
+<ul><li><strong>full democracy</strong>: comprehensive extent of democracy, few weaknesses</li><li><strong>flawed democracy</strong>: some weaknesses in democratic institutions and culture</li><li><strong>hybrid regime</strong>: serious weaknesses in democratic institutions and culture</li><li><strong>authoritarian regime</strong>: few democratic institutions and little democratic culture</li></ul>
+</div>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+</div></div></div></div></div>
+
+
+
+</div>
+</div></div><div class="wp-block-column"></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="endnotes">Endnotes</h3><ol class="endnotes"><li id="note-1"><p>Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, Nazifa Alizada, David Altman, Michael Bernhard, Agnes Cornell, M. Steven Fish, Lisa Gastaldi, Haakon Gjerløw, Adam Glynn, Sandra Grahn, Allen Hicken, Garry Hindle, Nina Ilchenko, Katrin Kinzelbach, Joshua Krusell, Kyle L. Marquardt, Kelly McMann, Valeriya Mechkova, Juraj Medzihorsky, Pamela Paxton, Daniel Pemstein, Josefine Pernes, Oskar Ryd en, Johannes von Römer, Brigitte Seim, Rachel Sigman, Svend-Erik Skaaning, Jeffrey Staton, Aksel Sundström, Eitan Tzelgov, Yi-ting Wang, Tore Wig, Steven Wilson and Daniel Ziblatt. 2022. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Coppedge%2C+Michael%2C+John+Gerring%2C+Carl+Henrik+Knutsen%2C+Staffan+I.+Lindberg%2C+Jan+Teorell%2C+Nazifa+Alizada%2C+David+Altman%2C+Michael+Bernhard%2C+Agnes+Cornell%2C+M.+Steven+Fish%2C+Lisa+Gastaldi%2C+Haakon+Gjerl%C3%B8w%2C+Adam+Glynn%2C+Sandra+Grahn%2C+Allen+Hicken%2C+Garry+Hindle%2C+Nina+Ilchenko%2C+Katrin+Kinzelbach%2C+Joshua+Krusell%2C+Kyle+L.+Marquardt%2C+Kelly+McMann%2C+Valeriya+Mechkova%2C+Juraj+Medzihorsky%2C+Pamela+Paxton%2C+Daniel+Pemstein%2C+Josefine+Pernes%2C+Oskar+Ryd%E2%80%80en%2C+Johannes+von+R%C3%B6mer%2C+Brigitte+Seim%2C+Rachel+Sigman%2C+Svend-Erik+Skaaning%2C+Jeffrey+Staton%2C+Aksel+Sundstr%C3%B6m%2C+Eitan+Tzelgov%2C+Yi-ting+Wang%2C+Tore+Wig%2C+Steven+Wilson+and+Daniel+Ziblatt.+2022.+VDem+%5BCountry%E2%80%93Year%2FCountry%E2%80%93Date%5D+Dataset+v12.+Varieties+of+Democracy+%28V-Dem%29+Project.&amp;btnG=">VDem [Country–Year/Country–Date] Dataset v12</a>. Varieties of Democracy (V-Dem) Project.</p></li><li id="note-2"><p>Lührmann, Anna, Marcus Tannnberg, and Staffan Lindberg. 2018. Regimes of the World (RoW): <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=L%C3%BChrmann%2C+Anna%2C+Marcus+Tannnberg%2C+and+Staffan+Lindberg.+2018.+Regimes+of+the+World+%28RoW%29%3A+Opening+New+Avenues+for+the+Comparative+Study+of+Political+Regimes.+Politics+and+Governance+6%281%29%3A+60-77.%7B%2Fref%7D&amp;btnG=">Opening New Avenues for the Comparative Study of Political Regimes</a>. Politics and Governance 6(1): 60-77.</p></li><li id="note-3"><p>Skaaning, Svend-Erik, John Gerring, and Henrikas Bartusevičius. 2015. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Skaaning%2C+Svend-Erik%2C+John+Gerring%2C+and+Henrikas+Bartusevi%C4%8Dius.+2015.+A+Lexical+Index+of+Electoral+Democracy.+Comparative+Political+Studies+48%2812%29%3A+1491-1525&amp;btnG=">A Lexical Index of Electoral Democracy</a>. Comparative Political Studies 48(12): 1491-1525.</p></li><li id="note-4"><p>Boix, Carles, Michael Miller, and Sebastian Rosato. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Boix%2C+Carles%2C+Michael+Miller%2C+and+Sebastian+Rosato.+A+Complete+Data+Set+of+Political+Regimes%2C+1800%E2%80%932007.+Comparative+Political+Studies+46%2812%29%3A1523-1554.&amp;btnG=">A Complete Data Set of Political Regimes, 1800–2007</a>. Comparative Political Studies 46(12):1523-1554.</p></li><li id="note-5"><p>Marshall, Monty G. and Ted Robert Gurr. 2021. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Marshall%2C+Monty+G.+and+Ted+Robert+Gurr.+2021.+Polity+5%3A+Political+Regime+Characteristics+and+Transitions%2C+1800-2018.+Center+for+Systemic+Peace&amp;btnG=">Polity 5: Political Regime Characteristics and Transitions, 1800-2018</a>. Center for Systemic Peace.</p></li><li id="note-6"><p>Freedom House. 2022. <a href="https://freedomhouse.org/report/freedom-world">Freedom in the world 2022</a>.</p></li><li id="note-7"><p>Bertelsmann Foundation. 2022. <a href="https://bti-project.org/en">Bertelsmann Transformation Index 2022</a>.</p></li><li id="note-8"><p>Economist Intelligence Unit. 2022. <a href="https://www.eiu.com/n/campaigns/democracy-index-2021/?utm_source=eiu-website&amp;utm_medium=blog&amp;utm_campaign=democracy-index-2021">Democracy Index 2021: The China challenge</a>.</p></li><li id="note-9"><p>This article draws on several very helpful other articles summarizing and reviewing some of the datasets, as well as the datasets’ own codebooks and descriptions:</p>
+
+
+
+<p>Bertelsmann Foundation. 2022. <a href="http://web.archive.org/web/20220404134021/https://bti-project.org/fileadmin/api/content/en/downloads/data/BTI_2022_Codebook_for_Stata.pdf">BTI Codebook for Stata</a>.</p>
+
+
+
+<p>Boese, Vanessa. 2019. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Boese%2C+Vanessa.+2019.+How+%28not%29+to+measure+democracy.+International+Area+Studies+Review+22%282%29%3A+95-127&amp;btnG=">How (not) to measure democracy</a>. International Area Studies Review 22(2): 95-127.</p>
+
+
+
+<p>Boix, Carles, Michael K. Miller, and Sebastian Rosato. 2022. <a href="https://sites.google.com/site/mkmtwo/data?authuser=0">Boix-Miller-Rosato (BMR) Dichotomous Coding of Democracy, Version 4.0 (1800-2020) Codebook</a>.</p>
+
+
+
+<p>Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, David Altman, Michael Bernhard, Agnes Cornell, M. Steven Fish, Lisa Gastaldi, Haakon Gjerløw, Adam Glynn, Sandra Grahn, Allen Hicken, Katrin Kinzelbach, Kyle L. Marquardt, Kelly McMann, Valeriya Mechkova, Pamela Paxton, Daniel Pemstein, Johannes von Römer, Brigitte Seim, Rachel Sigman, Svend-Erik Skaaning, Jeffrey Staton, Eitan Tzelgov, Luca Uberti, Yi-ting Wang, Tore Wig, and Daniel Ziblatt. 2022. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Coppedge%2C+Michael%2C+John+Gerring%2C+Carl+Henrik+Knutsen%2C+Staffan+I.+Lindberg%2C+Jan+Teorell%2C+David+Altman%2C+Michael+Bernhard%2C+Agnes+Cornell%2C+M.+Steven+Fish%2C+Lisa+Gastaldi%2C+Haakon+Gjerl%C3%B8w%2C+Adam+Glynn%2C+Sandra+Grahn%2C+Allen+Hicken%2C+Katrin+Kinzelbach%2C+Kyle+L.+Marquardt%2C+Kelly+McMann%2C+Valeriya+Mechkova%2C+Pamela+Paxton%2C+Daniel+Pemstein%2C+Johannes+von+R%C3%B6mer%2C+Brigitte+Seim%2C+Rachel+Sigman%2C+Svend-Erik+Skaaning%2C+Jeffrey+Staton%2C+Eitan+Tzelgov%2C+Luca+Uberti%2C+Yi-ting+Wang%2C+Tore+Wig%2C+and+Daniel+Ziblatt.+2022.+V-Dem+Codebook+v12.+Varieties+of+Democracy+%28V-Dem%29+Project.&amp;btnG=">V-Dem Codebook v12</a>. Varieties of Democracy (V-Dem) Project.</p>
+
+
+
+<p>Coppedge, Michael, John Gerring, Staffan I. Lindberg, Svend-Erik Skaaning, and Jan Teorell. 2017. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Coppedge%2C+Michael%2C+John+Gerring%2C+Staffan+I.+Lindberg%2C+Svend-Erik+Skaaning%2C+and+Jan+Teorell.+2017.+V-Dem+Comparisons+and+Contrasts+with+Other+Measurement+Projects.+V-Dem+Working+Paper+45.&amp;btnG=">V-Dem Comparisons and Contrasts with Other Measurement Projects</a>. V-Dem Working Paper 45.</p>
+
+
+
+<p>Economist Intelligence Unit. 2022. <a href="https://www.eiu.com/n/campaigns/democracy-index-2021/?utm_source=eiu-website&amp;utm_medium=blog&amp;utm_campaign=democracy-index-2021">Democracy Index 2021: The China challenge</a>.</p>
+
+
+
+<p>Elff, Martin, and Sebastian Ziaja. 2018. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Elff%2C+Martin%2C+and+Sebastian+Ziaja.+2018.+Method+Factors+in+Democracy+Indicators.+Politics+and+Governance+6%281%29%3A+105-116.&amp;btnG=">Method Factors in Democracy Indicators</a>. Politics and Governance 6(1): 105-116.</p>
+
+
+
+<p>Freedom House. 2022. <a href="http://web.archive.org/web/20220510113257/https://freedomhouse.org/sites/default/files/2022-02/FIW_2022_Methodology_For_Web.pdf">Freedom in the World 2022 Methodology</a>.</p>
+
+
+
+<p>Marshall, Monty G. and Ted Robert Gurr. 2020. <a href="https://web.archive.org/web/20220420174443/http://www.systemicpeace.org/inscr/p5manualv2018.pdf">Polity 5: Political Regime Characteristics and Transitions, 1800-2018 Dataset Users’ Manual</a>. Center for Systemic Peace.</p>
+
+
+
+<p>McMann, Kelly, Daniel Pemstein, Brigitte Seim, Jan Teorell, and Staffan Lindberg. 2021. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C14&amp;q=McMann%2C+Kelly%2C+Daniel+Pemstein%2C+Brigitte+Seim%2C+Jan+Teorell%2C+and+Staffan+Lindberg.+2021.+Assessing+Data+Quality%3A+An+Approach+and+An+Application.+Political+Analysis.&amp;btnG=">Assessing Data Quality: An Approach and An Application</a>. <em>Political Analysis</em>.</p>
+
+
+
+<p>Møller, Jørgen and Svend-Erik Skaaning. 2021. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=M%C3%B8ller%2C+J%C3%B8rgen+and+Svend-Erik+Skaaning.+2021.+Varieties+of+Measurement%3A+A+Comparative+Assessment+of+Relatively+New+Democracy+Ratings+based+on+Original+Data.+V-Dem+Working+Paper+123.&amp;btnG=">Varieties of Measurement: A Comparative Assessment of Relatively New Democracy Ratings based on Original Data</a>. V-Dem Working Paper 123.</p>
+
+
+
+<p>Skaaning, Svend-Erik. 2018. <a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Skaaning%2C+Svend-Erik.+2018.+Different+Types+of+Data+and+the+Validity+of+Democracy+Measures.+Politics+and+Governance+6%281%29%3A+105-116.&amp;btnG=">Different Types of Data and the Validity of Democracy Measures</a>. Politics and Governance 6(1): 105-116.Skaaning, Svend-Erik. 2021. <a href="https://dataverse.harvard.edu/file.xhtml?fileId=4571029&amp;version=1.0">The Lexical Index of Electoral Democracy (LIED) Dataset (v6.0) Codebook</a>.</p></li><li id="note-10"><p>To cover even more of today’s countries when they were still non-sovereign territories we further identified for V-Dem, RoW and slightly for Boix-Miller-Rosato the historical entity the territories were a part of and used that regime’s data whenever available.</p></li></ol><h3 id="licence">Reuse our work freely</h3><p>All visualizations, data, and code produced by Our World in Data are completely open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.</p><p>The data produced by third parties and made available by Our World in Data is subject to the license terms from the original third-party authors. We will always indicate the original source of the data in our documentation, so you should always check the license of any such third-party data before use and redistribution.</p><p>All of <a href="/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=51315&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="/about" data-track-note="footer-navigation">About</a></li><li><a href="/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="/funding" data-track-note="footer-navigation">Funding</a></li><li><a href="/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="/blog" data-track-note="footer-navigation">Latest work</a></li><li><a href="/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://instagram.com/ourworldindata_official" data-track-note="footer-navigation">Instagram</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>Licenses: All visualizations, data, and articles produced by Our World in Data are open access under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons BY license</a>. You have permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All the software and code that we write is open source and made available via GitHub under the permissive <a href="https://github.com/owid/owid-grapher/blob/master/LICENSE.md " target="_blank" rel="noopener noreferrer">MIT license</a>. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.</p><p>Please consult our full <a href="/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo.svg" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://polyfill.io/v3/polyfill.min.js?features=es6,fetch,URL,IntersectionObserver,IntersectionObserverEntry"></script><script src="https://ourworldindata.org/assets/commons.js"></script><script src="https://ourworldindata.org/assets/vendors.js"></script><script src="https://ourworldindata.org/assets/owid.js"></script><script>window.runSiteFooterScripts()</script></footer><script>
                         runTableOfContents({"headings":[],"pageTitle":"Democracy data: how do researchers identify which countries are democratic?"})
                         runRelatedCharts(undefined)
                         </script></body></html>
