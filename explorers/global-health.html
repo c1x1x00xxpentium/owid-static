@@ -3216,13 +3216,13 @@ const grapherConfigs =
   },
   {
     "id": 2699,
-    "version": 9,
+    "version": 11,
     "slug": "literacy-rate-adults",
     "title": "Adult literacy rate",
     "subtitle": "The share of adults aged 15 and older who can both read and write.",
     "note": "Under the UNESCO metric, someone who is literate can, with understanding, read and write a short, simple statement on their everyday life. However, definitions and criteria of literacy can vary by country. You can find further discussion on 'How is literacy measured?' in our post here: https://ourworldindata.org/how-is-literacy-measured",
     "hideTitleAnnotation": true,
-    "maxTime": 2019,
+    "maxTime": 2021,
     "hasMapTab": true,
     "tab": "map",
     "originUrl": "ourworldindata.org/literacy",
@@ -3232,7 +3232,8 @@ const grapherConfigs =
       "max": 0
     },
     "map": {
-      "timeTolerance": 1,
+      "time": "latest",
+      "timeTolerance": 3,
       "colorScale": {
         "baseColorScheme": "PuBuGn",
         "binningStrategy": "manual",
@@ -3252,22 +3253,22 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 147905
+      "variableId": 446466
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 147905
+        "variableId": 446466
       }
     ],
     "selectedEntityNames": [
       "World",
       "Sub-Saharan Africa",
-      "Europe & Central Asia",
-      "Latin America & Caribbean",
       "South Asia",
-      "East Asia & Pacific",
-      "Middle East & North Africa"
+      "Europe and Central Asia",
+      "Middle East and North Africa",
+      "Latin America and Caribbean",
+      "East Asia and Pacific"
     ],
     "selectedEntityIds": [
       355,
@@ -3488,15 +3489,14 @@ const grapherConfigs =
   },
   {
     "id": 2968,
-    "version": 11,
+    "version": 13,
     "slug": "life-expectancy-at-birth-total-years",
     "title": "Life expectancy",
     "subtitle": "The average number of years a newborn would live if age-specific mortality rates in the current year were to stay the same throughout its life.",
     "hideTitleAnnotation": true,
     "minTime": 1960,
-    "maxTime": 2019,
+    "maxTime": 2020,
     "hasMapTab": true,
-    "tab": "map",
     "variantName": "World Bank data",
     "originUrl": "ourworldindata.org/life-expectancy",
     "isPublished": true,
@@ -3527,19 +3527,18 @@ const grapherConfigs =
           null
         ]
       },
-      "variableId": 147845
+      "variableId": 446953
     },
     "dimensions": [
       {
         "property": "y",
-        "variableId": 147845
+        "variableId": 446953
       }
     ],
     "selectedEntityNames": [
       "World",
       "High income",
       "Low income",
-      "Low & middle income",
       "Lower middle income",
       "Middle income"
     ],
