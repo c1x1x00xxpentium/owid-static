@@ -5,7 +5,16 @@
 <id>https://ourworldindata.org/</id>
 <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
 <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-<updated>2022-07-05T09:00:00.000Z</updated>
+<updated>2022-07-07T09:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Guinea worm disease is close to being eradicated – how was this progress achieved?]]></title>
+            <id>https://ourworldindata.org/guinea-worm-path-eradication</id>
+            <link rel="alternate" href="https://ourworldindata.org/guinea-worm-path-eradication"/>
+            <published>2022-07-07T09:00:00.000Z</published>
+            <updated>2022-07-07T09:59:35.000Z</updated>
+            <author><name>Saloni Dattani</name></author><author><name>Fiona Spooner</name></author>
+            <summary><![CDATA[In the late 1980s, there were near a million new cases of guinea worm disease recorded worldwide. In 2021, there were only 15. How was this achieved?<br><br><a href="https://ourworldindata.org/guinea-worm-path-eradication" target="_blank"><img src="https://ourworldindata.org/app/uploads/2018/10/Guinea-worm-eradication-thumbnail-768x381.png"/></a>]]></summary>
+            </entry>
 <entry>
             <title><![CDATA[We just published our Democracy Data Explorer]]></title>
             <id>https://ourworldindata.org/democracy-data-explorer</id>
@@ -87,14 +96,5 @@ What can we do to improve this?<br><br><a href="https://ourworldindata.org/bette
             <updated>2022-05-16T20:44:04.000Z</updated>
             <author><name>Edouard Mathieu</name></author><author><name>Hannah Ritchie</name></author>
             <summary><![CDATA[Most people still eat some meat. But survey data shows that many report adopting a diet with less animal products. Young people are more likely to be non- or only occasional meat-eaters.<br><br><a href="https://ourworldindata.org/vegetarian-vegan" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/05/British-diets-thumbnail-768x301.png"/></a>]]></summary>
-            </entry>
-<entry>
-            <title><![CDATA[The largest mammals have always been at the greatest risk of extinction – this is still the case today]]></title>
-            <id>https://ourworldindata.org/large-mammals-extinction</id>
-            <link rel="alternate" href="https://ourworldindata.org/large-mammals-extinction"/>
-            <published>2022-05-09T07:30:00.000Z</published>
-            <updated>2022-05-09T14:55:24.000Z</updated>
-            <author><name>Hannah Ritchie</name></author>
-            <summary><![CDATA[Humans hunted many of the world’s large mammals to extinction. This threat still exists today, but it doesn’t have to be that way.<br><br><a href="https://ourworldindata.org/large-mammals-extinction" target="_blank"><img src="https://ourworldindata.org/app/uploads/2022/05/mammal-downsizing-thumbnail-768x301.png"/></a>]]></summary>
             </entry>
 </feed>
