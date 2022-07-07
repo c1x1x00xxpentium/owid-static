@@ -613,6 +613,8 @@
 /democracy-data-explorer /explorers/democracy 301!
 /covid-vaccination-global-projections https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&facet=none&pickerSort=asc&pickerMetric=location&Metric=People+vaccinated&Interval=Cumulative&Relative+to+Population=true&Color+by+test+positivity=false 301!
 /grapher/covid-vaccination-global-projections https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&facet=none&pickerSort=asc&pickerMetric=location&Metric=People+vaccinated&Interval=Cumulative&Relative+to+Population=true&Color+by+test+positivity=false 301!
+/grapher/estimated-number-of-deaths-from-the-chernobyl-nuclear-disaster /what-was-the-death-toll-from-chernobyl-and-fukushima 301!
+/grapher/estimated-mortality-from-fukushima-nuclear-disaster /what-was-the-death-toll-from-chernobyl-and-fukushima 301!
 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling-2014 /grapher/correlation-between-internet-usage-and-mean-years-of-schooling 302!
 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older-2000 /grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older 302!
 /grapher/public-expenditure-on-education-as-share-of-national-gdp /grapher/public-education-expenditure-as-share-of-gdp 302!
