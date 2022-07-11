@@ -6346,11 +6346,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coal-proved-reserves</loc>
-        <lastmod>2022-02-28</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/natural-gas-proved-reserves</loc>
-        <lastmod>2022-02-28</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/investment-in-renewable-energy-by-technology</loc>
@@ -6366,15 +6366,15 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/primary-energy-consumption-by-region</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/energy-consumption-by-source-and-region</loc>
-        <lastmod>2022-01-17</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/crude-oil-prices</loc>
-        <lastmod>2022-02-28</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/fossil-fuel-price-index</loc>
@@ -8318,7 +8318,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coal-consumption-by-region</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/oil-consumption-by-region-terawatt-hours-twh</loc>
@@ -8342,7 +8342,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coal-reserves-by-type</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/fertility-rate-vs-mean-years-of-schooling</loc>
@@ -8358,15 +8358,15 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/crude-oil-spot-prices</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coal-prices</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/natural-gas-prices</loc>
-        <lastmod>2022-01-07</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/unmet-need-for-contraception-share-of-married-women-of-reproductive-age</loc>
@@ -8394,11 +8394,11 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/coal-consumption-by-country-terawatt-hours-twh</loc>
-        <lastmod>2022-04-25</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/fossil-fuel-consumption-by-fuel-type</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/oil-production-by-country</loc>
@@ -8406,7 +8406,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/oil-consumption-by-country</loc>
-        <lastmod>2022-04-25</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gas-production-by-country</loc>
@@ -8414,7 +8414,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gas-consumption-by-country</loc>
-        <lastmod>2022-04-25</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/progress-towards-polio-eradication</loc>
@@ -8454,19 +8454,19 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/modern-renewable-energy-consumption</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biofuel-production</loc>
-        <lastmod>2022-04-25</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/biofuels-production-by-region</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/solar-energy-consumption-by-region</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/solar-energy-consumption</loc>
@@ -8474,7 +8474,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/solar-pv-energy-consumption-vs-solar-pv-capacity</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/installed-solar-PV-capacity</loc>
@@ -8482,7 +8482,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/renewable-energy-consumption</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/gross-domestic-product</loc>
@@ -8490,7 +8490,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/wind-energy-consumption-by-region</loc>
-        <lastmod>2021-07-16</lastmod>
+        <lastmod>2022-07-11</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/wind-generation</loc>
