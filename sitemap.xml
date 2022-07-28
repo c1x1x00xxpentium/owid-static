@@ -2762,7 +2762,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/democracy</loc>
-        <lastmod>2022-07-19</lastmod>
+        <lastmod>2022-07-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/employment-in-agriculture</loc>
@@ -3734,7 +3734,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/happiness-and-friends</loc>
-        <lastmod>2022-05-19</lastmod>
+        <lastmod>2022-07-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/support-for-vaccination</loc>
@@ -3979,6 +3979,10 @@
     <url>
         <loc>https://ourworldindata.org/social-connections-and-loneliness</loc>
         <lastmod>2020-04-30</lastmod>
+    </url>
+    <url>
+        <loc>https://ourworldindata.org/untitled-reusable-block-186</loc>
+        <lastmod>2022-07-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/less-meat-or-sustainable-meat</loc>
@@ -5074,7 +5078,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/democratic-world</loc>
-        <lastmod>2022-07-19</lastmod>
+        <lastmod>2022-07-27</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/world-population-update-2022</loc>
@@ -19514,7 +19518,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-variants-area</loc>
-        <lastmod>2021-12-09</lastmod>
+        <lastmod>2022-07-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/death-rates-no-handwashing</loc>
@@ -19534,7 +19538,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/covid-variants-bar</loc>
-        <lastmod>2021-12-13</lastmod>
+        <lastmod>2022-07-28</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/land-sparing-by-crop</loc>
