@@ -14738,7 +14738,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/child-mortality-vs-wasting</loc>
-        <lastmod>2021-08-09</lastmod>
+        <lastmod>2022-08-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/change-in-male-height-slope</loc>
@@ -14798,7 +14798,7 @@
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/child-mortality-rate-vs-mean-male-height-cm</loc>
-        <lastmod>2021-08-24</lastmod>
+        <lastmod>2022-08-02</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/un-igme-vs-un-desa</loc>
@@ -18119,10 +18119,6 @@
     <url>
         <loc>https://ourworldindata.org/grapher/levelized-cost-of-energy</loc>
         <lastmod>2020-10-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ourworldindata.org/grapher/child-mortality-2010-vs-2019-scatter</loc>
-        <lastmod>2022-03-17</lastmod>
     </url>
     <url>
         <loc>https://ourworldindata.org/grapher/crude-death-rate</loc>
