@@ -711,10 +711,10 @@ const grapherConfigs =
   },
   {
     "id": 3868,
-    "version": 11,
+    "version": 14,
     "slug": "primary-energy-cons",
     "title": "Primary energy consumption",
-    "subtitle": "Primary energy consumption is measured in terawatt-hours (TWh). ",
+    "subtitle": "[Primary energy](hover::general::primaryenergy) consumption is measured in terawatt-hours (TWh).",
     "sourceDesc": "BP Statistical Review of World Energy; and EIA",
     "note": "Data includes only commercially-traded fuels (coal, oil, gas), nuclear and modern renewables. It does not include traditional biomass.",
     "hideTitleAnnotation": true,
@@ -768,7 +768,18 @@ const grapherConfigs =
       88,
       273,
       165
-    ]
+    ],
+    "details": {
+      "general": {
+        "primaryenergy": {
+          "id": 1,
+          "term": "primaryenergy",
+          "title": "Primary energy",
+          "content": "Primary energy the energy as it is available as resources – such as the fuels that are burnt in power plants –  before it has been transformed. This relates to the coal before it has been burned, the uranium, or the barrels of oil. Primary energy includes energy that needed by the end user, plus inefficiencies and energy that is lost when raw resources are transformed into a useable form.\n\nYou can read more on the different ways of measuring energy [in our article](https://ourworldindata.org/energy-definitions).",
+          "category": "general"
+        }
+      }
+    }
   },
   {
     "id": 4287,
